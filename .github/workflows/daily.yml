@@ -2,11 +2,13 @@ name: Macro daily
 
 on:
   schedule:
+    # 05:30 UTC = 07:30 CEST / 06:30 CET, de lunes a viernes.
+    # GitHub puede retrasar el cron 10-30 min en horas punta.
     - cron: "30 5 * * 1-5"
   workflow_dispatch:
 
 permissions:
-  contents: write
+  contents: write   # para commitear docs/macro.ics
 
 jobs:
   run:
@@ -21,6 +23,7 @@ jobs:
       - name: Informe diario
         env:
           FRED_API_KEY: ${{ secrets.FRED_API_KEY }}
+          FINNHUB_API_KEY: ${{ secrets.FINNHUB_API_KEY }}
           SMTP_HOST: ${{ secrets.SMTP_HOST }}
           SMTP_PORT: ${{ secrets.SMTP_PORT }}
           SMTP_USER: ${{ secrets.SMTP_USER }}
@@ -31,7 +34,7 @@ jobs:
         run: |
           git config user.name "macro-monitor bot"
           git config user.email "actions@github.com"
-          git add docs/macro.ics
+          git add docs/*.ics
           git diff --cached --quiet || git commit -m "calendar: $(date -u +%F)"
           git push
       - uses: actions/upload-artifact@v4
