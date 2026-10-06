@@ -1,0 +1,221 @@
+# ============================================================
+# macro-monitor — panel de datos macro para la bolsa
+# transform: level | diff_bp | mom | yoy | qoq_ann
+#   level   -> último valor tal cual (tipos, spreads, VIX...)
+#   diff_bp -> variación en puntos básicos vs hace 1 mes
+#   mom     -> variación % vs observación anterior
+#   yoy     -> variación % interanual (series mensuales)
+#   qoq_ann -> variación trimestral anualizada (PIB)
+# headline: true -> entra en el workflow de evento (alerta el día que sale)
+# alert: umbral opcional -> genera aviso si se cruza
+# ============================================================
+
+lookback_years: 10       # ventana para el percentil histórico
+
+fred:
+  # ---------- 1. Política monetaria y tipos ----------
+  - id: DFF
+    name: Fed Funds efectivo
+    block: Tipos
+    unit: "%"
+    transform: level
+  - id: DGS2
+    name: Treasury 2 años
+    block: Tipos
+    unit: "%"
+    transform: level
+  - id: DGS10
+    name: Treasury 10 años
+    block: Tipos
+    unit: "%"
+    transform: level
+  - id: T10Y2Y
+    name: Curva 10y-2y
+    block: Tipos
+    unit: "pp"
+    transform: level
+    alert: {below: 0, msg: "Curva invertida"}
+  - id: DFII10
+    name: Tipo real 10 años (TIPS)
+    block: Tipos
+    unit: "%"
+    transform: level
+    alert: {above: 2.0, msg: "Tipo real > 2% (presión sobre múltiplos)"}
+  - id: T10YIE
+    name: Breakeven inflación 10 años
+    block: Tipos
+    unit: "%"
+    transform: level
+  - id: WALCL
+    name: Balance de la Fed
+    block: Tipos
+    unit: "M$"
+    transform: mom
+  - id: ECBDFR
+    name: BCE facilidad de depósito
+    block: Tipos
+    unit: "%"
+    transform: level
+
+  # ---------- 2. Inflación ----------
+  - id: CPIAUCSL
+    name: IPC general EE.UU.
+    block: Inflación
+    unit: "% a/a"
+    transform: yoy
+    headline: true
+    alert: {above: 4.0, msg: "IPC > 4%"}
+  - id: CPILFESL
+    name: IPC subyacente EE.UU.
+    block: Inflación
+    unit: "% a/a"
+    transform: yoy
+    headline: true
+  - id: PCEPILFE
+    name: PCE subyacente (el de la Fed)
+    block: Inflación
+    unit: "% a/a"
+    transform: yoy
+    headline: true
+  - id: PPIFIS
+    name: IPP demanda final
+    block: Inflación
+    unit: "% a/a"
+    transform: yoy
+  - id: CES0500000003
+    name: Salario medio por hora
+    block: Inflación
+    unit: "% a/a"
+    transform: yoy
+  - id: CP0000EZ19M086NEST
+    name: IPCA eurozona
+    block: Inflación
+    unit: "% a/a"
+    transform: yoy
+
+  # ---------- 3. Empleo ----------
+  - id: PAYEMS
+    name: Nóminas no agrícolas (variación mensual)
+    block: Empleo
+    unit: "miles"
+    transform: diff
+    headline: true
+  - id: UNRATE
+    name: Tasa de paro
+    block: Empleo
+    unit: "%"
+    transform: level
+    headline: true
+  - id: ICSA
+    name: Peticiones iniciales de desempleo
+    block: Empleo
+    unit: "pers."
+    transform: level
+    alert: {above: 300000, msg: "Peticiones > 300k (deterioro laboral)"}
+  - id: JTSJOL
+    name: Vacantes JOLTS
+    block: Empleo
+    unit: "miles"
+    transform: level
+
+  # ---------- 4. Crecimiento y actividad ----------
+  - id: GDPC1
+    name: PIB real EE.UU.
+    block: Actividad
+    unit: "% t/t anual."
+    transform: qoq_ann
+    headline: true
+  - id: RSAFS
+    name: Ventas minoristas
+    block: Actividad
+    unit: "% m/m"
+    transform: mom
+    headline: true
+  - id: INDPRO
+    name: Producción industrial
+    block: Actividad
+    unit: "% a/a"
+    transform: yoy
+  - id: DGORDER
+    name: Pedidos bienes duraderos
+    block: Actividad
+    unit: "% m/m"
+    transform: mom
+  - id: UMCSENT
+    name: Confianza consumidor (Michigan)
+    block: Actividad
+    unit: "índice"
+    transform: level
+
+  # ---------- 5. Vivienda ----------
+  - id: PERMIT
+    name: Permisos de construcción
+    block: Vivienda
+    unit: "miles"
+    transform: level
+  - id: HOUST
+    name: Viviendas iniciadas
+    block: Vivienda
+    unit: "miles"
+    transform: level
+  - id: MORTGAGE30US
+    name: Hipoteca 30 años
+    block: Vivienda
+    unit: "%"
+    transform: level
+
+  # ---------- 6. Crédito y condiciones financieras ----------
+  - id: BAMLH0A0HYM2
+    name: Spread High Yield (OAS)
+    block: Crédito
+    unit: "%"
+    transform: level
+    alert: {above: 5.0, msg: "Spread HY > 500 pb (estrés de crédito)"}
+  - id: BAMLC0A0CM
+    name: Spread Investment Grade (OAS)
+    block: Crédito
+    unit: "%"
+    transform: level
+  - id: NFCI
+    name: Condiciones financieras (Chicago Fed)
+    block: Crédito
+    unit: "índice"
+    transform: level
+    alert: {above: 0, msg: "Condiciones financieras más restrictivas que la media"}
+
+# ---------- 7. Mercado (yfinance) ----------
+market:
+  - ticker: "^GSPC"
+    name: S&P 500
+  - ticker: "^VIX"
+    name: VIX
+    alert: {above: 25, msg: "VIX > 25 (régimen de miedo)"}
+  - ticker: "DX-Y.NYB"
+    name: Dólar (DXY)
+  - ticker: "CL=F"
+    name: Petróleo WTI
+  - ticker: "HG=F"
+    name: Cobre
+  - ticker: "GC=F"
+    name: Oro
+  - ticker: "^TNX"
+    name: Treasury 10y (mercado)
+
+# ---------- 8. Calendario -> Google Calendar (.ics) ----------
+# Qué publicaciones de FRED entran en el calendario. `match` se busca (sin distinguir
+# mayúsculas) dentro del nombre de la release en FRED. Hora local de EE.UU. (ET).
+calendar:
+  days_ahead: 60
+  releases:
+    - {match: "Employment Situation",            label: "Empleo EE.UU. (nóminas, paro)", time_et: "08:30", series: [PAYEMS, UNRATE, CES0500000003], importance: alta}
+    - {match: "Consumer Price Index",             label: "IPC EE.UU.",                    time_et: "08:30", series: [CPIAUCSL, CPILFESL], importance: alta}
+    - {match: "Personal Income and Outlays",      label: "PCE / ingresos y gasto",        time_et: "08:30", series: [PCEPILFE], importance: alta}
+    - {match: "Gross Domestic Product",           label: "PIB EE.UU.",                    time_et: "08:30", series: [GDPC1], importance: alta}
+    - {match: "Advance Monthly Sales for Retail", label: "Ventas minoristas",             time_et: "08:30", series: [RSAFS], importance: media}
+    - {match: "Producer Price Index",             label: "IPP",                           time_et: "08:30", series: [PPIFIS], importance: media}
+    - {match: "Unemployment Insurance Weekly",    label: "Peticiones de desempleo",       time_et: "08:30", series: [ICSA], importance: baja}
+    - {match: "Job Openings and Labor Turnover",  label: "JOLTS (vacantes)",              time_et: "10:00", series: [JTSJOL], importance: media}
+    - {match: "New Residential Construction",     label: "Vivienda: permisos e inicios",  time_et: "08:30", series: [PERMIT, HOUST], importance: baja}
+    - {match: "Industrial Production",            label: "Producción industrial",         time_et: "09:15", series: [INDPRO], importance: baja}
+    - {match: "Durable Goods",                    label: "Pedidos bienes duraderos",      time_et: "08:30", series: [DGORDER], importance: baja}
+    - {match: "Consumer Sentiment",               label: "Confianza Michigan",            time_et: "10:00", series: [UMCSENT], importance: baja}

@@ -1,0 +1,24 @@
+# Reuniones de política monetaria (día de la decisión). Hora local del banco central.
+# Fuente: calendarios oficiales Fed y BCE. Revisar cada año y ampliar.
+# FOMC: decisión 14:00 ET, rueda de prensa 14:30 ET. sep: incluye proyecciones y dot plot.
+# BCE: decisión 14:15 CET, rueda de prensa 14:45 CET. proj: incluye proyecciones del staff.
+fomc:
+  - {date: 2026-10-28, sep: false}
+  - {date: 2026-12-09, sep: true}
+  - {date: 2027-01-27, sep: false}
+  - {date: 2027-03-17, sep: true}
+  - {date: 2027-04-28, sep: false}
+  - {date: 2027-06-09, sep: true}
+  - {date: 2027-07-28, sep: false}
+  - {date: 2027-09-15, sep: true}
+  - {date: 2027-10-27, sep: false}
+  - {date: 2027-12-08, sep: true}
+ecb:
+  - {date: 2026-10-29, proj: false}
+  - {date: 2026-12-17, proj: true}
+  - {date: 2027-02-04, proj: false}
+  - {date: 2027-03-18, proj: true}
+  - {date: 2027-04-29, proj: false}
+  - {date: 2027-06-10, proj: true}
+  - {date: 2027-07-22, proj: false}
+  # pendiente: sep/oct/dic 2027 cuando el BCE los publique
