@@ -27,23 +27,20 @@ def _esc(s: str) -> str:
 
 
 def _event(uid, start, minutes, summary, description, alarm_min=15):
-    end = start + dt.timedelta(minutes=minutes)
+    """Evento con hora. Si start es un date (sin hora) se crea evento de día completo."""
     now = _ics_dt(dt.datetime.now(UTC))
-    return "\n".join([
-        "BEGIN:VEVENT",
-        f"UID:{uid}",
-        f"DTSTAMP:{now}",
-        f"DTSTART:{_ics_dt(start)}",
-        f"DTEND:{_ics_dt(end)}",
-        f"SUMMARY:{_esc(summary)}",
-        f"DESCRIPTION:{_esc(description)}",
-        "BEGIN:VALARM",
-        "ACTION:DISPLAY",
-        f"DESCRIPTION:{_esc(summary)}",
-        f"TRIGGER:-PT{alarm_min}M",
-        "END:VALARM",
-        "END:VEVENT",
-    ])
+    if isinstance(start, dt.date) and not isinstance(start, dt.datetime):
+        dates = [f"DTSTART;VALUE=DATE:{start.strftime('%Y%m%d')}",
+                 f"DTEND;VALUE=DATE:{(start + dt.timedelta(days=1)).strftime('%Y%m%d')}"]
+    else:
+        dates = [f"DTSTART:{_ics_dt(start)}", f"DTEND:{_ics_dt(start + dt.timedelta(minutes=minutes))}"]
+    lines = ["BEGIN:VEVENT", f"UID:{uid}", f"DTSTAMP:{now}", *dates,
+             f"SUMMARY:{_esc(summary)}", f"DESCRIPTION:{_esc(description)}"]
+    if alarm_min:
+        lines += ["BEGIN:VALARM", "ACTION:DISPLAY", f"DESCRIPTION:{_esc(summary)}",
+                  f"TRIGGER:-PT{alarm_min}M", "END:VALARM"]
+    lines.append("END:VEVENT")
+    return "\n".join(lines)
 
 
 def fred_release_events(cfg: dict, latest: dict | None = None) -> list:
@@ -101,14 +98,18 @@ def central_bank_events() -> list:
 
 
 def build_ics(cfg: dict, latest: dict | None = None) -> str:
-    events = fred_release_events(cfg, latest) + central_bank_events()
+    return render("Macro Monitor", fred_release_events(cfg, latest) + central_bank_events())
+
+
+def render(name: str, events: list) -> str:
+    """Envuelve una lista de VEVENT en un VCALENDAR válido (RFC 5545)."""
     body = [
         "BEGIN:VCALENDAR",
         "VERSION:2.0",
         "PRODID:-//macro-monitor//ES",
         "CALSCALE:GREGORIAN",
         "METHOD:PUBLISH",
-        "X-WR-CALNAME:Macro Monitor",
+        f"X-WR-CALNAME:{name}",
         "X-WR-TIMEZONE:Europe/Madrid",
         "X-PUBLISHED-TTL:PT12H",
         *events,
