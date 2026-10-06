@@ -22,6 +22,14 @@ y manda el resumen por email. Fuentes gratuitas: FRED (St. Louis Fed) y Yahoo Fi
   sin aviso). Fechas de resultados vía Finnhub (hora pre/post mercado) con yfinance de respaldo.
   El email diario incluye la sección "Esta semana en tus empresas".
 
+- **Motor de reglas** (`rules.yaml` + `macro_monitor/rules.py`): cuatro scores (crecimiento, inflación,
+  liquidez, riesgo) de −2 a +2, régimen (cuadrante crecimiento × inflación), tensión del cuadro, sesgo por
+  sector GICS (matriz régimen × sector + sensibilidades a factores), divergencias entre series y
+  disparadores de cambio de conclusión. Cada umbral lleva su justificación en el YAML.
+- **Histórico**: cada run guarda `data/history.csv` (todas las series), `data/scores.csv` (scores,
+  régimen y sesgos por sector) y `data/latest.json`, commiteados al repo. Es la base del dashboard y
+  de la validación de los sesgos contra los ETFs sectoriales.
+
 ## Puesta en marcha
 
 1. Crea el repo y sube estos archivos.
@@ -73,8 +81,19 @@ nombre), su hora ET e importancia (🔴🟠⚪). Las reuniones de bancos central
 - Los **PMI de S&P Global** y la serie completa de Michigan son de pago; el ISM no está en FRED.
 - El percentil usa la ventana cargada (10 años), no toda la historia.
 
+## Motor de reglas: cómo leerlo
+
+- Score = suma ponderada de señales; cada señal evalúa nivel (percentil o umbral absoluto) y tendencia.
+- Régimen: signo de crecimiento × signo de inflación. Si uno es 0, régimen "Mixto": los sesgos
+  sectoriales salen solo de los factores, no de la matriz.
+- Sesgo sector = base de la matriz (según régimen) + Σ carga × señal de factor, acotado a ±2.
+- Tensión: liquidez ≤ −1 con riesgo ≥ +1 = "alta" (valoraciones altas con tipos restrictivos).
+
 ## Siguientes pasos previstos
 
+- `run.py validar`: comparar sesgos históricos con el retorno real de XLF/XLE/XLK… a 1 y 3 meses.
+- Dashboard estático en GitHub Pages leyendo `data/latest.json` y `data/scores.csv`.
+- Narrativa Groq a partir de `latest.json`.
 - V2: webhook Apps Script para eventos instantáneos en el calendario principal (si hace falta).
 - V3: escribir cada nota en la base "Temas macro" de Notion vía API.
 - V4: expectativa propia (media móvil) como proxy de consenso para medir sorpresa.
