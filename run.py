@@ -4,6 +4,7 @@ macro-monitor — rutina principal.
   python run.py daily     -> informe completo (todas las series + calendario) y email
   python run.py event     -> solo series headline publicadas HOY; email solo si hay novedad
   python run.py calendar  -> regenera docs/macro.ics (publicaciones FRED + FOMC/BCE)
+  python run.py empresas  -> regenera docs/empresas.ics y empresas-todas.ics (resultados, ex-dividendo, mercado)
   python run.py daily --no-email   -> imprime en consola, no envía
 """
 import sys
@@ -12,7 +13,7 @@ import datetime as dt
 import pathlib
 import yaml
 
-from macro_monitor import fetch, analyze, report, calendar as cal_mod
+from macro_monitor import fetch, analyze, report, calendar as cal_mod, empresas
 
 ROOT = pathlib.Path(__file__).parent
 OUT = ROOT / "output"
@@ -70,6 +71,14 @@ def write_calendar(cfg, by_id=None):
     print(f"Calendario generado: docs/macro.ics ({n} eventos)")
 
 
+def write_empresas(cfg):
+    days = cfg.get("empresas", {}).get("days_ahead", 60)
+    evs = empresas.collect(days)
+    counts = empresas.write_calendars(evs, ROOT / "docs")
+    print(f"Calendarios de empresas: {counts} ({len(evs)} eventos en {days} días)")
+    return evs
+
+
 def main():
     mode = sys.argv[1] if len(sys.argv) > 1 else "daily"
     send = "--no-email" not in sys.argv
@@ -89,8 +98,13 @@ def main():
             write_calendar(cfg, by_id)
         except Exception as e:  # noqa: BLE001
             print(f"(calendario no regenerado: {e})")
+        extra_html = ""
+        try:
+            extra_html = empresas.week_html(write_empresas(cfg))
+        except Exception as e:  # noqa: BLE001
+            print(f"(empresas no regeneradas: {e})")
         title = "Macro Monitor · Nota diaria"
-        html = report.render_html(rows, reg, cal, alerts, title)
+        html = report.render_html(rows, reg, cal, alerts, title, extra_html)
         text = report.render_text(rows, reg, alerts)
         subject = f"[Macro] {today} · {reg['label'].split(' (')[0]}" + (f" · {len(alerts)} alertas" if alerts else "")
 
@@ -109,6 +123,10 @@ def main():
         subject = f"[Macro · DATO] {today} · {names}"
     elif mode == "calendar":
         write_calendar(cfg)
+        return
+
+    elif mode == "empresas":
+        write_empresas(cfg)
         return
     else:
         raise SystemExit("modo desconocido: usa daily | event | calendar")
