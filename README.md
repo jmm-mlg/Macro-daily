@@ -16,6 +16,12 @@ y manda el resumen por email. Fuentes gratuitas: FRED (St. Louis Fed) y Yahoo Fi
   de los próximos 60 días (hora exacta, series afectadas, último valor) y las reuniones FOMC y BCE
   (`central_banks.yaml`). Se sirve por GitHub Pages y Google Calendar lo lee por suscripción.
 
+- **Calendario de empresas**: a partir de `watchlist.yaml` (185 empresas representativas por industria
+  GICS, EE.UU. + Europa, con rol bellwether/representante) genera `docs/empresas.ics` (solo bellwethers,
+  con aviso el día anterior) y `docs/empresas-todas.ics` (toda la lista, ex-dividendos y quad witching,
+  sin aviso). Fechas de resultados vía Finnhub (hora pre/post mercado) con yfinance de respaldo.
+  El email diario incluye la sección "Esta semana en tus empresas".
+
 ## Puesta en marcha
 
 1. Crea el repo y sube estos archivos.
@@ -25,6 +31,7 @@ y manda el resumen por email. Fuentes gratuitas: FRED (St. Louis Fed) y Yahoo Fi
 | Secret | Valor |
 |---|---|
 | `FRED_API_KEY` | tu clave de FRED |
+| `FINNHUB_API_KEY` | opcional; clave gratuita de finnhub.io (hora pre/post mercado de los resultados EE.UU.) |
 | `SMTP_HOST` | `smtp.gmail.com` (u otro) |
 | `SMTP_PORT` | `587` |
 | `SMTP_USER` | tu email remitente |
@@ -47,6 +54,7 @@ export FRED_API_KEY=...
 python run.py daily --no-email     # imprime en consola, guarda output/daily_<fecha>.html
 python run.py event --no-email
 python run.py calendar             # solo regenera docs/macro.ics
+python run.py empresas             # solo regenera docs/empresas*.ics
 ```
 
 ## Personalizar
