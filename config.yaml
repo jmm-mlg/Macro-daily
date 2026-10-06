@@ -49,7 +49,7 @@ fred:
   - id: WALCL
     name: Balance de la Fed
     block: Tipos
-    unit: "M$"
+    unit: "% m/m"
     transform: mom
   - id: ECBDFR
     name: BCE facilidad de depósito
@@ -186,19 +186,26 @@ fred:
 # ---------- 7. Mercado (yfinance) ----------
 market:
   - ticker: "^GSPC"
+    unit: "puntos"
     name: S&P 500
   - ticker: "^VIX"
+    unit: "índice"
     name: VIX
     alert: {above: 25, msg: "VIX > 25 (régimen de miedo)"}
   - ticker: "DX-Y.NYB"
+    unit: "índice"
     name: Dólar (DXY)
   - ticker: "CL=F"
+    unit: "$/barril"
     name: Petróleo WTI
   - ticker: "HG=F"
+    unit: "$/lb"
     name: Cobre
   - ticker: "GC=F"
+    unit: "$/oz"
     name: Oro
   - ticker: "^TNX"
+    unit: "%"
     name: Treasury 10y (mercado)
 
 # ---------- 8. Calendario -> Google Calendar (.ics) ----------
