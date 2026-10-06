@@ -1,0 +1,14 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8"><title>Macro Monitor</title>
+<style>body{font-family:Arial,sans-serif;max-width:640px;margin:40px auto;padding:0 16px;color:#222}code{background:#f3f3f3;padding:2px 6px}</style></head>
+<body><h1>Macro Monitor · Calendario</h1>
+<p>Calendario de publicaciones macro (FRED) y reuniones FOMC/BCE, regenerado cada día laborable.</p>
+<p>Suscríbete desde Google Calendar: <b>Otros calendarios → + → Desde URL</b> y pega:</p>
+<p><code id="u"></code></p>
+<p>Calendarios disponibles (misma base de URL):</p>
+<ul>
+<li><code>macro.ics</code> — publicaciones macro + FOMC/BCE</li>
+<li><code>empresas.ics</code> — resultados de los bellwethers (con aviso)</li>
+<li><code>empresas-todas.ics</code> — toda la watchlist + ex-dividendos + fechas de mercado (sin aviso)</li>
+</ul>
+<script>document.getElementById('u').textContent=location.href.replace(/index\.html$/,'')+'macro.ics'</script>
+</body></html>
