@@ -219,3 +219,7 @@ calendar:
     - {match: "Industrial Production",            label: "Producción industrial",         time_et: "09:15", series: [INDPRO], importance: baja}
     - {match: "Durable Goods",                    label: "Pedidos bienes duraderos",      time_et: "08:30", series: [DGORDER], importance: baja}
     - {match: "Consumer Sentiment",               label: "Confianza Michigan",            time_et: "10:00", series: [UMCSENT], importance: baja}
+
+# ---------- 9. Empresas (watchlist.yaml) ----------
+empresas:
+  days_ahead: 60     # horizonte de resultados/ex-dividendo en el calendario
