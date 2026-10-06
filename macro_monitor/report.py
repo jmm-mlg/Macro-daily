@@ -22,7 +22,7 @@ def _arrow(chg):
     return "▲" if chg > 0 else "▼"
 
 
-def render_html(rows: list, regime: dict, calendar: list, alerts: list, title: str) -> str:
+def render_html(rows: list, regime: dict, calendar: list, alerts: list, title: str, extra_html: str = "") -> str:
     today = dt.date.today().strftime("%d/%m/%Y")
     h = [f"<html><body style='font-family:Arial,sans-serif;font-size:14px;color:#222'>",
          f"<h2 style='margin-bottom:4px'>{title}</h2><div style='color:#666'>{today}</div>"]
@@ -62,6 +62,9 @@ def render_html(rows: list, regime: dict, calendar: list, alerts: list, title: s
                      f"<td align='right' style='color:{pcol}'>{pct:.0f}%</td>"
                      f"<td style='color:#666'>{r['date']}</td></tr>")
         h.append("</table>")
+
+    if extra_html:
+        h.append(extra_html)
 
     # Calendario
     if calendar:
