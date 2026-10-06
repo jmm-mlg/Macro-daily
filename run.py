@@ -13,7 +13,7 @@ import datetime as dt
 import pathlib
 import yaml
 
-from macro_monitor import fetch, analyze, report, calendar as cal_mod, empresas
+from macro_monitor import fetch, analyze, report, calendar as cal_mod, empresas, rules
 
 ROOT = pathlib.Path(__file__).parent
 OUT = ROOT / "output"
@@ -46,7 +46,7 @@ def build_rows(cfg, only_headline=False, only_updated_today=False):
 
     if not only_headline:
         for mc in cfg.get("market", []):
-            row = {"id": mc["ticker"], "name": mc["name"], "block": "Mercado", "unit": ""}
+            row = {"id": mc["ticker"], "name": mc["name"], "block": "Mercado", "unit": mc.get("unit", "")}
             try:
                 s = fetch.market_series(mc["ticker"], years)
                 row.update(analyze.compute(s, "level", mc))
@@ -88,25 +88,33 @@ def main():
 
     if mode == "daily":
         rows, by_id = build_rows(cfg)
-        reg = analyze.regime(by_id)
+        res = rules.run(by_id)
+        try:
+            rules.save_history(by_id, res)
+        except Exception as e:  # noqa: BLE001
+            print(f"(histórico no guardado: {e})")
+        reg = {"label": f"{res['regime']['label']} · tensión {res['tension']}",
+               "notes": [f"{res['scores'][k]['label']} {res['scores'][k]['score']:+d}" for k in res["scores"]]}
         alerts = collect_alerts(rows)
         try:
-            cal = fetch.fred_calendar(7)
+            cal = [c for c in fetch.fred_calendar(7)
+                   if any(r["match"].lower() in c["release"].lower() for r in cfg.get("calendar", {}).get("releases", []))]
         except Exception as e:  # noqa: BLE001
             cal = [{"date": "", "release": f"(calendario no disponible: {e})"}]
         try:
             write_calendar(cfg, by_id)
         except Exception as e:  # noqa: BLE001
             print(f"(calendario no regenerado: {e})")
-        extra_html = ""
+        extra_html = report.analysis_html(res)
         try:
-            extra_html = empresas.week_html(write_empresas(cfg))
+            extra_html += empresas.week_html(write_empresas(cfg))
         except Exception as e:  # noqa: BLE001
             print(f"(empresas no regeneradas: {e})")
         title = "Macro Monitor · Nota diaria"
         html = report.render_html(rows, reg, cal, alerts, title, extra_html)
         text = report.render_text(rows, reg, alerts)
-        subject = f"[Macro] {today} · {reg['label'].split(' (')[0]}" + (f" · {len(alerts)} alertas" if alerts else "")
+        text += "\n\nSECTORES: " + ", ".join(f"{x['label']} {x['bias']:+d}" for x in res["sectors"])
+        subject = f"[Macro] {today} · {res['regime']['label']} · tensión {res['tension']}" + (f" · {len(alerts)} alertas" if alerts else "")
 
     elif mode == "event":
         rows, by_id = build_rows(cfg, only_headline=True, only_updated_today=True)
