@@ -30,12 +30,12 @@ jobs:
           SMTP_PASS: ${{ secrets.SMTP_PASS }}
           EMAIL_TO: ${{ secrets.EMAIL_TO }}
         run: python run.py daily
-      - name: Publicar calendario (.ics) en docs/
+      - name: Publicar calendarios e histórico
         run: |
           git config user.name "macro-monitor bot"
           git config user.email "actions@github.com"
-          git add docs/*.ics
-          git diff --cached --quiet || git commit -m "calendar: $(date -u +%F)"
+          git add docs/*.ics data/
+          git diff --cached --quiet || git commit -m "daily: $(date -u +%F)"
           git push
       - uses: actions/upload-artifact@v4
         with:
