@@ -1,0 +1,244 @@
+# ============================================================
+# rules.yaml — motor de reglas del Macro Monitor
+#
+# Todo umbral lleva su justificación. Cambia lo que quieras: el motor lee este archivo.
+#
+# Cada SEÑAL evalúa una serie en dos dimensiones y devuelve -1, 0 o +1 en cada una:
+#   level: por percentil a 10 años (pct_high / pct_low) o por umbral absoluto (above / below)
+#   trend: por el signo de la variación (field: chg) con zona muerta (dead)
+#   invert: true -> una lectura alta de la serie es NEGATIVA para el score (ej. peticiones de paro)
+# Score = suma ponderada de (level + trend) / suma de pesos, reescalado a [-2, +2] y redondeado.
+# ============================================================
+
+scores:
+  crecimiento:
+    label: Crecimiento
+    signals:
+      - {series: ICSA,     weight: 3, invert: true,  level: {pct_high: 70, pct_low: 30}, trend: {dead: 10000},
+         why: "Adelantado. Peticiones semanales: primer síntoma de despidos."}
+      - {series: PAYEMS,   weight: 2, level: {above: 150, below: 50}, trend: {dead: 30},
+         why: "Coincidente. <50k/mes = economía al ralentí; 2x desviación típica de la serie."}
+      - {series: RSAFS,    weight: 2, level: {above: 0.4, below: -0.2}, trend: {dead: 0.3},
+         why: "Consumo = ~70% del PIB. Zona muerta por el ruido mensual de la serie."}
+      - {series: DGORDER,  weight: 2, level: {above: 0.5, below: -0.5}, trend: {dead: 0.5},
+         why: "Adelantado de capex; muy volátil, umbral ancho."}
+      - {series: INDPRO,   weight: 1, level: {above: 1.5, below: 0}, trend: {dead: 0.2},
+         why: "Producción industrial a/a: negativa en todas las recesiones desde 1970."}
+      - {series: GDPC1,    weight: 1, level: {above: 2.5, below: 1.0}, trend: {dead: 0.3},
+         why: "Retrasado (sale con 1-3 meses). Peso bajo."}
+      - {series: PERMIT,   weight: 1, level: {pct_high: 70, pct_low: 30}, trend: {dead: 30},
+         why: "Vivienda = el ciclo. Permisos adelantan a inicios 1-2 meses."}
+      - {series: UMCSENT,  weight: 1, level: {pct_high: 60, pct_low: 25}, trend: {dead: 2},
+         why: "Confianza: adelanta al consumo discrecional, mucho ruido."}
+  inflacion:
+    label: Inflación
+    signals:
+      - {series: CPILFESL, weight: 3, level: {above: 3.0, below: 2.0}, trend: {dead: 0.1},
+         why: "Objetivo Fed 2%. >3% = fuera de rango de tolerancia."}
+      - {series: PCEPILFE, weight: 3, level: {above: 2.8, below: 2.0}, trend: {dead: 0.1},
+         why: "La medida que mira la Fed. Umbral alto ligeramente menor que IPC (sesgo histórico ~0.3pp)."}
+      - {series: CPIAUCSL, weight: 1, level: {above: 3.5, below: 2.0}, trend: {dead: 0.15},
+         why: "General: incluye energía, por eso pesa menos que subyacente."}
+      - {series: PPIFIS,   weight: 2, level: {above: 3.0, below: 1.0}, trend: {dead: 0.3},
+         why: "Adelantado de IPC 2-4 meses. Tubería de costes."}
+      - {series: CES0500000003, weight: 2, level: {above: 4.0, below: 3.0}, trend: {dead: 0.1},
+         why: "Salarios: >4% incompatible con 2% de inflación salvo productividad alta."}
+      - {series: T10YIE,   weight: 1, level: {above: 2.5, below: 2.0}, trend: {dead: 0.1},
+         why: "Expectativas de mercado a 10 años."}
+      - {series: CP0000EZ19M086NEST, weight: 1, level: {above: 3.0, below: 2.0}, trend: {dead: 0.1},
+         why: "Eurozona. Objetivo BCE 2%."}
+  liquidez:
+    label: Liquidez / tipos
+    note: "Positivo = condiciones laxas (favorable a activos de riesgo). Negativo = restrictivas."
+    signals:
+      - {series: DFII10,   weight: 3, invert: true, level: {above: 2.0, below: 1.0}, trend: {dead: 0.15},
+         why: "Tipo real >2%: desde 1997 (existencia de TIPS) coincide con compresión de múltiplos."}
+      - {series: NFCI,     weight: 3, invert: true, level: {above: 0.0, below: -0.5}, trend: {dead: 0.05},
+         why: "Chicago Fed: 105 variables. >0 = más restrictivo que la media histórica."}
+      - {series: DGS10,    weight: 2, invert: true, level: {pct_high: 85, pct_low: 30}, trend: {dead: 0.15},
+         why: "Tasa de descuento de todo."}
+      - {series: BAMLH0A0HYM2, weight: 2, invert: true, level: {above: 5.0, below: 3.5}, trend: {dead: 0.25},
+         why: "HY >500pb precede caídas bursátiles 1-2 meses; <350pb complacencia."}
+      - {series: WALCL,    weight: 1, level: {above: 0.5, below: -0.5}, trend: {dead: 0.3},
+         why: "Variación mensual del balance Fed: QE/QT."}
+      - {series: MORTGAGE30US, weight: 1, invert: true, level: {above: 7.0, below: 5.5}, trend: {dead: 0.15},
+         why: "Canal de transmisión al hogar."}
+  riesgo:
+    label: Apetito por el riesgo
+    signals:
+      - {series: "^VIX",   weight: 3, invert: true, level: {above: 25, below: 15}, trend: {dead: 2},
+         why: ">25 régimen de miedo; <15 complacencia."}
+      - {series: BAMLH0A0HYM2, weight: 2, invert: true, level: {pct_high: 70, pct_low: 30}, trend: {dead: 0.25},
+         why: "El crédito avisa antes que la bolsa."}
+      - {series: "^GSPC",  weight: 2, level: {pct_high: 85, pct_low: 30}, trend: {dead: 100},
+         why: "Momentum del índice."}
+      - {series: "HG=F",   weight: 1, level: {pct_high: 75, pct_low: 30}, trend: {dead: 0.1},
+         why: "Dr. Copper: apetito por ciclo global."}
+      - {series: "GC=F",   weight: 1, invert: true, level: {pct_high: 85, pct_low: 40}, trend: {dead: 50},
+         why: "Oro en máximos = cobertura, no apetito."}
+      - {series: T10Y2Y,   weight: 1, level: {above: 0.5, below: 0.0}, trend: {dead: 0.1},
+         why: "Curva invertida = mercado descuenta recesión."}
+
+# ---------- Régimen: cuadrante crecimiento x inflación ----------
+# (Investment Clock, Merrill Lynch 2004; cuatro entornos de Bridgewater)
+regimes:
+  goldilocks:    {growth: 1,  inflation: -1, label: "Goldilocks",              desc: "crecimiento ↑, inflación ↓: growth, calidad, duración"}
+  reflacion:     {growth: 1,  inflation: 1,  label: "Reflación",               desc: "crecimiento ↑, inflación ↑: cíclicos, energía, value, bancos"}
+  estanflacion:  {growth: -1, inflation: 1,  label: "Estanflación",            desc: "crecimiento ↓, inflación ↑: materias primas, defensivos con pricing power"}
+  desinflacion:  {growth: -1, inflation: -1, label: "Desinflación recesiva",   desc: "crecimiento ↓, inflación ↓: bonos, defensivos, esperar al pivot"}
+  mixto:         {growth: 0,  inflation: 0,  label: "Mixto / transición",      desc: "sin señal clara; sesgos solo por factores"}
+
+# ---------- Matriz régimen x sector (sesgo base, -2..+2) ----------
+# Retorno relativo histórico medio frente al índice por cuadrante (SPDR sectoriales desde 1998,
+# ampliado con Fama-French 12 industrias antes). Se recalibra con `run.py validar`.
+sector_matrix:
+  #                goldilocks  reflacion  estanflacion  desinflacion
+  tecnologia:      [ 2,        -1,        -1,           0 ]
+  comunicacion:    [ 1,        -1,        -1,           0 ]
+  discrecional:    [ 1,         0,        -2,          -1 ]
+  salud:           [ 0,         0,         1,           2 ]
+  financiero:      [ 0,         1,        -1,          -1 ]
+  industriales:    [ 1,         1,        -1,          -1 ]
+  materiales:      [ 0,         1,         0,          -2 ]
+  energia:         [-1,         2,         1,          -2 ]
+  basico:          [-1,        -1,         1,           2 ]
+  utilities:       [-1,        -2,         0,           1 ]
+  inmobiliario:    [ 1,        -1,        -1,           0 ]
+
+sector_labels:
+  tecnologia: "Tecnología de la información"
+  comunicacion: "Servicios de comunicación"
+  discrecional: "Consumo discrecional"
+  salud: "Salud"
+  financiero: "Financiero"
+  industriales: "Industriales"
+  materiales: "Materiales"
+  energia: "Energía"
+  basico: "Consumo básico"
+  utilities: "Utilities"
+  inmobiliario: "Inmobiliario"
+
+# ETF para validar el sesgo contra el retorno real (run.py validar)
+sector_etf:
+  tecnologia: XLK
+  comunicacion: XLC
+  discrecional: XLY
+  salud: XLV
+  financiero: XLF
+  industriales: XLI
+  materiales: XLB
+  energia: XLE
+  basico: XLP
+  utilities: XLU
+  inmobiliario: XLRE
+
+# ---------- Factores: señal -1/0/+1 a partir del estado de una serie ----------
+# Ajustan el sesgo base: ajuste = carga_sector x señal_factor. Resultado acotado a [-2, +2].
+factors:
+  duracion:   {series: DFII10,       signal: {above: 2.0, below: 1.0},     label: "Tipo real alto",
+               why: "Activos de larga duración (REITs, utilities, growth) descuentan a tipo real."}
+  curva:      {series: T10Y2Y,       signal: {chg_above: 0.15, chg_below: -0.15}, label: "Curva empinando",
+               why: "Pendiente = margen de intermediación bancaria."}
+  petroleo:   {series: "CL=F",       signal: {pct_high: 80, pct_low: 25},  label: "Petróleo caro",
+               why: "Transferencia de renta de consumidores/transporte a productores."}
+  dolar:      {series: "DX-Y.NYB",   signal: {pct_high: 75, pct_low: 25},  label: "Dólar fuerte",
+               why: "Penaliza beneficios exteriores y materias primas en USD."}
+  credito:    {series: BAMLH0A0HYM2, signal: {above: 4.5, chg_above: 0.5}, label: "Crédito tensándose",
+               why: "Sectores apalancados sufren primero."}
+  cobre:      {series: "HG=F",       signal: {pct_high: 80, pct_low: 25},  label: "Cobre caro",
+               why: "Demanda industrial y de construcción global."}
+  hipoteca:   {series: MORTGAGE30US, signal: {above: 7.0, below: 5.5},     label: "Hipoteca cara",
+               why: "Vivienda, mejora del hogar, constructoras."}
+
+# Cargas de cada sector a cada factor (-1, -0.5, 0, +0.5, +1). Signo = efecto de una señal +1.
+sector_factor_loadings:
+  tecnologia:    {duracion: -1,   curva: 0,    petroleo: 0,    dolar: -0.5, credito: -0.5, cobre: 0,    hipoteca: 0}
+  comunicacion:  {duracion: -1,   curva: 0,    petroleo: 0,    dolar: -0.5, credito: -0.5, cobre: 0,    hipoteca: 0}
+  discrecional:  {duracion: -0.5, curva: 0,    petroleo: -1,   dolar: 0,    credito: -1,   cobre: 0,    hipoteca: -1}
+  salud:         {duracion: -0.5, curva: 0,    petroleo: 0,    dolar: -0.5, credito: 0,    cobre: 0,    hipoteca: 0}
+  financiero:    {duracion: 0,    curva: 1,    petroleo: 0,    dolar: 0,    credito: -1,   cobre: 0,    hipoteca: 0}
+  industriales:  {duracion: -0.5, curva: 0.5,  petroleo: -0.5, dolar: -0.5, credito: -0.5, cobre: 1,    hipoteca: 0}
+  materiales:    {duracion: 0,    curva: 0,    petroleo: -0.5, dolar: -1,   credito: -0.5, cobre: 1,    hipoteca: -0.5}
+  energia:       {duracion: 0,    curva: 0,    petroleo: 1,    dolar: -0.5, credito: -0.5, cobre: 0,    hipoteca: 0}
+  basico:        {duracion: -0.5, curva: 0,    petroleo: -0.5, dolar: -0.5, credito: 0,    cobre: 0,    hipoteca: 0}
+  utilities:     {duracion: -1,   curva: -0.5, petroleo: 0,    dolar: 0,    credito: -0.5, cobre: 0,    hipoteca: 0}
+  inmobiliario:  {duracion: -1,   curva: 0,    petroleo: 0,    dolar: 0,    credito: -1,   cobre: 0,    hipoteca: -1}
+
+# Qué esperar por sector en cada régimen (texto para el informe)
+sector_behaviour:
+  financiero:
+    reflacion: "Margen de interés al alza; el riesgo pasa a provisiones y morosidad."
+    goldilocks: "Crédito sano, comisiones; sin viento de cola de tipos."
+    estanflacion: "Morosidad sube con la curva aún alta: lo peor para el margen de riesgo."
+    desinflacion: "Curva plana o invertida y provisiones altas; esperar al pivot."
+  energia:
+    reflacion: "Cash flow fuerte y recompras; muy sensible a un giro del crudo."
+    goldilocks: "Sin impulso: la demanda crece pero el precio no."
+    estanflacion: "Cobertura clásica; única fuente de beneficios al alza."
+    desinflacion: "Caída de demanda y precio; evitar."
+  tecnologia:
+    reflacion: "Múltiplos presionados por el tipo real; solo aguanta quien tiene pedidos reales (semis)."
+    goldilocks: "El mejor entorno: crecimiento con tasa de descuento baja."
+    estanflacion: "Doble golpe: múltiplo y demanda empresarial."
+    desinflacion: "Calidad con caja resiste; sin beneficios sufre hasta el pivot."
+  utilities:
+    reflacion: "Compiten con el bono; el dividendo deja de ser atractivo."
+    goldilocks: "Rezagadas frente al mercado."
+    estanflacion: "Refugio parcial, pero los costes de energía aprietan."
+    desinflacion: "Mejor momento: caen los tipos, demanda estable."
+  inmobiliario:
+    reflacion: "Peor sitio: duración, refinanciaciones caras, crédito tensando."
+    goldilocks: "Bien si los tipos bajan; logística y data centers lideran."
+    estanflacion: "Caen rentas reales y suben costes de deuda."
+    desinflacion: "Primeros en rebotar cuando el mercado anticipa recortes."
+  basico:
+    reflacion: "IPP > IPC comprime márgenes a quien no sube precios; vigilar volúmenes."
+    goldilocks: "Rezagado; solo valor defensivo."
+    estanflacion: "Pricing power es la clave: Nestlé/P&G sí, marcas blancas no."
+    desinflacion: "Refugio clásico con dividendo."
+  discrecional:
+    reflacion: "Renta baja retrocede (restauración rápida, retail de descuento lo anuncian), renta alta y lujo aguantan."
+    goldilocks: "Consumo fuerte con crédito barato: el mejor entorno."
+    estanflacion: "El peor: costes arriba, demanda abajo."
+    desinflacion: "Demanda débil; solo descuento y valor."
+  industriales:
+    reflacion: "Favorece a quien tiene pricing power y pedidos; penaliza transporte por combustible."
+    goldilocks: "Capex en expansión; automatización y equipos eléctricos lideran."
+    estanflacion: "Márgenes apretados y pedidos cayendo."
+    desinflacion: "Pedidos en mínimos; esperar a la curva."
+  materiales:
+    reflacion: "Mineras bien; químicas con márgenes apretados si el gas sube."
+    goldilocks: "Demanda estable sin presión de precios: neutral."
+    estanflacion: "Materias primas suben pero la demanda final no."
+    desinflacion: "Lo peor: demanda y precio caen a la vez."
+  salud:
+    reflacion: "Neutral; comportamiento idiosincrático (pipelines, regulación)."
+    goldilocks: "Neutral."
+    estanflacion: "Refugio: demanda inelástica."
+    desinflacion: "Refugio con crecimiento propio."
+  comunicacion:
+    reflacion: "Publicidad resiste si el consumo resiste; múltiplos presionados."
+    goldilocks: "Crecimiento de ingresos con múltiplos expandiendo."
+    estanflacion: "Publicidad es lo primero que se recorta."
+    desinflacion: "Telecos defensivas; medios cíclicos sufren."
+
+# ---------- Divergencias: pares que deberían moverse juntos ----------
+# Avisa si |percentil_a - percentil_b| > gap (en puntos de percentil)
+divergences:
+  - {a: "HG=F", b: DGORDER, gap: 40, text: "El cobre descuenta más actividad industrial de la que muestran los pedidos de bienes duraderos."}
+  - {a: RSAFS, b: UMCSENT, gap: 40, text: "El consumidor gasta pero no confía: consumo sensible a precios y a crédito."}
+  - {a: "^GSPC", b: DFII10, gap: -30, same_direction: true, text: "Bolsa y tipo real en percentiles altos a la vez: la prima de riesgo se comprime."}
+  - {a: "GC=F", b: T10YIE, gap: 40, text: "El oro no sigue a las expectativas de inflación: se mueve por tipos reales o por refugio."}
+  - {a: PAYEMS, b: ICSA, gap: 50, invert_b: true, text: "Nóminas débiles con peticiones bajas: las empresas dejan de contratar, no despiden."}
+  - {a: BAMLH0A0HYM2, b: "^VIX", gap: 35, text: "Crédito y volatilidad discrepan: uno de los dos se está equivocando."}
+
+# ---------- Disparadores: qué dato cambiaría la conclusión ----------
+triggers:
+  - {series: DGS10, above: 5.5, text: "Treasury 10 años > 5,50%: compite de frente con un earnings yield del 4%."}
+  - {series: PAYEMS, below: 0, text: "Primera lectura negativa de nóminas: giro de Reflación a Estanflación."}
+  - {series: ICSA, above: 240000, text: "Peticiones > 240k: las empresas empiezan a despedir."}
+  - {series: BAMLH0A0HYM2, above: 4.0, text: "HY > 400 pb: el crédito suele avisar 4-8 semanas antes que la bolsa."}
+  - {series: CPIAUCSL, below: 3.0, text: "IPC general < 3%: abre la puerta a recortes y alivia el tipo real."}
+  - {series: T10Y2Y, below: 0, text: "Curva invertida de nuevo: el mercado vuelve a descontar recesión."}
+  - {series: "^VIX", above: 25, text: "VIX > 25: régimen de miedo; históricamente mejor comprar que vender."}
+  - {series: UNRATE, above: 4.5, text: "Paro > 4,5%: regla de Sahm en marcha (0,5 pp sobre el mínimo de 12 meses)."}
