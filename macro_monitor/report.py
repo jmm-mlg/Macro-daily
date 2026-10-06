@@ -40,7 +40,11 @@ def render_html(rows: list, regime: dict, calendar: list, alerts: list, title: s
             h.append(f"<li><b>{a['name']}</b>: {a['msg']} (valor {_fmt(a['value'])})</li>")
         h.append("</ul>")
 
+    if extra_html:
+        h.append(extra_html)
+
     # Tabla por bloques
+    h.append("<h3>Panel de series</h3>")
     blocks = {}
     for r in rows:
         blocks.setdefault(r["block"], []).append(r)
@@ -62,9 +66,6 @@ def render_html(rows: list, regime: dict, calendar: list, alerts: list, title: s
                      f"<td align='right' style='color:{pcol}'>{pct:.0f}%</td>"
                      f"<td style='color:#666'>{r['date']}</td></tr>")
         h.append("</table>")
-
-    if extra_html:
-        h.append(extra_html)
 
     # Calendario
     if calendar:
@@ -113,3 +114,51 @@ def send_email(subject: str, html: str, text: str):
         s.starttls()
         s.login(user, pwd)
         s.sendmail(user, [a.strip() for a in to.split(",")], msg.as_string())
+
+
+# ---------------------------------------------------------------- bloque de análisis (motor de reglas)
+def _score_color(s):
+    return "#b00" if s <= -2 else "#c60" if s == -1 else "#222" if s == 0 else "#07a"
+
+
+def analysis_html(res: dict) -> str:
+    sc, rg = res["scores"], res["regime"]
+    h = ["<h3>Scores y régimen</h3>"]
+    h.append("<table cellpadding='6' style='border-collapse:collapse'><tr>")
+    for k in ("crecimiento", "inflacion", "liquidez", "riesgo"):
+        s = sc.get(k)
+        if not s:
+            continue
+        h.append(f"<td style='border:1px solid #ddd;min-width:120px'><div style='color:#666;font-size:12px'>{s['label']}</div>"
+                 f"<div style='font-size:24px;font-weight:bold;color:{_score_color(s['score'])}'>{s['score']:+d}</div>"
+                 f"<div style='font-size:12px;color:#666'>{s['trend_label']} · cobertura {s['coverage']}</div></td>")
+    h.append(f"<td style='border:1px solid #ddd;min-width:160px;background:#f7f7f7'><div style='color:#666;font-size:12px'>Tensión del cuadro</div>"
+             f"<div style='font-size:24px;font-weight:bold'>{res['tension']}</div><div style='font-size:12px;color:#666'>liquidez vs riesgo</div></td>")
+    h.append("</tr></table>")
+    h.append(f"<p><b>{rg['label']}</b> — {rg['desc']}</p>")
+
+    # Sectores
+    h.append("<h3>Sesgo por sector</h3>")
+    h.append("<table cellpadding='6' style='border-collapse:collapse;width:100%'>"
+             "<tr style='background:#f0f0f0'><th align='left'>Sector</th><th align='right'>Sesgo</th><th align='left'>Por qué</th><th align='left'>Qué esperar</th></tr>")
+    for s in res["sectors"]:
+        drv = ", ".join(f"{d['label']} ({d['effect']:+.1f})" for d in s["drivers"]) or "sin factores activos"
+        h.append(f"<tr><td><b>{s['label']}</b></td><td align='right' style='font-size:18px;font-weight:bold;color:{_score_color(s['bias'])}'>{s['bias']:+d}</td>"
+                 f"<td style='font-size:12px;color:#555'>{drv}</td><td style='font-size:12px'>{s['behaviour']}</td></tr>")
+    h.append("</table>")
+
+    # Divergencias
+    if res["divergences"]:
+        h.append("<h3>Señales cruzadas</h3><ul>")
+        for d in res["divergences"]:
+            h.append(f"<li><b>{d['a']}</b> p{d['pct_a']:.0f} vs <b>{d['b']}</b> p{d['pct_b']:.0f}: {d['text']}</li>")
+        h.append("</ul>")
+
+    # Disparadores
+    h.append("<h3>Qué vigilar · disparadores</h3><table cellpadding='5' style='border-collapse:collapse;width:100%'>")
+    for t in res["triggers"]:
+        flag = "<span style='color:#b00;font-weight:bold'>ACTIVADO</span>" if t["hit"] else f"a {abs(t['distance']):,.2f}".replace(",", ".")
+        h.append(f"<tr><td style='font-family:monospace;white-space:nowrap'>{t['series']}</td><td style='white-space:nowrap'>{_fmt(t['value'])} / {_fmt(t['threshold'])}</td>"
+                 f"<td style='white-space:nowrap'>{flag}</td><td style='font-size:12px'>{t['text']}</td></tr>")
+    h.append("</table>")
+    return "\n".join(h)
