@@ -1,0 +1,991 @@
+{
+ "series": {
+  "DFF": {
+   "value": 3.88,
+   "chg": 0.25,
+   "pct": 70.1821147050829,
+   "date": "2026-10-05",
+   "name": "Fed Funds efectivo",
+   "block": "Tipos",
+   "unit": "%"
+  },
+  "DGS2": {
+   "value": 4.84,
+   "chg": 0.46999999999999975,
+   "pct": 94.91458085021851,
+   "date": "2026-10-05",
+   "name": "Treasury 2 años",
+   "block": "Tipos",
+   "unit": "%"
+  },
+  "DGS10": {
+   "value": 5.31,
+   "chg": 0.5299999999999994,
+   "pct": 99.96027016289233,
+   "date": "2026-10-05",
+   "name": "Treasury 10 años",
+   "block": "Tipos",
+   "unit": "%"
+  },
+  "T10Y2Y": {
+   "value": 0.48,
+   "chg": 0.07,
+   "pct": 55.6791104050834,
+   "date": "2026-10-06",
+   "name": "Curva 10y-2y",
+   "block": "Tipos",
+   "unit": "pp"
+  },
+  "DFII10": {
+   "value": 2.95,
+   "chg": 0.52,
+   "pct": 99.96027016289233,
+   "date": "2026-10-05",
+   "name": "Tipo real 10 años (TIPS)",
+   "block": "Tipos",
+   "unit": "%"
+  },
+  "T10YIE": {
+   "value": 2.36,
+   "chg": 0.009999999999999787,
+   "pct": 78.15726767275616,
+   "date": "2026-10-06",
+   "name": "Breakeven inflación 10 años",
+   "block": "Tipos",
+   "unit": "%"
+  },
+  "WALCL": {
+   "value": -0.06925318597259533,
+   "chg": -0.08638787470527376,
+   "pct": 43.89312977099237,
+   "date": "2026-09-30",
+   "name": "Balance de la Fed",
+   "block": "Tipos",
+   "unit": "% m/m"
+  },
+  "ECBDFR": {
+   "value": 2.5,
+   "chg": 0.25,
+   "pct": 77.55434782608695,
+   "date": "2026-10-06",
+   "name": "BCE facilidad de depósito",
+   "block": "Tipos",
+   "unit": "%"
+  },
+  "CPIAUCSL": {
+   "value": 3.7129581058388483,
+   "chg": 0.17320667864517691,
+   "pct": 71.02803738317756,
+   "date": "2026-08-01",
+   "name": "IPC general EE.UU.",
+   "block": "Inflación",
+   "unit": "% a/a"
+  },
+  "CPILFESL": {
+   "value": 2.7634613395318253,
+   "chg": -0.02328581756489978,
+   "pct": 42.05607476635514,
+   "date": "2026-08-01",
+   "name": "IPC subyacente EE.UU.",
+   "block": "Inflación",
+   "unit": "% a/a"
+  },
+  "PCEPILFE": {
+   "value": 3.0075959761856064,
+   "chg": 0.024127714115218524,
+   "pct": 61.111111111111114,
+   "date": "2026-08-01",
+   "name": "PCE subyacente (el de la Fed)",
+   "block": "Inflación",
+   "unit": "% a/a"
+  },
+  "PPIFIS": {
+   "value": 5.413622452737954,
+   "chg": 0.609381725985414,
+   "pct": 75.92592592592592,
+   "date": "2026-08-01",
+   "name": "IPP demanda final",
+   "block": "Inflación",
+   "unit": "% a/a"
+  },
+  "CES0500000003": {
+   "value": 3.0245231607629375,
+   "chg": -0.08852981575262486,
+   "pct": 12.844036697247708,
+   "date": "2026-09-01",
+   "name": "Salario medio por hora",
+   "block": "Inflación",
+   "unit": "% a/a"
+  },
+  "CP0000EZ19M086NEST": {
+   "value": 3.226448914558855,
+   "chg": 0.2946579293175322,
+   "pct": 75.92592592592592,
+   "date": "2026-08-01",
+   "name": "IPCA eurozona",
+   "block": "Inflación",
+   "unit": "% a/a"
+  },
+  "PAYEMS": {
+   "value": 29.0,
+   "chg": -104.0,
+   "pct": 11.666666666666666,
+   "date": "2026-09-01",
+   "name": "Nóminas no agrícolas (variación mensual)",
+   "block": "Empleo",
+   "unit": "miles"
+  },
+  "UNRATE": {
+   "value": 4.2,
+   "chg": 0.10000000000000053,
+   "pct": 55.00000000000001,
+   "date": "2026-09-01",
+   "name": "Tasa de paro",
+   "block": "Empleo",
+   "unit": "%"
+  },
+  "ICSA": {
+   "value": 197000.0,
+   "chg": -7000.0,
+   "pct": 1.1428571428571428,
+   "date": "2026-09-26",
+   "name": "Peticiones iniciales de desempleo",
+   "block": "Empleo",
+   "unit": "pers."
+  },
+  "JTSJOL": {
+   "value": 7079.0,
+   "chg": -256.0,
+   "pct": 35.833333333333336,
+   "date": "2026-08-01",
+   "name": "Vacantes JOLTS",
+   "block": "Empleo",
+   "unit": "miles"
+  },
+  "GDPC1": {
+   "value": 2.2202083203100687,
+   "chg": -0.2715680905153173,
+   "pct": 28.205128205128204,
+   "date": "2026-04-01",
+   "name": "PIB real EE.UU.",
+   "block": "Actividad",
+   "unit": "% t/t anual."
+  },
+  "RSAFS": {
+   "value": 1.127425850332675,
+   "chg": 1.5858798234639981,
+   "pct": 83.19327731092437,
+   "date": "2026-08-01",
+   "name": "Ventas minoristas",
+   "block": "Actividad",
+   "unit": "% m/m"
+  },
+  "INDPRO": {
+   "value": 1.4204223973108832,
+   "chg": 0.2904245564174124,
+   "pct": 65.74074074074075,
+   "date": "2026-08-01",
+   "name": "Producción industrial",
+   "block": "Actividad",
+   "unit": "% a/a"
+  },
+  "DGORDER": {
+   "value": -0.07144966046649381,
+   "chg": -0.9413670763858906,
+   "pct": 38.655462184873954,
+   "date": "2026-08-01",
+   "name": "Pedidos bienes duraderos",
+   "block": "Actividad",
+   "unit": "% m/m"
+  },
+  "UMCSENT": {
+   "value": 51.7,
+   "chg": -3.5,
+   "pct": 5.0,
+   "date": "2026-08-01",
+   "name": "Confianza consumidor (Michigan)",
+   "block": "Actividad",
+   "unit": "índice"
+  },
+  "PERMIT": {
+   "value": 1403.0,
+   "chg": -30.0,
+   "pct": 38.333333333333336,
+   "date": "2026-08-01",
+   "name": "Permisos de construcción",
+   "block": "Vivienda",
+   "unit": "miles"
+  },
+  "HOUST": {
+   "value": 1275.0,
+   "chg": -34.0,
+   "pct": 28.333333333333332,
+   "date": "2026-08-01",
+   "name": "Viviendas iniciadas",
+   "block": "Vivienda",
+   "unit": "miles"
+  },
+  "MORTGAGE30US": {
+   "value": 7.28,
+   "chg": 0.6200000000000001,
+   "pct": 98.09523809523809,
+   "date": "2026-10-01",
+   "name": "Hipoteca 30 años",
+   "block": "Vivienda",
+   "unit": "%"
+  },
+  "BAMLH0A0HYM2": {
+   "value": 3.12,
+   "chg": 0.43999999999999995,
+   "pct": 57.39795918367348,
+   "date": "2026-10-05",
+   "name": "Spread High Yield (OAS)",
+   "block": "Crédito",
+   "unit": "%"
+  },
+  "BAMLC0A0CM": {
+   "value": 0.84,
+   "chg": 0.029999999999999916,
+   "pct": 46.61558109833972,
+   "date": "2026-10-05",
+   "name": "Spread Investment Grade (OAS)",
+   "block": "Crédito",
+   "unit": "%"
+  },
+  "NFCI": {
+   "value": -0.548,
+   "chg": 0.009000000000000008,
+   "pct": 33.714285714285715,
+   "date": "2026-09-25",
+   "name": "Condiciones financieras (Chicago Fed)",
+   "block": "Crédito",
+   "unit": "índice"
+  },
+  "^GSPC": {
+   "value": 7818.93017578125,
+   "chg": 100.330078125,
+   "pct": 99.96019108280255,
+   "date": "2026-10-06",
+   "name": "S&P 500",
+   "block": "Mercado",
+   "unit": "puntos"
+  },
+  "^VIX": {
+   "value": 15.220000267028809,
+   "chg": -0.07999992370605469,
+   "pct": 34.95029821073559,
+   "date": "2026-10-07",
+   "name": "VIX",
+   "block": "Mercado",
+   "unit": "índice"
+  },
+  "DX-Y.NYB": {
+   "value": 102.13300323486328,
+   "chg": 2.9729995727539062,
+   "pct": 73.69677676084362,
+   "date": "2026-10-07",
+   "name": "Dólar (DXY)",
+   "block": "Mercado",
+   "unit": "índice"
+  },
+  "CL=F": {
+   "value": 89.77999877929688,
+   "chg": -1.7000045776367188,
+   "pct": 90.68842021488261,
+   "date": "2026-10-07",
+   "name": "Petróleo WTI",
+   "block": "Mercado",
+   "unit": "$/barril"
+  },
+  "HG=F": {
+   "value": 6.630499839782715,
+   "chg": 0.033499717712402344,
+   "pct": 99.48269001193792,
+   "date": "2026-10-07",
+   "name": "Cobre",
+   "block": "Mercado",
+   "unit": "$/lb"
+  },
+  "GC=F": {
+   "value": 4165.2998046875,
+   "chg": -311.30029296875,
+   "pct": 92.51890171110226,
+   "date": "2026-10-07",
+   "name": "Oro",
+   "block": "Mercado",
+   "unit": "$/oz"
+  },
+  "^TNX": {
+   "value": 5.269000053405762,
+   "chg": 0.4850001335144043,
+   "pct": 99.84076433121018,
+   "date": "2026-10-06",
+   "name": "Treasury 10y (mercado)",
+   "block": "Mercado",
+   "unit": "%"
+  }
+ },
+ "analysis": {
+  "date": "2026-10-07",
+  "scores": {
+   "crecimiento": {
+    "label": "Crecimiento",
+    "score": 0,
+    "raw": 0.0,
+    "trend": -0.15,
+    "trend_label": "empeorando",
+    "coverage": "8/8",
+    "detail": [
+     {
+      "series": "ICSA",
+      "level": -1,
+      "trend": 0,
+      "signal": 1,
+      "weight": 3,
+      "value": 197000.0,
+      "pct": 1.1428571428571428
+     },
+     {
+      "series": "PAYEMS",
+      "level": -1,
+      "trend": -1,
+      "signal": -2,
+      "weight": 2,
+      "value": 29.0,
+      "pct": 11.666666666666666
+     },
+     {
+      "series": "RSAFS",
+      "level": 1,
+      "trend": 1,
+      "signal": 2,
+      "weight": 2,
+      "value": 1.127425850332675,
+      "pct": 83.19327731092437
+     },
+     {
+      "series": "DGORDER",
+      "level": 0,
+      "trend": -1,
+      "signal": -1,
+      "weight": 2,
+      "value": -0.07144966046649381,
+      "pct": 38.655462184873954
+     },
+     {
+      "series": "INDPRO",
+      "level": 0,
+      "trend": 1,
+      "signal": 1,
+      "weight": 1,
+      "value": 1.4204223973108832,
+      "pct": 65.74074074074075
+     },
+     {
+      "series": "GDPC1",
+      "level": 0,
+      "trend": 0,
+      "signal": 0,
+      "weight": 1,
+      "value": 2.2202083203100687,
+      "pct": 28.205128205128204
+     },
+     {
+      "series": "PERMIT",
+      "level": 0,
+      "trend": 0,
+      "signal": 0,
+      "weight": 1,
+      "value": 1403.0,
+      "pct": 38.333333333333336
+     },
+     {
+      "series": "UMCSENT",
+      "level": -1,
+      "trend": -1,
+      "signal": -2,
+      "weight": 1,
+      "value": 51.7,
+      "pct": 5.0
+     }
+    ]
+   },
+   "inflacion": {
+    "label": "Inflación",
+    "score": 1,
+    "raw": 0.85,
+    "trend": 0.31,
+    "trend_label": "subiendo",
+    "coverage": "7/7",
+    "detail": [
+     {
+      "series": "CPILFESL",
+      "level": 0,
+      "trend": 0,
+      "signal": 0,
+      "weight": 3,
+      "value": 2.7634613395318253,
+      "pct": 42.05607476635514
+     },
+     {
+      "series": "PCEPILFE",
+      "level": 1,
+      "trend": 0,
+      "signal": 1,
+      "weight": 3,
+      "value": 3.0075959761856064,
+      "pct": 61.111111111111114
+     },
+     {
+      "series": "CPIAUCSL",
+      "level": 1,
+      "trend": 1,
+      "signal": 2,
+      "weight": 1,
+      "value": 3.7129581058388483,
+      "pct": 71.02803738317756
+     },
+     {
+      "series": "PPIFIS",
+      "level": 1,
+      "trend": 1,
+      "signal": 2,
+      "weight": 2,
+      "value": 5.413622452737954,
+      "pct": 75.92592592592592
+     },
+     {
+      "series": "CES0500000003",
+      "level": 0,
+      "trend": 0,
+      "signal": 0,
+      "weight": 2,
+      "value": 3.0245231607629375,
+      "pct": 12.844036697247708
+     },
+     {
+      "series": "T10YIE",
+      "level": 0,
+      "trend": 0,
+      "signal": 0,
+      "weight": 1,
+      "value": 2.36,
+      "pct": 78.15726767275616
+     },
+     {
+      "series": "CP0000EZ19M086NEST",
+      "level": 1,
+      "trend": 1,
+      "signal": 2,
+      "weight": 1,
+      "value": 3.226448914558855,
+      "pct": 75.92592592592592
+     }
+    ]
+   },
+   "liquidez": {
+    "label": "Liquidez / tipos",
+    "score": -1,
+    "raw": -0.75,
+    "trend": -0.67,
+    "trend_label": "empeorando",
+    "coverage": "6/6",
+    "detail": [
+     {
+      "series": "DFII10",
+      "level": 1,
+      "trend": 1,
+      "signal": -2,
+      "weight": 3,
+      "value": 2.95,
+      "pct": 99.96027016289233
+     },
+     {
+      "series": "NFCI",
+      "level": -1,
+      "trend": 0,
+      "signal": 1,
+      "weight": 3,
+      "value": -0.548,
+      "pct": 33.714285714285715
+     },
+     {
+      "series": "DGS10",
+      "level": 1,
+      "trend": 1,
+      "signal": -2,
+      "weight": 2,
+      "value": 5.31,
+      "pct": 99.96027016289233
+     },
+     {
+      "series": "BAMLH0A0HYM2",
+      "level": -1,
+      "trend": 1,
+      "signal": 0,
+      "weight": 2,
+      "value": 3.12,
+      "pct": 57.39795918367348
+     },
+     {
+      "series": "WALCL",
+      "level": 0,
+      "trend": 0,
+      "signal": 0,
+      "weight": 1,
+      "value": -0.06925318597259533,
+      "pct": 43.89312977099237
+     },
+     {
+      "series": "MORTGAGE30US",
+      "level": 1,
+      "trend": 1,
+      "signal": -2,
+      "weight": 1,
+      "value": 7.28,
+      "pct": 98.09523809523809
+     }
+    ]
+   },
+   "riesgo": {
+    "label": "Apetito por el riesgo",
+    "score": 0,
+    "raw": 0.3,
+    "trend": 0.1,
+    "trend_label": "estable",
+    "coverage": "6/6",
+    "detail": [
+     {
+      "series": "^VIX",
+      "level": 0,
+      "trend": 0,
+      "signal": 0,
+      "weight": 3,
+      "value": 15.220000267028809,
+      "pct": 34.95029821073559
+     },
+     {
+      "series": "BAMLH0A0HYM2",
+      "level": 0,
+      "trend": 1,
+      "signal": -1,
+      "weight": 2,
+      "value": 3.12,
+      "pct": 57.39795918367348
+     },
+     {
+      "series": "^GSPC",
+      "level": 1,
+      "trend": 1,
+      "signal": 2,
+      "weight": 2,
+      "value": 7818.93017578125,
+      "pct": 99.96019108280255
+     },
+     {
+      "series": "HG=F",
+      "level": 1,
+      "trend": 0,
+      "signal": 1,
+      "weight": 1,
+      "value": 6.630499839782715,
+      "pct": 99.48269001193792
+     },
+     {
+      "series": "GC=F",
+      "level": 1,
+      "trend": -1,
+      "signal": 0,
+      "weight": 1,
+      "value": 4165.2998046875,
+      "pct": 92.51890171110226
+     },
+     {
+      "series": "T10Y2Y",
+      "level": 0,
+      "trend": 0,
+      "signal": 0,
+      "weight": 1,
+      "value": 0.48,
+      "pct": 55.6791104050834
+     }
+    ]
+   }
+  },
+  "regime": {
+   "key": "mixto",
+   "growth": 0,
+   "inflation": 0,
+   "label": "Mixto / transición",
+   "desc": "sin señal clara; sesgos solo por factores",
+   "g": 0,
+   "i": 1
+  },
+  "tension": "media",
+  "factors": {
+   "duracion": {
+    "signal": 1,
+    "label": "Tipo real alto",
+    "value": 2.95,
+    "pct": 99.96027016289233,
+    "chg": 0.52,
+    "why": "Activos de larga duración (REITs, utilities, growth) descuentan a tipo real."
+   },
+   "curva": {
+    "signal": 0,
+    "label": "Curva empinando",
+    "value": 0.48,
+    "pct": 55.6791104050834,
+    "chg": 0.07,
+    "why": "Pendiente = margen de intermediación bancaria."
+   },
+   "petroleo": {
+    "signal": 1,
+    "label": "Petróleo caro",
+    "value": 89.77999877929688,
+    "pct": 90.68842021488261,
+    "chg": -1.7000045776367188,
+    "why": "Transferencia de renta de consumidores/transporte a productores."
+   },
+   "dolar": {
+    "signal": 0,
+    "label": "Dólar fuerte",
+    "value": 102.13300323486328,
+    "pct": 73.69677676084362,
+    "chg": 2.9729995727539062,
+    "why": "Penaliza beneficios exteriores y materias primas en USD."
+   },
+   "credito": {
+    "signal": 0,
+    "label": "Crédito tensándose",
+    "value": 3.12,
+    "pct": 57.39795918367348,
+    "chg": 0.43999999999999995,
+    "why": "Sectores apalancados sufren primero."
+   },
+   "cobre": {
+    "signal": 1,
+    "label": "Cobre caro",
+    "value": 6.630499839782715,
+    "pct": 99.48269001193792,
+    "chg": 0.033499717712402344,
+    "why": "Demanda industrial y de construcción global."
+   },
+   "hipoteca": {
+    "signal": 1,
+    "label": "Hipoteca cara",
+    "value": 7.28,
+    "pct": 98.09523809523809,
+    "chg": 0.6200000000000001,
+    "why": "Vivienda, mejora del hogar, constructoras."
+   }
+  },
+  "sectors": [
+   {
+    "sector": "energia",
+    "label": "Energía",
+    "bias": 1,
+    "base": 0,
+    "adjustment": 1.0,
+    "drivers": [
+     {
+      "factor": "petroleo",
+      "label": "Petróleo caro",
+      "effect": 1
+     }
+    ],
+    "behaviour": ""
+   },
+   {
+    "sector": "financiero",
+    "label": "Financiero",
+    "bias": 0,
+    "base": 0,
+    "adjustment": 0.0,
+    "drivers": [],
+    "behaviour": ""
+   },
+   {
+    "sector": "industriales",
+    "label": "Industriales",
+    "bias": 0,
+    "base": 0,
+    "adjustment": 0.0,
+    "drivers": [
+     {
+      "factor": "duracion",
+      "label": "Tipo real alto",
+      "effect": -0.5
+     },
+     {
+      "factor": "petroleo",
+      "label": "Petróleo caro",
+      "effect": -0.5
+     },
+     {
+      "factor": "cobre",
+      "label": "Cobre caro",
+      "effect": 1
+     }
+    ],
+    "behaviour": ""
+   },
+   {
+    "sector": "materiales",
+    "label": "Materiales",
+    "bias": 0,
+    "base": 0,
+    "adjustment": 0.0,
+    "drivers": [
+     {
+      "factor": "petroleo",
+      "label": "Petróleo caro",
+      "effect": -0.5
+     },
+     {
+      "factor": "cobre",
+      "label": "Cobre caro",
+      "effect": 1
+     },
+     {
+      "factor": "hipoteca",
+      "label": "Hipoteca cara",
+      "effect": -0.5
+     }
+    ],
+    "behaviour": ""
+   },
+   {
+    "sector": "salud",
+    "label": "Salud",
+    "bias": 0,
+    "base": 0,
+    "adjustment": -0.5,
+    "drivers": [
+     {
+      "factor": "duracion",
+      "label": "Tipo real alto",
+      "effect": -0.5
+     }
+    ],
+    "behaviour": ""
+   },
+   {
+    "sector": "basico",
+    "label": "Consumo básico",
+    "bias": -1,
+    "base": 0,
+    "adjustment": -1.0,
+    "drivers": [
+     {
+      "factor": "duracion",
+      "label": "Tipo real alto",
+      "effect": -0.5
+     },
+     {
+      "factor": "petroleo",
+      "label": "Petróleo caro",
+      "effect": -0.5
+     }
+    ],
+    "behaviour": ""
+   },
+   {
+    "sector": "comunicacion",
+    "label": "Servicios de comunicación",
+    "bias": -1,
+    "base": 0,
+    "adjustment": -1.0,
+    "drivers": [
+     {
+      "factor": "duracion",
+      "label": "Tipo real alto",
+      "effect": -1
+     }
+    ],
+    "behaviour": ""
+   },
+   {
+    "sector": "tecnologia",
+    "label": "Tecnología de la información",
+    "bias": -1,
+    "base": 0,
+    "adjustment": -1.0,
+    "drivers": [
+     {
+      "factor": "duracion",
+      "label": "Tipo real alto",
+      "effect": -1
+     }
+    ],
+    "behaviour": ""
+   },
+   {
+    "sector": "utilities",
+    "label": "Utilities",
+    "bias": -1,
+    "base": 0,
+    "adjustment": -1.0,
+    "drivers": [
+     {
+      "factor": "duracion",
+      "label": "Tipo real alto",
+      "effect": -1
+     }
+    ],
+    "behaviour": ""
+   },
+   {
+    "sector": "discrecional",
+    "label": "Consumo discrecional",
+    "bias": -2,
+    "base": 0,
+    "adjustment": -2.5,
+    "drivers": [
+     {
+      "factor": "duracion",
+      "label": "Tipo real alto",
+      "effect": -0.5
+     },
+     {
+      "factor": "petroleo",
+      "label": "Petróleo caro",
+      "effect": -1
+     },
+     {
+      "factor": "hipoteca",
+      "label": "Hipoteca cara",
+      "effect": -1
+     }
+    ],
+    "behaviour": ""
+   },
+   {
+    "sector": "inmobiliario",
+    "label": "Inmobiliario",
+    "bias": -2,
+    "base": 0,
+    "adjustment": -2.0,
+    "drivers": [
+     {
+      "factor": "duracion",
+      "label": "Tipo real alto",
+      "effect": -1
+     },
+     {
+      "factor": "hipoteca",
+      "label": "Hipoteca cara",
+      "effect": -1
+     }
+    ],
+    "behaviour": ""
+   }
+  ],
+  "divergences": [
+   {
+    "a": "HG=F",
+    "b": "DGORDER",
+    "gap": 40,
+    "text": "El cobre descuenta más actividad industrial de la que muestran los pedidos de bienes duraderos.",
+    "pct_a": 99.48269001193792,
+    "pct_b": 38.655462184873954,
+    "kind": "divergencia"
+   },
+   {
+    "a": "RSAFS",
+    "b": "UMCSENT",
+    "gap": 40,
+    "text": "El consumidor gasta pero no confía: consumo sensible a precios y a crédito.",
+    "pct_a": 83.19327731092437,
+    "pct_b": 5.0,
+    "kind": "divergencia"
+   },
+   {
+    "a": "^GSPC",
+    "b": "DFII10",
+    "gap": -30,
+    "same_direction": true,
+    "text": "Bolsa y tipo real en percentiles altos a la vez: la prima de riesgo se comprime.",
+    "pct_a": 99.96019108280255,
+    "pct_b": 99.96027016289233,
+    "kind": "coincidencia"
+   },
+   {
+    "a": "PAYEMS",
+    "b": "ICSA",
+    "gap": 50,
+    "invert_b": true,
+    "text": "Nóminas débiles con peticiones bajas: las empresas dejan de contratar, no despiden.",
+    "pct_a": 11.666666666666666,
+    "pct_b": 98.85714285714286,
+    "kind": "divergencia"
+   }
+  ],
+  "triggers": [
+   {
+    "series": "DGS10",
+    "threshold": 5.5,
+    "value": 5.31,
+    "hit": false,
+    "distance": 0.19,
+    "text": "Treasury 10 años > 5,50%: compite de frente con un earnings yield del 4%."
+   },
+   {
+    "series": "UNRATE",
+    "threshold": 4.5,
+    "value": 4.2,
+    "hit": false,
+    "distance": 0.3,
+    "text": "Paro > 4,5%: regla de Sahm en marcha (0,5 pp sobre el mínimo de 12 meses)."
+   },
+   {
+    "series": "ICSA",
+    "threshold": 240000,
+    "value": 197000.0,
+    "hit": false,
+    "distance": 43000.0,
+    "text": "Peticiones > 240k: las empresas empiezan a despedir."
+   },
+   {
+    "series": "BAMLH0A0HYM2",
+    "threshold": 4.0,
+    "value": 3.12,
+    "hit": false,
+    "distance": 0.88,
+    "text": "HY > 400 pb: el crédito suele avisar 4-8 semanas antes que la bolsa."
+   },
+   {
+    "series": "CPIAUCSL",
+    "threshold": 3.0,
+    "value": 3.7129581058388483,
+    "hit": false,
+    "distance": 0.71,
+    "text": "IPC general < 3%: abre la puerta a recortes y alivia el tipo real."
+   },
+   {
+    "series": "^VIX",
+    "threshold": 25,
+    "value": 15.220000267028809,
+    "hit": false,
+    "distance": 9.78,
+    "text": "VIX > 25: régimen de miedo; históricamente mejor comprar que vender."
+   },
+   {
+    "series": "T10Y2Y",
+    "threshold": 0,
+    "value": 0.48,
+    "hit": false,
+    "distance": 0.48,
+    "text": "Curva invertida de nuevo: el mercado vuelve a descontar recesión."
+   },
+   {
+    "series": "PAYEMS",
+    "threshold": 0,
+    "value": 29.0,
+    "hit": false,
+    "distance": 29.0,
+    "text": "Primera lectura negativa de nóminas: giro de Reflación a Estanflación."
+   }
+  ]
+ }
+}
