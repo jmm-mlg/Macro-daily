@@ -30,6 +30,11 @@ y manda el resumen por email. Fuentes gratuitas: FRED (St. Louis Fed) y Yahoo Fi
   régimen y sesgos por sector) y `data/latest.json`, commiteados al repo. Es la base del dashboard y
   de la validación de los sesgos contra los ETFs sectoriales.
 
+- **Nota del comité** (`macro_monitor/narrativa.py`): Groq (`gpt-oss-120b`, respaldo `20b`) redacta
+  cada día una nota de cinco secciones (qué ha cambiado, lectura del cuadro, esta semana, para la
+  cartera, qué cambiaría la conclusión) a partir ÚNICAMENTE del JSON del motor. Se archiva en
+  `data/narrativas.md`. Sin clave, el informe sale sin ella.
+
 ## Puesta en marcha
 
 1. Crea el repo y sube estos archivos.
@@ -39,6 +44,7 @@ y manda el resumen por email. Fuentes gratuitas: FRED (St. Louis Fed) y Yahoo Fi
 | Secret | Valor |
 |---|---|
 | `FRED_API_KEY` | tu clave de FRED |
+| `GROQ_API_KEY` | opcional; clave de console.groq.com para la "Nota del comité" (narrativa LLM) |
 | `FINNHUB_API_KEY` | opcional; clave gratuita de finnhub.io (hora pre/post mercado de los resultados EE.UU.) |
 | `SMTP_HOST` | `smtp.gmail.com` (u otro) |
 | `SMTP_PORT` | `587` |
@@ -93,7 +99,6 @@ nombre), su hora ET e importancia (🔴🟠⚪). Las reuniones de bancos central
 
 - `run.py validar`: comparar sesgos históricos con el retorno real de XLF/XLE/XLK… a 1 y 3 meses.
 - Dashboard estático en GitHub Pages leyendo `data/latest.json` y `data/scores.csv`.
-- Narrativa Groq a partir de `latest.json`.
 - V2: webhook Apps Script para eventos instantáneos en el calendario principal (si hace falta).
 - V3: escribir cada nota en la base "Temas macro" de Notion vía API.
 - V4: expectativa propia (media móvil) como proxy de consenso para medir sorpresa.
