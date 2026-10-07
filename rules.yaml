@@ -171,56 +171,67 @@ sector_behaviour:
     goldilocks: "Crédito sano, comisiones; sin viento de cola de tipos."
     estanflacion: "Morosidad sube con la curva aún alta: lo peor para el margen de riesgo."
     desinflacion: "Curva plana o invertida y provisiones altas; esperar al pivot."
+    mixto: "Sin viento de régimen: manda la curva (margen) y el crédito (provisiones)."
   energia:
     reflacion: "Cash flow fuerte y recompras; muy sensible a un giro del crudo."
     goldilocks: "Sin impulso: la demanda crece pero el precio no."
     estanflacion: "Cobertura clásica; única fuente de beneficios al alza."
     desinflacion: "Caída de demanda y precio; evitar."
+    mixto: "Depende del crudo, no del ciclo: seguir inventarios y OPEP."
   tecnologia:
     reflacion: "Múltiplos presionados por el tipo real; solo aguanta quien tiene pedidos reales (semis)."
     goldilocks: "El mejor entorno: crecimiento con tasa de descuento baja."
     estanflacion: "Doble golpe: múltiplo y demanda empresarial."
     desinflacion: "Calidad con caja resiste; sin beneficios sufre hasta el pivot."
+    mixto: "El tipo real decide el múltiplo; los beneficios deciden quién aguanta."
   utilities:
     reflacion: "Compiten con el bono; el dividendo deja de ser atractivo."
     goldilocks: "Rezagadas frente al mercado."
     estanflacion: "Refugio parcial, pero los costes de energía aprietan."
     desinflacion: "Mejor momento: caen los tipos, demanda estable."
+    mixto: "Rehén del bono largo: solo mejora si el 10 años cede."
   inmobiliario:
     reflacion: "Peor sitio: duración, refinanciaciones caras, crédito tensando."
     goldilocks: "Bien si los tipos bajan; logística y data centers lideran."
     estanflacion: "Caen rentas reales y suben costes de deuda."
     desinflacion: "Primeros en rebotar cuando el mercado anticipa recortes."
+    mixto: "Duración y refinanciaciones: el sector más sensible a cada dato de tipos."
   basico:
     reflacion: "IPP > IPC comprime márgenes a quien no sube precios; vigilar volúmenes."
     goldilocks: "Rezagado; solo valor defensivo."
     estanflacion: "Pricing power es la clave: Nestlé/P&G sí, marcas blancas no."
     desinflacion: "Refugio clásico con dividendo."
+    mixto: "Defensivo neutral; vigilar si IPP > IPC comprime márgenes."
   discrecional:
     reflacion: "Renta baja retrocede (restauración rápida, retail de descuento lo anuncian), renta alta y lujo aguantan."
     goldilocks: "Consumo fuerte con crédito barato: el mejor entorno."
     estanflacion: "El peor: costes arriba, demanda abajo."
     desinflacion: "Demanda débil; solo descuento y valor."
+    mixto: "Consumo en disputa: ventas fuertes pero confianza baja; sensible a petróleo e hipotecas."
   industriales:
     reflacion: "Favorece a quien tiene pricing power y pedidos; penaliza transporte por combustible."
     goldilocks: "Capex en expansión; automatización y equipos eléctricos lideran."
     estanflacion: "Márgenes apretados y pedidos cayendo."
     desinflacion: "Pedidos en mínimos; esperar a la curva."
+    mixto: "Pedidos vs. materias primas: si el cobre tiene razón, bien; si los pedidos, mal."
   materiales:
     reflacion: "Mineras bien; químicas con márgenes apretados si el gas sube."
     goldilocks: "Demanda estable sin presión de precios: neutral."
     estanflacion: "Materias primas suben pero la demanda final no."
     desinflacion: "Lo peor: demanda y precio caen a la vez."
+    mixto: "Mineras siguen al cobre; químicas al gas y al dólar."
   salud:
     reflacion: "Neutral; comportamiento idiosincrático (pipelines, regulación)."
     goldilocks: "Neutral."
     estanflacion: "Refugio: demanda inelástica."
     desinflacion: "Refugio con crecimiento propio."
+    mixto: "Al margen del cuadro; comportamiento por noticias propias."
   comunicacion:
     reflacion: "Publicidad resiste si el consumo resiste; múltiplos presionados."
     goldilocks: "Crecimiento de ingresos con múltiplos expandiendo."
     estanflacion: "Publicidad es lo primero que se recorta."
     desinflacion: "Telecos defensivas; medios cíclicos sufren."
+    mixto: "Múltiplos sensibles al tipo real; publicidad sensible al consumo."
 
 # ---------- Divergencias: pares que deberían moverse juntos ----------
 # Avisa si |percentil_a - percentil_b| > gap (en puntos de percentil)
