@@ -66,8 +66,8 @@
   "ECBDFR": {
    "value": 2.5,
    "chg": 0.25,
-   "pct": 77.55434782608695,
-   "date": "2026-10-06",
+   "pct": 77.53327900027166,
+   "date": "2026-10-07",
    "name": "BCE facilidad de depósito",
    "block": "Tipos",
    "unit": "%"
@@ -271,45 +271,45 @@
    "unit": "puntos"
   },
   "^VIX": {
-   "value": 15.220000267028809,
-   "chg": -0.07999992370605469,
-   "pct": 34.95029821073559,
+   "value": 15.979999542236328,
+   "chg": 0.6799993515014648,
+   "pct": 41.27236580516899,
    "date": "2026-10-07",
    "name": "VIX",
    "block": "Mercado",
    "unit": "índice"
   },
   "DX-Y.NYB": {
-   "value": 102.13300323486328,
-   "chg": 2.9729995727539062,
-   "pct": 73.69677676084362,
+   "value": 102.39900207519531,
+   "chg": 3.2389984130859375,
+   "pct": 74.73139673696777,
    "date": "2026-10-07",
    "name": "Dólar (DXY)",
    "block": "Mercado",
    "unit": "índice"
   },
   "CL=F": {
-   "value": 89.77999877929688,
-   "chg": -1.7000045776367188,
-   "pct": 90.68842021488261,
+   "value": 90.08000183105469,
+   "chg": -1.4000015258789062,
+   "pct": 90.8475925189017,
    "date": "2026-10-07",
    "name": "Petróleo WTI",
    "block": "Mercado",
    "unit": "$/barril"
   },
   "HG=F": {
-   "value": 6.630499839782715,
-   "chg": 0.033499717712402344,
-   "pct": 99.48269001193792,
+   "value": 6.650000095367432,
+   "chg": 0.05299997329711914,
+   "pct": 99.56227616394747,
    "date": "2026-10-07",
    "name": "Cobre",
    "block": "Mercado",
    "unit": "$/lb"
   },
   "GC=F": {
-   "value": 4165.2998046875,
-   "chg": -311.30029296875,
-   "pct": 92.51890171110226,
+   "value": 4143.2001953125,
+   "chg": -333.39990234375,
+   "pct": 92.1607640270593,
    "date": "2026-10-07",
    "name": "Oro",
    "block": "Mercado",
@@ -561,8 +561,8 @@
       "trend": 0,
       "signal": 0,
       "weight": 3,
-      "value": 15.220000267028809,
-      "pct": 34.95029821073559
+      "value": 15.979999542236328,
+      "pct": 41.27236580516899
      },
      {
       "series": "BAMLH0A0HYM2",
@@ -588,8 +588,8 @@
       "trend": 0,
       "signal": 1,
       "weight": 1,
-      "value": 6.630499839782715,
-      "pct": 99.48269001193792
+      "value": 6.650000095367432,
+      "pct": 99.56227616394747
      },
      {
       "series": "GC=F",
@@ -597,8 +597,8 @@
       "trend": -1,
       "signal": 0,
       "weight": 1,
-      "value": 4165.2998046875,
-      "pct": 92.51890171110226
+      "value": 4143.2001953125,
+      "pct": 92.1607640270593
      },
      {
       "series": "T10Y2Y",
@@ -642,17 +642,17 @@
    "petroleo": {
     "signal": 1,
     "label": "Petróleo caro",
-    "value": 89.77999877929688,
-    "pct": 90.68842021488261,
-    "chg": -1.7000045776367188,
+    "value": 90.08000183105469,
+    "pct": 90.8475925189017,
+    "chg": -1.4000015258789062,
     "why": "Transferencia de renta de consumidores/transporte a productores."
    },
    "dolar": {
     "signal": 0,
     "label": "Dólar fuerte",
-    "value": 102.13300323486328,
-    "pct": 73.69677676084362,
-    "chg": 2.9729995727539062,
+    "value": 102.39900207519531,
+    "pct": 74.73139673696777,
+    "chg": 3.2389984130859375,
     "why": "Penaliza beneficios exteriores y materias primas en USD."
    },
    "credito": {
@@ -666,9 +666,9 @@
    "cobre": {
     "signal": 1,
     "label": "Cobre caro",
-    "value": 6.630499839782715,
-    "pct": 99.48269001193792,
-    "chg": 0.033499717712402344,
+    "value": 6.650000095367432,
+    "pct": 99.56227616394747,
+    "chg": 0.05299997329711914,
     "why": "Demanda industrial y de construcción global."
    },
    "hipoteca": {
@@ -694,7 +694,7 @@
       "effect": 1
      }
     ],
-    "behaviour": ""
+    "behaviour": "Depende del crudo, no del ciclo: seguir inventarios y OPEP."
    },
    {
     "sector": "financiero",
@@ -703,7 +703,7 @@
     "base": 0,
     "adjustment": 0.0,
     "drivers": [],
-    "behaviour": ""
+    "behaviour": "Sin viento de régimen: manda la curva (margen) y el crédito (provisiones)."
    },
    {
     "sector": "industriales",
@@ -728,7 +728,7 @@
       "effect": 1
      }
     ],
-    "behaviour": ""
+    "behaviour": "Pedidos vs. materias primas: si el cobre tiene razón, bien; si los pedidos, mal."
    },
    {
     "sector": "materiales",
@@ -753,7 +753,7 @@
       "effect": -0.5
      }
     ],
-    "behaviour": ""
+    "behaviour": "Mineras siguen al cobre; químicas al gas y al dólar."
    },
    {
     "sector": "salud",
@@ -768,7 +768,7 @@
       "effect": -0.5
      }
     ],
-    "behaviour": ""
+    "behaviour": "Al margen del cuadro; comportamiento por noticias propias."
    },
    {
     "sector": "basico",
@@ -788,7 +788,7 @@
       "effect": -0.5
      }
     ],
-    "behaviour": ""
+    "behaviour": "Defensivo neutral; vigilar si IPP > IPC comprime márgenes."
    },
    {
     "sector": "comunicacion",
@@ -803,7 +803,7 @@
       "effect": -1
      }
     ],
-    "behaviour": ""
+    "behaviour": "Múltiplos sensibles al tipo real; publicidad sensible al consumo."
    },
    {
     "sector": "tecnologia",
@@ -818,7 +818,7 @@
       "effect": -1
      }
     ],
-    "behaviour": ""
+    "behaviour": "El tipo real decide el múltiplo; los beneficios deciden quién aguanta."
    },
    {
     "sector": "utilities",
@@ -833,7 +833,7 @@
       "effect": -1
      }
     ],
-    "behaviour": ""
+    "behaviour": "Rehén del bono largo: solo mejora si el 10 años cede."
    },
    {
     "sector": "discrecional",
@@ -858,7 +858,7 @@
       "effect": -1
      }
     ],
-    "behaviour": ""
+    "behaviour": "Consumo en disputa: ventas fuertes pero confianza baja; sensible a petróleo e hipotecas."
    },
    {
     "sector": "inmobiliario",
@@ -878,7 +878,7 @@
       "effect": -1
      }
     ],
-    "behaviour": ""
+    "behaviour": "Duración y refinanciaciones: el sector más sensible a cada dato de tipos."
    }
   ],
   "divergences": [
@@ -887,7 +887,7 @@
     "b": "DGORDER",
     "gap": 40,
     "text": "El cobre descuenta más actividad industrial de la que muestran los pedidos de bienes duraderos.",
-    "pct_a": 99.48269001193792,
+    "pct_a": 99.56227616394747,
     "pct_b": 38.655462184873954,
     "kind": "divergencia"
    },
@@ -917,7 +917,7 @@
     "invert_b": true,
     "text": "Nóminas débiles con peticiones bajas: las empresas dejan de contratar, no despiden.",
     "pct_a": 11.666666666666666,
-    "pct_b": 98.85714285714286,
+    "pct_b": 1.1428571428571428,
     "kind": "divergencia"
    }
   ],
@@ -965,9 +965,9 @@
    {
     "series": "^VIX",
     "threshold": 25,
-    "value": 15.220000267028809,
+    "value": 15.979999542236328,
     "hit": false,
-    "distance": 9.78,
+    "distance": 9.02,
     "text": "VIX > 25: régimen de miedo; históricamente mejor comprar que vender."
    },
    {
