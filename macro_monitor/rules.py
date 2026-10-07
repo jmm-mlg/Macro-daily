@@ -149,14 +149,15 @@ def compute_divergences(rows: dict, rules: dict) -> list:
         if a is None or b is None or a.get("pct") is None or b.get("pct") is None:
             continue
         pa, pb = a["pct"], b["pct"]
+        pb_shown = pb
         if d.get("invert_b"):
             pb = 100 - pb
         if d.get("same_direction"):
             # aviso cuando AMBOS están en percentil extremo alto (gap negativo = umbral de proximidad)
             if pa >= 85 and pb >= 85:
-                out.append({**d, "pct_a": pa, "pct_b": pb, "kind": "coincidencia"})
+                out.append({**d, "pct_a": pa, "pct_b": pb_shown, "kind": "coincidencia"})
         elif abs(pa - pb) > d["gap"]:
-            out.append({**d, "pct_a": pa, "pct_b": pb, "kind": "divergencia"})
+            out.append({**d, "pct_a": pa, "pct_b": pb_shown, "kind": "divergencia"})
     return out
 
 
