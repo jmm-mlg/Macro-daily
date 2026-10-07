@@ -230,3 +230,9 @@ calendar:
 # ---------- 9. Empresas (watchlist.yaml) ----------
 empresas:
   days_ahead: 60     # horizonte de resultados/ex-dividendo en el calendario
+
+# ---------- 10. Capa micro (watchlist.yaml) ----------
+micro:
+  scope: bellwethers   # a diario: bellwethers + extra (~40 empresas, ~4 min)
+  full_weekday: 0      # día de la semana (0 = lunes) en que se procesa toda la watchlist (~15 min)
+  days: 7              # ventana de 8-K y discursos
