@@ -35,6 +35,13 @@ y manda el resumen por email. Fuentes gratuitas: FRED (St. Louis Fed) y Yahoo Fi
   cartera, qué cambiaría la conclusión) a partir ÚNICAMENTE del JSON del motor. Se archiva en
   `data/narrativas.md`. Sin clave, el informe sale sin ella.
 
+- **Capa micro** (`macro_monitor/micro.py`): por empresa de la watchlist, revisiones de estimaciones
+  de analistas (yfinance), hechos relevantes 8-K con su tipo (SEC EDGAR), operaciones de insiders Form 4
+  con detección de "cluster buying" (3+ compradores en 30 días), y discursos/comunicados de Fed y BCE
+  clasificados halcón/paloma por Groq. Agrega un pulso por sector (amplitud de revisiones) y marca
+  **conflictos** donde el sesgo macro y los analistas discrepan. Bellwethers a diario, toda la lista los lunes.
+  Europa: revisiones sí, 8-K/insiders no (no hay equivalente a EDGAR).
+
 ## Puesta en marcha
 
 1. Crea el repo y sube estos archivos.
@@ -45,6 +52,7 @@ y manda el resumen por email. Fuentes gratuitas: FRED (St. Louis Fed) y Yahoo Fi
 |---|---|
 | `FRED_API_KEY` | tu clave de FRED |
 | `GROQ_API_KEY` | opcional; clave de console.groq.com para la "Nota del comité" (narrativa LLM) |
+| `EDGAR_USER_AGENT` | opcional pero recomendado; la SEC pide identificarse: `"Nombre email@dominio"` |
 | `FINNHUB_API_KEY` | opcional; clave gratuita de finnhub.io (hora pre/post mercado de los resultados EE.UU.) |
 | `SMTP_HOST` | `smtp.gmail.com` (u otro) |
 | `SMTP_PORT` | `587` |
