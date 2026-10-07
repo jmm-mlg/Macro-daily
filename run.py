@@ -5,6 +5,7 @@ macro-monitor — rutina principal.
   python run.py event     -> solo series headline publicadas HOY; email solo si hay novedad
   python run.py calendar  -> regenera docs/macro.ics (publicaciones FRED + FOMC/BCE)
   python run.py empresas  -> regenera docs/empresas.ics y empresas-todas.ics (resultados, ex-dividendo, mercado)
+  python run.py micro     -> capa micro (revisiones, 8-K, insiders, bancos centrales) -> data/micro.json
   python run.py daily --no-email   -> imprime en consola, no envía
 """
 import sys
@@ -13,7 +14,7 @@ import datetime as dt
 import pathlib
 import yaml
 
-from macro_monitor import fetch, analyze, report, calendar as cal_mod, empresas, rules, narrativa
+from macro_monitor import fetch, analyze, report, calendar as cal_mod, empresas, rules, narrativa, micro
 
 ROOT = pathlib.Path(__file__).parent
 OUT = ROOT / "output"
@@ -113,17 +114,32 @@ def main():
         end7 = dt.date.today() + dt.timedelta(days=7)
         week_events = [e for e in week_events if e["date"] <= end7]
 
+        # Capa micro: bellwethers a diario, toda la watchlist el día configurado (por defecto lunes)
+        micro_html, micro_data, confl = "", None, []
+        try:
+            mcfg = cfg.get("micro", {})
+            scope = "all" if dt.date.today().weekday() == mcfg.get("full_weekday", 0) else mcfg.get("scope", "bellwethers")
+            micro_data = micro.run(scope, mcfg.get("days", 7))
+            micro.save(micro_data)
+            confl = micro.conflicts(micro_data, res["sectors"])
+            micro_html = micro.to_html(micro_data, confl)
+        except Exception as e:  # noqa: BLE001
+            print(f"(micro: {e})")
+
         # Narrativa LLM: va la primera; si falla, el informe sale sin ella
         nar_html, nar_md = "", None
         try:
-            nar_md = narrativa.generate(narrativa.build_payload(by_id, res, week_events, cal))
+            payload = narrativa.build_payload(by_id, res, week_events, cal)
+            if micro_data:
+                payload["micro"] = narrativa.micro_summary(micro_data, confl)
+            nar_md = narrativa.generate(payload)
             if nar_md:
                 narrativa.save(nar_md, today)
                 nar_html = narrativa.to_html(nar_md)
         except Exception as e:  # noqa: BLE001
             print(f"(narrativa: {e})")
 
-        extra_html = nar_html + report.analysis_html(res) + empresas.week_html(week_events)
+        extra_html = nar_html + report.analysis_html(res) + micro_html + empresas.week_html(week_events)
         title = "Macro Monitor · Nota diaria"
         html = report.render_html(rows, reg, cal, alerts, title, extra_html)
         text = report.render_text(rows, reg, alerts)
@@ -151,6 +167,12 @@ def main():
 
     elif mode == "empresas":
         write_empresas(cfg)
+        return
+
+    elif mode == "micro":
+        m = micro.run(cfg.get("micro", {}).get("scope", "bellwethers"), cfg.get("micro", {}).get("days", 7))
+        micro.save(m)
+        print(json.dumps(m["sector_pulse"], ensure_ascii=False, indent=1))
         return
     else:
         raise SystemExit("modo desconocido: usa daily | event | calendar")
