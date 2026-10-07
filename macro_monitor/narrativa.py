@@ -27,9 +27,13 @@ REGLAS ESTRICTAS:
 1. Usa ÚNICAMENTE los datos del JSON que recibes. No cites cifras, fechas ni hechos que no estén en él.
    Si una conclusión necesita un dato que no está, di "no disponible" en vez de inventarlo.
 2. No des recomendaciones de compra o venta de valores concretos. Habla de sesgos, riesgos y qué vigilar.
-3. Sé concreto y cuantitativo: cada afirmación lleva el dato que la sostiene (valor, percentil o variación).
+3. Sé concreto y cuantitativo: cada afirmación lleva el dato económico que la sostiene (nivel y variación).
+   Habla de la ECONOMÍA, no del sistema: nunca menciones "score", "cobertura", "JSON", "sesgo +1" ni
+   "percentil" como palabras; traduce: "tipo real en máximos de la década", "nóminas +29k frente a +133k",
+   "el petróleo encarece el consumo discrecional". El lector no sabe ni debe saber cómo se calculan los scores.
 4. Prioriza: primero lo que ha cambiado, luego lo que más importa, luego lo accesorio.
-5. Tono sobrio, sin adjetivos vacíos, sin relleno. Máximo 380 palabras en total.
+5. Tono sobrio, sin adjetivos vacíos, sin relleno. Entre 250 y 380 palabras en total. Escribe las CINCO
+   secciones completas; no te detengas antes de la última.
 
 FORMATO DE SALIDA (Markdown, exactamente estas cinco secciones, con estos títulos):
 ## Qué ha cambiado
@@ -102,14 +106,15 @@ def generate(payload: dict) -> str | None:
     for model in MODELS:
         try:
             r = requests.post(GROQ_URL, headers={"Authorization": f"Bearer {key}", "Content-Type": "application/json"},
-                              json={"model": model, "temperature": 0.3, "max_tokens": 1100,
+                              json={"model": model, "temperature": 0.3, "max_tokens": 3000, "reasoning_effort": "low",
                                     "messages": [{"role": "system", "content": SYSTEM}, {"role": "user", "content": user}]},
                               timeout=90)
             r.raise_for_status()
             txt = r.json()["choices"][0]["message"]["content"].strip()
-            if txt:
+            if txt and txt.count("## ") >= 5:
                 print(f"(narrativa generada con {model})")
                 return txt
+            print(f"(narrativa {model}: salida incompleta, {txt.count('## ')} secciones)")
         except Exception as e:  # noqa: BLE001
             print(f"(narrativa {model}: {e})")
     return None
