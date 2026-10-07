@@ -13,7 +13,7 @@ import datetime as dt
 import pathlib
 import yaml
 
-from macro_monitor import fetch, analyze, report, calendar as cal_mod, empresas, rules
+from macro_monitor import fetch, analyze, report, calendar as cal_mod, empresas, rules, narrativa
 
 ROOT = pathlib.Path(__file__).parent
 OUT = ROOT / "output"
@@ -105,15 +105,31 @@ def main():
             write_calendar(cfg, by_id)
         except Exception as e:  # noqa: BLE001
             print(f"(calendario no regenerado: {e})")
-        extra_html = report.analysis_html(res)
+        week_events = []
         try:
-            extra_html += empresas.week_html(write_empresas(cfg))
+            week_events = write_empresas(cfg)
         except Exception as e:  # noqa: BLE001
             print(f"(empresas no regeneradas: {e})")
+        end7 = dt.date.today() + dt.timedelta(days=7)
+        week_events = [e for e in week_events if e["date"] <= end7]
+
+        # Narrativa LLM: va la primera; si falla, el informe sale sin ella
+        nar_html, nar_md = "", None
+        try:
+            nar_md = narrativa.generate(narrativa.build_payload(by_id, res, week_events, cal))
+            if nar_md:
+                narrativa.save(nar_md, today)
+                nar_html = narrativa.to_html(nar_md)
+        except Exception as e:  # noqa: BLE001
+            print(f"(narrativa: {e})")
+
+        extra_html = nar_html + report.analysis_html(res) + empresas.week_html(week_events)
         title = "Macro Monitor · Nota diaria"
         html = report.render_html(rows, reg, cal, alerts, title, extra_html)
         text = report.render_text(rows, reg, alerts)
         text += "\n\nSECTORES: " + ", ".join(f"{x['label']} {x['bias']:+d}" for x in res["sectors"])
+        if nar_md:
+            text = "NOTA DEL COMITÉ\n" + nar_md + "\n\n" + text
         subject = f"[Macro] {today} · {res['regime']['label']} · tensión {res['tension']}" + (f" · {len(alerts)} alertas" if alerts else "")
 
     elif mode == "event":
