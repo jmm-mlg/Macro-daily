@@ -32,16 +32,19 @@ REGLAS ESTRICTAS:
    "percentil" como palabras; traduce: "tipo real en máximos de la década", "nóminas +29k frente a +133k",
    "el petróleo encarece el consumo discrecional". El lector no sabe ni debe saber cómo se calculan los scores.
 4. Prioriza: primero lo que ha cambiado, luego lo que más importa, luego lo accesorio.
-5. Tono sobrio, sin adjetivos vacíos, sin relleno. Entre 250 y 380 palabras en total. Escribe las CINCO
-   secciones completas; no te detengas antes de la última.
+5. Tono sobrio, sin adjetivos vacíos, sin relleno. Entre 280 y 450 palabras en total. Escribe las SEIS
+   secciones completas (seis); no te detengas antes de la última.
 
-FORMATO DE SALIDA (Markdown, exactamente estas cinco secciones, con estos títulos):
+FORMATO DE SALIDA (Markdown, exactamente estas seis secciones, con estos títulos):
 ## Qué ha cambiado
 (2-3 frases. Si no hay ayer con qué comparar, dilo en una frase.)
 ## Lectura del cuadro
 (3 viñetas máximo. Cada una: tesis en negrita + dato que la sostiene + implicación.)
 ## Esta semana
 (2-3 frases que conecten los eventos de la agenda con el cuadro macro: qué dato o resultado puede confirmar o romper la lectura.)
+## Empresas y bancos centrales
+(Solo si el JSON trae la clave "micro". 2-4 frases: hechos relevantes, revisiones de analistas por sector, postura de los
+bancos centrales, y sobre todo los CONFLICTOS entre el cuadro macro y lo que dicen los analistas. Si no hay "micro", escribe "Sin datos micro hoy.")
 ## Para la cartera
 (2-3 frases sobre sesgos sectoriales y su fragilidad. Nombra solo sectores, no valores.)
 ## Qué cambiaría la conclusión
@@ -96,6 +99,30 @@ def build_payload(rows: dict, res: dict, week_events: list, calendar: list) -> d
     }
 
 
+def micro_summary(m: dict, confl: list) -> dict:
+    """Resumen compacto de la capa micro para el modelo: solo hechos, con fuente."""
+    hechos = []
+    for co in m["companies"]:
+        for e in co["eventos"]:
+            if e["importancia"] >= 2:
+                hechos.append({"fecha": e["fecha"], "empresa": co["name"], "sector": co["sector"], "hecho": e["descripcion"]})
+        if co.get("compra_cluster"):
+            hechos.append({"fecha": m["date"], "empresa": co["name"], "sector": co["sector"],
+                           "hecho": f"compras de {co['n_compradores']} insiders en 30 días ({co['importe_compras']:,.0f} USD)"})
+        a = (co.get("revisiones") or {}).get("anual")
+        if a and abs(a["net30"]) >= 0.6 and (a["up30"] + a["down30"]) >= 3:
+            hechos.append({"fecha": m["date"], "empresa": co["name"], "sector": co["sector"],
+                           "hecho": f"analistas {'suben' if a['net30'] > 0 else 'recortan'} estimaciones anuales ({a['up30']} arriba / {a['down30']} abajo, 30 días)"})
+    return {
+        "pulso_sectorial": {k: {"amplitud_revisiones_30d": v["amplitud_revisiones"], "mejorando": v["mejorando"], "empeorando": v["empeorando"]}
+                            for k, v in m["sector_pulse"].items()},
+        "conflictos_macro_micro": [{"sector": c["sector"], "sesgo_macro": c["macro"], "senal_micro": c["micro"]} for c in confl],
+        "hechos_relevantes": hechos[:15],
+        "bancos_centrales": [{"banco": s["banco"], "fecha": s["fecha"], "titulo": s["titulo"], "postura": s.get("postura"), "resumen": s.get("resumen")}
+                             for s in m["central_banks"] if s.get("postura") is not None][:8],
+    }
+
+
 def generate(payload: dict) -> str | None:
     key = os.environ.get("GROQ_API_KEY")
     if not key:
@@ -111,7 +138,7 @@ def generate(payload: dict) -> str | None:
                               timeout=90)
             r.raise_for_status()
             txt = r.json()["choices"][0]["message"]["content"].strip()
-            if txt and txt.count("## ") >= 5:
+            if txt and txt.count("## ") >= 6:
                 print(f"(narrativa generada con {model})")
                 return txt
             print(f"(narrativa {model}: salida incompleta, {txt.count('## ')} secciones)")
