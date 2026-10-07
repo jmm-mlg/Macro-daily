@@ -157,7 +157,9 @@ def analysis_html(res: dict) -> str:
     # Disparadores
     h.append("<h3>Qué vigilar · disparadores</h3><table cellpadding='5' style='border-collapse:collapse;width:100%'>")
     for t in res["triggers"]:
-        flag = "<span style='color:#b00;font-weight:bold'>ACTIVADO</span>" if t["hit"] else f"a {abs(t['distance']):,.2f}".replace(",", ".")
+        d = abs(t["distance"])
+        dist = f"{d:,.0f}".replace(",", ".") if d >= 1000 else f"{d:.2f}".replace(".", ",")
+        flag = "<span style='color:#b00;font-weight:bold'>ACTIVADO</span>" if t["hit"] else f"a {dist}"
         h.append(f"<tr><td style='font-family:monospace;white-space:nowrap'>{t['series']}</td><td style='white-space:nowrap'>{_fmt(t['value'])} / {_fmt(t['threshold'])}</td>"
                  f"<td style='white-space:nowrap'>{flag}</td><td style='font-size:12px'>{t['text']}</td></tr>")
     h.append("</table>")
