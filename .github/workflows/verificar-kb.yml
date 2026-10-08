@@ -18,12 +18,17 @@ jobs:
           python-version: "3.11"
           cache: pip
       - run: pip install -r requirements.txt
+      - name: Comprobar que el script existe
+        run: ls -la kb/verificar.py kb/verificacion.yaml
       - name: Verificar afirmaciones contra FRED y yfinance
         env:
           FRED_API_KEY: ${{ secrets.FRED_API_KEY }}
-        run: python kb/verificar.py || true
+        # el script devuelve 1 si hay desviaciones; eso no es un fallo del workflow
+        run: python kb/verificar.py; echo "exit=$?"
       - name: Guardar informe
+        if: always()
         run: |
+          test -f kb/_verificacion.md || { echo "No se generó informe (ver paso anterior)"; exit 0; }
           git config user.name "macro-monitor bot"
           git config user.email "actions@github.com"
           git add kb/_verificacion.md
