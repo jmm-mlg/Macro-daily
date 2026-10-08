@@ -113,6 +113,13 @@ de las empresas europeas. Marco completo en `kb/conceptos/divisas.md`.
 cambio en `kb/`: genera la navegación (`kb/build_nav.py`), convierte los enlaces `[[id]]` (`kb/_hooks.py`) y
 construye en `docs/kb/`, que GitHub Pages ya sirve. El email enlaza al sitio (`kb_url` en `config.yaml`).
 
+## Cartera (`cartera/operaciones.csv` + `macro_monitor/cartera.py`)
+Registro de operaciones en CSV (una fila por operación; ver `cartera/README.md`). Cada mañana el motor valora
+las posiciones abiertas (precio, P&L en USD separando acción y divisa, R, distancia al stop, stop alcanzado,
++1R/+2R, días a resultados, sector girado, disparador de la frase de cierre activado), comprueba los límites
+del nivel 6 de la guía (posición, sector 25 %, región 70 %, riesgo abierto 5 %, 12 posiciones, 2 por sector)
+y resume las cerradas (esperanza en R, acierto). Sección "Cartera" al principio del email; `data/cartera_estado.csv`.
+
 ## Fichas técnicas y momentum sectorial (`macro_monitor/ficha.py`)
 Para las 185 empresas de la watchlist, en una sola descarga: precio, medias de 50 y 200, distancia a máximo de 52
 semanas, ATR 14, stop estructural (mínimo de 20 sesiones) y por ATR (2x), stop elegido y distancia, riesgo por

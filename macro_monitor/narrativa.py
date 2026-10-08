@@ -48,7 +48,9 @@ y sus medidas de régimen: estructura del VIX, mercado frente a liquidez, prima 
 (Solo si el JSON trae la clave "micro". 2-4 frases: hechos relevantes, revisiones de analistas por sector, postura de los
 bancos centrales, y sobre todo los CONFLICTOS entre el cuadro macro y lo que dicen los analistas. Si no hay "micro", escribe "Sin datos micro hoy.")
 ## Para la cartera
-(2-3 frases sobre sesgos sectoriales y su fragilidad. Si el JSON trae "fichas", usa el momentum sectorial para decir
+(Si el JSON trae "cartera" con posiciones, empieza por ellas: cuáles tienen avisos (stop, +1R/+2R, sector girado, disparador
+de su frase de cierre activado) y qué habría que hacer según la guía; después los sesgos. Si no hay posiciones:
+2-3 frases sobre sesgos sectoriales y su fragilidad. Si el JSON trae "fichas", usa el momentum sectorial para decir
 si el mercado confirma o contradice los sesgos (conflictos), y puedes citar las empresas de "candidatas_en_sectores_favorecidos"
 como ejemplos de dónde mirar, sin recomendar comprarlas.)
 ## Qué cambiaría la conclusión
