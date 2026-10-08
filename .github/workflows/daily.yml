@@ -4,7 +4,7 @@ on:
   schedule:
     # 05:30 UTC = 07:30 CEST / 06:30 CET, de lunes a viernes.
     # GitHub puede retrasar el cron 10-30 min en horas punta.
-    - cron: "30 5 * * 1-5"
+    - cron: "17 4 * * 1-5"
   workflow_dispatch:
 
 permissions:
