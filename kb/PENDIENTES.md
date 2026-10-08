@@ -1,52 +1,5 @@
 # Entradas enlazadas y pendientes de escribir
 
-Generadas a partir de los enlaces `[[id]]` de las entradas existentes.
+Ninguna: todos los enlaces `[[id]]` resuelven a una entrada existente.
 
-- [ ] bce-sube-con-inflacion-de-costes
-- [ ] bienes-deflacionarios-servicios-inflacionarios
-- [ ] breakeven-sube-con-petroleo
-- [ ] buenas-noticias-son-malas-noticias
-- [ ] capex-cae-con-beneficios-en-maximos
-- [ ] capex-de-ia-sostiene-el-pib
-- [ ] cobre-oro-y-10-anos
-- [ ] cobre-sube-con-produccion-plana
-- [ ] cobre-sube-por-oferta
-- [ ] confianza-en-minimos-como-senal-contraria
-- [ ] consumo-financiado-con-credito
-- [ ] continuadas-suben-con-iniciales-estables
-- [ ] diferencial-hipotecario-anormal
-- [ ] espiral-salarios-precios
-- [ ] expectativas-de-inflacion-desancladas-en-michigan
-- [ ] hipoteca-cara-con-precios-altos
-- [ ] inflacion-europea-por-energia
-- [ ] inicios-multifamiliares-en-maximos
-- [ ] ipc-alto-con-breakeven-estable
-- [ ] ipc-alto-por-vivienda
-- [ ] ipc-sorprende-al-alza
-- [ ] ipc-y-pce-divergen
-- [ ] ipp-sube-por-aranceles
-- [ ] margenes-en-maximos
-- [ ] multifamiliar-se-desploma
-- [ ] oro-sube-con-tipo-real-alto
-- [ ] oro-y-bolsa-suben-a-la-vez
-- [ ] paro-sube-por-participacion
-- [ ] pce-por-encima-de-la-proyeccion-del-fomc
-- [ ] pedidos-de-aviones-distorsionan
-- [ ] permisos-caen-tres-meses
-- [ ] permisos-sin-inicios
-- [ ] peticiones-superan-umbral
-- [ ] petroleo-sobre-90-y-consumo
-- [ ] petroleo-sube-por-oferta-vs-demanda
-- [ ] pib-fuerte-por-inventarios
-- [ ] recesion-industrial-sin-recesion-general
-- [ ] recesion-tecnica-sin-recesion
-- [ ] regla-de-sahm-activada
-- [ ] renuncias-en-minimos
-- [ ] revisiones-negativas-acumuladas
-- [ ] salarios-bajan-con-paro-bajo
-- [ ] salarios-por-debajo-del-ipc
-- [ ] subyacente-baja-y-general-sube
-- [ ] supercore-acelera
-- [ ] utilizacion-sobre-80
-- [ ] vacantes-caen-sin-subir-el-paro
-- [ ] ventas-nominales-suben-por-gasolina
+Para regenerar esta lista: `python -c` sobre los enlaces `[[id]]` (ver README).
