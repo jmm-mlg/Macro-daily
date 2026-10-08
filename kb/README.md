@@ -80,7 +80,7 @@ Fuente única de conocimiento del sistema: qué mide cada dato del email, cómo 
 - [Fuentes gratuitas por nivel](BIBLIOTECA.md)
 
 ## Verificación
-`verificacion.yaml` recoge las afirmaciones fechadas de las entradas (65) en forma comprobable; `verificar.py` las contrasta con FRED y yfinance y escribe `_verificacion.md`. Corre el día 1 de cada mes y a mano desde Actions. Toda nueva cifra en una entrada se añade al YAML. Las 10 afirmaciones de mercado se comprobaron en vivo el 2026-10-08 (10/10 OK); las 55 de FRED, en la primera ejecución con clave.
+`verificacion.yaml` recoge las afirmaciones fechadas de las entradas (65) en forma comprobable; `verificar.py` las contrasta con FRED y yfinance y escribe `_verificacion.md`. Corre el día 1 de cada mes y a mano desde Actions. Toda nueva cifra en una entrada se añade al YAML. Primera ejecución completa el 2026-10-08: 53 OK, 6 desviaciones (corregidas en las entradas y en el YAML ese mismo día), 7 sin dato (series ICE BofA, en diagnóstico). Regla desde entonces: los episodios distinguen el valor **publicado** del **revisado** en series que se revisan (nóminas, peticiones, paro, PCE).
 
 ## Cómo se usa
 - **Desde el email**: cada serie del panel y cada disparador enlaza a su entrada (`kb_url` en `config.yaml`).

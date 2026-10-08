@@ -44,7 +44,7 @@ No tiene umbral propio: su información entra por la curva (T10Y2Y) y por los fu
 - No confundir el 2 años con los futuros de fondos federales: los futuros dan la senda mes a mes; el 2 años, la media.
 
 ## Episodios
-- **Marzo 2023 (SVB)**: cae 100 pb en tres días (de 5,05 % a 3,95 %), la mayor caída desde 1987, cuando el mercado pasó de esperar subidas a esperar recortes de emergencia. La Fed subió igualmente 25 pb; el 2 años recuperó la mitad en un mes.
+- **Marzo 2023 (SVB)**: cae 100 pb en tres sesiones (de 5,05 % el 8 de marzo a 4,03 % el 13) y sigue bajando la semana siguiente, la mayor caída desde 1987, cuando el mercado pasó de esperar subidas a esperar recortes de emergencia. La Fed subió igualmente 25 pb; el 2 años recuperó la mitad en un mes.
 - **Junio 2022**: +60 pb en dos semanas tras un IPC del 8,6 %; la Fed subió 75 pb por primera vez desde 1994. El 2 años lo anticipó tres días antes del comunicado.
 - **Octubre 2026**: 4,83 %, +44 pb en el mes, 95 pb por encima del tipo oficial: el mercado descuenta un ciclo de subidas que la Fed aún no ha confirmado.
 

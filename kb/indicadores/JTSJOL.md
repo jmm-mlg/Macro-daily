@@ -44,7 +44,7 @@ Solo panel: llega con dos meses de retraso y su información ya está en las pet
 - El dato llega muy tarde: el JOLTS de octubre sale en diciembre.
 
 ## Episodios
-- **Marzo 2022**: 12,0 millones de vacantes, 2,0 por parado, máximo histórico; renuncias al 3,0 %. El argumento de la Fed para subir sin miedo al paro.
+- **Marzo 2022**: 12,3 millones de vacantes, 2,0 por parado, máximo histórico; renuncias al 3,0 %. El argumento de la Fed para subir sin miedo al paro.
 - **2023-2024**: de 10 a 7,5 millones sin que el paro subiera del 3,5 % al 4,2 % hasta mediados de 2024: la curva de Beveridge se movió en vertical, como argumentó Waller (Fed) en 2022.
 - **Octubre 2026**: 7,08 millones, −256.000, percentil 36; en torno a 1,0 por parado. Equilibrio, con tendencia a la baja.
 

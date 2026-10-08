@@ -31,9 +31,21 @@ def fred_series(sid, start, end):
     r = requests.get(FRED, params={"series_id": sid, "api_key": key, "file_type": "json",
                                    "observation_start": start, "observation_end": end}, timeout=30)
     r.raise_for_status()
-    s = pd.Series({o["date"]: o["value"] for o in r.json()["observations"]})
+    obs = r.json().get("observations", [])
+    s = pd.Series({o["date"]: o["value"] for o in obs})
     s.index = pd.to_datetime(s.index)
-    return pd.to_numeric(s, errors="coerce").dropna()
+    s = pd.to_numeric(s, errors="coerce").dropna()
+    if s.empty:
+        # Diagnóstico y reintento: pedir la serie completa y recortar localmente
+        print(f"   (FRED {sid}: {len(obs)} observaciones en {start}..{end}; reintento sin ventana)")
+        r2 = requests.get(FRED, params={"series_id": sid, "api_key": key, "file_type": "json"}, timeout=60)
+        r2.raise_for_status()
+        s = pd.Series({o["date"]: o["value"] for o in r2.json().get("observations", [])})
+        s.index = pd.to_datetime(s.index)
+        s = pd.to_numeric(s, errors="coerce").dropna()
+        s = s[(s.index >= pd.Timestamp(start)) & (s.index <= pd.Timestamp(end))]
+        print(f"   (FRED {sid}: {len(s)} observaciones tras el reintento)")
+    return s
 
 
 def yf_series(ticker, start, end):

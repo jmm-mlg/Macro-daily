@@ -47,7 +47,7 @@ Sin peso en los scores: es demasiado retrasado para sumar información a las pet
 ## Episodios
 - **Marzo-abril 2020**: de 3,5 % a 14,7 % en dos meses; vuelta al 4 % en dos años.
 - **Abril 2023**: 3,4 %, mínimo desde 1969.
-- **Julio 2024**: 4,3 %; Sahm activada (0,53); recortes de la Fed desde septiembre; el paro se estabilizó en 4,1-4,2 % sin recesión.
+- **Julio 2024**: 4,3 % publicado (revisado después a 4,2 %); Sahm activada por una décima; recortes de la Fed desde septiembre; el paro se estabilizó en 4,1-4,2 % sin recesión.
 - **Octubre 2026**: 4,2 %, +0,1; a 0,3 pp del disparador.
 
 ## Para profundizar

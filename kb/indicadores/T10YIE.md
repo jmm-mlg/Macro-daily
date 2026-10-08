@@ -51,7 +51,7 @@ Peso 1 en inflación con umbrales 2,5 / 2,0: es un complemento a los datos publi
 
 ## Episodios
 - **Marzo 2020**: cae a 0,5 % en dos semanas; la Fed anuncia QE ilimitado; vuelve al 2 % en seis meses.
-- **Abril 2022**: 3,0 %, máximo desde que existe la serie; la Fed acelera a subidas de 75 pb. Octubre 2022: 2,3 % con el petróleo bajando; es cuando la Fed empieza a hablar de moderar.
+- **Abril 2022**: 3,0 %, máximo desde que existe la serie; la Fed acelera a subidas de 75 pb. Octubre 2022: 2,5 % con el petróleo bajando, y mínimo de 2,2 % en diciembre; es cuando la Fed empieza a hablar de moderar.
 - **Octubre 2026**: 2,36 %, estable en el mes a pesar del IPC al 3,7 %: el mercado no ve persistencia. Si rompe el 2,5 %, el score de inflación y el tipo real suben juntos.
 
 ## Para profundizar

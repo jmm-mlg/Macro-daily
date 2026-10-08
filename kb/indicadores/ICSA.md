@@ -51,7 +51,7 @@ Peso 3 en crecimiento, el máximo, invertido (más peticiones = peor). Umbrales 
 - El nivel en 2022-2026 ha sido anormalmente bajo por la escasez de trabajadores tras la pandemia; el umbral de recesión podría ser más bajo que el histórico de 350.000.
 
 ## Episodios
-- **Marzo 2020**: de 211.000 a 3,3 millones en una semana y 6,9 millones a la siguiente; la serie no había superado los 700.000 nunca.
+- **Marzo 2020**: de 211.000 a 3,3 millones en una semana y 6,6 millones a la siguiente, según se publicó (la serie revisada por factores estacionales muestra 2,9 y 5,9 millones); la serie no había superado los 700.000 nunca.
 - **Septiembre 2007**: la media de 4 semanas pasó de 310.000 a 330.000; la recesión empezó en diciembre. Las peticiones avisaron tres meses antes que las nóminas.
 - **Julio 2024**: pico de 250.000 (huracán Beryl, Texas) que contribuyó al pánico de la regla de Sahm; volvió a 230.000 en tres semanas.
 - **Octubre 2026**: 197.000, percentil 1, estables: las empresas no despiden a pesar de las nóminas débiles.

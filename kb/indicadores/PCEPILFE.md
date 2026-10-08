@@ -43,7 +43,7 @@ Peso 3, igual que el IPC subyacente, para que el score de inflación descanse en
 
 ## Episodios
 - **Febrero 2022**: 5,4 %, máximo desde 1983; en marzo la Fed inició las subidas con un retraso que ella misma reconoció.
-- **Diciembre 2023**: 2,9 %, primera lectura por debajo del 3 % desde 2021; el FOMC de ese mes anunció tres recortes para 2024 y la bolsa subió un 14 % en dos meses.
+- **Diciembre 2023**: 2,9 % en la primera publicación (revisado después al 3,2 % en la revisión anual de la BEA); el FOMC de ese mes anunció tres recortes para 2024 y la bolsa subió un 14 % en dos meses. Ejemplo de por qué la serie revisada y la publicada cuentan historias distintas.
 - **Octubre 2026**: 3,01 %, +0,02 pp, percentil 61. Por encima del umbral de 2,8 y de la última proyección de la Fed.
 
 ## Para profundizar

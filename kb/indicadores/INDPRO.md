@@ -46,7 +46,7 @@ Peso 1: coincidente y revisado; el adelantado (ISM) no está en FRED de forma gr
 - Las huelgas (Boeing 2024, automoción 2023) restan décimas que se recuperan después.
 
 ## Episodios
-- **2015-2016**: −2 % interanual durante un año por el colapso del petróleo (minería) y el dólar fuerte, sin recesión general: la primera "recesión industrial" sin recesión. El S&P 500 cayó un 13 % y recuperó.
+- **2015-2016**: negativa en términos interanuales durante más de un año, con mínimo de −3,2 % en enero de 2016, por el colapso del petróleo (minería) y el dólar fuerte, sin recesión general: la primera "recesión industrial" sin recesión. El S&P 500 cayó un 13 % y recuperó.
 - **2023**: plana o ligeramente negativa todo el año mientras servicios crecían al 3 %; la bolsa subió un 24 %. Industriales y materiales se quedaron atrás.
 - **Octubre 2026**: +1,42 % (dato de agosto), +0,29, percentil 66; recuperando con el cobre en máximos.
 
