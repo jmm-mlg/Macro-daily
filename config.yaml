@@ -11,7 +11,7 @@
 # ============================================================
 
 lookback_years: 10       # ventana para el percentil histórico
-kb_url: https://github.com/jmm-mlg/Macro-daily/blob/main/kb   # base de conocimiento (enlaces en el email)
+kb_url: https://jmm-mlg.github.io/Macro-daily/kb   # sitio de la base de conocimiento (enlaces en el email); si no usas Pages: https://github.com/jmm-mlg/Macro-daily/blob/main/kb
 
 fred:
   # ---------- 1. Política monetaria y tipos ----------
@@ -297,3 +297,15 @@ micro:
   scope: bellwethers   # a diario: bellwethers + extra (~40 empresas, ~4 min)
   full_weekday: 0      # día de la semana (0 = lunes) en que se procesa toda la watchlist (~15 min)
   days: 7              # ventana de 8-K y discursos
+
+# ---------- 11. Fichas técnicas y tamaño de posición ----------
+ficha:
+  capital: 1000000            # capital de referencia (cuenta paper IBKR)
+  moneda: USD                 # moneda del capital; importes y porcentajes se calculan en ella
+  riesgo_base_pct: 0.5        # riesgo por operación base
+  riesgo_extra_regimen_pct: 0.25   # +0,25 si régimen Goldilocks/Reflación con tensión no alta
+  riesgo_extra_sector_pct: 0.25    # +0,25 si el sector está a +2 sin conflicto macro/micro
+  riesgo_max_pct: 1.0
+  stop_max_pct: 8.0           # si el stop queda a más del 8 %, la operación "no cabe"
+  posicion_max_pct: 10.0      # tamaño máximo de una posición
+  posicion_max_pct_cautela: 5.0   # en régimen Mixto o tensión alta

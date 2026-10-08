@@ -7,6 +7,7 @@ macro-monitor — rutina principal.
   python run.py empresas  -> regenera docs/empresas.ics y empresas-todas.ics (resultados, ex-dividendo, mercado)
   python run.py micro     -> capa micro (revisiones, 8-K, insiders, bancos centrales) -> data/micro.json
   python run.py pulso     -> pulso de mercado (variaciones por bloque, liquidez neta, prima de riesgo) -> data/pulso.json
+  python run.py fichas    -> fichas técnicas (stop, tamaño, fuerza relativa) y momentum sectorial -> data/fichas.csv
   python run.py daily --no-email   -> imprime en consola, no envía
 """
 import sys
@@ -15,7 +16,7 @@ import datetime as dt
 import pathlib
 import yaml
 
-from macro_monitor import fetch, analyze, report, calendar as cal_mod, empresas, rules, narrativa, micro, pulso
+from macro_monitor import fetch, analyze, report, calendar as cal_mod, empresas, rules, narrativa, micro, pulso, ficha
 
 ROOT = pathlib.Path(__file__).parent
 OUT = ROOT / "output"
@@ -151,6 +152,15 @@ def main():
         except Exception as e:  # noqa: BLE001
             print(f"(micro: {e})")
 
+        # Fichas técnicas y momentum sectorial (necesita sesgos y conflictos ya calculados)
+        ficha_html, ficha_data = "", None
+        try:
+            ficha_data = ficha.build(cfg, res, week_events, confl)
+            ficha.save(ficha_data)
+            ficha_html = ficha.to_html(ficha_data)
+        except Exception as e:  # noqa: BLE001
+            print(f"(fichas: {e})")
+
         # Narrativa LLM: va la primera; si falla, el informe sale sin ella
         nar_html, nar_md = "", None
         try:
@@ -159,6 +169,8 @@ def main():
                 payload["micro"] = narrativa.micro_summary(micro_data, confl)
             if pulso_data:
                 payload["pulso"] = pulso.summary_for_llm(pulso_data)
+            if ficha_data:
+                payload["fichas"] = ficha.summary_for_llm(ficha_data)
             nar_md = narrativa.generate(payload)
             if nar_md:
                 narrativa.save(nar_md, today)
@@ -166,7 +178,7 @@ def main():
         except Exception as e:  # noqa: BLE001
             print(f"(narrativa: {e})")
 
-        extra_html = nar_html + report.analysis_html(res) + pulso_html + micro_html + empresas.week_html(week_events)
+        extra_html = nar_html + report.analysis_html(res) + pulso_html + micro_html + ficha_html + empresas.week_html(week_events)
         title = "Macro Monitor · Nota diaria"
         html = report.render_html(rows, reg, cal, alerts, title, extra_html)
         text = report.render_text(rows, reg, alerts)
@@ -194,6 +206,16 @@ def main():
 
     elif mode == "empresas":
         write_empresas(cfg)
+        return
+
+    elif mode == "fichas":
+        rows, by_id = build_rows(cfg)
+        res = rules.run(by_id)
+        d = ficha.build(cfg, res, [], [])
+        ficha.save(d)
+        for m in d["momentum"]:
+            print(f"{m['region']} {m['sector']:<32} {m['etf']:<8} rel3m {m['rel']['3m']:+5.1f} sesgo {m['sesgo_motor']:+d} {'CONFLICTO' if m['conflicto'] else ''}")
+        print(f"{len(d['fichas'])} fichas en data/fichas.csv")
         return
 
     elif mode == "pulso":

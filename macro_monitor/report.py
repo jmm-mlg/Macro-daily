@@ -26,12 +26,25 @@ KB_FILES = {"^GSPC": "GSPC", "^VIX": "VIX", "DX-Y.NYB": "DXY", "CL=F": "CL", "HG
 KB_URL = ""
 
 
+def kb_path(sid: str) -> str:
+    """Ruta (sin extensión) de la entrada de una serie dentro de la base."""
+    f = KB_FILES.get(sid, sid)
+    path = f[3:] if f.startswith("../") else f"indicadores/{f}"
+    return path
+
+
+def kb_href(path: str) -> str:
+    """URL de una ruta de la base: directorio si es el sitio (Pages), .md si es GitHub."""
+    if "github.com" in KB_URL:
+        return f"{KB_URL}/{path}.md"
+    return f"{KB_URL}/{path}/"
+
+
 def kb_link(sid: str, name: str) -> str:
     """Nombre de la serie enlazado a su entrada en la base de conocimiento, si hay URL base."""
     if not KB_URL:
         return name
-    f = KB_FILES.get(sid, sid)
-    return f"<a href='{KB_URL}/indicadores/{f}.md' style='color:#222;text-decoration:none;border-bottom:1px dotted #999'>{name}</a>"
+    return f"<a href='{kb_href(kb_path(sid))}' style='color:#222;text-decoration:none;border-bottom:1px dotted #999'>{name}</a>"
 
 
 def render_html(rows: list, regime: dict, calendar: list, alerts: list, title: str, extra_html: str = "") -> str:
@@ -88,7 +101,8 @@ def render_html(rows: list, regime: dict, calendar: list, alerts: list, title: s
             h.append(f"<li>{c['date']}: {c['release']}</li>")
         h.append("</ul>")
 
-    kb = f" · <a href='{KB_URL}/README.md'>Base de conocimiento</a> · <a href='{KB_URL}/BIBLIOTECA.md'>Biblioteca</a>" if KB_URL else ""
+    kb = (f" · <a href='{KB_URL}/README.md'>Base de conocimiento</a> · <a href='{KB_URL}/BIBLIOTECA.md'>Biblioteca</a>" if "github.com" in KB_URL
+          else f" · <a href='{KB_URL}/'>Base de conocimiento</a> · <a href='{KB_URL}/BIBLIOTECA/'>Biblioteca</a>") if KB_URL else ""
     h.append("<p style='color:#999;font-size:12px'>Fuentes: FRED (St. Louis Fed), Yahoo Finance. "
              f"Percentil = posición del valor actual dentro de los últimos 10 años; entre paréntesis, la ventana real cuando la fuente sirve menos historia (ICE BofA: ~3 años).{kb}</p></body></html>")
     return "\n".join(h)

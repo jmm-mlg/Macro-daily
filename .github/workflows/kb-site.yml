@@ -1,0 +1,32 @@
+name: Base de conocimiento (sitio)
+
+on:
+  push:
+    paths: ["kb/**", "mkdocs.yml", ".github/workflows/kb-site.yml"]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+      - run: pip install -r requirements-kb.txt
+      - name: Generar navegación y construir el sitio
+        run: |
+          python kb/build_nav.py
+          mkdocs build --strict || mkdocs build
+          rm -rf docs/kb/__pycache__
+      - name: Publicar en docs/kb (GitHub Pages)
+        run: |
+          git config user.name "macro-monitor bot"
+          git config user.email "actions@github.com"
+          git add -A docs/kb mkdocs.yml
+          git diff --cached --quiet || git commit -m "kb: sitio $(date -u +%F)"
+          git push

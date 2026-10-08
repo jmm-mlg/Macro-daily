@@ -128,7 +128,7 @@ sectors:
     industries:
       - name: Farmacia
         us: [{t: LLY, name: Eli Lilly, role: bellwether}, {t: JNJ, name: Johnson & Johnson, role: rep, note: "abre la temporada de salud"}, {t: PFE, name: Pfizer, role: rep}]
-        eu: [{t: NOVO-B.CO, name: Novo Nordisk, role: bellwether}, {t: ROG.SW, name: Roche, role: rep}, {t: NOVN.SW, name: Novartis, role: rep}, {t: AZN.L, name: AstraZeneca, role: rep}, {t: SAN.PA, name: Sanofi, role: rep}]
+        eu: [{t: NOVO-B.CO, name: Novo Nordisk, role: bellwether}, {t: RO.SW, name: Roche, role: rep}, {t: NOVN.SW, name: Novartis, role: rep}, {t: AZN.L, name: AstraZeneca, role: rep}, {t: SAN.PA, name: Sanofi, role: rep}]
       - name: Biotecnología
         us: [{t: AMGN, name: Amgen, role: rep}, {t: VRTX, name: Vertex, role: rep}]
         eu: [{t: ARGX, name: argenx, role: rep, note: "ADR"}, {t: GMAB.CO, name: Genmab, role: rep}]

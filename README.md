@@ -107,6 +107,21 @@ sectorial, el yen como factor de carry (USDJPY −4 en un mes → −0,5 en tecn
 discrecional y financiero; disparador < 150) y el euro como factor narrativo (> ±3 %/mes) para la lectura
 de las empresas europeas. Marco completo en `kb/conceptos/divisas.md`.
 
+## Sitio web de la base de conocimiento
+`kb/` se publica como sitio (MkDocs Material: buscador, navegación por tipo, modo oscuro) en
+`https://jmm-mlg.github.io/Macro-daily/kb/`. El workflow "Base de conocimiento (sitio)" se lanza solo con cada
+cambio en `kb/`: genera la navegación (`kb/build_nav.py`), convierte los enlaces `[[id]]` (`kb/_hooks.py`) y
+construye en `docs/kb/`, que GitHub Pages ya sirve. El email enlaza al sitio (`kb_url` en `config.yaml`).
+
+## Fichas técnicas y momentum sectorial (`macro_monitor/ficha.py`)
+Para las 185 empresas de la watchlist, en una sola descarga: precio, medias de 50 y 200, distancia a máximo de 52
+semanas, ATR 14, stop estructural (mínimo de 20 sesiones) y por ATR (2x), stop elegido y distancia, riesgo por
+operación (0,5-1 % según régimen y sesgo, `config.yaml → ficha`), número de acciones e importe en la moneda del
+capital (conversión automática; Londres en peniques), fuerza relativa a 1 y 3 meses frente al ETF de su sector y
+días hasta resultados. Momentum sectorial: 11 ETFs de EE.UU. y 11 de Europa frente a su índice a 1/3/6 meses,
+con **conflicto** cuando el momentum contradice el sesgo del motor. En el email salen las candidatas (sectores con
+sesgo ≥ +1 y bellwethers); todo en `data/fichas.csv` y `data/momentum_sectorial.csv`.
+
 ## Pulso de mercado (`macro_monitor/pulso.py`)
 Variaciones a 1 día / 1 semana / 1 mes / 3 meses en cinco bloques (Mercado: S&P, Nasdaq, equiponderado, Russell;
 VIX y VIX a 3 meses; Treasuries 2/10/30, real, breakeven, curva; Crédito HY/IG/CCC y los ETFs HYG/LQD;
