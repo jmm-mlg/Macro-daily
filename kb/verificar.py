@@ -71,6 +71,8 @@ def window(date, kind):
 
 
 def evaluate(claim):
+    if claim.get("verificable") is False:
+        return {"estado": "MANUAL", "real": None, "detalle": claim.get("fuente_manual", "no verificable por API; comprobar en la fuente indicada")}
     sid, date, kind = claim["serie"], str(claim["fecha"]), claim.get("tipo", "valor")
     start, end = window(date, kind)
     try:
@@ -129,9 +131,10 @@ def main():
     today = dt.date.today().isoformat()
     n_ok = sum(r["estado"] == "OK" for r in rows)
     n_dev = sum(r["estado"] == "DESVIACIÓN" for r in rows)
-    n_nd = len(rows) - n_ok - n_dev
+    n_man = sum(r["estado"] == "MANUAL" for r in rows)
+    n_nd = len(rows) - n_ok - n_dev - n_man
     out = [f"# Verificación de la base de conocimiento · {today}", "",
-           f"{len(rows)} afirmaciones: **{n_ok} OK**, **{n_dev} con desviación**, {n_nd} sin dato.", "",
+           f"{len(rows)} afirmaciones: **{n_ok} OK**, **{n_dev} con desviación**, {n_man} de comprobación manual (fuente sin API), {n_nd} sin dato.", "",
            "| Estado | Entrada | Serie | Fecha | Afirmación | Afirmado | Real | Detalle |", "| --- | --- | --- | --- | --- | --- | --- | --- |"]
     for r in sorted(rows, key=lambda x: (x["estado"] != "DESVIACIÓN", x["entrada"])):
         real = "" if r["real"] is None else f"{r['real']:.2f} ({r.get('fecha_real', '')})"

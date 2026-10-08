@@ -37,14 +37,14 @@ afirmaciones:
   - {entrada: T10YIE, serie: T10YIE, fecha: 2022-10-31, tipo: valor, valor: 2.5, tolerancia: 0.15, texto: "Octubre 2022: 2,5 %"}
   - {entrada: T10YIE, serie: T10YIE, fecha: 2022-12-31, tipo: min_mes, valor: 2.2, tolerancia: 0.15, texto: "Diciembre 2022: mínimo 2,2 %"}
 
-  # ---------- Spreads ----------
-  - {entrada: BAMLH0A0HYM2, serie: BAMLH0A0HYM2, fecha: 2007-06-30, tipo: min_mes, valor: 2.5, tolerancia: 0.15, texto: "Junio 2007: 250 pb, mínimo"}
-  - {entrada: BAMLH0A0HYM2, serie: BAMLH0A0HYM2, fecha: 2008-12-31, tipo: max_anio, valor: 20.0, tolerancia: 1.0, texto: "Diciembre 2008: 2.000 pb"}
-  - {entrada: BAMLH0A0HYM2, serie: BAMLH0A0HYM2, fecha: 2016-02-29, tipo: max_mes, valor: 8.9, tolerancia: 0.3, texto: "Febrero 2016: 890 pb"}
-  - {entrada: BAMLH0A0HYM2, serie: BAMLH0A0HYM2, fecha: 2020-03-31, tipo: max_mes, valor: 11.0, tolerancia: 0.5, texto: "Marzo 2020: 1.100 pb"}
-  - {entrada: BAMLH0A0HYM2, serie: BAMLH0A0HYM2, fecha: 2022-07-31, tipo: max_anio, valor: 6.0, tolerancia: 0.3, texto: "2022: 600 pb en julio"}
-  - {entrada: BAMLC0A0CM, serie: BAMLC0A0CM, fecha: 2020-03-31, tipo: max_mes, valor: 4.0, tolerancia: 0.3, texto: "Marzo 2020: IG a 400 pb"}
-  - {entrada: BAMLC0A0CM, serie: BAMLC0A0CM, fecha: 2023-03-31, tipo: max_mes, valor: 1.65, tolerancia: 0.1, texto: "Marzo 2023: IG de 120 a 165 pb"}
+  # ---------- Spreads (ICE BofA: la API de FRED solo sirve los últimos ~3 años; histórico verificado a mano en el gráfico web) ----------
+  - {entrada: BAMLH0A0HYM2, serie: BAMLH0A0HYM2, fecha: 2007-06-30, tipo: min_mes, valor: 2.5, tolerancia: 0.15, texto: "Junio 2007: 250 pb, mínimo", verificable: false, fuente_manual: "FRED sirve ICE BofA por API solo ~3 años; comprobar en el gráfico web https://fred.stlouisfed.org/series/BAMLH0A0HYM2"}
+  - {entrada: BAMLH0A0HYM2, serie: BAMLH0A0HYM2, fecha: 2008-12-31, tipo: max_anio, valor: 20.0, tolerancia: 1.0, texto: "Diciembre 2008: 2.000 pb", verificable: false, fuente_manual: "FRED sirve ICE BofA por API solo ~3 años; comprobar en el gráfico web https://fred.stlouisfed.org/series/BAMLH0A0HYM2"}
+  - {entrada: BAMLH0A0HYM2, serie: BAMLH0A0HYM2, fecha: 2016-02-29, tipo: max_mes, valor: 8.9, tolerancia: 0.3, texto: "Febrero 2016: 890 pb", verificable: false, fuente_manual: "FRED sirve ICE BofA por API solo ~3 años; comprobar en el gráfico web https://fred.stlouisfed.org/series/BAMLH0A0HYM2"}
+  - {entrada: BAMLH0A0HYM2, serie: BAMLH0A0HYM2, fecha: 2020-03-31, tipo: max_mes, valor: 11.0, tolerancia: 0.5, texto: "Marzo 2020: 1.100 pb", verificable: false, fuente_manual: "FRED sirve ICE BofA por API solo ~3 años; comprobar en el gráfico web https://fred.stlouisfed.org/series/BAMLH0A0HYM2"}
+  - {entrada: BAMLH0A0HYM2, serie: BAMLH0A0HYM2, fecha: 2022-07-31, tipo: max_anio, valor: 6.0, tolerancia: 0.3, texto: "2022: 600 pb en julio", verificable: false, fuente_manual: "FRED sirve ICE BofA por API solo ~3 años; comprobar en el gráfico web https://fred.stlouisfed.org/series/BAMLH0A0HYM2"}
+  - {entrada: BAMLC0A0CM, serie: BAMLC0A0CM, fecha: 2020-03-31, tipo: max_mes, valor: 4.0, tolerancia: 0.3, texto: "Marzo 2020: IG a 400 pb", verificable: false, fuente_manual: "FRED sirve ICE BofA por API solo ~3 años; comprobar en el gráfico web https://fred.stlouisfed.org/series/BAMLC0A0CM"}
+  - {entrada: BAMLC0A0CM, serie: BAMLC0A0CM, fecha: 2023-03-31, tipo: max_mes, valor: 1.65, tolerancia: 0.1, texto: "Marzo 2023: IG de 120 a 165 pb", verificable: false, fuente_manual: "FRED sirve ICE BofA por API solo ~3 años; comprobar en el gráfico web https://fred.stlouisfed.org/series/BAMLC0A0CM"}
 
   # ---------- NFCI ----------
   - {entrada: NFCI, serie: NFCI, fecha: 2007-12-31, tipo: max_mes, valor: 0.6, tolerancia: 0.3, texto: "Diciembre 2007: +0,6 (desde −0,8 en junio)"}

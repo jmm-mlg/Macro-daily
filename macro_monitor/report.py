@@ -70,12 +70,14 @@ def render_html(rows: list, regime: dict, calendar: list, alerts: list, title: s
                 h.append(f"<tr><td>{r['name']}</td><td colspan=4 style='color:#999'>{r['error']}</td></tr>")
                 continue
             pct = r["pct"]
+            yrs = r.get("pct_years")
+            short = f" <span style='color:#999'>({yrs:.0f}a)</span>" if yrs is not None and yrs < 8 else ""
             pcol = "#b00" if pct >= 90 else "#07a" if pct <= 10 else "#222"
             style = " style='background:#fff3f3'" if r["alerts"] else ""
             h.append(f"<tr{style}><td>{kb_link(r['id'], r['name'])} <span style='color:#999'>({r['unit']})</span></td>"
                      f"<td align='right'><b>{_fmt(r['value'])}</b></td>"
                      f"<td align='right'>{_arrow(r['chg'])} {_fmt(r['chg'])} <span style='color:#999'>{r['chg_label']}</span></td>"
-                     f"<td align='right' style='color:{pcol}'>{pct:.0f}%</td>"
+                     f"<td align='right' style='color:{pcol}'>{pct:.0f}%{short}</td>"
                      f"<td style='color:#666'>{r['date']}</td></tr>")
         h.append("</table>")
 
@@ -88,7 +90,7 @@ def render_html(rows: list, regime: dict, calendar: list, alerts: list, title: s
 
     kb = f" · <a href='{KB_URL}/README.md'>Base de conocimiento</a> · <a href='{KB_URL}/BIBLIOTECA.md'>Biblioteca</a>" if KB_URL else ""
     h.append("<p style='color:#999;font-size:12px'>Fuentes: FRED (St. Louis Fed), Yahoo Finance. "
-             f"Percentil = posición del valor actual dentro de los últimos 10 años.{kb}</p></body></html>")
+             f"Percentil = posición del valor actual dentro de los últimos 10 años; entre paréntesis, la ventana real cuando la fuente sirve menos historia (ICE BofA: ~3 años).{kb}</p></body></html>")
     return "\n".join(h)
 
 

@@ -50,6 +50,7 @@ Expectativas de impagos (que dependen del ciclo y de los tipos), apetito por el 
 → [[spread-sube-por-petroleo]]: 2015-2016; cuándo es sectorial y cuándo es sistémico.
 
 ## Trampas de lectura
+- **FRED solo sirve por API los últimos ~3 años de las series ICE BofA** (restricción de licencia): el percentil "a 10 años" del email es, para esta serie, un percentil a 3 años, y el email lo indica entre paréntesis. El histórico completo se ve en el gráfico de la web de FRED y en los índices de ICE.
 - La calidad del índice HY ha mejorado desde 2020 (más BB, menos CCC); un 350 hoy es algo más estricto que un 350 en 2007. Comparar también el spread CCC.
 - El spread se publica con un día de retraso; el ETF HYG en tiempo real lo anticipa.
 - Un spread bajo no es señal de compra sino de que el riesgo está caro; es un indicador de riesgo, no de oportunidad, salvo en extremos altos (> 800), que han sido las mejores compras de la historia del crédito.

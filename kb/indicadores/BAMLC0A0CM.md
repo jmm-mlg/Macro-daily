@@ -44,6 +44,7 @@ Sin umbral: el HY da la misma señal antes y con más amplitud. Se muestra para 
 → [[angeles-caidos]]: rebajas masivas de BBB a HY en recesión; 2020 vio 200.000 M$ en tres meses.
 
 ## Trampas de lectura
+- **FRED solo sirve por API los últimos ~3 años de las series ICE BofA** (restricción de licencia): el percentil "a 10 años" del email es, para esta serie, un percentil a 3 años, y el email lo indica entre paréntesis. El histórico completo se ve en el gráfico de la web de FRED y en los índices de ICE.
 - El spread IG está contaminado por la duración: el índice tiene vencimiento medio de 10-12 años; parte de su variación es prima de plazo, no riesgo de crédito.
 - Los bancos pesan mucho en el índice; un problema bancario (mar-2023) mueve el IG más que el HY.
 

@@ -38,10 +38,12 @@ def compute(s: pd.Series, transform: str, cfg: dict) -> dict:
     else:
         chg, chg_label = value - prev, "vs ant."
 
+    span_years = round((t.index[-1] - t.index[0]).days / 365.25, 1)
     out = {
         "date": last_date.strftime("%Y-%m-%d"),
         "value": value, "prev": prev, "chg": chg, "chg_label": chg_label,
         "pct": float((t < value).mean() * 100),  # percentil en la ventana cargada
+        "pct_years": span_years,                 # ventana real disponible (FRED limita algunas series, ej. ICE BofA a ~3 años)
         "alerts": [],
     }
     a = cfg.get("alert")
