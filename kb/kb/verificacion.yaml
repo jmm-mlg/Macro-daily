@@ -1,0 +1,97 @@
+# Afirmaciones fechadas de las entradas, en forma verificable.
+# tipo: valor (observación en la fecha o la anterior más cercana) | max_mes | min_mes | max_anio | min_anio | media_mes
+# transformacion: yoy (variación interanual %) | diff (variación vs anterior) | qoq_ann (trimestral anualizada)
+# tolerancia: en las unidades de la serie (tipos en puntos porcentuales; índices en puntos; precios en $)
+afirmaciones:
+
+  # ---------- DFII10 · tipo real ----------
+  - {entrada: DFII10, serie: DFII10, fecha: 2013-05-01, tipo: min_mes, valor: -0.7, tolerancia: 0.15, texto: "Taper tantrum: parte de −0,7 % en mayo de 2013"}
+  - {entrada: DFII10, serie: DFII10, fecha: 2013-07-31, tipo: max_mes, valor: 0.6, tolerancia: 0.2, texto: "Taper tantrum: llega a +0,6 % en julio"}
+  - {entrada: DFII10, serie: DFII10, fecha: 2022-01-03, tipo: valor, valor: -1.0, tolerancia: 0.15, texto: "2022: −1,0 % en enero"}
+  - {entrada: DFII10, serie: DFII10, fecha: 2022-10-31, tipo: max_mes, valor: 1.7, tolerancia: 0.15, texto: "2022: +1,7 % en octubre"}
+  - {entrada: DFII10, serie: DFII10, fecha: 2023-10-31, tipo: max_mes, valor: 2.5, tolerancia: 0.1, texto: "Octubre 2023: cruza el 2,5 %"}
+  - {entrada: DFII10, serie: DFII10, fecha: 2020-08-31, tipo: min_mes, valor: -1.1, tolerancia: 0.1, texto: "Agosto 2020: mínimo histórico −1,1 % (entrada GC)"}
+
+  # ---------- DGS10 · 10 años ----------
+  - {entrada: DGS10, serie: DGS10, fecha: 1994-01-03, tipo: valor, valor: 5.8, tolerancia: 0.2, texto: "1994: parte de 5,8 %"}
+  - {entrada: DGS10, serie: DGS10, fecha: 1994-11-30, tipo: max_anio, valor: 8.0, tolerancia: 0.15, texto: "1994: llega al 8,0 %"}
+  - {entrada: DGS10, serie: DGS10, fecha: 2023-10-31, tipo: max_mes, valor: 5.0, tolerancia: 0.05, texto: "Octubre 2023: toca el 5,0 %"}
+
+  # ---------- DGS2 · 2 años ----------
+  - {entrada: DGS2, serie: DGS2, fecha: 2023-03-08, tipo: valor, valor: 5.05, tolerancia: 0.05, texto: "SVB: 5,05 % el 8 de marzo de 2023"}
+  - {entrada: DGS2, serie: DGS2, fecha: 2023-03-13, tipo: valor, valor: 3.95, tolerancia: 0.1, texto: "SVB: 3,95 % el 13 de marzo (−100 pb en tres sesiones)"}
+
+  # ---------- T10Y2Y · curva ----------
+  - {entrada: T10Y2Y, serie: T10Y2Y, fecha: 2019-08-31, tipo: min_mes, valor: -0.04, tolerancia: 0.05, texto: "Agosto 2019: inversión breve"}
+  - {entrada: T10Y2Y, serie: T10Y2Y, fecha: 2022-07-31, tipo: min_mes, valor: -0.2, tolerancia: 0.15, texto: "Julio 2022: inversión que duró 26 meses"}
+  - {entrada: T10Y2Y, serie: T10Y2Y, fecha: 2024-09-30, tipo: max_mes, valor: 0.2, tolerancia: 0.15, texto: "Septiembre 2024: desinversión con el primer recorte"}
+
+  # ---------- DFF · fed funds ----------
+  - {entrada: DFF, serie: DFF, fecha: 2004-06-01, tipo: valor, valor: 1.0, tolerancia: 0.1, texto: "2004: parte de 1,00 %"}
+  - {entrada: DFF, serie: DFF, fecha: 2006-08-01, tipo: valor, valor: 5.25, tolerancia: 0.1, texto: "2006: llega a 5,25 %"}
+  - {entrada: DFF, serie: DFF, fecha: 2022-12-31, tipo: valor, valor: 4.33, tolerancia: 0.1, texto: "2022: 4,50 % de rango superior (efectivo 4,33) en diciembre"}
+
+  # ---------- T10YIE · breakeven ----------
+  - {entrada: T10YIE, serie: T10YIE, fecha: 2020-03-31, tipo: min_mes, valor: 0.5, tolerancia: 0.1, texto: "Marzo 2020: cae a 0,5 %"}
+  - {entrada: T10YIE, serie: T10YIE, fecha: 2022-04-30, tipo: max_mes, valor: 3.0, tolerancia: 0.1, texto: "Abril 2022: 3,0 %, máximo de la serie"}
+  - {entrada: T10YIE, serie: T10YIE, fecha: 2022-10-31, tipo: valor, valor: 2.3, tolerancia: 0.2, texto: "Octubre 2022: 2,3 %"}
+
+  # ---------- Spreads ----------
+  - {entrada: BAMLH0A0HYM2, serie: BAMLH0A0HYM2, fecha: 2007-06-30, tipo: min_mes, valor: 2.5, tolerancia: 0.15, texto: "Junio 2007: 250 pb, mínimo"}
+  - {entrada: BAMLH0A0HYM2, serie: BAMLH0A0HYM2, fecha: 2008-12-31, tipo: max_anio, valor: 20.0, tolerancia: 1.0, texto: "Diciembre 2008: 2.000 pb"}
+  - {entrada: BAMLH0A0HYM2, serie: BAMLH0A0HYM2, fecha: 2016-02-29, tipo: max_mes, valor: 8.9, tolerancia: 0.3, texto: "Febrero 2016: 890 pb"}
+  - {entrada: BAMLH0A0HYM2, serie: BAMLH0A0HYM2, fecha: 2020-03-31, tipo: max_mes, valor: 11.0, tolerancia: 0.5, texto: "Marzo 2020: 1.100 pb"}
+  - {entrada: BAMLH0A0HYM2, serie: BAMLH0A0HYM2, fecha: 2022-07-31, tipo: max_anio, valor: 6.0, tolerancia: 0.3, texto: "2022: 600 pb en julio"}
+  - {entrada: BAMLC0A0CM, serie: BAMLC0A0CM, fecha: 2020-03-31, tipo: max_mes, valor: 4.0, tolerancia: 0.3, texto: "Marzo 2020: IG a 400 pb"}
+  - {entrada: BAMLC0A0CM, serie: BAMLC0A0CM, fecha: 2023-03-31, tipo: max_mes, valor: 1.65, tolerancia: 0.1, texto: "Marzo 2023: IG de 120 a 165 pb"}
+
+  # ---------- NFCI ----------
+  - {entrada: NFCI, serie: NFCI, fecha: 2007-12-31, tipo: max_mes, valor: 1.5, tolerancia: 0.5, texto: "Diciembre 2007: +1,5"}
+  - {entrada: NFCI, serie: NFCI, fecha: 2022-10-31, tipo: max_anio, valor: 0.2, tolerancia: 0.3, texto: "Octubre 2022: +0,2, máximo del ciclo"}
+
+  # ---------- Hipoteca ----------
+  - {entrada: MORTGAGE30US, serie: MORTGAGE30US, fecha: 2021-01-31, tipo: min_anio, valor: 2.65, tolerancia: 0.05, texto: "Enero 2021: mínimo histórico 2,65 %"}
+  - {entrada: MORTGAGE30US, serie: MORTGAGE30US, fecha: 2023-10-31, tipo: max_mes, valor: 7.8, tolerancia: 0.1, texto: "Octubre 2023: 7,8 %"}
+  - {entrada: MORTGAGE30US, serie: MORTGAGE30US, fecha: 2006-07-31, tipo: max_anio, valor: 6.8, tolerancia: 0.1, texto: "2006: 6,8 %"}
+
+  # ---------- Inflación ----------
+  - {entrada: CPIAUCSL, serie: CPIAUCSL, fecha: 2022-06-01, tipo: valor, transformacion: yoy, valor: 9.1, tolerancia: 0.15, texto: "Junio 2022: 9,1 % interanual"}
+  - {entrada: CPILFESL, serie: CPILFESL, fecha: 2022-09-01, tipo: valor, transformacion: yoy, valor: 6.6, tolerancia: 0.15, texto: "Septiembre 2022: subyacente 6,6 %"}
+  - {entrada: PCEPILFE, serie: PCEPILFE, fecha: 2022-02-01, tipo: valor, transformacion: yoy, valor: 5.4, tolerancia: 0.2, texto: "Febrero 2022: PCE subyacente 5,4 %"}
+  - {entrada: PCEPILFE, serie: PCEPILFE, fecha: 2023-12-01, tipo: valor, transformacion: yoy, valor: 2.9, tolerancia: 0.15, texto: "Diciembre 2023: 2,9 %"}
+  - {entrada: PPIFIS, serie: PPIFIS, fecha: 2022-03-01, tipo: valor, transformacion: yoy, valor: 11.7, tolerancia: 0.4, texto: "Marzo 2022: IPP 11,7 %"}
+  - {entrada: CES0500000003, serie: CES0500000003, fecha: 2022-03-01, tipo: valor, transformacion: yoy, valor: 5.9, tolerancia: 0.3, texto: "Marzo 2022: salarios 5,9 %"}
+  - {entrada: CP0000EZ19M086NEST, serie: CP0000EZ19M086NEST, fecha: 2022-10-01, tipo: valor, transformacion: yoy, valor: 10.6, tolerancia: 0.2, texto: "Octubre 2022: IPCA 10,6 %"}
+
+  # ---------- Empleo ----------
+  - {entrada: PAYEMS, serie: PAYEMS, fecha: 2020-04-01, tipo: valor, transformacion: diff, valor: -20500, tolerancia: 500, texto: "Abril 2020: −20,5 millones"}
+  - {entrada: PAYEMS, serie: PAYEMS, fecha: 2023-01-01, tipo: valor, transformacion: diff, valor: 517, tolerancia: 120, texto: "Enero 2023: +517k (primera estimación; la serie actual está revisada)"}
+  - {entrada: UNRATE, serie: UNRATE, fecha: 2020-04-01, tipo: valor, valor: 14.7, tolerancia: 0.2, texto: "Abril 2020: 14,7 %"}
+  - {entrada: UNRATE, serie: UNRATE, fecha: 2023-04-01, tipo: valor, valor: 3.4, tolerancia: 0.1, texto: "Abril 2023: 3,4 %"}
+  - {entrada: UNRATE, serie: UNRATE, fecha: 2024-07-01, tipo: valor, valor: 4.3, tolerancia: 0.1, texto: "Julio 2024: 4,3 % (Sahm)"}
+  - {entrada: ICSA, serie: ICSA, fecha: 2020-03-28, tipo: valor, valor: 6867000, tolerancia: 200000, texto: "Semana del 28 de marzo de 2020: 6,9 millones"}
+  - {entrada: ICSA, serie: ICSA, fecha: 2024-07-31, tipo: max_mes, valor: 250000, tolerancia: 10000, texto: "Julio 2024: pico de 250.000"}
+  - {entrada: JTSJOL, serie: JTSJOL, fecha: 2022-03-01, tipo: valor, valor: 12000, tolerancia: 300, texto: "Marzo 2022: 12,0 millones de vacantes"}
+
+  # ---------- Actividad ----------
+  - {entrada: GDPC1, serie: GDPC1, fecha: 2020-04-01, tipo: valor, transformacion: qoq_ann, valor: -28.0, tolerancia: 3.0, texto: "Q2 2020: −28 % anualizado (revisado desde −31)"}
+  - {entrada: GDPC1, serie: GDPC1, fecha: 2023-07-01, tipo: valor, transformacion: qoq_ann, valor: 4.9, tolerancia: 0.5, texto: "Q3 2023: +4,9 %"}
+  - {entrada: RSAFS, serie: RSAFS, fecha: 2020-04-01, tipo: valor, transformacion: diff, valor: -75000, tolerancia: 20000, texto: "Abril 2020: −14,7 % mensual (≈ −75.000 M$)"}
+  - {entrada: INDPRO, serie: INDPRO, fecha: 2016-01-01, tipo: valor, transformacion: yoy, valor: -2.0, tolerancia: 1.0, texto: "2015-2016: en torno a −2 % interanual"}
+  - {entrada: UMCSENT, serie: UMCSENT, fecha: 2022-06-01, tipo: valor, valor: 50.0, tolerancia: 0.5, texto: "Junio 2022: 50,0, mínimo histórico"}
+  - {entrada: PERMIT, serie: PERMIT, fecha: 2005-09-01, tipo: valor, valor: 2200, tolerancia: 80, texto: "Septiembre 2005: 2,2 millones"}
+  - {entrada: PERMIT, serie: PERMIT, fecha: 2009-03-01, tipo: valor, valor: 513, tolerancia: 30, texto: "Marzo 2009: 513.000"}
+  - {entrada: HOUST, serie: HOUST, fecha: 2006-01-01, tipo: valor, valor: 2270, tolerancia: 60, texto: "Enero 2006: 2,27 millones"}
+  - {entrada: HOUST, serie: HOUST, fecha: 2009-04-01, tipo: valor, valor: 478, tolerancia: 30, texto: "Abril 2009: 478.000"}
+
+  # ---------- Mercado (yfinance, sin clave) ----------
+  - {entrada: VIX, serie: "^VIX", fecha: 2020-03-16, tipo: valor, valor: 82.7, tolerancia: 0.5, texto: "16 de marzo de 2020: cierre récord 82,7"}
+  - {entrada: VIX, serie: "^VIX", fecha: 2018-02-05, tipo: valor, valor: 37.3, tolerancia: 1.0, texto: "5 de febrero de 2018: cierre 37"}
+  - {entrada: VIX, serie: "^VIX", fecha: 2024-08-05, tipo: valor, valor: 38.6, tolerancia: 1.5, texto: "5 de agosto de 2024: cierre 38 (65 intradía)"}
+  - {entrada: GSPC, serie: "^GSPC", fecha: 2020-03-23, tipo: min_mes, valor: 2237, tolerancia: 15, texto: "23 de marzo de 2020: suelo en 2.237"}
+  - {entrada: GC, serie: "GC=F", fecha: 2020-08-31, tipo: max_mes, valor: 2070, tolerancia: 30, texto: "Agosto 2020: 2.070 $"}
+  - {entrada: GC, serie: "GC=F", fecha: 2015-12-31, tipo: min_anio, valor: 1050, tolerancia: 20, texto: "2015: mínimo 1.050 $"}
+  - {entrada: CL, serie: "CL=F", fecha: 2016-02-29, tipo: min_mes, valor: 26.2, tolerancia: 1.5, texto: "Febrero 2016: 26 $"}
+  - {entrada: CL, serie: "CL=F", fecha: 2022-03-31, tipo: max_mes, valor: 123.7, tolerancia: 3.0, texto: "Marzo 2022: cierre máximo en torno a 124 $ (130 intradía)"}
+  - {entrada: HG, serie: "HG=F", fecha: 2024-05-31, tipo: max_mes, valor: 5.1, tolerancia: 0.15, texto: "Mayo 2024: 5,1-5,2 $/lb"}
+  - {entrada: DXY, serie: "DX-Y.NYB", fecha: 2022-09-30, tipo: max_mes, valor: 114.1, tolerancia: 0.5, texto: "Septiembre 2022: 114"}
