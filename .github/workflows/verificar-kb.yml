@@ -1,0 +1,31 @@
+name: Verificar base de conocimiento
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 7 1 * *"   # día 1 de cada mes, 07:00 UTC
+
+permissions:
+  contents: write
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - name: Verificar afirmaciones contra FRED y yfinance
+        env:
+          FRED_API_KEY: ${{ secrets.FRED_API_KEY }}
+        run: python kb/verificar.py || true
+      - name: Guardar informe
+        run: |
+          git config user.name "macro-monitor bot"
+          git config user.email "actions@github.com"
+          git add kb/_verificacion.md
+          git diff --cached --quiet || git commit -m "kb: verificación $(date -u +%F)"
+          git push
