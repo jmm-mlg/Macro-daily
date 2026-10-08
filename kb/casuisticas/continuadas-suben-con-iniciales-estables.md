@@ -3,7 +3,7 @@ tipo: casuistica
 id: continuadas-suben-con-iniciales-estables
 nombre: Las peticiones continuadas suben con las iniciales estables
 señales: [CCSA subiendo 10 % o más en 6 meses con ICSA estable]
-en_el_motor: CCSA no está en el motor (ampliación pendiente); se lee en el informe semanal del jueves
+en_el_motor: CCSA en el panel y peso 1 (invertido) en crecimiento; disparador > 2 M; señal cruzada ICSA vs CCSA. Desde 2026-10-09
 relacionados: [ICSA, UNRATE, JTSJOL, nominas-debiles-con-peticiones-bajas, renuncias-en-minimos]
 actualizado: 2026-10-09
 ---

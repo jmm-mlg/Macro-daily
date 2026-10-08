@@ -22,7 +22,7 @@ def _arrow(chg):
     return "▲" if chg > 0 else "▼"
 
 
-KB_FILES = {"^GSPC": "GSPC", "^VIX": "VIX", "DX-Y.NYB": "DXY", "CL=F": "CL", "HG=F": "HG", "GC=F": "GC", "^TNX": "DGS10", "NEWORDER": "DGORDER", "EURUSD=X": "EURUSD", "JPY=X": "USDJPY", "CNY=X": "../conceptos/divisas"}
+KB_FILES = {"^GSPC": "GSPC", "^VIX": "VIX", "DX-Y.NYB": "DXY", "CL=F": "CL", "HG=F": "HG", "GC=F": "GC", "^TNX": "DGS10", "NEWORDER": "DGORDER", "EURUSD=X": "EURUSD", "JPY=X": "USDJPY", "CNY=X": "../conceptos/divisas", "CCSA": "ICSA", "JTSQUR": "JTSJOL", "TCU": "INDPRO", "RSCCAS": "RSAFS", "PSAVERT": "../casuisticas/consumo-financiado-con-credito", "DRCCLACBS": "../casuisticas/consumo-financiado-con-credito", "CUSR0000SASL2RS": "../casuisticas/supercore-acelera", "TTF=F": "../casuisticas/inflacion-europea-por-energia", "CU_AU": "../casuisticas/cobre-oro-y-10-anos"}
 KB_URL = ""
 
 

@@ -3,7 +3,7 @@ tipo: casuistica
 id: renuncias-en-minimos
 nombre: La tasa de renuncias cae a mínimos
 señales: [tasa de renuncias (JOLTS quits) < 2,0 %]
-en_el_motor: no está (JTSQUR pendiente); se lee en el informe JOLTS
+en_el_motor: JTSQUR en el panel y peso 1 en crecimiento (> 2,6 / < 2,0). Desde 2026-10-09
 relacionados: [JTSJOL, CES0500000003, UMCSENT, salarios-bajan-con-paro-bajo, continuadas-suben-con-iniciales-estables]
 actualizado: 2026-10-09
 ---

@@ -28,6 +28,12 @@ scores:
          why: "Retrasado (sale con 1-3 meses). Peso bajo."}
       - {series: PERMIT,   weight: 1, level: {pct_high: 70, pct_low: 30}, trend: {dead: 30},
          why: "Vivienda = el ciclo. Permisos adelantan a inicios 1-2 meses."}
+      - {series: CCSA,     weight: 1, invert: true, level: {pct_high: 70, pct_low: 30}, trend: {dead: 30000},
+         why: "Continuadas: cuánto cuesta encontrar empleo nuevo; sube antes que el paro. 2026-10-09."}
+      - {series: JTSQUR,   weight: 1, level: {above: 2.6, below: 2.0}, trend: {dead: 0.1},
+         why: "Renuncias: confianza real del trabajador; <2% = nadie se mueve. 2026-10-09."}
+      - {series: RSCCAS,   weight: 1, level: {above: 0.4, below: -0.2}, trend: {dead: 0.3},
+         why: "Grupo de control de ventas: sin gasolina, coches ni construcción; el que entra en el PIB. 2026-10-09."}
       - {series: UMCSENT,  weight: 1, level: {pct_high: 60, pct_low: 15}, trend: {dead: 2},
          why: "Confianza: adelanta al consumo discrecional, mucho ruido. 2026-10-08: pct_low de 25 a 15 por el cambio metodológico de 2024 (teléfono a internet) que bajó el nivel."}
   inflacion:
@@ -47,6 +53,8 @@ scores:
          why: "Expectativas de mercado a 10 años."}
       - {series: CP0000EZ19M086NEST, weight: 1, level: {above: 3.0, below: 2.0}, trend: {dead: 0.1},
          why: "Eurozona. Objetivo BCE 2%."}
+      - {series: CUSR0000SASL2RS, weight: 2, level: {above: 4.0, below: 2.5}, trend: {dead: 0.15},
+         why: "Servicios sin vivienda (proxy de supercore): la inflación de salarios que la Fed sí controla. 2026-10-09."}
   liquidez:
     label: Liquidez / tipos
     note: "Positivo = condiciones laxas (favorable a activos de riesgo). Negativo = restrictivas."
@@ -78,6 +86,8 @@ scores:
          why: "Oro subiendo = demanda de cobertura. 2026-10-08: solo tendencia; el nivel ya no informa desde que los bancos centrales compran al margen del ciclo (2022-)."}
       - {series: T10Y2Y,   weight: 1, level: {above: 0.5, below: 0.0}, trend: {dead: 0.1},
          why: "Curva invertida = mercado descuenta recesión."}
+      - {series: CU_AU,    weight: 1, level: {pct_high: 75, pct_low: 30}, trend: {dead: 3},
+         why: "Ratio cobre/oro: crecimiento frente a miedo; sigue al 10 años. 2026-10-09."}
 
 # ---------- Régimen: cuadrante crecimiento x inflación ----------
 # (Investment Clock, Merrill Lynch 2004; cuatro entornos de Bridgewater)
@@ -246,6 +256,9 @@ divergences:
   - {a: "GC=F", b: T10YIE, gap: 40, text: "El oro no sigue a las expectativas de inflación: se mueve por tipos reales o por refugio."}
   - {a: PAYEMS, b: ICSA, gap: 50, invert_b: true, text: "Nóminas débiles con peticiones bajas: las empresas dejan de contratar, no despiden."}
   - {a: BAMLH0A0HYM2, b: "^VIX", gap: 35, text: "Crédito y volatilidad discrepan: uno de los dos se está equivocando."}
+  - {a: RSAFS, b: RSCCAS, gap: 40, text: "Ventas totales fuertes con grupo de control flojo: el titular lo sostiene la gasolina o los coches, no el consumo real."}
+  - {a: ICSA, b: CCSA, gap: 40, invert_b: false, text: "Peticiones iniciales bajas con continuadas altas: pocos despidos pero cuesta encontrar empleo (economía congelada)."}
+  - {a: "CU_AU", b: DGS10, gap: 40, text: "El ratio cobre/oro y el 10 años discrepan: o el bono anticipa debilidad o la subida de tipos es prima de plazo, no crecimiento."}
 
 # ---------- Disparadores: qué dato cambiaría la conclusión ----------
 triggers:
@@ -257,4 +270,8 @@ triggers:
   - {series: T10Y2Y, below: 0, text: "Curva invertida de nuevo: el mercado vuelve a descontar recesión."}
   - {series: "^VIX", above: 25, text: "VIX > 25: régimen de miedo; históricamente mejor comprar que vender."}
   - {series: "JPY=X", below: 150, text: "Dólar-yen < 150: el yen se fortalece; riesgo de deshacer del carry (ago-2024 fue 162 → 142)."}
+  - {series: CCSA, above: 2000000, text: "Continuadas > 2 M: el mercado laboral deja de absorber; precede a la subida del paro."}
+  - {series: DRCCLACBS, above: 3.5, text: "Morosidad de tarjetas > 3,5 %: el consumidor de renta baja ha agotado el crédito."}
+  - {series: PSAVERT, below: 3.5, text: "Ahorro < 3,5 %: el consumo nominal se sostiene con ahorro; se agota en 2-3 trimestres."}
+  - {series: PCEPILFE, above: 2.8, text: "PCE subyacente > 2,8 %: por encima de la última proyección del FOMC (actualizar este umbral tras cada SEP: mar/jun/sep/dic)."}
   - {series: UNRATE, above: 4.5, text: "Paro > 4,5%: regla de Sahm en marcha (0,5 pp sobre el mínimo de 12 meses)."}

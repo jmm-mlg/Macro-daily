@@ -3,7 +3,7 @@ tipo: casuistica
 id: ventas-nominales-suben-por-gasolina
 nombre: Las ventas minoristas suben por la gasolina (espejismo nominal)
 señales: [RSAFS total > +0,5 % m/m con el grupo de control < +0,2 % y gasolineras > +3 %]
-en_el_motor: RSAFS +1 en crecimiento por el total; el analista corrige con el grupo de control
+en_el_motor: RSAFS (total) y RSCCAS (grupo de control) en crecimiento; señal cruzada si divergen > 40 percentiles. Desde 2026-10-09
 relacionados: [RSAFS, CL=F, CPIAUCSL, petroleo-sobre-90-y-consumo, consumo-fuerte-con-confianza-baja]
 actualizado: 2026-10-09
 ---
@@ -21,7 +21,7 @@ Las ventas son nominales: si la gasolina sube un 10 %, las ventas de gasolineras
 Consumo real estancado disfrazado de fuerte; el consumidor de renta baja está peor (la gasolina es regresiva). El motor puede dar +1 en crecimiento por un dato que es inflación.
 
 ## Qué hacer (en términos del embudo)
-- Corregir mentalmente el score: usar el grupo de control (pendiente de añadir al motor: serie RSCCAS en FRED).
+- El motor ya usa el grupo de control (RSCCAS, peso 1 en crecimiento) y marca la divergencia total/control como señal cruzada.
 - Discrecional de renta baja: peor de lo que dice el titular.
 
 ## Episodios

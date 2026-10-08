@@ -107,6 +107,12 @@ sectorial, el yen como factor de carry (USDJPY −4 en un mes → −0,5 en tecn
 discrecional y financiero; disparador < 150) y el euro como factor narrativo (> ±3 %/mes) para la lectura
 de las empresas europeas. Marco completo en `kb/conceptos/divisas.md`.
 
+## Series añadidas el 2026-10-09 (a partir de la base de conocimiento)
+Supercore (CUSR0000SASL2RS), peticiones continuadas (CCSA), tasa de renuncias (JTSQUR), utilización
+de la capacidad (TCU), grupo de control de ventas (RSCCAS), tasa de ahorro (PSAVERT), morosidad de
+tarjetas (DRCCLACBS), gas TTF (TTF=F) y el ratio cobre/oro (CU_AU, serie derivada en `config.yaml →
+derived`). Si FRED rechaza un id, la fila sale como "error" en el panel y el resto no se ve afectado.
+
 ## Motor de reglas: cómo leerlo
 
 - Score = suma ponderada de señales; cada señal evalúa nivel (percentil o umbral absoluto) y tendencia.

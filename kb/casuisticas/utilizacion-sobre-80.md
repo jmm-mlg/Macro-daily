@@ -3,7 +3,7 @@ tipo: casuistica
 id: utilizacion-sobre-80
 nombre: Utilización de la capacidad industrial por encima del 80 %
 señales: [TCU > 80 % con INDPRO creciendo]
-en_el_motor: TCU no está (sale con INDPRO en el G.17); ampliación pendiente
+en_el_motor: TCU en el panel con alerta > 80 %. Desde 2026-10-09
 relacionados: [INDPRO, NEWORDER, PPIFIS, inflacion-de-costes-vs-demanda, ciclo-de-inventarios]
 actualizado: 2026-10-09
 ---

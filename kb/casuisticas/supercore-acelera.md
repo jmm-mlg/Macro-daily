@@ -3,7 +3,7 @@ tipo: casuistica
 id: supercore-acelera
 nombre: Los servicios sin vivienda ("supercore") aceleran
 señales: [IPC servicios sin vivienda y energía > 0,4 % m/m dos meses; CES0500000003 > 4 %]
-en_el_motor: no tiene la serie supercore (añadir pendiente); lo aproxima con CPILFESL + salarios en el score de inflación
+en_el_motor: CUSR0000SASL2RS (servicios sin vivienda, proxy de supercore) peso 2 en inflación (> 4,0 / < 2,5) desde 2026-10-09
 relacionados: [CPILFESL, PCEPILFE, CES0500000003, JTSJOL, salarios-a-inflacion-de-servicios, espiral-salarios-precios]
 actualizado: 2026-10-09
 ---

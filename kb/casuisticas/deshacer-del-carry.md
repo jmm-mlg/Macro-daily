@@ -3,7 +3,7 @@ tipo: casuistica
 id: deshacer-del-carry
 nombre: Deshacer del carry (la moneda de financiación se dispara)
 señales: [yen o franco +5 % en una semana, ^VIX > 30 intradía, caída simultánea de todo lo que "rinde": bolsa, emergentes, cripto, crédito]
-en_el_motor: VIX > 25 (alerta); DXY cayendo; el motor no ve el yen (ampliación pendiente: USDJPY)
+en_el_motor: JPY=X en el panel; factor yen (−4 en el mes) y disparador < 150. Desde 2026-10-09
 relacionados: [^VIX, DX-Y.NYB, ^GSPC, BAMLH0A0HYM2, liquidez-global-y-carry, vix-sobre-25]
 actualizado: 2026-10-09
 ---

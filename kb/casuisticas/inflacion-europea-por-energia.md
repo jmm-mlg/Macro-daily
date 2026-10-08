@@ -3,7 +3,7 @@ tipo: casuistica
 id: inflacion-europea-por-energia
 nombre: La inflación europea sube por energía (gas TTF como adelantado)
 señales: [IPCA general acelerando con subyacente estable; gas TTF +30 % en 3 meses; EURUSD débil]
-en_el_motor: IPCA +1 (peso 1); sin serie de gas europeo (ampliación pendiente: TTF)
+en_el_motor: IPCA +1 (peso 1); gas TTF (TTF=F) en el panel desde 2026-10-09
 relacionados: [CP0000EZ19M086NEST, ECBDFR, EURUSD=X, CL=F, bce-sube-con-inflacion-de-costes, petroleo-a-inflacion-y-consumo, utilities, materiales]
 actualizado: 2026-10-09
 ---
@@ -24,7 +24,7 @@ Inflación importada que el BCE no puede controlar pero a la que reacciona ([[bc
 ## Qué hacer (en términos del embudo)
 - Químicas y acero europeos (BASF, ArcelorMittal): vetados; generadoras renovables e integradas: favorecidas.
 - Consumo europeo: penalizado (factura energética).
-- Añadir el TTF a la vigilancia (pendiente): Investing.com o ICE lo dan gratis.
+- El TTF está en el panel (octubre 2026: 77 €/MWh, alto: el doble que en 2024).
 
 ## Episodios
 - **2022**: TTF de 80 a 340 €/MWh (agosto); IPCA al 10,6 % en octubre; BASF −40 %; Iberdrola plana; la eurozona evitó la recesión por el invierno suave.

@@ -70,7 +70,7 @@ def _yesterday_scores() -> dict | None:
 def build_payload(rows: dict, res: dict, week_events: list, calendar: list) -> dict:
     """Payload compacto y explícito: lo único que verá el modelo."""
     key_series = ["DGS10", "DFII10", "T10Y2Y", "CPIAUCSL", "CPILFESL", "PCEPILFE", "PPIFIS", "CES0500000003",
-                  "PAYEMS", "UNRATE", "ICSA", "RSAFS", "DGORDER", "UMCSENT", "MORTGAGE30US", "BAMLH0A0HYM2", "NFCI",
+                  "PAYEMS", "UNRATE", "ICSA", "CCSA", "JTSQUR", "RSAFS", "RSCCAS", "NEWORDER", "TCU", "PSAVERT", "DRCCLACBS", "CUSR0000SASL2RS", "UMCSENT", "MORTGAGE30US", "BAMLH0A0HYM2", "NFCI", "CU_AU", "TTF=F",
                   "ECBDFR", "CP0000EZ19M086NEST", "^GSPC", "^VIX", "DX-Y.NYB", "EURUSD=X", "JPY=X", "CNY=X", "CL=F", "HG=F", "GC=F"]
     series = {}
     for sid in key_series:

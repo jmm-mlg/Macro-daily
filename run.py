@@ -48,15 +48,28 @@ def build_rows(cfg, only_headline=False, only_updated_today=False):
         by_id[sc["id"]] = row
 
     if not only_headline:
+        market_series = {}
         for mc in cfg.get("market", []):
             row = {"id": mc["ticker"], "name": mc["name"], "block": "Mercado", "unit": mc.get("unit", "")}
             try:
                 s = fetch.market_series(mc["ticker"], years)
+                market_series[mc["ticker"]] = s
                 row.update(analyze.compute(s, "level", mc))
             except Exception as e:  # noqa: BLE001
                 row["error"] = f"error: {e}"
             rows.append(row)
             by_id[mc["ticker"]] = row
+        # Series derivadas: cociente de dos series de mercado ya descargadas
+        for dc in cfg.get("derived", []):
+            row = {"id": dc["id"], "name": dc["name"], "block": dc.get("block", "Mercado"), "unit": dc.get("unit", "")}
+            try:
+                num, den = market_series[dc["numerator"]], market_series[dc["denominator"]]
+                ratio = (num / den).dropna() * dc.get("scale", 1)
+                row.update(analyze.compute(ratio, "level", dc))
+            except Exception as e:  # noqa: BLE001
+                row["error"] = f"error: {e}"
+            rows.append(row)
+            by_id[dc["id"]] = row
     return rows, by_id
 
 

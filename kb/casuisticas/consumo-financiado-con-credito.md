@@ -3,7 +3,7 @@ tipo: casuistica
 id: consumo-financiado-con-credito
 nombre: Consumo sostenido por crédito con la morosidad subiendo
 señales: [RSAFS creciendo con tasa de ahorro < 4 %, crédito al consumo > +5 % a/a y morosidad de tarjetas > 10 % (90+ días)]
-en_el_motor: no mide ahorro ni morosidad (ampliación pendiente: PSAVERT, DRCCLACBS en FRED)
+en_el_motor: PSAVERT (alerta y disparador < 3,5 %) y DRCCLACBS (alerta y disparador > 3,5 %) en el panel. Desde 2026-10-09
 relacionados: [RSAFS, CES0500000003, BAMLH0A0HYM2, financiero, discrecional, consumo-fuerte-con-confianza-baja, salarios-por-debajo-del-ipc]
 actualizado: 2026-10-09
 ---

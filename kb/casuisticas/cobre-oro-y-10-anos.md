@@ -3,7 +3,7 @@ tipo: casuistica
 id: cobre-oro-y-10-anos
 nombre: El ratio cobre/oro como predictor del 10 años
 señales: [ratio HG=F / GC=F subiendo o bajando > 10 % en 3 meses; divergencia con DGS10]
-en_el_motor: no calculado (ampliación pendiente: ratio como serie derivada)
+en_el_motor: CU_AU (ratio cobre/oro x1000, serie derivada) en el panel, peso 1 en riesgo y señal cruzada con DGS10. Desde 2026-10-09
 relacionados: [HG=F, GC=F, DGS10, DFII10, divisas, tipo-real-sube-por-crecimiento-o-por-prima]
 actualizado: 2026-10-09
 ---
@@ -21,7 +21,7 @@ Coherente al alza (octubre 2026): el mercado de materias primas confirma que la 
 
 ## Qué hacer (en términos del embudo)
 - Usarlo como contraste, no como señal propia; sirve para leer el 10 años.
-- Añadir el ratio al panel (pendiente): serie derivada HG=F / GC=F con percentil.
+- El ratio está en el panel (CU_AU) con percentil a 10 años; en octubre de 2026 en percentil 23: el oro ha ganado al cobre en la década.
 
 ## Episodios
 - **2016-2018**: ratio subió un 50 %; el 10 años de 1,4 % a 3,2 %.

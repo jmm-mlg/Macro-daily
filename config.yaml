@@ -93,6 +93,11 @@ fred:
     block: Inflación
     unit: "% a/a"
     transform: yoy
+  - id: CUSR0000SASL2RS
+    name: IPC servicios sin vivienda (proxy de supercore)
+    block: Inflación
+    unit: "% a/a"
+    transform: yoy
 
   # ---------- 3. Empleo ----------
   - id: PAYEMS
@@ -118,6 +123,16 @@ fred:
     block: Empleo
     unit: "miles"
     transform: level
+  - id: CCSA
+    name: Peticiones continuadas de desempleo
+    block: Empleo
+    unit: "pers."
+    transform: level
+  - id: JTSQUR
+    name: Tasa de renuncias (JOLTS)
+    block: Empleo
+    unit: "%"
+    transform: level
 
   # ---------- 4. Crecimiento y actividad ----------
   - id: GDPC1
@@ -137,6 +152,23 @@ fred:
     block: Actividad
     unit: "% a/a"
     transform: yoy
+  - id: TCU
+    name: Utilización de la capacidad
+    block: Actividad
+    unit: "%"
+    transform: level
+    alert: {above: 80, msg: "Utilización > 80 % (cuellos de botella, presión en IPP)"}
+  - id: RSCCAS
+    name: Ventas minoristas, grupo de control
+    block: Actividad
+    unit: "% m/m"
+    transform: mom
+  - id: PSAVERT
+    name: Tasa de ahorro personal
+    block: Actividad
+    unit: "%"
+    transform: level
+    alert: {below: 3.5, msg: "Ahorro < 3,5 %: el consumo se financia con ahorro/crédito"}
   - id: NEWORDER
     name: Pedidos de bienes de capital (core, sin defensa ni aviones)
     block: Actividad
@@ -182,6 +214,12 @@ fred:
     block: Crédito
     unit: "índice"
     transform: level
+  - id: DRCCLACBS
+    name: Morosidad de tarjetas de crédito (bancos)
+    block: Crédito
+    unit: "%"
+    transform: level
+    alert: {above: 3.5, msg: "Morosidad de tarjetas > 3,5 % (consumidor de renta baja en apuros)"}
     alert: {above: 0, msg: "Condiciones financieras más restrictivas que la media"}
 
 # ---------- 7. Mercado (yfinance) ----------
@@ -217,6 +255,19 @@ market:
   - ticker: "CNY=X"
     unit: "¥ por $"
     name: Dólar-yuan
+  - ticker: "TTF=F"
+    unit: "€/MWh"
+    name: Gas natural europeo (TTF)
+
+# ---------- 7b. Series derivadas (cociente de dos series ya descargadas) ----------
+derived:
+  - id: CU_AU
+    name: Ratio cobre/oro (x1000)
+    numerator: "HG=F"
+    denominator: "GC=F"
+    scale: 1000
+    block: Mercado
+    unit: "ratio"
 
 # ---------- 8. Calendario -> Google Calendar (.ics) ----------
 # Qué publicaciones de FRED entran en el calendario. `match` se busca (sin distinguir

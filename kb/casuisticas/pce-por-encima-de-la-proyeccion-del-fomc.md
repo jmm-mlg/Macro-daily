@@ -3,7 +3,7 @@ tipo: casuistica
 id: pce-por-encima-de-la-proyeccion-del-fomc
 nombre: El PCE subyacente va por encima de la proyección del FOMC
 señales: [PCEPILFE a/a superior a la mediana de proyección del último SEP para fin de año]
-en_el_motor: PCEPILFE +1 (peso 3); la capa micro clasifica los discursos de la Fed que lo comentan
+en_el_motor: PCEPILFE +1 (peso 3); disparador PCEPILFE > 2,8 % con el umbral a actualizar a mano tras cada SEP (rules.yaml). Desde 2026-10-09
 relacionados: [PCEPILFE, DFF, DGS2, CPILFESL, politica-monetaria-retardos, mercado-descuenta-mas-subidas-que-la-fed]
 actualizado: 2026-10-09
 ---
