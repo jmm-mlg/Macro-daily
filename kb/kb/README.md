@@ -7,8 +7,8 @@ Fuente única de conocimiento del sistema: qué mide cada dato del email, cómo 
 | --- | --- | --- | --- |
 | `indicadores/` | Indicador | Las 36 series del email (los 7 factores del motor son series ya cubiertas) | 36 hechas |
 | `conceptos/` | Concepto | Régimen, prima de riesgo, duración, pricing power, R, ATR… (~25) | pendiente |
-| `mecanismos/` | Mecanismo | Cadenas de transmisión con plazos y evidencia (~15) | pendiente |
-| `sectores/` | Sector | Los 11 GICS: drivers, métricas, comportamiento por régimen, bellwethers | pendiente |
+| `mecanismos/` | Mecanismo | Cadenas de transmisión con plazos y evidencia | 15 hechos |
+| `sectores/` | Sector | Los 11 GICS: drivers, métricas, comportamiento por régimen, bellwethers | 11 hechos |
 | `casuisticas/` | Casuística | "Qué significa y qué hacer cuando…" (~25, creciendo con el motor) | 1 hecha |
 | `episodios/` | Episodio | Casos históricos de referencia (2007-08, 2011, 2015-16, 2018, 2020, 2022, 2023) | pendiente |
 | `BIBLIOTECA.md` | Biblioteca | Fuentes gratuitas por nivel | hecha |
@@ -56,6 +56,24 @@ Fuente única de conocimiento del sistema: qué mide cada dato del email, cómo 
 - [HG=F · Cobre](indicadores/HG.md)
 - [GC=F · Oro](indicadores/GC.md)
 - ^TNX · Treasury 10 años (mercado): ver [DGS10](indicadores/DGS10.md)
+### Sectores (GICS)
+- [Financiero](sectores/financiero.md) · [Energía](sectores/energia.md) · [Tecnología de la información](sectores/tecnologia.md) · [Consumo discrecional](sectores/discrecional.md) · [Industriales](sectores/industriales.md) · [Materiales](sectores/materiales.md) · [Consumo básico](sectores/basico.md) · [Salud](sectores/salud.md) · [Servicios de comunicación](sectores/comunicacion.md) · [Utilities](sectores/utilities.md) · [Inmobiliario](sectores/inmobiliario.md)
+### Mecanismos de transmisión
+- [Tipo real → múltiplos](mecanismos/tipo-real-y-multiplos.md)
+- [Curva → margen bancario → crédito](mecanismos/curva-y-margen-bancario.md)
+- [Petróleo → inflación → renta real → consumo](mecanismos/petroleo-a-inflacion-y-consumo.md)
+- [Dólar → beneficios exteriores y materias primas](mecanismos/dolar-y-beneficios-exteriores.md)
+- [Spreads de crédito → refinanciación → actividad](mecanismos/credito-a-actividad.md)
+- [Hipotecas → vivienda → ciclo](mecanismos/vivienda-y-ciclo.md)
+- [Bolsa y vivienda → riqueza → consumo](mecanismos/efecto-riqueza.md)
+- [IPP frente a IPC y salarios → márgenes](mecanismos/inflacion-de-costes-vs-demanda.md)
+- [Mercado laboral → salarios → inflación de servicios → Fed](mecanismos/salarios-a-inflacion-de-servicios.md)
+- [Decisión de la Fed → economía real: retardos](mecanismos/politica-monetaria-retardos.md)
+- [Revisiones de analistas → retorno relativo](mecanismos/revisiones-de-analistas-a-retorno.md)
+- [Compras de insiders → retorno futuro](mecanismos/insiders-a-retorno.md)
+- [Ciclo de inventarios → producción → cíclicos](mecanismos/ciclo-de-inventarios.md)
+- [Liquidez global, dólar y carry → activos de riesgo](mecanismos/liquidez-global-y-carry.md)
+- [Consenso → sorpresa → reacción del precio](mecanismos/consenso-y-sorpresa.md)
 ### Casuísticas
 - [Bolsa y tipo real en percentiles altos a la vez](casuisticas/bolsa-y-tipo-real-en-maximos.md)
 ### Biblioteca
