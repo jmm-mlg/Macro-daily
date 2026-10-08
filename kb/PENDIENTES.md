@@ -2,8 +2,6 @@
 
 Generadas a partir de los enlaces `[[id]]` de las entradas existentes.
 
-- [ ] amplitud-estrecha-en-maximos
-- [ ] angeles-caidos
 - [ ] bce-sube-con-inflacion-de-costes
 - [ ] bienes-deflacionarios-servicios-inflacionarios
 - [ ] breakeven-sube-con-petroleo
@@ -16,19 +14,10 @@ Generadas a partir de los enlaces `[[id]]` de las entradas existentes.
 - [ ] confianza-en-minimos-como-senal-contraria
 - [ ] consumo-financiado-con-credito
 - [ ] continuadas-suben-con-iniciales-estables
-- [ ] correccion-del-10-por-ciento
-- [ ] credito-avisa-antes-que-la-bolsa
 - [ ] diferencial-hipotecario-anormal
-- [ ] divergencia-fed-bce
-- [ ] dolar-cae-con-tipos-subiendo
-- [ ] dolar-fuerte-y-materias-primas
-- [ ] dolar-sube-con-bolsa-cayendo
 - [ ] espiral-salarios-precios
 - [ ] expectativas-de-inflacion-desancladas-en-michigan
-- [ ] fed-sube-y-el-nfci-no-se-mueve
 - [ ] hipoteca-cara-con-precios-altos
-- [ ] hy-sube-con-vix-bajo
-- [ ] ig-se-amplia-con-hy-estable
 - [ ] inflacion-europea-por-energia
 - [ ] inicios-multifamiliares-en-maximos
 - [ ] ipc-alto-con-breakeven-estable
@@ -38,7 +27,6 @@ Generadas a partir de los enlaces `[[id]]` de las entradas existentes.
 - [ ] ipp-sube-por-aranceles
 - [ ] margenes-en-maximos
 - [ ] multifamiliar-se-desploma
-- [ ] nfci-sube-rapido
 - [ ] oro-sube-con-tipo-real-alto
 - [ ] oro-y-bolsa-suben-a-la-vez
 - [ ] paro-sube-por-participacion
@@ -57,11 +45,8 @@ Generadas a partir de los enlaces `[[id]]` de las entradas existentes.
 - [ ] revisiones-negativas-acumuladas
 - [ ] salarios-bajan-con-paro-bajo
 - [ ] salarios-por-debajo-del-ipc
-- [ ] spread-sube-por-petroleo
 - [ ] subyacente-baja-y-general-sube
 - [ ] supercore-acelera
 - [ ] utilizacion-sobre-80
 - [ ] vacantes-caen-sin-subir-el-paro
 - [ ] ventas-nominales-suben-por-gasolina
-- [ ] vix-bajo-con-tipo-real-alto
-- [ ] vix-sobre-25

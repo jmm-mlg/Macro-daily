@@ -22,7 +22,7 @@ def _arrow(chg):
     return "▲" if chg > 0 else "▼"
 
 
-KB_FILES = {"^GSPC": "GSPC", "^VIX": "VIX", "DX-Y.NYB": "DXY", "CL=F": "CL", "HG=F": "HG", "GC=F": "GC", "^TNX": "DGS10", "NEWORDER": "DGORDER"}
+KB_FILES = {"^GSPC": "GSPC", "^VIX": "VIX", "DX-Y.NYB": "DXY", "CL=F": "CL", "HG=F": "HG", "GC=F": "GC", "^TNX": "DGS10", "NEWORDER": "DGORDER", "EURUSD=X": "EURUSD", "JPY=X": "USDJPY", "CNY=X": "../conceptos/divisas"}
 KB_URL = ""
 
 

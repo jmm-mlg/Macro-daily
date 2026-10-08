@@ -149,14 +149,18 @@ factors:
                why: "Demanda industrial y de construcción global."}
   hipoteca:   {series: MORTGAGE30US, signal: {above: 7.0, below: 5.5},     label: "Hipoteca cara",
                why: "Vivienda, mejora del hogar, constructoras."}
+  yen:        {series: "JPY=X",      signal: {chg_below: -4.0},             label: "Yen subiendo (deshacer de carry)",
+               why: "USDJPY cayendo más de 4 en un mes = el yen se aprecia de golpe; desapalancamiento de posiciones financiadas en yenes (ago-2024). Señal -1 x carga +0,5 = -0,5 en los sectores más comprados con carry. 2026-10-09."}
+  euro:       {series: "EURUSD=X",   signal: {chg_above: 0.03, chg_below: -0.03}, label: "Euro moviéndose > 3 %/mes",
+               why: "Sin carga sectorial en la matriz (es estadounidense); se usa en la narrativa y en la lectura de las empresas europeas de la watchlist: euro débil favorece a exportadoras europeas (LVMH, Airbus, SAP, Novo) y penaliza a las americanas que venden en Europa. 2026-10-09."}
 
 # Cargas de cada sector a cada factor (-1, -0.5, 0, +0.5, +1). Signo = efecto de una señal +1.
 sector_factor_loadings:
-  tecnologia:    {duracion: -1,   curva: 0,    petroleo: 0,    dolar: -0.5, credito: -0.5, cobre: 0,    hipoteca: 0}
-  comunicacion:  {duracion: -1,   curva: 0,    petroleo: 0,    dolar: -0.5, credito: -0.5, cobre: 0,    hipoteca: 0}
-  discrecional:  {duracion: -0.5, curva: 0,    petroleo: -1,   dolar: 0,    credito: -1,   cobre: 0,    hipoteca: -1}
+  tecnologia:    {duracion: -1,   curva: 0,    petroleo: 0,    dolar: -0.5, credito: -0.5, cobre: 0,    hipoteca: 0, yen: 0.5}
+  comunicacion:  {duracion: -1,   curva: 0,    petroleo: 0,    dolar: -0.5, credito: -0.5, cobre: 0,    hipoteca: 0, yen: 0.5}
+  discrecional:  {duracion: -0.5, curva: 0,    petroleo: -1,   dolar: 0,    credito: -1,   cobre: 0,    hipoteca: -1, yen: 0.5}
   salud:         {duracion: -0.5, curva: 0,    petroleo: 0,    dolar: -0.5, credito: 0,    cobre: 0,    hipoteca: 0}
-  financiero:    {duracion: 0,    curva: 1,    petroleo: 0,    dolar: 0,    credito: -1,   cobre: 0,    hipoteca: 0}
+  financiero:    {duracion: 0,    curva: 1,    petroleo: 0,    dolar: 0,    credito: -1,   cobre: 0,    hipoteca: 0, yen: 0.5}
   industriales:  {duracion: -0.5, curva: 0.5,  petroleo: -0.5, dolar: -0.5, credito: -0.5, cobre: 1,    hipoteca: 0}
   materiales:    {duracion: 0,    curva: 0,    petroleo: -0.5, dolar: -1,   credito: -0.5, cobre: 1,    hipoteca: -0.5}
   energia:       {duracion: 0,    curva: 0,    petroleo: 1,    dolar: -0.5, credito: -0.5, cobre: 0,    hipoteca: 0}
@@ -252,4 +256,5 @@ triggers:
   - {series: CPIAUCSL, below: 3.0, text: "IPC general < 3%: abre la puerta a recortes y alivia el tipo real."}
   - {series: T10Y2Y, below: 0, text: "Curva invertida de nuevo: el mercado vuelve a descontar recesión."}
   - {series: "^VIX", above: 25, text: "VIX > 25: régimen de miedo; históricamente mejor comprar que vender."}
+  - {series: "JPY=X", below: 150, text: "Dólar-yen < 150: el yen se fortalece; riesgo de deshacer del carry (ago-2024 fue 162 → 142)."}
   - {series: UNRATE, above: 4.5, text: "Paro > 4,5%: regla de Sahm en marcha (0,5 pp sobre el mínimo de 12 meses)."}

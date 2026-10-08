@@ -101,6 +101,12 @@ nombre), su hora ET e importancia (🔴🟠⚪). Las reuniones de bancos central
 - Los **PMI de S&P Global** y la serie completa de Michigan son de pago; el ISM no está en FRED.
 - El percentil usa la ventana cargada (10 años), no toda la historia.
 
+## Divisas
+El panel incluye euro-dólar, dólar-yen y dólar-yuan (yfinance). El motor usa el dólar (DXY) como factor
+sectorial, el yen como factor de carry (USDJPY −4 en un mes → −0,5 en tecnología, comunicación,
+discrecional y financiero; disparador < 150) y el euro como factor narrativo (> ±3 %/mes) para la lectura
+de las empresas europeas. Marco completo en `kb/conceptos/divisas.md`.
+
 ## Motor de reglas: cómo leerlo
 
 - Score = suma ponderada de señales; cada señal evalúa nivel (percentil o umbral absoluto) y tendencia.

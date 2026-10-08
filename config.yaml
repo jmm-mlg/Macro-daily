@@ -208,6 +208,15 @@ market:
   - ticker: "^TNX"
     unit: "%"
     name: Treasury 10y (mercado)
+  - ticker: "EURUSD=X"
+    unit: "$ por €"
+    name: Euro-dólar
+  - ticker: "JPY=X"
+    unit: "¥ por $"
+    name: Dólar-yen (carry)
+  - ticker: "CNY=X"
+    unit: "¥ por $"
+    name: Dólar-yuan
 
 # ---------- 8. Calendario -> Google Calendar (.ics) ----------
 # Qué publicaciones de FRED entran en el calendario. `match` se busca (sin distinguir

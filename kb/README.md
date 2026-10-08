@@ -5,11 +5,11 @@ Fuente única de conocimiento del sistema: qué mide cada dato del email, cómo 
 ## Tipos de entrada
 | Carpeta | Tipo | Contenido | Estado |
 | --- | --- | --- | --- |
-| `indicadores/` | Indicador | Las 36 series del email (los 7 factores del motor son series ya cubiertas) | 36 hechas |
-| `conceptos/` | Concepto | Régimen, prima de riesgo, duración, pricing power, R, ATR… (~25) | pendiente |
+| `indicadores/` | Indicador | Las 39 series del email (incluye euro-dólar, dólar-yen, dólar-yuan) | 38 hechas |
+| `conceptos/` | Concepto | Régimen, prima de riesgo, duración, pricing power, divisas… | 1 hecho |
 | `mecanismos/` | Mecanismo | Cadenas de transmisión con plazos y evidencia | 15 hechos |
 | `sectores/` | Sector | Los 11 GICS: drivers, métricas, comportamiento por régimen, bellwethers | 11 hechos |
-| `casuisticas/` | Casuística | "Qué significa y qué hacer cuando…" (creciendo con el motor) | 16 hechas |
+| `casuisticas/` | Casuística | "Qué significa y qué hacer cuando…" (creciendo con el motor) | 32 hechas |
 | `episodios/` | Episodio | Casos históricos de referencia (2007-08, 2011, 2015-16, 2018, 2020, 2022, 2023) | pendiente |
 | `BIBLIOTECA.md` | Biblioteca | Fuentes gratuitas por nivel | hecha |
 
@@ -56,6 +56,9 @@ Fuente única de conocimiento del sistema: qué mide cada dato del email, cómo 
 - [HG=F · Cobre](indicadores/HG.md)
 - [GC=F · Oro](indicadores/GC.md)
 - ^TNX · Treasury 10 años (mercado): ver [DGS10](indicadores/DGS10.md)
+- [EURUSD=X · Euro-dólar](indicadores/EURUSD.md) · [JPY=X · Dólar-yen (carry)](indicadores/USDJPY.md) · CNY=X · Dólar-yuan: ver [Divisas](conceptos/divisas.md)
+### Conceptos
+- [Divisas: cómo leerlas para invertir en acciones](conceptos/divisas.md)
 ### Sectores (GICS)
 - [Financiero](sectores/financiero.md) · [Energía](sectores/energia.md) · [Tecnología de la información](sectores/tecnologia.md) · [Consumo discrecional](sectores/discrecional.md) · [Industriales](sectores/industriales.md) · [Materiales](sectores/materiales.md) · [Consumo básico](sectores/basico.md) · [Salud](sectores/salud.md) · [Servicios de comunicación](sectores/comunicacion.md) · [Utilities](sectores/utilities.md) · [Inmobiliario](sectores/inmobiliario.md)
 ### Mecanismos de transmisión
@@ -83,6 +86,8 @@ Fuente única de conocimiento del sistema: qué mide cada dato del email, cómo 
 - [La pausa de la Fed](casuisticas/pausa-de-la-fed.md)
 - [El primer recorte del ciclo: suelo o techo](casuisticas/primer-recorte-del-ciclo.md)
 - Tipos y curva: [Subida rápida del 10 años](casuisticas/subida-rapida-del-10-anos.md) · [El bono rinde más que la bolsa](casuisticas/bono-supera-earnings-yield.md) · [La curva se desinvierte](casuisticas/curva-se-desinvierte.md) · [Curva invertida con bolsa en máximos](casuisticas/curva-invertida-con-bolsa-en-maximos.md) · [Curva empinando con spreads subiendo (bancos)](casuisticas/bancos-y-curva.md) · [El mercado descuenta más subidas que la Fed](casuisticas/mercado-descuenta-mas-subidas-que-la-fed.md) · [Tipo real por crecimiento o por prima](casuisticas/tipo-real-sube-por-crecimiento-o-por-prima.md) · [Fin del QT](casuisticas/fin-del-qt.md) · [Balance sube sin programa](casuisticas/balance-sube-sin-programa.md)
+- Crédito, riesgo y mercado: [El HY sube con la bolsa en máximos](casuisticas/credito-avisa-antes-que-la-bolsa.md) · [El HY sube y el VIX no](casuisticas/hy-sube-con-vix-bajo.md) · [El HY sube por el petróleo](casuisticas/spread-sube-por-petroleo.md) · [El IG se amplía más que el HY](casuisticas/ig-se-amplia-con-hy-estable.md) · [Ángeles caídos](casuisticas/angeles-caidos.md) · [NFCI sube rápido](casuisticas/nfci-sube-rapido.md) · [La Fed endurece y el NFCI no se mueve](casuisticas/fed-sube-y-el-nfci-no-se-mueve.md) · [VIX sobre 25](casuisticas/vix-sobre-25.md) · [VIX bajo con tipo real alto](casuisticas/vix-bajo-con-tipo-real-alto.md) · [Amplitud estrecha en máximos](casuisticas/amplitud-estrecha-en-maximos.md) · [Corrección del 10 %: susto o bajista](casuisticas/correccion-del-10-por-ciento.md) · [Deshacer del carry](casuisticas/deshacer-del-carry.md)
+- Divisas: [Dólar fuerte con materias primas subiendo](casuisticas/dolar-fuerte-y-materias-primas.md) · [El dólar sube mientras la bolsa cae](casuisticas/dolar-sube-con-bolsa-cayendo.md) · [El dólar cae con los tipos subiendo](casuisticas/dolar-cae-con-tipos-subiendo.md) · [Divergencia Fed-BCE](casuisticas/divergencia-fed-bce.md)
 ### Biblioteca
 - [Fuentes gratuitas por nivel](BIBLIOTECA.md)
 
