@@ -42,6 +42,12 @@ y manda el resumen por email. Fuentes gratuitas: FRED (St. Louis Fed) y Yahoo Fi
   **conflictos** donde el sesgo macro y los analistas discrepan. Bellwethers a diario, toda la lista los lunes.
   Europa: revisiones sí, 8-K/insiders no (no hay equivalente a EDGAR).
 
+- **Base de conocimiento** (`kb/`): una entrada por serie del email (36), casuísticas, sectores,
+  mecanismos y biblioteca de fuentes gratuitas. El email enlaza cada serie a su entrada (`kb_url` en
+  `config.yaml`). `kb/verificar.py` comprueba las afirmaciones fechadas de las entradas contra FRED y
+  yfinance (`kb/verificacion.yaml`) y deja el informe en `kb/_verificacion.md`; corre el día 1 de cada
+  mes y a mano desde Actions → "Verificar base de conocimiento".
+
 ## Puesta en marcha
 
 1. Crea el repo y sube estos archivos.

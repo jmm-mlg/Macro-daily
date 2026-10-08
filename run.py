@@ -21,7 +21,9 @@ OUT = ROOT / "output"
 
 
 def load_config():
-    return yaml.safe_load((ROOT / "config.yaml").read_text(encoding="utf-8"))
+    cfg = yaml.safe_load((ROOT / "config.yaml").read_text(encoding="utf-8"))
+    report.KB_URL = cfg.get("kb_url", "")
+    return cfg
 
 
 def build_rows(cfg, only_headline=False, only_updated_today=False):

@@ -11,6 +11,7 @@
 # ============================================================
 
 lookback_years: 10       # ventana para el percentil histórico
+kb_url: https://github.com/jmm-mlg/Macro-daily/blob/main/kb   # base de conocimiento (enlaces en el email)
 
 fred:
   # ---------- 1. Política monetaria y tipos ----------
@@ -136,8 +137,8 @@ fred:
     block: Actividad
     unit: "% a/a"
     transform: yoy
-  - id: DGORDER
-    name: Pedidos bienes duraderos
+  - id: NEWORDER
+    name: Pedidos de bienes de capital (core, sin defensa ni aviones)
     block: Actividad
     unit: "% m/m"
     transform: mom
@@ -224,7 +225,7 @@ calendar:
     - {match: "Job Openings and Labor Turnover",  label: "JOLTS (vacantes)",              time_et: "10:00", series: [JTSJOL], importance: media}
     - {match: "New Residential Construction",     label: "Vivienda: permisos e inicios",  time_et: "08:30", series: [PERMIT, HOUST], importance: baja}
     - {match: "Industrial Production",            label: "Producción industrial",         time_et: "09:15", series: [INDPRO], importance: baja}
-    - {match: "Durable Goods",                    label: "Pedidos bienes duraderos",      time_et: "08:30", series: [DGORDER], importance: baja}
+    - {match: "Durable Goods",                    label: "Pedidos bienes duraderos",      time_et: "08:30", series: [NEWORDER], importance: baja}
     - {match: "Consumer Sentiment",               label: "Confianza Michigan",            time_et: "10:00", series: [UMCSENT], importance: baja}
 
 # ---------- 9. Empresas (watchlist.yaml) ----------
