@@ -107,6 +107,15 @@ sectorial, el yen como factor de carry (USDJPY −4 en un mes → −0,5 en tecn
 discrecional y financiero; disparador < 150) y el euro como factor narrativo (> ±3 %/mes) para la lectura
 de las empresas europeas. Marco completo en `kb/conceptos/divisas.md`.
 
+## Pulso de mercado (`macro_monitor/pulso.py`)
+Variaciones a 1 día / 1 semana / 1 mes / 3 meses en cinco bloques (Mercado: S&P, Nasdaq, equiponderado, Russell;
+VIX y VIX a 3 meses; Treasuries 2/10/30, real, breakeven, curva; Crédito HY/IG/CCC y los ETFs HYG/LQD;
+Liquidez: balance de la Fed, cuenta del Tesoro, repo inverso, reservas, NFCI, y la **liquidez neta** =
+balance − TGA − RRP) y seis medidas de régimen: estructura del VIX (backwardation), VIX frente a volatilidad
+realizada, descomposición del movimiento del 10 años en real y breakeven, tipo de empinamiento, **mercado −
+liquidez** (diferencia de z-scores a 3 meses), **prima de riesgo** (earnings yield de SPY − tipo real) y
+**correlación acciones-bonos** a 60 días. Señales en el email y en la narrativa; histórico en `data/pulso.csv`.
+
 ## Series añadidas el 2026-10-09 (a partir de la base de conocimiento)
 Supercore (CUSR0000SASL2RS), peticiones continuadas (CCSA), tasa de renuncias (JTSQUR), utilización
 de la capacidad (TCU), grupo de control de ventas (RSCCAS), tasa de ahorro (PSAVERT), morosidad de

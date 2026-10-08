@@ -39,7 +39,9 @@ FORMATO DE SALIDA (Markdown, exactamente estas seis secciones, con estos título
 ## Qué ha cambiado
 (2-3 frases. Si no hay ayer con qué comparar, dilo en una frase.)
 ## Lectura del cuadro
-(3 viñetas máximo. Cada una: tesis en negrita + dato que la sostiene + implicación.)
+(3 viñetas máximo. Cada una: tesis en negrita + dato que la sostiene + implicación. Si el JSON trae la clave "pulso",
+usa sus variaciones a 1 semana / 1 mes para hablar de velocidad (p. ej. "el 10 años +49 pb en un mes, casi todo tipo real")
+y sus medidas de régimen: estructura del VIX, mercado frente a liquidez, prima de riesgo, correlación acciones-bonos.)
 ## Esta semana
 (2-3 frases que conecten los eventos de la agenda con el cuadro macro: qué dato o resultado puede confirmar o romper la lectura.)
 ## Empresas y bancos centrales

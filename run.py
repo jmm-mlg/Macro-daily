@@ -6,6 +6,7 @@ macro-monitor — rutina principal.
   python run.py calendar  -> regenera docs/macro.ics (publicaciones FRED + FOMC/BCE)
   python run.py empresas  -> regenera docs/empresas.ics y empresas-todas.ics (resultados, ex-dividendo, mercado)
   python run.py micro     -> capa micro (revisiones, 8-K, insiders, bancos centrales) -> data/micro.json
+  python run.py pulso     -> pulso de mercado (variaciones por bloque, liquidez neta, prima de riesgo) -> data/pulso.json
   python run.py daily --no-email   -> imprime en consola, no envía
 """
 import sys
@@ -14,7 +15,7 @@ import datetime as dt
 import pathlib
 import yaml
 
-from macro_monitor import fetch, analyze, report, calendar as cal_mod, empresas, rules, narrativa, micro
+from macro_monitor import fetch, analyze, report, calendar as cal_mod, empresas, rules, narrativa, micro, pulso
 
 ROOT = pathlib.Path(__file__).parent
 OUT = ROOT / "output"
@@ -129,6 +130,15 @@ def main():
         end7 = dt.date.today() + dt.timedelta(days=7)
         week_events = [e for e in week_events if e["date"] <= end7]
 
+        # Pulso de mercado: variaciones por bloque y medidas de régimen
+        pulso_html, pulso_data = "", None
+        try:
+            pulso_data = pulso.build(3)
+            pulso.save(pulso_data)
+            pulso_html = pulso.to_html(pulso_data)
+        except Exception as e:  # noqa: BLE001
+            print(f"(pulso: {e})")
+
         # Capa micro: bellwethers a diario, toda la watchlist el día configurado (por defecto lunes)
         micro_html, micro_data, confl = "", None, []
         try:
@@ -147,6 +157,8 @@ def main():
             payload = narrativa.build_payload(by_id, res, week_events, cal)
             if micro_data:
                 payload["micro"] = narrativa.micro_summary(micro_data, confl)
+            if pulso_data:
+                payload["pulso"] = pulso.summary_for_llm(pulso_data)
             nar_md = narrativa.generate(payload)
             if nar_md:
                 narrativa.save(nar_md, today)
@@ -154,7 +166,7 @@ def main():
         except Exception as e:  # noqa: BLE001
             print(f"(narrativa: {e})")
 
-        extra_html = nar_html + report.analysis_html(res) + micro_html + empresas.week_html(week_events)
+        extra_html = nar_html + report.analysis_html(res) + pulso_html + micro_html + empresas.week_html(week_events)
         title = "Macro Monitor · Nota diaria"
         html = report.render_html(rows, reg, cal, alerts, title, extra_html)
         text = report.render_text(rows, reg, alerts)
@@ -182,6 +194,14 @@ def main():
 
     elif mode == "empresas":
         write_empresas(cfg)
+        return
+
+    elif mode == "pulso":
+        p = pulso.build(3)
+        pulso.save(p)
+        for sg in p["senales"]:
+            print("-", sg["texto"])
+        print(json.dumps(p["medidas"], ensure_ascii=False, indent=1, default=str))
         return
 
     elif mode == "micro":
