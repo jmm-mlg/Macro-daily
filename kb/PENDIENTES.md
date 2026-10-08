@@ -1,6 +1,6 @@
 # Entradas enlazadas y pendientes de escribir
 
-Generadas a partir de los enlaces `[[id]]` de las entradas existentes. Cada una es una casuística o concepto por escribir con la plantilla.
+Generadas a partir de los enlaces `[[id]]` de las entradas existentes.
 
 - [ ] amplitud-estrecha-en-maximos
 - [ ] angeles-caidos
@@ -13,14 +13,11 @@ Generadas a partir de los enlaces `[[id]]` de las entradas existentes. Cada una 
 - [ ] buenas-noticias-son-malas-noticias
 - [ ] capex-cae-con-beneficios-en-maximos
 - [ ] capex-de-ia-sostiene-el-pib
-- [ ] casuistica
 - [ ] cobre-oro-y-10-anos
-- [ ] cobre-sube-con-pedidos-cayendo
 - [ ] cobre-sube-con-produccion-plana
 - [ ] cobre-sube-por-oferta
 - [ ] confianza-en-minimos-como-senal-contraria
 - [ ] consumo-financiado-con-credito
-- [ ] consumo-fuerte-con-confianza-baja
 - [ ] continuadas-suben-con-iniciales-estables
 - [ ] correccion-del-10-por-ciento
 - [ ] credito-avisa-antes-que-la-bolsa
@@ -37,7 +34,6 @@ Generadas a partir de los enlaces `[[id]]` de las entradas existentes. Cada una 
 - [ ] fin-del-qt
 - [ ] hipoteca-cara-con-precios-altos
 - [ ] hy-sube-con-vix-bajo
-- [ ] id
 - [ ] ig-se-amplia-con-hy-estable
 - [ ] inflacion-europea-por-energia
 - [ ] inicios-multifamiliares-en-maximos
@@ -50,12 +46,9 @@ Generadas a partir de los enlaces `[[id]]` de las entradas existentes. Cada una 
 - [ ] mercado-descuenta-mas-subidas-que-la-fed
 - [ ] multifamiliar-se-desploma
 - [ ] nfci-sube-rapido
-- [ ] nominas-debiles-con-peticiones-bajas
-- [ ] oro-cae-con-inflacion-alta
 - [ ] oro-sube-con-tipo-real-alto
 - [ ] oro-y-bolsa-suben-a-la-vez
 - [ ] paro-sube-por-participacion
-- [ ] pausa-de-la-fed
 - [ ] pce-por-encima-de-la-proyeccion-del-fomc
 - [ ] pedidos-de-aviones-distorsionan
 - [ ] permisos-caen-tres-meses
@@ -64,7 +57,6 @@ Generadas a partir de los enlaces `[[id]]` de las entradas existentes. Cada una 
 - [ ] petroleo-sobre-90-y-consumo
 - [ ] petroleo-sube-por-oferta-vs-demanda
 - [ ] pib-fuerte-por-inventarios
-- [ ] primer-recorte-del-ciclo
 - [ ] recesion-industrial-sin-recesion-general
 - [ ] recesion-tecnica-sin-recesion
 - [ ] regla-de-sahm-activada

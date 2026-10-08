@@ -48,7 +48,7 @@ afirmaciones:
 
   # ---------- NFCI ----------
   - {entrada: NFCI, serie: NFCI, fecha: 2007-12-31, tipo: max_mes, valor: 0.6, tolerancia: 0.3, texto: "Diciembre 2007: +0,6 (desde −0,8 en junio)"}
-  - {entrada: NFCI, serie: NFCI, fecha: 2008-10-31, tipo: max_anio, valor: 2.5, tolerancia: 0.6, texto: "Octubre 2008: máximo +2,5"}
+  - {entrada: NFCI, serie: NFCI, fecha: 2008-11-30, tipo: max_anio, valor: 3.1, tolerancia: 0.2, texto: "Noviembre 2008: máximo de la serie +3,1"}
   - {entrada: NFCI, serie: NFCI, fecha: 2022-10-31, tipo: max_anio, valor: -0.1, tolerancia: 0.2, texto: "Octubre 2022: máximo del ciclo en torno a −0,1, sin llegar a positivo"}
 
   # ---------- Hipoteca ----------

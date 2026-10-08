@@ -25,7 +25,7 @@ Un solo número que resume 105 variables de tipos, crédito, apalancamiento y vo
 | −0,7 a −0,3 | Laxo; típico de expansión madura |
 | −0,3 a 0 | Neutral tirando a restrictivo |
 | 0 a +1 | Restrictivo; el crédito se encarece y escasea (2022, finales) |
-| > +1 | Estrés (oct-2008: +2,5; mar-2020: +1,0 en un mes) |
+| > +1 | Estrés (nov-2008: +3,1; mar-2020: +1,0 en un mes) |
 
 Más útil que el nivel es el **cambio en cuatro semanas**: +0,3 es un endurecimiento significativo; +0,5 ha coincidido con correcciones bursátiles.
 
@@ -48,7 +48,7 @@ Peso 3 en liquidez, junto al tipo real: son las dos variables que resumen el blo
 - Con tipos reales altos y bolsa en máximos (octubre 2026: −0,55), el índice puede decir "laxo" mientras el coste de capital real es alto: mirar los dos.
 
 ## Episodios
-- **2007-2008**: el NFCI pasó de −0,8 (junio de 2007) a +0,6 (diciembre) mientras la bolsa aún hacía máximos en octubre, y a +2,5 en octubre de 2008; fue uno de los indicadores más adelantados de la crisis.
+- **2007-2008**: el NFCI pasó de −0,8 (junio de 2007) a +0,6 (diciembre) mientras la bolsa aún hacía máximos en octubre, y a +3,1 a finales de noviembre de 2008 (máximo de la serie); fue uno de los indicadores más adelantados de la crisis.
 - **Octubre 2022**: en torno a −0,1, máximo del ciclo de subidas sin llegar a positivo; a partir de ahí relajó aunque la Fed siguió subiendo, y la bolsa hizo suelo ese mes.
 - **Octubre 2026**: −0,55, percentil 34: condiciones laxas pese al tipo real al 2,95 %; la bolsa y los spreads bajos lo explican. Es una de las contradicciones del cuadro.
 

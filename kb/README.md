@@ -9,7 +9,7 @@ Fuente única de conocimiento del sistema: qué mide cada dato del email, cómo 
 | `conceptos/` | Concepto | Régimen, prima de riesgo, duración, pricing power, R, ATR… (~25) | pendiente |
 | `mecanismos/` | Mecanismo | Cadenas de transmisión con plazos y evidencia | 15 hechos |
 | `sectores/` | Sector | Los 11 GICS: drivers, métricas, comportamiento por régimen, bellwethers | 11 hechos |
-| `casuisticas/` | Casuística | "Qué significa y qué hacer cuando…" (~25, creciendo con el motor) | 1 hecha |
+| `casuisticas/` | Casuística | "Qué significa y qué hacer cuando…" (creciendo con el motor) | 7 hechas |
 | `episodios/` | Episodio | Casos históricos de referencia (2007-08, 2011, 2015-16, 2018, 2020, 2022, 2023) | pendiente |
 | `BIBLIOTECA.md` | Biblioteca | Fuentes gratuitas por nivel | hecha |
 
@@ -76,6 +76,12 @@ Fuente única de conocimiento del sistema: qué mide cada dato del email, cómo 
 - [Consenso → sorpresa → reacción del precio](mecanismos/consenso-y-sorpresa.md)
 ### Casuísticas
 - [Bolsa y tipo real en percentiles altos a la vez](casuisticas/bolsa-y-tipo-real-en-maximos.md)
+- [Nóminas débiles con peticiones de desempleo bajas](casuisticas/nominas-debiles-con-peticiones-bajas.md)
+- [Consumo fuerte con confianza en mínimos](casuisticas/consumo-fuerte-con-confianza-baja.md)
+- [Cobre en máximos con pedidos de bienes de capital cayendo](casuisticas/cobre-sube-con-pedidos-cayendo.md)
+- [El oro cae mientras la inflación sube](casuisticas/oro-cae-con-inflacion-alta.md)
+- [La pausa de la Fed](casuisticas/pausa-de-la-fed.md)
+- [El primer recorte del ciclo: suelo o techo](casuisticas/primer-recorte-del-ciclo.md)
 ### Biblioteca
 - [Fuentes gratuitas por nivel](BIBLIOTECA.md)
 
