@@ -22,6 +22,18 @@ def _arrow(chg):
     return "▲" if chg > 0 else "▼"
 
 
+KB_FILES = {"^GSPC": "GSPC", "^VIX": "VIX", "DX-Y.NYB": "DXY", "CL=F": "CL", "HG=F": "HG", "GC=F": "GC", "^TNX": "DGS10", "NEWORDER": "DGORDER"}
+KB_URL = ""
+
+
+def kb_link(sid: str, name: str) -> str:
+    """Nombre de la serie enlazado a su entrada en la base de conocimiento, si hay URL base."""
+    if not KB_URL:
+        return name
+    f = KB_FILES.get(sid, sid)
+    return f"<a href='{KB_URL}/indicadores/{f}.md' style='color:#222;text-decoration:none;border-bottom:1px dotted #999'>{name}</a>"
+
+
 def render_html(rows: list, regime: dict, calendar: list, alerts: list, title: str, extra_html: str = "") -> str:
     today = dt.date.today().strftime("%d/%m/%Y")
     h = [f"<html><body style='font-family:Arial,sans-serif;font-size:14px;color:#222'>",
@@ -60,7 +72,7 @@ def render_html(rows: list, regime: dict, calendar: list, alerts: list, title: s
             pct = r["pct"]
             pcol = "#b00" if pct >= 90 else "#07a" if pct <= 10 else "#222"
             style = " style='background:#fff3f3'" if r["alerts"] else ""
-            h.append(f"<tr{style}><td>{r['name']} <span style='color:#999'>({r['unit']})</span></td>"
+            h.append(f"<tr{style}><td>{kb_link(r['id'], r['name'])} <span style='color:#999'>({r['unit']})</span></td>"
                      f"<td align='right'><b>{_fmt(r['value'])}</b></td>"
                      f"<td align='right'>{_arrow(r['chg'])} {_fmt(r['chg'])} <span style='color:#999'>{r['chg_label']}</span></td>"
                      f"<td align='right' style='color:{pcol}'>{pct:.0f}%</td>"
@@ -74,8 +86,9 @@ def render_html(rows: list, regime: dict, calendar: list, alerts: list, title: s
             h.append(f"<li>{c['date']}: {c['release']}</li>")
         h.append("</ul>")
 
+    kb = f" · <a href='{KB_URL}/README.md'>Base de conocimiento</a> · <a href='{KB_URL}/BIBLIOTECA.md'>Biblioteca</a>" if KB_URL else ""
     h.append("<p style='color:#999;font-size:12px'>Fuentes: FRED (St. Louis Fed), Yahoo Finance. "
-             "Percentil = posición del valor actual dentro de los últimos 10 años.</p></body></html>")
+             f"Percentil = posición del valor actual dentro de los últimos 10 años.{kb}</p></body></html>")
     return "\n".join(h)
 
 
@@ -160,7 +173,7 @@ def analysis_html(res: dict) -> str:
         d = abs(t["distance"])
         dist = f"{d:,.0f}".replace(",", ".") if d >= 1000 else f"{d:.2f}".replace(".", ",")
         flag = "<span style='color:#b00;font-weight:bold'>ACTIVADO</span>" if t["hit"] else f"a {dist}"
-        h.append(f"<tr><td style='font-family:monospace;white-space:nowrap'>{t['series']}</td><td style='white-space:nowrap'>{_fmt(t['value'])} / {_fmt(t['threshold'])}</td>"
+        h.append(f"<tr><td style='font-family:monospace;white-space:nowrap'>{kb_link(t['series'], t['series'])}</td><td style='white-space:nowrap'>{_fmt(t['value'])} / {_fmt(t['threshold'])}</td>"
                  f"<td style='white-space:nowrap'>{flag}</td><td style='font-size:12px'>{t['text']}</td></tr>")
     h.append("</table>")
     return "\n".join(h)
