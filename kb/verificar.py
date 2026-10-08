@@ -36,15 +36,17 @@ def fred_series(sid, start, end):
     s.index = pd.to_datetime(s.index)
     s = pd.to_numeric(s, errors="coerce").dropna()
     if s.empty:
-        # Diagnóstico y reintento: pedir la serie completa y recortar localmente
-        print(f"   (FRED {sid}: {len(obs)} observaciones en {start}..{end}; reintento sin ventana)")
-        r2 = requests.get(FRED, params={"series_id": sid, "api_key": key, "file_type": "json"}, timeout=60)
-        r2.raise_for_status()
-        s = pd.Series({o["date"]: o["value"] for o in r2.json().get("observations", [])})
-        s.index = pd.to_datetime(s.index)
-        s = pd.to_numeric(s, errors="coerce").dropna()
-        s = s[(s.index >= pd.Timestamp(start)) & (s.index <= pd.Timestamp(end))]
-        print(f"   (FRED {sid}: {len(s)} observaciones tras el reintento)")
+        # Diagnóstico: mostrar la respuesta cruda (puede ser un error con código 200)
+        print(f"   (FRED {sid}: {len(obs)} observaciones en {start}..{end}; respuesta: {r.text[:300]!r})")
+        # Reintento con la misma función que usa el informe diario (sabemos que funciona para estas series)
+        try:
+            sys.path.insert(0, str(ROOT.parent))
+            from macro_monitor import fetch as mm_fetch
+            full = mm_fetch.fred_series(sid, years=30)
+            s = full[(full.index >= pd.Timestamp(start)) & (full.index <= pd.Timestamp(end))]
+            print(f"   (FRED {sid}: {len(full)} observaciones vía macro_monitor.fetch, {len(s)} en la ventana)")
+        except Exception as e:  # noqa: BLE001
+            print(f"   (FRED {sid}: reintento vía macro_monitor.fetch falló: {e})")
     return s
 
 
