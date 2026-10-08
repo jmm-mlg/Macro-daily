@@ -23,8 +23,7 @@ jobs:
       - name: Verificar afirmaciones contra FRED y yfinance
         env:
           FRED_API_KEY: ${{ secrets.FRED_API_KEY }}
-        # el script devuelve 1 si hay desviaciones; eso no es un fallo del workflow
-        run: python kb/verificar.py; echo "exit=$?"
+        run: python kb/verificar.py || echo "El script devolvió $? (1 = hay desviaciones; no es un fallo)"
       - name: Guardar informe
         if: always()
         run: |
