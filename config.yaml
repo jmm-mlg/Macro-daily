@@ -214,13 +214,13 @@ fred:
     block: Crédito
     unit: "índice"
     transform: level
+    alert: {above: 0, msg: "Condiciones financieras más restrictivas que la media"}
   - id: DRCCLACBS
     name: Morosidad de tarjetas de crédito (bancos)
     block: Crédito
     unit: "%"
     transform: level
     alert: {above: 3.5, msg: "Morosidad de tarjetas > 3,5 % (consumidor de renta baja en apuros)"}
-    alert: {above: 0, msg: "Condiciones financieras más restrictivas que la media"}
 
 # ---------- 7. Mercado (yfinance) ----------
 market:
