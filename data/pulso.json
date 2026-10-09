@@ -76,14 +76,14 @@
   "VIX": [
    {
     "name": "VIX",
-    "value": 15.40999984741211,
+    "value": 15.199999809265137,
     "unit": "pts",
-    "date": "2026-10-08",
+    "date": "2026-10-09",
     "chg": {
-     "1d": 0.3299999237060547,
-     "1s": -0.9799995422363281,
-     "1m": -1.0499992370605469,
-     "3m": -1.75
+     "1d": -0.21000003814697266,
+     "1s": -0.1100006103515625,
+     "1m": -2.640000343322754,
+     "3m": -1.3000001907348633
     }
    },
    {
@@ -231,7 +231,7 @@
      "1d": 0.36239250941401124,
      "1s": 0.4312481100367638,
      "1m": -2.2769393929869097,
-     "3m": -3.413755542440189
+     "3m": -3.4137624882655593
     }
    },
    {
@@ -336,13 +336,13 @@
  },
  "medidas": {
   "vix_estructura": {
-   "ratio": 0.8523230040065926,
+   "ratio": 0.8407079575998929,
    "lectura": "contango (normal)"
   },
   "vix_vs_realizada": {
-   "vix": 15.40999984741211,
+   "vix": 15.199999809265137,
    "realizada_20d": 10.140947703004908,
-   "prima": 5.269052144407201,
+   "prima": 5.0590521062602285,
    "lectura": "normal"
   },
   "descomposicion_10a": {
@@ -381,15 +381,15 @@
    "lectura": "coherentes"
   },
   "prima_de_riesgo": {
-   "per": 25.005436,
+   "per": 24.571428,
    "tipo_per": "trailing",
-   "earnings_yield": 3.999130429079501,
+   "earnings_yield": 4.069767536506221,
    "tipo_real": 2.92,
-   "prima": 1.079130429079501,
+   "prima": 1.1497675365062214,
    "lectura": "comprimida (< 1,5 %): poco pagado por el riesgo"
   },
   "correlacion_acciones_bonos_60d": {
-   "corr": 0.42256077257900937,
+   "corr": 0.42256092787973454,
    "lectura": "positiva: régimen de inflación, los bonos no cubren la bolsa"
   }
  },
@@ -400,7 +400,7 @@
   },
   {
    "tipo": "valoracion",
-   "texto": "Prima de riesgo de la renta variable 1.1 % (earnings yield 4.0 % − tipo real 2.92 %): comprimida."
+   "texto": "Prima de riesgo de la renta variable 1.1 % (earnings yield 4.1 % − tipo real 2.92 %): comprimida."
   },
   {
    "tipo": "correlacion",

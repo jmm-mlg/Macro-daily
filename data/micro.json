@@ -1,0 +1,2806 @@
+{
+ "date": "2026-10-09",
+ "scope": "bellwethers",
+ "companies": [
+  {
+   "t": "XOM",
+   "name": "ExxonMobil",
+   "sector": "Energía",
+   "region": "US",
+   "role": "bellwether",
+   "revisiones": {
+    "trim": {
+     "up30": 3,
+     "down30": 0,
+     "up7": 1,
+     "down7": 0,
+     "net30": 1.0
+    },
+    "anual": {
+     "up30": 6,
+     "down30": 0,
+     "up7": 2,
+     "down7": 0,
+     "net30": 1.0
+    },
+    "est_anual_chg30_pct": 6.25,
+    "recomendaciones": {
+     "compra": 9,
+     "venta": 0,
+     "cambio_compra_1m": -1
+    }
+   },
+   "eventos": [],
+   "insiders": [],
+   "cobertura": true,
+   "compra_cluster": false,
+   "n_compradores": 0,
+   "importe_compras": 0,
+   "importe_ventas": 0
+  },
+  {
+   "t": "SHEL.L",
+   "name": "Shell",
+   "sector": "Energía",
+   "region": "EU",
+   "role": "bellwether",
+   "revisiones": {
+    "trim": {
+     "up30": 6,
+     "down30": 1,
+     "up7": 0,
+     "down7": 0,
+     "net30": 0.71
+    },
+    "anual": {
+     "up30": 3,
+     "down30": 0,
+     "up7": 2,
+     "down7": 0,
+     "net30": 1.0
+    },
+    "est_anual_chg30_pct": 11.21,
+    "recomendaciones": {
+     "compra": 10,
+     "venta": 0,
+     "cambio_compra_1m": 1
+    }
+   },
+   "eventos": [],
+   "insiders": [],
+   "cobertura": false
+  },
+  {
+   "t": "LIN",
+   "name": "Linde",
+   "sector": "Materiales",
+   "region": "US",
+   "role": "bellwether",
+   "revisiones": {
+    "trim": {
+     "up30": 0,
+     "down30": 1,
+     "up7": 1,
+     "down7": 0,
+     "net30": -1.0
+    },
+    "anual": {
+     "up30": 3,
+     "down30": 1,
+     "up7": 2,
+     "down7": 0,
+     "net30": 0.5
+    },
+    "recomendaciones": {
+     "compra": 22,
+     "venta": 1,
+     "cambio_compra_1m": 0
+    }
+   },
+   "eventos": [],
+   "insiders": [],
+   "cobertura": true,
+   "compra_cluster": false,
+   "n_compradores": 0,
+   "importe_compras": 0,
+   "importe_ventas": 0
+  },
+  {
+   "t": "BAS.DE",
+   "name": "BASF",
+   "sector": "Materiales",
+   "region": "EU",
+   "role": "bellwether",
+   "revisiones": {
+    "trim": {
+     "up30": 1,
+     "down30": 0,
+     "up7": 1,
+     "down7": 0,
+     "net30": 1.0
+    },
+    "anual": {
+     "up30": 4,
+     "down30": 2,
+     "up7": 2,
+     "down7": 1,
+     "net30": 0.33
+    },
+    "est_anual_chg30_pct": 0.18,
+    "recomendaciones": {
+     "compra": 9,
+     "venta": 5,
+     "cambio_compra_1m": 0
+    }
+   },
+   "eventos": [],
+   "insiders": [],
+   "cobertura": false
+  },
+  {
+   "t": "RIO.L",
+   "name": "Rio Tinto",
+   "sector": "Materiales",
+   "region": "EU",
+   "role": "bellwether",
+   "revisiones": {
+    "trim": {
+     "up30": 0,
+     "down30": 0,
+     "up7": 0,
+     "down7": 0,
+     "net30": 0.0
+    },
+    "anual": {
+     "up30": 8,
+     "down30": 8,
+     "up7": 1,
+     "down7": 0,
+     "net30": 0.0
+    },
+    "est_anual_chg30_pct": -1.33,
+    "recomendaciones": {
+     "compra": 8,
+     "venta": 1,
+     "cambio_compra_1m": 0
+    }
+   },
+   "eventos": [],
+   "insiders": [],
+   "cobertura": false
+  },
+  {
+   "t": "AIR.PA",
+   "name": "Airbus",
+   "sector": "Industriales",
+   "region": "EU",
+   "role": "bellwether",
+   "revisiones": {
+    "trim": {
+     "up30": 1,
+     "down30": 2,
+     "up7": 0,
+     "down7": 0,
+     "net30": -0.33
+    },
+    "anual": {
+     "up30": 12,
+     "down30": 5,
+     "up7": 1,
+     "down7": 0,
+     "net30": 0.41
+    },
+    "est_anual_chg30_pct": -0.24,
+    "recomendaciones": {
+     "compra": 18,
+     "venta": 0,
+     "cambio_compra_1m": 0
+    }
+   },
+   "eventos": [],
+   "insiders": [],
+   "cobertura": false
+  },
+  {
+   "t": "CAT",
+   "name": "Caterpillar",
+   "sector": "Industriales",
+   "region": "US",
+   "role": "bellwether",
+   "revisiones": {
+    "trim": {
+     "up30": 16,
+     "down30": 2,
+     "up7": 1,
+     "down7": 0,
+     "net30": 0.78
+    },
+    "anual": {
+     "up30": 24,
+     "down30": 0,
+     "up7": 0,
+     "down7": 1,
+     "net30": 1.0
+    },
+    "est_anual_chg30_pct": 0.05,
+    "recomendaciones": {
+     "compra": 15,
+     "venta": 2,
+     "cambio_compra_1m": 0
+    }
+   },
+   "eventos": [],
+   "insiders": [],
+   "cobertura": true,
+   "compra_cluster": false,
+   "n_compradores": 0,
+   "importe_compras": 0,
+   "importe_ventas": 0
+  },
+  {
+   "t": "SIE.DE",
+   "name": "Siemens",
+   "sector": "Industriales",
+   "region": "EU",
+   "role": "bellwether",
+   "revisiones": {
+    "trim": {
+     "up30": 0,
+     "down30": 4,
+     "up7": 0,
+     "down7": 0,
+     "net30": -1.0
+    },
+    "anual": {
+     "up30": 0,
+     "down30": 0,
+     "up7": 0,
+     "down7": 0,
+     "net30": 0.0
+    },
+    "est_anual_chg30_pct": 0.24,
+    "recomendaciones": {
+     "compra": 16,
+     "venta": 2,
+     "cambio_compra_1m": -1
+    }
+   },
+   "eventos": [],
+   "insiders": [],
+   "cobertura": false
+  },
+  {
+   "t": "FDX",
+   "name": "FedEx",
+   "sector": "Industriales",
+   "region": "US",
+   "role": "bellwether",
+   "revisiones": {
+    "trim": {
+     "up30": 2,
+     "down30": 0,
+     "up7": 1,
+     "down7": 0,
+     "net30": 1.0
+    },
+    "anual": {
+     "up30": 0,
+     "down30": 2,
+     "up7": 0,
+     "down7": 1,
+     "net30": -1.0
+    },
+    "est_anual_chg30_pct": 1.74,
+    "recomendaciones": {
+     "compra": 20,
+     "venta": 1,
+     "cambio_compra_1m": 0
+    }
+   },
+   "eventos": [],
+   "insiders": [],
+   "cobertura": true,
+   "compra_cluster": false,
+   "n_compradores": 0,
+   "importe_compras": 0,
+   "importe_ventas": 0
+  },
+  {
+   "t": "MAERSK-B.CO",
+   "name": "Maersk",
+   "sector": "Industriales",
+   "region": "EU",
+   "role": "bellwether",
+   "revisiones": {
+    "trim": {
+     "up30": 1,
+     "down30": 1,
+     "up7": 0,
+     "down7": 1,
+     "net30": 0.0
+    },
+    "anual": {
+     "up30": 1,
+     "down30": 0,
+     "up7": 1,
+     "down7": 0,
+     "net30": 1.0
+    },
+    "est_anual_chg30_pct": 35.85,
+    "recomendaciones": {
+     "compra": 2,
+     "venta": 7,
+     "cambio_compra_1m": 0
+    }
+   },
+   "eventos": [],
+   "insiders": [],
+   "cobertura": false
+  },
+  {
+   "t": "TSLA",
+   "name": "Tesla",
+   "sector": "Consumo discrecional",
+   "region": "US",
+   "role": "bellwether",
+   "revisiones": {
+    "trim": {
+     "up30": 1,
+     "down30": 4,
+     "up7": 1,
+     "down7": 3,
+     "net30": -0.6
+    },
+    "anual": {
+     "up30": 1,
+     "down30": 4,
+     "up7": 1,
+     "down7": 3,
+     "net30": -0.6
+    },
+    "est_anual_chg30_pct": -1.51,
+    "recomendaciones": {
+     "compra": 19,
+     "venta": 4,
+     "cambio_compra_1m": 0
+    }
+   },
+   "eventos": [
+    {
+     "fecha": "2026-10-02",
+     "codigos": [
+      "2.02",
+      "9.01"
+     ],
+     "descripcion": "Resultados",
+     "importancia": 3,
+     "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026064366/tsla-20261002.htm"
+    }
+   ],
+   "insiders": [
+    {
+     "fecha": "2026-09-08",
+     "quien": "Taneja Vaibhav",
+     "cargo": "Chief Financial Officer",
+     "tipo": "venta",
+     "importe_usd": 938419,
+     "acciones": 2606,
+     "url": "https://www.sec.gov/Archives/edgar/data/1318605/000110465926106432/tm2625055d1_4seq1.xml"
+    }
+   ],
+   "cobertura": true,
+   "compra_cluster": false,
+   "n_compradores": 0,
+   "importe_compras": 0,
+   "importe_ventas": 938419
+  },
+  {
+   "t": "VOW3.DE",
+   "name": "Volkswagen",
+   "sector": "Consumo discrecional",
+   "region": "EU",
+   "role": "bellwether",
+   "revisiones": {
+    "trim": {
+     "up30": 1,
+     "down30": 1,
+     "up7": 0,
+     "down7": 0,
+     "net30": 0.0
+    },
+    "anual": {
+     "up30": 1,
+     "down30": 5,
+     "up7": 0,
+     "down7": 1,
+     "net30": -0.67
+    },
+    "est_anual_chg30_pct": 0.94,
+    "recomendaciones": {
+     "compra": 12,
+     "venta": 1,
+     "cambio_compra_1m": 0
+    }
+   },
+   "eventos": [],
+   "insiders": [],
+   "cobertura": false
+  },
+  {
+   "t": "MC.PA",
+   "name": "LVMH",
+   "sector": "Consumo discrecional",
+   "region": "EU",
+   "role": "bellwether",
+   "revisiones": {
+    "trim": {
+     "up30": 0,
+     "down30": 0,
+     "up7": 0,
+     "down7": 0,
+     "net30": 0.0
+    },
+    "anual": {
+     "up30": 2,
+     "down30": 7,
+     "up7": 0,
+     "down7": 4,
+     "net30": -0.56
+    },
+    "est_anual_chg30_pct": -1.32,
+    "recomendaciones": {
+     "compra": 17,
+     "venta": 0,
+     "cambio_compra_1m": 1
+    }
+   },
+   "eventos": [],
+   "insiders": [],
+   "cobertura": false
+  },
+  {
+   "t": "ITX.MC",
+   "name": "Inditex",
+   "sector": "Consumo discrecional",
+   "region": "EU",
+   "role": "bellwether",
+   "revisiones": {
+    "trim": {
+     "up30": 3,
+     "down30": 0,
+     "up7": 3,
+     "down7": 0,
+     "net30": 1.0
+    },
+    "anual": {
+     "up30": 4,
+     "down30": 12,
+     "up7": 1,
+     "down7": 4,
+     "net30": -0.5
+    },
+    "est_anual_chg30_pct": -0.91,
+    "recomendaciones": {
+     "compra": 20,
+     "venta": 1,
+     "cambio_compra_1m": 0
+    }
+   },
+   "eventos": [],
+   "insiders": [],
+   "cobertura": false
+  },
+  {
+   "t": "MCD",
+   "name": "McDonald's",
+   "sector": "Consumo discrecional",
+   "region": "US",
+   "role": "bellwether",
+   "revisiones": {
+    "trim": {
+     "up30": 1,
+     "down30": 12,
+     "up7": 1,
+     "down7": 10,
+     "net30": -0.85
+    },
+    "anual": {
+     "up30": 2,
+     "down30": 14,
+     "up7": 1,
+     "down7": 11,
+     "net30": -0.75
+    },
+    "est_anual_chg30_pct": -0.32,
+    "recomendaciones": {
+     "compra": 19,
+     "venta": 1,
+     "cambio_compra_1m": 0
+    }
+   },
+   "eventos": [],
+   "insiders": [],
+   "cobertura": true,
+   "compra_cluster": false,
+   "n_compradores": 0,
+   "importe_compras": 0,
+   "importe_ventas": 0
+  },
+  {
+   "t": "HD",
+   "name": "Home Depot",
+   "sector": "Consumo discrecional",
+   "region": "US",
+   "role": "bellwether",
+   "revisiones": {
+    "trim": {
+     "up30": 1,
+     "down30": 28,
+     "up7": 1,
+     "down7": 27,
+     "net30": -0.93
+    },
+    "anual": {
+     "up30": 21,
+     "down30": 7,
+     "up7": 21,
+     "down7": 5,
+     "net30": 0.5
+    },
+    "est_anual_chg30_pct": 0.01,
+    "recomendaciones": {
+     "compra": 22,
+     "venta": 0,
+     "cambio_compra_1m": 1
+    }
+   },
+   "eventos": [],
+   "insiders": [
+    {
+     "fecha": "2026-09-10",
+     "quien": "Scardino Kimberly R",
+     "cargo": "SVP-Finance, CAO & Controller",
+     "tipo": "venta",
+     "importe_usd": 206516,
+     "acciones": 675,
+     "url": "https://www.sec.gov/Archives/edgar/data/354950/000035495026000165/wk-form4_1789158867.xml"
+    }
+   ],
+   "cobertura": true,
+   "compra_cluster": false,
+   "n_compradores": 0,
+   "importe_compras": 0,
+   "importe_ventas": 206516
+  },
+  {
+   "t": "AMZN",
+   "name": "Amazon",
+   "sector": "Consumo discrecional",
+   "region": "US",
+   "role": "bellwether",
+   "revisiones": {
+    "trim": {
+     "up30": 4,
+     "down30": 1,
+     "up7": 1,
+     "down7": 0,
+     "net30": 0.6
+    },
+    "anual": {
+     "up30": 3,
+     "down30": 0,
+     "up7": 1,
+     "down7": 0,
+     "net30": 1.0
+    },
+    "est_anual_chg30_pct": -0.02,
+    "recomendaciones": {
+     "compra": 58,
+     "venta": 0,
+     "cambio_compra_1m": -1
+    }
+   },
+   "eventos": [],
+   "insiders": [
+    {
+     "fecha": "2026-10-01",
+     "quien": "Herrington Douglas J",
+     "cargo": "CEO Worldwide Amazon Stores",
+     "tipo": "venta",
+     "importe_usd": 251500,
+     "acciones": 1000,
+     "url": "https://www.sec.gov/Archives/edgar/data/1018724/000193600626000026/wk-form4_1791230893.xml"
+    }
+   ],
+   "cobertura": true,
+   "compra_cluster": false,
+   "n_compradores": 0,
+   "importe_compras": 0,
+   "importe_ventas": 251500
+  },
+  {
+   "t": "WMT",
+   "name": "Walmart",
+   "sector": "Consumo básico",
+   "region": "US",
+   "role": "bellwether",
+   "revisiones": {
+    "trim": {
+     "up30": 0,
+     "down30": 30,
+     "up7": 0,
+     "down7": 1,
+     "net30": -1.0
+    },
+    "anual": {
+     "up30": 12,
+     "down30": 16,
+     "up7": 0,
+     "down7": 1,
+     "net30": -0.14
+    },
+    "est_anual_chg30_pct": -0.03,
+    "recomendaciones": {
+     "compra": 37,
+     "venta": 1,
+     "cambio_compra_1m": 0
+    }
+   },
+   "eventos": [],
+   "insiders": [
+    {
+     "fecha": "2026-10-01",
+     "quien": "Bartlett Daniel J",
+     "cargo": "Executive Vice President",
+     "tipo": "venta",
+     "importe_usd": 416596,
+     "acciones": 3990,
+     "url": "https://www.sec.gov/Archives/edgar/data/104169/000157929926000026/wk-form4_1790976822.xml"
+    },
+    {
+     "fecha": "2026-09-17",
+     "quien": "Furner John R.",
+     "cargo": "President & CEO",
+     "tipo": "venta",
+     "importe_usd": 754006,
+     "acciones": 7080,
+     "url": "https://www.sec.gov/Archives/edgar/data/104169/000169673726000019/wk-form4_1789764067.xml"
+    },
+    {
+     "fecha": "2026-09-17",
+     "quien": "Furner John R.",
+     "cargo": "President & CEO",
+     "tipo": "venta",
+     "importe_usd": 645872,
+     "acciones": 6045,
+     "url": "https://www.sec.gov/Archives/edgar/data/104169/000169673726000019/wk-form4_1789764067.xml"
+    },
+    {
+     "fecha": "2026-09-17",
+     "quien": "Nicholas Christopher James",
+     "cargo": "Executive Vice President",
+     "tipo": "venta",
+     "importe_usd": 160264,
+     "acciones": 1505,
+     "url": "https://www.sec.gov/Archives/edgar/data/104169/000199280826000027/wk-form4_1789763762.xml"
+    },
+    {
+     "fecha": "2026-09-17",
+     "quien": "Nicholas Christopher James",
+     "cargo": "Executive Vice President",
+     "tipo": "venta",
+     "importe_usd": 149022,
+     "acciones": 1395,
+     "url": "https://www.sec.gov/Archives/edgar/data/104169/000199280826000027/wk-form4_1789763762.xml"
+    }
+   ],
+   "cobertura": true,
+   "compra_cluster": false,
+   "n_compradores": 0,
+   "importe_compras": 0,
+   "importe_ventas": 2125760
+  },
+  {
+   "t": "NESN.SW",
+   "name": "Nestlé",
+   "sector": "Consumo básico",
+   "region": "EU",
+   "role": "bellwether",
+   "revisiones": {
+    "trim": {
+     "up30": 0,
+     "down30": 0,
+     "up7": 0,
+     "down7": 0,
+     "net30": 0.0
+    },
+    "anual": {
+     "up30": 4,
+     "down30": 0,
+     "up7": 2,
+     "down7": 0,
+     "net30": 1.0
+    },
+    "est_anual_chg30_pct": 0.41,
+    "recomendaciones": {
+     "compra": 10,
+     "venta": 1,
+     "cambio_compra_1m": 0
+    }
+   },
+   "eventos": [],
+   "insiders": [],
+   "cobertura": false
+  },
+  {
+   "t": "PG",
+   "name": "Procter & Gamble",
+   "sector": "Consumo básico",
+   "region": "US",
+   "role": "bellwether",
+   "revisiones": {
+    "trim": {
+     "up30": 0,
+     "down30": 12,
+     "up7": 3,
+     "down7": 8,
+     "net30": -1.0
+    },
+    "anual": {
+     "up30": 1,
+     "down30": 4,
+     "up7": 1,
+     "down7": 0,
+     "net30": -0.6
+    },
+    "est_anual_chg30_pct": -0.02,
+    "recomendaciones": {
+     "compra": 14,
+     "venta": 0,
+     "cambio_compra_1m": 1
+    }
+   },
+   "eventos": [],
+   "insiders": [
+    {
+     "fecha": "2026-10-05",
+     "quien": "Schulten Andre",
+     "cargo": "Chief Financial Officer",
+     "tipo": "venta",
+     "importe_usd": 568861,
+     "acciones": 3914,
+     "url": "https://www.sec.gov/Archives/edgar/data/80424/000008042426000200/form4.xml"
+    },
+    {
+     "fecha": "2026-10-05",
+     "quien": "Gama Paul",
+     "cargo": "CEO- Health Care",
+     "tipo": "venta",
+     "importe_usd": 323382,
+     "acciones": 2225,
+     "url": "https://www.sec.gov/Archives/edgar/data/80424/000008042426000199/form4.xml"
+    },
+    {
+     "fecha": "2026-10-05",
+     "quien": "Whaley Susan Street",
+     "cargo": "Chief Legal Officer & Secy",
+     "tipo": "venta",
+     "importe_usd": 344310,
+     "acciones": 2369,
+     "url": "https://www.sec.gov/Archives/edgar/data/80424/000008042426000198/form4.xml"
+    }
+   ],
+   "cobertura": true,
+   "compra_cluster": false,
+   "n_compradores": 0,
+   "importe_compras": 0,
+   "importe_ventas": 1236553
+  },
+  {
+   "t": "LLY",
+   "name": "Eli Lilly",
+   "sector": "Salud",
+   "region": "US",
+   "role": "bellwether",
+   "revisiones": {
+    "trim": {
+     "up30": 3,
+     "down30": 0,
+     "up7": 2,
+     "down7": 0,
+     "net30": 1.0
+    },
+    "anual": {
+     "up30": 4,
+     "down30": 2,
+     "up7": 2,
+     "down7": 0,
+     "net30": 0.33
+    },
+    "est_anual_chg30_pct": -0.71,
+    "recomendaciones": {
+     "compra": 25,
+     "venta": 2,
+     "cambio_compra_1m": 0
+    }
+   },
+   "eventos": [],
+   "insiders": [],
+   "cobertura": true,
+   "compra_cluster": false,
+   "n_compradores": 0,
+   "importe_compras": 0,
+   "importe_ventas": 0
+  },
+  {
+   "t": "NOVO-B.CO",
+   "name": "Novo Nordisk",
+   "sector": "Salud",
+   "region": "EU",
+   "role": "bellwether",
+   "revisiones": {
+    "trim": {
+     "up30": 1,
+     "down30": 2,
+     "up7": 1,
+     "down7": 1,
+     "net30": -0.33
+    },
+    "anual": {
+     "up30": 6,
+     "down30": 1,
+     "up7": 3,
+     "down7": 2,
+     "net30": 0.71
+    },
+    "est_anual_chg30_pct": 0.71,
+    "recomendaciones": {
+     "compra": 5,
+     "venta": 4,
+     "cambio_compra_1m": 0
+    }
+   },
+   "eventos": [],
+   "insiders": [],
+   "cobertura": false
+  },
+  {
+   "t": "UNH",
+   "name": "UnitedHealth",
+   "sector": "Salud",
+   "region": "US",
+   "role": "bellwether",
+   "revisiones": {
+    "trim": {
+     "up30": 2,
+     "down30": 1,
+     "up7": 2,
+     "down7": 0,
+     "net30": 0.33
+    },
+    "anual": {
+     "up30": 2,
+     "down30": 0,
+     "up7": 1,
+     "down7": 0,
+     "net30": 1.0
+    },
+    "est_anual_chg30_pct": 0.28,
+    "recomendaciones": {
+     "compra": 22,
+     "venta": 0,
+     "cambio_compra_1m": 0
+    }
+   },
+   "eventos": [],
+   "insiders": [],
+   "cobertura": true,
+   "compra_cluster": false,
+   "n_compradores": 0,
+   "importe_compras": 0,
+   "importe_ventas": 0
+  },
+  {
+   "t": "JPM",
+   "name": "JPMorgan",
+   "sector": "Financiero",
+   "region": "US",
+   "role": "bellwether",
+   "revisiones": {
+    "trim": {
+     "up30": 2,
+     "down30": 1,
+     "up7": 1,
+     "down7": 1,
+     "net30": 0.33
+    },
+    "anual": {
+     "up30": 3,
+     "down30": 0,
+     "up7": 1,
+     "down7": 1,
+     "net30": 1.0
+    },
+    "est_anual_chg30_pct": 0.02,
+    "recomendaciones": {
+     "compra": 13,
+     "venta": 0,
+     "cambio_compra_1m": 0
+    }
+   },
+   "eventos": [],
+   "insiders": [
+    {
+     "fecha": "2026-09-10",
+     "quien": "Leopold Robin",
+     "cargo": "Head of Human Resources",
+     "tipo": "venta",
+     "importe_usd": 882026,
+     "acciones": 2500,
+     "url": "https://www.sec.gov/Archives/edgar/data/19617/000122520826007727/doc4.xml"
+    }
+   ],
+   "cobertura": true,
+   "compra_cluster": false,
+   "n_compradores": 0,
+   "importe_compras": 0,
+   "importe_ventas": 882026
+  },
+  {
+   "t": "BNP.PA",
+   "name": "BNP Paribas",
+   "sector": "Financiero",
+   "region": "EU",
+   "role": "bellwether",
+   "revisiones": {
+    "trim": {
+     "up30": 3,
+     "down30": 0,
+     "up7": 2,
+     "down7": 1,
+     "net30": 1.0
+    },
+    "anual": {
+     "up30": 4,
+     "down30": 4,
+     "up7": 0,
+     "down7": 0,
+     "net30": 0.0
+    },
+    "est_anual_chg30_pct": 0.87,
+    "recomendaciones": {
+     "compra": 15,
+     "venta": 0,
+     "cambio_compra_1m": 0
+    }
+   },
+   "eventos": [],
+   "insiders": [],
+   "cobertura": false
+  },
+  {
+   "t": "ALV.DE",
+   "name": "Allianz",
+   "sector": "Financiero",
+   "region": "EU",
+   "role": "bellwether",
+   "revisiones": {
+    "trim": {
+     "up30": 0,
+     "down30": 1,
+     "up7": 0,
+     "down7": 1,
+     "net30": -1.0
+    },
+    "anual": {
+     "up30": 1,
+     "down30": 1,
+     "up7": 1,
+     "down7": 0,
+     "net30": 0.0
+    },
+    "est_anual_chg30_pct": 1.06,
+    "recomendaciones": {
+     "compra": 6,
+     "venta": 4,
+     "cambio_compra_1m": 0
+    }
+   },
+   "eventos": [],
+   "insiders": [],
+   "cobertura": false
+  },
+  {
+   "t": "V",
+   "name": "Visa",
+   "sector": "Financiero",
+   "region": "US",
+   "role": "bellwether",
+   "revisiones": {
+    "trim": {
+     "up30": 8,
+     "down30": 16,
+     "up7": 0,
+     "down7": 2,
+     "net30": -0.33
+    },
+    "anual": {
+     "up30": 30,
+     "down30": 6,
+     "up7": 2,
+     "down7": 0,
+     "net30": 0.67
+    },
+    "est_anual_chg30_pct": 0.0,
+    "recomendaciones": {
+     "compra": 36,
+     "venta": 1,
+     "cambio_compra_1m": 0
+    }
+   },
+   "eventos": [],
+   "insiders": [
+    {
+     "fecha": "2026-10-01",
+     "quien": "Mcinerney Ryan",
+     "cargo": "Chief Executive Officer",
+     "tipo": "venta",
+     "importe_usd": 2108009,
+     "acciones": 5875,
+     "url": "https://www.sec.gov/Archives/edgar/data/1403161/000140316126000123/form4.xml"
+    },
+    {
+     "fecha": "2026-09-09",
+     "quien": "Rottenberg Julie B",
+     "cargo": "GENERAL COUNSEL",
+     "tipo": "venta",
+     "importe_usd": 687691,
+     "acciones": 1867,
+     "url": "https://www.sec.gov/Archives/edgar/data/1403161/000140316126000118/form4.xml"
+    }
+   ],
+   "cobertura": true,
+   "compra_cluster": false,
+   "n_compradores": 0,
+   "importe_compras": 0,
+   "importe_ventas": 2795700
+  },
+  {
+   "t": "MSFT",
+   "name": "Microsoft",
+   "sector": "Tecnología de la información",
+   "region": "US",
+   "role": "bellwether",
+   "revisiones": {
+    "trim": {
+     "up30": 17,
+     "down30": 5,
+     "up7": 1,
+     "down7": 0,
+     "net30": 0.55
+    },
+    "anual": {
+     "up30": 1,
+     "down30": 0,
+     "up7": 1,
+     "down7": 0,
+     "net30": 1.0
+    },
+    "est_anual_chg30_pct": 0.08,
+    "recomendaciones": {
+     "compra": 55,
+     "venta": 0,
+     "cambio_compra_1m": 2
+    }
+   },
+   "eventos": [],
+   "insiders": [
+    {
+     "fecha": "2026-09-14",
+     "quien": "Hood Amy",
+     "cargo": "EVP, Chief Financial Officer",
+     "tipo": "venta",
+     "importe_usd": 2152031,
+     "acciones": 4339,
+     "url": "https://www.sec.gov/Archives/edgar/data/789019/000078901926000212/form4.xml"
+    },
+    {
+     "fecha": "2026-09-14",
+     "quien": "Hood Amy",
+     "cargo": "EVP, Chief Financial Officer",
+     "tipo": "venta",
+     "importe_usd": 5184281,
+     "acciones": 10433,
+     "url": "https://www.sec.gov/Archives/edgar/data/789019/000078901926000212/form4.xml"
+    },
+    {
+     "fecha": "2026-09-14",
+     "quien": "Hood Amy",
+     "cargo": "EVP, Chief Financial Officer",
+     "tipo": "venta",
+     "importe_usd": 4888746,
+     "acciones": 9821,
+     "url": "https://www.sec.gov/Archives/edgar/data/789019/000078901926000212/form4.xml"
+    },
+    {
+     "fecha": "2026-09-14",
+     "quien": "Hood Amy",
+     "cargo": "EVP, Chief Financial Officer",
+     "tipo": "venta",
+     "importe_usd": 2147698,
+     "acciones": 4305,
+     "url": "https://www.sec.gov/Archives/edgar/data/789019/000078901926000212/form4.xml"
+    },
+    {
+     "fecha": "2026-09-14",
+     "quien": "Hood Amy",
+     "cargo": "EVP, Chief Financial Officer",
+     "tipo": "venta",
+     "importe_usd": 4418003,
+     "acciones": 8834,
+     "url": "https://www.sec.gov/Archives/edgar/data/789019/000078901926000212/form4.xml"
+    },
+    {
+     "fecha": "2026-09-14",
+     "quien": "Hood Amy",
+     "cargo": "EVP, Chief Financial Officer",
+     "tipo": "venta",
+     "importe_usd": 1974087,
+     "acciones": 3942,
+     "url": "https://www.sec.gov/Archives/edgar/data/789019/000078901926000212/form4.xml"
+    }
+   ],
+   "cobertura": true,
+   "compra_cluster": false,
+   "n_compradores": 0,
+   "importe_compras": 0,
+   "importe_ventas": 20764846
+  },
+  {
+   "t": "SAP.DE",
+   "name": "SAP",
+   "sector": "Tecnología de la información",
+   "region": "EU",
+   "role": "bellwether",
+   "revisiones": {
+    "trim": {
+     "up30": 1,
+     "down30": 2,
+     "up7": 1,
+     "down7": 2,
+     "net30": -0.33
+    },
+    "anual": {
+     "up30": 1,
+     "down30": 2,
+     "up7": 1,
+     "down7": 2,
+     "net30": -0.33
+    },
+    "est_anual_chg30_pct": 0.03,
+    "recomendaciones": {
+     "compra": 24,
+     "venta": 0,
+     "cambio_compra_1m": 0
+    }
+   },
+   "eventos": [],
+   "insiders": [],
+   "cobertura": false
+  },
+  {
+   "t": "NVDA",
+   "name": "Nvidia",
+   "sector": "Tecnología de la información",
+   "region": "US",
+   "role": "bellwether",
+   "revisiones": {
+    "trim": {
+     "up30": 35,
+     "down30": 2,
+     "up7": 0,
+     "down7": 0,
+     "net30": 0.89
+    },
+    "anual": {
+     "up30": 43,
+     "down30": 1,
+     "up7": 0,
+     "down7": 0,
+     "net30": 0.95
+    },
+    "est_anual_chg30_pct": 0.06,
+    "recomendaciones": {
+     "compra": 58,
+     "venta": 1,
+     "cambio_compra_1m": 0
+    }
+   },
+   "eventos": [],
+   "insiders": [
+    {
+     "fecha": "2026-09-21",
+     "quien": "Teter Timothy S.",
+     "cargo": "EVP, General Counsel and Sec",
+     "tipo": "venta",
+     "importe_usd": 2773638,
+     "acciones": 12483,
+     "url": "https://www.sec.gov/Archives/edgar/data/1045810/000169684126000014/wk-form4_1790196985.xml"
+    },
+    {
+     "fecha": "2026-09-21",
+     "quien": "Teter Timothy S.",
+     "cargo": "EVP, General Counsel and Sec",
+     "tipo": "venta",
+     "importe_usd": 3006253,
+     "acciones": 13478,
+     "url": "https://www.sec.gov/Archives/edgar/data/1045810/000169684126000014/wk-form4_1790196985.xml"
+    },
+    {
+     "fecha": "2026-09-21",
+     "quien": "Teter Timothy S.",
+     "cargo": "EVP, General Counsel and Sec",
+     "tipo": "venta",
+     "importe_usd": 1006642,
+     "acciones": 4499,
+     "url": "https://www.sec.gov/Archives/edgar/data/1045810/000169684126000014/wk-form4_1790196985.xml"
+    },
+    {
+     "fecha": "2026-09-18",
+     "quien": "Stevens Mark A",
+     "cargo": "consejero",
+     "tipo": "venta",
+     "importe_usd": 297942896,
+     "acciones": 1356000,
+     "url": "https://www.sec.gov/Archives/edgar/data/1045810/000119903926000016/wk-form4_1790110579.xml"
+    },
+    {
+     "fecha": "2026-09-18",
+     "quien": "Stevens Mark A",
+     "cargo": "consejero",
+     "tipo": "venta",
+     "importe_usd": 2204199,
+     "acciones": 10000,
+     "url": "https://www.sec.gov/Archives/edgar/data/1045810/000119903926000016/wk-form4_1790110579.xml"
+    },
+    {
+     "fecha": "2026-09-17",
+     "quien": "Kress Colette",
+     "cargo": "EVP & Chief Financial Officer",
+     "tipo": "venta",
+     "importe_usd": 1020525,
+     "acciones": 4681,
+     "url": "https://www.sec.gov/Archives/edgar/data/1045810/000158867026000014/wk-form4_1789765959.xml"
+    },
+    {
+     "fecha": "2026-09-17",
+     "quien": "Kress Colette",
+     "cargo": "EVP & Chief Financial Officer",
+     "tipo": "venta",
+     "importe_usd": 4461161,
+     "acciones": 20369,
+     "url": "https://www.sec.gov/Archives/edgar/data/1045810/000158867026000014/wk-form4_1789765959.xml"
+    },
+    {
+     "fecha": "2026-09-17",
+     "quien": "Kress Colette",
+     "cargo": "EVP & Chief Financial Officer",
+     "tipo": "venta",
+     "importe_usd": 2166946,
+     "acciones": 9868,
+     "url": "https://www.sec.gov/Archives/edgar/data/1045810/000158867026000014/wk-form4_1789765959.xml"
+    }
+   ],
+   "cobertura": true,
+   "compra_cluster": false,
+   "n_compradores": 0,
+   "importe_compras": 0,
+   "importe_ventas": 314582260
+  },
+  {
+   "t": "TSM",
+   "name": "TSMC",
+   "sector": "Tecnología de la información",
+   "region": "US",
+   "role": "bellwether",
+   "revisiones": {
+    "trim": {
+     "up30": 2,
+     "down30": 0,
+     "up7": 1,
+     "down7": 0,
+     "net30": 1.0
+    },
+    "anual": {
+     "up30": 2,
+     "down30": 0,
+     "up7": 1,
+     "down7": 0,
+     "net30": 1.0
+    },
+    "est_anual_chg30_pct": 0.27,
+    "recomendaciones": {
+     "compra": 20,
+     "venta": 0,
+     "cambio_compra_1m": 0
+    }
+   },
+   "eventos": [],
+   "insiders": [
+    {
+     "fecha": "2026-10-07",
+     "quien": "Yuan Lipen",
+     "cargo": "VP",
+     "tipo": "compra",
+     "importe_usd": 3176,
+     "acciones": 40,
+     "url": "https://www.sec.gov/Archives/edgar/data/1046179/000104617926000724/wk-form4_1791455755.xml"
+    },
+    {
+     "fecha": "2026-10-07",
+     "quien": "Yeap Choh Fei",
+     "cargo": "SVP",
+     "tipo": "compra",
+     "importe_usd": 4128,
+     "acciones": 52,
+     "url": "https://www.sec.gov/Archives/edgar/data/1046179/000104617926000723/wk-form4_1791455750.xml"
+    },
+    {
+     "fecha": "2026-10-07",
+     "quien": "Zhang Kevin Xiaoqiang",
+     "cargo": "SVP and Deputy Co-COO",
+     "tipo": "compra",
+     "importe_usd": 4684,
+     "acciones": 59,
+     "url": "https://www.sec.gov/Archives/edgar/data/1046179/000104617926000722/wk-form4_1791455743.xml"
+    },
+    {
+     "fecha": "2026-10-07",
+     "quien": "Yoo Chue-San",
+     "cargo": "VP",
+     "tipo": "compra",
+     "importe_usd": 3970,
+     "acciones": 50,
+     "url": "https://www.sec.gov/Archives/edgar/data/1046179/000104617926000721/wk-form4_1791455737.xml"
+    },
+    {
+     "fecha": "2026-10-07",
+     "quien": "Wu Shien-Yang",
+     "cargo": "SVP",
+     "tipo": "compra",
+     "importe_usd": 4208,
+     "acciones": 53,
+     "url": "https://www.sec.gov/Archives/edgar/data/1046179/000104617926000716/wk-form4_1791455553.xml"
+    },
+    {
+     "fecha": "2026-10-07",
+     "quien": "Wei Che-Chia",
+     "cargo": "Chairman and CEO",
+     "tipo": "compra",
+     "importe_usd": 11432,
+     "acciones": 144,
+     "url": "https://www.sec.gov/Archives/edgar/data/1046179/000104617926000715/wk-form4_1791455546.xml"
+    },
+    {
+     "fecha": "2026-10-07",
+     "quien": "Wu Yi-Huang",
+     "cargo": "VP",
+     "tipo": "compra",
+     "importe_usd": 3096,
+     "acciones": 39,
+     "url": "https://www.sec.gov/Archives/edgar/data/1046179/000104617926000714/wk-form4_1791455539.xml"
+    },
+    {
+     "fecha": "2026-10-07",
+     "quien": "Wang Ying-Lang",
+     "cargo": "SVP",
+     "tipo": "compra",
+     "importe_usd": 4128,
+     "acciones": 52,
+     "url": "https://www.sec.gov/Archives/edgar/data/1046179/000104617926000710/wk-form4_1791455413.xml"
+    },
+    {
+     "fecha": "2026-10-07",
+     "quien": "Mii Yuh-Jier",
+     "cargo": "EVP and Co-COO",
+     "tipo": "compra",
+     "importe_usd": 5399,
+     "acciones": 68,
+     "url": "https://www.sec.gov/Archives/edgar/data/1046179/000104617926000709/wk-form4_1791455406.xml"
+    },
+    {
+     "fecha": "2026-10-07",
+     "quien": "Tien Bor-Zen",
+     "cargo": "VP",
+     "tipo": "compra",
+     "importe_usd": 3176,
+     "acciones": 40,
+     "url": "https://www.sec.gov/Archives/edgar/data/1046179/000104617926000708/wk-form4_1791455401.xml"
+    },
+    {
+     "fecha": "2026-10-07",
+     "quien": "Tien Bor-Zen",
+     "cargo": "VP",
+     "tipo": "compra",
+     "importe_usd": 556,
+     "acciones": 7,
+     "url": "https://www.sec.gov/Archives/edgar/data/1046179/000104617926000708/wk-form4_1791455401.xml"
+    },
+    {
+     "fecha": "2026-10-07",
+     "quien": "Lu Chin-Sheng",
+     "cargo": "VP",
+     "tipo": "compra",
+     "importe_usd": 2858,
+     "acciones": 36,
+     "url": "https://www.sec.gov/Archives/edgar/data/1046179/000104617926000704/wk-form4_1791455244.xml"
+    },
+    {
+     "fecha": "2026-10-07",
+     "quien": "Lu Lee-Chung",
+     "cargo": "VP",
+     "tipo": "compra",
+     "importe_usd": 3890,
+     "acciones": 49,
+     "url": "https://www.sec.gov/Archives/edgar/data/1046179/000104617926000703/wk-form4_1791455238.xml"
+    },
+    {
+     "fecha": "2026-10-07",
+     "quien": "Lin Shyue-Shyh",
+     "cargo": "VP",
+     "tipo": "compra",
+     "importe_usd": 3493,
+     "acciones": 44,
+     "url": "https://www.sec.gov/Archives/edgar/data/1046179/000104617926000702/wk-form4_1791455231.xml"
+    },
+    {
+     "fecha": "2026-10-07",
+     "quien": "Lin Chris Horng-Dar",
+     "cargo": "VP and CIO",
+     "tipo": "compra",
+     "importe_usd": 3493,
+     "acciones": 44,
+     "url": "https://www.sec.gov/Archives/edgar/data/1046179/000104617926000698/wk-form4_1791455100.xml"
+    },
+    {
+     "fecha": "2026-10-07",
+     "quien": "Lee Chun-Hsien",
+     "cargo": "SVP",
+     "tipo": "compra",
+     "importe_usd": 4049,
+     "acciones": 51,
+     "url": "https://www.sec.gov/Archives/edgar/data/1046179/000104617926000697/wk-form4_1791455093.xml"
+    },
+    {
+     "fecha": "2026-10-07",
+     "quien": "Ku Yao-Ching",
+     "cargo": "VP",
+     "tipo": "compra",
+     "importe_usd": 3652,
+     "acciones": 46,
+     "url": "https://www.sec.gov/Archives/edgar/data/1046179/000104617926000696/wk-form4_1791455086.xml"
+    },
+    {
+     "fecha": "2026-10-07",
+     "quien": "Hwang Yuan-Ko",
+     "cargo": "VP",
+     "tipo": "compra",
+     "importe_usd": 3096,
+     "acciones": 39,
+     "url": "https://www.sec.gov/Archives/edgar/data/1046179/000104617926000692/wk-form4_1791454881.xml"
+    },
+    {
+     "fecha": "2026-10-07",
+     "quien": "Huang Jen-Chau",
+     "cargo": "SVP and CFO",
+     "tipo": "compra",
+     "importe_usd": 2223,
+     "acciones": 28,
+     "url": "https://www.sec.gov/Archives/edgar/data/1046179/000104617926000691/wk-form4_1791454873.xml"
+    },
+    {
+     "fecha": "2026-10-07",
+     "quien": "Jang Syun-Ming",
+     "cargo": "VP",
+     "tipo": "compra",
+     "importe_usd": 3652,
+     "acciones": 46,
+     "url": "https://www.sec.gov/Archives/edgar/data/1046179/000104617926000690/wk-form4_1791454868.xml"
+    },
+    {
+     "fecha": "2026-10-07",
+     "quien": "Hou Yung-Chin",
+     "cargo": "SVP and Deputy Co-COO",
+     "tipo": "compra",
+     "importe_usd": 4763,
+     "acciones": 60,
+     "url": "https://www.sec.gov/Archives/edgar/data/1046179/000104617926000686/wk-form4_1791454668.xml"
+    },
+    {
+     "fecha": "2026-10-07",
+     "quien": "Hsu Kuo-Chin",
+     "cargo": "VP",
+     "tipo": "compra",
+     "importe_usd": 4128,
+     "acciones": 52,
+     "url": "https://www.sec.gov/Archives/edgar/data/1046179/000104617926000685/wk-form4_1791454663.xml"
+    },
+    {
+     "fecha": "2026-10-07",
+     "quien": "He Jun",
+     "cargo": "VP",
+     "tipo": "compra",
+     "importe_usd": 3414,
+     "acciones": 43,
+     "url": "https://www.sec.gov/Archives/edgar/data/1046179/000104617926000684/wk-form4_1791454656.xml"
+    },
+    {
+     "fecha": "2026-10-07",
+     "quien": "Chuang Tzu-Sou",
+     "cargo": "VP",
+     "tipo": "compra",
+     "importe_usd": 3652,
+     "acciones": 46,
+     "url": "https://www.sec.gov/Archives/edgar/data/1046179/000104617926000679/wk-form4_1791454355.xml"
+    },
+    {
+     "fecha": "2026-10-07",
+     "quien": "Cao Min",
+     "cargo": "VP",
+     "tipo": "compra",
+     "importe_usd": 4049,
+     "acciones": 51,
+     "url": "https://www.sec.gov/Archives/edgar/data/1046179/000104617926000678/wk-form4_1791454349.xml"
+    }
+   ],
+   "cobertura": true,
+   "compra_cluster": true,
+   "n_compradores": 24,
+   "importe_compras": 98365,
+   "importe_ventas": 0
+  },
+  {
+   "t": "ASML.AS",
+   "name": "ASML",
+   "sector": "Tecnología de la información",
+   "region": "EU",
+   "role": "bellwether",
+   "revisiones": {
+    "trim": {
+     "up30": 11,
+     "down30": 0,
+     "up7": 12,
+     "down7": 0,
+     "net30": 1.0
+    },
+    "anual": {
+     "up30": 0,
+     "down30": 1,
+     "up7": 0,
+     "down7": 1,
+     "net30": -1.0
+    },
+    "est_anual_chg30_pct": 0.42,
+    "recomendaciones": {
+     "compra": 37,
+     "venta": 1,
+     "cambio_compra_1m": -1
+    }
+   },
+   "eventos": [],
+   "insiders": [],
+   "cobertura": false
+  },
+  {
+   "t": "AAPL",
+   "name": "Apple",
+   "sector": "Tecnología de la información",
+   "region": "US",
+   "role": "bellwether",
+   "revisiones": {
+    "trim": {
+     "up30": 7,
+     "down30": 14,
+     "up7": 1,
+     "down7": 0,
+     "net30": -0.33
+    },
+    "anual": {
+     "up30": 3,
+     "down30": 2,
+     "up7": 1,
+     "down7": 2,
+     "net30": 0.2
+    },
+    "est_anual_chg30_pct": 0.09,
+    "recomendaciones": {
+     "compra": 25,
+     "venta": 6,
+     "cambio_compra_1m": 0
+    }
+   },
+   "eventos": [],
+   "insiders": [
+    {
+     "fecha": "2026-10-06",
+     "quien": "Newstead Jennifer",
+     "cargo": "SVP, GC and Government Affairs",
+     "tipo": "venta",
+     "importe_usd": 796492,
+     "acciones": 2399,
+     "url": "https://www.sec.gov/Archives/edgar/data/320193/000114036126039158/form4.xml"
+    },
+    {
+     "fecha": "2026-10-02",
+     "quien": "Cook Timothy D",
+     "cargo": "Executive Chair",
+     "tipo": "venta",
+     "importe_usd": 7670516,
+     "acciones": 23143,
+     "url": "https://www.sec.gov/Archives/edgar/data/320193/000114036126038674/form4.xml"
+    },
+    {
+     "fecha": "2026-10-02",
+     "quien": "Cook Timothy D",
+     "cargo": "Executive Chair",
+     "tipo": "venta",
+     "importe_usd": 13117663,
+     "acciones": 39492,
+     "url": "https://www.sec.gov/Archives/edgar/data/320193/000114036126038674/form4.xml"
+    },
+    {
+     "fecha": "2026-10-02",
+     "quien": "Cook Timothy D",
+     "cargo": "Executive Chair",
+     "tipo": "venta",
+     "importe_usd": 29406529,
+     "acciones": 88239,
+     "url": "https://www.sec.gov/Archives/edgar/data/320193/000114036126038674/form4.xml"
+    },
+    {
+     "fecha": "2026-10-02",
+     "quien": "Cook Timothy D",
+     "cargo": "Executive Chair",
+     "tipo": "venta",
+     "importe_usd": 13651133,
+     "acciones": 40879,
+     "url": "https://www.sec.gov/Archives/edgar/data/320193/000114036126038674/form4.xml"
+    },
+    {
+     "fecha": "2026-10-02",
+     "quien": "O'Brien Deirdre",
+     "cargo": "Senior Vice President",
+     "tipo": "venta",
+     "importe_usd": 13588679,
+     "acciones": 40764,
+     "url": "https://www.sec.gov/Archives/edgar/data/320193/000114036126038672/form4.xml"
+    },
+    {
+     "fecha": "2026-10-02",
+     "quien": "O'Brien Deirdre",
+     "cargo": "Senior Vice President",
+     "tipo": "venta",
+     "importe_usd": 1878244,
+     "acciones": 5625,
+     "url": "https://www.sec.gov/Archives/edgar/data/320193/000114036126038672/form4.xml"
+    },
+    {
+     "fecha": "2026-10-02",
+     "quien": "Ternus John",
+     "cargo": "CEO",
+     "tipo": "venta",
+     "importe_usd": 1181038,
+     "acciones": 3564,
+     "url": "https://www.sec.gov/Archives/edgar/data/320193/000114036126038669/form4.xml"
+    },
+    {
+     "fecha": "2026-10-02",
+     "quien": "Ternus John",
+     "cargo": "CEO",
+     "tipo": "venta",
+     "importe_usd": 1776926,
+     "acciones": 5348,
+     "url": "https://www.sec.gov/Archives/edgar/data/320193/000114036126038669/form4.xml"
+    },
+    {
+     "fecha": "2026-10-02",
+     "quien": "Ternus John",
+     "cargo": "CEO",
+     "tipo": "venta",
+     "importe_usd": 4248752,
+     "acciones": 12746,
+     "url": "https://www.sec.gov/Archives/edgar/data/320193/000114036126038669/form4.xml"
+    },
+    {
+     "fecha": "2026-10-02",
+     "quien": "Ternus John",
+     "cargo": "CEO",
+     "tipo": "venta",
+     "importe_usd": 1254024,
+     "acciones": 3754,
+     "url": "https://www.sec.gov/Archives/edgar/data/320193/000114036126038669/form4.xml"
+    },
+    {
+     "fecha": "2026-09-29",
+     "quien": "Newstead Jennifer",
+     "cargo": "SVP, GC and Government Affairs",
+     "tipo": "venta",
+     "importe_usd": 806496,
+     "acciones": 2399,
+     "url": "https://www.sec.gov/Archives/edgar/data/320193/000114036126038307/form4.xml"
+    },
+    {
+     "fecha": "2026-09-22",
+     "quien": "Newstead Jennifer",
+     "cargo": "SVP, GC and Government Affairs",
+     "tipo": "venta",
+     "importe_usd": 815804,
+     "acciones": 2399,
+     "url": "https://www.sec.gov/Archives/edgar/data/320193/000114036126037584/form4.xml"
+    },
+    {
+     "fecha": "2026-09-15",
+     "quien": "Newstead Jennifer",
+     "cargo": "SVP, GC and Government Affairs",
+     "tipo": "venta",
+     "importe_usd": 474813,
+     "acciones": 1438,
+     "url": "https://www.sec.gov/Archives/edgar/data/320193/000114036126037020/form4.xml"
+    },
+    {
+     "fecha": "2026-09-08",
+     "quien": "Newstead Jennifer",
+     "cargo": "SVP, GC and Government Affairs",
+     "tipo": "venta",
+     "importe_usd": 456177,
+     "acciones": 1438,
+     "url": "https://www.sec.gov/Archives/edgar/data/320193/000114036126036226/form4.xml"
+    }
+   ],
+   "cobertura": true,
+   "compra_cluster": false,
+   "n_compradores": 0,
+   "importe_compras": 0,
+   "importe_ventas": 91123286
+  },
+  {
+   "t": "GOOGL",
+   "name": "Alphabet",
+   "sector": "Servicios de comunicación",
+   "region": "US",
+   "role": "bellwether",
+   "revisiones": {
+    "trim": {
+     "up30": 2,
+     "down30": 2,
+     "up7": 1,
+     "down7": 0,
+     "net30": 0.0
+    },
+    "anual": {
+     "up30": 5,
+     "down30": 3,
+     "up7": 2,
+     "down7": 0,
+     "net30": 0.25
+    },
+    "est_anual_chg30_pct": 0.13,
+    "recomendaciones": {
+     "compra": 57,
+     "venta": 0,
+     "cambio_compra_1m": 0
+    }
+   },
+   "eventos": [],
+   "insiders": [
+    {
+     "fecha": "2026-09-30",
+     "quien": "Arnold Frances",
+     "cargo": "",
+     "tipo": "venta",
+     "importe_usd": 28257,
+     "acciones": 83,
+     "url": "https://www.sec.gov/Archives/edgar/data/1652044/000119312526412669/ownership.xml"
+    }
+   ],
+   "cobertura": true,
+   "compra_cluster": false,
+   "n_compradores": 0,
+   "importe_compras": 0,
+   "importe_ventas": 28257
+  },
+  {
+   "t": "META",
+   "name": "Meta",
+   "sector": "Servicios de comunicación",
+   "region": "US",
+   "role": "bellwether",
+   "revisiones": {
+    "trim": {
+     "up30": 0,
+     "down30": 5,
+     "up7": 0,
+     "down7": 2,
+     "net30": -1.0
+    },
+    "anual": {
+     "up30": 3,
+     "down30": 9,
+     "up7": 2,
+     "down7": 3,
+     "net30": -0.5
+    },
+    "est_anual_chg30_pct": -1.23,
+    "recomendaciones": {
+     "compra": 55,
+     "venta": 1,
+     "cambio_compra_1m": 0
+    }
+   },
+   "eventos": [],
+   "insiders": [
+    {
+     "fecha": "2026-10-05",
+     "quien": "Olivan Javier",
+     "cargo": "Chief Operating Officer",
+     "tipo": "venta",
+     "importe_usd": 688764,
+     "acciones": 946,
+     "url": "https://www.sec.gov/Archives/edgar/data/1326801/000095010326015324/ownership.xml"
+    },
+    {
+     "fecha": "2026-10-05",
+     "quien": "Olivan Javier",
+     "cargo": "Chief Operating Officer",
+     "tipo": "venta",
+     "importe_usd": 59703,
+     "acciones": 82,
+     "url": "https://www.sec.gov/Archives/edgar/data/1326801/000095010326015324/ownership.xml"
+    },
+    {
+     "fecha": "2026-10-05",
+     "quien": "Olivan Javier",
+     "cargo": "Chief Operating Officer",
+     "tipo": "venta",
+     "importe_usd": 41501,
+     "acciones": 57,
+     "url": "https://www.sec.gov/Archives/edgar/data/1326801/000095010326015324/ownership.xml"
+    },
+    {
+     "fecha": "2026-10-05",
+     "quien": "Olivan Javier",
+     "cargo": "Chief Operating Officer",
+     "tipo": "venta",
+     "importe_usd": 59703,
+     "acciones": 82,
+     "url": "https://www.sec.gov/Archives/edgar/data/1326801/000095010326015324/ownership.xml"
+    },
+    {
+     "fecha": "2026-10-05",
+     "quien": "Olivan Javier",
+     "cargo": "Chief Operating Officer",
+     "tipo": "venta",
+     "importe_usd": 297057,
+     "acciones": 408,
+     "url": "https://www.sec.gov/Archives/edgar/data/1326801/000095010326015324/ownership.xml"
+    },
+    {
+     "fecha": "2026-09-28",
+     "quien": "Olivan Javier",
+     "cargo": "Chief Operating Officer",
+     "tipo": "venta",
+     "importe_usd": 709902,
+     "acciones": 946,
+     "url": "https://www.sec.gov/Archives/edgar/data/1326801/000095010326014886/ownership.xml"
+    },
+    {
+     "fecha": "2026-09-28",
+     "quien": "Olivan Javier",
+     "cargo": "Chief Operating Officer",
+     "tipo": "venta",
+     "importe_usd": 61411,
+     "acciones": 82,
+     "url": "https://www.sec.gov/Archives/edgar/data/1326801/000095010326014886/ownership.xml"
+    },
+    {
+     "fecha": "2026-09-28",
+     "quien": "Olivan Javier",
+     "cargo": "Chief Operating Officer",
+     "tipo": "venta",
+     "importe_usd": 42688,
+     "acciones": 57,
+     "url": "https://www.sec.gov/Archives/edgar/data/1326801/000095010326014886/ownership.xml"
+    },
+    {
+     "fecha": "2026-09-28",
+     "quien": "Olivan Javier",
+     "cargo": "Chief Operating Officer",
+     "tipo": "venta",
+     "importe_usd": 61411,
+     "acciones": 82,
+     "url": "https://www.sec.gov/Archives/edgar/data/1326801/000095010326014886/ownership.xml"
+    },
+    {
+     "fecha": "2026-09-28",
+     "quien": "Olivan Javier",
+     "cargo": "Chief Operating Officer",
+     "tipo": "venta",
+     "importe_usd": 305555,
+     "acciones": 408,
+     "url": "https://www.sec.gov/Archives/edgar/data/1326801/000095010326014886/ownership.xml"
+    },
+    {
+     "fecha": "2026-09-24",
+     "quien": "Zuckerberg Mark",
+     "cargo": "COB and CEO",
+     "tipo": "venta",
+     "importe_usd": 1622893,
+     "acciones": 2093,
+     "url": "https://www.sec.gov/Archives/edgar/data/1326801/000095010326014647/ownership.xml"
+    },
+    {
+     "fecha": "2026-09-24",
+     "quien": "Zuckerberg Mark",
+     "cargo": "COB and CEO",
+     "tipo": "venta",
+     "importe_usd": 1953816,
+     "acciones": 2516,
+     "url": "https://www.sec.gov/Archives/edgar/data/1326801/000095010326014647/ownership.xml"
+    },
+    {
+     "fecha": "2026-09-24",
+     "quien": "Zuckerberg Mark",
+     "cargo": "COB and CEO",
+     "tipo": "venta",
+     "importe_usd": 5915434,
+     "acciones": 7607,
+     "url": "https://www.sec.gov/Archives/edgar/data/1326801/000095010326014647/ownership.xml"
+    },
+    {
+     "fecha": "2026-09-24",
+     "quien": "Zuckerberg Mark",
+     "cargo": "COB and CEO",
+     "tipo": "venta",
+     "importe_usd": 3365609,
+     "acciones": 4324,
+     "url": "https://www.sec.gov/Archives/edgar/data/1326801/000095010326014647/ownership.xml"
+    },
+    {
+     "fecha": "2026-09-24",
+     "quien": "Zuckerberg Mark",
+     "cargo": "COB and CEO",
+     "tipo": "venta",
+     "importe_usd": 467596,
+     "acciones": 600,
+     "url": "https://www.sec.gov/Archives/edgar/data/1326801/000095010326014647/ownership.xml"
+    },
+    {
+     "fecha": "2026-09-24",
+     "quien": "Zuckerberg Mark",
+     "cargo": "COB and CEO",
+     "tipo": "venta",
+     "importe_usd": 878436,
+     "acciones": 1133,
+     "url": "https://www.sec.gov/Archives/edgar/data/1326801/000095010326014647/ownership.xml"
+    },
+    {
+     "fecha": "2026-09-24",
+     "quien": "Zuckerberg Mark",
+     "cargo": "COB and CEO",
+     "tipo": "venta",
+     "importe_usd": 1373739,
+     "acciones": 1769,
+     "url": "https://www.sec.gov/Archives/edgar/data/1326801/000095010326014647/ownership.xml"
+    },
+    {
+     "fecha": "2026-09-24",
+     "quien": "Zuckerberg Mark",
+     "cargo": "COB and CEO",
+     "tipo": "venta",
+     "importe_usd": 3740552,
+     "acciones": 4810,
+     "url": "https://www.sec.gov/Archives/edgar/data/1326801/000095010326014647/ownership.xml"
+    },
+    {
+     "fecha": "2026-09-24",
+     "quien": "Zuckerberg Mark",
+     "cargo": "COB and CEO",
+     "tipo": "venta",
+     "importe_usd": 1670445,
+     "acciones": 2146,
+     "url": "https://www.sec.gov/Archives/edgar/data/1326801/000095010326014647/ownership.xml"
+    },
+    {
+     "fecha": "2026-09-24",
+     "quien": "Zuckerberg Mark",
+     "cargo": "COB and CEO",
+     "tipo": "venta",
+     "importe_usd": 370936,
+     "acciones": 476,
+     "url": "https://www.sec.gov/Archives/edgar/data/1326801/000095010326014647/ownership.xml"
+    },
+    {
+     "fecha": "2026-09-21",
+     "quien": "Cox Christopher K",
+     "cargo": "Chief Product Officer",
+     "tipo": "venta",
+     "importe_usd": 14009932,
+     "acciones": 20000,
+     "url": "https://www.sec.gov/Archives/edgar/data/1326801/000095010326014403/ownership.xml"
+    },
+    {
+     "fecha": "2026-09-21",
+     "quien": "Cox Christopher K",
+     "cargo": "Chief Product Officer",
+     "tipo": "venta",
+     "importe_usd": 14500328,
+     "acciones": 20000,
+     "url": "https://www.sec.gov/Archives/edgar/data/1326801/000095010326014403/ownership.xml"
+    },
+    {
+     "fecha": "2026-09-21",
+     "quien": "Olivan Javier",
+     "cargo": "Chief Operating Officer",
+     "tipo": "venta",
+     "importe_usd": 643535,
+     "acciones": 946,
+     "url": "https://www.sec.gov/Archives/edgar/data/1326801/000095010326014402/ownership.xml"
+    },
+    {
+     "fecha": "2026-09-21",
+     "quien": "Olivan Javier",
+     "cargo": "Chief Operating Officer",
+     "tipo": "venta",
+     "importe_usd": 55782,
+     "acciones": 82,
+     "url": "https://www.sec.gov/Archives/edgar/data/1326801/000095010326014402/ownership.xml"
+    },
+    {
+     "fecha": "2026-09-21",
+     "quien": "Olivan Javier",
+     "cargo": "Chief Operating Officer",
+     "tipo": "venta",
+     "importe_usd": 38775,
+     "acciones": 57,
+     "url": "https://www.sec.gov/Archives/edgar/data/1326801/000095010326014402/ownership.xml"
+    },
+    {
+     "fecha": "2026-09-21",
+     "quien": "Olivan Javier",
+     "cargo": "Chief Operating Officer",
+     "tipo": "venta",
+     "importe_usd": 55782,
+     "acciones": 82,
+     "url": "https://www.sec.gov/Archives/edgar/data/1326801/000095010326014402/ownership.xml"
+    },
+    {
+     "fecha": "2026-09-21",
+     "quien": "Olivan Javier",
+     "cargo": "Chief Operating Officer",
+     "tipo": "venta",
+     "importe_usd": 277550,
+     "acciones": 408,
+     "url": "https://www.sec.gov/Archives/edgar/data/1326801/000095010326014402/ownership.xml"
+    }
+   ],
+   "cobertura": true,
+   "compra_cluster": false,
+   "n_compradores": 0,
+   "importe_compras": 0,
+   "importe_ventas": 53268835
+  },
+  {
+   "t": "IBE.MC",
+   "name": "Iberdrola",
+   "sector": "Utilities",
+   "region": "EU",
+   "role": "bellwether",
+   "revisiones": {
+    "trim": {
+     "up30": 0,
+     "down30": 1,
+     "up7": 1,
+     "down7": 0,
+     "net30": -1.0
+    },
+    "anual": {
+     "up30": 0,
+     "down30": 0,
+     "up7": 0,
+     "down7": 0,
+     "net30": 0.0
+    },
+    "est_anual_chg30_pct": 1.37,
+    "recomendaciones": {
+     "compra": 7,
+     "venta": 1,
+     "cambio_compra_1m": 0
+    }
+   },
+   "eventos": [],
+   "insiders": [],
+   "cobertura": false
+  },
+  {
+   "t": "PLD",
+   "name": "Prologis",
+   "sector": "Inmobiliario",
+   "region": "US",
+   "role": "bellwether",
+   "revisiones": {
+    "trim": {
+     "up30": 1,
+     "down30": 0,
+     "up7": 1,
+     "down7": 0,
+     "net30": 1.0
+    },
+    "anual": {
+     "up30": 1,
+     "down30": 0,
+     "up7": 1,
+     "down7": 0,
+     "net30": 1.0
+    },
+    "est_anual_chg30_pct": 0.83,
+    "recomendaciones": {
+     "compra": 10,
+     "venta": 0,
+     "cambio_compra_1m": 0
+    }
+   },
+   "eventos": [],
+   "insiders": [],
+   "cobertura": true,
+   "compra_cluster": false,
+   "n_compradores": 0,
+   "importe_compras": 0,
+   "importe_ventas": 0
+  },
+  {
+   "t": "FN",
+   "name": "Fabrinet",
+   "sector": "Extra",
+   "region": "US",
+   "role": "rep",
+   "revisiones": {
+    "trim": {
+     "up30": 7,
+     "down30": 0,
+     "up7": 7,
+     "down7": 0,
+     "net30": 1.0
+    },
+    "anual": {
+     "up30": 0,
+     "down30": 0,
+     "up7": 1,
+     "down7": 0,
+     "net30": 0.0
+    },
+    "est_anual_chg30_pct": 0.0,
+    "recomendaciones": {
+     "compra": 7,
+     "venta": 0,
+     "cambio_compra_1m": 0
+    }
+   },
+   "eventos": [],
+   "insiders": [],
+   "cobertura": true,
+   "compra_cluster": false,
+   "n_compradores": 0,
+   "importe_compras": 0,
+   "importe_ventas": 0
+  },
+  {
+   "t": "DDOG",
+   "name": "Datadog",
+   "sector": "Extra",
+   "region": "US",
+   "role": "rep",
+   "revisiones": {
+    "trim": {
+     "up30": 2,
+     "down30": 0,
+     "up7": 1,
+     "down7": 0,
+     "net30": 1.0
+    },
+    "anual": {
+     "up30": 0,
+     "down30": 0,
+     "up7": 0,
+     "down7": 0,
+     "net30": 0.0
+    },
+    "est_anual_chg30_pct": 0.02,
+    "recomendaciones": {
+     "compra": 43,
+     "venta": 2,
+     "cambio_compra_1m": 1
+    }
+   },
+   "eventos": [],
+   "insiders": [
+    {
+     "fecha": "2026-09-23",
+     "quien": "Le-Quoc Alexis",
+     "cargo": "Chief Technology Officer",
+     "tipo": "venta",
+     "importe_usd": 160739,
+     "acciones": 645,
+     "url": "https://www.sec.gov/Archives/edgar/data/1561550/000156155026000320/wk-form4_1790369004.xml"
+    },
+    {
+     "fecha": "2026-09-23",
+     "quien": "Le-Quoc Alexis",
+     "cargo": "Chief Technology Officer",
+     "tipo": "venta",
+     "importe_usd": 343758,
+     "acciones": 1372,
+     "url": "https://www.sec.gov/Archives/edgar/data/1561550/000156155026000320/wk-form4_1790369004.xml"
+    },
+    {
+     "fecha": "2026-09-23",
+     "quien": "Le-Quoc Alexis",
+     "cargo": "Chief Technology Officer",
+     "tipo": "venta",
+     "importe_usd": 5533568,
+     "acciones": 22007,
+     "url": "https://www.sec.gov/Archives/edgar/data/1561550/000156155026000320/wk-form4_1790369004.xml"
+    },
+    {
+     "fecha": "2026-09-23",
+     "quien": "Le-Quoc Alexis",
+     "cargo": "Chief Technology Officer",
+     "tipo": "venta",
+     "importe_usd": 2430952,
+     "acciones": 9633,
+     "url": "https://www.sec.gov/Archives/edgar/data/1561550/000156155026000320/wk-form4_1790369004.xml"
+    },
+    {
+     "fecha": "2026-09-23",
+     "quien": "Le-Quoc Alexis",
+     "cargo": "Chief Technology Officer",
+     "tipo": "venta",
+     "importe_usd": 1354514,
+     "acciones": 5347,
+     "url": "https://www.sec.gov/Archives/edgar/data/1561550/000156155026000320/wk-form4_1790369004.xml"
+    },
+    {
+     "fecha": "2026-09-23",
+     "quien": "Le-Quoc Alexis",
+     "cargo": "Chief Technology Officer",
+     "tipo": "venta",
+     "importe_usd": 508699,
+     "acciones": 2000,
+     "url": "https://www.sec.gov/Archives/edgar/data/1561550/000156155026000320/wk-form4_1790369004.xml"
+    },
+    {
+     "fecha": "2026-09-23",
+     "quien": "Le-Quoc Alexis",
+     "cargo": "Chief Technology Officer",
+     "tipo": "venta",
+     "importe_usd": 408946,
+     "acciones": 1600,
+     "url": "https://www.sec.gov/Archives/edgar/data/1561550/000156155026000320/wk-form4_1790369004.xml"
+    },
+    {
+     "fecha": "2026-09-23",
+     "quien": "Le-Quoc Alexis",
+     "cargo": "Chief Technology Officer",
+     "tipo": "venta",
+     "importe_usd": 158811,
+     "acciones": 620,
+     "url": "https://www.sec.gov/Archives/edgar/data/1561550/000156155026000320/wk-form4_1790369004.xml"
+    },
+    {
+     "fecha": "2026-09-21",
+     "quien": "Obstler David M",
+     "cargo": "Chief Financial Officer",
+     "tipo": "venta",
+     "importe_usd": 2412500,
+     "acciones": 10000,
+     "url": "https://www.sec.gov/Archives/edgar/data/1561550/000156155026000318/wk-form4_1790196601.xml"
+    },
+    {
+     "fecha": "2026-09-21",
+     "quien": "Obstler David M",
+     "cargo": "Chief Financial Officer",
+     "tipo": "venta",
+     "importe_usd": 723750,
+     "acciones": 3000,
+     "url": "https://www.sec.gov/Archives/edgar/data/1561550/000156155026000318/wk-form4_1790196601.xml"
+    },
+    {
+     "fecha": "2026-09-21",
+     "quien": "Obstler David M",
+     "cargo": "Chief Financial Officer",
+     "tipo": "venta",
+     "importe_usd": 723750,
+     "acciones": 3000,
+     "url": "https://www.sec.gov/Archives/edgar/data/1561550/000156155026000318/wk-form4_1790196601.xml"
+    },
+    {
+     "fecha": "2026-09-14",
+     "quien": "Obstler David M",
+     "cargo": "Chief Financial Officer",
+     "tipo": "venta",
+     "importe_usd": 587606,
+     "acciones": 2656,
+     "url": "https://www.sec.gov/Archives/edgar/data/1561550/000156155026000316/wk-form4_1789591134.xml"
+    },
+    {
+     "fecha": "2026-09-14",
+     "quien": "Obstler David M",
+     "cargo": "Chief Financial Officer",
+     "tipo": "venta",
+     "importe_usd": 1205025,
+     "acciones": 5424,
+     "url": "https://www.sec.gov/Archives/edgar/data/1561550/000156155026000316/wk-form4_1789591134.xml"
+    },
+    {
+     "fecha": "2026-09-14",
+     "quien": "Obstler David M",
+     "cargo": "Chief Financial Officer",
+     "tipo": "venta",
+     "importe_usd": 547082,
+     "acciones": 2452,
+     "url": "https://www.sec.gov/Archives/edgar/data/1561550/000156155026000316/wk-form4_1789591134.xml"
+    },
+    {
+     "fecha": "2026-09-14",
+     "quien": "Obstler David M",
+     "cargo": "Chief Financial Officer",
+     "tipo": "venta",
+     "importe_usd": 404043,
+     "acciones": 1801,
+     "url": "https://www.sec.gov/Archives/edgar/data/1561550/000156155026000316/wk-form4_1789591134.xml"
+    },
+    {
+     "fecha": "2026-09-14",
+     "quien": "Obstler David M",
+     "cargo": "Chief Financial Officer",
+     "tipo": "venta",
+     "importe_usd": 887023,
+     "acciones": 3940,
+     "url": "https://www.sec.gov/Archives/edgar/data/1561550/000156155026000316/wk-form4_1789591134.xml"
+    },
+    {
+     "fecha": "2026-09-14",
+     "quien": "Obstler David M",
+     "cargo": "Chief Financial Officer",
+     "tipo": "venta",
+     "importe_usd": 142274,
+     "acciones": 629,
+     "url": "https://www.sec.gov/Archives/edgar/data/1561550/000156155026000316/wk-form4_1789591134.xml"
+    },
+    {
+     "fecha": "2026-09-14",
+     "quien": "Obstler David M",
+     "cargo": "Chief Financial Officer",
+     "tipo": "venta",
+     "importe_usd": 127976,
+     "acciones": 562,
+     "url": "https://www.sec.gov/Archives/edgar/data/1561550/000156155026000316/wk-form4_1789591134.xml"
+    },
+    {
+     "fecha": "2026-09-14",
+     "quien": "Obstler David M",
+     "cargo": "Chief Financial Officer",
+     "tipo": "venta",
+     "importe_usd": 271785,
+     "acciones": 1189,
+     "url": "https://www.sec.gov/Archives/edgar/data/1561550/000156155026000316/wk-form4_1789591134.xml"
+    },
+    {
+     "fecha": "2026-09-14",
+     "quien": "Obstler David M",
+     "cargo": "Chief Financial Officer",
+     "tipo": "venta",
+     "importe_usd": 2212526,
+     "acciones": 9623,
+     "url": "https://www.sec.gov/Archives/edgar/data/1561550/000156155026000316/wk-form4_1789591134.xml"
+    },
+    {
+     "fecha": "2026-09-14",
+     "quien": "Obstler David M",
+     "cargo": "Chief Financial Officer",
+     "tipo": "venta",
+     "importe_usd": 1296605,
+     "acciones": 5625,
+     "url": "https://www.sec.gov/Archives/edgar/data/1561550/000156155026000316/wk-form4_1789591134.xml"
+    },
+    {
+     "fecha": "2026-09-14",
+     "quien": "Obstler David M",
+     "cargo": "Chief Financial Officer",
+     "tipo": "venta",
+     "importe_usd": 558916,
+     "acciones": 2414,
+     "url": "https://www.sec.gov/Archives/edgar/data/1561550/000156155026000316/wk-form4_1789591134.xml"
+    },
+    {
+     "fecha": "2026-09-14",
+     "quien": "Obstler David M",
+     "cargo": "Chief Financial Officer",
+     "tipo": "venta",
+     "importe_usd": 711386,
+     "acciones": 3057,
+     "url": "https://www.sec.gov/Archives/edgar/data/1561550/000156155026000316/wk-form4_1789591134.xml"
+    },
+    {
+     "fecha": "2026-09-14",
+     "quien": "Obstler David M",
+     "cargo": "Chief Financial Officer",
+     "tipo": "venta",
+     "importe_usd": 146512,
+     "acciones": 628,
+     "url": "https://www.sec.gov/Archives/edgar/data/1561550/000156155026000316/wk-form4_1789591134.xml"
+    },
+    {
+     "fecha": "2026-09-14",
+     "quien": "Obstler David M",
+     "cargo": "Chief Financial Officer",
+     "tipo": "venta",
+     "importe_usd": 176547,
+     "acciones": 798,
+     "url": "https://www.sec.gov/Archives/edgar/data/1561550/000156155026000315/wk-form4_1789591125.xml"
+    },
+    {
+     "fecha": "2026-09-14",
+     "quien": "Obstler David M",
+     "cargo": "Chief Financial Officer",
+     "tipo": "venta",
+     "importe_usd": 360798,
+     "acciones": 1624,
+     "url": "https://www.sec.gov/Archives/edgar/data/1561550/000156155026000315/wk-form4_1789591125.xml"
+    },
+    {
+     "fecha": "2026-09-14",
+     "quien": "Obstler David M",
+     "cargo": "Chief Financial Officer",
+     "tipo": "venta",
+     "importe_usd": 164660,
+     "acciones": 738,
+     "url": "https://www.sec.gov/Archives/edgar/data/1561550/000156155026000315/wk-form4_1789591125.xml"
+    },
+    {
+     "fecha": "2026-09-14",
+     "quien": "Obstler David M",
+     "cargo": "Chief Financial Officer",
+     "tipo": "venta",
+     "importe_usd": 122267,
+     "acciones": 545,
+     "url": "https://www.sec.gov/Archives/edgar/data/1561550/000156155026000315/wk-form4_1789591125.xml"
+    },
+    {
+     "fecha": "2026-09-14",
+     "quien": "Obstler David M",
+     "cargo": "Chief Financial Officer",
+     "tipo": "venta",
+     "importe_usd": 266107,
+     "acciones": 1182,
+     "url": "https://www.sec.gov/Archives/edgar/data/1561550/000156155026000315/wk-form4_1789591125.xml"
+    },
+    {
+     "fecha": "2026-09-14",
+     "quien": "Obstler David M",
+     "cargo": "Chief Financial Officer",
+     "tipo": "venta",
+     "importe_usd": 42976,
+     "acciones": 190,
+     "url": "https://www.sec.gov/Archives/edgar/data/1561550/000156155026000315/wk-form4_1789591125.xml"
+    },
+    {
+     "fecha": "2026-09-14",
+     "quien": "Obstler David M",
+     "cargo": "Chief Financial Officer",
+     "tipo": "venta",
+     "importe_usd": 38484,
+     "acciones": 169,
+     "url": "https://www.sec.gov/Archives/edgar/data/1561550/000156155026000315/wk-form4_1789591125.xml"
+    },
+    {
+     "fecha": "2026-09-14",
+     "quien": "Obstler David M",
+     "cargo": "Chief Financial Officer",
+     "tipo": "venta",
+     "importe_usd": 82291,
+     "acciones": 360,
+     "url": "https://www.sec.gov/Archives/edgar/data/1561550/000156155026000315/wk-form4_1789591125.xml"
+    },
+    {
+     "fecha": "2026-09-14",
+     "quien": "Obstler David M",
+     "cargo": "Chief Financial Officer",
+     "tipo": "venta",
+     "importe_usd": 660563,
+     "acciones": 2873,
+     "url": "https://www.sec.gov/Archives/edgar/data/1561550/000156155026000315/wk-form4_1789591125.xml"
+    },
+    {
+     "fecha": "2026-09-14",
+     "quien": "Obstler David M",
+     "cargo": "Chief Financial Officer",
+     "tipo": "venta",
+     "importe_usd": 389330,
+     "acciones": 1689,
+     "url": "https://www.sec.gov/Archives/edgar/data/1561550/000156155026000315/wk-form4_1789591125.xml"
+    },
+    {
+     "fecha": "2026-09-14",
+     "quien": "Obstler David M",
+     "cargo": "Chief Financial Officer",
+     "tipo": "venta",
+     "importe_usd": 167629,
+     "acciones": 724,
+     "url": "https://www.sec.gov/Archives/edgar/data/1561550/000156155026000315/wk-form4_1789591125.xml"
+    },
+    {
+     "fecha": "2026-09-14",
+     "quien": "Obstler David M",
+     "cargo": "Chief Financial Officer",
+     "tipo": "venta",
+     "importe_usd": 213626,
+     "acciones": 918,
+     "url": "https://www.sec.gov/Archives/edgar/data/1561550/000156155026000315/wk-form4_1789591125.xml"
+    },
+    {
+     "fecha": "2026-09-14",
+     "quien": "Obstler David M",
+     "cargo": "Chief Financial Officer",
+     "tipo": "venta",
+     "importe_usd": 44327,
+     "acciones": 190,
+     "url": "https://www.sec.gov/Archives/edgar/data/1561550/000156155026000315/wk-form4_1789591125.xml"
+    },
+    {
+     "fecha": "2026-09-14",
+     "quien": "Obstler David M",
+     "cargo": "Chief Financial Officer",
+     "tipo": "venta",
+     "importe_usd": 173894,
+     "acciones": 786,
+     "url": "https://www.sec.gov/Archives/edgar/data/1561550/000156155026000315/wk-form4_1789591125.xml"
+    },
+    {
+     "fecha": "2026-09-14",
+     "quien": "Obstler David M",
+     "cargo": "Chief Financial Officer",
+     "tipo": "venta",
+     "importe_usd": 363235,
+     "acciones": 1635,
+     "url": "https://www.sec.gov/Archives/edgar/data/1561550/000156155026000315/wk-form4_1789591125.xml"
+    },
+    {
+     "fecha": "2026-09-14",
+     "quien": "Obstler David M",
+     "cargo": "Chief Financial Officer",
+     "tipo": "venta",
+     "importe_usd": 161759,
+     "acciones": 725,
+     "url": "https://www.sec.gov/Archives/edgar/data/1561550/000156155026000315/wk-form4_1789591125.xml"
+    },
+    {
+     "fecha": "2026-09-14",
+     "quien": "Obstler David M",
+     "cargo": "Chief Financial Officer",
+     "tipo": "venta",
+     "importe_usd": 117781,
+     "acciones": 525,
+     "url": "https://www.sec.gov/Archives/edgar/data/1561550/000156155026000315/wk-form4_1789591125.xml"
+    },
+    {
+     "fecha": "2026-09-14",
+     "quien": "Obstler David M",
+     "cargo": "Chief Financial Officer",
+     "tipo": "venta",
+     "importe_usd": 263178,
+     "acciones": 1169,
+     "url": "https://www.sec.gov/Archives/edgar/data/1561550/000156155026000315/wk-form4_1789591125.xml"
+    },
+    {
+     "fecha": "2026-09-14",
+     "quien": "Obstler David M",
+     "cargo": "Chief Financial Officer",
+     "tipo": "venta",
+     "importe_usd": 40941,
+     "acciones": 181,
+     "url": "https://www.sec.gov/Archives/edgar/data/1561550/000156155026000315/wk-form4_1789591125.xml"
+    },
+    {
+     "fecha": "2026-09-14",
+     "quien": "Obstler David M",
+     "cargo": "Chief Financial Officer",
+     "tipo": "venta",
+     "importe_usd": 37118,
+     "acciones": 163,
+     "url": "https://www.sec.gov/Archives/edgar/data/1561550/000156155026000315/wk-form4_1789591125.xml"
+    },
+    {
+     "fecha": "2026-09-14",
+     "quien": "Obstler David M",
+     "cargo": "Chief Financial Officer",
+     "tipo": "venta",
+     "importe_usd": 81838,
+     "acciones": 358,
+     "url": "https://www.sec.gov/Archives/edgar/data/1561550/000156155026000315/wk-form4_1789591125.xml"
+    },
+    {
+     "fecha": "2026-09-14",
+     "quien": "Obstler David M",
+     "cargo": "Chief Financial Officer",
+     "tipo": "venta",
+     "importe_usd": 674806,
+     "acciones": 2935,
+     "url": "https://www.sec.gov/Archives/edgar/data/1561550/000156155026000315/wk-form4_1789591125.xml"
+    },
+    {
+     "fecha": "2026-09-14",
+     "quien": "Obstler David M",
+     "cargo": "Chief Financial Officer",
+     "tipo": "venta",
+     "importe_usd": 398545,
+     "acciones": 1729,
+     "url": "https://www.sec.gov/Archives/edgar/data/1561550/000156155026000315/wk-form4_1789591125.xml"
+    },
+    {
+     "fecha": "2026-09-14",
+     "quien": "Obstler David M",
+     "cargo": "Chief Financial Officer",
+     "tipo": "venta",
+     "importe_usd": 165082,
+     "acciones": 713,
+     "url": "https://www.sec.gov/Archives/edgar/data/1561550/000156155026000315/wk-form4_1789591125.xml"
+    },
+    {
+     "fecha": "2026-09-14",
+     "quien": "Obstler David M",
+     "cargo": "Chief Financial Officer",
+     "tipo": "venta",
+     "importe_usd": 209204,
+     "acciones": 899,
+     "url": "https://www.sec.gov/Archives/edgar/data/1561550/000156155026000315/wk-form4_1789591125.xml"
+    },
+    {
+     "fecha": "2026-09-14",
+     "quien": "Obstler David M",
+     "cargo": "Chief Financial Officer",
+     "tipo": "venta",
+     "importe_usd": 42461,
+     "acciones": 182,
+     "url": "https://www.sec.gov/Archives/edgar/data/1561550/000156155026000315/wk-form4_1789591125.xml"
+    }
+   ],
+   "cobertura": true,
+   "compra_cluster": false,
+   "n_compradores": 0,
+   "importe_compras": 0,
+   "importe_ventas": 29318193
+  }
+ ],
+ "sector_pulse": {
+  "Energía": {
+   "amplitud_revisiones": 1.0,
+   "senal": 1,
+   "empresas_cubiertas": 2,
+   "mejorando": 2,
+   "empeorando": 0,
+   "hechos_relevantes": 0,
+   "clusters_insiders": 0
+  },
+  "Materiales": {
+   "amplitud_revisiones": 0.28,
+   "senal": 1,
+   "empresas_cubiertas": 3,
+   "mejorando": 2,
+   "empeorando": 0,
+   "hechos_relevantes": 0,
+   "clusters_insiders": 0
+  },
+  "Industriales": {
+   "amplitud_revisiones": 0.28,
+   "senal": 1,
+   "empresas_cubiertas": 5,
+   "mejorando": 3,
+   "empeorando": 1,
+   "hechos_relevantes": 0,
+   "clusters_insiders": 0
+  },
+  "Consumo discrecional": {
+   "amplitud_revisiones": -0.23,
+   "senal": -1,
+   "empresas_cubiertas": 7,
+   "mejorando": 2,
+   "empeorando": 5,
+   "hechos_relevantes": 1,
+   "clusters_insiders": 0
+  },
+  "Consumo básico": {
+   "amplitud_revisiones": 0.09,
+   "senal": 0,
+   "empresas_cubiertas": 3,
+   "mejorando": 1,
+   "empeorando": 1,
+   "hechos_relevantes": 0,
+   "clusters_insiders": 0
+  },
+  "Salud": {
+   "amplitud_revisiones": 0.68,
+   "senal": 1,
+   "empresas_cubiertas": 3,
+   "mejorando": 3,
+   "empeorando": 0,
+   "hechos_relevantes": 0,
+   "clusters_insiders": 0
+  },
+  "Financiero": {
+   "amplitud_revisiones": 0.42,
+   "senal": 1,
+   "empresas_cubiertas": 4,
+   "mejorando": 2,
+   "empeorando": 0,
+   "hechos_relevantes": 0,
+   "clusters_insiders": 0
+  },
+  "Tecnología de la información": {
+   "amplitud_revisiones": 0.3,
+   "senal": 1,
+   "empresas_cubiertas": 6,
+   "mejorando": 3,
+   "empeorando": 2,
+   "hechos_relevantes": 0,
+   "clusters_insiders": 1
+  },
+  "Servicios de comunicación": {
+   "amplitud_revisiones": -0.12,
+   "senal": 0,
+   "empresas_cubiertas": 2,
+   "mejorando": 1,
+   "empeorando": 1,
+   "hechos_relevantes": 0,
+   "clusters_insiders": 0
+  },
+  "Utilities": {
+   "amplitud_revisiones": 0.0,
+   "senal": 0,
+   "empresas_cubiertas": 1,
+   "mejorando": 0,
+   "empeorando": 0,
+   "hechos_relevantes": 0,
+   "clusters_insiders": 0
+  },
+  "Inmobiliario": {
+   "amplitud_revisiones": 1.0,
+   "senal": 1,
+   "empresas_cubiertas": 1,
+   "mejorando": 1,
+   "empeorando": 0,
+   "hechos_relevantes": 0,
+   "clusters_insiders": 0
+  },
+  "Extra": {
+   "amplitud_revisiones": 0.0,
+   "senal": 0,
+   "empresas_cubiertas": 2,
+   "mejorando": 0,
+   "empeorando": 0,
+   "hechos_relevantes": 0,
+   "clusters_insiders": 0
+  }
+ },
+ "central_banks": [
+  {
+   "banco": "Fed",
+   "tipo": "comunicado",
+   "fecha": "2026-10-07",
+   "titulo": "Minutes of the Federal Open Market Committee, September 15-16, 2026",
+   "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261007a.htm",
+   "postura": 0,
+   "tema": "FOMC minutes",
+   "resumen": "Los minutos del FOMC de septiembre 2026 no indican cambios inmediatos en la política monetaria, manteniendo la postura actual de la Reserva Federal."
+  }
+ ]
+}
