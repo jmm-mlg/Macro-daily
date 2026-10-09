@@ -76,14 +76,14 @@
   "VIX": [
    {
     "name": "VIX",
-    "value": 15.270000457763672,
+    "value": 15.170000076293945,
     "unit": "pts",
     "date": "2026-10-09",
     "chg": {
-     "1d": -0.1399993896484375,
-     "1s": -0.039999961853027344,
-     "1m": -2.5699996948242188,
-     "3m": -1.2299995422363281
+     "1d": -0.23999977111816406,
+     "1s": -0.1400003433227539,
+     "1m": -2.6700000762939453,
+     "3m": -1.3299999237060547
     }
    },
    {
@@ -114,14 +114,13 @@
    },
    {
     "name": "10 años",
-    "value": 5.28,
+    "value": null,
     "unit": "pb",
-    "date": "2026-10-07",
     "chg": {
-     "1d": 1.0000000000000675,
-     "1s": -0.9999999999999787,
-     "1m": 48.00000000000004,
-     "3m": 74.00000000000003
+     "1d": null,
+     "1s": null,
+     "1m": null,
+     "3m": null
     }
    },
    {
@@ -231,7 +230,7 @@
      "1d": 0.36239250941401124,
      "1s": 0.4312481100367638,
      "1m": -2.2769393929869097,
-     "3m": -3.413755542440189
+     "3m": -3.4137624882655593
     }
    },
    {
@@ -336,41 +335,14 @@
  },
  "medidas": {
   "vix_estructura": {
-   "ratio": 0.8445796749004418,
+   "ratio": 0.8390486803267854,
    "lectura": "contango (normal)"
   },
   "vix_vs_realizada": {
-   "vix": 15.270000457763672,
+   "vix": 15.170000076293945,
    "realizada_20d": 10.140947703004908,
-   "prima": 5.129052754758764,
+   "prima": 5.029052373289037,
    "lectura": "normal"
-  },
-  "descomposicion_10a": {
-   "1d": {
-    "nominal": 1.0000000000000675,
-    "real": 0.9999999999999787,
-    "breakeven": -0.9999999999999787
-   },
-   "1s": {
-    "nominal": -0.9999999999999787,
-    "real": -1.000000000000023,
-    "breakeven": -0.9999999999999787
-   },
-   "1m": {
-    "nominal": 48.00000000000004,
-    "real": 48.99999999999998,
-    "breakeven": -2.0000000000000018
-   },
-   "3m": {
-    "nominal": 74.00000000000003,
-    "real": 60.999999999999986,
-    "breakeven": 10.999999999999988
-   }
-  },
-  "empinamiento_1m": {
-   "d2": 37.999999999999986,
-   "d10": 48.00000000000004,
-   "tipo": "bear steepening (el 10 sube más: prima de plazo o inflación)"
   },
   "mercado_vs_liquidez": {
    "z_bolsa_3m": -0.28189925246564795,
@@ -389,15 +361,11 @@
    "lectura": "comprimida (< 1,5 %): poco pagado por el riesgo"
   },
   "correlacion_acciones_bonos_60d": {
-   "corr": 0.42256092787973454,
+   "corr": 0.4225594555981847,
    "lectura": "positiva: régimen de inflación, los bonos no cubren la bolsa"
   }
  },
  "senales": [
-  {
-   "tipo": "tipos",
-   "texto": "El 10 años se ha movido +48 pb en un mes, sobre todo por tipo real (+49 real, -2 breakeven)."
-  },
   {
    "tipo": "valoracion",
    "texto": "Prima de riesgo de la renta variable 1.1 % (earnings yield 4.1 % − tipo real 2.92 %): comprimida."
