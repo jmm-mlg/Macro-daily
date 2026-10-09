@@ -57,6 +57,15 @@ def cik_map() -> dict:
 
 
 # ---------------------------------------------------------------- 1. revisiones de analistas
+def _int(v) -> int:
+    """Entero tolerante a NaN/None/strings."""
+    try:
+        f = float(v)
+        return 0 if f != f else int(f)  # NaN != NaN
+    except (TypeError, ValueError):
+        return 0
+
+
 def revisions(ticker: str) -> dict | None:
     import yfinance as yf
     try:
@@ -73,19 +82,22 @@ def revisions(ticker: str) -> dict | None:
     for period, key in (("0q", "trim"), ("0y", "anual")):
         if period in rev.index:
             r = rev.loc[period]
-            up30, dn30 = int(r.get("upLast30days", 0) or 0), int(r.get("downLast30days", 0) or 0)
-            up7, dn7 = int(r.get("upLast7days", 0) or 0), int(r.get("downLast7Days", r.get("downLast7days", 0)) or 0)
+            up30, dn30 = _int(r.get("upLast30days")), _int(r.get("downLast30days"))
+            up7, dn7 = _int(r.get("upLast7days")), _int(r.get("downLast7Days", r.get("downLast7days")))
             net = (up30 - dn30) / (up30 + dn30) if (up30 + dn30) else 0.0
             out[key] = {"up30": up30, "down30": dn30, "up7": up7, "down7": dn7, "net30": round(net, 2)}
     if trend is not None and not trend.empty and "0y" in trend.index:
         tr = trend.loc["0y"]
         cur, ago = tr.get("current"), tr.get("30daysAgo")
-        if cur and ago:
-            out["est_anual_chg30_pct"] = round((cur - ago) / abs(ago) * 100, 2)
+        try:
+            if cur == cur and ago == ago and cur and ago:
+                out["est_anual_chg30_pct"] = round((float(cur) - float(ago)) / abs(float(ago)) * 100, 2)
+        except (TypeError, ValueError):
+            pass
     if rec is not None and not rec.empty:
         now, prev = rec.iloc[0], rec.iloc[min(1, len(rec) - 1)]
-        pos = lambda r: int(r.get("strongBuy", 0) + r.get("buy", 0))  # noqa: E731
-        neg = lambda r: int(r.get("sell", 0) + r.get("strongSell", 0))  # noqa: E731
+        pos = lambda r: _int(r.get("strongBuy")) + _int(r.get("buy"))  # noqa: E731
+        neg = lambda r: _int(r.get("sell")) + _int(r.get("strongSell"))  # noqa: E731
         out["recomendaciones"] = {"compra": pos(now), "venta": neg(now), "cambio_compra_1m": pos(now) - pos(prev)}
     return out
 
@@ -240,8 +252,14 @@ def run(scope: str = "bellwethers", days: int = 7) -> dict:
     companies = []
     for c in wl:
         t = c["t"]
-        rev = revisions(t)
-        ed = edgar(t, days) if not t.endswith(EU_SUFFIXES) else {"eventos": [], "insiders": [], "cobertura": False}
+        try:
+            rev = revisions(t)
+        except Exception as e:  # noqa: BLE001
+            print(f"(revisiones {t}: {e})"); rev = None
+        try:
+            ed = edgar(t, days) if not t.endswith(EU_SUFFIXES) else {"eventos": [], "insiders": [], "cobertura": False}
+        except Exception as e:  # noqa: BLE001
+            print(f"(edgar {t}: {e})"); ed = {"eventos": [], "insiders": [], "cobertura": False}
         companies.append({"t": t, "name": c["name"], "sector": c["sector"], "region": c["region"], "role": c["role"],
                           "revisiones": rev, **ed})
     # Pulso por sector: amplitud de revisiones (media de net30 anual) + eventos

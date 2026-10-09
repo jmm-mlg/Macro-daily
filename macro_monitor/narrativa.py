@@ -129,11 +129,49 @@ def micro_summary(m: dict, confl: list) -> dict:
     }
 
 
+MAX_PAYLOAD_BYTES = 60_000
+
+
+def _compact(o):
+    """Redondea floats, elimina nulos y claves vacías para reducir el tamaño del JSON."""
+    if isinstance(o, dict):
+        return {k: _compact(v) for k, v in o.items() if v is not None and v != [] and v != {}}
+    if isinstance(o, list):
+        return [_compact(v) for v in o if v is not None]
+    if isinstance(o, float):
+        return round(o, 2)
+    return o
+
+
+def fit_payload(payload: dict) -> dict:
+    """Recorta por prioridad hasta caber en MAX_PAYLOAD_BYTES; siempre conserva lo esencial."""
+    p = _compact(payload)
+    size = lambda d: len(json.dumps(d, ensure_ascii=False, default=str).encode("utf-8"))  # noqa: E731
+    steps = [
+        lambda d: d.get("fichas", {}).pop("momentum_sectorial", None),
+        lambda d: d.get("pulso", {}).pop("variaciones", None),
+        lambda d: d.pop("fichas", None),
+        lambda d: d.get("micro", {}).pop("hechos_relevantes", None),
+        lambda d: d.pop("resultados_7d", None),
+        lambda d: d.pop("agenda_macro_7d", None),
+        lambda d: d.pop("pulso", None),
+        lambda d: d.pop("micro", None),
+        lambda d: d.pop("cartera", None),
+    ]
+    for step in steps:
+        if size(p) <= MAX_PAYLOAD_BYTES:
+            break
+        step(p)
+    print(f"(narrativa: payload {size(p):,} bytes)")
+    return p
+
+
 def generate(payload: dict) -> str | None:
     key = os.environ.get("GROQ_API_KEY")
     if not key:
         print("(narrativa: sin GROQ_API_KEY, se omite)")
         return None
+    payload = fit_payload(payload)
     user = ("Redacta la nota de hoy a partir de este JSON y de nada más:\n\n```json\n"
             + json.dumps(payload, ensure_ascii=False, default=str) + "\n```")
     for model in MODELS:

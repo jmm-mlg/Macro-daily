@@ -283,5 +283,5 @@ def summary_for_llm(p: dict) -> dict:
     comp = {}
     for block, rows in p["blocks"].items():
         comp[block] = [{"serie": r["name"], "ultimo": None if r.get("value") is None else round(r["value"], 2), "unidad": r["unit"],
-                        "var": {k: (None if v is None else round(v, 1)) for k, v in r["chg"].items()}} for r in rows]
+                        "var": {k: round(v, 1) for k, v in r["chg"].items() if v is not None and k in ("1s", "1m", "3m")}} for r in rows]
     return {"variaciones": comp, "medidas": p["medidas"], "senales": [s["texto"] for s in p["senales"]]}
