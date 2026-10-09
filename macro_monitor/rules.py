@@ -232,6 +232,9 @@ def save_history(rows: dict, result: dict):
               result["scores"]["liquidez"]["score"], result["scores"]["riesgo"]["score"], result["tension"],
               json.dumps(sec, ensure_ascii=False)]])
 
+    _append(DATA / "triggers.csv", ["date", "series", "value", "threshold", "distance", "hit"],
+            [[today, t["series"], round(t["value"], 4), t["threshold"], round(t["distance"], 4), int(t["hit"])] for t in result["triggers"]])
+
     slim = {sid: {k: r.get(k) for k in ("value", "chg", "pct", "date", "name", "block", "unit")} for sid, r in rows.items() if "value" in r}
     (DATA / "latest.json").write_text(json.dumps({"series": slim, "analysis": result}, ensure_ascii=False, indent=1, default=str),
                                       encoding="utf-8")

@@ -114,6 +114,15 @@ de las empresas europeas. Marco completo en `kb/conceptos/divisas.md`.
 cambio en `kb/`: genera la navegación (`kb/build_nav.py`), convierte los enlaces `[[id]]` (`kb/_hooks.py`) y
 construye en `docs/kb/`, que GitHub Pages ya sirve. El email enlaza al sitio (`kb_url` en `config.yaml`).
 
+## Decisión del día (`macro_monitor/decision.py`)
+El motor calcula lo que es regla y el modelo solo lo redacta: banda de exposición (tabla del nivel 5 de la guía),
+si se abre hoy, sectores donde buscar y vetados (sesgo, conflictos macro/micro y de momentum), candidatas que pasan el
+embudo (filtros 2-3: revisiones, 8-K, media de 200, stop, resultados, fuerza relativa) con lo que les falta y su ficha
+de calidad (PER, margen bruto, deuda/EBITDA, FCF yield), casuísticas activas con su "qué hacer" leído de `kb/`,
+sensibilidad (se vuelven a correr las reglas con cada disparador cruzado y con los datos de la semana ±1 paso), cambios
+frente a ayer y hace 5 días, historial del régimen y acciones pendientes de cartera. Sección "Decisión del día" en el
+email justo después de la nota; `data/decision.json`. La nota del comité tiene ahora seis secciones orientadas a decisión.
+
 ## Cartera (`cartera/operaciones.csv` + `macro_monitor/cartera.py`)
 Registro de operaciones en CSV (una fila por operación; ver `cartera/README.md`). Cada mañana el motor valora
 las posiciones abiertas (precio, P&L en USD separando acción y divisa, R, distancia al stop, stop alcanzado,

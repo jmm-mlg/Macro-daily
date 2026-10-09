@@ -17,7 +17,7 @@ import datetime as dt
 import pathlib
 import yaml
 
-from macro_monitor import fetch, analyze, report, calendar as cal_mod, empresas, rules, narrativa, micro, pulso, ficha, cartera
+from macro_monitor import fetch, analyze, report, calendar as cal_mod, empresas, rules, narrativa, micro, pulso, ficha, cartera, decision
 
 ROOT = pathlib.Path(__file__).parent
 OUT = ROOT / "output"
@@ -171,10 +171,21 @@ def main():
         except Exception as e:  # noqa: BLE001
             print(f"(cartera: {e})")
 
+        # Decisión del día: bloques deterministas (banda, sectores, candidatas, casuísticas, sensibilidad, deltas)
+        dec_html, dec = "", None
+        try:
+            dec = decision.build(cfg, by_id, res, ficha_data, micro_data, confl, pulso_data, cal, cartera_data)
+            decision.save(dec)
+            dec_html = decision.to_html(dec, cfg.get("kb_url", ""))
+        except Exception as e:  # noqa: BLE001
+            print(f"(decisión: {e})")
+
         # Narrativa LLM: va la primera; si falla, el informe sale sin ella
         nar_html, nar_md = "", None
         try:
             payload = narrativa.build_payload(by_id, res, week_events, cal)
+            if dec:
+                payload["decision"] = decision.summary_for_llm(dec)
             if micro_data:
                 payload["micro"] = narrativa.micro_summary(micro_data, confl)
             if pulso_data:
@@ -190,14 +201,14 @@ def main():
         except Exception as e:  # noqa: BLE001
             print(f"(narrativa: {e})")
 
-        extra_html = nar_html + cartera_html + report.analysis_html(res) + pulso_html + micro_html + ficha_html + empresas.week_html(week_events)
+        extra_html = nar_html + dec_html + cartera_html + report.analysis_html(res) + pulso_html + micro_html + ficha_html + empresas.week_html(week_events)
         title = "Macro Monitor · Nota diaria"
         html = report.render_html(rows, reg, cal, alerts, title, extra_html)
         text = report.render_text(rows, reg, alerts)
         text += "\n\nSECTORES: " + ", ".join(f"{x['label']} {x['bias']:+d}" for x in res["sectors"])
         if nar_md:
             text = "NOTA DEL COMITÉ\n" + nar_md + "\n\n" + text
-        subject = f"[Macro] {today} · {res['regime']['label']} · tensión {res['tension']}" + (f" · {len(alerts)} alertas" if alerts else "")
+        subject = f"[Macro] {today} · {res['regime']['label']} · tensión {res['tension']}" + (f" · {len(alerts)} alerta{'s' if len(alerts) != 1 else ''}" if alerts else "")
 
     elif mode == "event":
         rows, by_id = build_rows(cfg, only_headline=True, only_updated_today=True)
