@@ -1,3 +1,4 @@
 date,regime,crecimiento,inflacion,liquidez,riesgo,tension,sectors_json
 2026-10-07,mixto,0,1,-1,0,media,"{""energia"": 1, ""financiero"": 0, ""industriales"": 0, ""materiales"": 0, ""salud"": 0, ""basico"": -1, ""comunicacion"": -1, ""tecnologia"": -1, ""utilities"": -1, ""discrecional"": -2, ""inmobiliario"": -2}"
 2026-10-08,mixto,0,1,-1,0,media,"{""energia"": 1, ""financiero"": 0, ""industriales"": 0, ""materiales"": 0, ""salud"": 0, ""basico"": -1, ""comunicacion"": -1, ""tecnologia"": -1, ""utilities"": -1, ""discrecional"": -2, ""inmobiliario"": -2}"
+2026-10-09,mixto,0,1,-1,0,media,"{""energia"": 1, ""financiero"": 0, ""industriales"": 0, ""materiales"": 0, ""salud"": 0, ""basico"": -1, ""comunicacion"": -1, ""tecnologia"": -1, ""utilities"": -1, ""discrecional"": -2, ""inmobiliario"": -2}"
