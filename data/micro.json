@@ -59,7 +59,7 @@
      "down7": 0,
      "net30": 1.0
     },
-    "est_anual_chg30_pct": 11.21,
+    "est_anual_chg30_pct": 10.73,
     "recomendaciones": {
      "compra": 10,
      "venta": 0,
@@ -158,7 +158,7 @@
      "down7": 0,
      "net30": 0.0
     },
-    "est_anual_chg30_pct": -1.33,
+    "est_anual_chg30_pct": -0.82,
     "recomendaciones": {
      "compra": 8,
      "venta": 1,
@@ -190,7 +190,7 @@
      "down7": 0,
      "net30": 0.41
     },
-    "est_anual_chg30_pct": -0.24,
+    "est_anual_chg30_pct": -0.3,
     "recomendaciones": {
      "compra": 18,
      "venta": 0,
@@ -222,7 +222,7 @@
      "down7": 1,
      "net30": 1.0
     },
-    "est_anual_chg30_pct": 0.05,
+    "est_anual_chg30_pct": 0.08,
     "recomendaciones": {
      "compra": 15,
      "venta": 2,
@@ -258,7 +258,7 @@
      "down7": 0,
      "net30": 0.0
     },
-    "est_anual_chg30_pct": 0.24,
+    "est_anual_chg30_pct": -0.14,
     "recomendaciones": {
      "compra": 16,
      "venta": 2,
@@ -290,7 +290,7 @@
      "down7": 1,
      "net30": -1.0
     },
-    "est_anual_chg30_pct": 1.74,
+    "est_anual_chg30_pct": 1.8,
     "recomendaciones": {
      "compra": 20,
      "venta": 1,
@@ -358,7 +358,7 @@
      "down7": 3,
      "net30": -0.6
     },
-    "est_anual_chg30_pct": -1.51,
+    "est_anual_chg30_pct": -1.53,
     "recomendaciones": {
      "compra": 19,
      "venta": 4,
@@ -417,7 +417,7 @@
     },
     "est_anual_chg30_pct": 0.94,
     "recomendaciones": {
-     "compra": 12,
+     "compra": 11,
      "venta": 1,
      "cambio_compra_1m": 0
     }
@@ -447,7 +447,7 @@
      "down7": 4,
      "net30": -0.56
     },
-    "est_anual_chg30_pct": -1.32,
+    "est_anual_chg30_pct": -1.35,
     "recomendaciones": {
      "compra": 17,
      "venta": 0,
@@ -511,7 +511,7 @@
      "down7": 11,
      "net30": -0.75
     },
-    "est_anual_chg30_pct": -0.32,
+    "est_anual_chg30_pct": -0.33,
     "recomendaciones": {
      "compra": 19,
      "venta": 1,
@@ -595,7 +595,7 @@
     },
     "est_anual_chg30_pct": -0.02,
     "recomendaciones": {
-     "compra": 58,
+     "compra": 57,
      "venta": 0,
      "cambio_compra_1m": -1
     }
@@ -817,7 +817,7 @@
      "down7": 0,
      "net30": 0.33
     },
-    "est_anual_chg30_pct": -0.71,
+    "est_anual_chg30_pct": 0.17,
     "recomendaciones": {
      "compra": 25,
      "venta": 2,
@@ -921,7 +921,7 @@
      "down7": 1,
      "net30": 1.0
     },
-    "est_anual_chg30_pct": 0.02,
+    "est_anual_chg30_pct": -0.05,
     "recomendaciones": {
      "compra": 13,
      "venta": 0,
@@ -1582,9 +1582,9 @@
     },
     "est_anual_chg30_pct": 0.42,
     "recomendaciones": {
-     "compra": 37,
+     "compra": 38,
      "venta": 1,
-     "cambio_compra_1m": -1
+     "cambio_compra_1m": 0
     }
    },
    "eventos": [],
@@ -1784,9 +1784,9 @@
      "down7": 0,
      "net30": 0.25
     },
-    "est_anual_chg30_pct": 0.13,
+    "est_anual_chg30_pct": 0.15,
     "recomendaciones": {
-     "compra": 57,
+     "compra": 56,
      "venta": 0,
      "cambio_compra_1m": 0
     }
@@ -1830,7 +1830,7 @@
      "down7": 3,
      "net30": -0.5
     },
-    "est_anual_chg30_pct": -1.23,
+    "est_anual_chg30_pct": -1.21,
     "recomendaciones": {
      "compra": 55,
      "venta": 1,
@@ -2216,7 +2216,7 @@
     },
     "est_anual_chg30_pct": 0.02,
     "recomendaciones": {
-     "compra": 43,
+     "compra": 42,
      "venta": 2,
      "cambio_compra_1m": 1
     }
@@ -2792,6 +2792,16 @@
   }
  },
  "central_banks": [
+  {
+   "banco": "Fed",
+   "tipo": "discurso",
+   "fecha": "2026-10-08",
+   "titulo": "Waller, The Signaling Value of the Summary of Economic Projections",
+   "url": "https://www.federalreserve.gov/newsevents/speech/waller20261008a.htm",
+   "postura": 0,
+   "tema": "Fed policy outlook",
+   "resumen": "El discurso del gobernador Waller no indica cambios claros en la política monetaria, manteniendo la postura actual sin señales de ajustes de tipos."
+  },
   {
    "banco": "Fed",
    "tipo": "comunicado",
