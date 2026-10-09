@@ -84,3 +84,30 @@ Los sectores con sesgo positivo (Energía) siguen vulnerables a la evolución de
 - **DGS10 > 5.5 %** (actual 5.27 %, distancia 0.23) activaría presión sobre el earnings yield del 4 % y reforzaría la visión de liquidez restringida.  
 - **CPIAUCSL < 3 %** (actual 3.71 %, distancia 0.71) rompería la tendencia inflacionaria y abriría espacio a recortes de tipos.  
 - **UNRATE > 4.5 %** (actual 4.2 %, distancia 0.3) dispararía la regla de Sahm, indicando mayor riesgo de desaceleración del empleo.
+
+
+# 2026-10-09
+
+## Qué ha cambiado  
+El score de inflación sube a **1** y muestra tendencia “subiendo”, mientras que liquidez y riesgo siguen empeorando (‑1 y 0). El tipo real 10 años (+0,49 % mensual) y el 10 años Treasury (+0,5 % mensual) alcanzan el percentil 100 del último decenio.
+
+## Lectura del cuadro  
+- **Inflación en alza** – PCE subyacente 3,01 % (sobre el umbral 2,8 % y activado) y CPI general 3,71 % a/a – implica presión sobre márgenes y posible endurecimiento de política.  
+- **Liquidez deteriorada** – Liquidez score –1, mercado vs liquidez 3 meses muestra bolsa +2,55 % frente a liquidez –2,0 % (diferencia 0,27) – indica menor soporte de fondos y mayor vulnerabilidad a shocks.  
+- **Riesgo comprimido** – Prima de riesgo 1,15 % (earnings yield 4,07 % menos tipo real 2,92 %) y VIX 15,19 (bajó 1,27) – sugiere que el mercado está pagando poco por el riesgo pese al empeoramiento del entorno.
+
+## Esta semana  
+El reporte semanal de solicitudes de seguro de desempleo (State Unemployment Insurance) y los próximos datos de CPI y PPI (14‑15 oct) podrán confirmar si la inflación sigue subiendo y si el mercado mantiene la prima de riesgo comprimida. Un repunte inesperado del IPC podría reactivar expectativas de más endurecimiento y reforzar la presión sobre sectores sensibles al tipo real.
+
+## Empresas y bancos centrales  
+Sin datos micro hoy.
+
+## Para la cartera  
+- **Sesgo sectorial**: Energía mantiene sesgo **+1** por “petróleo caro” (WTI 90,4 $ / barril, -5,65 % mensual, percentil 91). Consumo discrecional e inmobiliario siguen con sesgo **‑2** ante “tipo real alto” y “hipoteca cara” (hipoteca 30 años 7,4 %, percentil 98).  
+- **Conflictos**: La prima de riesgo comprimida y la correlación positiva acciones‑bonos (+0,42) contradicen la visión defensiva de consumo básico (sesgo ‑1) que depende de márgenes protegidos por mayor ahorro; sin embargo la tasa de ahorro personal cayó a 4,1 % (por debajo del umbral 3,5 % activado) y el ahorro está en niveles bajos (percentil 8).  
+- **Indicadores de impulso**: El pulso sectorial muestra mejora en energía (amplitud revisiones 30 d = 1,0) y materiales (0,28), mientras que consumo discrecional empeora (‑0,23). Esto refuerza la preferencia por exposición a energía y materiales frente a consumo discrecional e inmobiliario.
+
+## Qué cambiaría la conclusión  
+1. Un descenso del PCE subyacente por debajo de 2,8 % (distancia –0,21) revertiría el disparador de inflación y aliviaría la presión sobre tipos reales.  
+2. Un cierre del Treasury 10 años por encima de 5,5 % (distancia +0,22) elevaría la prima de riesgo y podría reequilibrar la relación earnings‑yield/tipo real.  
+3. Un aumento del desempleo > 4,5 % (distancia +0,3) activaría la regla de Sahm, indicando deterioro del mercado laboral y potencial rebaja de consumo.

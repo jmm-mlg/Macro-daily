@@ -1554,9 +1554,9 @@
     }
    ],
    "cobertura": true,
-   "compra_cluster": true,
-   "n_compradores": 24,
-   "importe_compras": 98365,
+   "compra_cluster": false,
+   "n_compradores": 1,
+   "importe_compras": 11432,
    "importe_ventas": 0
   },
   {
@@ -2752,7 +2752,7 @@
    "mejorando": 3,
    "empeorando": 2,
    "hechos_relevantes": 0,
-   "clusters_insiders": 1
+   "clusters_insiders": 0
   },
   "Servicios de comunicación": {
    "amplitud_revisiones": -0.12,
@@ -2793,14 +2793,39 @@
  },
  "central_banks": [
   {
-   "banco": "Fed",
+   "banco": "BCE",
+   "tipo": "discurso",
+   "fecha": "2026-10-06",
+   "titulo": "Piero Cipollone: Money in the digital age: digital euro, tokenisation and the role of central banks",
+   "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261006~0da978f159.en.html"
+  },
+  {
+   "banco": "BCE",
    "tipo": "comunicado",
-   "fecha": "2026-10-07",
-   "titulo": "Minutes of the Federal Open Market Committee, September 15-16, 2026",
-   "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261007a.htm",
-   "postura": 0,
-   "tema": "FOMC minutes",
-   "resumen": "Los minutos del FOMC de septiembre 2026 no indican cambios inmediatos en la política monetaria, manteniendo la postura actual de la Reserva Federal."
+   "fecha": "2026-10-06",
+   "titulo": "Philip R. Lane: Interview with Ansa",
+   "url": "https://www.ecb.europa.eu//press/inter/date/2026/html/ecb.in261006~bc94400297.en.html"
+  },
+  {
+   "banco": "BCE",
+   "tipo": "discurso",
+   "fecha": "2026-10-05",
+   "titulo": "Philip R. Lane: Diagnostic Challenges for ECB Monetary Policy",
+   "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261005~1d8d998ef4.en.html"
+  },
+  {
+   "banco": "BCE",
+   "tipo": "comunicado",
+   "fecha": "2026-10-02",
+   "titulo": "Decisions taken by the Governing Council of the ECB (in addition to decisions setting interest rates)",
+   "url": "https://www.ecb.europa.eu//press/govcdec/otherdec/2026/html/ecb.gc261002~54c6b5672b.en.html"
+  },
+  {
+   "banco": "BCE",
+   "tipo": "discurso",
+   "fecha": "2026-10-02",
+   "titulo": "Boris Vujčić: Resilience, integration and competitiveness: building the future of European banking",
+   "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261002_1~419efe18e0.en.html"
   }
  ]
 }
