@@ -145,11 +145,12 @@ def edgar(ticker: str, days: int = 7, insider_days: int = 30) -> dict:
                 time.sleep(0.15)  # EDGAR: máx 10 req/s
             except Exception as e:  # noqa: BLE001
                 print(f"(form4 {ticker} {date}: {e})")
-    compras = [i for i in insiders if i["tipo"] == "compra"]
+    compras = [i for i in insiders if i["tipo"] == "compra" and i["importe_usd"] >= 10_000]  # compras simbólicas no cuentan
     compradores = {i["quien"] for i in compras}
+    importe_compras = sum(i["importe_usd"] for i in compras)
     return {"eventos": eventos, "insiders": insiders, "cobertura": True,
-            "compra_cluster": len(compradores) >= 3, "n_compradores": len(compradores),
-            "importe_compras": sum(i["importe_usd"] for i in compras),
+            "compra_cluster": len(compradores) >= 3 and importe_compras >= 250_000, "n_compradores": len(compradores),
+            "importe_compras": importe_compras,
             "importe_ventas": sum(i["importe_usd"] for i in insiders if i["tipo"] == "venta")}
 
 
@@ -204,23 +205,32 @@ def _classify_speech(title, text) -> dict | None:
               '"relevante": true/false (false si es regulación bancaria, pagos u otro tema sin impacto en tipos)}'
               f"\n\nTÍTULO: {title}\n\nTEXTO:\n{text}")
     for model in ("openai/gpt-oss-20b", "openai/gpt-oss-120b"):
-        try:
-            r = requests.post("https://api.groq.com/openai/v1/chat/completions",
-                              headers={"Authorization": f"Bearer {key}"}, timeout=60,
-                              json={"model": model, "temperature": 0, "max_tokens": 600, "reasoning_effort": "low",
-                                    "messages": [{"role": "user", "content": prompt}]})
-            r.raise_for_status()
-            txt = r.json()["choices"][0]["message"]["content"]
-            m = re.search(r"\{.*\}", txt, re.S)
-            return json.loads(m.group(0)) if m else None
-        except Exception as e:  # noqa: BLE001
-            print(f"(clasificación discurso {model}: {e})")
+        for intento in (1, 2):
+            try:
+                r = requests.post("https://api.groq.com/openai/v1/chat/completions",
+                                  headers={"Authorization": f"Bearer {key}"}, timeout=60,
+                                  json={"model": model, "temperature": 0, "max_tokens": 600, "reasoning_effort": "low",
+                                        "messages": [{"role": "user", "content": prompt}]})
+                if r.status_code in (413, 429) and intento == 1:
+                    time.sleep(25)
+                    continue
+                r.raise_for_status()
+                txt = r.json()["choices"][0]["message"]["content"]
+                m = re.search(r"\{.*\}", txt, re.S)
+                return json.loads(m.group(0)) if m else None
+            except Exception as e:  # noqa: BLE001
+                print(f"(clasificación discurso {model}: {e})")
+                break
     return None
+
+
+MAX_DISCURSOS_CLASIFICADOS = 6
 
 
 def central_banks(days: int = 7) -> list:
     since = dt.date.today() - dt.timedelta(days=days)
     out = []
+    clasificados = 0
     for banco, tipo, url in FEEDS:
         try:
             items = _rss_items(url)
@@ -235,7 +245,11 @@ def central_banks(days: int = 7) -> list:
                     and "/press/pr/" in it["url"] and not re.search(r"monetary policy|interest rate", it["titulo"], re.I):
                 continue  # BCE: solo discursos y decisiones de política monetaria
             kind = "discurso" if "/press/key/" in it["url"] or tipo == "discurso" else "comunicado"
-            cls = _classify_speech(it["titulo"], _page_text(it["url"]))
+            cls = None
+            if clasificados < MAX_DISCURSOS_CLASIFICADOS:
+                cls = _classify_speech(it["titulo"], _page_text(it["url"]))
+                clasificados += 1
+                time.sleep(3)  # Groq gratuito: espaciar llamadas
             if cls and cls.get("relevante") is False:
                 continue
             out.append({"banco": banco, "tipo": kind, "fecha": d.isoformat(), "titulo": it["titulo"], "url": it["url"],
@@ -290,7 +304,9 @@ def conflicts(micro: dict, sectors_macro: list) -> list:
     out = []
     for s in sectors_macro:
         p = micro["sector_pulse"].get(s["label"])
-        if not p or p["senal"] == 0 or s["bias"] == 0:
+        if not p or p["senal"] == 0 or s["bias"] == 0 or p["empresas_cubiertas"] < 3:
+            continue
+        if abs(p["amplitud_revisiones"] or 0) < 0.33:
             continue
         if (p["senal"] > 0) != (s["bias"] > 0):
             out.append({"sector": s["label"], "macro": s["bias"], "micro": p["senal"], "amplitud": p["amplitud_revisiones"],
