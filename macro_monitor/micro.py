@@ -195,8 +195,8 @@ def _page_text(url, limit=7000):
 
 
 def _classify_speech(title, text) -> dict | None:
-    key = os.environ.get("GROQ_API_KEY")
-    if not key or not text:
+    from . import llm
+    if not text or not (os.environ.get("GROQ_API_KEY") or os.environ.get("GEMINI_API_KEY")):
         return None
     prompt = ("Clasifica este discurso o comunicado de un banco central para un inversor. Responde SOLO con JSON: "
               '{"postura": entero de -2 (muy paloma: recortes, preocupación por crecimiento) a +2 (muy halcón: subidas, '
@@ -204,24 +204,14 @@ def _classify_speech(title, text) -> dict | None:
               '"resumen": una frase de máximo 30 palabras con lo relevante para tipos o mercados; '
               '"relevante": true/false (false si es regulación bancaria, pagos u otro tema sin impacto en tipos)}'
               f"\n\nTÍTULO: {title}\n\nTEXTO:\n{text}")
-    for model in ("openai/gpt-oss-20b", "openai/gpt-oss-120b"):
-        for intento in (1, 2):
-            try:
-                r = requests.post("https://api.groq.com/openai/v1/chat/completions",
-                                  headers={"Authorization": f"Bearer {key}"}, timeout=60,
-                                  json={"model": model, "temperature": 0, "max_tokens": 600, "reasoning_effort": "low",
-                                        "messages": [{"role": "user", "content": prompt}]})
-                if r.status_code in (413, 429) and intento == 1:
-                    time.sleep(25)
-                    continue
-                r.raise_for_status()
-                txt = r.json()["choices"][0]["message"]["content"]
-                m = re.search(r"\{.*\}", txt, re.S)
-                return json.loads(m.group(0)) if m else None
-            except Exception as e:  # noqa: BLE001
-                print(f"(clasificación discurso {model}: {e})")
-                break
-    return None
+    txt = llm.chat("Eres un analista de política monetaria. Respondes solo JSON válido.", prompt, max_tokens=600, temperature=0, wait_on_limit=25)
+    if not txt:
+        return None
+    m = re.search(r"\{.*\}", txt, re.S)
+    try:
+        return json.loads(m.group(0)) if m else None
+    except json.JSONDecodeError:
+        return None
 
 
 MAX_DISCURSOS_CLASIFICADOS = 6

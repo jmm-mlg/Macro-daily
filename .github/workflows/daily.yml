@@ -4,7 +4,7 @@ on:
   schedule:
     # 05:30 UTC = 07:30 CEST / 06:30 CET, de lunes a viernes.
     # GitHub puede retrasar el cron 10-30 min en horas punta.
-    - cron: "17 4 * * 1-5"
+    - cron: "30 5 * * 1-5"
   workflow_dispatch:
 
 permissions:
@@ -25,6 +25,8 @@ jobs:
           FRED_API_KEY: ${{ secrets.FRED_API_KEY }}
           FINNHUB_API_KEY: ${{ secrets.FINNHUB_API_KEY }}
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          LLM_PROVIDER: ${{ vars.LLM_PROVIDER }}
           EDGAR_USER_AGENT: ${{ secrets.EDGAR_USER_AGENT }}
           SMTP_HOST: ${{ secrets.SMTP_HOST }}
           SMTP_PORT: ${{ secrets.SMTP_PORT }}

@@ -57,7 +57,8 @@ y manda el resumen por email. Fuentes gratuitas: FRED (St. Louis Fed) y Yahoo Fi
 | Secret | Valor |
 |---|---|
 | `FRED_API_KEY` | tu clave de FRED |
-| `GROQ_API_KEY` | opcional; clave de console.groq.com para la "Nota del comité" (narrativa LLM) |
+| `GROQ_API_KEY` | opcional; clave de console.groq.com para la "Nota del comité" y la clasificación de discursos |
+| `GEMINI_API_KEY` | opcional; clave gratuita de aistudio.google.com; respaldo automático cuando Groq devuelve 413/429 (o principal si la variable `LLM_PROVIDER` = gemini) |
 | `EDGAR_USER_AGENT` | opcional pero recomendado; la SEC pide identificarse: `"Nombre email@dominio"` |
 | `FINNHUB_API_KEY` | opcional; clave gratuita de finnhub.io (hora pre/post mercado de los resultados EE.UU.) |
 | `SMTP_HOST` | `smtp.gmail.com` (u otro) |

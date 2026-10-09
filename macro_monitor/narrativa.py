@@ -167,36 +167,18 @@ def fit_payload(payload: dict) -> dict:
 
 
 def generate(payload: dict) -> str | None:
-    key = os.environ.get("GROQ_API_KEY")
-    if not key:
-        print("(narrativa: sin GROQ_API_KEY, se omite)")
+    from . import llm
+    if not (os.environ.get("GROQ_API_KEY") or os.environ.get("GEMINI_API_KEY")):
+        print("(narrativa: sin GROQ_API_KEY ni GEMINI_API_KEY, se omite)")
         return None
     payload = fit_payload(payload)
     user = ("Redacta la nota de hoy a partir de este JSON y de nada más:\n\n```json\n"
             + json.dumps(payload, ensure_ascii=False, default=str) + "\n```")
-    import time
-    for model in MODELS:
-        for intento in (1, 2):
-            try:
-                r = requests.post(GROQ_URL, headers={"Authorization": f"Bearer {key}", "Content-Type": "application/json"},
-                                  json={"model": model, "temperature": 0.3, "max_tokens": 3000, "reasoning_effort": "low",
-                                        "messages": [{"role": "system", "content": SYSTEM}, {"role": "user", "content": user}]},
-                                  timeout=90)
-                if r.status_code in (413, 429) and intento == 1:
-                    # Groq: 413 = demasiados tokens por minuto, 429 = demasiadas peticiones; esperar y reintentar una vez
-                    print(f"(narrativa {model}: {r.status_code} {r.text[:160]!r}; espero 65 s)")
-                    time.sleep(65)
-                    continue
-                r.raise_for_status()
-                txt = r.json()["choices"][0]["message"]["content"].strip()
-                if txt and txt.count("## ") >= 6:
-                    print(f"(narrativa generada con {model})")
-                    return txt
-                print(f"(narrativa {model}: salida incompleta, {txt.count('## ')} secciones)")
-                break
-            except Exception as e:  # noqa: BLE001
-                print(f"(narrativa {model}: {e})")
-                break
+    for intento in (1, 2):
+        txt = llm.chat(SYSTEM, user, max_tokens=3000, temperature=0.3)
+        if txt and txt.count("## ") >= 6:
+            return txt
+        print(f"(narrativa: salida incompleta o vacía en el intento {intento})")
     return None
 
 
