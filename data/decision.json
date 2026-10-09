@@ -1,0 +1,541 @@
+{
+ "date": "2026-10-09",
+ "exposicion": {
+  "banda_pct": "50-70",
+  "nuevas_posiciones": "solo con factores claros y micro a favor, mitad de tamaño",
+  "factor_tamano": 0.5,
+  "posicion_max_pct": 5.0,
+  "motivo": "régimen Mixto / transición con tensión media (tabla del nivel 5 de la guía)"
+ },
+ "abrir_hoy": {
+  "respuesta": "no",
+  "motivo": "régimen Mixto: esperar o mitad de tamaño solo con disparador y micro a favor"
+ },
+ "sectores_donde_buscar": [
+  "Energía"
+ ],
+ "sectores_vetados": [
+  {
+   "sector": "Consumo básico",
+   "motivo": "sesgo -1"
+  },
+  {
+   "sector": "Servicios de comunicación",
+   "motivo": "sesgo -1"
+  },
+  {
+   "sector": "Tecnología de la información",
+   "motivo": "sesgo -1"
+  },
+  {
+   "sector": "Utilities",
+   "motivo": "sesgo -1"
+  },
+  {
+   "sector": "Consumo discrecional",
+   "motivo": "sesgo -2"
+  },
+  {
+   "sector": "Inmobiliario",
+   "motivo": "sesgo -2"
+  }
+ ],
+ "candidatas": [
+  {
+   "ticker": "SHEL.L",
+   "empresa": "Shell",
+   "sector": "Energía",
+   "region": "EU",
+   "role": "bellwether",
+   "pasa_filtro_3": true,
+   "le_falta": [
+    "disparador con fecha (filtro 4)"
+   ],
+   "precio": 37.94,
+   "moneda": "GBP",
+   "stop": 36.44,
+   "stop_dist_pct": 4.0,
+   "acciones": 498,
+   "importe": 24992,
+   "rel_3m": 8.5,
+   "dias_a_resultados": null,
+   "calidad": {
+    "per_adelantado": 9.184766,
+    "per_trailing": 11.224852,
+    "margen_bruto_pct": 26.1,
+    "deuda_neta_ebitda": 0.72,
+    "fcf_yield_pct": 9.9
+   }
+  },
+  {
+   "ticker": "XOM",
+   "empresa": "ExxonMobil",
+   "sector": "Energía",
+   "region": "US",
+   "role": "bellwether",
+   "pasa_filtro_3": true,
+   "le_falta": [
+    "disparador con fecha (filtro 4)"
+   ],
+   "precio": 169.58,
+   "moneda": "USD",
+   "stop": 162.99,
+   "stop_dist_pct": 3.9,
+   "acciones": 147,
+   "importe": 24928,
+   "rel_3m": 1.8,
+   "dias_a_resultados": null,
+   "calidad": {
+    "per_adelantado": 14.88477,
+    "per_trailing": 21.822548,
+    "margen_bruto_pct": 29.8,
+    "deuda_neta_ebitda": 0.47,
+    "fcf_yield_pct": 3.0
+   }
+  },
+  {
+   "ticker": "VLO",
+   "empresa": "Valero",
+   "sector": "Energía",
+   "region": "US",
+   "role": "rep",
+   "pasa_filtro_3": true,
+   "le_falta": [
+    "disparador con fecha (filtro 4)"
+   ],
+   "precio": 443.37,
+   "moneda": "USD",
+   "stop": 410.92,
+   "stop_dist_pct": 7.3,
+   "acciones": 56,
+   "importe": 24829,
+   "rel_3m": 34.2,
+   "dias_a_resultados": null,
+   "calidad": {
+    "per_adelantado": 10.272911,
+    "per_trailing": 18.472698,
+    "margen_bruto_pct": 16.1,
+    "deuda_neta_ebitda": 0.26,
+    "fcf_yield_pct": 6.6
+   }
+  },
+  {
+   "ticker": "REP.MC",
+   "empresa": "Repsol",
+   "sector": "Energía",
+   "region": "EU",
+   "role": "rep",
+   "pasa_filtro_3": true,
+   "le_falta": [
+    "disparador con fecha (filtro 4)"
+   ],
+   "precio": 29.82,
+   "moneda": "EUR",
+   "stop": 27.8,
+   "stop_dist_pct": 6.8,
+   "acciones": 748,
+   "importe": 24992,
+   "rel_3m": 8.9,
+   "dias_a_resultados": null,
+   "calidad": {
+    "per_adelantado": 7.020121,
+    "per_trailing": 8.3529415,
+    "margen_bruto_pct": 31.6,
+    "deuda_neta_ebitda": 0.6,
+    "fcf_yield_pct": 1.0
+   }
+  },
+  {
+   "ticker": "EQNR.OL",
+   "empresa": "Equinor",
+   "sector": "Energía",
+   "region": "EU",
+   "role": "rep",
+   "pasa_filtro_3": true,
+   "le_falta": [
+    "disparador con fecha (filtro 4)"
+   ],
+   "precio": 417.7,
+   "moneda": "NOK",
+   "stop": 394.94,
+   "stop_dist_pct": 5.4,
+   "acciones": 573,
+   "importe": 24997,
+   "rel_3m": 6.7,
+   "dias_a_resultados": null,
+   "calidad": {
+    "per_adelantado": 9.850828,
+    "per_trailing": 11.5899,
+    "margen_bruto_pct": 40.1,
+    "deuda_neta_ebitda": 0.21,
+    "fcf_yield_pct": 3.0
+   }
+  },
+  {
+   "ticker": "COP",
+   "empresa": "ConocoPhillips",
+   "sector": "Energía",
+   "region": "US",
+   "role": "rep",
+   "pasa_filtro_3": true,
+   "le_falta": [
+    "disparador con fecha (filtro 4)"
+   ],
+   "precio": 135.21,
+   "moneda": "USD",
+   "stop": 129.07,
+   "stop_dist_pct": 4.5,
+   "acciones": 184,
+   "importe": 24946,
+   "rel_3m": 4.3,
+   "dias_a_resultados": null,
+   "calidad": {
+    "per_adelantado": 13.449089,
+    "per_trailing": 17.90861,
+    "margen_bruto_pct": 47.6,
+    "deuda_neta_ebitda": 0.58,
+    "fcf_yield_pct": 4.7
+   }
+  },
+  {
+   "ticker": "CVX",
+   "empresa": "Chevron",
+   "sector": "Energía",
+   "region": "US",
+   "role": "rep",
+   "pasa_filtro_3": true,
+   "le_falta": [
+    "disparador con fecha (filtro 4)"
+   ],
+   "precio": 212.82,
+   "moneda": "USD",
+   "stop": 204.83,
+   "stop_dist_pct": 3.8,
+   "acciones": 117,
+   "importe": 24901,
+   "rel_3m": 1.6,
+   "dias_a_resultados": null,
+   "calidad": null
+  },
+  {
+   "ticker": "TTE.PA",
+   "empresa": "TotalEnergies",
+   "sector": "Energía",
+   "region": "EU",
+   "role": "rep",
+   "pasa_filtro_3": true,
+   "le_falta": [
+    "disparador con fecha (filtro 4)"
+   ],
+   "precio": 78.38,
+   "moneda": "EUR",
+   "stop": 74.61,
+   "stop_dist_pct": 4.8,
+   "acciones": 284,
+   "importe": 24968,
+   "rel_3m": -2.1,
+   "dias_a_resultados": null,
+   "calidad": null
+  },
+  {
+   "ticker": "NESTE.HE",
+   "empresa": "Neste",
+   "sector": "Energía",
+   "region": "EU",
+   "role": "rep",
+   "pasa_filtro_3": false,
+   "le_falta": [
+    "fuerza relativa -9.2 pp"
+   ],
+   "precio": 32.45,
+   "moneda": "EUR",
+   "stop": 31.16,
+   "stop_dist_pct": 4.0,
+   "acciones": 688,
+   "importe": 24998,
+   "rel_3m": -9.2,
+   "dias_a_resultados": null,
+   "calidad": null
+  },
+  {
+   "ticker": "SLB",
+   "empresa": "SLB (Schlumberger)",
+   "sector": "Energía",
+   "region": "US",
+   "role": "rep",
+   "pasa_filtro_3": false,
+   "le_falta": [
+    "bajo la media de 200",
+    "fuerza relativa -12.5 pp"
+   ],
+   "precio": 48.91,
+   "moneda": "USD",
+   "stop": 47.65,
+   "stop_dist_pct": 2.6,
+   "acciones": 511,
+   "importe": 24993,
+   "rel_3m": -12.5,
+   "dias_a_resultados": null,
+   "calidad": null
+  },
+  {
+   "ticker": "KMI",
+   "empresa": "Kinder Morgan",
+   "sector": "Energía",
+   "region": "US",
+   "role": "rep",
+   "pasa_filtro_3": false,
+   "le_falta": [
+    "fuerza relativa -14.6 pp"
+   ],
+   "precio": 32.47,
+   "moneda": "USD",
+   "stop": 31.1,
+   "stop_dist_pct": 4.2,
+   "acciones": 769,
+   "importe": 24986,
+   "rel_3m": -14.6,
+   "dias_a_resultados": null,
+   "calidad": null
+  },
+  {
+   "ticker": "TE.PA",
+   "empresa": "Technip Energies",
+   "sector": "Energía",
+   "region": "EU",
+   "role": "rep",
+   "pasa_filtro_3": false,
+   "le_falta": [
+    "bajo la media de 200",
+    "fuerza relativa -26.1 pp"
+   ],
+   "precio": 28.82,
+   "moneda": "EUR",
+   "stop": 27.86,
+   "stop_dist_pct": 3.3,
+   "acciones": 774,
+   "importe": 24993,
+   "rel_3m": -26.1,
+   "dias_a_resultados": null,
+   "calidad": null
+  }
+ ],
+ "casuisticas_activas": [
+  {
+   "id": "consumo-fuerte-con-confianza-baja",
+   "titulo": "Consumo fuerte con confianza del consumidor en mínimos",
+   "por_que": "señal cruzada RSAFS vs UMCSENT",
+   "que_hacer": "- Filtro 2 y 3: dentro de discrecional, solo renta alta (lujo, viajes, Booking, Hermès, LVMH si China acompaña); vetar descuento, restauración rápida y financiación de coches; en básico, solo marcas con pricing power probado.\n- Vigilar la morosidad de tarjetas (informe trimestral de la Fed de Nueva York; resultados de Capital One y Synchrony) y la tasa de ahorro (BEA, con el PCE): cuando la tasa de ahorro baja del 3 % el margen se acaba.\n- La confianza en mínimos extremos (< 55) ha sido históricamente señal contraria para la bolsa a 6-12 meses (2008, 2011, 2022): no vender el índice por la encuesta.",
+   "que_la_resuelve": "- **Al alza** (la confianza sube hacia el gasto): la inflación baja, los salarios reales vuelven a positivo (2023-2024). Favorable.\n- **A la baja** (el gasto baja hacia la confianza): se agota el ahorro, sube la morosidad, o cae la bolsa y con ella el efecto riqueza (2008). Desfavorable y más lento de lo que parece: 2-3 trimestres."
+  },
+  {
+   "id": "bolsa-y-tipo-real-en-maximos",
+   "titulo": "Bolsa y tipo real en percentiles altos a la vez",
+   "por_que": "señal cruzada ^GSPC vs DFII10",
+   "que_hacer": "- Filtro 1: exposición agregada en la banda baja del régimen; no aumentar aunque un sector concreto esté favorecido.\n- Filtro 2 y 3: dentro de los sectores favorecidos, elegir calidad (margen, caja) sobre crecimiento; vetar growth sin beneficios.\n- Filtro 4: entradas solo en retrocesos; no perseguir máximos.\n- Nivel 6: stops más cercanos (1,5 ATR en lugar de 2) y mitad de tamaño; riesgo abierto total ≤ 3 % en lugar de 5 %.\n- Vigilar: el disparador del 10 años (5,50 %) y las revisiones de analistas del S&P 500 agregadas; el giro de las revisiones suele preceder a la resolución.",
+   "que_la_resuelve": ""
+  },
+  {
+   "id": "nominas-debiles-con-peticiones-bajas",
+   "titulo": "Nóminas débiles con peticiones de desempleo bajas",
+   "por_que": "señal cruzada PAYEMS vs ICSA",
+   "que_hacer": "- Filtro 1: régimen Mixto o Reflación suave; exposición en la banda media.\n- Filtro 2 y 3: evitar consumo discrecional de renta baja y servicios de empleo; preferir empresas con pricing power y poca dependencia del consumidor medio.\n- Nivel 6: stops normales; la resolución a la baja (peticiones saltando) tarda semanas en llegar y el disparador avisa.\n- **Vigilar cada jueves**: la media de 4 semanas de peticiones; el disparador está en 240.000. Y en el informe de empleo, las revisiones de meses anteriores: en 2024 las revisiones negativas acumuladas fueron la primera señal de que la fase se resolvía a la baja.",
+   "que_la_resuelve": "- **Al alza**: nóminas de vuelta por encima de 150.000 con peticiones estables; suele venir con recortes de la Fed o con un repunte de pedidos (2019-2020 antes de la pandemia, 2024 segundo semestre).\n- **A la baja**: peticiones por encima de 240.000-260.000 durante un mes; el paro sube dos décimas en dos meses; la regla de Sahm se activa en 1-3 mes…"
+  },
+  {
+   "id": "cobre-oro-y-10-anos",
+   "titulo": "El ratio cobre/oro como predictor del 10 años",
+   "por_que": "señal cruzada CU_AU vs DGS10",
+   "que_hacer": "- Usarlo como contraste, no como señal propia; sirve para leer el 10 años.\n- El ratio está en el panel (CU_AU) con percentil a 10 años; en octubre de 2026 en percentil 23: el oro ha ganado al cobre en la década.",
+   "que_la_resuelve": ""
+  },
+  {
+   "id": "pce-por-encima-de-la-proyeccion-del-fomc",
+   "titulo": "El PCE subyacente va por encima de la proyección del FOMC",
+   "por_que": "disparador PCEPILFE activado",
+   "que_hacer": "- Antes de la reunión con SEP: no abrir duración; esperar al dot plot.\n- Si el mercado ya descuenta más que la Fed (mercado-descuenta-mas-subidas-que-la-fed), la revisión al alza puede estar en precio.",
+   "que_la_resuelve": ""
+  },
+  {
+   "id": "vix-bajo-con-tipo-real-alto",
+   "titulo": "VIX bajo con tipo real alto (complacencia con coste de capital alto)",
+   "por_que": "tipo real > 2 % con VIX < 16",
+   "que_hacer": "- Tensión alta o media: banda baja de exposición; mitad de tamaño en nuevas posiciones.\n- Coberturas con opciones son baratas por definición en esta casuística; es el único momento en que comprar protección tiene sentido económico.\n- Vigilar: revisiones de analistas agregadas y el 10 años (disparador 5,50 %).",
+   "que_la_resuelve": ""
+  },
+  {
+   "id": "subida-rapida-del-10-anos",
+   "titulo": "Subida rápida del Treasury a 10 años",
+   "por_que": "El 10 años se ha movido +48 pb en un mes, sobre todo por tipo real (+49 real, -2 breakeven",
+   "que_hacer": "- No abrir duración larga mientras la subida esté en curso; el suelo de esos sectores llega cuando el 10 años hace techo, no antes.\n- Stops más cerca en todo lo que tenga PER > 30.\n- El techo del 10 años suele venir con un catalizador identificable: una subasta del Tesoro que sale bien, un dato de inflación suave, o la Fed hablando de condiciones financieras (noviembre 2023). Esperar al catalizador.",
+   "que_la_resuelve": "- El 10 años deja de subir dos semanas: la bolsa rebota con fuerza (noviembre 2023: +9 % en un mes).\n- Sigue subiendo con la bolsa cayendo y el HY abriéndose: pasa a crisis de confianza (abril 2025: la Casa Blanca retrocedió en aranceles cuando el 10 años subió 50 pb en una semana)."
+  }
+ ],
+ "sensibilidad": {
+  "disparadores": [
+   {
+    "serie": "DGS10",
+    "umbral": 5.5,
+    "valor_actual": 5.28,
+    "si_se_cruza": {
+     "sin_cambios": "no altera régimen ni sesgos; solo la lectura"
+    },
+    "texto": "Treasury 10 años > 5,50%: compite de frente con un earnings yield del 4%."
+   },
+   {
+    "serie": "JPY=X",
+    "umbral": 150,
+    "valor_actual": 158.33999633789062,
+    "si_se_cruza": {
+     "sector_Servicios de comunicación": "-1 → -2",
+     "sector_Tecnología de la información": "-1 → -2"
+    },
+    "texto": "Dólar-yen < 150: el yen se fortalece; riesgo de deshacer del carry (ago-2024 fue 162 → 142)."
+   },
+   {
+    "serie": "UNRATE",
+    "umbral": 4.5,
+    "valor_actual": 4.2,
+    "si_se_cruza": {
+     "sin_cambios": "no altera régimen ni sesgos; solo la lectura"
+    },
+    "texto": "Paro > 4,5%: regla de Sahm en marcha (0,5 pp sobre el mínimo de 12 meses)."
+   },
+   {
+    "serie": "CCSA",
+    "umbral": 2000000,
+    "valor_actual": 1716000.0,
+    "si_se_cruza": {
+     "sin_cambios": "no altera régimen ni sesgos; solo la lectura"
+    },
+    "texto": "Continuadas > 2 M: el mercado laboral deja de absorber; precede a la subida del paro."
+   },
+   {
+    "serie": "PSAVERT",
+    "umbral": 3.5,
+    "valor_actual": 4.1,
+    "si_se_cruza": {
+     "sin_cambios": "no altera régimen ni sesgos; solo la lectura"
+    },
+    "texto": "Ahorro < 3,5 %: el consumo nominal se sostiene con ahorro; se agota en 2-3 trimestres."
+   }
+  ],
+  "datos_semana": [
+   {
+    "publicacion": "IPC EE.UU.",
+    "serie": "CPIAUCSL",
+    "valor_actual": 3.7129581058388483,
+    "paso": 0.3,
+    "si_sube": {
+     "sin_cambios": true
+    },
+    "si_baja": {
+     "sin_cambios": true
+    }
+   },
+   {
+    "publicacion": "IPC EE.UU.",
+    "serie": "CPILFESL",
+    "valor_actual": 2.7634613395318253,
+    "paso": 0.2,
+    "si_sube": {
+     "sin_cambios": true
+    },
+    "si_baja": {
+     "sin_cambios": true
+    }
+   },
+   {
+    "publicacion": "Ventas minoristas",
+    "serie": "RSAFS",
+    "valor_actual": 1.127425850332675,
+    "paso": 0.6,
+    "si_sube": {
+     "sin_cambios": true
+    },
+    "si_baja": {
+     "sin_cambios": true
+    }
+   },
+   {
+    "publicacion": "IPP",
+    "serie": "PPIFIS",
+    "valor_actual": 5.413622452737954,
+    "paso": 0.5,
+    "si_sube": {
+     "sin_cambios": true
+    },
+    "si_baja": {
+     "score_inflacion": "+1 → +0"
+    }
+   },
+   {
+    "publicacion": "Peticiones de desempleo",
+    "serie": "ICSA",
+    "valor_actual": 197000.0,
+    "paso": 30000,
+    "si_sube": {
+     "sin_cambios": true
+    },
+    "si_baja": {
+     "regimen": "Mixto / transición → Reflación",
+     "score_crecimiento": "+0 → +1",
+     "sector_Energía": "+1 → +2",
+     "sector_Financiero": "+0 → +1",
+     "sector_Industriales": "+0 → +1",
+     "sector_Materiales": "+0 → +1",
+     "sector_Consumo básico": "-1 → -2",
+     "sector_Servicios de comunicación": "-1 → -2",
+     "sector_Tecnología de la información": "-1 → -2",
+     "sector_Utilities": "-1 → -2"
+    }
+   }
+  ]
+ },
+ "historial_regimen": {
+  "dias_en_regimen": 3,
+  "ultimo_cambio": null,
+  "secuencia_90d": [
+   {
+    "desde": "2026-10-07",
+    "regimen": "mixto"
+   }
+  ],
+  "trayectoria_scores": {
+   "crecimiento": {
+    "hoy": 0,
+    "hace_5d": null,
+    "hace_20d": null
+   },
+   "inflacion": {
+    "hoy": 1,
+    "hace_5d": null,
+    "hace_20d": null
+   },
+   "liquidez": {
+    "hoy": -1,
+    "hace_5d": null,
+    "hace_20d": null
+   },
+   "riesgo": {
+    "hoy": 0,
+    "hace_5d": null,
+    "hace_20d": null
+   }
+  }
+ },
+ "cambios": {
+  "vs_ayer": {
+   "fecha": "2026-10-08"
+  },
+  "vs_5d": {}
+ },
+ "cartera_acciones": [],
+ "que_no_hacer": [
+  "No abrir en Consumo básico (sesgo -1)",
+  "No abrir en Servicios de comunicación (sesgo -1)",
+  "No abrir en Tecnología de la información (sesgo -1)",
+  "No abrir en Utilities (sesgo -1)",
+  "No aumentar exposición agregada con la prima de riesgo comprimida"
+ ]
+}
