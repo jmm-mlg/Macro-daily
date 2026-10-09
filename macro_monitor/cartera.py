@@ -190,12 +190,13 @@ def to_html(c: dict) -> str:
         for p in c["posiciones"]:
             col = "#07a" if p["pnl_usd"] >= 0 else "#b00"
             style = " style='background:#fff3f3'" if p["stop_hit"] or any("disparador" in a for a in p["avisos"]) else ""
+            r_txt = "—" if p["R"] is None else f"{p['R']:+.2f}"
             h.append(f"<tr{style}><td><b>{p['name']}</b> <span style='color:#999'>{p['ticker']} · {p['sector'][:14]} · {p['lado']}</span></td>"
                      f"<td align='right'>{p['acciones']}</td><td align='right'>{p['entrada']:.2f}</td><td align='right'>{p['precio']:.2f} <span style='color:#999'>{p['moneda']}</span></td>"
                      f"<td align='right'>{p['stop']:.2f}</td><td align='right'>{p['dist_stop_pct']:.1f}%</td>"
                      f"<td align='right' style='color:{col};font-weight:bold'>{_m(p['pnl_usd'])} ({p['pnl_pct']:+.1f}%)</td>"
                      f"<td align='right' style='color:#666'>{_m(p['pnl_accion_usd'])} / {_m(p['pnl_divisa_usd'])}</td>"
-                     f"<td align='right'>{'—' if p['R'] is None else f'{p['R']:+.2f}'}</td><td align='right'>{p['sesgo_sector']:+d}</td>"
+                     f"<td align='right'>{r_txt}</td><td align='right'>{p['sesgo_sector']:+d}</td>"
                      f"<td style='color:#b00'>{'; '.join(p['avisos'])}</td></tr>")
         h.append("</table>")
         if r.get("por_sector"):
