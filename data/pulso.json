@@ -76,14 +76,14 @@
   "VIX": [
    {
     "name": "VIX",
-    "value": 15.229999542236328,
+    "value": 15.270000457763672,
     "unit": "pts",
     "date": "2026-10-09",
     "chg": {
-     "1d": -0.18000030517578125,
-     "1s": -0.0800008773803711,
-     "1m": -2.6100006103515625,
-     "3m": -1.2700004577636719
+     "1d": -0.1399993896484375,
+     "1s": -0.039999961853027344,
+     "1m": -2.5699996948242188,
+     "3m": -1.2299995422363281
     }
    },
    {
@@ -336,13 +336,13 @@
  },
  "medidas": {
   "vix_estructura": {
-   "ratio": 0.8423672348730005,
+   "ratio": 0.8445796749004418,
    "lectura": "contango (normal)"
   },
   "vix_vs_realizada": {
-   "vix": 15.229999542236328,
+   "vix": 15.270000457763672,
    "realizada_20d": 10.140947703004908,
-   "prima": 5.08905183923142,
+   "prima": 5.129052754758764,
    "lectura": "normal"
   },
   "descomposicion_10a": {
@@ -381,11 +381,11 @@
    "lectura": "coherentes"
   },
   "prima_de_riesgo": {
-   "per": 25.005436,
+   "per": 24.571428,
    "tipo_per": "trailing",
-   "earnings_yield": 3.999130429079501,
+   "earnings_yield": 4.069767536506221,
    "tipo_real": 2.92,
-   "prima": 1.079130429079501,
+   "prima": 1.1497675365062214,
    "lectura": "comprimida (< 1,5 %): poco pagado por el riesgo"
   },
   "correlacion_acciones_bonos_60d": {
@@ -400,7 +400,7 @@
   },
   {
    "tipo": "valoracion",
-   "texto": "Prima de riesgo de la renta variable 1.1 % (earnings yield 4.0 % − tipo real 2.92 %): comprimida."
+   "texto": "Prima de riesgo de la renta variable 1.1 % (earnings yield 4.1 % − tipo real 2.92 %): comprimida."
   },
   {
    "tipo": "correlacion",
