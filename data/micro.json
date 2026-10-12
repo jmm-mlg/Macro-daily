@@ -59,7 +59,7 @@
      "down7": 0,
      "net30": 0.43
     },
-    "est_anual_chg30_pct": 6.37,
+    "est_anual_chg30_pct": 5.88,
     "recomendaciones": {
      "compra": 20,
      "venta": 1,
@@ -148,7 +148,7 @@
      "down7": 2,
      "net30": 0.82
     },
-    "est_anual_chg30_pct": 8.28,
+    "est_anual_chg30_pct": 7.8,
     "recomendaciones": {
      "compra": 14,
      "venta": 1,
@@ -212,7 +212,7 @@
      "down7": 0,
      "net30": 1.0
     },
-    "est_anual_chg30_pct": 4.95,
+    "est_anual_chg30_pct": 3.41,
     "recomendaciones": {
      "compra": 19,
      "venta": 0,
@@ -248,7 +248,7 @@
      "down7": 0,
      "net30": 1.0
     },
-    "est_anual_chg30_pct": 6.96,
+    "est_anual_chg30_pct": 8.08,
     "recomendaciones": {
      "compra": 3,
      "venta": 8,
@@ -276,7 +276,7 @@
     "anual": {
      "up30": 10,
      "down30": 0,
-     "up7": 3,
+     "up7": 1,
      "down7": 0,
      "net30": 1.0
     },
@@ -507,7 +507,7 @@
      "down7": 1,
      "net30": -0.6
     },
-    "est_anual_chg30_pct": -1.99,
+    "est_anual_chg30_pct": -1.2,
     "recomendaciones": {
      "compra": 5,
      "venta": 1,
@@ -575,7 +575,7 @@
      "down7": 2,
      "net30": -1.0
     },
-    "est_anual_chg30_pct": -0.47,
+    "est_anual_chg30_pct": -0.44,
     "recomendaciones": {
      "compra": 19,
      "venta": 0,
@@ -801,7 +801,7 @@
      "up30": 0,
      "down30": 1,
      "up7": 0,
-     "down7": 0,
+     "down7": 1,
      "net30": -1.0
     },
     "anual": {
@@ -951,7 +951,7 @@
      "down7": 1,
      "net30": 0.0
     },
-    "est_anual_chg30_pct": -0.04,
+    "est_anual_chg30_pct": -0.11,
     "recomendaciones": {
      "compra": 9,
      "venta": 1,
@@ -1019,11 +1019,11 @@
      "down7": 1,
      "net30": -0.33
     },
-    "est_anual_chg30_pct": 0.07,
+    "est_anual_chg30_pct": 0.86,
     "recomendaciones": {
-     "compra": 17,
+     "compra": 16,
      "venta": 0,
-     "cambio_compra_1m": -1
+     "cambio_compra_1m": -2
     }
    },
    "eventos": [],
@@ -1155,7 +1155,7 @@
      "down7": 0,
      "net30": 1.0
     },
-    "est_anual_chg30_pct": 0.69,
+    "est_anual_chg30_pct": 0.7,
     "recomendaciones": {
      "compra": 16,
      "venta": 1,
@@ -1285,10 +1285,10 @@
    "revisiones": {
     "trim": {
      "up30": 2,
-     "down30": 1,
+     "down30": 3,
      "up7": 1,
      "down7": 0,
-     "net30": 0.33
+     "net30": -0.2
     },
     "anual": {
      "up30": 1,
@@ -1493,10 +1493,10 @@
    "revisiones": {
     "trim": {
      "up30": 2,
-     "down30": 1,
-     "up7": 1,
-     "down7": 1,
-     "net30": 0.33
+     "down30": 3,
+     "up7": 2,
+     "down7": 3,
+     "net30": -0.2
     },
     "anual": {
      "up30": 3,
@@ -1605,7 +1605,7 @@
      "down7": 3,
      "net30": -1.0
     },
-    "est_anual_chg30_pct": -14.03,
+    "est_anual_chg30_pct": -13.93,
     "recomendaciones": {
      "compra": 24,
      "venta": 1,
@@ -1688,7 +1688,7 @@
      "down7": 2,
      "net30": -1.0
     },
-    "est_anual_chg30_pct": -0.61,
+    "est_anual_chg30_pct": -0.42,
     "recomendaciones": {
      "compra": 13,
      "venta": 1,
@@ -1860,7 +1860,7 @@
      "down7": 1,
      "net30": -1.0
     },
-    "est_anual_chg30_pct": 1.04,
+    "est_anual_chg30_pct": 1.09,
     "recomendaciones": {
      "compra": 20,
      "venta": 0,
@@ -1896,11 +1896,11 @@
      "down7": 1,
      "net30": -0.67
     },
-    "est_anual_chg30_pct": 0.94,
+    "est_anual_chg30_pct": -1.5,
     "recomendaciones": {
-     "compra": 12,
+     "compra": 11,
      "venta": 1,
-     "cambio_compra_1m": 0
+     "cambio_compra_1m": -1
     }
    },
    "eventos": [],
@@ -1930,9 +1930,9 @@
     },
     "est_anual_chg30_pct": -0.4,
     "recomendaciones": {
-     "compra": 11,
+     "compra": 10,
      "venta": 2,
-     "cambio_compra_1m": -1
+     "cambio_compra_1m": -2
     }
    },
    "eventos": [],
@@ -2060,7 +2060,7 @@
      "down7": 4,
      "net30": -0.56
     },
-    "est_anual_chg30_pct": -1.11,
+    "est_anual_chg30_pct": -1.37,
     "recomendaciones": {
      "compra": 17,
      "venta": 0,
@@ -2120,7 +2120,7 @@
     "anual": {
      "up30": 4,
      "down30": 0,
-     "up7": 0,
+     "up7": 1,
      "down7": 1,
      "net30": 1.0
     },
@@ -2143,18 +2143,18 @@
    "role": "rep",
    "revisiones": {
     "trim": {
-     "up30": 0,
+     "up30": 1,
      "down30": 6,
-     "up7": 0,
+     "up7": 1,
      "down7": 5,
-     "net30": -1.0
+     "net30": -0.71
     },
     "anual": {
      "up30": 1,
-     "down30": 7,
-     "up7": 1,
-     "down7": 5,
-     "net30": -0.75
+     "down30": 12,
+     "up7": 0,
+     "down7": 24,
+     "net30": -0.85
     },
     "est_anual_chg30_pct": -24.77,
     "recomendaciones": {
@@ -2452,7 +2452,7 @@
      "down7": 0,
      "net30": 1.0
     },
-    "est_anual_chg30_pct": -0.03,
+    "est_anual_chg30_pct": -0.04,
     "recomendaciones": {
      "compra": 58,
      "venta": 0,
@@ -2500,9 +2500,9 @@
     },
     "est_anual_chg30_pct": 0.0,
     "recomendaciones": {
-     "compra": 18,
+     "compra": 17,
      "venta": 0,
-     "cambio_compra_1m": 0
+     "cambio_compra_1m": -1
     }
    },
    "eventos": [],
@@ -2699,7 +2699,7 @@
      "down7": 1,
      "net30": 0.33
     },
-    "est_anual_chg30_pct": 3.35,
+    "est_anual_chg30_pct": 3.17,
     "recomendaciones": {
      "compra": 10,
      "venta": 0,
@@ -2831,7 +2831,7 @@
      "down7": 0,
      "net30": 0.5
     },
-    "est_anual_chg30_pct": -0.53,
+    "est_anual_chg30_pct": -0.51,
     "recomendaciones": {
      "compra": 20,
      "venta": 0,
@@ -2899,7 +2899,7 @@
      "down7": 0,
      "net30": 1.0
     },
-    "est_anual_chg30_pct": 0.41,
+    "est_anual_chg30_pct": 0.39,
     "recomendaciones": {
      "compra": 10,
      "venta": 1,
@@ -3020,8 +3020,8 @@
     "trim": {
      "up30": 0,
      "down30": 12,
-     "up7": 3,
-     "down7": 8,
+     "up7": 0,
+     "down7": 1,
      "net30": -1.0
     },
     "anual": {
@@ -3264,11 +3264,11 @@
     "anual": {
      "up30": 0,
      "down30": 0,
-     "up7": 1,
+     "up7": 0,
      "down7": 0,
      "net30": 0.0
     },
-    "est_anual_chg30_pct": 0.13,
+    "est_anual_chg30_pct": 0.08,
     "recomendaciones": {
      "compra": 16,
      "venta": 1,
@@ -3430,13 +3430,13 @@
      "net30": 0.0
     },
     "anual": {
-     "up30": 5,
+     "up30": 7,
      "down30": 1,
      "up7": 3,
      "down7": 0,
-     "net30": 0.67
+     "net30": 0.75
     },
-    "est_anual_chg30_pct": -0.29,
+    "est_anual_chg30_pct": -0.32,
     "recomendaciones": {
      "compra": 20,
      "venta": 1,
@@ -4065,11 +4065,11 @@
      "net30": 0.33
     },
     "anual": {
-     "up30": 5,
-     "down30": 2,
+     "up30": 6,
+     "down30": 4,
      "up7": 2,
      "down7": 1,
-     "net30": 0.43
+     "net30": 0.2
     },
     "est_anual_chg30_pct": 0.41,
     "recomendaciones": {
@@ -4203,7 +4203,7 @@
      "down7": 0,
      "net30": 0.5
     },
-    "est_anual_chg30_pct": -0.36,
+    "est_anual_chg30_pct": -0.32,
     "recomendaciones": {
      "compra": 5,
      "venta": 2,
@@ -4235,7 +4235,7 @@
      "down7": 1,
      "net30": -0.14
     },
-    "est_anual_chg30_pct": 0.49,
+    "est_anual_chg30_pct": 0.4,
     "recomendaciones": {
      "compra": 12,
      "venta": 0,
@@ -4439,7 +4439,7 @@
      "down7": 1,
      "net30": 1.0
     },
-    "est_anual_chg30_pct": -0.53,
+    "est_anual_chg30_pct": -1.13,
     "recomendaciones": {
      "compra": 9,
      "venta": 0,
@@ -4460,7 +4460,7 @@
     "trim": {
      "up30": 16,
      "down30": 5,
-     "up7": 1,
+     "up7": 4,
      "down7": 0,
      "net30": 0.52
     },
@@ -4496,16 +4496,16 @@
     "trim": {
      "up30": 14,
      "down30": 2,
-     "up7": 11,
-     "down7": 2,
+     "up7": 3,
+     "down7": 1,
      "net30": 0.75
     },
     "anual": {
-     "up30": 11,
+     "up30": 8,
      "down30": 2,
      "up7": 7,
      "down7": 2,
-     "net30": 0.69
+     "net30": 0.6
     },
     "est_anual_chg30_pct": 1.7,
     "recomendaciones": {
@@ -5228,11 +5228,11 @@
      "down7": 2,
      "net30": -0.33
     },
-    "est_anual_chg30_pct": 0.03,
+    "est_anual_chg30_pct": 0.05,
     "recomendaciones": {
-     "compra": 24,
+     "compra": 23,
      "venta": 0,
-     "cambio_compra_1m": 0
+     "cambio_compra_1m": -1
     }
    },
    "eventos": [],
@@ -5247,19 +5247,20 @@
    "role": "rep",
    "revisiones": {
     "trim": {
-     "up30": 3,
-     "down30": 1,
-     "up7": 1,
-     "down7": 0,
-     "net30": 0.5
+     "up30": 2,
+     "down30": 4,
+     "up7": 0,
+     "down7": 2,
+     "net30": -0.33
     },
     "anual": {
-     "up30": 0,
-     "down30": 0,
+     "up30": 4,
+     "down30": 4,
      "up7": 0,
-     "down7": 0,
+     "down7": 2,
      "net30": 0.0
     },
+    "est_anual_chg30_pct": 0.17,
     "recomendaciones": {
      "compra": 11,
      "venta": 0,
@@ -6011,7 +6012,7 @@
      "down7": 0,
      "net30": 1.0
     },
-    "est_anual_chg30_pct": 0.01,
+    "est_anual_chg30_pct": 0.64,
     "recomendaciones": {
      "compra": 20,
      "venta": 0,
@@ -6273,11 +6274,11 @@
      "down7": 0,
      "net30": 0.5
     },
-    "est_anual_chg30_pct": 0.13,
+    "est_anual_chg30_pct": 0.25,
     "recomendaciones": {
-     "compra": 19,
+     "compra": 18,
      "venta": 0,
-     "cambio_compra_1m": 0
+     "cambio_compra_1m": -1
     }
    },
    "eventos": [],
@@ -6415,7 +6416,7 @@
      "down7": 2,
      "net30": 0.2
     },
-    "est_anual_chg30_pct": 0.09,
+    "est_anual_chg30_pct": 0.02,
     "recomendaciones": {
      "compra": 25,
      "venta": 6,
@@ -7046,11 +7047,11 @@
    "role": "bellwether",
    "revisiones": {
     "trim": {
-     "up30": 2,
-     "down30": 2,
+     "up30": 3,
+     "down30": 0,
      "up7": 1,
      "down7": 0,
-     "net30": 0.0
+     "net30": 1.0
     },
     "anual": {
      "up30": 5,
@@ -7059,7 +7060,7 @@
      "down7": 0,
      "net30": 0.25
     },
-    "est_anual_chg30_pct": 0.08,
+    "est_anual_chg30_pct": 0.0,
     "recomendaciones": {
      "compra": 57,
      "venta": 0,
@@ -7489,7 +7490,7 @@
      "up30": 2,
      "down30": 3,
      "up7": 2,
-     "down7": 3,
+     "down7": 1,
      "net30": -0.2
     },
     "anual": {
@@ -7501,9 +7502,9 @@
     },
     "est_anual_chg30_pct": 0.25,
     "recomendaciones": {
-     "compra": 10,
+     "compra": 11,
      "venta": 0,
-     "cambio_compra_1m": -1
+     "cambio_compra_1m": 0
     }
    },
    "eventos": [],
@@ -7562,7 +7563,7 @@
      "up30": 1,
      "down30": 1,
      "up7": 1,
-     "down7": 1,
+     "down7": 0,
      "net30": 0.0
     },
     "anual": {
@@ -7761,7 +7762,7 @@
      "down7": 1,
      "net30": 0.0
     },
-    "est_anual_chg30_pct": -0.01,
+    "est_anual_chg30_pct": 0.05,
     "recomendaciones": {
      "compra": 12,
      "venta": 0,
@@ -7857,8 +7858,8 @@
     "anual": {
      "up30": 5,
      "down30": 2,
-     "up7": 1,
-     "down7": 0,
+     "up7": 0,
+     "down7": 1,
      "net30": 0.43
     },
     "est_anual_chg30_pct": -0.11,
@@ -8333,15 +8334,15 @@
     "anual": {
      "up30": 1,
      "down30": 1,
-     "up7": 0,
-     "down7": 1,
+     "up7": 1,
+     "down7": 0,
      "net30": 0.0
     },
     "est_anual_chg30_pct": -0.72,
     "recomendaciones": {
-     "compra": 9,
+     "compra": 8,
      "venta": 2,
-     "cambio_compra_1m": 0
+     "cambio_compra_1m": -1
     }
    },
    "eventos": [],
@@ -8798,7 +8799,7 @@
    "clusters_insiders": 0
   },
   "Salud": {
-   "amplitud_revisiones": 0.24,
+   "amplitud_revisiones": 0.25,
    "senal": 1,
    "empresas_cubiertas": 22,
    "mejorando": 13,
@@ -8807,10 +8808,10 @@
    "clusters_insiders": 0
   },
   "Financiero": {
-   "amplitud_revisiones": 0.29,
+   "amplitud_revisiones": 0.28,
    "senal": 1,
    "empresas_cubiertas": 24,
-   "mejorando": 13,
+   "mejorando": 12,
    "empeorando": 3,
    "hechos_relevantes": 1,
    "clusters_insiders": 0
@@ -8862,16 +8863,6 @@
   }
  },
  "central_banks": [
-  {
-   "banco": "Fed",
-   "tipo": "discurso",
-   "fecha": "2026-10-08",
-   "titulo": "Waller, The Signaling Value of the Summary of Economic Projections",
-   "url": "https://www.federalreserve.gov/newsevents/speech/waller20261008a.htm",
-   "postura": 1,
-   "tema": "valor de señalamiento de proyecciones",
-   "resumen": "Waller destaca cómo el resumen de proyecciones guía expectativas de tipos e influye en los mercados financieros."
-  },
   {
    "banco": "BCE",
    "tipo": "discurso",
