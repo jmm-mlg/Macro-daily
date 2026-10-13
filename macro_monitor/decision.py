@@ -512,12 +512,13 @@ def to_html(d: dict, kb_url: str = "") -> str:
         sym = lambda v: "<span style='color:#07a'>+</span>" if v > 0 else "<span style='color:#b00'>−</span>" if v < 0 else "0"  # noqa: E731
         for c in d["candidatas"]:
             p = c["patas"]
+            orden_txt = "<b style='color:#07a'>SÍ</b>" if c["orden_posible"] else "no"
             trig = "<br>".join((("<b style='color:#07a'>✔ " if t["estado"] == "activo" else "<span style='color:#b00'>✘ " if t["estado"] == "en contra" else "<span style='color:#888'>○ ")
                                 + f"{t['nombre']}</b>: {t['detalle']}" if t["estado"] == "activo" else f"{t['nombre']}: {t['detalle']}</span>") for t in c["disparadores"]) or "—"
             style = " style='background:#f3fff3'" if c["orden_posible"] else ""
             h.append(f"<tr{style}><td><b>{c['empresa']}</b> <span style='color:#999'>{c['ticker']}</span></td><td align='center'>{sym(p['regimen'])}</td><td align='center'>{sym(p['tendencia'])}</td>"
                      f"<td align='center'>{sym(p['predictiva'])}</td><td align='center'>{p['a_favor']}/3</td><td align='center'>{c['tamano_factor']:.1f}</td><td>{trig}</td>"
-                     f"<td align='center'>{'<b style=\'color:#07a\'>SÍ</b>' if c['orden_posible'] else 'no'}</td></tr>")
+                     f"<td align='center'>{orden_txt}</td></tr>")
         h.append("</table><p style='font-size:11px;color:#999'>Tamaño: 3 patas a favor = completo; 2 = mitad; 1 = no se abre; en Mixto, máximo mitad. Orden = pasa el filtro 3, disparador activo (técnico, resultados, analistas o insiders), ninguna pata en contra. El disparador macro es contexto: sostiene el sesgo del sector, no abre por sí solo.</p>")
     # casuísticas
     if d["casuisticas_activas"]:

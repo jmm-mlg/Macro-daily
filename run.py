@@ -11,6 +11,7 @@ macro-monitor — rutina principal.
   python run.py cartera   -> valora las posiciones de cartera/operaciones.csv y comprueba límites -> data/cartera_estado.csv
   python run.py daily --no-email   -> imprime en consola, no envía
 """
+import os
 import sys
 import json
 import datetime as dt
@@ -145,7 +146,7 @@ def main():
         micro_html, micro_data, confl = "", None, []
         try:
             mcfg = cfg.get("micro", {})
-            scope = "all" if dt.date.today().weekday() == mcfg.get("full_weekday", 0) else mcfg.get("scope", "bellwethers")
+            scope = "all" if (dt.date.today().weekday() == mcfg.get("full_weekday", 0) or os.environ.get("MICRO_FULL") == "1") else mcfg.get("scope", "bellwethers")
             micro_data = micro.run(scope, mcfg.get("days", 7))
             micro.save(micro_data)
             confl = micro.conflicts(micro_data, res["sectors"])
@@ -260,7 +261,8 @@ def main():
         return
 
     elif mode == "micro":
-        m = micro.run(cfg.get("micro", {}).get("scope", "bellwethers"), cfg.get("micro", {}).get("days", 7))
+        scope = "all" if ("all" in sys.argv or os.environ.get("MICRO_FULL") == "1") else cfg.get("micro", {}).get("scope", "bellwethers")
+        m = micro.run(scope, cfg.get("micro", {}).get("days", 7))
         micro.save(m)
         print(json.dumps(m["sector_pulse"], ensure_ascii=False, indent=1))
         return
