@@ -125,6 +125,15 @@ ficha de calidad de las candidatas compara cada métrica con su industria y su d
 251 empresas en 85 industrias (74 de GICS más desgloses propios), EE.UU. y Europa; cada industria con su
 correspondencia a las industrias de Damodaran.
 
+## Matriz de acuerdo y disparadores (en `decision.py`)
+Cada candidata lleva tres patas en signo (régimen = sesgo del sector; tendencia = estado alcista/lateral/bajista
+y fuerza relativa; predictiva = revisiones, 8-K, insiders y valoración frente a su industria), el tamaño por acuerdo
+(3/3 completo, 2/3 mitad, 1/3 no; en Mixto máximo mitad) y sus **disparadores concretos** con estado: retroceso a la
+MA50 en tendencia alcista (nivel), ruptura de máximo de 52 semanas (nivel; "extendida" si está > 12 % sobre la MA50),
+resultados (fecha y condición antes; 8-K 2.02 con revisiones al alza en 7 días después), revisiones acelerando,
+cluster de insiders, y el factor macro que sostiene el sesgo (contexto). "Orden posible" = pasa el filtro 3, un
+disparador no macro activo, tamaño > 0 y ninguna pata en contra; "Abrir hoy" se calcula de ahí.
+
 ## Decisión del día (`macro_monitor/decision.py`)
 El motor calcula lo que es regla y el modelo solo lo redacta: banda de exposición (tabla del nivel 5 de la guía),
 si se abre hoy, sectores donde buscar y vetados (sesgo, conflictos macro/micro y de momentum), candidatas que pasan el

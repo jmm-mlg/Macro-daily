@@ -47,8 +47,9 @@ FORMATO (Markdown, exactamente estas seis secciones, con estos títulos):
 (3 viñetas: dato + mecanismo + consecuencia para la cartera. Ordenadas por impacto, no por novedad. Usa "cambios" para
 destacar lo que ha cambiado frente a ayer solo si altera una decisión.)
 ## Candidatas y lo que les falta
-(Las que pasan el filtro 3 con su stop y tamaño, y el disparador concreto que las convertiría en orden; las que no pasan,
-en una línea con el motivo. Si no hay sectores donde buscar, dilo y explica qué tendría que cambiar.)
+(Usa "patas" y "disparadores" de cada candidata: si "orden_posible" es true, di qué disparador está activo, el acuerdo
+(n/3) y el tamaño; si no, el disparador pendiente con su nivel o fecha exactos ("esperar 36,60 £", "resultados el 30/10").
+Las que no pasan, en una línea con el motivo. Si no hay sectores donde buscar, dilo y explica qué tendría que cambiar.)
 ## Plan de la semana
 (Tabla o lista evento → fecha → si sale X, hago Y / si sale Z, hago W, con la sensibilidad calculada y los resultados de
 bellwethers de la semana. Incluye qué NO hacer antes de cada dato.)

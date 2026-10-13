@@ -174,7 +174,7 @@ def main():
         # Decisión del día: bloques deterministas (banda, sectores, candidatas, casuísticas, sensibilidad, deltas)
         dec_html, dec = "", None
         try:
-            dec = decision.build(cfg, by_id, res, ficha_data, micro_data, confl, pulso_data, cal, cartera_data)
+            dec = decision.build(cfg, by_id, res, ficha_data, micro_data, confl, pulso_data, cal, cartera_data, week_events)
             decision.save(dec)
             dec_html = decision.to_html(dec, cfg.get("kb_url", ""))
         except Exception as e:  # noqa: BLE001

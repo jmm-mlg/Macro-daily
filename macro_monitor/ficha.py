@@ -129,6 +129,14 @@ def build(cfg: dict, res: dict, week_events: list, confl: list, px: pd.DataFrame
         ma50 = float(s.iloc[-50:].mean())
         ma200 = float(s.iloc[-200:].mean()) if len(s) >= 200 else None
         hi52 = float(s.iloc[-252:].max())
+        hi52_prev = float(s.iloc[-252:-5].max()) if len(s) > 60 else hi52     # máximo de 52 semanas sin las últimas 5 sesiones
+        ma50_prev = float(s.iloc[-70:-20].mean()) if len(s) >= 70 else ma50   # MA50 hace 20 sesiones (pendiente)
+        tendencia_alcista = (ma200 is not None and price > ma200 and ma50 > ma200 and ma50 > ma50_prev)
+        tendencia_bajista = (ma200 is not None and price < ma200 and ma50 < ma200)
+        # retroceso a la MA50 dentro de tendencia alcista: precio entre −2 % y +3 % de la MA50
+        pullback = tendencia_alcista and (ma50 * 0.98 <= price <= ma50 * 1.03)
+        # ruptura: cierre por encima del máximo previo de 52 semanas en las últimas 3 sesiones
+        breakout = bool((s.iloc[-3:] > hi52_prev).any()) and price >= hi52_prev * 0.99
         # ATR 14
         prev = s.shift(1)
         tr = pd.concat([h - l, (h - prev).abs(), (l - prev).abs()], axis=1).max(axis=1).dropna()
@@ -158,6 +166,9 @@ def build(cfg: dict, res: dict, week_events: list, confl: list, px: pd.DataFrame
             "t": t, "name": c["name"], "sector": c["sector"], "industry": c.get("industry", ""), "region": c["region"], "role": c["role"],
             "moneda": ccy, "fx_a_capital": fx, "precio": price, "ma50": ma50, "ma200": ma200, "sobre_ma50": price > ma50, "sobre_ma200": (ma200 is not None and price > ma200),
             "dist_max52_pct": (price / hi52 - 1) * 100, "atr14": atr, "atr_pct": atr / price * 100,
+            "estado_tendencia": "alcista" if tendencia_alcista else "bajista" if tendencia_bajista else "lateral",
+            "hi52_prev": hi52_prev, "dist_hi52_prev_pct": (hi52_prev / price - 1) * 100, "dist_ma50_pct": (price / ma50 - 1) * 100,
+            "pullback_ma50": pullback, "breakout_52s": breakout,
             "stop_estructural": stop_struct, "stop_atr": stop_atr, "stop": stop, "stop_dist_pct": dist_pct, "cabe": cabe,
             "sesgo_sector": b, "conflicto": confl_s, "riesgo_pct": rpct, "riesgo_eur": riesgo_eur,
             "acciones": shares, "importe": notional, "importe_pct": notional / capital * 100,

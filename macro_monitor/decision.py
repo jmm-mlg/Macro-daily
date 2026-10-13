@@ -264,6 +264,90 @@ def _quality(cands: list) -> dict:
     return out
 
 
+FACTOR_TRIGGER = {  # sector -> (factor del motor que lo sostiene, serie, texto de lo que lo desactiva)
+    "Energía": ("petroleo", "CL=F", "WTI por debajo del percentil 70"),
+    "Materiales": ("cobre", "HG=F", "cobre por debajo del percentil 70"),
+    "Industriales": ("cobre", "HG=F", "cobre por debajo del percentil 70"),
+    "Financiero": ("curva", "T10Y2Y", "curva aplanando"),
+    "Inmobiliario": ("hipoteca", "MORTGAGE30US", "hipoteca por encima del 7 %"),
+    "Utilities": ("duracion", "DFII10", "tipo real por encima del 2 %"),
+    "Tecnología de la información": ("duracion", "DFII10", "tipo real por encima del 2 %"),
+}
+
+
+def triggers_for(f: dict, rv: dict, res: dict, earn_date, today) -> list:
+    """Disparadores concretos (filtro 4) de una candidata: técnicos, de resultados, de analistas y macro; activo o pendiente."""
+    out = []
+    ccy = f.get("moneda", "")
+    # 1. Retroceso a la MA50 en tendencia alcista
+    if f["estado_tendencia"] == "alcista":
+        if f["pullback_ma50"]:
+            out.append({"tipo": "técnico", "nombre": "retroceso a la MA50 en tendencia alcista", "estado": "activo",
+                        "detalle": f"precio {f['precio']:.2f} {ccy} a {f['dist_ma50_pct']:+.1f} % de la MA50 ({f['ma50']:.2f}); stop bajo el mínimo de 20 sesiones"})
+        else:
+            out.append({"tipo": "técnico", "nombre": "retroceso a la MA50", "estado": "pendiente",
+                        "detalle": f"esperar precio ≈ {f['ma50']:.2f} {ccy} (hoy a {f['dist_ma50_pct']:+.1f} %)"})
+    # 2. Ruptura de máximo de 52 semanas
+    if f["breakout_52s"] and f["dist_ma50_pct"] > 12:
+        out.append({"tipo": "técnico", "nombre": "ruptura de máximo de 52 semanas (extendida)", "estado": "pendiente",
+                    "detalle": f"rompió {f['hi52_prev']:.2f} {ccy} pero está {f['dist_ma50_pct']:+.1f} % sobre la MA50: no perseguir; esperar retroceso"})
+    elif f["breakout_52s"]:
+        out.append({"tipo": "técnico", "nombre": "ruptura de máximo de 52 semanas", "estado": "activo",
+                    "detalle": f"cierre sobre {f['hi52_prev']:.2f} {ccy} a {f['dist_ma50_pct']:+.1f} % de la MA50; entrada en la ruptura, stop bajo el máximo anterior"})
+    elif 0 < f["dist_hi52_prev_pct"] <= 5:
+        out.append({"tipo": "técnico", "nombre": "ruptura de máximo de 52 semanas", "estado": "pendiente",
+                    "detalle": f"cierre por encima de {f['hi52_prev']:.2f} {ccy} (a {f['dist_hi52_prev_pct']:.1f} %)"})
+    # 3. Resultados: antes (pendiente con fecha) / después (activo si hay 8-K 2.02 reciente y revisiones al alza en 7 días)
+    anual = (rv.get("revisiones") or {}).get("anual") or {}
+    up7, dn7 = anual.get("up7", 0), anual.get("down7", 0)
+    recent_results = [e for e in rv.get("eventos", []) if "2.02" in e.get("codigos", []) and (today - dt.date.fromisoformat(e["fecha"])).days <= 5]
+    if recent_results and up7 > dn7 and up7 >= 2:
+        out.append({"tipo": "resultados", "nombre": "resultados publicados con revisiones al alza", "estado": "activo",
+                    "detalle": f"8-K del {recent_results[0]['fecha']}; {up7} revisiones al alza / {dn7} a la baja en 7 días"})
+    elif earn_date:
+        d = (earn_date - today).days
+        out.append({"tipo": "resultados", "nombre": "resultados con guía mantenida o al alza", "estado": "pendiente",
+                    "detalle": f"publica el {earn_date.isoformat()} (en {d} días); condición: BPA ≥ consenso y guía no recortada; esperar la reacción del día siguiente"})
+    # 4. Analistas: aceleración de revisiones o cluster de insiders
+    if up7 >= 3 and up7 > dn7 and not recent_results:
+        out.append({"tipo": "analistas", "nombre": "revisiones acelerando", "estado": "activo", "detalle": f"{up7} al alza / {dn7} a la baja en 7 días"})
+    if rv.get("compra_cluster"):
+        out.append({"tipo": "insiders", "nombre": "cluster de compras de insiders", "estado": "activo",
+                    "detalle": f"{rv.get('n_compradores')} compradores, {rv.get('importe_compras', 0) / 1000:.0f} k$ en 30 días"})
+    # 5. Macro: el factor que sostiene el sesgo del sector
+    ft = FACTOR_TRIGGER.get(f["sector"])
+    if ft:
+        fac = res["factors"].get(ft[0], {})
+        sig = fac.get("signal", 0)
+        if sig != 0:
+            favorable = (sig > 0) if ft[0] in ("petroleo", "cobre", "curva") else (sig < 0)
+            out.append({"tipo": "macro", "nombre": f"factor {fac.get('label', ft[0])}", "estado": "activo" if favorable else "en contra",
+                        "detalle": f"{ft[1]} = {fac.get('value')}; se desactiva con {ft[2]}"})
+    return out
+
+
+def legs(f: dict, rv: dict, sector_bias: int, quality: dict | None) -> dict:
+    """Tres patas en signo (provisional hasta los scores completos): régimen, tendencia, predictiva."""
+    t = 1 if f["estado_tendencia"] == "alcista" and (f.get("rel_3m") or 0) > 0 else -1 if f["estado_tendencia"] == "bajista" else 0
+    anual = (rv.get("revisiones") or {}).get("anual") or {}
+    net = anual.get("net30")
+    bad = [e for e in rv.get("eventos", []) if set(e.get("codigos", [])) & BAD_8K]
+    pval = (quality or {}).get("vs_industria", {})
+    cheap = sum(1 for m in ("per_adelantado", "ev_ebitda") if pval.get(m, {}).get("posicion") in ("bajo", "muy_bajo"))
+    expensive = sum(1 for m in ("per_adelantado", "ev_ebitda") if pval.get(m, {}).get("posicion") in ("alto",))
+    p = 0
+    if bad:
+        p = -1
+    elif net is not None and net > 0.33 or rv.get("compra_cluster"):
+        p = 1 if expensive < 2 else 0
+    elif net is not None and net < -0.33:
+        p = -1
+    elif cheap == 2 and net is not None and net >= 0:
+        p = 1
+    r = 1 if sector_bias >= 1 else -1 if sector_bias <= -1 else 0
+    return {"regimen": r, "tendencia": t, "predictiva": p, "a_favor": sum(1 for x in (r, t, p) if x > 0), "en_contra": sum(1 for x in (r, t, p) if x < 0)}
+
+
 def candidates(res: dict, fichas: dict | None, micro: dict | None, allowed: set, vetoed: set, size_factor: float) -> list:
     if not fichas:
         return []
@@ -293,7 +377,7 @@ def candidates(res: dict, fichas: dict | None, micro: dict | None, allowed: set,
             missing.append(f"fuerza relativa {f['rel_3m']:+.1f} pp")
         pasa = not missing
         out.append({"ticker": f["t"], "empresa": f["name"], "sector": f["sector"], "industry": f.get("industry", ""), "region": f["region"], "role": f["role"],
-                    "pasa_filtro_3": pasa, "le_falta": missing if missing else ["disparador con fecha (filtro 4)"],
+                    "pasa_filtro_3": pasa, "le_falta": missing, "_ficha": f, "_rv": rev.get(f["t"], {}),
                     "precio": round(f["precio"], 2), "moneda": f["moneda"], "stop": round(f["stop"], 2), "stop_dist_pct": round(f["stop_dist_pct"], 1),
                     "acciones": int(f["acciones"] * size_factor) if f["cabe"] else 0, "importe": round(f["importe"] * size_factor) if f["cabe"] else 0,
                     "rel_3m": None if f["rel_3m"] is None else round(f["rel_3m"], 1), "dias_a_resultados": f["dias_a_resultados"]})
@@ -302,7 +386,7 @@ def candidates(res: dict, fichas: dict | None, micro: dict | None, allowed: set,
 
 
 # ---------------------------------------------------------------- orquestación
-def build(cfg: dict, by_id: dict, res: dict, fichas: dict | None, micro: dict | None, confl: list, pulso: dict | None, calendar: list, cartera: dict | None) -> dict:
+def build(cfg: dict, by_id: dict, res: dict, fichas: dict | None, micro: dict | None, confl: list, pulso: dict | None, calendar: list, cartera: dict | None, calendar_events: list | None = None) -> dict:
     tension = res["tension"] if res["tension"] in ("baja", "media") else "media"
     key = (res["regime"]["key"], tension)
     if res["tension"] == "alta":
@@ -316,13 +400,37 @@ def build(cfg: dict, by_id: dict, res: dict, fichas: dict | None, micro: dict | 
     vetoed += [{"sector": sec, "motivo": "conflicto macro/micro o sesgo contra momentum"} for sec in confl_sectors if sec not in {v["sector"] for v in vetoed}]
     cands = candidates(res, fichas, micro, allowed, {v["sector"] for v in vetoed}, factor)
     quality = _quality([c for c in cands if c["pasa_filtro_3"]][:6]) if cands else {}
+    bias_by = {s["label"]: s["bias"] for s in res["sectors"]}
+    earn = {e["t"]: e["date"] for e in calendar_events if e.get("kind") == "resultados"} if calendar_events else {}
+    today = dt.date.today()
     for c in cands:
         c["calidad"] = quality.get(c["ticker"])
+        f, rv = c.pop("_ficha"), c.pop("_rv")
+        c["disparadores"] = triggers_for(f, rv, res, earn.get(c["ticker"]), today)
+        c["disparador_activo"] = [t for t in c["disparadores"] if t["estado"] == "activo" and t["tipo"] != "macro"]
+        c["patas"] = legs(f, rv, bias_by.get(c["sector"], 0), c["calidad"])
+        n = c["patas"]["a_favor"]
+        c["tamano_factor"] = 1.0 if n == 3 else 0.5 if n == 2 else 0.0
+        if res["regime"]["key"] == "mixto":
+            c["tamano_factor"] = min(c["tamano_factor"], 0.5)
+        c["acciones"] = int(c["acciones"] * c["tamano_factor"] / (factor or 1)) if c["acciones"] else 0
+        c["importe"] = round(c["importe"] * c["tamano_factor"] / (factor or 1)) if c["importe"] else 0
+        c["orden_posible"] = bool(c["pasa_filtro_3"] and c["disparador_activo"] and c["tamano_factor"] > 0 and c["patas"]["en_contra"] == 0)
+        if not c["le_falta"]:
+            if not c["disparador_activo"]:
+                pend = [t for t in c["disparadores"] if t["estado"] == "pendiente"]
+                c["le_falta"] = ["disparador: " + "; ".join(f"{t['nombre']} ({t['detalle']})" for t in pend[:2])] if pend else ["disparador con fecha (filtro 4)"]
+            elif c["tamano_factor"] == 0:
+                c["le_falta"] = [f"acuerdo {n}/3: una sola pata a favor"]
+            elif c["patas"]["en_contra"]:
+                c["le_falta"] = ["una pata en contra"]
+    cands.sort(key=lambda c: (not c["orden_posible"], not c["pasa_filtro_3"], -c["patas"]["a_favor"], -(c["rel_3m"] or -99)))
     cas = active_casuisticas(res, pulso, confl, mom_confl)
     sens = sensitivity(by_id, res, calendar, cfg)
     hist = regime_history(res)
     dl = deltas(res, cands)
-    abre_hoy = bool([c for c in cands if c["pasa_filtro_3"]]) and res["regime"]["key"] != "mixto"
+    ordenes = [c for c in cands if c["orden_posible"]]
+    abre_hoy = bool(ordenes)
     acciones_cartera = []
     for p in (cartera or {}).get("posiciones", []):
         if p["avisos"]:
@@ -331,8 +439,9 @@ def build(cfg: dict, by_id: dict, res: dict, fichas: dict | None, micro: dict | 
         "date": res["date"],
         "exposicion": {"banda_pct": banda, "nuevas_posiciones": nuevas, "factor_tamano": factor, "posicion_max_pct": (fichas or {}).get("posicion_max_pct"),
                        "motivo": f"régimen {res['regime']['label']} con tensión {res['tension']} (tabla del nivel 5 de la guía)"},
-        "abrir_hoy": {"respuesta": "sí, si hay disparador" if abre_hoy else "no", "motivo": ("hay candidatas que pasan el filtro 3 en régimen con señal" if abre_hoy else
-                      ("régimen Mixto: esperar o mitad de tamaño solo con disparador y micro a favor" if res["regime"]["key"] == "mixto" else "ninguna candidata pasa el filtro 3"))},
+        "abrir_hoy": {"respuesta": "sí" if abre_hoy else "no",
+                      "motivo": (", ".join(f"{c['ticker']} ({c['disparador_activo'][0]['nombre']}, acuerdo {c['patas']['a_favor']}/3, factor {c['tamano_factor']})" for c in ordenes) if abre_hoy else
+                                 "ninguna candidata tiene disparador activo con acuerdo suficiente" + (" (régimen Mixto: máximo mitad de tamaño)" if res["regime"]["key"] == "mixto" else ""))},
         "sectores_donde_buscar": sorted(allowed), "sectores_vetados": vetoed,
         "candidatas": cands, "casuisticas_activas": cas, "sensibilidad": sens, "historial_regimen": hist, "cambios": dl,
         "cartera_acciones": acciones_cartera,
@@ -396,6 +505,20 @@ def to_html(d: dict, kb_url: str = "") -> str:
             if q.get("lectura"):
                 h.append(f"<tr><td colspan='11' style='color:#555;padding-left:14px;border-bottom:1px solid #eee'>{q['lectura']}</td></tr>")
         h.append("</table><p style='font-size:11px;color:#999'>Entre paréntesis: mediana de su industria y rango de 10 años (Damodaran, enero 2026; kb/benchmarks). Azul = por debajo de la industria, rojo = por encima.</p>")
+    # matriz de acuerdo y disparadores
+    if d["candidatas"]:
+        h.append("<h4 style='margin:10px 0 4px'>Matriz de acuerdo y disparadores</h4><table cellpadding='4' style='border-collapse:collapse;width:100%;font-size:12px'>"
+                 "<tr style='background:#f0f0f0'><th align='left'>Empresa</th><th>Régimen</th><th>Tendencia</th><th>Predictiva</th><th>Acuerdo</th><th>Tamaño</th><th align='left'>Disparadores</th><th>Orden</th></tr>")
+        sym = lambda v: "<span style='color:#07a'>+</span>" if v > 0 else "<span style='color:#b00'>−</span>" if v < 0 else "0"  # noqa: E731
+        for c in d["candidatas"]:
+            p = c["patas"]
+            trig = "<br>".join((("<b style='color:#07a'>✔ " if t["estado"] == "activo" else "<span style='color:#b00'>✘ " if t["estado"] == "en contra" else "<span style='color:#888'>○ ")
+                                + f"{t['nombre']}</b>: {t['detalle']}" if t["estado"] == "activo" else f"{t['nombre']}: {t['detalle']}</span>") for t in c["disparadores"]) or "—"
+            style = " style='background:#f3fff3'" if c["orden_posible"] else ""
+            h.append(f"<tr{style}><td><b>{c['empresa']}</b> <span style='color:#999'>{c['ticker']}</span></td><td align='center'>{sym(p['regimen'])}</td><td align='center'>{sym(p['tendencia'])}</td>"
+                     f"<td align='center'>{sym(p['predictiva'])}</td><td align='center'>{p['a_favor']}/3</td><td align='center'>{c['tamano_factor']:.1f}</td><td>{trig}</td>"
+                     f"<td align='center'>{'<b style=\'color:#07a\'>SÍ</b>' if c['orden_posible'] else 'no'}</td></tr>")
+        h.append("</table><p style='font-size:11px;color:#999'>Tamaño: 3 patas a favor = completo; 2 = mitad; 1 = no se abre; en Mixto, máximo mitad. Orden = pasa el filtro 3, disparador activo (técnico, resultados, analistas o insiders), ninguna pata en contra. El disparador macro es contexto: sostiene el sesgo del sector, no abre por sí solo.</p>")
     # casuísticas
     if d["casuisticas_activas"]:
         h.append("<h4 style='margin:10px 0 4px'>Casuísticas activas (base de conocimiento)</h4><ul style='font-size:12px'>")
@@ -421,7 +544,8 @@ def summary_for_llm(d: dict) -> dict:
     return {
         "exposicion": d["exposicion"], "abrir_hoy": d["abrir_hoy"], "sectores_donde_buscar": d["sectores_donde_buscar"],
         "sectores_vetados": d["sectores_vetados"], "que_no_hacer": d["que_no_hacer"],
-        "candidatas": [{**{k: c[k] for k in ("ticker", "empresa", "sector", "industry", "pasa_filtro_3", "le_falta", "stop_dist_pct", "acciones", "importe", "rel_3m", "dias_a_resultados")},
+        "candidatas": [{**{k: c[k] for k in ("ticker", "empresa", "sector", "industry", "pasa_filtro_3", "le_falta", "stop_dist_pct", "acciones", "importe", "rel_3m", "dias_a_resultados", "patas", "tamano_factor", "orden_posible")},
+                        "disparadores": [{"nombre": t["nombre"], "estado": t["estado"], "detalle": t["detalle"][:110]} for t in c["disparadores"]],
                         "calidad_vs_industria": (c.get("calidad") or {}).get("lectura")} for c in d["candidatas"][:8]],
         "casuisticas_activas": [{"titulo": c["titulo"], "por_que": c["por_que"], "que_hacer": c["que_hacer"][:450], "que_la_resuelve": c["que_la_resuelve"][:250]} for c in d["casuisticas_activas"]],
         "sensibilidad": d["sensibilidad"], "historial_regimen": d["historial_regimen"], "cambios": d["cambios"], "cartera_acciones": d["cartera_acciones"],
