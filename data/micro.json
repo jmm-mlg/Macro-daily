@@ -123,7 +123,7 @@
      "up30": 3,
      "down30": 3,
      "up7": 2,
-     "down7": 1,
+     "down7": 2,
      "net30": 0.0
     },
     "est_anual_chg30_pct": 0.18,
@@ -190,7 +190,7 @@
      "down7": 0,
      "net30": 0.41
     },
-    "est_anual_chg30_pct": -0.24,
+    "est_anual_chg30_pct": -0.17,
     "recomendaciones": {
      "compra": 18,
      "venta": 0,
@@ -248,14 +248,14 @@
      "up30": 0,
      "down30": 1,
      "up7": 0,
-     "down7": 0,
+     "down7": 1,
      "net30": -1.0
     },
     "anual": {
      "up30": 0,
      "down30": 5,
      "up7": 0,
-     "down7": 3,
+     "down7": 5,
      "net30": -1.0
     },
     "est_anual_chg30_pct": 0.41,
@@ -278,10 +278,10 @@
    "revisiones": {
     "trim": {
      "up30": 1,
-     "down30": 0,
+     "down30": 1,
      "up7": 0,
      "down7": 1,
-     "net30": 1.0
+     "net30": 0.0
     },
     "anual": {
      "up30": 0,
@@ -338,6 +338,42 @@
    "cobertura": false
   },
   {
+   "t": "DHI",
+   "name": "D.R. Horton",
+   "sector": "Industriales",
+   "region": "US",
+   "role": "bellwether",
+   "revisiones": {
+    "trim": {
+     "up30": 0,
+     "down30": 4,
+     "up7": 0,
+     "down7": 3,
+     "net30": -1.0
+    },
+    "anual": {
+     "up30": 1,
+     "down30": 4,
+     "up7": 1,
+     "down7": 2,
+     "net30": -0.6
+    },
+    "est_anual_chg30_pct": -0.01,
+    "recomendaciones": {
+     "compra": 4,
+     "venta": 2,
+     "cambio_compra_1m": 0
+    }
+   },
+   "eventos": [],
+   "insiders": [],
+   "cobertura": true,
+   "compra_cluster": false,
+   "n_compradores": 0,
+   "importe_compras": 0,
+   "importe_ventas": 0
+  },
+  {
    "t": "TSLA",
    "name": "Tesla",
    "sector": "Consumo discrecional",
@@ -353,10 +389,10 @@
     },
     "anual": {
      "up30": 1,
-     "down30": 4,
+     "down30": 6,
      "up7": 1,
-     "down7": 5,
-     "net30": -0.6
+     "down7": 4,
+     "net30": -0.71
     },
     "est_anual_chg30_pct": -1.2,
     "recomendaciones": {
@@ -426,7 +462,7 @@
      "down7": 4,
      "net30": -0.56
     },
-    "est_anual_chg30_pct": -1.36,
+    "est_anual_chg30_pct": -1.21,
     "recomendaciones": {
      "compra": 17,
      "venta": 0,
@@ -684,7 +720,7 @@
      "net30": 0.0
     },
     "anual": {
-     "up30": 9,
+     "up30": 10,
      "down30": 0,
      "up7": 9,
      "down7": 0,
@@ -729,7 +765,18 @@
      "cambio_compra_1m": 1
     }
    },
-   "eventos": [],
+   "eventos": [
+    {
+     "fecha": "2026-10-13",
+     "codigos": [
+      "7.01",
+      "9.01"
+     ],
+     "descripcion": "Reg FD: presentación, guía o comunicado",
+     "importancia": 2,
+     "url": "https://www.sec.gov/Archives/edgar/data/80424/000008042426000214/pg-20261013.htm"
+    }
+   ],
    "insiders": [
     {
      "fecha": "2026-10-05",
@@ -786,7 +833,7 @@
      "down7": 0,
      "net30": 0.33
     },
-    "est_anual_chg30_pct": -3.67,
+    "est_anual_chg30_pct": -4.14,
     "recomendaciones": {
      "compra": 25,
      "venta": 2,
@@ -912,6 +959,16 @@
     {
      "fecha": "2026-10-13",
      "codigos": [
+      "7.01",
+      "9.01"
+     ],
+     "descripcion": "Reg FD: presentación, guía o comunicado",
+     "importancia": 2,
+     "url": "https://www.sec.gov/Archives/edgar/data/19617/000162828026065616/jpm-20261013.htm"
+    },
+    {
+     "fecha": "2026-10-13",
+     "codigos": [
       "2.02",
       "9.01"
      ],
@@ -944,11 +1001,11 @@
     "anual": {
      "up30": 2,
      "down30": 0,
-     "up7": 0,
+     "up7": 1,
      "down7": 0,
      "net30": 1.0
     },
-    "est_anual_chg30_pct": 0.57,
+    "est_anual_chg30_pct": 0.2,
     "recomendaciones": {
      "compra": 15,
      "venta": 0,
@@ -1012,7 +1069,7 @@
      "down7": 0,
      "net30": 0.67
     },
-    "est_anual_chg30_pct": 0.0,
+    "est_anual_chg30_pct": 0.01,
     "recomendaciones": {
      "compra": 36,
      "venta": 1,
@@ -1048,7 +1105,7 @@
      "up30": 1,
      "down30": 1,
      "up7": 1,
-     "down7": 0,
+     "down7": 1,
      "net30": 0.0
     },
     "anual": {
@@ -1144,10 +1201,10 @@
     },
     "anual": {
      "up30": 1,
-     "down30": 2,
+     "down30": 3,
      "up7": 1,
      "down7": 2,
-     "net30": -0.33
+     "net30": -0.5
     },
     "est_anual_chg30_pct": 0.05,
     "recomendaciones": {
@@ -1168,16 +1225,16 @@
    "role": "bellwether",
    "revisiones": {
     "trim": {
-     "up30": 35,
-     "down30": 2,
+     "up30": 0,
+     "down30": 1,
      "up7": 0,
      "down7": 0,
-     "net30": 0.89
+     "net30": -1.0
     },
     "anual": {
      "up30": 2,
      "down30": 0,
-     "up7": 0,
+     "up7": 1,
      "down7": 0,
      "net30": 1.0
     },
@@ -2067,11 +2124,11 @@
      "net30": -1.0
     },
     "anual": {
-     "up30": 0,
+     "up30": 2,
      "down30": 0,
      "up7": 0,
      "down7": 0,
-     "net30": 0.0
+     "net30": 1.0
     },
     "est_anual_chg30_pct": 1.37,
     "recomendaciones": {
@@ -2511,16 +2568,16 @@
    "clusters_insiders": 0
   },
   "Industriales": {
-   "amplitud_revisiones": 0.08,
+   "amplitud_revisiones": -0.03,
    "senal": 0,
-   "empresas_cubiertas": 5,
+   "empresas_cubiertas": 6,
    "mejorando": 3,
-   "empeorando": 2,
+   "empeorando": 3,
    "hechos_relevantes": 0,
    "clusters_insiders": 0
   },
   "Consumo discrecional": {
-   "amplitud_revisiones": -0.23,
+   "amplitud_revisiones": -0.24,
    "senal": -1,
    "empresas_cubiertas": 7,
    "mejorando": 2,
@@ -2534,7 +2591,7 @@
    "empresas_cubiertas": 3,
    "mejorando": 1,
    "empeorando": 1,
-   "hechos_relevantes": 0,
+   "hechos_relevantes": 1,
    "clusters_insiders": 0
   },
   "Salud": {
@@ -2552,11 +2609,11 @@
    "empresas_cubiertas": 4,
    "mejorando": 3,
    "empeorando": 0,
-   "hechos_relevantes": 1,
+   "hechos_relevantes": 2,
    "clusters_insiders": 0
   },
   "Tecnología de la información": {
-   "amplitud_revisiones": 0.33,
+   "amplitud_revisiones": 0.3,
    "senal": 1,
    "empresas_cubiertas": 6,
    "mejorando": 4,
@@ -2574,10 +2631,10 @@
    "clusters_insiders": 0
   },
   "Utilities": {
-   "amplitud_revisiones": 0.0,
-   "senal": 0,
+   "amplitud_revisiones": 1.0,
+   "senal": 1,
    "empresas_cubiertas": 1,
-   "mejorando": 0,
+   "mejorando": 1,
    "empeorando": 0,
    "hechos_relevantes": 0,
    "clusters_insiders": 0
@@ -2602,6 +2659,20 @@
   }
  },
  "central_banks": [
+  {
+   "banco": "BCE",
+   "tipo": "comunicado",
+   "fecha": "2026-10-08",
+   "titulo": "Piero Cipollone: Interview with Corriere della Sera",
+   "url": "https://www.ecb.europa.eu//press/inter/date/2026/html/ecb.in261008~3184e7d0d0.en.html"
+  },
+  {
+   "banco": "BCE",
+   "tipo": "discurso",
+   "fecha": "2026-10-06",
+   "titulo": "Frank Elderson: Effective supervision through timely remediation",
+   "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261006_1~0df91e4e44.en.html"
+  },
   {
    "banco": "BCE",
    "tipo": "discurso",
