@@ -155,7 +155,7 @@ def build(cfg: dict, res: dict, week_events: list, confl: list, px: pd.DataFrame
         ed = earn.get(t)
         days_to = (ed - today).days if ed else None
         fichas.append({
-            "t": t, "name": c["name"], "sector": c["sector"], "region": c["region"], "role": c["role"],
+            "t": t, "name": c["name"], "sector": c["sector"], "industry": c.get("industry", ""), "region": c["region"], "role": c["role"],
             "moneda": ccy, "fx_a_capital": fx, "precio": price, "ma50": ma50, "ma200": ma200, "sobre_ma50": price > ma50, "sobre_ma200": (ma200 is not None and price > ma200),
             "dist_max52_pct": (price / hi52 - 1) * 100, "atr14": atr, "atr_pct": atr / price * 100,
             "stop_estructural": stop_struct, "stop_atr": stop_atr, "stop": stop, "stop_dist_pct": dist_pct, "cabe": cabe,

@@ -1,233 +1,1154 @@
 # ============================================================
-# watchlist.yaml — empresas representativas por industria (GICS), EE.UU. + Europa
-#
-# Campos por empresa:
-#   t:    ticker en formato yfinance (sufijos: .L Londres, .PA París, .DE Xetra, .AS Ámsterdam,
-#         .SW Zúrich, .MC Madrid, .MI Milán, .CO Copenhague, .ST Estocolmo, .HE Helsinki,
-#         .OL Oslo, .BR Bruselas; sin sufijo = EE.UU., ADR incluidos)
-#   role: bellwether (🔴 mueve sector/mercado) | rep (🟠 representante de su industria)
-#   note: cadencia o particularidad (opcional). Si no se indica, resultados trimestrales.
-#
-# Regla de selección: mayor capitalización/relevancia de la industria en cada región.
-# Donde Europa no tiene un representante claro, la industria solo lleva EE.UU. (y viceversa).
+# watchlist.yaml v2 (2026-10-13) — 74 industrias GICS, EE.UU. + Europa
+# Campos: t (ticker yfinance), name, role (bellwether/rep), note. Ver v1 para la regla de selección.
+# Cada industria lleva su correspondencia con las industrias de Damodaran en kb/benchmarks/correspondencia.yaml
 # ============================================================
 
 sectors:
-
-  - name: Energía
-    gics: 10
-    industries:
-      - name: Integradas
-        us: [{t: XOM, name: ExxonMobil, role: bellwether}, {t: CVX, name: Chevron, role: rep}]
-        eu: [{t: SHEL.L, name: Shell, role: bellwether}, {t: TTE.PA, name: TotalEnergies, role: rep}, {t: REP.MC, name: Repsol, role: rep}]
-      - name: Exploración y producción
-        us: [{t: COP, name: ConocoPhillips, role: rep}]
-        eu: [{t: EQNR.OL, name: Equinor, role: rep, note: "gas europeo; referencia tras la crisis energética"}]
-      - name: Refino y marketing
-        us: [{t: VLO, name: Valero, role: rep}]
-        eu: [{t: NESTE.HE, name: Neste, role: rep, note: "refino + renovables"}]
-      - name: Servicios y equipos petroleros
-        us: [{t: SLB, name: SLB (Schlumberger), role: rep, note: "lee el capex global del sector"}]
-        eu: [{t: TE.PA, name: Technip Energies, role: rep}]
-      - name: Midstream
-        us: [{t: KMI, name: Kinder Morgan, role: rep}]
-
-  - name: Materiales
-    gics: 15
-    industries:
-      - name: Química diversificada / gases industriales
-        us: [{t: LIN, name: Linde, role: bellwether, note: "gases industriales = actividad manufacturera global"}, {t: DOW, name: Dow, role: rep}]
-        eu: [{t: BAS.DE, name: BASF, role: bellwether, note: "termómetro de la industria alemana y del gas"}, {t: AI.PA, name: Air Liquide, role: rep}]
-      - name: Química especializada / recubrimientos
-        us: [{t: SHW, name: Sherwin-Williams, role: rep, note: "vivienda y construcción"}]
-      - name: Minería diversificada
-        us: [{t: FCX, name: Freeport-McMoRan, role: rep, note: "cobre"}]
-        eu: [{t: RIO.L, name: Rio Tinto, role: bellwether, note: "China y mineral de hierro"}, {t: GLEN.L, name: Glencore, role: rep}]
-      - name: Acero
-        us: [{t: NUE, name: Nucor, role: rep}]
-        eu: [{t: MT.AS, name: ArcelorMittal, role: rep, note: "aranceles y demanda industrial europea"}]
-      - name: Materiales de construcción
-        us: [{t: VMC, name: Vulcan Materials, role: rep}]
-        eu: [{t: HOLN.SW, name: Holcim, role: rep}]
-      - name: Envases
-        us: [{t: SW, name: Smurfit Westrock, role: rep, note: "cartón = consumo y e-commerce"}]
-
-  - name: Industriales
-    gics: 20
-    industries:
-      - name: Aeroespacial y defensa
-        us: [{t: RTX, name: RTX, role: rep}, {t: LMT, name: Lockheed Martin, role: rep}]
-        eu: [{t: AIR.PA, name: Airbus, role: bellwether}, {t: RHM.DE, name: Rheinmetall, role: rep, note: "gasto en defensa europeo"}]
-      - name: Maquinaria y bienes de equipo
-        us: [{t: CAT, name: Caterpillar, role: bellwether, note: "ciclo industrial y construcción global"}, {t: DE, name: Deere, role: rep, note: "agricultura"}]
-        eu: [{t: SIE.DE, name: Siemens, role: bellwether, note: "automatización e infraestructuras"}, {t: ATCO-A.ST, name: Atlas Copco, role: rep, note: "pedidos = indicador adelantado de capex"}]
-      - name: Equipos eléctricos
-        us: [{t: ETN, name: Eaton, role: rep, note: "red eléctrica y centros de datos"}]
-        eu: [{t: SU.PA, name: Schneider Electric, role: rep}, {t: ABBN.SW, name: ABB, role: rep}]
-      - name: Conglomerados industriales
-        us: [{t: HON, name: Honeywell, role: rep}]
-      - name: Construcción e ingeniería
-        us: [{t: PWR, name: Quanta Services, role: rep, note: "infraestructura eléctrica"}]
-        eu: [{t: DG.PA, name: Vinci, role: rep, note: "concesiones y obra civil"}, {t: FER.MC, name: Ferrovial, role: rep, note: "autopistas y aeropuertos; también cotiza en Nasdaq como FER"}]
-      - name: Transporte y logística
-        us: [{t: FDX, name: FedEx, role: bellwether, note: "actividad económica en tiempo real"}, {t: UPS, name: UPS, role: rep}, {t: UNP, name: Union Pacific, role: rep, note: "ferrocarril = mercancías EE.UU."}]
-        eu: [{t: MAERSK-B.CO, name: Maersk, role: bellwether, note: "comercio mundial y fletes"}, {t: DHL.DE, name: DHL Group, role: rep}]
-      - name: Aerolíneas
-        us: [{t: DAL, name: Delta Air Lines, role: rep}]
-        eu: [{t: RYAAY, name: Ryanair, role: rep, note: "ADR; consumo europeo de bajo coste"}, {t: IAG.L, name: IAG, role: rep}]
-      - name: Servicios profesionales y empleo
-        us: [{t: ADP, name: ADP, role: rep, note: "nóminas privadas"}]
-        eu: [{t: RAND.AS, name: Randstad, role: rep, note: "trabajo temporal = adelantado del empleo europeo"}]
-      - name: Distribución industrial
-        us: [{t: FAST, name: Fastenal, role: rep, note: "ventas diarias = pulso de la industria"}]
-
-  - name: Consumo discrecional
-    gics: 25
-    industries:
-      - name: Automóviles
-        us: [{t: TSLA, name: Tesla, role: bellwether}, {t: GM, name: General Motors, role: rep}]
-        eu: [{t: VOW3.DE, name: Volkswagen, role: bellwether}, {t: MBG.DE, name: Mercedes-Benz, role: rep}, {t: STLAM.MI, name: Stellantis, role: rep}]
-      - name: Componentes de automoción
-        us: [{t: APTV, name: Aptiv, role: rep}]
-        eu: [{t: ML.PA, name: Michelin, role: rep}]
-      - name: Lujo
-        eu: [{t: MC.PA, name: LVMH, role: bellwether, note: "lujo global y consumidor chino; Q1/Q3 solo ventas"}, {t: RMS.PA, name: Hermès, role: rep}, {t: CFR.SW, name: Richemont, role: rep}]
-      - name: Textil, calzado y moda
-        us: [{t: NKE, name: Nike, role: rep, note: "cierre fiscal mayo; resultados jun/sep/dic/mar"}]
-        eu: [{t: ITX.MC, name: Inditex, role: bellwether, note: "cierre fiscal enero; resultados mar/jun/sep/dic"}, {t: ADS.DE, name: adidas, role: rep}]
-      - name: Restauración y ocio
-        us: [{t: MCD, name: McDonald's, role: bellwether, note: "consumo de rentas bajas"}, {t: SBUX, name: Starbucks, role: rep}, {t: BKNG, name: Booking, role: rep, note: "viajes"}]
-        eu: [{t: IHG.L, name: InterContinental Hotels, role: rep}]
-      - name: Mejora del hogar
-        us: [{t: HD, name: Home Depot, role: bellwether, note: "vivienda y renovación"}]
-      - name: Comercio minorista amplio y e-commerce
-        us: [{t: AMZN, name: Amazon, role: bellwether, note: "también AWS = nube"}]
-        eu: [{t: ZAL.DE, name: Zalando, role: rep}]
-
-  - name: Consumo básico
-    gics: 30
-    industries:
-      - name: Distribución de alimentación
-        us: [{t: WMT, name: Walmart, role: bellwether, note: "cierre fiscal enero; el mejor lector del consumidor EE.UU."}, {t: COST, name: Costco, role: rep, note: "ventas mensuales"}]
-        eu: [{t: AD.AS, name: Ahold Delhaize, role: rep}, {t: TSCO.L, name: Tesco, role: rep, note: "semestral + trading updates"}]
-      - name: Bebidas
-        us: [{t: KO, name: Coca-Cola, role: rep}]
-        eu: [{t: DGE.L, name: Diageo, role: rep, note: "semestral (feb/ago) + trading updates"}, {t: HEIA.AS, name: Heineken, role: rep}, {t: ABI.BR, name: AB InBev, role: rep}]
-      - name: Alimentación
-        us: [{t: MDLZ, name: Mondelez, role: rep}]
-        eu: [{t: NESN.SW, name: Nestlé, role: bellwether, note: "semestral + ventas trimestrales"}, {t: BN.PA, name: Danone, role: rep}]
-      - name: Tabaco
-        us: [{t: PM, name: Philip Morris, role: rep}]
-        eu: [{t: BATS.L, name: BAT, role: rep, note: "semestral"}]
-      - name: Productos del hogar y cuidado personal
-        us: [{t: PG, name: Procter & Gamble, role: bellwether, note: "cierre fiscal junio"}, {t: EL, name: Estée Lauder, role: rep}]
-        eu: [{t: ULVR.L, name: Unilever, role: rep}, {t: OR.PA, name: L'Oréal, role: rep, note: "Q1/Q3 solo ventas"}]
-
-  - name: Salud
-    gics: 35
-    industries:
-      - name: Farmacia
-        us: [{t: LLY, name: Eli Lilly, role: bellwether}, {t: JNJ, name: Johnson & Johnson, role: rep, note: "abre la temporada de salud"}, {t: PFE, name: Pfizer, role: rep}]
-        eu: [{t: NOVO-B.CO, name: Novo Nordisk, role: bellwether}, {t: RO.SW, name: Roche, role: rep}, {t: NOVN.SW, name: Novartis, role: rep}, {t: AZN.L, name: AstraZeneca, role: rep}, {t: SAN.PA, name: Sanofi, role: rep}]
-      - name: Biotecnología
-        us: [{t: AMGN, name: Amgen, role: rep}, {t: VRTX, name: Vertex, role: rep}]
-        eu: [{t: ARGX, name: argenx, role: rep, note: "ADR"}, {t: GMAB.CO, name: Genmab, role: rep}]
-      - name: Equipos y tecnología médica
-        us: [{t: ABT, name: Abbott, role: rep}, {t: ISRG, name: Intuitive Surgical, role: rep}]
-        eu: [{t: SHL.DE, name: Siemens Healthineers, role: rep, note: "cierre fiscal septiembre"}, {t: PHIA.AS, name: Philips, role: rep}]
-      - name: Servicios sanitarios y aseguradoras
-        us: [{t: UNH, name: UnitedHealth, role: bellwether}, {t: HCA, name: HCA Healthcare, role: rep}]
-        eu: [{t: FRE.DE, name: Fresenius, role: rep}]
-      - name: Herramientas y servicios de ciencias de la vida
-        us: [{t: TMO, name: Thermo Fisher, role: rep}]
-        eu: [{t: LONN.SW, name: Lonza, role: rep, note: "semestral"}, {t: SRT3.DE, name: Sartorius, role: rep}]
-
-  - name: Financiero
-    gics: 40
-    industries:
-      - name: Bancos
-        us: [{t: JPM, name: JPMorgan, role: bellwether, note: "abre la temporada de resultados"}, {t: BAC, name: Bank of America, role: rep}, {t: WFC, name: Wells Fargo, role: rep}]
-        eu: [{t: BNP.PA, name: BNP Paribas, role: bellwether}, {t: SAN.MC, name: Santander, role: rep}, {t: BBVA.MC, name: BBVA, role: rep, note: "México y Turquía"}, {t: HSBA.L, name: HSBC, role: rep, note: "Asia"}, {t: UCG.MI, name: UniCredit, role: rep}, {t: DBK.DE, name: Deutsche Bank, role: rep}]
-      - name: Mercados de capitales y gestión de activos
-        us: [{t: GS, name: Goldman Sachs, role: rep}, {t: MS, name: Morgan Stanley, role: rep}, {t: BLK, name: BlackRock, role: rep, note: "flujos de inversión"}]
-        eu: [{t: UBSG.SW, name: UBS, role: rep}, {t: DB1.DE, name: Deutsche Börse, role: rep}]
-      - name: Seguros y reaseguro
-        us: [{t: CB, name: Chubb, role: rep}, {t: PGR, name: Progressive, role: rep}]
-        eu: [{t: ALV.DE, name: Allianz, role: bellwether}, {t: CS.PA, name: AXA, role: rep, note: "semestral"}, {t: MUV2.DE, name: Munich Re, role: rep, note: "catástrofes y precios de reaseguro"}]
-      - name: Finanzas al consumo
-        us: [{t: AXP, name: American Express, role: rep, note: "consumidor de renta alta"}, {t: COF, name: Capital One, role: rep, note: "morosidad en tarjetas"}]
-      - name: Pagos y servicios financieros
-        us: [{t: V, name: Visa, role: bellwether, note: "volumen de pagos global"}, {t: MA, name: Mastercard, role: rep}]
-        eu: [{t: ADYEN.AS, name: Adyen, role: rep, note: "semestral"}]
-
-  - name: Tecnología de la información
-    gics: 45
-    industries:
-      - name: Software
-        us: [{t: MSFT, name: Microsoft, role: bellwether, note: "cierre fiscal junio; nube + IA"}, {t: ORCL, name: Oracle, role: rep, note: "cierre fiscal mayo"}, {t: CRM, name: Salesforce, role: rep, note: "cierre fiscal enero"}, {t: ADBE, name: Adobe, role: rep, note: "cierre fiscal noviembre"}]
-        eu: [{t: SAP.DE, name: SAP, role: bellwether}]
-      - name: Servicios de TI
-        us: [{t: ACN, name: Accenture, role: rep, note: "cierre fiscal agosto; gasto corporativo en TI"}]
-        eu: [{t: CAP.PA, name: Capgemini, role: rep, note: "semestral + ventas trimestrales"}, {t: AMS.MC, name: Amadeus, role: rep, note: "reservas aéreas = viajes globales"}]
-      - name: Semiconductores
-        us: [{t: NVDA, name: Nvidia, role: bellwether, note: "cierre fiscal enero; resultados ~3 semanas después que el resto"}, {t: AVGO, name: Broadcom, role: rep}, {t: AMD, name: AMD, role: rep}, {t: INTC, name: Intel, role: rep}, {t: TSM, name: TSMC, role: bellwether, note: "ADR; publica en Taiwán, ~08:00 CET; ventas mensuales el día 10"}]
-        eu: [{t: IFX.DE, name: Infineon, role: rep, note: "cierre fiscal septiembre; automoción e industria"}, {t: STMPA.PA, name: STMicroelectronics, role: rep}]
-      - name: Equipos de semiconductores
-        us: [{t: AMAT, name: Applied Materials, role: rep, note: "cierre fiscal octubre"}]
-        eu: [{t: ASML.AS, name: ASML, role: bellwether, note: "pedidos = capex global de chips"}]
-      - name: Hardware
-        us: [{t: AAPL, name: Apple, role: bellwether, note: "cierre fiscal septiembre"}, {t: DELL, name: Dell, role: rep, note: "servidores IA"}]
-      - name: Equipos de comunicaciones
-        us: [{t: CSCO, name: Cisco, role: rep, note: "cierre fiscal julio"}]
-        eu: [{t: NOKIA.HE, name: Nokia, role: rep}, {t: ERIC-B.ST, name: Ericsson, role: rep}]
-
-  - name: Servicios de comunicación
-    gics: 50
-    industries:
-      - name: Medios interactivos
-        us: [{t: GOOGL, name: Alphabet, role: bellwether, note: "publicidad + nube"}, {t: META, name: Meta, role: bellwether}]
-      - name: Entretenimiento
-        us: [{t: NFLX, name: Netflix, role: rep}, {t: DIS, name: Disney, role: rep, note: "cierre fiscal septiembre"}]
-        eu: [{t: UMG.AS, name: Universal Music, role: rep}]
-      - name: Telecomunicaciones
-        us: [{t: VZ, name: Verizon, role: rep}, {t: TMUS, name: T-Mobile US, role: rep}]
-        eu: [{t: DTE.DE, name: Deutsche Telekom, role: rep}, {t: TEF.MC, name: Telefónica, role: rep}]
-      - name: Videojuegos
-        us: [{t: EA, name: Electronic Arts, role: rep}]
-
-  - name: Utilities
-    gics: 55
-    industries:
-      - name: Eléctricas
-        us: [{t: NEE, name: NextEra, role: rep, note: "renovables"}, {t: DUK, name: Duke Energy, role: rep}]
-        eu: [{t: IBE.MC, name: Iberdrola, role: bellwether}, {t: ENEL.MI, name: Enel, role: rep}, {t: EOAN.DE, name: E.ON, role: rep, note: "redes"}, {t: RWE.DE, name: RWE, role: rep, note: "generación y precios del gas"}]
-      - name: Renovables puras
-        eu: [{t: ORSTED.CO, name: Ørsted, role: rep, note: "eólica marina y tipos de interés"}]
-      - name: Agua y multiutilities
-        us: [{t: AWK, name: American Water Works, role: rep}]
-        eu: [{t: VIE.PA, name: Veolia, role: rep}]
-
-  - name: Inmobiliario
-    gics: 60
-    industries:
-      - name: REITs logísticos
-        us: [{t: PLD, name: Prologis, role: bellwether, note: "naves = comercio y e-commerce"}]
-        eu: [{t: SGRO.L, name: Segro, role: rep}]
-      - name: REITs de infraestructura digital
-        us: [{t: AMT, name: American Tower, role: rep}, {t: EQIX, name: Equinix, role: rep, note: "centros de datos"}]
-      - name: REITs comerciales y residenciales
-        us: [{t: SPG, name: Simon Property, role: rep, note: "centros comerciales"}, {t: O, name: Realty Income, role: rep, note: "mensual, sensible a tipos"}]
-        eu: [{t: VNA.DE, name: Vonovia, role: rep, note: "residencial alemán y tipos"}, {t: URW.PA, name: Unibail-Rodamco-Westfield, role: rep}]
-
-# ---------- Fuera de la estructura: posiciones y análisis en curso ----------
-# Las que ya estén arriba no hace falta repetirlas; el sistema deduplica por ticker.
+- name: Energía
+  gics: 10
+  industries:
+  - name: Integradas
+    us:
+    - t: XOM
+      name: ExxonMobil
+      role: bellwether
+    - t: CVX
+      name: Chevron
+      role: rep
+    eu:
+    - t: SHEL.L
+      name: Shell
+      role: bellwether
+    - t: TTE.PA
+      name: TotalEnergies
+      role: rep
+    - t: REP.MC
+      name: Repsol
+      role: rep
+  - name: Exploración y producción
+    us:
+    - t: COP
+      name: ConocoPhillips
+      role: rep
+    eu:
+    - t: EQNR.OL
+      name: Equinor
+      role: rep
+      note: gas europeo; referencia tras la crisis energética
+  - name: Refino y marketing
+    us:
+    - t: VLO
+      name: Valero
+      role: rep
+    eu:
+    - t: NESTE.HE
+      name: Neste
+      role: rep
+      note: refino + renovables
+  - name: Servicios y equipos petroleros
+    us:
+    - t: SLB
+      name: SLB (Schlumberger)
+      role: rep
+      note: lee el capex global del sector
+    eu:
+    - t: TE.PA
+      name: Technip Energies
+      role: rep
+  - name: Midstream
+    us:
+    - t: KMI
+      name: Kinder Morgan
+      role: rep
+  - name: Gas natural licuado y servicios
+    eu:
+    - t: SUBC.OL
+      name: Subsea 7
+      role: rep
+      note: 'offshore: capex de energía'
+- name: Materiales
+  gics: 15
+  industries:
+  - name: Química diversificada / gases industriales
+    us:
+    - t: LIN
+      name: Linde
+      role: bellwether
+      note: gases industriales = actividad manufacturera global
+    - t: DOW
+      name: Dow
+      role: rep
+    eu:
+    - t: BAS.DE
+      name: BASF
+      role: bellwether
+      note: termómetro de la industria alemana y del gas
+    - t: AI.PA
+      name: Air Liquide
+      role: rep
+  - name: Química especializada / recubrimientos
+    us:
+    - t: SHW
+      name: Sherwin-Williams
+      role: rep
+      note: vivienda y construcción
+  - name: Minería diversificada
+    us:
+    - t: FCX
+      name: Freeport-McMoRan
+      role: rep
+      note: cobre
+    eu:
+    - t: RIO.L
+      name: Rio Tinto
+      role: bellwether
+      note: China y mineral de hierro
+    - t: GLEN.L
+      name: Glencore
+      role: rep
+  - name: Acero
+    us:
+    - t: NUE
+      name: Nucor
+      role: rep
+    eu:
+    - t: MT.AS
+      name: ArcelorMittal
+      role: rep
+      note: aranceles y demanda industrial europea
+  - name: Materiales de construcción
+    us:
+    - t: VMC
+      name: Vulcan Materials
+      role: rep
+    eu:
+    - t: HOLN.SW
+      name: Holcim
+      role: rep
+  - name: Papel y productos forestales
+    us:
+    - t: IP
+      name: International Paper
+      role: rep
+    eu:
+    - t: UPM.HE
+      name: UPM-Kymmene
+      role: rep
+  - name: Metales preciosos
+    us:
+    - t: NEM
+      name: Newmont
+      role: rep
+      note: oro; apalancamiento al precio del metal
+    eu:
+    - t: FRES.L
+      name: Fresnillo
+      role: rep
+      note: plata y oro
+  - name: Agricultura y fertilizantes
+    us:
+    - t: CTVA
+      name: Corteva
+      role: rep
+      note: semillas; ciclo agrícola
+    - t: NTR
+      name: Nutrien
+      role: rep
+      note: fertilizantes; cotiza en NYSE
+    eu:
+    - t: SDF.DE
+      name: K+S
+      role: rep
+      note: potasa
+- name: Industriales
+  gics: 20
+  industries:
+  - name: Aeroespacial y defensa
+    us:
+    - t: RTX
+      name: RTX
+      role: rep
+    - t: LMT
+      name: Lockheed Martin
+      role: rep
+    eu:
+    - t: AIR.PA
+      name: Airbus
+      role: bellwether
+    - t: RHM.DE
+      name: Rheinmetall
+      role: rep
+      note: gasto en defensa europeo
+  - name: Maquinaria y bienes de equipo
+    us:
+    - t: CAT
+      name: Caterpillar
+      role: bellwether
+      note: ciclo industrial y construcción global
+    - t: DE
+      name: Deere
+      role: rep
+      note: agricultura
+    eu:
+    - t: SIE.DE
+      name: Siemens
+      role: bellwether
+      note: automatización e infraestructuras
+    - t: ATCO-A.ST
+      name: Atlas Copco
+      role: rep
+      note: pedidos = indicador adelantado de capex
+  - name: Equipos eléctricos
+    us:
+    - t: ETN
+      name: Eaton
+      role: rep
+      note: red eléctrica y centros de datos
+    eu:
+    - t: SU.PA
+      name: Schneider Electric
+      role: rep
+    - t: ABBN.SW
+      name: ABB
+      role: rep
+  - name: Conglomerados industriales
+    us:
+    - t: HON
+      name: Honeywell
+      role: rep
+  - name: Construcción e ingeniería
+    us:
+    - t: PWR
+      name: Quanta Services
+      role: rep
+      note: infraestructura eléctrica
+    eu:
+    - t: DG.PA
+      name: Vinci
+      role: rep
+      note: concesiones y obra civil
+    - t: FER.MC
+      name: Ferrovial
+      role: rep
+      note: autopistas y aeropuertos; también cotiza en Nasdaq como FER
+  - name: Transporte y logística
+    us:
+    - t: FDX
+      name: FedEx
+      role: bellwether
+      note: actividad económica en tiempo real
+    - t: UPS
+      name: UPS
+      role: rep
+    - t: UNP
+      name: Union Pacific
+      role: rep
+      note: ferrocarril = mercancías EE.UU.
+    eu:
+    - t: MAERSK-B.CO
+      name: Maersk
+      role: bellwether
+      note: comercio mundial y fletes
+    - t: DHL.DE
+      name: DHL Group
+      role: rep
+  - name: Aerolíneas
+    us:
+    - t: DAL
+      name: Delta Air Lines
+      role: rep
+    eu:
+    - t: RYAAY
+      name: Ryanair
+      role: rep
+      note: ADR; consumo europeo de bajo coste
+    - t: IAG.L
+      name: IAG
+      role: rep
+  - name: Servicios profesionales y empleo
+    us:
+    - t: ADP
+      name: ADP
+      role: rep
+      note: nóminas privadas
+    eu:
+    - t: RAND.AS
+      name: Randstad
+      role: rep
+      note: trabajo temporal = adelantado del empleo europeo
+  - name: Distribución industrial
+    us:
+    - t: FAST
+      name: Fastenal
+      role: rep
+      note: ventas diarias = pulso de la industria
+    - t: GWW
+      name: Grainger
+      role: rep
+      note: 'MRO: pulso de las fábricas'
+  - name: Constructoras de viviendas
+    us:
+    - t: DHI
+      name: D.R. Horton
+      role: bellwether
+      note: adelantado de vivienda 3-6 meses
+    - t: LEN
+      name: Lennar
+      role: rep
+    eu:
+    - t: PSN.L
+      name: Persimmon
+      role: rep
+  - name: Servicios medioambientales y residuos
+    us:
+    - t: WM
+      name: Waste Management
+      role: rep
+      note: defensivo industrial
+    eu:
+    - t: VIE.PA
+      name: Veolia
+      role: rep
+      note: también en utilities
+  - name: Logística y transporte de mercancías
+    eu:
+    - t: KNIN.SW
+      name: Kuehne+Nagel
+      role: rep
+      note: 'transitario: volúmenes de comercio global'
+  - name: Suministros de construcción
+    us:
+    - t: FERG
+      name: Ferguson
+      role: rep
+      note: fontanería y climatización; cotiza en NYSE
+  - name: Infraestructuras de transporte
+    eu:
+    - t: AENA.MC
+      name: Aena
+      role: rep
+      note: 'aeropuertos: tráfico aéreo europeo'
+    - t: ACS.MC
+      name: ACS
+      role: rep
+      note: construcción e infraestructuras
+- name: Consumo discrecional
+  gics: 25
+  industries:
+  - name: Automóviles
+    us:
+    - t: TSLA
+      name: Tesla
+      role: bellwether
+    - t: GM
+      name: General Motors
+      role: rep
+    eu:
+    - t: VOW3.DE
+      name: Volkswagen
+      role: bellwether
+    - t: MBG.DE
+      name: Mercedes-Benz
+      role: rep
+    - t: STLAM.MI
+      name: Stellantis
+      role: rep
+  - name: Componentes de automoción
+    us:
+    - t: APTV
+      name: Aptiv
+      role: rep
+    eu:
+    - t: ML.PA
+      name: Michelin
+      role: rep
+  - name: Lujo
+    eu:
+    - t: MC.PA
+      name: LVMH
+      role: bellwether
+      note: lujo global y consumidor chino; Q1/Q3 solo ventas
+    - t: RMS.PA
+      name: Hermès
+      role: rep
+    - t: CFR.SW
+      name: Richemont
+      role: rep
+  - name: Textil, calzado y moda
+    us:
+    - t: NKE
+      name: Nike
+      role: rep
+      note: cierre fiscal mayo; resultados jun/sep/dic/mar
+    eu:
+    - t: ITX.MC
+      name: Inditex
+      role: bellwether
+      note: cierre fiscal enero; resultados mar/jun/sep/dic
+    - t: ADS.DE
+      name: adidas
+      role: rep
+  - name: Restauración y ocio
+    us:
+    - t: MCD
+      name: McDonald's
+      role: bellwether
+      note: consumo de rentas bajas
+    - t: SBUX
+      name: Starbucks
+      role: rep
+    - t: BKNG
+      name: Booking
+      role: rep
+      note: viajes
+    eu:
+    - t: IHG.L
+      name: InterContinental Hotels
+      role: rep
+  - name: Mejora del hogar
+    us:
+    - t: HD
+      name: Home Depot
+      role: bellwether
+      note: vivienda y renovación
+  - name: Comercio minorista amplio y e-commerce
+    us:
+    - t: AMZN
+      name: Amazon
+      role: bellwether
+      note: también AWS = nube
+    eu:
+    - t: ZAL.DE
+      name: Zalando
+      role: rep
+  - name: Hoteles y cruceros
+    us:
+    - t: MAR
+      name: Marriott
+      role: rep
+      note: viajes de negocios y ocio
+    - t: RCL
+      name: Royal Caribbean
+      role: rep
+      note: consumo de renta alta; muy cíclica
+    eu:
+    - t: ACA.PA
+      name: Accor
+      role: rep
+  - name: Plataformas de consumo
+    us:
+    - t: UBER
+      name: Uber
+      role: rep
+      note: movilidad y reparto
+  - name: Retail de descuento y especializado
+    us:
+    - t: TJX
+      name: TJX
+      role: rep
+      note: 'ropa a descuento: gana cuando el consumidor baja de gama'
+    - t: DG
+      name: Dollar General
+      role: rep
+      note: el consumidor de renta baja
+  - name: Electrónica y bienes de consumo duradero
+    eu:
+    - t: LOGN.SW
+      name: Logitech
+      role: rep
+  - name: Apuestas y ocio
+    us:
+    - t: FLUT
+      name: Flutter
+      role: rep
+      note: apuestas; cotiza en NYSE
+- name: Consumo básico
+  gics: 30
+  industries:
+  - name: Distribución de alimentación
+    us:
+    - t: WMT
+      name: Walmart
+      role: bellwether
+      note: cierre fiscal enero; el mejor lector del consumidor EE.UU.
+    - t: COST
+      name: Costco
+      role: rep
+      note: ventas mensuales
+    eu:
+    - t: AD.AS
+      name: Ahold Delhaize
+      role: rep
+    - t: TSCO.L
+      name: Tesco
+      role: rep
+      note: semestral + trading updates
+    - t: CA.PA
+      name: Carrefour
+      role: rep
+      note: Francia, Brasil
+  - name: Bebidas
+    us:
+    - t: KO
+      name: Coca-Cola
+      role: rep
+    - t: PEP
+      name: PepsiCo
+      role: rep
+      note: snacks y bebidas
+    eu:
+    - t: DGE.L
+      name: Diageo
+      role: rep
+      note: semestral (feb/ago) + trading updates
+    - t: HEIA.AS
+      name: Heineken
+      role: rep
+    - t: ABI.BR
+      name: AB InBev
+      role: rep
+  - name: Alimentación
+    us:
+    - t: MDLZ
+      name: Mondelez
+      role: rep
+    eu:
+    - t: NESN.SW
+      name: Nestlé
+      role: bellwether
+      note: semestral + ventas trimestrales
+    - t: BN.PA
+      name: Danone
+      role: rep
+  - name: Tabaco
+    us:
+    - t: PM
+      name: Philip Morris
+      role: rep
+    eu:
+    - t: BATS.L
+      name: BAT
+      role: rep
+      note: semestral
+    - t: IMB.L
+      name: Imperial Brands
+      role: rep
+  - name: Productos del hogar y cuidado personal
+    us:
+    - t: PG
+      name: Procter & Gamble
+      role: bellwether
+      note: cierre fiscal junio
+    - t: EL
+      name: Estée Lauder
+      role: rep
+    eu:
+    - t: ULVR.L
+      name: Unilever
+      role: rep
+    - t: OR.PA
+      name: L'Oréal
+      role: rep
+      note: Q1/Q3 solo ventas
+- name: Salud
+  gics: 35
+  industries:
+  - name: Farmacia
+    us:
+    - t: LLY
+      name: Eli Lilly
+      role: bellwether
+    - t: JNJ
+      name: Johnson & Johnson
+      role: rep
+      note: abre la temporada de salud
+    - t: PFE
+      name: Pfizer
+      role: rep
+    eu:
+    - t: NOVO-B.CO
+      name: Novo Nordisk
+      role: bellwether
+    - t: RO.SW
+      name: Roche
+      role: rep
+    - t: NOVN.SW
+      name: Novartis
+      role: rep
+    - t: AZN.L
+      name: AstraZeneca
+      role: rep
+    - t: SAN.PA
+      name: Sanofi
+      role: rep
+    - t: GSK.L
+      name: GSK
+      role: rep
+    - t: BAYN.DE
+      name: Bayer
+      role: rep
+      note: farma + agro; litigios
+  - name: Biotecnología
+    us:
+    - t: AMGN
+      name: Amgen
+      role: rep
+    - t: VRTX
+      name: Vertex
+      role: rep
+    - t: GILD
+      name: Gilead
+      role: rep
+    - t: REGN
+      name: Regeneron
+      role: rep
+    eu:
+    - t: ARGX
+      name: argenx
+      role: rep
+      note: ADR
+    - t: GMAB.CO
+      name: Genmab
+      role: rep
+  - name: Equipos y tecnología médica
+    us:
+    - t: ABT
+      name: Abbott
+      role: rep
+    - t: ISRG
+      name: Intuitive Surgical
+      role: rep
+    eu:
+    - t: SHL.DE
+      name: Siemens Healthineers
+      role: rep
+      note: cierre fiscal septiembre
+    - t: PHIA.AS
+      name: Philips
+      role: rep
+  - name: Servicios sanitarios y aseguradoras
+    us:
+    - t: UNH
+      name: UnitedHealth
+      role: bellwether
+    - t: HCA
+      name: HCA Healthcare
+      role: rep
+    eu:
+    - t: FRE.DE
+      name: Fresenius
+      role: rep
+  - name: Herramientas y servicios de ciencias de la vida
+    us:
+    - t: TMO
+      name: Thermo Fisher
+      role: rep
+    - t: DHR
+      name: Danaher
+      role: rep
+      note: diagnóstico y bioprocesos
+    eu:
+    - t: LONN.SW
+      name: Lonza
+      role: rep
+      note: semestral
+    - t: SRT3.DE
+      name: Sartorius
+      role: rep
+  - name: Distribución sanitaria
+    us:
+    - t: MCK
+      name: McKesson
+      role: rep
+      note: volúmenes de medicamentos; margen bajo, defensivo
+- name: Financiero
+  gics: 40
+  industries:
+  - name: Bancos
+    us:
+    - t: JPM
+      name: JPMorgan
+      role: bellwether
+      note: abre la temporada de resultados
+    - t: BAC
+      name: Bank of America
+      role: rep
+    - t: WFC
+      name: Wells Fargo
+      role: rep
+    eu:
+    - t: BNP.PA
+      name: BNP Paribas
+      role: bellwether
+    - t: SAN.MC
+      name: Santander
+      role: rep
+    - t: BBVA.MC
+      name: BBVA
+      role: rep
+      note: México y Turquía
+    - t: HSBA.L
+      name: HSBC
+      role: rep
+      note: Asia
+    - t: UCG.MI
+      name: UniCredit
+      role: rep
+    - t: DBK.DE
+      name: Deutsche Bank
+      role: rep
+  - name: Mercados de capitales y gestión de activos
+    us:
+    - t: GS
+      name: Goldman Sachs
+      role: rep
+    - t: MS
+      name: Morgan Stanley
+      role: rep
+    - t: BLK
+      name: BlackRock
+      role: rep
+      note: flujos de inversión
+    eu:
+    - t: UBSG.SW
+      name: UBS
+      role: rep
+    - t: DB1.DE
+      name: Deutsche Börse
+      role: rep
+  - name: Seguros y reaseguro
+    us:
+    - t: CB
+      name: Chubb
+      role: rep
+    - t: PGR
+      name: Progressive
+      role: rep
+    eu:
+    - t: ALV.DE
+      name: Allianz
+      role: bellwether
+    - t: CS.PA
+      name: AXA
+      role: rep
+      note: semestral
+    - t: MUV2.DE
+      name: Munich Re
+      role: rep
+      note: catástrofes y precios de reaseguro
+  - name: Finanzas al consumo
+    us:
+    - t: AXP
+      name: American Express
+      role: rep
+      note: consumidor de renta alta
+    - t: COF
+      name: Capital One
+      role: rep
+      note: morosidad en tarjetas
+  - name: Pagos y servicios financieros
+    us:
+    - t: V
+      name: Visa
+      role: bellwether
+      note: volumen de pagos global
+    - t: MA
+      name: Mastercard
+      role: rep
+    eu:
+    - t: ADYEN.AS
+      name: Adyen
+      role: rep
+      note: semestral
+  - name: Bancos regionales (EE.UU.)
+    us:
+    - t: USB
+      name: U.S. Bancorp
+      role: rep
+      note: el canario del crédito de 2023
+    - t: PNC
+      name: PNC Financial
+      role: rep
+  - name: Bolsas y datos financieros
+    us:
+    - t: ICE
+      name: Intercontinental Exchange
+      role: rep
+    - t: CME
+      name: CME Group
+      role: rep
+      note: volatilidad = volumen
+    eu:
+    - t: LSEG.L
+      name: London Stock Exchange Group
+      role: rep
+  - name: Seguros de vida
+    us:
+    - t: MET
+      name: MetLife
+      role: rep
+      note: 'duración larga: sensible a tipos'
+    eu:
+    - t: AV.L
+      name: Aviva
+      role: rep
+  - name: Reaseguro
+    eu:
+    - t: SREN.SW
+      name: Swiss Re
+      role: rep
+      note: catástrofes y precios de reaseguro
+- name: Tecnología de la información
+  gics: 45
+  industries:
+  - name: Software
+    us:
+    - t: MSFT
+      name: Microsoft
+      role: bellwether
+      note: cierre fiscal junio; nube + IA
+    - t: ORCL
+      name: Oracle
+      role: rep
+      note: cierre fiscal mayo
+    - t: CRM
+      name: Salesforce
+      role: rep
+      note: cierre fiscal enero
+    - t: ADBE
+      name: Adobe
+      role: rep
+      note: cierre fiscal noviembre
+    - t: NOW
+      name: ServiceNow
+      role: rep
+      note: software empresarial
+    - t: CRWD
+      name: CrowdStrike
+      role: rep
+      note: ciberseguridad
+    eu:
+    - t: SAP.DE
+      name: SAP
+      role: bellwether
+    - t: DSY.PA
+      name: Dassault Systèmes
+      role: rep
+      note: software industrial
+  - name: Servicios de TI
+    us:
+    - t: ACN
+      name: Accenture
+      role: rep
+      note: cierre fiscal agosto; gasto corporativo en TI
+    eu:
+    - t: CAP.PA
+      name: Capgemini
+      role: rep
+      note: semestral + ventas trimestrales
+    - t: AMS.MC
+      name: Amadeus
+      role: rep
+      note: reservas aéreas = viajes globales
+  - name: Semiconductores
+    us:
+    - t: NVDA
+      name: Nvidia
+      role: bellwether
+      note: cierre fiscal enero; resultados ~3 semanas después que el resto
+    - t: AVGO
+      name: Broadcom
+      role: rep
+    - t: AMD
+      name: AMD
+      role: rep
+    - t: INTC
+      name: Intel
+      role: rep
+    - t: TSM
+      name: TSMC
+      role: bellwether
+      note: ADR; publica en Taiwán, ~08:00 CET; ventas mensuales el día 10
+    - t: MU
+      name: Micron
+      role: rep
+      note: 'memoria: el ciclo de inventarios más puro'
+    eu:
+    - t: IFX.DE
+      name: Infineon
+      role: rep
+      note: cierre fiscal septiembre; automoción e industria
+    - t: STMPA.PA
+      name: STMicroelectronics
+      role: rep
+  - name: Equipos de semiconductores
+    us:
+    - t: AMAT
+      name: Applied Materials
+      role: rep
+      note: cierre fiscal octubre
+    eu:
+    - t: ASML.AS
+      name: ASML
+      role: bellwether
+      note: pedidos = capex global de chips
+  - name: Hardware
+    us:
+    - t: AAPL
+      name: Apple
+      role: bellwether
+      note: cierre fiscal septiembre
+    - t: DELL
+      name: Dell
+      role: rep
+      note: servidores IA
+  - name: Equipos de comunicaciones
+    us:
+    - t: CSCO
+      name: Cisco
+      role: rep
+      note: cierre fiscal julio
+    eu:
+    - t: NOKIA.HE
+      name: Nokia
+      role: rep
+    - t: ERIC-B.ST
+      name: Ericsson
+      role: rep
+  - name: Instrumentos y componentes electrónicos
+    us:
+    - t: KEYS
+      name: Keysight
+      role: rep
+      note: capex de I+D electrónica
+    - t: TEL
+      name: TE Connectivity
+      role: rep
+      note: 'conectores: automoción e industria'
+- name: Servicios de comunicación
+  gics: 50
+  industries:
+  - name: Medios interactivos
+    us:
+    - t: GOOGL
+      name: Alphabet
+      role: bellwether
+      note: publicidad + nube
+    - t: META
+      name: Meta
+      role: bellwether
+  - name: Entretenimiento
+    us:
+    - t: NFLX
+      name: Netflix
+      role: rep
+    - t: DIS
+      name: Disney
+      role: rep
+      note: cierre fiscal septiembre
+    - t: SPOT
+      name: Spotify
+      role: rep
+      note: suscripciones; cotiza en NYSE
+    eu:
+    - t: UMG.AS
+      name: Universal Music
+      role: rep
+  - name: Telecomunicaciones
+    us:
+    - t: VZ
+      name: Verizon
+      role: rep
+    - t: TMUS
+      name: T-Mobile US
+      role: rep
+    eu:
+    - t: DTE.DE
+      name: Deutsche Telekom
+      role: rep
+    - t: TEF.MC
+      name: Telefónica
+      role: rep
+  - name: Videojuegos
+    us:
+    - t: EA
+      name: Electronic Arts
+      role: rep
+    - t: TTWO
+      name: Take-Two
+      role: rep
+  - name: Medios tradicionales y cable
+    us:
+    - t: CMCSA
+      name: Comcast
+      role: rep
+      note: cable, parques, medios
+    eu:
+    - t: VOD.L
+      name: Vodafone
+      role: rep
+  - name: Publicidad
+    us:
+    - t: OMC
+      name: Omnicom
+      role: rep
+      note: gasto publicitario = adelantado del consumo
+    eu:
+    - t: WPP.L
+      name: WPP
+      role: rep
+  - name: Torres de telecomunicaciones
+    eu:
+    - t: CLNX.MC
+      name: Cellnex
+      role: rep
+      note: 'infraestructura: duración larga'
+- name: Utilities
+  gics: 55
+  industries:
+  - name: Eléctricas
+    us:
+    - t: NEE
+      name: NextEra
+      role: rep
+      note: renovables
+    - t: DUK
+      name: Duke Energy
+      role: rep
+    eu:
+    - t: IBE.MC
+      name: Iberdrola
+      role: bellwether
+    - t: ENEL.MI
+      name: Enel
+      role: rep
+    - t: EOAN.DE
+      name: E.ON
+      role: rep
+      note: redes
+    - t: RWE.DE
+      name: RWE
+      role: rep
+      note: generación y precios del gas
+  - name: Renovables puras
+    eu:
+    - t: ORSTED.CO
+      name: Ørsted
+      role: rep
+      note: eólica marina y tipos de interés
+  - name: Agua y multiutilities
+    us:
+    - t: AWK
+      name: American Water Works
+      role: rep
+    eu:
+    - t: VIE.PA
+      name: Veolia
+      role: rep
+  - name: Generación independiente
+    us:
+    - t: VST
+      name: Vistra
+      role: rep
+      note: generación y centros de datos
+    - t: CEG
+      name: Constellation
+      role: rep
+      note: nuclear
+  - name: Gas y redes
+    us:
+    - t: ATO
+      name: Atmos Energy
+      role: rep
+      note: distribución de gas regulada
+    eu:
+    - t: ENGI.PA
+      name: Engie
+      role: rep
+    - t: NG.L
+      name: National Grid
+      role: rep
+      note: redes Reino Unido y EE.UU.
+    - t: SSE.L
+      name: SSE
+      role: rep
+- name: Inmobiliario
+  gics: 60
+  industries:
+  - name: REITs logísticos
+    us:
+    - t: PLD
+      name: Prologis
+      role: bellwether
+      note: naves = comercio y e-commerce
+    eu:
+    - t: SGRO.L
+      name: Segro
+      role: rep
+  - name: REITs de infraestructura digital
+    us:
+    - t: AMT
+      name: American Tower
+      role: rep
+    - t: EQIX
+      name: Equinix
+      role: rep
+      note: centros de datos
+  - name: REITs comerciales y residenciales
+    us:
+    - t: SPG
+      name: Simon Property
+      role: rep
+      note: centros comerciales
+    - t: O
+      name: Realty Income
+      role: rep
+      note: mensual, sensible a tipos
+    eu:
+    - t: VNA.DE
+      name: Vonovia
+      role: rep
+      note: residencial alemán y tipos
+    - t: URW.PA
+      name: Unibail-Rodamco-Westfield
+      role: rep
+    - t: MRL.MC
+      name: Merlin Properties
+      role: rep
+      note: oficinas y logística en España
+  - name: REITs de oficinas
+    us:
+    - t: BXP
+      name: BXP
+      role: rep
+      note: 'oficinas: el subsector dañado por el teletrabajo'
+  - name: REITs residenciales
+    us:
+    - t: MAA
+      name: Mid-America Apartment
+      role: rep
+  - name: REITs de salud y almacenamiento
+    us:
+    - t: WELL
+      name: Welltower
+      role: rep
+      note: residencias y salud
+    - t: PSA
+      name: Public Storage
+      role: rep
 extra:
-  - {t: FN, name: Fabrinet, role: rep, note: "análisis en curso"}
-  - {t: DDOG, name: Datadog, role: rep, note: "análisis en curso"}
-
-# ---------- Fechas fijas de mercado (no son de ninguna empresa, afectan a todas) ----------
+- t: FN
+  name: Fabrinet
+  role: rep
+  note: análisis en curso
+- t: DDOG
+  name: Datadog
+  role: rep
+  note: análisis en curso
 market_dates:
-  quad_witching:        # tercer viernes de mar/jun/sep/dic; se calcula solo
+  quad_witching:
     enabled: true
-  index_rebalance:      # rebalanceo S&P 500: tercer viernes de mar/jun/sep/dic (coincide); Nasdaq-100: anual en diciembre
-    - {date: 2026-12-18, name: "Rebalanceo S&P 500 y Nasdaq-100 (anual)"}
+  index_rebalance:
+  - date: 2026-12-18
+    name: Rebalanceo S&P 500 y Nasdaq-100 (anual)

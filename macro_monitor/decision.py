@@ -243,17 +243,22 @@ def deltas(res: dict, cand_now: list) -> dict:
 
 
 # ---------------------------------------------------------------- candidatas
-def _quality(tickers: list) -> dict:
-    """PER adelantado/trailing, margen bruto, deuda neta/EBITDA para pocas empresas (yfinance info)."""
+def _quality(cands: list) -> dict:
+    """Métricas de la empresa (yfinance) comparadas con su industria (kb/benchmarks, Damodaran)."""
     import yfinance as yf
+    from . import benchmark
     out = {}
-    for t in tickers[:8]:
+    for c in cands[:8]:
+        t = c["ticker"]
         try:
             i = yf.Ticker(t).info
-            debt, cash, ebitda = i.get("totalDebt"), i.get("totalCash"), i.get("ebitda")
-            nd = None if not (debt is not None and cash is not None and ebitda) else (debt - cash) / ebitda
-            out[t] = {"per_adelantado": i.get("forwardPE"), "per_trailing": i.get("trailingPE"), "margen_bruto_pct": None if i.get("grossMargins") is None else round(i["grossMargins"] * 100, 1),
-                      "deuda_neta_ebitda": None if nd is None else round(nd, 2), "fcf_yield_pct": None if not (i.get("freeCashflow") and i.get("marketCap")) else round(i["freeCashflow"] / i["marketCap"] * 100, 1)}
+            m = benchmark.company_metrics(i)
+            b = benchmark.industry_bench(c["region"], c["sector"], c.get("industry", ""))
+            comp = benchmark.compare(m, b)
+            out[t] = {"per_adelantado": m.get("per_adelantado"), "per_trailing": m.get("per_trailing"), "ev_ebitda": m.get("ev_ebitda"),
+                      "margen_bruto_pct": m.get("margen_bruto"), "margen_operativo_pct": m.get("margen_operativo"), "roe_pct": m.get("roe"),
+                      "deuda_neta_ebitda": m.get("deuda_ebitda"), "fcf_yield_pct": m.get("fcf_yield"),
+                      "industria": c.get("industry"), "vs_industria": comp, "lectura": benchmark.read(comp) if b else "sin benchmark de industria"}
         except Exception as e:  # noqa: BLE001
             print(f"(calidad {t}: {e})")
     return out
@@ -287,7 +292,7 @@ def candidates(res: dict, fichas: dict | None, micro: dict | None, allowed: set,
         if f["rel_3m"] is not None and f["rel_3m"] < -3:
             missing.append(f"fuerza relativa {f['rel_3m']:+.1f} pp")
         pasa = not missing
-        out.append({"ticker": f["t"], "empresa": f["name"], "sector": f["sector"], "region": f["region"], "role": f["role"],
+        out.append({"ticker": f["t"], "empresa": f["name"], "sector": f["sector"], "industry": f.get("industry", ""), "region": f["region"], "role": f["role"],
                     "pasa_filtro_3": pasa, "le_falta": missing if missing else ["disparador con fecha (filtro 4)"],
                     "precio": round(f["precio"], 2), "moneda": f["moneda"], "stop": round(f["stop"], 2), "stop_dist_pct": round(f["stop_dist_pct"], 1),
                     "acciones": int(f["acciones"] * size_factor) if f["cabe"] else 0, "importe": round(f["importe"] * size_factor) if f["cabe"] else 0,
@@ -310,7 +315,7 @@ def build(cfg: dict, by_id: dict, res: dict, fichas: dict | None, micro: dict | 
     vetoed = [{"sector": s["label"], "motivo": f"sesgo {s['bias']:+d}"} for s in res["sectors"] if s["bias"] <= -1]
     vetoed += [{"sector": sec, "motivo": "conflicto macro/micro o sesgo contra momentum"} for sec in confl_sectors if sec not in {v["sector"] for v in vetoed}]
     cands = candidates(res, fichas, micro, allowed, {v["sector"] for v in vetoed}, factor)
-    quality = _quality([c["ticker"] for c in cands if c["pasa_filtro_3"]][:6]) if cands else {}
+    quality = _quality([c for c in cands if c["pasa_filtro_3"]][:6]) if cands else {}
     for c in cands:
         c["calidad"] = quality.get(c["ticker"])
     cas = active_casuisticas(res, pulso, confl, mom_confl)
@@ -370,16 +375,27 @@ def to_html(d: dict, kb_url: str = "") -> str:
     # candidatas
     if d["candidatas"]:
         h.append("<h4 style='margin:10px 0 4px'>Candidatas (embudo, filtros 2-3) y lo que les falta</h4><table cellpadding='4' style='border-collapse:collapse;width:100%;font-size:12px'>"
-                 "<tr style='background:#f0f0f0'><th align='left'>Empresa</th><th>Pasa</th><th align='left'>Le falta</th><th align='right'>Precio</th><th align='right'>Stop</th><th align='right'>Acc.</th><th align='right'>Importe</th><th align='right'>PER adel.</th><th align='right'>Margen bruto</th><th align='right'>Deuda/EBITDA</th></tr>")
+                 "<tr style='background:#f0f0f0'><th align='left'>Empresa</th><th>Pasa</th><th align='left'>Le falta</th><th align='right'>Precio</th><th align='right'>Stop</th><th align='right'>Acc.</th><th align='right'>Importe</th>"
+                 "<th align='right'>PER adel. <span style='color:#999'>(ind.)</span></th><th align='right'>EV/EBITDA <span style='color:#999'>(ind.)</span></th><th align='right'>Margen op. <span style='color:#999'>(ind.)</span></th><th align='right'>Deuda/EBITDA <span style='color:#999'>(ind.)</span></th></tr>")
+
+        def cell(q, m, suf=""):
+            v = (q.get("vs_industria") or {}).get(m)
+            if not v:
+                return "—"
+            col = {"muy_bajo": "#07a", "bajo": "#07a", "alto": "#b00", "medio_alto": "#b00"}.get(v.get("posicion"), "#222")
+            ind = f" <span style='color:#999'>({v['industria']:.1f}" + (f" · {v['p25']:.0f}-{v['p75']:.0f}" if v.get("p25") is not None else "") + ")</span>" if "industria" in v else ""
+            return f"<span style='color:{col}'>{v['valor']:.1f}{suf}</span>{ind}"
+
         for c in d["candidatas"]:
             q = c.get("calidad") or {}
-            fmt = lambda v, s="": "—" if v is None else f"{v:.1f}{s}"  # noqa: E731
             style = " style='background:#f3fff3'" if c["pasa_filtro_3"] else ""
-            h.append(f"<tr{style}><td><b>{c['empresa']}</b> <span style='color:#999'>{c['ticker']} · {c['sector'][:12]}</span></td><td align='center'>{'✔' if c['pasa_filtro_3'] else '✘'}</td>"
+            h.append(f"<tr{style}><td><b>{c['empresa']}</b> <span style='color:#999'>{c['ticker']} · {c.get('industry', c['sector'])[:22]}</span></td><td align='center'>{'✔' if c['pasa_filtro_3'] else '✘'}</td>"
                      f"<td>{'; '.join(c['le_falta'])}</td><td align='right'>{c['precio']} {c['moneda']}</td><td align='right'>{c['stop']} ({c['stop_dist_pct']} %)</td>"
-                     f"<td align='right'>{c['acciones'] or '—'}</td><td align='right'>{c['importe']:,} $</td><td align='right'>{fmt(q.get('per_adelantado'))}</td>"
-                     f"<td align='right'>{fmt(q.get('margen_bruto_pct'), ' %')}</td><td align='right'>{fmt(q.get('deuda_neta_ebitda'))}</td></tr>".replace(",", "."))
-        h.append("</table>")
+                     f"<td align='right'>{c['acciones'] or '—'}</td><td align='right'>{str(c['importe']).replace(',', '.')} $</td><td align='right'>{cell(q, 'per_adelantado')}</td>"
+                     f"<td align='right'>{cell(q, 'ev_ebitda')}</td><td align='right'>{cell(q, 'margen_operativo', ' %')}</td><td align='right'>{cell(q, 'deuda_ebitda')}</td></tr>")
+            if q.get("lectura"):
+                h.append(f"<tr><td colspan='11' style='color:#555;padding-left:14px;border-bottom:1px solid #eee'>{q['lectura']}</td></tr>")
+        h.append("</table><p style='font-size:11px;color:#999'>Entre paréntesis: mediana de su industria y rango de 10 años (Damodaran, enero 2026; kb/benchmarks). Azul = por debajo de la industria, rojo = por encima.</p>")
     # casuísticas
     if d["casuisticas_activas"]:
         h.append("<h4 style='margin:10px 0 4px'>Casuísticas activas (base de conocimiento)</h4><ul style='font-size:12px'>")
@@ -405,7 +421,8 @@ def summary_for_llm(d: dict) -> dict:
     return {
         "exposicion": d["exposicion"], "abrir_hoy": d["abrir_hoy"], "sectores_donde_buscar": d["sectores_donde_buscar"],
         "sectores_vetados": d["sectores_vetados"], "que_no_hacer": d["que_no_hacer"],
-        "candidatas": [{k: c[k] for k in ("ticker", "empresa", "sector", "pasa_filtro_3", "le_falta", "stop_dist_pct", "acciones", "importe", "rel_3m", "dias_a_resultados", "calidad")} for c in d["candidatas"][:8]],
+        "candidatas": [{**{k: c[k] for k in ("ticker", "empresa", "sector", "industry", "pasa_filtro_3", "le_falta", "stop_dist_pct", "acciones", "importe", "rel_3m", "dias_a_resultados")},
+                        "calidad_vs_industria": (c.get("calidad") or {}).get("lectura")} for c in d["candidatas"][:8]],
         "casuisticas_activas": [{"titulo": c["titulo"], "por_que": c["por_que"], "que_hacer": c["que_hacer"][:450], "que_la_resuelve": c["que_la_resuelve"][:250]} for c in d["casuisticas_activas"]],
         "sensibilidad": d["sensibilidad"], "historial_regimen": d["historial_regimen"], "cambios": d["cambios"], "cartera_acciones": d["cartera_acciones"],
     }

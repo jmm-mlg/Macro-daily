@@ -10,7 +10,7 @@ def _build_index(config):
     docs = pathlib.Path(config["docs_dir"])
     _index = {}
     for p in docs.rglob("*.md"):
-        if p.name.startswith("_") or p.name in ("PLANTILLA.md", "PENDIENTES.md"):
+        if p.name.startswith("_") or p.name in ("PLANTILLA.md", "PENDIENTES.md") or (p.parent.name == "benchmarks" and p.name == "README.md"):
             continue
         _index[p.stem] = p.relative_to(docs).as_posix()
     # ids con caracteres especiales (series de mercado) -> archivo

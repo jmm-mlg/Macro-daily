@@ -114,6 +114,17 @@ de las empresas europeas. Marco completo en `kb/conceptos/divisas.md`.
 cambio en `kb/`: genera la navegación (`kb/build_nav.py`), convierte los enlaces `[[id]]` (`kb/_hooks.py`) y
 construye en `docs/kb/`, que GitHub Pages ya sirve. El email enlaza al sitio (`kb_url` en `config.yaml`).
 
+## Benchmarks de valoración por industria (`kb/benchmarks/`)
+Medianas de PER, EV/EBITDA, márgenes, ROE, ROIC, deuda/EBITDA, dividendo y beta por industria (86 industrias,
+EE.UU. y Europa) con rango de 10 años, a partir de los datos de Damodaran (NYU Stern): `actualizar.py` descarga
+los archivos actuales y el histórico 2016-2024, los agrega a nuestras industrias (`correspondencia.yaml`) y
+escribe `benchmarks.yaml` (lo lee el motor) y 11 entradas legibles. Workflow anual (15 de enero) o manual. La
+ficha de calidad de las candidatas compara cada métrica con su industria y su década.
+
+## Watchlist v2 (2026-10-13)
+251 empresas en 85 industrias (74 de GICS más desgloses propios), EE.UU. y Europa; cada industria con su
+correspondencia a las industrias de Damodaran.
+
 ## Decisión del día (`macro_monitor/decision.py`)
 El motor calcula lo que es regla y el modelo solo lo redacta: banda de exposición (tabla del nivel 5 de la guía),
 si se abre hoy, sectores donde buscar y vetados (sesgo, conflictos macro/micro y de momentum), candidatas que pasan el

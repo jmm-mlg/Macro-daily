@@ -6,7 +6,7 @@ import yaml
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 KB = ROOT / "kb"
 SECTIONS = [("indicadores", "Indicadores"), ("sectores", "Sectores"), ("mecanismos", "Mecanismos"),
-            ("casuisticas", "Casuísticas"), ("conceptos", "Conceptos"), ("episodios", "Episodios")]
+            ("casuisticas", "Casuísticas"), ("conceptos", "Conceptos"), ("benchmarks", "Benchmarks por industria"), ("episodios", "Episodios")]
 BLOCK_ORDER = ["Tipos", "Inflación", "Empleo", "Actividad", "Vivienda", "Crédito", "Mercado"]
 
 
@@ -50,7 +50,7 @@ cfg = {
     "docs_dir": "kb",
     "site_dir": "docs/kb",
     "use_directory_urls": True,
-    "exclude_docs": "verificar.py\nverificacion.yaml\nbuild_nav.py\n_hooks.py\n",
+    "exclude_docs": "verificar.py\nverificacion.yaml\nbuild_nav.py\n_hooks.py\nbenchmarks/actualizar.py\nbenchmarks/benchmarks.yaml\nbenchmarks/correspondencia.yaml\nbenchmarks/_fuente_damodaran.csv\nbenchmarks/README.md\n",
     "theme": {"name": "material", "language": "es",
               "palette": [{"scheme": "default", "primary": "blue grey", "accent": "amber", "toggle": {"icon": "material/brightness-7", "name": "Modo oscuro"}},
                           {"scheme": "slate", "primary": "blue grey", "accent": "amber", "toggle": {"icon": "material/brightness-4", "name": "Modo claro"}}],

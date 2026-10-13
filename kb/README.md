@@ -6,6 +6,7 @@ Fuente única de conocimiento del sistema: qué mide cada dato del email, cómo 
 | Carpeta | Tipo | Contenido | Estado |
 | --- | --- | --- | --- |
 | `indicadores/` | Indicador | Las 39 series del email (incluye euro-dólar, dólar-yen, dólar-yuan) | 38 hechas |
+| `benchmarks/` | Benchmark | Valoración y calidad por industria (Damodaran), 86 industrias × 2 regiones, rango de 10 años; `benchmarks.yaml` lo lee el motor | 11 hechas |
 | `conceptos/` | Concepto | Régimen, prima de riesgo, duración, pricing power, divisas… | 1 hecho |
 | `mecanismos/` | Mecanismo | Cadenas de transmisión con plazos y evidencia | 15 hechos |
 | `sectores/` | Sector | Los 11 GICS: drivers, métricas, comportamiento por régimen, bellwethers | 11 hechos |
@@ -57,6 +58,9 @@ Fuente única de conocimiento del sistema: qué mide cada dato del email, cómo 
 - [GC=F · Oro](indicadores/GC.md)
 - ^TNX · Treasury 10 años (mercado): ver [DGS10](indicadores/DGS10.md)
 - [EURUSD=X · Euro-dólar](indicadores/EURUSD.md) · [JPY=X · Dólar-yen (carry)](indicadores/USDJPY.md) · CNY=X · Dólar-yuan: ver [Divisas](conceptos/divisas.md)
+### Benchmarks por industria
+- [Índice](benchmarks/README.md) · Energía · Materiales · Industriales · Consumo discrecional · Consumo básico · Salud · Financiero · Tecnología · Comunicación · Utilities · Inmobiliario (en `benchmarks/`)
+
 ### Conceptos
 - [Divisas: cómo leerlas para invertir en acciones](conceptos/divisas.md)
 ### Sectores (GICS)
