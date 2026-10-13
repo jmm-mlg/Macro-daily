@@ -11,6 +11,16 @@ exclude_docs: 'verificar.py
 
   _hooks.py
 
+  benchmarks/actualizar.py
+
+  benchmarks/benchmarks.yaml
+
+  benchmarks/correspondencia.yaml
+
+  benchmarks/_fuente_damodaran.csv
+
+  benchmarks/README.md
+
   '
 theme:
   name: material
@@ -206,6 +216,19 @@ nav:
   - VIX por encima de 25 (régimen de miedo): casuisticas/vix-sobre-25.md
 - Conceptos:
   - 'Divisas: cómo leerlas para invertir en acciones': conceptos/divisas.md
+- Benchmarks por industria:
+  - Benchmarks de valoración por industria: benchmarks/README.md
+  - Valoración y calidad por industria · Consumo básico: benchmarks/consumo-basico.md
+  - Valoración y calidad por industria · Consumo discrecional: benchmarks/consumo-discrecional.md
+  - Valoración y calidad por industria · Energía: benchmarks/energia.md
+  - Valoración y calidad por industria · Financiero: benchmarks/financiero.md
+  - Valoración y calidad por industria · Industriales: benchmarks/industriales.md
+  - Valoración y calidad por industria · Inmobiliario: benchmarks/inmobiliario.md
+  - Valoración y calidad por industria · Materiales: benchmarks/materiales.md
+  - Valoración y calidad por industria · Salud: benchmarks/salud.md
+  - Valoración y calidad por industria · Servicios de comunicación: benchmarks/servicios-de-comunicacion.md
+  - Valoración y calidad por industria · Tecnología de la información: benchmarks/tecnologia-de-la-informacion.md
+  - Valoración y calidad por industria · Utilities: benchmarks/utilities.md
 - Biblioteca: BIBLIOTECA.md
 - Plantilla: PLANTILLA.md
 - Verificación: _verificacion.md
