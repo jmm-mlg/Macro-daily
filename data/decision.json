@@ -51,17 +51,17 @@
    "le_falta": [
     "disparador con fecha (filtro 4)"
    ],
-   "precio": 38.35,
+   "precio": 38.44,
    "moneda": "GBP",
-   "stop": 36.86,
+   "stop": 36.96,
    "stop_dist_pct": 3.9,
-   "acciones": 492,
-   "importe": 24990,
-   "rel_3m": 8.0,
+   "acciones": 490,
+   "importe": 24986,
+   "rel_3m": 8.2,
    "dias_a_resultados": null,
    "calidad": {
-    "per_adelantado": 9.10777,
-    "per_trailing": 11.345181,
+    "per_adelantado": 9.140369,
+    "per_trailing": 11.508982,
     "margen_bruto_pct": 26.1,
     "deuda_neta_ebitda": 0.72,
     "fcf_yield_pct": 9.8
@@ -87,7 +87,7 @@
    "dias_a_resultados": null,
    "calidad": {
     "per_adelantado": 15.022103,
-    "per_trailing": 22.562254,
+    "per_trailing": 22.155725,
     "margen_bruto_pct": 29.8,
     "deuda_neta_ebitda": 0.47,
     "fcf_yield_pct": 2.9
@@ -113,7 +113,7 @@
    "dias_a_resultados": null,
    "calidad": {
     "per_adelantado": 9.3282385,
-    "per_trailing": 18.265604,
+    "per_trailing": 18.17424,
     "margen_bruto_pct": 16.1,
     "deuda_neta_ebitda": 0.26,
     "fcf_yield_pct": 6.7
@@ -133,13 +133,13 @@
    "moneda": "EUR",
    "stop": 28.29,
    "stop_dist_pct": 2.8,
-   "acciones": 767,
+   "acciones": 766,
    "importe": 24989,
    "rel_3m": 8.1,
    "dias_a_resultados": null,
    "calidad": {
     "per_adelantado": 6.5458093,
-    "per_trailing": 8.154062,
+    "per_trailing": 8.063712,
     "margen_bruto_pct": 31.6,
     "deuda_neta_ebitda": 0.6,
     "fcf_yield_pct": 1.0
@@ -155,17 +155,17 @@
    "le_falta": [
     "disparador con fecha (filtro 4)"
    ],
-   "precio": 418.9,
+   "precio": 419.8,
    "moneda": "NOK",
-   "stop": 398.29,
+   "stop": 399.06,
    "stop_dist_pct": 4.9,
-   "acciones": 569,
-   "importe": 24995,
-   "rel_3m": 7.4,
+   "acciones": 567,
+   "importe": 24981,
+   "rel_3m": 7.6,
    "dias_a_resultados": null,
    "calidad": {
-    "per_adelantado": 9.792932,
-    "per_trailing": 11.665275,
+    "per_adelantado": 9.8139715,
+    "per_trailing": 11.690336,
     "margen_bruto_pct": 40.1,
     "deuda_neta_ebitda": 0.21,
     "fcf_yield_pct": 3.0
@@ -190,8 +190,8 @@
    "rel_3m": 7.2,
    "dias_a_resultados": null,
    "calidad": {
-    "per_adelantado": 13.682838,
-    "per_trailing": 18.690216,
+    "per_adelantado": 13.68665,
+    "per_trailing": 18.219868,
     "margen_bruto_pct": 47.6,
     "deuda_neta_ebitda": 0.58,
     "fcf_yield_pct": 4.7
@@ -227,13 +227,13 @@
    "le_falta": [
     "disparador con fecha (filtro 4)"
    ],
-   "precio": 79.27,
+   "precio": 79.48,
    "moneda": "EUR",
-   "stop": 75.68,
+   "stop": 75.89,
    "stop_dist_pct": 4.5,
-   "acciones": 281,
-   "importe": 24974,
-   "rel_3m": -0.4,
+   "acciones": 280,
+   "importe": 24968,
+   "rel_3m": -0.1,
    "dias_a_resultados": null,
    "calidad": null
   },
@@ -247,12 +247,12 @@
    "le_falta": [
     "fuerza relativa -10.3 pp"
    ],
-   "precio": 32.08,
+   "precio": 32.1,
    "moneda": "EUR",
    "stop": 31.16,
    "stop_dist_pct": 2.9,
-   "acciones": 696,
-   "importe": 24989,
+   "acciones": 695,
+   "importe": 24985,
    "rel_3m": -10.3,
    "dias_a_resultados": null,
    "calidad": null
@@ -307,15 +307,15 @@
    "pasa_filtro_3": false,
    "le_falta": [
     "bajo la media de 200",
-    "fuerza relativa -20.3 pp"
+    "fuerza relativa -21.1 pp"
    ],
-   "precio": 31.02,
+   "precio": 30.78,
    "moneda": "EUR",
-   "stop": 29.44,
+   "stop": 29.2,
    "stop_dist_pct": 5.1,
-   "acciones": 720,
-   "importe": 24997,
-   "rel_3m": -20.3,
+   "acciones": 725,
+   "importe": 24992,
+   "rel_3m": -21.1,
    "dias_a_resultados": null,
    "calidad": null
   }
@@ -385,7 +385,7 @@
    {
     "serie": "JPY=X",
     "umbral": 150,
-    "valor_actual": 158.07400512695312,
+    "valor_actual": 158.125,
     "si_se_cruza": {
      "sector_Servicios de comunicación": "-1 → -2",
      "sector_Tecnología de la información": "-1 → -2"
@@ -535,7 +535,7 @@
    {
     "serie": "^VIX",
     "distancia_antes": 10.16,
-    "distancia_hoy": 9.47,
+    "distancia_hoy": 9.71,
     "se_acerca": true
    }
   ]

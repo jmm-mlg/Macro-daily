@@ -841,11 +841,11 @@
    "role": "bellwether",
    "revisiones": {
     "trim": {
-     "up30": 2,
-     "down30": 1,
-     "up7": 2,
-     "down7": 0,
-     "net30": 0.33
+     "up30": 1,
+     "down30": 2,
+     "up7": 0,
+     "down7": 2,
+     "net30": -0.33
     },
     "anual": {
      "up30": 2,

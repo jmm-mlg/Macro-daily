@@ -66,8 +66,8 @@
   "ECBDFR": {
    "value": 2.5,
    "chg": 0.25,
-   "pct": 77.39130434782608,
-   "date": "2026-10-12",
+   "pct": 77.3702798152676,
+   "date": "2026-10-13",
    "name": "BCE facilidad de depósito",
    "block": "Tipos",
    "unit": "%"
@@ -334,44 +334,44 @@
    "unit": "puntos"
   },
   "^VIX": {
-   "value": 15.529999732971191,
-   "chg": -0.3100004196166992,
-   "pct": 37.45526838966203,
+   "value": 15.289999961853027,
+   "chg": -0.5500001907348633,
+   "pct": 35.42743538767395,
    "date": "2026-10-13",
    "name": "VIX",
    "block": "Mercado",
    "unit": "índice"
   },
   "DX-Y.NYB": {
-   "value": 102.3030014038086,
-   "chg": 3.1829986572265625,
-   "pct": 74.42322991249006,
+   "value": 102.24700164794922,
+   "chg": 3.1269989013671875,
+   "pct": 74.1447891805887,
    "date": "2026-10-13",
    "name": "Dólar (DXY)",
    "block": "Mercado",
    "unit": "índice"
   },
   "CL=F": {
-   "value": 91.83000183105469,
-   "chg": -8.220001220703125,
-   "pct": 92.12410501193318,
+   "value": 92.43000030517578,
+   "chg": -7.620002746582031,
+   "pct": 92.6412092283214,
    "date": "2026-10-13",
    "name": "Petróleo WTI",
    "block": "Mercado",
    "unit": "$/barril"
   },
   "HG=F": {
-   "value": 6.760499954223633,
-   "chg": 0.2909998893737793,
-   "pct": 99.92044550517105,
+   "value": 6.739999771118164,
+   "chg": 0.27049970626831055,
+   "pct": 99.88066825775657,
    "date": "2026-10-13",
    "name": "Cobre",
    "block": "Mercado",
    "unit": "$/lb"
   },
   "GC=F": {
-   "value": 4204.39990234375,
-   "chg": -204.5,
+   "value": 4211.7001953125,
+   "chg": -197.19970703125,
    "pct": 92.84009546539379,
    "date": "2026-10-13",
    "name": "Oro",
@@ -379,44 +379,44 @@
    "unit": "$/oz"
   },
   "^TNX": {
-   "value": 5.239999771118164,
-   "chg": 0.2649998664855957,
-   "pct": 99.64171974522293,
-   "date": "2026-10-12",
+   "value": 5.186999797821045,
+   "chg": 0.21199989318847656,
+   "pct": 99.52229299363057,
+   "date": "2026-10-13",
    "name": "Treasury 10y (mercado)",
    "block": "Mercado",
    "unit": "%"
   },
   "EURUSD=X": {
-   "value": 1.1191942691802979,
-   "chg": -0.04180097579956055,
-   "pct": 46.57692307692308,
+   "value": 1.1196954250335693,
+   "chg": -0.04129981994628906,
+   "pct": 46.69230769230769,
    "date": "2026-10-13",
    "name": "Euro-dólar",
    "block": "Mercado",
    "unit": "$ por €"
   },
   "JPY=X": {
-   "value": 158.07400512695312,
-   "chg": 3.592010498046875,
-   "pct": 94.38461538461539,
+   "value": 158.125,
+   "chg": 3.64300537109375,
+   "pct": 94.42307692307692,
    "date": "2026-10-13",
    "name": "Dólar-yen (carry)",
    "block": "Mercado",
    "unit": "¥ por $"
   },
   "CNY=X": {
-   "value": 6.68209981918335,
-   "chg": -0.024000167846679688,
-   "pct": 24.74028472489419,
+   "value": 6.69320011138916,
+   "chg": -0.01289987564086914,
+   "pct": 25.548287803001152,
    "date": "2026-10-13",
    "name": "Dólar-yuan",
    "block": "Mercado",
    "unit": "¥ por $"
   },
   "TTF=F": {
-   "value": 85.98999786376953,
-   "chg": 6.470001220703125,
+   "value": 86.5,
+   "chg": 6.980003356933594,
    "pct": 88.52459016393442,
    "date": "2026-10-13",
    "name": "Gas natural europeo (TTF)",
@@ -424,9 +424,9 @@
    "unit": "€/MWh"
   },
   "CU_AU": {
-   "value": 1.6079583558298012,
-   "chg": 0.14058549453832625,
-   "pct": 25.33810660302307,
+   "value": 1.600303786727172,
+   "chg": 0.13293092543569718,
+   "pct": 24.383452665075577,
    "date": "2026-10-13",
    "name": "Ratio cobre/oro (x1000)",
    "block": "Mercado",
@@ -705,8 +705,8 @@
       "trend": 0,
       "signal": 0,
       "weight": 3,
-      "value": 15.529999732971191,
-      "pct": 37.45526838966203
+      "value": 15.289999961853027,
+      "pct": 35.42743538767395
      },
      {
       "series": "BAMLH0A0HYM2",
@@ -732,8 +732,8 @@
       "trend": 1,
       "signal": 2,
       "weight": 1,
-      "value": 6.760499954223633,
-      "pct": 99.92044550517105
+      "value": 6.739999771118164,
+      "pct": 99.88066825775657
      },
      {
       "series": "GC=F",
@@ -741,7 +741,7 @@
       "trend": -1,
       "signal": 1,
       "weight": 1,
-      "value": 4204.39990234375,
+      "value": 4211.7001953125,
       "pct": 92.84009546539379
      },
      {
@@ -759,8 +759,8 @@
       "trend": 0,
       "signal": -1,
       "weight": 1,
-      "value": 1.6079583558298012,
-      "pct": 25.33810660302307
+      "value": 1.600303786727172,
+      "pct": 24.383452665075577
      }
     ]
    }
@@ -795,17 +795,17 @@
    "petroleo": {
     "signal": 1,
     "label": "Petróleo caro",
-    "value": 91.83000183105469,
-    "pct": 92.12410501193318,
-    "chg": -8.220001220703125,
+    "value": 92.43000030517578,
+    "pct": 92.6412092283214,
+    "chg": -7.620002746582031,
     "why": "Transferencia de renta de consumidores/transporte a productores."
    },
    "dolar": {
     "signal": 0,
     "label": "Dólar fuerte",
-    "value": 102.3030014038086,
-    "pct": 74.42322991249006,
-    "chg": 3.1829986572265625,
+    "value": 102.24700164794922,
+    "pct": 74.1447891805887,
+    "chg": 3.1269989013671875,
     "why": "Penaliza beneficios exteriores y materias primas en USD."
    },
    "credito": {
@@ -819,9 +819,9 @@
    "cobre": {
     "signal": 1,
     "label": "Cobre caro",
-    "value": 6.760499954223633,
-    "pct": 99.92044550517105,
-    "chg": 0.2909998893737793,
+    "value": 6.739999771118164,
+    "pct": 99.88066825775657,
+    "chg": 0.27049970626831055,
     "why": "Demanda industrial y de construcción global."
    },
    "hipoteca": {
@@ -835,17 +835,17 @@
    "yen": {
     "signal": 0,
     "label": "Yen subiendo (deshacer de carry)",
-    "value": 158.07400512695312,
-    "pct": 94.38461538461539,
-    "chg": 3.592010498046875,
+    "value": 158.125,
+    "pct": 94.42307692307692,
+    "chg": 3.64300537109375,
     "why": "USDJPY cayendo más de 4 en un mes = el yen se aprecia de golpe; desapalancamiento de posiciones financiadas en yenes (ago-2024). Señal -1 x carga +0,5 = -0,5 en los sectores más comprados con carry. 2026-10-09."
    },
    "euro": {
     "signal": -1,
     "label": "Euro moviéndose > 3 %/mes",
-    "value": 1.1191942691802979,
-    "pct": 46.57692307692308,
-    "chg": -0.04180097579956055,
+    "value": 1.1196954250335693,
+    "pct": 46.69230769230769,
+    "chg": -0.04129981994628906,
     "why": "Sin carga sectorial en la matriz (es estadounidense); se usa en la narrativa y en la lectura de las empresas europeas de la watchlist: euro débil favorece a exportadoras europeas (LVMH, Airbus, SAP, Novo) y penaliza a las americanas que venden en Europa. 2026-10-09."
    }
   },
@@ -1085,7 +1085,7 @@
     "b": "DGS10",
     "gap": 40,
     "text": "El ratio cobre/oro y el 10 años discrepan: o el bono anticipa debilidad o la subida de tipos es prima de plazo, no crecimiento.",
-    "pct_a": 25.33810660302307,
+    "pct_a": 24.383452665075577,
     "pct_b": 99.6422893481717,
     "kind": "divergencia"
    }
@@ -1110,9 +1110,9 @@
    {
     "series": "JPY=X",
     "threshold": 150,
-    "value": 158.07400512695312,
+    "value": 158.125,
     "hit": false,
-    "distance": 8.07,
+    "distance": 8.12,
     "text": "Dólar-yen < 150: el yen se fortalece; riesgo de deshacer del carry (ago-2024 fue 162 → 142)."
    },
    {
@@ -1174,9 +1174,9 @@
    {
     "series": "^VIX",
     "threshold": 25,
-    "value": 15.529999732971191,
+    "value": 15.289999961853027,
     "hit": false,
-    "distance": 9.47,
+    "distance": 9.71,
     "text": "VIX > 25: régimen de miedo; históricamente mejor comprar que vender."
    },
    {
