@@ -17,9 +17,9 @@
      "net30": 0.5
     },
     "anual": {
-     "up30": 4,
+     "up30": 5,
      "down30": 0,
-     "up7": 3,
+     "up7": 2,
      "down7": 0,
      "net30": 1.0
     },
@@ -85,11 +85,11 @@
      "net30": -1.0
     },
     "anual": {
-     "up30": 3,
+     "up30": 2,
      "down30": 1,
      "up7": 1,
      "down7": 0,
-     "net30": 0.5
+     "net30": 0.33
     },
     "recomendaciones": {
      "compra": 23,
@@ -152,13 +152,13 @@
      "net30": 0.0
     },
     "anual": {
-     "up30": 8,
-     "down30": 8,
+     "up30": 0,
+     "down30": 4,
      "up7": 0,
      "down7": 3,
-     "net30": 0.0
+     "net30": -1.0
     },
-    "est_anual_chg30_pct": -1.56,
+    "est_anual_chg30_pct": -1.96,
     "recomendaciones": {
      "compra": 8,
      "venta": 1,
@@ -190,7 +190,7 @@
      "down7": 0,
      "net30": 0.41
     },
-    "est_anual_chg30_pct": -0.17,
+    "est_anual_chg30_pct": -0.23,
     "recomendaciones": {
      "compra": 18,
      "venta": 0,
@@ -222,7 +222,7 @@
      "down7": 1,
      "net30": 1.0
     },
-    "est_anual_chg30_pct": 0.05,
+    "est_anual_chg30_pct": 0.53,
     "recomendaciones": {
      "compra": 15,
      "venta": 2,
@@ -280,7 +280,7 @@
      "up30": 1,
      "down30": 1,
      "up7": 0,
-     "down7": 1,
+     "down7": 2,
      "net30": 0.0
     },
     "anual": {
@@ -316,7 +316,7 @@
      "up30": 1,
      "down30": 1,
      "up7": 0,
-     "down7": 1,
+     "down7": 0,
      "net30": 0.0
     },
     "anual": {
@@ -326,7 +326,7 @@
      "down7": 0,
      "net30": 1.0
     },
-    "est_anual_chg30_pct": 25.42,
+    "est_anual_chg30_pct": 28.9,
     "recomendaciones": {
      "compra": 2,
      "venta": 7,
@@ -347,16 +347,16 @@
     "trim": {
      "up30": 0,
      "down30": 4,
-     "up7": 0,
-     "down7": 3,
+     "up7": 1,
+     "down7": 0,
      "net30": -1.0
     },
     "anual": {
-     "up30": 1,
+     "up30": 2,
      "down30": 4,
      "up7": 1,
      "down7": 2,
-     "net30": -0.6
+     "net30": -0.33
     },
     "est_anual_chg30_pct": -0.04,
     "recomendaciones": {
@@ -388,13 +388,13 @@
      "net30": -0.5
     },
     "anual": {
-     "up30": 1,
-     "down30": 6,
+     "up30": 2,
+     "down30": 7,
      "up7": 1,
-     "down7": 4,
-     "net30": -0.71
+     "down7": 3,
+     "net30": -0.56
     },
-    "est_anual_chg30_pct": -1.2,
+    "est_anual_chg30_pct": -0.85,
     "recomendaciones": {
      "compra": 19,
      "venta": 4,
@@ -430,7 +430,7 @@
      "down7": 1,
      "net30": -0.67
     },
-    "est_anual_chg30_pct": 0.99,
+    "est_anual_chg30_pct": 1.3,
     "recomendaciones": {
      "compra": 12,
      "venta": 1,
@@ -459,10 +459,10 @@
      "up30": 2,
      "down30": 7,
      "up7": 0,
-     "down7": 4,
+     "down7": 3,
      "net30": -0.56
     },
-    "est_anual_chg30_pct": -1.21,
+    "est_anual_chg30_pct": -0.89,
     "recomendaciones": {
      "compra": 17,
      "venta": 0,
@@ -514,17 +514,17 @@
    "revisiones": {
     "trim": {
      "up30": 1,
-     "down30": 12,
+     "down30": 13,
      "up7": 1,
      "down7": 12,
-     "net30": -0.85
+     "net30": -0.86
     },
     "anual": {
-     "up30": 2,
-     "down30": 13,
+     "up30": 3,
+     "down30": 16,
      "up7": 0,
      "down7": 13,
-     "net30": -0.73
+     "net30": -0.68
     },
     "est_anual_chg30_pct": -0.23,
     "recomendaciones": {
@@ -634,7 +634,7 @@
      "up30": 1,
      "down30": 1,
      "up7": 0,
-     "down7": 1,
+     "down7": 0,
      "net30": 0.0
     },
     "anual": {
@@ -720,7 +720,7 @@
      "net30": 0.0
     },
     "anual": {
-     "up30": 10,
+     "up30": 11,
      "down30": 0,
      "up7": 9,
      "down7": 0,
@@ -746,17 +746,17 @@
    "revisiones": {
     "trim": {
      "up30": 0,
-     "down30": 12,
+     "down30": 1,
      "up7": 0,
      "down7": 1,
      "net30": -1.0
     },
     "anual": {
-     "up30": 1,
+     "up30": 2,
      "down30": 2,
      "up7": 1,
      "down7": 1,
-     "net30": -0.33
+     "net30": 0.0
     },
     "est_anual_chg30_pct": -0.02,
     "recomendaciones": {
@@ -827,17 +827,17 @@
      "net30": 1.0
     },
     "anual": {
-     "up30": 4,
-     "down30": 2,
-     "up7": 2,
+     "up30": 6,
+     "down30": 4,
+     "up7": 3,
      "down7": 0,
-     "net30": 0.33
+     "net30": 0.2
     },
-    "est_anual_chg30_pct": -4.14,
+    "est_anual_chg30_pct": -4.07,
     "recomendaciones": {
-     "compra": 25,
+     "compra": 26,
      "venta": 2,
-     "cambio_compra_1m": 0
+     "cambio_compra_1m": 1
     }
    },
    "eventos": [],
@@ -857,10 +857,10 @@
    "revisiones": {
     "trim": {
      "up30": 1,
-     "down30": 2,
+     "down30": 1,
      "up7": 1,
-     "down7": 1,
-     "net30": -0.33
+     "down7": 0,
+     "net30": 0.0
     },
     "anual": {
      "up30": 6,
@@ -901,7 +901,7 @@
      "down7": 0,
      "net30": 1.0
     },
-    "est_anual_chg30_pct": 1.47,
+    "est_anual_chg30_pct": 3.11,
     "recomendaciones": {
      "compra": 22,
      "venta": 0,
@@ -936,10 +936,10 @@
    "revisiones": {
     "trim": {
      "up30": 2,
-     "down30": 1,
+     "down30": 2,
      "up7": 0,
      "down7": 2,
-     "net30": 0.33
+     "net30": 0.0
     },
     "anual": {
      "up30": 3,
@@ -948,7 +948,7 @@
      "down7": 1,
      "net30": 1.0
     },
-    "est_anual_chg30_pct": -2.71,
+    "est_anual_chg30_pct": 0.05,
     "recomendaciones": {
      "compra": 13,
      "venta": 0,
@@ -1005,7 +1005,7 @@
      "down7": 0,
      "net30": 1.0
     },
-    "est_anual_chg30_pct": 0.2,
+    "est_anual_chg30_pct": 0.11,
     "recomendaciones": {
      "compra": 15,
      "venta": 0,
@@ -1109,9 +1109,9 @@
      "net30": 0.0
     },
     "anual": {
-     "up30": 1,
+     "up30": 3,
      "down30": 0,
-     "up7": 1,
+     "up7": 2,
      "down7": 0,
      "net30": 1.0
     },
@@ -1202,8 +1202,8 @@
     "anual": {
      "up30": 1,
      "down30": 3,
-     "up7": 1,
-     "down7": 2,
+     "up7": 0,
+     "down7": 1,
      "net30": -0.5
     },
     "est_anual_chg30_pct": 0.05,
@@ -1228,7 +1228,7 @@
      "up30": 0,
      "down30": 1,
      "up7": 0,
-     "down7": 0,
+     "down7": 1,
      "net30": -1.0
     },
     "anual": {
@@ -1238,7 +1238,7 @@
      "down7": 0,
      "net30": 1.0
     },
-    "est_anual_chg30_pct": 0.06,
+    "est_anual_chg30_pct": 0.08,
     "recomendaciones": {
      "compra": 59,
      "venta": 1,
@@ -1609,7 +1609,7 @@
      "down7": 1,
      "net30": -1.0
     },
-    "est_anual_chg30_pct": 0.77,
+    "est_anual_chg30_pct": 0.45,
     "recomendaciones": {
      "compra": 37,
      "venta": 1,
@@ -1641,7 +1641,7 @@
      "down7": 0,
      "net30": 0.33
     },
-    "est_anual_chg30_pct": 0.02,
+    "est_anual_chg30_pct": 0.06,
     "recomendaciones": {
      "compra": 25,
      "venta": 6,
@@ -1801,10 +1801,10 @@
      "up30": 5,
      "down30": 2,
      "up7": 3,
-     "down7": 1,
+     "down7": 2,
      "net30": 0.43
     },
-    "est_anual_chg30_pct": 0.03,
+    "est_anual_chg30_pct": -0.01,
     "recomendaciones": {
      "compra": 57,
      "venta": 0,
@@ -1850,7 +1850,7 @@
      "down7": 3,
      "net30": -0.5
     },
-    "est_anual_chg30_pct": -1.4,
+    "est_anual_chg30_pct": -1.8,
     "recomendaciones": {
      "compra": 55,
      "venta": 1,
@@ -2126,11 +2126,11 @@
     "anual": {
      "up30": 2,
      "down30": 0,
-     "up7": 0,
+     "up7": 2,
      "down7": 0,
      "net30": 1.0
     },
-    "est_anual_chg30_pct": 1.37,
+    "est_anual_chg30_pct": 1.25,
     "recomendaciones": {
      "compra": 7,
      "venta": 1,
@@ -2559,16 +2559,16 @@
    "clusters_insiders": 0
   },
   "Materiales": {
-   "amplitud_revisiones": 0.17,
-   "senal": 0,
+   "amplitud_revisiones": -0.22,
+   "senal": -1,
    "empresas_cubiertas": 3,
    "mejorando": 1,
-   "empeorando": 0,
+   "empeorando": 1,
    "hechos_relevantes": 0,
    "clusters_insiders": 0
   },
   "Industriales": {
-   "amplitud_revisiones": -0.03,
+   "amplitud_revisiones": 0.01,
    "senal": 0,
    "empresas_cubiertas": 6,
    "mejorando": 3,
@@ -2577,7 +2577,7 @@
    "clusters_insiders": 0
   },
   "Consumo discrecional": {
-   "amplitud_revisiones": -0.17,
+   "amplitud_revisiones": -0.14,
    "senal": 0,
    "empresas_cubiertas": 7,
    "mejorando": 2,
@@ -2586,19 +2586,19 @@
    "clusters_insiders": 0
   },
   "Consumo básico": {
-   "amplitud_revisiones": 0.22,
+   "amplitud_revisiones": 0.33,
    "senal": 1,
    "empresas_cubiertas": 3,
    "mejorando": 1,
-   "empeorando": 1,
+   "empeorando": 0,
    "hechos_relevantes": 1,
    "clusters_insiders": 0
   },
   "Salud": {
-   "amplitud_revisiones": 0.61,
+   "amplitud_revisiones": 0.57,
    "senal": 1,
    "empresas_cubiertas": 3,
-   "mejorando": 3,
+   "mejorando": 2,
    "empeorando": 0,
    "hechos_relevantes": 1,
    "clusters_insiders": 0

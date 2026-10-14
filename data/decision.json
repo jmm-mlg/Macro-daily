@@ -8,28 +8,26 @@
   "motivo": "régimen Mixto / transición con tensión media (tabla del nivel 5 de la guía)"
  },
  "abrir_hoy": {
-  "respuesta": "sí",
-  "motivo": "SHEL.L (ruptura de máximo de 52 semanas, acuerdo 3/3, factor 0.5), XOM (ruptura de máximo de 52 semanas, acuerdo 3/3, factor 0.5), EQNR.OL (ruptura de máximo de 52 semanas, acuerdo 2/3, factor 0.5)"
+  "respuesta": "no",
+  "motivo": "ninguna candidata tiene disparador activo con acuerdo suficiente (régimen Mixto: máximo mitad de tamaño)"
  },
- "sectores_donde_buscar": [
-  "Energía"
- ],
+ "sectores_donde_buscar": [],
  "sectores_vetados": [
   {
+   "sector": "Financiero",
+   "motivo": "sesgo -1"
+  },
+  {
+   "sector": "Industriales",
+   "motivo": "sesgo -1"
+  },
+  {
+   "sector": "Salud",
+   "motivo": "sesgo -1"
+  },
+  {
    "sector": "Consumo básico",
-   "motivo": "sesgo -1"
-  },
-  {
-   "sector": "Servicios de comunicación",
-   "motivo": "sesgo -1"
-  },
-  {
-   "sector": "Tecnología de la información",
-   "motivo": "sesgo -1"
-  },
-  {
-   "sector": "Utilities",
-   "motivo": "sesgo -1"
+   "motivo": "sesgo -2"
   },
   {
    "sector": "Consumo discrecional",
@@ -38,1209 +36,25 @@
   {
    "sector": "Inmobiliario",
    "motivo": "sesgo -2"
+  },
+  {
+   "sector": "Materiales",
+   "motivo": "sesgo -2"
+  },
+  {
+   "sector": "Servicios de comunicación",
+   "motivo": "sesgo -2"
+  },
+  {
+   "sector": "Tecnología de la información",
+   "motivo": "sesgo -2"
+  },
+  {
+   "sector": "Utilities",
+   "motivo": "sesgo -2"
   }
  ],
- "candidatas": [
-  {
-   "ticker": "SHEL.L",
-   "empresa": "Shell",
-   "sector": "Energía",
-   "industry": "Integradas",
-   "region": "EU",
-   "role": "bellwether",
-   "pasa_filtro_3": true,
-   "le_falta": [],
-   "precio": 38.99,
-   "moneda": "GBP",
-   "stop": 37.49,
-   "stop_dist_pct": 3.8,
-   "acciones": 483,
-   "importe": 24984,
-   "rel_3m": 7.6,
-   "dias_a_resultados": null,
-   "calidad": {
-    "per_adelantado": 9.25937,
-    "per_trailing": 11.534023,
-    "ev_ebitda": 4.479,
-    "margen_bruto_pct": 26.093,
-    "margen_operativo_pct": 16.691,
-    "roe_pct": 14.341000000000001,
-    "deuda_neta_ebitda": 0.7239301746671454,
-    "fcf_yield_pct": 9.673423286185454,
-    "industria": "Integradas",
-    "vs_industria": {
-     "per_adelantado": {
-      "valor": 9.26,
-      "industria": 10.1,
-      "p25": 7.92,
-      "p75": 13.55,
-      "posicion": "medio",
-      "industria_vs_decada": "industria en su rango"
-     },
-     "per_trailing": {
-      "valor": 11.53,
-      "industria": 15.2,
-      "p25": 8.78,
-      "p75": 15.89,
-      "posicion": "bajo",
-      "industria_vs_decada": "industria en su rango"
-     },
-     "ev_ebitda": {
-      "valor": 4.48,
-      "industria": 5.66,
-      "p25": 3.76,
-      "p75": 5.5,
-      "posicion": "bajo",
-      "industria_vs_decada": "industria cara vs su década"
-     },
-     "margen_bruto": {
-      "valor": 26.09,
-      "industria": 36.87,
-      "p25": 23.07,
-      "p75": 30.94,
-      "posicion": "bajo",
-      "industria_vs_decada": "industria cara vs su década"
-     },
-     "margen_operativo": {
-      "valor": 16.69,
-      "industria": 21.35,
-      "p25": 4.9,
-      "p75": 16.38,
-      "posicion": "bajo",
-      "industria_vs_decada": "industria cara vs su década"
-     },
-     "margen_neto": {
-      "valor": 8.76,
-      "industria": 9.8,
-      "p25": 3.43,
-      "p75": 7.61,
-      "posicion": "medio",
-      "industria_vs_decada": "industria cara vs su década"
-     },
-     "roe": {
-      "valor": 14.34,
-      "industria": 15.2,
-      "p25": 5.87,
-      "p75": 14.16,
-      "posicion": "medio",
-      "industria_vs_decada": "industria cara vs su década"
-     },
-     "rentabilidad_dividendo": {
-      "valor": 2.99,
-      "industria": 5.99,
-      "p25": null,
-      "p75": null,
-      "posicion": "muy_bajo",
-      "industria_vs_decada": null
-     },
-     "beta": {
-      "valor": -0.19,
-      "industria": 0.43,
-      "p25": null,
-      "p75": null,
-      "posicion": "muy_bajo",
-      "industria_vs_decada": null
-     },
-     "deuda_ebitda": {
-      "valor": 0.72,
-      "industria": 0.99,
-      "p25": null,
-      "p75": null,
-      "posicion": "bajo",
-      "industria_vs_decada": null
-     },
-     "fcf_yield": {
-      "valor": 9.67
-     }
-    },
-    "lectura": "en línea con su industria; PER adel. 9.3 vs 10.1, EV/EBITDA 4.5 vs 5.7 (industria en su rango). Calidad: margen op. 17 % vs 21 % (bajo); ROE 14 % vs 15 % (medio); deuda/EBITDA 0.7 vs 1.0"
-   },
-   "disparadores": [
-    {
-     "tipo": "técnico",
-     "nombre": "retroceso a la MA50",
-     "estado": "pendiente",
-     "detalle": "esperar precio ≈ 35.09 GBP (hoy a +11.1 %)"
-    },
-    {
-     "tipo": "técnico",
-     "nombre": "ruptura de máximo de 52 semanas",
-     "estado": "activo",
-     "detalle": "cierre sobre 36.55 GBP a +11.1 % de la MA50; entrada en la ruptura, stop bajo el máximo anterior"
-    },
-    {
-     "tipo": "macro",
-     "nombre": "factor Petróleo caro",
-     "estado": "activo",
-     "detalle": "CL=F = 95.30000305175781; se desactiva con WTI por debajo del percentil 70"
-    }
-   ],
-   "disparador_activo": [
-    {
-     "tipo": "técnico",
-     "nombre": "ruptura de máximo de 52 semanas",
-     "estado": "activo",
-     "detalle": "cierre sobre 36.55 GBP a +11.1 % de la MA50; entrada en la ruptura, stop bajo el máximo anterior"
-    }
-   ],
-   "patas": {
-    "regimen": 1,
-    "tendencia": 1,
-    "predictiva": 1,
-    "a_favor": 3,
-    "en_contra": 0
-   },
-   "tamano_factor": 0.5,
-   "orden_posible": true
-  },
-  {
-   "ticker": "XOM",
-   "empresa": "ExxonMobil",
-   "sector": "Energía",
-   "industry": "Integradas",
-   "region": "US",
-   "role": "bellwether",
-   "pasa_filtro_3": true,
-   "le_falta": [],
-   "precio": 174.08,
-   "moneda": "USD",
-   "stop": 167.6,
-   "stop_dist_pct": 3.7,
-   "acciones": 143,
-   "importe": 24980,
-   "rel_3m": 1.6,
-   "dias_a_resultados": null,
-   "calidad": {
-    "per_adelantado": 15.190519,
-    "per_trailing": 22.40412,
-    "ev_ebitda": 11.103,
-    "margen_bruto_pct": 29.767,
-    "margen_operativo_pct": 15.859000000000002,
-    "roe_pct": 12.584000000000001,
-    "deuda_neta_ebitda": 0.4677863175503561,
-    "fcf_yield_pct": 2.887811352516044,
-    "industria": "Integradas",
-    "vs_industria": {
-     "per_adelantado": {
-      "valor": 15.19,
-      "industria": 21.9,
-      "p25": 12.07,
-      "p75": 31.36,
-      "posicion": "bajo",
-      "industria_vs_decada": "industria en su rango"
-     },
-     "per_trailing": {
-      "valor": 22.4,
-      "industria": 19.02,
-      "p25": 13.4,
-      "p75": 29.97,
-      "posicion": "medio_alto",
-      "industria_vs_decada": "industria en su rango"
-     },
-     "ev_ebitda": {
-      "valor": 11.1,
-      "industria": 8.09,
-      "p25": null,
-      "p75": null,
-      "posicion": "alto",
-      "industria_vs_decada": null
-     },
-     "margen_bruto": {
-      "valor": 29.77,
-      "industria": 36.08,
-      "p25": 35.73,
-      "p75": 37.41,
-      "posicion": "bajo",
-      "industria_vs_decada": "industria en su rango"
-     },
-     "margen_operativo": {
-      "valor": 15.86,
-      "industria": 11.25,
-      "p25": 3.87,
-      "p75": 12.89,
-      "posicion": "alto",
-      "industria_vs_decada": "industria en su rango"
-     },
-     "margen_neto": {
-      "valor": 9.07,
-      "industria": 8.3,
-      "p25": 2.1,
-      "p75": 9.62,
-      "posicion": "medio",
-      "industria_vs_decada": "industria en su rango"
-     },
-     "roe": {
-      "valor": 12.58,
-      "industria": 9.96,
-      "p25": 2.33,
-      "p75": 13.61,
-      "posicion": "medio_alto",
-      "industria_vs_decada": "industria en su rango"
-     },
-     "rentabilidad_dividendo": {
-      "valor": 2.37,
-      "industria": 3.56,
-      "p25": null,
-      "p75": null,
-      "posicion": "bajo",
-      "industria_vs_decada": null
-     },
-     "beta": {
-      "valor": 0.21,
-      "industria": 0.3,
-      "p25": null,
-      "p75": null,
-      "posicion": "bajo",
-      "industria_vs_decada": null
-     },
-     "deuda_ebitda": {
-      "valor": 0.47,
-      "industria": 1.01,
-      "p25": null,
-      "p75": null,
-      "posicion": "muy_bajo",
-      "industria_vs_decada": null
-     },
-     "fcf_yield": {
-      "valor": 2.89
-     }
-    },
-    "lectura": "en línea con su industria; PER adel. 15.2 vs 21.9, EV/EBITDA 11.1 vs 8.1 (industria en su rango). Calidad: margen op. 16 % vs 11 % (alto); ROE 13 % vs 10 % (medio alto); deuda/EBITDA 0.5 vs 1.0"
-   },
-   "disparadores": [
-    {
-     "tipo": "técnico",
-     "nombre": "retroceso a la MA50",
-     "estado": "pendiente",
-     "detalle": "esperar precio ≈ 162.10 USD (hoy a +7.4 %)"
-    },
-    {
-     "tipo": "técnico",
-     "nombre": "ruptura de máximo de 52 semanas",
-     "estado": "activo",
-     "detalle": "cierre sobre 169.32 USD a +7.4 % de la MA50; entrada en la ruptura, stop bajo el máximo anterior"
-    },
-    {
-     "tipo": "analistas",
-     "nombre": "revisiones acelerando",
-     "estado": "activo",
-     "detalle": "3 al alza / 0 a la baja en 7 días"
-    },
-    {
-     "tipo": "macro",
-     "nombre": "factor Petróleo caro",
-     "estado": "activo",
-     "detalle": "CL=F = 95.30000305175781; se desactiva con WTI por debajo del percentil 70"
-    }
-   ],
-   "disparador_activo": [
-    {
-     "tipo": "técnico",
-     "nombre": "ruptura de máximo de 52 semanas",
-     "estado": "activo",
-     "detalle": "cierre sobre 169.32 USD a +7.4 % de la MA50; entrada en la ruptura, stop bajo el máximo anterior"
-    },
-    {
-     "tipo": "analistas",
-     "nombre": "revisiones acelerando",
-     "estado": "activo",
-     "detalle": "3 al alza / 0 a la baja en 7 días"
-    }
-   ],
-   "patas": {
-    "regimen": 1,
-    "tendencia": 1,
-    "predictiva": 1,
-    "a_favor": 3,
-    "en_contra": 0
-   },
-   "tamano_factor": 0.5,
-   "orden_posible": true
-  },
-  {
-   "ticker": "EQNR.OL",
-   "empresa": "Equinor",
-   "sector": "Energía",
-   "industry": "Exploración y producción",
-   "region": "EU",
-   "role": "rep",
-   "pasa_filtro_3": true,
-   "le_falta": [],
-   "precio": 432.9,
-   "moneda": "NOK",
-   "stop": 412.66,
-   "stop_dist_pct": 4.7,
-   "acciones": 547,
-   "importe": 24983,
-   "rel_3m": 6.2,
-   "dias_a_resultados": null,
-   "calidad": {
-    "per_adelantado": 10.102035,
-    "per_trailing": 12.011653,
-    "ev_ebitda": 24.952,
-    "margen_bruto_pct": 40.133998,
-    "margen_operativo_pct": 36.112,
-    "roe_pct": 21.270001,
-    "deuda_neta_ebitda": 0.20759898250489453,
-    "fcf_yield_pct": 2.8662653980283492,
-    "industria": "Exploración y producción",
-    "vs_industria": {
-     "per_adelantado": {
-      "valor": 10.1,
-      "industria": 9.82,
-      "p25": 12.87,
-      "p75": 31.58,
-      "posicion": "medio",
-      "industria_vs_decada": "industria barata vs su década"
-     },
-     "per_trailing": {
-      "valor": 12.01,
-      "industria": 13.35,
-      "p25": 8.63,
-      "p75": 13.15,
-      "posicion": "medio",
-      "industria_vs_decada": "industria cara vs su década"
-     },
-     "ev_ebitda": {
-      "valor": 24.95,
-      "industria": 2.95,
-      "p25": 2.64,
-      "p75": 6.16,
-      "posicion": "alto",
-      "industria_vs_decada": "industria en su rango"
-     },
-     "margen_bruto": {
-      "valor": 40.13,
-      "industria": 63.6,
-      "p25": 54.25,
-      "p75": 67.98,
-      "posicion": "muy_bajo",
-      "industria_vs_decada": "industria en su rango"
-     },
-     "margen_operativo": {
-      "valor": 36.11,
-      "industria": 38.21,
-      "p25": 8.5,
-      "p75": 38.71,
-      "posicion": "medio",
-      "industria_vs_decada": "industria en su rango"
-     },
-     "margen_neto": {
-      "valor": 7.97,
-      "industria": -4.76,
-      "p25": -23.43,
-      "p75": 0.78,
-      "posicion": "medio",
-      "industria_vs_decada": "industria en su rango"
-     },
-     "roe": {
-      "valor": 21.27,
-      "industria": -5.88,
-      "p25": -9.19,
-      "p75": 1.11,
-      "posicion": "medio",
-      "industria_vs_decada": "industria en su rango"
-     },
-     "rentabilidad_dividendo": {
-      "valor": 3.41,
-      "industria": 8.95,
-      "p25": null,
-      "p75": null,
-      "posicion": "muy_bajo",
-      "industria_vs_decada": null
-     },
-     "beta": {
-      "valor": -0.66,
-      "industria": 0.95,
-      "p25": null,
-      "p75": null,
-      "posicion": "muy_bajo",
-      "industria_vs_decada": null
-     },
-     "deuda_ebitda": {
-      "valor": 0.21,
-      "industria": 1.55,
-      "p25": null,
-      "p75": null,
-      "posicion": "muy_bajo",
-      "industria_vs_decada": null
-     },
-     "fcf_yield": {
-      "valor": 2.87
-     }
-    },
-    "lectura": "claramente cara frente a su industria; PER adel. 10.1 vs 9.8, EV/EBITDA 24.9 vs 3.0 (industria barata vs su década). Calidad: margen op. 36 % vs 38 % (medio); ROE 21 % vs -6 % (medio); deuda/EBITDA 0.2 vs 1.6"
-   },
-   "disparadores": [
-    {
-     "tipo": "técnico",
-     "nombre": "retroceso a la MA50",
-     "estado": "pendiente",
-     "detalle": "esperar precio ≈ 401.69 NOK (hoy a +7.8 %)"
-    },
-    {
-     "tipo": "técnico",
-     "nombre": "ruptura de máximo de 52 semanas",
-     "estado": "activo",
-     "detalle": "cierre sobre 423.80 NOK a +7.8 % de la MA50; entrada en la ruptura, stop bajo el máximo anterior"
-    },
-    {
-     "tipo": "macro",
-     "nombre": "factor Petróleo caro",
-     "estado": "activo",
-     "detalle": "CL=F = 95.30000305175781; se desactiva con WTI por debajo del percentil 70"
-    }
-   ],
-   "disparador_activo": [
-    {
-     "tipo": "técnico",
-     "nombre": "ruptura de máximo de 52 semanas",
-     "estado": "activo",
-     "detalle": "cierre sobre 423.80 NOK a +7.8 % de la MA50; entrada en la ruptura, stop bajo el máximo anterior"
-    }
-   ],
-   "patas": {
-    "regimen": 1,
-    "tendencia": 1,
-    "predictiva": 0,
-    "a_favor": 2,
-    "en_contra": 0
-   },
-   "tamano_factor": 0.5,
-   "orden_posible": true
-  },
-  {
-   "ticker": "VLO",
-   "empresa": "Valero",
-   "sector": "Energía",
-   "industry": "Refino y marketing",
-   "region": "US",
-   "role": "rep",
-   "pasa_filtro_3": true,
-   "le_falta": [
-    "disparador: retroceso a la MA50 (esperar precio ≈ 372.94 USD (hoy a +22.4 %)); ruptura de máximo de 52 semanas (extendida) (rompió 419.33 USD pero está +22.4 % sobre la MA50: no perseguir; esperar retroceso)"
-   ],
-   "precio": 456.46,
-   "moneda": "USD",
-   "stop": 422.76,
-   "stop_dist_pct": 7.4,
-   "acciones": 54,
-   "importe": 24877,
-   "rel_3m": 36.9,
-   "dias_a_resultados": null,
-   "calidad": {
-    "per_adelantado": 9.765981,
-    "per_trailing": 19.027094,
-    "ev_ebitda": 10.327,
-    "margen_bruto_pct": 16.118999000000002,
-    "margen_operativo_pct": 12.269,
-    "roe_pct": 27.637,
-    "deuda_neta_ebitda": 0.2597354239393575,
-    "fcf_yield_pct": 6.403822411725112,
-    "industria": "Refino y marketing",
-    "vs_industria": {
-     "per_adelantado": {
-      "valor": 9.77,
-      "industria": 39.47,
-      "p25": 15.76,
-      "p75": 33.81,
-      "posicion": "muy_bajo",
-      "industria_vs_decada": "industria cara vs su década"
-     },
-     "per_trailing": {
-      "valor": 19.03,
-      "industria": 18.62,
-      "p25": 17.51,
-      "p75": 26.62,
-      "posicion": "medio",
-      "industria_vs_decada": "industria en su rango"
-     },
-     "ev_ebitda": {
-      "valor": 10.33,
-      "industria": 12.57,
-      "p25": null,
-      "p75": null,
-      "posicion": "bajo",
-      "industria_vs_decada": null
-     },
-     "margen_bruto": {
-      "valor": 16.12,
-      "industria": 42.29,
-      "p25": 34.05,
-      "p75": 42.29,
-      "posicion": "muy_bajo",
-      "industria_vs_decada": "industria en su rango"
-     },
-     "margen_operativo": {
-      "valor": 12.27,
-      "industria": 23.63,
-      "p25": 14.31,
-      "p75": 22.46,
-      "posicion": "muy_bajo",
-      "industria_vs_decada": "industria cara vs su década"
-     },
-     "margen_neto": {
-      "valor": 5.45,
-      "industria": 12.6,
-      "p25": 3.18,
-      "p75": 11.11,
-      "posicion": "muy_bajo",
-      "industria_vs_decada": "industria cara vs su década"
-     },
-     "roe": {
-      "valor": 27.64,
-      "industria": 16.84,
-      "p25": 3.3,
-      "p75": 14.7,
-      "posicion": "alto",
-      "industria_vs_decada": "industria cara vs su década"
-     },
-     "rentabilidad_dividendo": {
-      "valor": 1.05,
-      "industria": 3.37,
-      "p25": null,
-      "p75": null,
-      "posicion": "muy_bajo",
-      "industria_vs_decada": null
-     },
-     "beta": {
-      "valor": 0.59,
-      "industria": 0.61,
-      "p25": null,
-      "p75": null,
-      "posicion": "medio",
-      "industria_vs_decada": null
-     },
-     "deuda_ebitda": {
-      "valor": 0.26,
-      "industria": 4.39,
-      "p25": null,
-      "p75": null,
-      "posicion": "muy_bajo",
-      "industria_vs_decada": null
-     },
-     "fcf_yield": {
-      "valor": 6.4
-     }
-    },
-    "lectura": "claramente barata frente a su industria; PER adel. 9.8 vs 39.5, EV/EBITDA 10.3 vs 12.6 (industria cara vs su década). Calidad: margen op. 12 % vs 24 % (muy bajo); ROE 28 % vs 17 % (alto); deuda/EBITDA 0.3 vs 4.4"
-   },
-   "disparadores": [
-    {
-     "tipo": "técnico",
-     "nombre": "retroceso a la MA50",
-     "estado": "pendiente",
-     "detalle": "esperar precio ≈ 372.94 USD (hoy a +22.4 %)"
-    },
-    {
-     "tipo": "técnico",
-     "nombre": "ruptura de máximo de 52 semanas (extendida)",
-     "estado": "pendiente",
-     "detalle": "rompió 419.33 USD pero está +22.4 % sobre la MA50: no perseguir; esperar retroceso"
-    },
-    {
-     "tipo": "macro",
-     "nombre": "factor Petróleo caro",
-     "estado": "activo",
-     "detalle": "CL=F = 95.30000305175781; se desactiva con WTI por debajo del percentil 70"
-    }
-   ],
-   "disparador_activo": [],
-   "patas": {
-    "regimen": 1,
-    "tendencia": 1,
-    "predictiva": 0,
-    "a_favor": 2,
-    "en_contra": 0
-   },
-   "tamano_factor": 0.5,
-   "orden_posible": false
-  },
-  {
-   "ticker": "REP.MC",
-   "empresa": "Repsol",
-   "sector": "Energía",
-   "industry": "Integradas",
-   "region": "EU",
-   "role": "rep",
-   "pasa_filtro_3": true,
-   "le_falta": [
-    "disparador: retroceso a la MA50 (esperar precio ≈ 28.41 EUR (hoy a +6.7 %)); ruptura de máximo de 52 semanas (cierre por encima de 31.54 EUR (a 4.1 %))"
-   ],
-   "precio": 30.3,
-   "moneda": "EUR",
-   "stop": 28.39,
-   "stop_dist_pct": 6.3,
-   "acciones": 737,
-   "importe": 24996,
-   "rel_3m": 7.9,
-   "dias_a_resultados": null,
-   "calidad": {
-    "per_adelantado": 6.813398,
-    "per_trailing": 8.487395,
-    "ev_ebitda": 5.196,
-    "margen_bruto_pct": 31.635999999999996,
-    "margen_operativo_pct": 15.276,
-    "roe_pct": 13.338,
-    "deuda_neta_ebitda": 0.6040021197176747,
-    "fcf_yield_pct": 0.9367398238807162,
-    "industria": "Integradas",
-    "vs_industria": {
-     "per_adelantado": {
-      "valor": 6.81,
-      "industria": 10.1,
-      "p25": 7.92,
-      "p75": 13.55,
-      "posicion": "bajo",
-      "industria_vs_decada": "industria en su rango"
-     },
-     "per_trailing": {
-      "valor": 8.49,
-      "industria": 15.2,
-      "p25": 8.78,
-      "p75": 15.89,
-      "posicion": "muy_bajo",
-      "industria_vs_decada": "industria en su rango"
-     },
-     "ev_ebitda": {
-      "valor": 5.2,
-      "industria": 5.66,
-      "p25": 3.76,
-      "p75": 5.5,
-      "posicion": "medio",
-      "industria_vs_decada": "industria cara vs su década"
-     },
-     "margen_bruto": {
-      "valor": 31.64,
-      "industria": 36.87,
-      "p25": 23.07,
-      "p75": 30.94,
-      "posicion": "medio",
-      "industria_vs_decada": "industria cara vs su década"
-     },
-     "margen_operativo": {
-      "valor": 15.28,
-      "industria": 21.35,
-      "p25": 4.9,
-      "p75": 16.38,
-      "posicion": "bajo",
-      "industria_vs_decada": "industria cara vs su década"
-     },
-     "margen_neto": {
-      "valor": 6.43,
-      "industria": 9.8,
-      "p25": 3.43,
-      "p75": 7.61,
-      "posicion": "bajo",
-      "industria_vs_decada": "industria cara vs su década"
-     },
-     "roe": {
-      "valor": 13.34,
-      "industria": 15.2,
-      "p25": 5.87,
-      "p75": 14.16,
-      "posicion": "medio",
-      "industria_vs_decada": "industria cara vs su década"
-     },
-     "rentabilidad_dividendo": {
-      "valor": 3.72,
-      "industria": 5.99,
-      "p25": null,
-      "p75": null,
-      "posicion": "muy_bajo",
-      "industria_vs_decada": null
-     },
-     "beta": {
-      "valor": -0.12,
-      "industria": 0.43,
-      "p25": null,
-      "p75": null,
-      "posicion": "muy_bajo",
-      "industria_vs_decada": null
-     },
-     "deuda_ebitda": {
-      "valor": 0.6,
-      "industria": 0.99,
-      "p25": null,
-      "p75": null,
-      "posicion": "muy_bajo",
-      "industria_vs_decada": null
-     },
-     "fcf_yield": {
-      "valor": 0.94
-     }
-    },
-    "lectura": "barata frente a su industria; PER adel. 6.8 vs 10.1, EV/EBITDA 5.2 vs 5.7 (industria en su rango). Calidad: margen op. 15 % vs 21 % (bajo); ROE 13 % vs 15 % (medio); deuda/EBITDA 0.6 vs 1.0"
-   },
-   "disparadores": [
-    {
-     "tipo": "técnico",
-     "nombre": "retroceso a la MA50",
-     "estado": "pendiente",
-     "detalle": "esperar precio ≈ 28.41 EUR (hoy a +6.7 %)"
-    },
-    {
-     "tipo": "técnico",
-     "nombre": "ruptura de máximo de 52 semanas",
-     "estado": "pendiente",
-     "detalle": "cierre por encima de 31.54 EUR (a 4.1 %)"
-    },
-    {
-     "tipo": "macro",
-     "nombre": "factor Petróleo caro",
-     "estado": "activo",
-     "detalle": "CL=F = 95.30000305175781; se desactiva con WTI por debajo del percentil 70"
-    }
-   ],
-   "disparador_activo": [],
-   "patas": {
-    "regimen": 1,
-    "tendencia": 1,
-    "predictiva": 0,
-    "a_favor": 2,
-    "en_contra": 0
-   },
-   "tamano_factor": 0.5,
-   "orden_posible": false
-  },
-  {
-   "ticker": "COP",
-   "empresa": "ConocoPhillips",
-   "sector": "Energía",
-   "industry": "Exploración y producción",
-   "region": "US",
-   "role": "rep",
-   "pasa_filtro_3": true,
-   "le_falta": [
-    "disparador: retroceso a la MA50 (esperar precio ≈ 130.01 USD (hoy a +8.4 %)); ruptura de máximo de 52 semanas (cierre por encima de 141.22 USD (a 0.2 %))"
-   ],
-   "precio": 140.9,
-   "moneda": "USD",
-   "stop": 134.8,
-   "stop_dist_pct": 4.3,
-   "acciones": 177,
-   "importe": 24939,
-   "rel_3m": 7.6,
-   "dias_a_resultados": null,
-   "calidad": {
-    "per_adelantado": 14.020583,
-    "per_trailing": 18.66225,
-    "ev_ebitda": 6.903,
-    "margen_bruto_pct": 47.574002,
-    "margen_operativo_pct": 31.509999999999998,
-    "roe_pct": 14.180000000000001,
-    "deuda_neta_ebitda": 0.5824495502200491,
-    "fcf_yield_pct": 4.543891861025391,
-    "industria": "Exploración y producción",
-    "vs_industria": {
-     "per_adelantado": {
-      "valor": 14.02,
-      "industria": 16.14,
-      "p25": 9.69,
-      "p75": 37.14,
-      "posicion": "medio",
-      "industria_vs_decada": "industria en su rango"
-     },
-     "per_trailing": {
-      "valor": 18.66,
-      "industria": 12.68,
-      "p25": 8.09,
-      "p75": 13.09,
-      "posicion": "alto",
-      "industria_vs_decada": "industria en su rango"
-     },
-     "ev_ebitda": {
-      "valor": 6.9,
-      "industria": 6.21,
-      "p25": null,
-      "p75": null,
-      "posicion": "medio",
-      "industria_vs_decada": null
-     },
-     "margen_bruto": {
-      "valor": 47.57,
-      "industria": 57.19,
-      "p25": 57.19,
-      "p75": 58.78,
-      "posicion": "bajo",
-      "industria_vs_decada": "industria en su rango"
-     },
-     "margen_operativo": {
-      "valor": 31.51,
-      "industria": 25.42,
-      "p25": -1.98,
-      "p75": 28.51,
-      "posicion": "medio_alto",
-      "industria_vs_decada": "industria en su rango"
-     },
-     "margen_neto": {
-      "valor": 14.4,
-      "industria": 14.63,
-      "p25": -4.27,
-      "p75": 18.3,
-      "posicion": "medio",
-      "industria_vs_decada": "industria en su rango"
-     },
-     "roe": {
-      "valor": 14.18,
-      "industria": 12.21,
-      "p25": -2.82,
-      "p75": 16.26,
-      "posicion": "medio_alto",
-      "industria_vs_decada": "industria en su rango"
-     },
-     "rentabilidad_dividendo": {
-      "valor": 2.38,
-      "industria": 3.04,
-      "p25": null,
-      "p75": null,
-      "posicion": "bajo",
-      "industria_vs_decada": null
-     },
-     "beta": {
-      "valor": 0.24,
-      "industria": 0.72,
-      "p25": null,
-      "p75": null,
-      "posicion": "muy_bajo",
-      "industria_vs_decada": null
-     },
-     "deuda_ebitda": {
-      "valor": 0.58,
-      "industria": 1.74,
-      "p25": null,
-      "p75": null,
-      "posicion": "muy_bajo",
-      "industria_vs_decada": null
-     },
-     "fcf_yield": {
-      "valor": 4.54
-     }
-    },
-    "lectura": "en línea con su industria; PER adel. 14.0 vs 16.1, EV/EBITDA 6.9 vs 6.2 (industria en su rango). Calidad: margen op. 32 % vs 25 % (medio alto); ROE 14 % vs 12 % (medio alto); deuda/EBITDA 0.6 vs 1.7"
-   },
-   "disparadores": [
-    {
-     "tipo": "técnico",
-     "nombre": "retroceso a la MA50",
-     "estado": "pendiente",
-     "detalle": "esperar precio ≈ 130.01 USD (hoy a +8.4 %)"
-    },
-    {
-     "tipo": "técnico",
-     "nombre": "ruptura de máximo de 52 semanas",
-     "estado": "pendiente",
-     "detalle": "cierre por encima de 141.22 USD (a 0.2 %)"
-    },
-    {
-     "tipo": "macro",
-     "nombre": "factor Petróleo caro",
-     "estado": "activo",
-     "detalle": "CL=F = 95.30000305175781; se desactiva con WTI por debajo del percentil 70"
-    }
-   ],
-   "disparador_activo": [],
-   "patas": {
-    "regimen": 1,
-    "tendencia": 1,
-    "predictiva": 0,
-    "a_favor": 2,
-    "en_contra": 0
-   },
-   "tamano_factor": 0.5,
-   "orden_posible": false
-  },
-  {
-   "ticker": "CVX",
-   "empresa": "Chevron",
-   "sector": "Energía",
-   "industry": "Integradas",
-   "region": "US",
-   "role": "rep",
-   "pasa_filtro_3": true,
-   "le_falta": [
-    "disparador: retroceso a la MA50 (esperar precio ≈ 204.75 USD (hoy a +6.3 %)); ruptura de máximo de 52 semanas (cierre por encima de 217.77 USD (a 0.0 %))"
-   ],
-   "precio": 217.73,
-   "moneda": "USD",
-   "stop": 209.59,
-   "stop_dist_pct": 3.7,
-   "acciones": 114,
-   "importe": 24930,
-   "rel_3m": 1.3,
-   "dias_a_resultados": null,
-   "calidad": null,
-   "disparadores": [
-    {
-     "tipo": "técnico",
-     "nombre": "retroceso a la MA50",
-     "estado": "pendiente",
-     "detalle": "esperar precio ≈ 204.75 USD (hoy a +6.3 %)"
-    },
-    {
-     "tipo": "técnico",
-     "nombre": "ruptura de máximo de 52 semanas",
-     "estado": "pendiente",
-     "detalle": "cierre por encima de 217.77 USD (a 0.0 %)"
-    },
-    {
-     "tipo": "macro",
-     "nombre": "factor Petróleo caro",
-     "estado": "activo",
-     "detalle": "CL=F = 95.30000305175781; se desactiva con WTI por debajo del percentil 70"
-    }
-   ],
-   "disparador_activo": [],
-   "patas": {
-    "regimen": 1,
-    "tendencia": 1,
-    "predictiva": 0,
-    "a_favor": 2,
-    "en_contra": 0
-   },
-   "tamano_factor": 0.5,
-   "orden_posible": false
-  },
-  {
-   "ticker": "TTE.PA",
-   "empresa": "TotalEnergies",
-   "sector": "Energía",
-   "industry": "Integradas",
-   "region": "EU",
-   "role": "rep",
-   "pasa_filtro_3": true,
-   "le_falta": [
-    "disparador: retroceso a la MA50 (esperar precio ≈ 76.63 EUR (hoy a +4.3 %)); ruptura de máximo de 52 semanas (cierre por encima de 80.12 EUR (a 0.2 %))"
-   ],
-   "precio": 79.94,
-   "moneda": "EUR",
-   "stop": 76.59,
-   "stop_dist_pct": 4.2,
-   "acciones": 0,
-   "importe": 0,
-   "rel_3m": -1.1,
-   "dias_a_resultados": null,
-   "calidad": null,
-   "disparadores": [
-    {
-     "tipo": "técnico",
-     "nombre": "retroceso a la MA50",
-     "estado": "pendiente",
-     "detalle": "esperar precio ≈ 76.63 EUR (hoy a +4.3 %)"
-    },
-    {
-     "tipo": "técnico",
-     "nombre": "ruptura de máximo de 52 semanas",
-     "estado": "pendiente",
-     "detalle": "cierre por encima de 80.12 EUR (a 0.2 %)"
-    },
-    {
-     "tipo": "macro",
-     "nombre": "factor Petróleo caro",
-     "estado": "activo",
-     "detalle": "CL=F = 95.30000305175781; se desactiva con WTI por debajo del percentil 70"
-    }
-   ],
-   "disparador_activo": [],
-   "patas": {
-    "regimen": 1,
-    "tendencia": 0,
-    "predictiva": 0,
-    "a_favor": 1,
-    "en_contra": 0
-   },
-   "tamano_factor": 0.0,
-   "orden_posible": false
-  },
-  {
-   "ticker": "SUBC.OL",
-   "empresa": "Subsea 7",
-   "sector": "Energía",
-   "industry": "Gas natural licuado y servicios",
-   "region": "EU",
-   "role": "rep",
-   "pasa_filtro_3": false,
-   "le_falta": [
-    "fuerza relativa -7.4 pp"
-   ],
-   "precio": 345.8,
-   "moneda": "NOK",
-   "stop": 327.26,
-   "stop_dist_pct": 5.4,
-   "acciones": 0,
-   "importe": 0,
-   "rel_3m": -7.4,
-   "dias_a_resultados": null,
-   "calidad": null,
-   "disparadores": [
-    {
-     "tipo": "técnico",
-     "nombre": "retroceso a la MA50",
-     "estado": "pendiente",
-     "detalle": "esperar precio ≈ 330.83 NOK (hoy a +4.5 %)"
-    },
-    {
-     "tipo": "técnico",
-     "nombre": "ruptura de máximo de 52 semanas",
-     "estado": "pendiente",
-     "detalle": "cierre por encima de 351.00 NOK (a 1.5 %)"
-    },
-    {
-     "tipo": "macro",
-     "nombre": "factor Petróleo caro",
-     "estado": "activo",
-     "detalle": "CL=F = 95.30000305175781; se desactiva con WTI por debajo del percentil 70"
-    }
-   ],
-   "disparador_activo": [],
-   "patas": {
-    "regimen": 1,
-    "tendencia": 0,
-    "predictiva": 0,
-    "a_favor": 1,
-    "en_contra": 0
-   },
-   "tamano_factor": 0.0,
-   "orden_posible": false
-  },
-  {
-   "ticker": "NESTE.HE",
-   "empresa": "Neste",
-   "sector": "Energía",
-   "industry": "Refino y marketing",
-   "region": "EU",
-   "role": "rep",
-   "pasa_filtro_3": false,
-   "le_falta": [
-    "fuerza relativa -14.0 pp"
-   ],
-   "precio": 32.86,
-   "moneda": "EUR",
-   "stop": 31.16,
-   "stop_dist_pct": 5.2,
-   "acciones": 0,
-   "importe": 0,
-   "rel_3m": -14.0,
-   "dias_a_resultados": null,
-   "calidad": null,
-   "disparadores": [
-    {
-     "tipo": "técnico",
-     "nombre": "retroceso a la MA50 en tendencia alcista",
-     "estado": "activo",
-     "detalle": "precio 32.86 EUR a +1.9 % de la MA50 (32.25); stop bajo el mínimo de 20 sesiones"
-    },
-    {
-     "tipo": "macro",
-     "nombre": "factor Petróleo caro",
-     "estado": "activo",
-     "detalle": "CL=F = 95.30000305175781; se desactiva con WTI por debajo del percentil 70"
-    }
-   ],
-   "disparador_activo": [
-    {
-     "tipo": "técnico",
-     "nombre": "retroceso a la MA50 en tendencia alcista",
-     "estado": "activo",
-     "detalle": "precio 32.86 EUR a +1.9 % de la MA50 (32.25); stop bajo el mínimo de 20 sesiones"
-    }
-   ],
-   "patas": {
-    "regimen": 1,
-    "tendencia": 0,
-    "predictiva": 0,
-    "a_favor": 1,
-    "en_contra": 0
-   },
-   "tamano_factor": 0.0,
-   "orden_posible": false
-  },
-  {
-   "ticker": "KMI",
-   "empresa": "Kinder Morgan",
-   "sector": "Energía",
-   "industry": "Midstream",
-   "region": "US",
-   "role": "rep",
-   "pasa_filtro_3": false,
-   "le_falta": [
-    "fuerza relativa -14.9 pp"
-   ],
-   "precio": 33.43,
-   "moneda": "USD",
-   "stop": 32.09,
-   "stop_dist_pct": 4.0,
-   "acciones": 0,
-   "importe": 0,
-   "rel_3m": -14.9,
-   "dias_a_resultados": null,
-   "calidad": null,
-   "disparadores": [
-    {
-     "tipo": "técnico",
-     "nombre": "ruptura de máximo de 52 semanas",
-     "estado": "pendiente",
-     "detalle": "cierre por encima de 33.99 USD (a 1.7 %)"
-    },
-    {
-     "tipo": "macro",
-     "nombre": "factor Petróleo caro",
-     "estado": "activo",
-     "detalle": "CL=F = 95.30000305175781; se desactiva con WTI por debajo del percentil 70"
-    }
-   ],
-   "disparador_activo": [],
-   "patas": {
-    "regimen": 1,
-    "tendencia": 0,
-    "predictiva": 0,
-    "a_favor": 1,
-    "en_contra": 0
-   },
-   "tamano_factor": 0.0,
-   "orden_posible": false
-  },
-  {
-   "ticker": "SLB",
-   "empresa": "SLB (Schlumberger)",
-   "sector": "Energía",
-   "industry": "Servicios y equipos petroleros",
-   "region": "US",
-   "role": "rep",
-   "pasa_filtro_3": false,
-   "le_falta": [
-    "bajo la media de 200",
-    "fuerza relativa -16.5 pp"
-   ],
-   "precio": 48.77,
-   "moneda": "USD",
-   "stop": 47.65,
-   "stop_dist_pct": 2.3,
-   "acciones": 0,
-   "importe": 0,
-   "rel_3m": -16.5,
-   "dias_a_resultados": null,
-   "calidad": null,
-   "disparadores": [
-    {
-     "tipo": "macro",
-     "nombre": "factor Petróleo caro",
-     "estado": "activo",
-     "detalle": "CL=F = 95.30000305175781; se desactiva con WTI por debajo del percentil 70"
-    }
-   ],
-   "disparador_activo": [],
-   "patas": {
-    "regimen": 1,
-    "tendencia": 0,
-    "predictiva": 0,
-    "a_favor": 1,
-    "en_contra": 0
-   },
-   "tamano_factor": 0.0,
-   "orden_posible": false
-  }
- ],
+ "candidatas": [],
  "casuisticas_activas": [
   {
    "id": "consumo-fuerte-con-confianza-baja",
@@ -1278,11 +92,11 @@
    "que_la_resuelve": ""
   },
   {
-   "id": "vix-bajo-con-tipo-real-alto",
-   "titulo": "VIX bajo con tipo real alto (complacencia con coste de capital alto)",
-   "por_que": "tipo real > 2 % con VIX < 16",
-   "que_hacer": "- Tensión alta o media: banda baja de exposición; mitad de tamaño en nuevas posiciones.\n- Coberturas con opciones son baratas por definición en esta casuística; es el único momento en que comprar protección tiene sentido económico.\n- Vigilar: revisiones de analistas agregadas y el 10 años (disparador 5,50 %).",
-   "que_la_resuelve": ""
+   "id": "dolar-fuerte-y-materias-primas",
+   "titulo": "Dólar fuerte con materias primas subiendo",
+   "por_que": "dólar fuerte con materias primas caras",
+   "que_hacer": "- Energía y mineras: las únicas donde el dólar fuerte no resta; preferirlas dentro de los sectores favorecidos.\n- Vetar consumo europeo y empresas europeas con costes en dólares (aerolíneas, químicas sin pricing power).\n- Exportadoras europeas: el euro débil compensa en parte; selección por margen.",
+   "que_la_resuelve": "- La materia prima cae (destrucción de demanda, más oferta): el dólar manda de nuevo.\n- El dólar cae (Fed recorta): las materias primas suben más."
   },
   {
    "id": "subida-rapida-del-10-anos",
@@ -1306,10 +120,9 @@
    {
     "serie": "JPY=X",
     "umbral": 150,
-    "valor_actual": 158.43899536132812,
+    "valor_actual": 158.3040008544922,
     "si_se_cruza": {
-     "sector_Servicios de comunicación": "-1 → -2",
-     "sector_Tecnología de la información": "-1 → -2"
+     "sector_Financiero": "-1 → -2"
     },
     "texto": "Dólar-yen < 150: el yen se fortalece; riesgo de deshacer del carry (ago-2024 fue 162 → 142)."
    },
@@ -1345,7 +158,7 @@
    {
     "publicacion": "IPC EE.UU.",
     "serie": "CPIAUCSL",
-    "valor_actual": 3.7129581058388483,
+    "valor_actual": 4.023310268457836,
     "paso": 0.3,
     "si_sube": {
      "sin_cambios": true
@@ -1357,7 +170,7 @@
    {
     "publicacion": "IPC EE.UU.",
     "serie": "CPILFESL",
-    "valor_actual": 2.7634613395318253,
+    "valor_actual": 2.7892023051258708,
     "paso": 0.2,
     "si_sube": {
      "sin_cambios": true
@@ -1401,14 +214,10 @@
     "si_baja": {
      "regimen": "Mixto / transición → Reflación",
      "score_crecimiento": "+0 → +1",
-     "sector_Energía": "+1 → +2",
-     "sector_Financiero": "+0 → +1",
-     "sector_Industriales": "+0 → +1",
-     "sector_Materiales": "+0 → +1",
-     "sector_Consumo básico": "-1 → -2",
-     "sector_Servicios de comunicación": "-1 → -2",
-     "sector_Tecnología de la información": "-1 → -2",
-     "sector_Utilities": "-1 → -2"
+     "sector_Energía": "+0 → +2",
+     "sector_Financiero": "-1 → +0",
+     "sector_Industriales": "-1 → +0",
+     "sector_Materiales": "-2 → +0"
     }
    }
   ]
@@ -1447,22 +256,40 @@
  },
  "cambios": {
   "vs_ayer": {
-   "fecha": "2026-10-13"
+   "fecha": "2026-10-13",
+   "sector_Energía": "+1 → +0",
+   "sector_Financiero": "+0 → -1",
+   "sector_Industriales": "+0 → -1",
+   "sector_Salud": "+0 → -1",
+   "sector_Consumo básico": "-1 → -2",
+   "sector_Materiales": "+0 → -2",
+   "sector_Servicios de comunicación": "-1 → -2",
+   "sector_Tecnología de la información": "-1 → -2",
+   "sector_Utilities": "-1 → -2"
   },
   "vs_5d": {
-   "fecha": "2026-10-07"
+   "fecha": "2026-10-07",
+   "sector_Energía": "+1 → +0",
+   "sector_Financiero": "+0 → -1",
+   "sector_Industriales": "+0 → -1",
+   "sector_Salud": "+0 → -1",
+   "sector_Consumo básico": "-1 → -2",
+   "sector_Materiales": "+0 → -2",
+   "sector_Servicios de comunicación": "-1 → -2",
+   "sector_Tecnología de la información": "-1 → -2",
+   "sector_Utilities": "-1 → -2"
   },
   "disparadores_que_se_mueven": [
    {
-    "serie": "BAMLH0A0HYM2",
-    "distancia_antes": 0.85,
-    "distancia_hoy": 0.89,
-    "se_acerca": false
-   },
-   {
     "serie": "^VIX",
     "distancia_antes": 9.47,
-    "distancia_hoy": 9.77,
+    "distancia_hoy": 7.83,
+    "se_acerca": true
+   },
+   {
+    "serie": "CPIAUCSL",
+    "distancia_antes": 0.71,
+    "distancia_hoy": 1.02,
     "se_acerca": false
    },
    {
@@ -1475,10 +302,10 @@
  },
  "cartera_acciones": [],
  "que_no_hacer": [
-  "No abrir en Consumo básico (sesgo -1)",
-  "No abrir en Servicios de comunicación (sesgo -1)",
-  "No abrir en Tecnología de la información (sesgo -1)",
-  "No abrir en Utilities (sesgo -1)",
+  "No abrir en Financiero (sesgo -1)",
+  "No abrir en Industriales (sesgo -1)",
+  "No abrir en Salud (sesgo -1)",
+  "No abrir en Consumo básico (sesgo -2)",
   "No aumentar exposición agregada con la prima de riesgo comprimida"
  ]
 }
