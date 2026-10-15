@@ -1,5 +1,5 @@
 {
- "date": "2026-10-13",
+ "date": "2026-10-15",
  "scope": "bellwethers",
  "companies": [
   {
@@ -11,19 +11,19 @@
    "revisiones": {
     "trim": {
      "up30": 3,
-     "down30": 0,
-     "up7": 1,
+     "down30": 1,
+     "up7": 2,
      "down7": 0,
-     "net30": 1.0
+     "net30": 0.5
     },
     "anual": {
-     "up30": 4,
+     "up30": 5,
      "down30": 0,
      "up7": 2,
      "down7": 0,
      "net30": 1.0
     },
-    "est_anual_chg30_pct": 6.62,
+    "est_anual_chg30_pct": 6.84,
     "recomendaciones": {
      "compra": 9,
      "venta": 0,
@@ -46,20 +46,20 @@
    "role": "bellwether",
    "revisiones": {
     "trim": {
-     "up30": 6,
+     "up30": 1,
      "down30": 1,
-     "up7": 0,
+     "up7": 1,
      "down7": 0,
-     "net30": 0.71
+     "net30": 0.0
     },
     "anual": {
      "up30": 7,
      "down30": 0,
-     "up7": 1,
-     "down7": 0,
+     "up7": 4,
+     "down7": 1,
      "net30": 1.0
     },
-    "est_anual_chg30_pct": 12.0,
+    "est_anual_chg30_pct": 12.25,
     "recomendaciones": {
      "compra": 10,
      "venta": 0,
@@ -85,11 +85,11 @@
      "net30": -1.0
     },
     "anual": {
-     "up30": 3,
+     "up30": 2,
      "down30": 1,
      "up7": 1,
-     "down7": 0,
-     "net30": 0.5
+     "down7": 1,
+     "net30": 0.33
     },
     "recomendaciones": {
      "compra": 23,
@@ -123,7 +123,7 @@
      "up30": 3,
      "down30": 3,
      "up7": 2,
-     "down7": 1,
+     "down7": 2,
      "net30": 0.0
     },
     "est_anual_chg30_pct": 0.18,
@@ -152,13 +152,13 @@
      "net30": 0.0
     },
     "anual": {
-     "up30": 8,
-     "down30": 8,
+     "up30": 0,
+     "down30": 4,
      "up7": 0,
      "down7": 3,
-     "net30": 0.0
+     "net30": -1.0
     },
-    "est_anual_chg30_pct": -1.84,
+    "est_anual_chg30_pct": -2.88,
     "recomendaciones": {
      "compra": 8,
      "venta": 1,
@@ -184,13 +184,13 @@
      "net30": -0.33
     },
     "anual": {
-     "up30": 12,
-     "down30": 5,
+     "up30": 1,
+     "down30": 0,
      "up7": 1,
      "down7": 0,
-     "net30": 0.41
+     "net30": 1.0
     },
-    "est_anual_chg30_pct": -0.24,
+    "est_anual_chg30_pct": -0.42,
     "recomendaciones": {
      "compra": 18,
      "venta": 0,
@@ -218,11 +218,11 @@
     "anual": {
      "up30": 24,
      "down30": 0,
-     "up7": 0,
+     "up7": 1,
      "down7": 1,
      "net30": 1.0
     },
-    "est_anual_chg30_pct": 0.05,
+    "est_anual_chg30_pct": 0.53,
     "recomendaciones": {
      "compra": 15,
      "venta": 2,
@@ -246,19 +246,19 @@
    "revisiones": {
     "trim": {
      "up30": 0,
-     "down30": 1,
+     "down30": 2,
      "up7": 0,
-     "down7": 0,
+     "down7": 1,
      "net30": -1.0
     },
     "anual": {
      "up30": 0,
      "down30": 5,
      "up7": 0,
-     "down7": 3,
+     "down7": 5,
      "net30": -1.0
     },
-    "est_anual_chg30_pct": 0.41,
+    "est_anual_chg30_pct": 0.39,
     "recomendaciones": {
      "compra": 17,
      "venta": 2,
@@ -278,10 +278,10 @@
    "revisiones": {
     "trim": {
      "up30": 1,
-     "down30": 0,
+     "down30": 1,
      "up7": 0,
-     "down7": 1,
-     "net30": 1.0
+     "down7": 2,
+     "net30": 0.0
     },
     "anual": {
      "up30": 0,
@@ -316,17 +316,17 @@
      "up30": 1,
      "down30": 1,
      "up7": 0,
-     "down7": 1,
+     "down7": 0,
      "net30": 0.0
     },
     "anual": {
-     "up30": 2,
+     "up30": 3,
      "down30": 0,
      "up7": 1,
      "down7": 0,
      "net30": 1.0
     },
-    "est_anual_chg30_pct": 25.42,
+    "est_anual_chg30_pct": 28.9,
     "recomendaciones": {
      "compra": 2,
      "venta": 7,
@@ -338,6 +338,42 @@
    "cobertura": false
   },
   {
+   "t": "DHI",
+   "name": "D.R. Horton",
+   "sector": "Industriales",
+   "region": "US",
+   "role": "bellwether",
+   "revisiones": {
+    "trim": {
+     "up30": 0,
+     "down30": 4,
+     "up7": 1,
+     "down7": 0,
+     "net30": -1.0
+    },
+    "anual": {
+     "up30": 2,
+     "down30": 4,
+     "up7": 1,
+     "down7": 2,
+     "net30": -0.33
+    },
+    "est_anual_chg30_pct": -0.04,
+    "recomendaciones": {
+     "compra": 4,
+     "venta": 2,
+     "cambio_compra_1m": 0
+    }
+   },
+   "eventos": [],
+   "insiders": [],
+   "cobertura": true,
+   "compra_cluster": false,
+   "n_compradores": 0,
+   "importe_compras": 0,
+   "importe_ventas": 0
+  },
+  {
    "t": "TSLA",
    "name": "Tesla",
    "sector": "Consumo discrecional",
@@ -347,18 +383,18 @@
     "trim": {
      "up30": 2,
      "down30": 6,
-     "up7": 1,
-     "down7": 2,
+     "up7": 4,
+     "down7": 3,
      "net30": -0.5
     },
     "anual": {
-     "up30": 1,
-     "down30": 4,
-     "up7": 1,
-     "down7": 5,
-     "net30": -0.6
+     "up30": 4,
+     "down30": 9,
+     "up7": 2,
+     "down7": 4,
+     "net30": -0.38
     },
-    "est_anual_chg30_pct": -1.2,
+    "est_anual_chg30_pct": -0.85,
     "recomendaciones": {
      "compra": 19,
      "venta": 4,
@@ -394,7 +430,7 @@
      "down7": 1,
      "net30": -0.67
     },
-    "est_anual_chg30_pct": 0.99,
+    "est_anual_chg30_pct": 1.3,
     "recomendaciones": {
      "compra": 12,
      "venta": 1,
@@ -420,13 +456,13 @@
      "net30": 0.0
     },
     "anual": {
-     "up30": 2,
-     "down30": 7,
+     "up30": 1,
+     "down30": 10,
      "up7": 0,
-     "down7": 4,
-     "net30": -0.56
+     "down7": 2,
+     "net30": -0.82
     },
-    "est_anual_chg30_pct": -1.36,
+    "est_anual_chg30_pct": -0.6,
     "recomendaciones": {
      "compra": 17,
      "venta": 0,
@@ -478,19 +514,19 @@
    "revisiones": {
     "trim": {
      "up30": 1,
-     "down30": 12,
+     "down30": 13,
      "up7": 1,
      "down7": 12,
-     "net30": -0.85
+     "net30": -0.86
     },
     "anual": {
-     "up30": 2,
-     "down30": 14,
-     "up7": 1,
-     "down7": 11,
-     "net30": -0.75
+     "up30": 3,
+     "down30": 16,
+     "up7": 0,
+     "down7": 13,
+     "net30": -0.68
     },
-    "est_anual_chg30_pct": -0.29,
+    "est_anual_chg30_pct": -0.23,
     "recomendaciones": {
      "compra": 19,
      "venta": 1,
@@ -513,18 +549,18 @@
    "role": "bellwether",
    "revisiones": {
     "trim": {
-     "up30": 1,
-     "down30": 28,
-     "up7": 1,
-     "down7": 27,
-     "net30": -0.93
+     "up30": 0,
+     "down30": 1,
+     "up7": 0,
+     "down7": 1,
+     "net30": -1.0
     },
     "anual": {
-     "up30": 21,
-     "down30": 7,
-     "up7": 21,
-     "down7": 5,
-     "net30": 0.5
+     "up30": 1,
+     "down30": 0,
+     "up7": 1,
+     "down7": 0,
+     "net30": 1.0
     },
     "est_anual_chg30_pct": 0.01,
     "recomendaciones": {
@@ -549,11 +585,11 @@
    "role": "bellwether",
    "revisiones": {
     "trim": {
-     "up30": 4,
-     "down30": 1,
+     "up30": 2,
+     "down30": 0,
      "up7": 1,
      "down7": 0,
-     "net30": 0.6
+     "net30": 1.0
     },
     "anual": {
      "up30": 4,
@@ -595,11 +631,11 @@
    "role": "bellwether",
    "revisiones": {
     "trim": {
-     "up30": 0,
-     "down30": 30,
+     "up30": 1,
+     "down30": 1,
      "up7": 0,
-     "down7": 1,
-     "net30": -1.0
+     "down7": 0,
+     "net30": 0.0
     },
     "anual": {
      "up30": 2,
@@ -684,7 +720,7 @@
      "net30": 0.0
     },
     "anual": {
-     "up30": 9,
+     "up30": 11,
      "down30": 0,
      "up7": 9,
      "down7": 0,
@@ -710,26 +746,37 @@
    "revisiones": {
     "trim": {
      "up30": 0,
-     "down30": 12,
+     "down30": 1,
      "up7": 0,
      "down7": 1,
      "net30": -1.0
     },
     "anual": {
-     "up30": 1,
+     "up30": 2,
      "down30": 2,
      "up7": 1,
      "down7": 1,
-     "net30": -0.33
+     "net30": 0.0
     },
-    "est_anual_chg30_pct": -0.02,
+    "est_anual_chg30_pct": -0.03,
     "recomendaciones": {
-     "compra": 14,
+     "compra": 13,
      "venta": 0,
-     "cambio_compra_1m": 1
+     "cambio_compra_1m": 0
     }
    },
-   "eventos": [],
+   "eventos": [
+    {
+     "fecha": "2026-10-13",
+     "codigos": [
+      "7.01",
+      "9.01"
+     ],
+     "descripcion": "Reg FD: presentación, guía o comunicado",
+     "importancia": 2,
+     "url": "https://www.sec.gov/Archives/edgar/data/80424/000008042426000214/pg-20261013.htm"
+    }
+   ],
    "insiders": [
     {
      "fecha": "2026-10-05",
@@ -775,22 +822,22 @@
     "trim": {
      "up30": 4,
      "down30": 0,
-     "up7": 3,
-     "down7": 0,
+     "up7": 0,
+     "down7": 3,
      "net30": 1.0
     },
     "anual": {
-     "up30": 4,
-     "down30": 2,
-     "up7": 2,
+     "up30": 6,
+     "down30": 4,
+     "up7": 3,
      "down7": 0,
-     "net30": 0.33
+     "net30": 0.2
     },
-    "est_anual_chg30_pct": -3.67,
+    "est_anual_chg30_pct": -4.07,
     "recomendaciones": {
-     "compra": 25,
+     "compra": 26,
      "venta": 2,
-     "cambio_compra_1m": 0
+     "cambio_compra_1m": 1
     }
    },
    "eventos": [],
@@ -810,19 +857,19 @@
    "revisiones": {
     "trim": {
      "up30": 1,
-     "down30": 2,
+     "down30": 1,
      "up7": 1,
-     "down7": 1,
-     "net30": -0.33
+     "down7": 0,
+     "net30": 0.0
     },
     "anual": {
-     "up30": 6,
-     "down30": 2,
+     "up30": 7,
+     "down30": 3,
      "up7": 1,
      "down7": 1,
-     "net30": 0.5
+     "net30": 0.4
     },
-    "est_anual_chg30_pct": 0.75,
+    "est_anual_chg30_pct": 0.36,
     "recomendaciones": {
      "compra": 5,
      "venta": 4,
@@ -854,7 +901,7 @@
      "down7": 0,
      "net30": 1.0
     },
-    "est_anual_chg30_pct": 0.28,
+    "est_anual_chg30_pct": 3.11,
     "recomendaciones": {
      "compra": 22,
      "venta": 0,
@@ -888,11 +935,11 @@
    "role": "bellwether",
    "revisiones": {
     "trim": {
-     "up30": 4,
-     "down30": 1,
-     "up7": 2,
-     "down7": 0,
-     "net30": 0.6
+     "up30": 2,
+     "down30": 2,
+     "up7": 0,
+     "down7": 2,
+     "net30": 0.0
     },
     "anual": {
      "up30": 3,
@@ -901,7 +948,7 @@
      "down7": 1,
      "net30": 1.0
     },
-    "est_anual_chg30_pct": -0.03,
+    "est_anual_chg30_pct": 0.05,
     "recomendaciones": {
      "compra": 13,
      "venta": 0,
@@ -909,6 +956,16 @@
     }
    },
    "eventos": [
+    {
+     "fecha": "2026-10-13",
+     "codigos": [
+      "7.01",
+      "9.01"
+     ],
+     "descripcion": "Reg FD: presentación, guía o comunicado",
+     "importancia": 2,
+     "url": "https://www.sec.gov/Archives/edgar/data/19617/000162828026065616/jpm-20261013.htm"
+    },
     {
      "fecha": "2026-10-13",
      "codigos": [
@@ -942,13 +999,13 @@
      "net30": 1.0
     },
     "anual": {
-     "up30": 2,
+     "up30": 3,
      "down30": 0,
-     "up7": 0,
+     "up7": 1,
      "down7": 0,
      "net30": 1.0
     },
-    "est_anual_chg30_pct": 0.57,
+    "est_anual_chg30_pct": 0.11,
     "recomendaciones": {
      "compra": 15,
      "venta": 0,
@@ -1012,7 +1069,7 @@
      "down7": 0,
      "net30": 0.67
     },
-    "est_anual_chg30_pct": 0.0,
+    "est_anual_chg30_pct": 0.01,
     "recomendaciones": {
      "compra": 36,
      "venta": 1,
@@ -1048,17 +1105,17 @@
      "up30": 1,
      "down30": 1,
      "up7": 1,
-     "down7": 0,
+     "down7": 1,
      "net30": 0.0
     },
     "anual": {
-     "up30": 1,
+     "up30": 3,
      "down30": 0,
-     "up7": 1,
+     "up7": 2,
      "down7": 0,
      "net30": 1.0
     },
-    "est_anual_chg30_pct": 0.04,
+    "est_anual_chg30_pct": 0.08,
     "recomendaciones": {
      "compra": 53,
      "venta": 0,
@@ -1067,6 +1124,33 @@
    },
    "eventos": [],
    "insiders": [
+    {
+     "fecha": "2026-10-13",
+     "quien": "Hood Amy",
+     "cargo": "EVP, Chief Financial Officer",
+     "tipo": "venta",
+     "importe_usd": 1845238,
+     "acciones": 3387,
+     "url": "https://www.sec.gov/Archives/edgar/data/789019/000078901926000226/form4.xml"
+    },
+    {
+     "fecha": "2026-10-13",
+     "quien": "Hood Amy",
+     "cargo": "EVP, Chief Financial Officer",
+     "tipo": "venta",
+     "importe_usd": 1597475,
+     "acciones": 2927,
+     "url": "https://www.sec.gov/Archives/edgar/data/789019/000078901926000226/form4.xml"
+    },
+    {
+     "fecha": "2026-10-13",
+     "quien": "Hood Amy",
+     "cargo": "EVP, Chief Financial Officer",
+     "tipo": "venta",
+     "importe_usd": 541590,
+     "acciones": 991,
+     "url": "https://www.sec.gov/Archives/edgar/data/789019/000078901926000226/form4.xml"
+    },
     {
      "fecha": "2026-09-14",
      "quien": "Hood Amy",
@@ -1126,7 +1210,7 @@
    "compra_cluster": false,
    "n_compradores": 0,
    "importe_compras": 0,
-   "importe_ventas": 20764846
+   "importe_ventas": 24749149
   },
   {
    "t": "SAP.DE",
@@ -1138,16 +1222,16 @@
     "trim": {
      "up30": 1,
      "down30": 2,
-     "up7": 1,
-     "down7": 2,
+     "up7": 0,
+     "down7": 0,
      "net30": -0.33
     },
     "anual": {
      "up30": 1,
-     "down30": 2,
-     "up7": 1,
-     "down7": 2,
-     "net30": -0.33
+     "down30": 3,
+     "up7": 0,
+     "down7": 1,
+     "net30": -0.5
     },
     "est_anual_chg30_pct": 0.05,
     "recomendaciones": {
@@ -1168,20 +1252,20 @@
    "role": "bellwether",
    "revisiones": {
     "trim": {
-     "up30": 35,
-     "down30": 2,
+     "up30": 0,
+     "down30": 1,
      "up7": 0,
-     "down7": 0,
-     "net30": 0.89
+     "down7": 1,
+     "net30": -1.0
     },
     "anual": {
      "up30": 2,
      "down30": 0,
-     "up7": 0,
+     "up7": 2,
      "down7": 0,
      "net30": 1.0
     },
-    "est_anual_chg30_pct": 0.06,
+    "est_anual_chg30_pct": 0.08,
     "recomendaciones": {
      "compra": 59,
      "venta": 1,
@@ -1284,13 +1368,13 @@
      "net30": 1.0
     },
     "anual": {
-     "up30": 2,
+     "up30": 3,
      "down30": 0,
      "up7": 1,
      "down7": 0,
      "net30": 1.0
     },
-    "est_anual_chg30_pct": 0.7,
+    "est_anual_chg30_pct": 0.64,
     "recomendaciones": {
      "compra": 20,
      "venta": 0,
@@ -1546,17 +1630,17 @@
      "net30": 1.0
     },
     "anual": {
-     "up30": 0,
+     "up30": 2,
      "down30": 1,
      "up7": 0,
      "down7": 1,
-     "net30": -1.0
+     "net30": 0.33
     },
-    "est_anual_chg30_pct": 0.74,
+    "est_anual_chg30_pct": 3.35,
     "recomendaciones": {
-     "compra": 37,
+     "compra": 36,
      "venta": 1,
-     "cambio_compra_1m": -1
+     "cambio_compra_1m": -2
     }
    },
    "eventos": [],
@@ -1571,20 +1655,20 @@
    "role": "bellwether",
    "revisiones": {
     "trim": {
-     "up30": 7,
-     "down30": 14,
+     "up30": 1,
+     "down30": 0,
      "up7": 1,
      "down7": 0,
-     "net30": -0.33
+     "net30": 1.0
     },
     "anual": {
      "up30": 2,
      "down30": 1,
      "up7": 1,
-     "down7": 2,
+     "down7": 0,
      "net30": 0.33
     },
-    "est_anual_chg30_pct": 0.02,
+    "est_anual_chg30_pct": 0.06,
     "recomendaciones": {
      "compra": 25,
      "venta": 6,
@@ -1734,20 +1818,20 @@
    "role": "bellwether",
    "revisiones": {
     "trim": {
-     "up30": 3,
+     "up30": 4,
      "down30": 0,
-     "up7": 1,
+     "up7": 2,
      "down7": 0,
      "net30": 1.0
     },
     "anual": {
      "up30": 5,
-     "down30": 1,
+     "down30": 2,
      "up7": 3,
-     "down7": 1,
-     "net30": 0.67
+     "down7": 2,
+     "net30": 0.43
     },
-    "est_anual_chg30_pct": 0.01,
+    "est_anual_chg30_pct": -0.01,
     "recomendaciones": {
      "compra": 57,
      "venta": 0,
@@ -1793,7 +1877,7 @@
      "down7": 3,
      "net30": -0.5
     },
-    "est_anual_chg30_pct": -1.23,
+    "est_anual_chg30_pct": -1.8,
     "recomendaciones": {
      "compra": 55,
      "venta": 1,
@@ -1802,6 +1886,51 @@
    },
    "eventos": [],
    "insiders": [
+    {
+     "fecha": "2026-10-12",
+     "quien": "Olivan Javier",
+     "cargo": "Chief Operating Officer",
+     "tipo": "venta",
+     "importe_usd": 688783,
+     "acciones": 946,
+     "url": "https://www.sec.gov/Archives/edgar/data/1326801/000095010326015598/ownership.xml"
+    },
+    {
+     "fecha": "2026-10-12",
+     "quien": "Olivan Javier",
+     "cargo": "Chief Operating Officer",
+     "tipo": "venta",
+     "importe_usd": 59704,
+     "acciones": 82,
+     "url": "https://www.sec.gov/Archives/edgar/data/1326801/000095010326015598/ownership.xml"
+    },
+    {
+     "fecha": "2026-10-12",
+     "quien": "Olivan Javier",
+     "cargo": "Chief Operating Officer",
+     "tipo": "venta",
+     "importe_usd": 41502,
+     "acciones": 57,
+     "url": "https://www.sec.gov/Archives/edgar/data/1326801/000095010326015598/ownership.xml"
+    },
+    {
+     "fecha": "2026-10-12",
+     "quien": "Olivan Javier",
+     "cargo": "Chief Operating Officer",
+     "tipo": "venta",
+     "importe_usd": 59704,
+     "acciones": 82,
+     "url": "https://www.sec.gov/Archives/edgar/data/1326801/000095010326015598/ownership.xml"
+    },
+    {
+     "fecha": "2026-10-12",
+     "quien": "Olivan Javier",
+     "cargo": "Chief Operating Officer",
+     "tipo": "venta",
+     "importe_usd": 297065,
+     "acciones": 408,
+     "url": "https://www.sec.gov/Archives/edgar/data/1326801/000095010326015598/ownership.xml"
+    },
     {
      "fecha": "2026-10-05",
      "quien": "Olivan Javier",
@@ -1981,76 +2110,13 @@
      "importe_usd": 370936,
      "acciones": 476,
      "url": "https://www.sec.gov/Archives/edgar/data/1326801/000095010326014647/ownership.xml"
-    },
-    {
-     "fecha": "2026-09-21",
-     "quien": "Cox Christopher K",
-     "cargo": "Chief Product Officer",
-     "tipo": "venta",
-     "importe_usd": 14009932,
-     "acciones": 20000,
-     "url": "https://www.sec.gov/Archives/edgar/data/1326801/000095010326014403/ownership.xml"
-    },
-    {
-     "fecha": "2026-09-21",
-     "quien": "Cox Christopher K",
-     "cargo": "Chief Product Officer",
-     "tipo": "venta",
-     "importe_usd": 14500328,
-     "acciones": 20000,
-     "url": "https://www.sec.gov/Archives/edgar/data/1326801/000095010326014403/ownership.xml"
-    },
-    {
-     "fecha": "2026-09-21",
-     "quien": "Olivan Javier",
-     "cargo": "Chief Operating Officer",
-     "tipo": "venta",
-     "importe_usd": 643535,
-     "acciones": 946,
-     "url": "https://www.sec.gov/Archives/edgar/data/1326801/000095010326014402/ownership.xml"
-    },
-    {
-     "fecha": "2026-09-21",
-     "quien": "Olivan Javier",
-     "cargo": "Chief Operating Officer",
-     "tipo": "venta",
-     "importe_usd": 55782,
-     "acciones": 82,
-     "url": "https://www.sec.gov/Archives/edgar/data/1326801/000095010326014402/ownership.xml"
-    },
-    {
-     "fecha": "2026-09-21",
-     "quien": "Olivan Javier",
-     "cargo": "Chief Operating Officer",
-     "tipo": "venta",
-     "importe_usd": 38775,
-     "acciones": 57,
-     "url": "https://www.sec.gov/Archives/edgar/data/1326801/000095010326014402/ownership.xml"
-    },
-    {
-     "fecha": "2026-09-21",
-     "quien": "Olivan Javier",
-     "cargo": "Chief Operating Officer",
-     "tipo": "venta",
-     "importe_usd": 55782,
-     "acciones": 82,
-     "url": "https://www.sec.gov/Archives/edgar/data/1326801/000095010326014402/ownership.xml"
-    },
-    {
-     "fecha": "2026-09-21",
-     "quien": "Olivan Javier",
-     "cargo": "Chief Operating Officer",
-     "tipo": "venta",
-     "importe_usd": 277550,
-     "acciones": 408,
-     "url": "https://www.sec.gov/Archives/edgar/data/1326801/000095010326014402/ownership.xml"
     }
    ],
    "cobertura": true,
    "compra_cluster": false,
    "n_compradores": 0,
    "importe_compras": 0,
-   "importe_ventas": 53268835
+   "importe_ventas": 24833909
   },
   {
    "t": "IBE.MC",
@@ -2067,13 +2133,13 @@
      "net30": -1.0
     },
     "anual": {
-     "up30": 0,
+     "up30": 2,
      "down30": 0,
-     "up7": 0,
+     "up7": 2,
      "down7": 0,
-     "net30": 0.0
+     "net30": 1.0
     },
-    "est_anual_chg30_pct": 1.37,
+    "est_anual_chg30_pct": 1.25,
     "recomendaciones": {
      "compra": 7,
      "venta": 1,
@@ -2107,9 +2173,9 @@
     },
     "est_anual_chg30_pct": -1.8,
     "recomendaciones": {
-     "compra": 10,
+     "compra": 11,
      "venta": 0,
-     "cambio_compra_1m": 0
+     "cambio_compra_1m": 1
     }
    },
    "eventos": [],
@@ -2141,7 +2207,7 @@
      "down7": 0,
      "net30": 0.0
     },
-    "est_anual_chg30_pct": 0.0,
+    "est_anual_chg30_pct": 0.02,
     "recomendaciones": {
      "compra": 7,
      "venta": 0,
@@ -2166,7 +2232,7 @@
     "trim": {
      "up30": 2,
      "down30": 0,
-     "up7": 1,
+     "up7": 0,
      "down7": 0,
      "net30": 1.0
     },
@@ -2502,26 +2568,26 @@
    "clusters_insiders": 0
   },
   "Materiales": {
-   "amplitud_revisiones": 0.17,
-   "senal": 0,
+   "amplitud_revisiones": -0.22,
+   "senal": -1,
    "empresas_cubiertas": 3,
    "mejorando": 1,
-   "empeorando": 0,
+   "empeorando": 1,
    "hechos_relevantes": 0,
    "clusters_insiders": 0
   },
   "Industriales": {
-   "amplitud_revisiones": 0.08,
+   "amplitud_revisiones": 0.11,
    "senal": 0,
-   "empresas_cubiertas": 5,
+   "empresas_cubiertas": 6,
    "mejorando": 3,
-   "empeorando": 2,
+   "empeorando": 3,
    "hechos_relevantes": 0,
    "clusters_insiders": 0
   },
   "Consumo discrecional": {
-   "amplitud_revisiones": -0.23,
-   "senal": -1,
+   "amplitud_revisiones": -0.15,
+   "senal": 0,
    "empresas_cubiertas": 7,
    "mejorando": 2,
    "empeorando": 5,
@@ -2529,19 +2595,19 @@
    "clusters_insiders": 0
   },
   "Consumo básico": {
-   "amplitud_revisiones": 0.22,
+   "amplitud_revisiones": 0.33,
    "senal": 1,
    "empresas_cubiertas": 3,
    "mejorando": 1,
-   "empeorando": 1,
-   "hechos_relevantes": 0,
+   "empeorando": 0,
+   "hechos_relevantes": 1,
    "clusters_insiders": 0
   },
   "Salud": {
-   "amplitud_revisiones": 0.61,
+   "amplitud_revisiones": 0.53,
    "senal": 1,
    "empresas_cubiertas": 3,
-   "mejorando": 3,
+   "mejorando": 2,
    "empeorando": 0,
    "hechos_relevantes": 1,
    "clusters_insiders": 0
@@ -2552,20 +2618,20 @@
    "empresas_cubiertas": 4,
    "mejorando": 3,
    "empeorando": 0,
-   "hechos_relevantes": 1,
+   "hechos_relevantes": 2,
    "clusters_insiders": 0
   },
   "Tecnología de la información": {
-   "amplitud_revisiones": 0.33,
+   "amplitud_revisiones": 0.53,
    "senal": 1,
    "empresas_cubiertas": 6,
-   "mejorando": 4,
-   "empeorando": 2,
+   "mejorando": 5,
+   "empeorando": 1,
    "hechos_relevantes": 0,
    "clusters_insiders": 0
   },
   "Servicios de comunicación": {
-   "amplitud_revisiones": 0.09,
+   "amplitud_revisiones": -0.04,
    "senal": 0,
    "empresas_cubiertas": 2,
    "mejorando": 1,
@@ -2574,10 +2640,10 @@
    "clusters_insiders": 0
   },
   "Utilities": {
-   "amplitud_revisiones": 0.0,
-   "senal": 0,
+   "amplitud_revisiones": 1.0,
+   "senal": 1,
    "empresas_cubiertas": 1,
-   "mejorando": 0,
+   "mejorando": 1,
    "empeorando": 0,
    "hechos_relevantes": 0,
    "clusters_insiders": 0
@@ -2604,17 +2670,10 @@
  "central_banks": [
   {
    "banco": "BCE",
-   "tipo": "discurso",
-   "fecha": "2026-10-06",
-   "titulo": "Piero Cipollone: Money in the digital age: digital euro, tokenisation and the role of central banks",
-   "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261006~0da978f159.en.html"
-  },
-  {
-   "banco": "BCE",
    "tipo": "comunicado",
-   "fecha": "2026-10-06",
-   "titulo": "Philip R. Lane: Interview with Ansa",
-   "url": "https://www.ecb.europa.eu//press/inter/date/2026/html/ecb.in261006~bc94400297.en.html"
+   "fecha": "2026-10-08",
+   "titulo": "Piero Cipollone: Interview with Corriere della Sera",
+   "url": "https://www.ecb.europa.eu//press/inter/date/2026/html/ecb.in261008~3184e7d0d0.en.html"
   }
  ]
 }

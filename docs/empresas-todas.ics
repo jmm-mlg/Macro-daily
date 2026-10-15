@@ -7,141 +7,8 @@ X-WR-CALNAME:Empresas · todas
 X-WR-TIMEZONE:Europe/Madrid
 X-PUBLISHED-TTL:PT12H
 BEGIN:VEVENT
-UID:5011a5e17d62981cc9390781a3dcff44@macro-monitor
-DTSTAMP:20261013T125459Z
-DTSTART;VALUE=DATE:20261013
-DTEND;VALUE=DATE:20261014
-SUMMARY:🔴 JPMorgan (JPM) · resultados (fecha estimada)
-DESCRIPTION:🇺🇸 Financiero › Bancos\nPublica hora no confirmada.\n
- BPA esperado: 5.94\nFuente: yfinance (estimada)\nNota: abre la temporada
-  de resultados
-END:VEVENT
-BEGIN:VEVENT
-UID:569dd2997f022a31dd2ebd40b4bcd2fc@macro-monitor
-DTSTAMP:20261013T125459Z
-DTSTART;VALUE=DATE:20261013
-DTEND;VALUE=DATE:20261014
-SUMMARY:🔴 UnitedHealth (UNH) · resultados (fecha estimada)
-DESCRIPTION:🇺🇸 Salud › Servicios sanitarios y aseguradoras\nPubli
- ca hora no confirmada.\nBPA esperado: 4.14\nFuente: yfinance (estimada)
-END:VEVENT
-BEGIN:VEVENT
-UID:5860f0c8f90e010330e5357c24a209eb@macro-monitor
-DTSTAMP:20261013T125459Z
-DTSTART;VALUE=DATE:20261013
-DTEND;VALUE=DATE:20261014
-SUMMARY:💰 Accenture (ACN) · ex-dividendo
-DESCRIPTION:🇺🇸 Tecnología de la información › Servicios de TI\n
- El precio se ajusta a la baja por el dividendo en la apertura.
-END:VEVENT
-BEGIN:VEVENT
-UID:a00472e1b95b51f197d65832d396a882@macro-monitor
-DTSTAMP:20261013T125459Z
-DTSTART;VALUE=DATE:20261013
-DTEND;VALUE=DATE:20261014
-SUMMARY:💰 BBVA (BBVA.MC) · ex-dividendo
-DESCRIPTION:🇪🇺 Financiero › Bancos\nEl precio se ajusta a la baja
-  por el dividendo en la apertura.
-END:VEVENT
-BEGIN:VEVENT
-UID:ec2f6a74f73160c02611a23ebe235485@macro-monitor
-DTSTAMP:20261013T125459Z
-DTSTART;VALUE=DATE:20261013
-DTEND;VALUE=DATE:20261014
-SUMMARY:💰 Vinci (DG.PA) · ex-dividendo
-DESCRIPTION:🇪🇺 Industriales › Construcción e ingeniería\nEl pre
- cio se ajusta a la baja por el dividendo en la apertura.
-END:VEVENT
-BEGIN:VEVENT
-UID:8276d02de701c1e2ed31c28ba3bc984a@macro-monitor
-DTSTAMP:20261013T125459Z
-DTSTART;VALUE=DATE:20261013
-DTEND;VALUE=DATE:20261014
-SUMMARY:🟠 Goldman Sachs (GS) · resultados (fecha estimada)
-DESCRIPTION:🇺🇸 Financiero › Mercados de capitales y gestión de a
- ctivos\nPublica hora no confirmada.\nBPA esperado: 13.09\nFuente: yfinan
- ce (estimada)
-END:VEVENT
-BEGIN:VEVENT
-UID:fd575cc1931cabd823536db1707d4dda@macro-monitor
-DTSTAMP:20261013T125459Z
-DTSTART;VALUE=DATE:20261013
-DTEND;VALUE=DATE:20261014
-SUMMARY:🟠 Johnson & Johnson (JNJ) · resultados (fecha estimada)
-DESCRIPTION:🇺🇸 Salud › Farmacia\nPublica hora no confirmada.\nBPA
-  esperado: 2.53\nFuente: yfinance (estimada)\nNota: abre la temporada de
-  salud
-END:VEVENT
-BEGIN:VEVENT
-UID:bc3c09ceb5641baf8ae7b6f18e93a202@macro-monitor
-DTSTAMP:20261013T125459Z
-DTSTART;VALUE=DATE:20261013
-DTEND;VALUE=DATE:20261014
-SUMMARY:🟠 Wells Fargo (WFC) · resultados (fecha estimada)
-DESCRIPTION:🇺🇸 Financiero › Bancos\nPublica hora no confirmada.\n
- BPA esperado: 1.86\nFuente: yfinance (estimada)
-END:VEVENT
-BEGIN:VEVENT
-UID:3be61446600b0c88ef4b89e6f8d4257a@macro-monitor
-DTSTAMP:20261013T125459Z
-DTSTART:20261014T050000Z
-DTEND:20261014T053000Z
-SUMMARY:🔴 ASML (ASML.AS) · resultados (fecha estimada)
-DESCRIPTION:🇪🇺 Tecnología de la información › Equipos de semico
- nductores\nPublica por la mañana (hora europea).\nBPA esperado: 10.76\n
- Fuente: yfinance (estimada)\nNota: pedidos = capex global de chips
-END:VEVENT
-BEGIN:VEVENT
-UID:f4b7d60c9f0fa7efbfc3e55d6ceef580@macro-monitor
-DTSTAMP:20261013T125459Z
-DTSTART;VALUE=DATE:20261014
-DTEND;VALUE=DATE:20261015
-SUMMARY:🟠 Bank of America (BAC) · resultados (fecha estimada)
-DESCRIPTION:🇺🇸 Financiero › Bancos\nPublica hora no confirmada.\n
- BPA esperado: 1.10\nFuente: yfinance (estimada)
-END:VEVENT
-BEGIN:VEVENT
-UID:fd698cf94786feae5e1b99100273d8fc@macro-monitor
-DTSTAMP:20261013T125459Z
-DTSTART;VALUE=DATE:20261014
-DTEND;VALUE=DATE:20261015
-SUMMARY:🟠 BlackRock (BLK) · resultados (fecha estimada)
-DESCRIPTION:🇺🇸 Financiero › Mercados de capitales y gestión de a
- ctivos\nPublica hora no confirmada.\nBPA esperado: 14.31\nFuente: yfinan
- ce (estimada)\nNota: flujos de inversión
-END:VEVENT
-BEGIN:VEVENT
-UID:0537c1a9465e502d0ac47e42b883d2b9@macro-monitor
-DTSTAMP:20261013T125459Z
-DTSTART;VALUE=DATE:20261014
-DTEND;VALUE=DATE:20261015
-SUMMARY:🟠 Fastenal (FAST) · resultados (fecha estimada)
-DESCRIPTION:🇺🇸 Industriales › Distribución industrial\nPublica h
- ora no confirmada.\nBPA esperado: 0.34\nFuente: yfinance (estimada)\nNot
- a: ventas diarias = pulso de la industria
-END:VEVENT
-BEGIN:VEVENT
-UID:7655a267272036aa8940cd3d426b82ae@macro-monitor
-DTSTAMP:20261013T125459Z
-DTSTART;VALUE=DATE:20261014
-DTEND;VALUE=DATE:20261015
-SUMMARY:🟠 Morgan Stanley (MS) · resultados (fecha estimada)
-DESCRIPTION:🇺🇸 Financiero › Mercados de capitales y gestión de a
- ctivos\nPublica hora no confirmada.\nBPA esperado: 2.92\nFuente: yfinanc
- e (estimada)
-END:VEVENT
-BEGIN:VEVENT
-UID:dfef448788772c7e647423049290597a@macro-monitor
-DTSTAMP:20261013T125459Z
-DTSTART;VALUE=DATE:20261014
-DTEND;VALUE=DATE:20261015
-SUMMARY:🟠 Progressive (PGR) · resultados (fecha estimada)
-DESCRIPTION:🇺🇸 Financiero › Seguros y reaseguro\nPublica hora no 
- confirmada.\nBPA esperado: 4.38\nFuente: yfinance (estimada)
-END:VEVENT
-BEGIN:VEVENT
 UID:32511dc23a4b5f7d0e62fb455db3410f@macro-monitor
-DTSTAMP:20261013T125459Z
+DTSTAMP:20261015T101420Z
 DTSTART;VALUE=DATE:20261015
 DTEND;VALUE=DATE:20261016
 SUMMARY:🔴 Prologis (PLD) · resultados (fecha estimada)
@@ -151,7 +18,7 @@ DESCRIPTION:🇺🇸 Inmobiliario › REITs logísticos\nPublica hora no
 END:VEVENT
 BEGIN:VEVENT
 UID:80f661c615a3e4de4447f41bfd43e480@macro-monitor
-DTSTAMP:20261013T125459Z
+DTSTAMP:20261015T101420Z
 DTSTART;VALUE=DATE:20261015
 DTEND;VALUE=DATE:20261016
 SUMMARY:🔴 TSMC (TSM) · resultados (fecha estimada)
@@ -162,7 +29,7 @@ DESCRIPTION:🇺🇸 Tecnología de la información › Semiconductores\n
 END:VEVENT
 BEGIN:VEVENT
 UID:e2a33fbc0fa57bc26b98b3df636709ff@macro-monitor
-DTSTAMP:20261013T125459Z
+DTSTAMP:20261015T101420Z
 DTSTART;VALUE=DATE:20261015
 DTEND;VALUE=DATE:20261016
 SUMMARY:💰 Abbott (ABT) · ex-dividendo
@@ -171,7 +38,7 @@ DESCRIPTION:🇺🇸 Salud › Equipos y tecnología médica\nEl precio s
 END:VEVENT
 BEGIN:VEVENT
 UID:198b7be9b21f03894fd6024b396d2051@macro-monitor
-DTSTAMP:20261013T125459Z
+DTSTAMP:20261015T101420Z
 DTSTART;VALUE=DATE:20261015
 DTEND;VALUE=DATE:20261016
 SUMMARY:💰 Delta Air Lines (DAL) · ex-dividendo
@@ -180,7 +47,7 @@ DESCRIPTION:🇺🇸 Industriales › Aerolíneas\nEl precio se ajusta a
 END:VEVENT
 BEGIN:VEVENT
 UID:b84825148bb9def01963f88fec9e7484@macro-monitor
-DTSTAMP:20261013T125459Z
+DTSTAMP:20261015T101420Z
 DTSTART;VALUE=DATE:20261015
 DTEND;VALUE=DATE:20261016
 SUMMARY:💰 Diageo (DGE.L) · ex-dividendo
@@ -189,7 +56,7 @@ DESCRIPTION:🇪🇺 Consumo básico › Bebidas\nEl precio se ajusta a l
 END:VEVENT
 BEGIN:VEVENT
 UID:0d7ed0d69905a7155e607eaa69b14784@macro-monitor
-DTSTAMP:20261013T125459Z
+DTSTAMP:20261015T101420Z
 DTSTART:20261015T050000Z
 DTEND:20261015T053000Z
 SUMMARY:🟠 Ericsson (ERIC-B.ST) · resultados (fecha estimada)
@@ -199,7 +66,7 @@ DESCRIPTION:🇪🇺 Tecnología de la información › Equipos de comuni
 END:VEVENT
 BEGIN:VEVENT
 UID:8364c39e223c7c2f9b488ed9298bb621@macro-monitor
-DTSTAMP:20261013T125459Z
+DTSTAMP:20261015T101420Z
 DTSTART;VALUE=DATE:20261015
 DTEND;VALUE=DATE:20261016
 SUMMARY:💰 Freeport-McMoRan (FCX) · ex-dividendo
@@ -207,8 +74,54 @@ DESCRIPTION:🇺🇸 Materiales › Minería diversificada\nEl precio se
  ajusta a la baja por el dividendo en la apertura.
 END:VEVENT
 BEGIN:VEVENT
+UID:fa83d0e3e7f9cdab9b5523593298fd72@macro-monitor
+DTSTAMP:20261015T101420Z
+DTSTART;VALUE=DATE:20261015
+DTEND;VALUE=DATE:20261016
+SUMMARY:💰 Mid-America Apartment (MAA) · ex-dividendo
+DESCRIPTION:🇺🇸 Inmobiliario › REITs residenciales\nEl precio se a
+ justa a la baja por el dividendo en la apertura.
+END:VEVENT
+BEGIN:VEVENT
+UID:41fd98f690fab4ae9a4ba9cfce3d64cb@macro-monitor
+DTSTAMP:20261015T101420Z
+DTSTART;VALUE=DATE:20261015
+DTEND;VALUE=DATE:20261016
+SUMMARY:🟠 PNC Financial (PNC) · resultados (fecha estimada)
+DESCRIPTION:🇺🇸 Financiero › Bancos regionales (EE.UU.)\nPublica h
+ ora no confirmada.\nBPA esperado: 4.89\nFuente: yfinance (estimada)
+END:VEVENT
+BEGIN:VEVENT
+UID:ec4b1e5e7e37e300009a92fd4dfd639f@macro-monitor
+DTSTAMP:20261015T101420Z
+DTSTART;VALUE=DATE:20261015
+DTEND;VALUE=DATE:20261016
+SUMMARY:💰 Persimmon (PSN.L) · ex-dividendo
+DESCRIPTION:🇪🇺 Industriales › Constructoras de viviendas\nEl prec
+ io se ajusta a la baja por el dividendo en la apertura.
+END:VEVENT
+BEGIN:VEVENT
+UID:da955ab3de24488a85efa9d845d1d6ca@macro-monitor
+DTSTAMP:20261015T101420Z
+DTSTART;VALUE=DATE:20261015
+DTEND;VALUE=DATE:20261016
+SUMMARY:🟠 U.S. Bancorp (USB) · resultados (fecha estimada)
+DESCRIPTION:🇺🇸 Financiero › Bancos regionales (EE.UU.)\nPublica h
+ ora no confirmada.\nBPA esperado: 1.32\nFuente: yfinance (estimada)\nNot
+ a: el canario del crédito de 2023
+END:VEVENT
+BEGIN:VEVENT
+UID:8949a3f8a0bdd0d07edb8eb298d4f1dd@macro-monitor
+DTSTAMP:20261015T101420Z
+DTSTART;VALUE=DATE:20261019
+DTEND;VALUE=DATE:20261020
+SUMMARY:💰 Caterpillar (CAT) · ex-dividendo
+DESCRIPTION:🇺🇸 Industriales › Maquinaria y bienes de equipo\nEl p
+ recio se ajusta a la baja por el dividendo en la apertura.
+END:VEVENT
+BEGIN:VEVENT
 UID:ab761c85262b04ddee29973b63ff949f@macro-monitor
-DTSTAMP:20261013T125459Z
+DTSTAMP:20261015T101420Z
 DTSTART;VALUE=DATE:20261019
 DTEND;VALUE=DATE:20261020
 SUMMARY:💰 Atlas Copco (ATCO-A.ST) · ex-dividendo
@@ -217,7 +130,7 @@ DESCRIPTION:🇪🇺 Industriales › Maquinaria y bienes de equipo\nEl p
 END:VEVENT
 BEGIN:VEVENT
 UID:57710489a7f37564be005c4d97c8131d@macro-monitor
-DTSTAMP:20261013T125459Z
+DTSTAMP:20261015T101420Z
 DTSTART:20261020T050000Z
 DTEND:20261020T053000Z
 SUMMARY:🟠 ABB (ABBN.SW) · resultados (fecha estimada)
@@ -227,16 +140,16 @@ DESCRIPTION:🇪🇺 Industriales › Equipos eléctricos\nPublica por la
 END:VEVENT
 BEGIN:VEVENT
 UID:44fa40ec18284b6643fb6cbfa292a9ee@macro-monitor
-DTSTAMP:20261013T125459Z
+DTSTAMP:20261015T101420Z
 DTSTART;VALUE=DATE:20261020
 DTEND;VALUE=DATE:20261021
 SUMMARY:🟠 Chubb (CB) · resultados (fecha estimada)
 DESCRIPTION:🇺🇸 Financiero › Seguros y reaseguro\nPublica hora no 
- confirmada.\nBPA esperado: 6.74\nFuente: yfinance (estimada)
+ confirmada.\nBPA esperado: 6.80\nFuente: yfinance (estimada)
 END:VEVENT
 BEGIN:VEVENT
 UID:8cccfd358d1e25d7bbc6e8e55a53afb0@macro-monitor
-DTSTAMP:20261013T125459Z
+DTSTAMP:20261015T101420Z
 DTSTART;VALUE=DATE:20261020
 DTEND;VALUE=DATE:20261021
 SUMMARY:🟠 Capital One (COF) · resultados (fecha estimada)
@@ -246,7 +159,7 @@ DESCRIPTION:🇺🇸 Financiero › Finanzas al consumo\nPublica hora no
 END:VEVENT
 BEGIN:VEVENT
 UID:2aa7a9135e8c76f53acfe333425226ae@macro-monitor
-DTSTAMP:20261013T125459Z
+DTSTAMP:20261015T101420Z
 DTSTART:20261020T050000Z
 DTEND:20261020T053000Z
 SUMMARY:🟠 Deutsche Börse (DB1.DE) · resultados (fecha estimada)
@@ -256,7 +169,7 @@ DESCRIPTION:🇪🇺 Financiero › Mercados de capitales y gestión de a
 END:VEVENT
 BEGIN:VEVENT
 UID:8342e6f3c9d4e093b35d4b46ba29d46b@macro-monitor
-DTSTAMP:20261013T125459Z
+DTSTAMP:20261015T101420Z
 DTSTART;VALUE=DATE:20261020
 DTEND;VALUE=DATE:20261021
 SUMMARY:💰 Dell (DELL) · ex-dividendo
@@ -265,7 +178,7 @@ DESCRIPTION:🇺🇸 Tecnología de la información › Hardware\nEl prec
 END:VEVENT
 BEGIN:VEVENT
 UID:3c5ec4153a34b7c072a9de42d0138089@macro-monitor
-DTSTAMP:20261013T125459Z
+DTSTAMP:20261015T101420Z
 DTSTART;VALUE=DATE:20261020
 DTEND;VALUE=DATE:20261021
 SUMMARY:🟠 General Motors (GM) · resultados (fecha estimada)
@@ -274,7 +187,7 @@ DESCRIPTION:🇺🇸 Consumo discrecional › Automóviles\nPublica hora
 END:VEVENT
 BEGIN:VEVENT
 UID:45b28737dbce28b934a6a210cac9d9f5@macro-monitor
-DTSTAMP:20261013T125459Z
+DTSTAMP:20261015T101420Z
 DTSTART;VALUE=DATE:20261020
 DTEND;VALUE=DATE:20261021
 SUMMARY:🟠 Intuitive Surgical (ISRG) · resultados (fecha estimada)
@@ -283,7 +196,7 @@ DESCRIPTION:🇺🇸 Salud › Equipos y tecnología médica\nPublica hor
 END:VEVENT
 BEGIN:VEVENT
 UID:9d9ea2543cb7c952a168155aa769ca24@macro-monitor
-DTSTAMP:20261013T125459Z
+DTSTAMP:20261015T101420Z
 DTSTART;VALUE=DATE:20261020
 DTEND;VALUE=DATE:20261021
 SUMMARY:🟠 Netflix (NFLX) · resultados (fecha estimada)
@@ -291,17 +204,27 @@ DESCRIPTION:🇺🇸 Servicios de comunicación › Entretenimiento\nPubl
  ica hora no confirmada.\nBPA esperado: 0.82\nFuente: yfinance (estimada)
 END:VEVENT
 BEGIN:VEVENT
+UID:d40552ae52097fa9371df4724d43fd25@macro-monitor
+DTSTAMP:20261015T101420Z
+DTSTART;VALUE=DATE:20261020
+DTEND;VALUE=DATE:20261021
+SUMMARY:🟠 Omnicom (OMC) · resultados (fecha estimada)
+DESCRIPTION:🇺🇸 Servicios de comunicación › Publicidad\nPublica h
+ ora no confirmada.\nBPA esperado: 2.67\nFuente: yfinance (estimada)\nNot
+ a: gasto publicitario = adelantado del consumo
+END:VEVENT
+BEGIN:VEVENT
 UID:0dd6dc6b906d69bdb0ddc95a2df8a232@macro-monitor
-DTSTAMP:20261013T125459Z
+DTSTAMP:20261015T101420Z
 DTSTART;VALUE=DATE:20261020
 DTEND;VALUE=DATE:20261021
 SUMMARY:🟠 RTX (RTX) · resultados (fecha estimada)
 DESCRIPTION:🇺🇸 Industriales › Aeroespacial y defensa\nPublica hor
- a no confirmada.\nBPA esperado: 1.77\nFuente: yfinance (estimada)
+ a no confirmada.\nBPA esperado: 1.78\nFuente: yfinance (estimada)
 END:VEVENT
 BEGIN:VEVENT
 UID:f47191bb129cc64531d8e3c6826ccb6c@macro-monitor
-DTSTAMP:20261013T125459Z
+DTSTAMP:20261015T101420Z
 DTSTART:20261021T050000Z
 DTEND:20261021T053000Z
 SUMMARY:🔴 Iberdrola (IBE.MC) · resultados (fecha estimada)
@@ -310,17 +233,17 @@ DESCRIPTION:🇪🇺 Utilities › Eléctricas\nPublica por la mañana (h
 END:VEVENT
 BEGIN:VEVENT
 UID:8a7ae212ace76bed48b6e644b379ec54@macro-monitor
-DTSTAMP:20261013T125459Z
+DTSTAMP:20261015T101420Z
 DTSTART;VALUE=DATE:20261021
 DTEND;VALUE=DATE:20261022
 SUMMARY:🔴 Meta (META) · resultados (fecha estimada)
 DESCRIPTION:🇺🇸 Servicios de comunicación › Medios interactivos\n
- Publica hora no confirmada.\nBPA esperado: 6.25\nFuente: yfinance (estim
+ Publica hora no confirmada.\nBPA esperado: 6.01\nFuente: yfinance (estim
  ada)
 END:VEVENT
 BEGIN:VEVENT
 UID:dde2bb20474bbcb3f95d36ed80158d4f@macro-monitor
-DTSTAMP:20261013T125459Z
+DTSTAMP:20261015T101420Z
 DTSTART:20261021T050000Z
 DTEND:20261021T053000Z
 SUMMARY:🔴 SAP (SAP.DE) · resultados (fecha estimada)
@@ -330,7 +253,7 @@ DESCRIPTION:🇪🇺 Tecnología de la información › Software\nPublica
 END:VEVENT
 BEGIN:VEVENT
 UID:8981c4ec8c081fa45d6fa1289f8ebc76@macro-monitor
-DTSTAMP:20261013T125459Z
+DTSTAMP:20261015T101420Z
 DTSTART;VALUE=DATE:20261021
 DTEND;VALUE=DATE:20261022
 SUMMARY:🔴 Tesla (TSLA) · resultados (fecha estimada)
@@ -339,34 +262,63 @@ DESCRIPTION:🇺🇸 Consumo discrecional › Automóviles\nPublica hora
 END:VEVENT
 BEGIN:VEVENT
 UID:e386826e84f6f81ec3b7d682e5e50b97@macro-monitor
-DTSTAMP:20261013T125459Z
+DTSTAMP:20261015T101420Z
 DTSTART;VALUE=DATE:20261021
 DTEND;VALUE=DATE:20261022
 SUMMARY:🟠 Abbott (ABT) · resultados (fecha estimada)
 DESCRIPTION:🇺🇸 Salud › Equipos y tecnología médica\nPublica hor
- a no confirmada.\nBPA esperado: 1.42\nFuente: yfinance (estimada)
+ a no confirmada.\nBPA esperado: 1.41\nFuente: yfinance (estimada)
+END:VEVENT
+BEGIN:VEVENT
+UID:eeb993b4562461d11f1357611c9ac17b@macro-monitor
+DTSTAMP:20261015T101420Z
+DTSTART;VALUE=DATE:20261021
+DTEND;VALUE=DATE:20261022
+SUMMARY:🟠 CME Group (CME) · resultados (fecha estimada)
+DESCRIPTION:🇺🇸 Financiero › Bolsas y datos financieros\nPublica h
+ ora no confirmada.\nBPA esperado: 2.98\nFuente: yfinance (estimada)\nNot
+ a: volatilidad = volumen
+END:VEVENT
+BEGIN:VEVENT
+UID:1d9111d86121d905aeefd15ba29dcb0e@macro-monitor
+DTSTAMP:20261015T101420Z
+DTSTART;VALUE=DATE:20261021
+DTEND;VALUE=DATE:20261022
+SUMMARY:🟠 Danaher (DHR) · resultados (fecha estimada)
+DESCRIPTION:🇺🇸 Salud › Herramientas y servicios de ciencias de la
+  vida\nPublica hora no confirmada.\nBPA esperado: 1.92\nFuente: yfinance
+  (estimada)\nNota: diagnóstico y bioprocesos
+END:VEVENT
+BEGIN:VEVENT
+UID:641d1431837f45d39e629514fc37b96d@macro-monitor
+DTSTAMP:20261015T101420Z
+DTSTART;VALUE=DATE:20261021
+DTEND;VALUE=DATE:20261022
+SUMMARY:🟠 Kinder Morgan (KMI) · resultados (fecha estimada)
+DESCRIPTION:🇺🇸 Energía › Midstream\nPublica hora no confirmada.\
+ nBPA esperado: 0.33\nFuente: yfinance (estimada)
 END:VEVENT
 BEGIN:VEVENT
 UID:69377e7c4a9b6c5a6acaf5265e3fd968@macro-monitor
-DTSTAMP:20261013T125459Z
+DTSTAMP:20261015T101420Z
 DTSTART;VALUE=DATE:20261021
 DTEND;VALUE=DATE:20261022
 SUMMARY:🟠 NextEra (NEE) · resultados (fecha estimada)
 DESCRIPTION:🇺🇸 Utilities › Eléctricas\nPublica hora no confirmad
- a.\nBPA esperado: 1.18\nFuente: yfinance (estimada)\nNota: renovables
+ a.\nBPA esperado: 1.17\nFuente: yfinance (estimada)\nNota: renovables
 END:VEVENT
 BEGIN:VEVENT
 UID:ccb56fbdb62eaf69c52971af335e3305@macro-monitor
-DTSTAMP:20261013T125459Z
+DTSTAMP:20261015T101420Z
 DTSTART;VALUE=DATE:20261021
 DTEND;VALUE=DATE:20261022
 SUMMARY:🟠 Philip Morris (PM) · resultados (fecha estimada)
 DESCRIPTION:🇺🇸 Consumo básico › Tabaco\nPublica hora no confirma
- da.\nBPA esperado: 2.33\nFuente: yfinance (estimada)
+ da.\nBPA esperado: 2.32\nFuente: yfinance (estimada)
 END:VEVENT
 BEGIN:VEVENT
 UID:b6fc6700652b9cdc86862f975f7af16c@macro-monitor
-DTSTAMP:20261013T125459Z
+DTSTAMP:20261015T101420Z
 DTSTART:20261021T050000Z
 DTEND:20261021T053000Z
 SUMMARY:🟠 Randstad (RAND.AS) · resultados (fecha estimada)
@@ -376,7 +328,7 @@ DESCRIPTION:🇪🇺 Industriales › Servicios profesionales y empleo\nP
 END:VEVENT
 BEGIN:VEVENT
 UID:2a128c14e77fcc021bc4828bfe049838@macro-monitor
-DTSTAMP:20261013T125459Z
+DTSTAMP:20261015T101420Z
 DTSTART;VALUE=DATE:20261021
 DTEND;VALUE=DATE:20261022
 SUMMARY:🟠 Thermo Fisher (TMO) · resultados (fecha estimada)
@@ -386,7 +338,7 @@ DESCRIPTION:🇺🇸 Salud › Herramientas y servicios de ciencias de la
 END:VEVENT
 BEGIN:VEVENT
 UID:fdd01b95a732480bdd422ecbd23e26e8@macro-monitor
-DTSTAMP:20261013T125459Z
+DTSTAMP:20261015T101420Z
 DTSTART;VALUE=DATE:20261022
 DTEND;VALUE=DATE:20261023
 SUMMARY:🔴 Procter & Gamble (PG) · resultados (fecha estimada)
@@ -396,7 +348,7 @@ DESCRIPTION:🇺🇸 Consumo básico › Productos del hogar y cuidado pe
 END:VEVENT
 BEGIN:VEVENT
 UID:f9b0bc297bd6b7480d6a0662963245ba@macro-monitor
-DTSTAMP:20261013T125459Z
+DTSTAMP:20261015T101420Z
 DTSTART:20261022T050000Z
 DTEND:20261022T053000Z
 SUMMARY:🟠 argenx (ARGX) · resultados (fecha estimada)
@@ -406,17 +358,27 @@ DESCRIPTION:🇪🇺 Salud › Biotecnología\nPublica por la mañana (ho
 END:VEVENT
 BEGIN:VEVENT
 UID:bf37ed6785098a289131a7ec1b5d5476@macro-monitor
-DTSTAMP:20261013T125459Z
+DTSTAMP:20261015T101420Z
 DTSTART:20261022T050000Z
 DTEND:20261022T053000Z
 SUMMARY:🟠 Atlas Copco (ATCO-A.ST) · resultados (fecha estimada)
 DESCRIPTION:🇪🇺 Industriales › Maquinaria y bienes de equipo\nPubl
- ica por la mañana (hora europea).\nBPA esperado: 1.67\nFuente: yfinance
+ ica por la mañana (hora europea).\nBPA esperado: 1.66\nFuente: yfinance
   (estimada)\nNota: pedidos = indicador adelantado de capex
 END:VEVENT
 BEGIN:VEVENT
+UID:e1d2203177313021b02d729465958014@macro-monitor
+DTSTAMP:20261015T101420Z
+DTSTART;VALUE=DATE:20261022
+DTEND;VALUE=DATE:20261023
+SUMMARY:🟠 Comcast (CMCSA) · resultados (fecha estimada)
+DESCRIPTION:🇺🇸 Servicios de comunicación › Medios tradicionales 
+ y cable\nPublica hora no confirmada.\nBPA esperado: 0.99\nFuente: yfinan
+ ce (estimada)\nNota: cable\, parques\, medios
+END:VEVENT
+BEGIN:VEVENT
 UID:b68bcf9a4a045375327bec91389a8a07@macro-monitor
-DTSTAMP:20261013T125459Z
+DTSTAMP:20261015T101420Z
 DTSTART;VALUE=DATE:20261022
 DTEND;VALUE=DATE:20261023
 SUMMARY:🟠 Dow (DOW) · resultados (fecha estimada)
@@ -426,25 +388,45 @@ DESCRIPTION:🇺🇸 Materiales › Química diversificada / gases indust
 END:VEVENT
 BEGIN:VEVENT
 UID:bba0aa331156338a9bf189e8a206a8e8@macro-monitor
-DTSTAMP:20261013T125459Z
+DTSTAMP:20261015T101420Z
 DTSTART;VALUE=DATE:20261022
 DTEND;VALUE=DATE:20261023
 SUMMARY:🟠 Honeywell (HON) · resultados (fecha estimada)
 DESCRIPTION:🇺🇸 Industriales › Conglomerados industriales\nPublica
-  hora no confirmada.\nBPA esperado: 2.17\nFuente: yfinance (estimada)
+  hora no confirmada.\nBPA esperado: 2.16\nFuente: yfinance (estimada)
+END:VEVENT
+BEGIN:VEVENT
+UID:1c3075ecf333e43730c6ed061e2c2298@macro-monitor
+DTSTAMP:20261015T101420Z
+DTSTART:20261022T050000Z
+DTEND:20261022T053000Z
+SUMMARY:🟠 Kuehne+Nagel (KNIN.SW) · resultados (fecha estimada)
+DESCRIPTION:🇪🇺 Industriales › Logística y transporte de mercanc
+ ías\nPublica por la mañana (hora europea).\nBPA esperado: 2.38\nFuente
+ : yfinance (estimada)\nNota: transitario: volúmenes de comercio global
 END:VEVENT
 BEGIN:VEVENT
 UID:fd6f26c2047893f14c857b8b62b144cc@macro-monitor
-DTSTAMP:20261013T125459Z
+DTSTAMP:20261015T101420Z
 DTSTART;VALUE=DATE:20261022
 DTEND;VALUE=DATE:20261023
 SUMMARY:🟠 Lockheed Martin (LMT) · resultados (fecha estimada)
 DESCRIPTION:🇺🇸 Industriales › Aeroespacial y defensa\nPublica hor
- a no confirmada.\nBPA esperado: 7.52\nFuente: yfinance (estimada)
+ a no confirmada.\nBPA esperado: 7.53\nFuente: yfinance (estimada)
+END:VEVENT
+BEGIN:VEVENT
+UID:661cd9fcb249052002c9bc3a2987713b@macro-monitor
+DTSTAMP:20261015T101420Z
+DTSTART;VALUE=DATE:20261022
+DTEND;VALUE=DATE:20261023
+SUMMARY:🟠 Newmont (NEM) · resultados (fecha estimada)
+DESCRIPTION:🇺🇸 Materiales › Metales preciosos\nPublica hora no co
+ nfirmada.\nBPA esperado: 1.93\nFuente: yfinance (estimada)\nNota: oro\; 
+ apalancamiento al precio del metal
 END:VEVENT
 BEGIN:VEVENT
 UID:744962624b19e2dddf4b1dd58470e396@macro-monitor
-DTSTAMP:20261013T125459Z
+DTSTAMP:20261015T101420Z
 DTSTART:20261022T050000Z
 DTEND:20261022T053000Z
 SUMMARY:🟠 Nokia (NOKIA.HE) · resultados (fecha estimada)
@@ -453,37 +435,56 @@ DESCRIPTION:🇪🇺 Tecnología de la información › Equipos de comuni
  ente: yfinance (estimada)
 END:VEVENT
 BEGIN:VEVENT
+UID:53852291efda92b4283050e2dece0aa2@macro-monitor
+DTSTAMP:20261015T101420Z
+DTSTART;VALUE=DATE:20261022
+DTEND;VALUE=DATE:20261023
+SUMMARY:🟠 Spotify (SPOT) · resultados (fecha estimada)
+DESCRIPTION:🇺🇸 Servicios de comunicación › Entretenimiento\nPubl
+ ica hora no confirmada.\nBPA esperado: 2.82\nFuente: yfinance (estimada)
+ \nNota: suscripciones\; cotiza en NYSE
+END:VEVENT
+BEGIN:VEVENT
 UID:333413b0da8f36599069c7aebef3a3d6@macro-monitor
-DTSTAMP:20261013T125459Z
+DTSTAMP:20261015T101420Z
 DTSTART;VALUE=DATE:20261022
 DTEND;VALUE=DATE:20261023
 SUMMARY:🟠 Union Pacific (UNP) · resultados (fecha estimada)
 DESCRIPTION:🇺🇸 Industriales › Transporte y logística\nPublica ho
- ra no confirmada.\nBPA esperado: 3.46\nFuente: yfinance (estimada)\nNota
+ ra no confirmada.\nBPA esperado: 3.47\nFuente: yfinance (estimada)\nNota
  : ferrocarril = mercancías EE.UU.
 END:VEVENT
 BEGIN:VEVENT
 UID:002e8511b1512d404112cfde3bba9718@macro-monitor
-DTSTAMP:20261013T125459Z
+DTSTAMP:20261015T101420Z
 DTSTART;VALUE=DATE:20261022
 DTEND;VALUE=DATE:20261023
 SUMMARY:🟠 Valero (VLO) · resultados (fecha estimada)
 DESCRIPTION:🇺🇸 Energía › Refino y marketing\nPublica hora no con
- firmada.\nBPA esperado: 20.41\nFuente: yfinance (estimada)
+ firmada.\nBPA esperado: 20.83\nFuente: yfinance (estimada)
+END:VEVENT
+BEGIN:VEVENT
+UID:e4f0e2dd449c482929e1dbe97031f1b0@macro-monitor
+DTSTAMP:20261015T101420Z
+DTSTART;VALUE=DATE:20261023
+DTEND;VALUE=DATE:20261024
+SUMMARY:💰 Procter & Gamble (PG) · ex-dividendo
+DESCRIPTION:🇺🇸 Consumo básico › Productos del hogar y cuidado pe
+ rsonal\nEl precio se ajusta a la baja por el dividendo en la apertura.
 END:VEVENT
 BEGIN:VEVENT
 UID:f9179248a2426d6e16a16cb216aa7b37@macro-monitor
-DTSTAMP:20261013T125459Z
+DTSTAMP:20261015T101420Z
 DTSTART;VALUE=DATE:20261023
 DTEND;VALUE=DATE:20261024
 SUMMARY:🟠 American Express (AXP) · resultados (fecha estimada)
 DESCRIPTION:🇺🇸 Financiero › Finanzas al consumo\nPublica hora no 
- confirmada.\nBPA esperado: 4.59\nFuente: yfinance (estimada)\nNota: cons
+ confirmada.\nBPA esperado: 4.64\nFuente: yfinance (estimada)\nNota: cons
  umidor de renta alta
 END:VEVENT
 BEGIN:VEVENT
 UID:5c6372a2b4cbadb09bc69b6cc6b99f55@macro-monitor
-DTSTAMP:20261013T125459Z
+DTSTAMP:20261015T101420Z
 DTSTART;VALUE=DATE:20261023
 DTEND;VALUE=DATE:20261024
 SUMMARY:🟠 SLB (Schlumberger) (SLB) · resultados (fecha estimada)
@@ -493,7 +494,7 @@ DESCRIPTION:🇺🇸 Energía › Servicios y equipos petroleros\nPublica
 END:VEVENT
 BEGIN:VEVENT
 UID:4d9631dbb6050e0f61033ccd505513a2@macro-monitor
-DTSTAMP:20261013T125459Z
+DTSTAMP:20261015T101420Z
 DTSTART;VALUE=DATE:20261026
 DTEND;VALUE=DATE:20261027
 SUMMARY:🟠 Nucor (NUE) · resultados (fecha estimada)
@@ -501,18 +502,38 @@ DESCRIPTION:🇺🇸 Materiales › Acero\nPublica hora no confirmada.\nB
  PA esperado: 5.83\nFuente: yfinance (estimada)
 END:VEVENT
 BEGIN:VEVENT
+UID:dab77e73f7bcdfed0dd6c1e6819eb876@macro-monitor
+DTSTAMP:20261015T101420Z
+DTSTART;VALUE=DATE:20261026
+DTEND;VALUE=DATE:20261027
+SUMMARY:🟠 Public Storage (PSA) · resultados (fecha estimada)
+DESCRIPTION:🇺🇸 Inmobiliario › REITs de salud y almacenamiento\nPu
+ blica hora no confirmada.\nBPA esperado: 2.29\nFuente: yfinance (estimad
+ a)
+END:VEVENT
+BEGIN:VEVENT
 UID:3bf1ea2111f3d38ac7ef4457a31bc275@macro-monitor
-DTSTAMP:20261013T125459Z
+DTSTAMP:20261015T101420Z
 DTSTART;VALUE=DATE:20261026
 DTEND;VALUE=DATE:20261027
 SUMMARY:🟠 Verizon (VZ) · resultados (fecha estimada)
 DESCRIPTION:🇺🇸 Servicios de comunicación › Telecomunicaciones\nP
- ublica hora no confirmada.\nBPA esperado: 1.28\nFuente: yfinance (estima
+ ublica hora no confirmada.\nBPA esperado: 1.27\nFuente: yfinance (estima
  da)
 END:VEVENT
 BEGIN:VEVENT
+UID:9b05e303d75231576a1b4b075e452348@macro-monitor
+DTSTAMP:20261015T101420Z
+DTSTART;VALUE=DATE:20261026
+DTEND;VALUE=DATE:20261027
+SUMMARY:🟠 Welltower (WELL) · resultados (fecha estimada)
+DESCRIPTION:🇺🇸 Inmobiliario › REITs de salud y almacenamiento\nPu
+ blica hora no confirmada.\nBPA esperado: 0.63\nFuente: yfinance (estimad
+ a)\nNota: residencias y salud
+END:VEVENT
+BEGIN:VEVENT
 UID:2d911a756e121676bfdab11c36e73df3@macro-monitor
-DTSTAMP:20261013T125459Z
+DTSTAMP:20261015T101420Z
 DTSTART;VALUE=DATE:20261027
 DTEND;VALUE=DATE:20261028
 SUMMARY:🔴 Visa (V) · resultados (fecha estimada)
@@ -522,7 +543,7 @@ DESCRIPTION:🇺🇸 Financiero › Pagos y servicios financieros\nPublic
 END:VEVENT
 BEGIN:VEVENT
 UID:254e4da722c995ace334c202c7f90f6f@macro-monitor
-DTSTAMP:20261013T125459Z
+DTSTAMP:20261015T101420Z
 DTSTART;VALUE=DATE:20261027
 DTEND;VALUE=DATE:20261028
 SUMMARY:🟠 American Tower (AMT) · resultados (fecha estimada)
@@ -531,18 +552,28 @@ DESCRIPTION:🇺🇸 Inmobiliario › REITs de infraestructura digital\nP
  da)
 END:VEVENT
 BEGIN:VEVENT
+UID:83cd37ff7e44420f147c02decbc23dab@macro-monitor
+DTSTAMP:20261015T101420Z
+DTSTART;VALUE=DATE:20261027
+DTEND;VALUE=DATE:20261028
+SUMMARY:🟠 BXP (BXP) · resultados (fecha estimada)
+DESCRIPTION:🇺🇸 Inmobiliario › REITs de oficinas\nPublica hora no 
+ confirmada.\nBPA esperado: 0.52\nFuente: yfinance (estimada)\nNota: ofic
+ inas: el subsector dañado por el teletrabajo
+END:VEVENT
+BEGIN:VEVENT
 UID:31127b286b96032f2dbefb4ab80def65@macro-monitor
-DTSTAMP:20261013T125459Z
+DTSTAMP:20261015T101420Z
 DTSTART;VALUE=DATE:20261027
 DTEND;VALUE=DATE:20261028
 SUMMARY:🟠 Freeport-McMoRan (FCX) · resultados (fecha estimada)
 DESCRIPTION:🇺🇸 Materiales › Minería diversificada\nPublica hora 
- no confirmada.\nBPA esperado: 0.83\nFuente: yfinance (estimada)\nNota: c
+ no confirmada.\nBPA esperado: 0.84\nFuente: yfinance (estimada)\nNota: c
  obre
 END:VEVENT
 BEGIN:VEVENT
 UID:53a2c50ce7a77f0740d0ead0023ad2e3@macro-monitor
-DTSTAMP:20261013T125459Z
+DTSTAMP:20261015T101420Z
 DTSTART:20261027T060000Z
 DTEND:20261027T063000Z
 SUMMARY:🟠 Ferrovial (FER.MC) · resultados (fecha estimada)
@@ -553,7 +584,7 @@ DESCRIPTION:🇪🇺 Industriales › Construcción e ingeniería\nPublic
 END:VEVENT
 BEGIN:VEVENT
 UID:23149b500b852d4166e7baf404856601@macro-monitor
-DTSTAMP:20261013T125459Z
+DTSTAMP:20261015T101420Z
 DTSTART;VALUE=DATE:20261027
 DTEND;VALUE=DATE:20261028
 SUMMARY:🟠 HCA Healthcare (HCA) · resultados (fecha estimada)
@@ -562,7 +593,7 @@ DESCRIPTION:🇺🇸 Salud › Servicios sanitarios y aseguradoras\nPubli
 END:VEVENT
 BEGIN:VEVENT
 UID:8e966f96c6232229a55331fa918879d8@macro-monitor
-DTSTAMP:20261013T125459Z
+DTSTAMP:20261015T101420Z
 DTSTART:20261027T060000Z
 DTEND:20261027T063000Z
 SUMMARY:🟠 HSBC (HSBA.L) · resultados (fecha estimada)
@@ -571,7 +602,7 @@ DESCRIPTION:🇪🇺 Financiero › Bancos\nPublica por la mañana (hora
 END:VEVENT
 BEGIN:VEVENT
 UID:bb9a928f2a733582150e4796371d4e24@macro-monitor
-DTSTAMP:20261013T125459Z
+DTSTAMP:20261015T101420Z
 DTSTART;VALUE=DATE:20261027
 DTEND;VALUE=DATE:20261028
 SUMMARY:🟠 Coca-Cola (KO) · resultados (fecha estimada)
@@ -579,8 +610,18 @@ DESCRIPTION:🇺🇸 Consumo básico › Bebidas\nPublica hora no confirm
  ada.\nBPA esperado: 0.88\nFuente: yfinance (estimada)
 END:VEVENT
 BEGIN:VEVENT
+UID:7737e64c199d3d4700627540694a84fe@macro-monitor
+DTSTAMP:20261015T101420Z
+DTSTART:20261027T060000Z
+DTEND:20261027T063000Z
+SUMMARY:🟠 Logitech (LOGN.SW) · resultados (fecha estimada)
+DESCRIPTION:🇪🇺 Consumo discrecional › Electrónica y bienes de co
+ nsumo duradero\nPublica por la mañana (hora europea).\nBPA esperado: 1.
+ 32\nFuente: yfinance (estimada)
+END:VEVENT
+BEGIN:VEVENT
 UID:21206c79ac34fb11429aaa62f08e391d@macro-monitor
-DTSTAMP:20261013T125459Z
+DTSTAMP:20261015T101420Z
 DTSTART;VALUE=DATE:20261027
 DTEND;VALUE=DATE:20261028
 SUMMARY:🟠 Mondelez (MDLZ) · resultados (fecha estimada)
@@ -589,7 +630,7 @@ DESCRIPTION:🇺🇸 Consumo básico › Alimentación\nPublica hora no c
 END:VEVENT
 BEGIN:VEVENT
 UID:a4d897ac449b9914b711da23f3ab4450@macro-monitor
-DTSTAMP:20261013T125459Z
+DTSTAMP:20261015T101420Z
 DTSTART:20261027T060000Z
 DTEND:20261027T063000Z
 SUMMARY:🟠 Novartis (NOVN.SW) · resultados (fecha estimada)
@@ -597,8 +638,18 @@ DESCRIPTION:🇪🇺 Salud › Farmacia\nPublica por la mañana (hora eur
  opea).\nBPA esperado: 2.28\nFuente: yfinance (estimada)
 END:VEVENT
 BEGIN:VEVENT
+UID:98cc20cf95b07627252581064af5f5c5@macro-monitor
+DTSTAMP:20261015T101420Z
+DTSTART;VALUE=DATE:20261027
+DTEND;VALUE=DATE:20261028
+SUMMARY:🟠 Royal Caribbean (RCL) · resultados (fecha estimada)
+DESCRIPTION:🇺🇸 Consumo discrecional › Hoteles y cruceros\nPublica
+  hora no confirmada.\nBPA esperado: 6.38\nFuente: yfinance (estimada)\nN
+ ota: consumo de renta alta\; muy cíclica
+END:VEVENT
+BEGIN:VEVENT
 UID:df0f5a2f5a6a3c95d520ea034bd5352a@macro-monitor
-DTSTAMP:20261013T125459Z
+DTSTAMP:20261015T101420Z
 DTSTART;VALUE=DATE:20261027
 DTEND;VALUE=DATE:20261028
 SUMMARY:🟠 Sherwin-Williams (SHW) · resultados (fecha estimada)
@@ -608,7 +659,7 @@ DESCRIPTION:🇺🇸 Materiales › Química especializada / recubrimient
 END:VEVENT
 BEGIN:VEVENT
 UID:eab4e71b0a909e357b9a47abc29a3445@macro-monitor
-DTSTAMP:20261013T125459Z
+DTSTAMP:20261015T101420Z
 DTSTART;VALUE=DATE:20261027
 DTEND;VALUE=DATE:20261028
 SUMMARY:🟠 UPS (UPS) · resultados (fecha estimada)
@@ -616,18 +667,28 @@ DESCRIPTION:🇺🇸 Industriales › Transporte y logística\nPublica ho
  ra no confirmada.\nBPA esperado: 1.62\nFuente: yfinance (estimada)
 END:VEVENT
 BEGIN:VEVENT
+UID:eadab596b2c26e74c8f0c45022b5a604@macro-monitor
+DTSTAMP:20261015T101420Z
+DTSTART;VALUE=DATE:20261027
+DTEND;VALUE=DATE:20261028
+SUMMARY:🟠 Waste Management (WM) · resultados (fecha estimada)
+DESCRIPTION:🇺🇸 Industriales › Servicios medioambientales y residu
+ os\nPublica hora no confirmada.\nBPA esperado: 2.18\nFuente: yfinance (e
+ stimada)\nNota: defensivo industrial
+END:VEVENT
+BEGIN:VEVENT
 UID:9ac9315347ba0832194a7ba925e93e1b@macro-monitor
-DTSTAMP:20261013T125459Z
+DTSTAMP:20261015T101420Z
 DTSTART:20261028T060000Z
 DTEND:20261028T063000Z
 SUMMARY:🔴 Airbus (AIR.PA) · resultados (fecha estimada)
 DESCRIPTION:🇪🇺 Industriales › Aeroespacial y defensa\nPublica por
-  la mañana (hora europea).\nBPA esperado: 1.83\nFuente: yfinance (estim
+  la mañana (hora europea).\nBPA esperado: 1.74\nFuente: yfinance (estim
  ada)
 END:VEVENT
 BEGIN:VEVENT
 UID:69c7218f20fa171ede6df32623b77337@macro-monitor
-DTSTAMP:20261013T125459Z
+DTSTAMP:20261015T101420Z
 DTSTART:20261028T060000Z
 DTEND:20261028T063000Z
 SUMMARY:🔴 BASF (BAS.DE) · resultados (fecha estimada)
@@ -638,7 +699,7 @@ DESCRIPTION:🇪🇺 Materiales › Química diversificada / gases indust
 END:VEVENT
 BEGIN:VEVENT
 UID:f6a18d333a62c599d6ed62d4772c6107@macro-monitor
-DTSTAMP:20261013T125459Z
+DTSTAMP:20261015T101420Z
 DTSTART:20261028T060000Z
 DTEND:20261028T063000Z
 SUMMARY:🔴 BNP Paribas (BNP.PA) · resultados (fecha estimada)
@@ -647,7 +708,7 @@ DESCRIPTION:🇪🇺 Financiero › Bancos\nPublica por la mañana (hora
 END:VEVENT
 BEGIN:VEVENT
 UID:f718cdfc20c40e204e402a323959ceff@macro-monitor
-DTSTAMP:20261013T125459Z
+DTSTAMP:20261015T101420Z
 DTSTART;VALUE=DATE:20261028
 DTEND;VALUE=DATE:20261029
 SUMMARY:🔴 FedEx (FDX) · resultados (fecha estimada)
@@ -657,17 +718,17 @@ DESCRIPTION:🇺🇸 Industriales › Transporte y logística\nPublica ho
 END:VEVENT
 BEGIN:VEVENT
 UID:5853ed647c1d7cd79dff80c2ea62b2f1@macro-monitor
-DTSTAMP:20261013T125459Z
+DTSTAMP:20261015T101420Z
 DTSTART;VALUE=DATE:20261028
 DTEND;VALUE=DATE:20261029
 SUMMARY:🔴 Alphabet (GOOGL) · resultados (fecha estimada)
 DESCRIPTION:🇺🇸 Servicios de comunicación › Medios interactivos\n
- Publica hora no confirmada.\nBPA esperado: 3.02\nFuente: yfinance (estim
+ Publica hora no confirmada.\nBPA esperado: 3.01\nFuente: yfinance (estim
  ada)\nNota: publicidad + nube
 END:VEVENT
 BEGIN:VEVENT
 UID:dd41af5963b59683dad92e50b0146278@macro-monitor
-DTSTAMP:20261013T125459Z
+DTSTAMP:20261015T101420Z
 DTSTART;VALUE=DATE:20261028
 DTEND;VALUE=DATE:20261029
 SUMMARY:🔴 Microsoft (MSFT) · resultados (fecha estimada)
@@ -677,7 +738,7 @@ DESCRIPTION:🇺🇸 Tecnología de la información › Software\nPublica
 END:VEVENT
 BEGIN:VEVENT
 UID:69a76834841a1c8866744c080ab419f0@macro-monitor
-DTSTAMP:20261013T125459Z
+DTSTAMP:20261015T101420Z
 DTSTART;VALUE=DATE:20261028
 DTEND;VALUE=DATE:20261029
 SUMMARY:🟠 ADP (ADP) · resultados (fecha estimada)
@@ -686,8 +747,18 @@ DESCRIPTION:🇺🇸 Industriales › Servicios profesionales y empleo\nP
  da)\nNota: nóminas privadas
 END:VEVENT
 BEGIN:VEVENT
+UID:2f225c223d143c515316c3234f6d78c8@macro-monitor
+DTSTAMP:20261015T101420Z
+DTSTART:20261028T060000Z
+DTEND:20261028T063000Z
+SUMMARY:🟠 Aena (AENA.MC) · resultados (fecha estimada)
+DESCRIPTION:🇪🇺 Industriales › Infraestructuras de transporte\nPub
+ lica por la mañana (hora europea).\nBPA esperado: 0.50\nFuente: yfinanc
+ e (estimada)\nNota: aeropuertos: tráfico aéreo europeo
+END:VEVENT
+BEGIN:VEVENT
 UID:232fae2ca594968cb42fbeebc52ea50a@macro-monitor
-DTSTAMP:20261013T125459Z
+DTSTAMP:20261015T101420Z
 DTSTART;VALUE=DATE:20261028
 DTEND;VALUE=DATE:20261029
 SUMMARY:🟠 American Water Works (AWK) · resultados (fecha estimada)
@@ -696,16 +767,26 @@ DESCRIPTION:🇺🇸 Utilities › Agua y multiutilities\nPublica hora no
 END:VEVENT
 BEGIN:VEVENT
 UID:16c155a2f428f339b7b3e32a8bd89628@macro-monitor
-DTSTAMP:20261013T125459Z
+DTSTAMP:20261015T101420Z
 DTSTART:20261028T060000Z
 DTEND:20261028T063000Z
 SUMMARY:🟠 Deutsche Bank (DBK.DE) · resultados (fecha estimada)
 DESCRIPTION:🇪🇺 Financiero › Bancos\nPublica por la mañana (hora 
- europea).\nBPA esperado: 0.81\nFuente: yfinance (estimada)
+ europea).\nBPA esperado: 1.07\nFuente: yfinance (estimada)
+END:VEVENT
+BEGIN:VEVENT
+UID:c3211fab12d740e29e28ebc662b18180@macro-monitor
+DTSTAMP:20261015T101420Z
+DTSTART:20261028T060000Z
+DTEND:20261028T063000Z
+SUMMARY:🟠 Dassault Systèmes (DSY.PA) · resultados (fecha estimada)
+DESCRIPTION:🇪🇺 Tecnología de la información › Software\nPublica
+  por la mañana (hora europea).\nBPA esperado: 0.31\nFuente: yfinance (e
+ stimada)\nNota: software industrial
 END:VEVENT
 BEGIN:VEVENT
 UID:56e2df27d1b0857f524c8ca4947007a5@macro-monitor
-DTSTAMP:20261013T125459Z
+DTSTAMP:20261015T101420Z
 DTSTART;VALUE=DATE:20261028
 DTEND;VALUE=DATE:20261029
 SUMMARY:🟠 Equinix (EQIX) · resultados (fecha estimada)
@@ -715,36 +796,73 @@ DESCRIPTION:🇺🇸 Inmobiliario › REITs de infraestructura digital\nP
 END:VEVENT
 BEGIN:VEVENT
 UID:17e86fc9dca64ba0aca5a5225ebfc35e@macro-monitor
-DTSTAMP:20261013T125459Z
+DTSTAMP:20261015T101420Z
 DTSTART:20261028T060000Z
 DTEND:20261028T063000Z
 SUMMARY:🟠 Equinor (EQNR.OL) · resultados (fecha estimada)
 DESCRIPTION:🇪🇺 Energía › Exploración y producción\nPublica por
-  la mañana (hora europea).\nBPA esperado: 1.34\nFuente: yfinance (estim
+  la mañana (hora europea).\nBPA esperado: 1.33\nFuente: yfinance (estim
  ada)\nNota: gas europeo\; referencia tras la crisis energética
 END:VEVENT
 BEGIN:VEVENT
-UID:642b7a2c4a0e82880344685148d8b1c9@macro-monitor
-DTSTAMP:20261013T125459Z
+UID:a441ef89198126ae8131a2dea3afb0a8@macro-monitor
+DTSTAMP:20261015T101420Z
 DTSTART;VALUE=DATE:20261028
 DTEND;VALUE=DATE:20261029
-SUMMARY:🟠 Kinder Morgan (KMI) · resultados (fecha estimada)
-DESCRIPTION:🇺🇸 Energía › Midstream\nPublica hora no confirmada.\
- nBPA esperado: 0.33\nFuente: yfinance (estimada)
+SUMMARY:💰 Fastenal (FAST) · ex-dividendo
+DESCRIPTION:🇺🇸 Industriales › Distribución industrial\nEl precio
+  se ajusta a la baja por el dividendo en la apertura.
+END:VEVENT
+BEGIN:VEVENT
+UID:a1cceedcb1b91e854638443bb13ebfd3@macro-monitor
+DTSTAMP:20261015T101420Z
+DTSTART:20261028T060000Z
+DTEND:20261028T063000Z
+SUMMARY:🟠 GSK (GSK.L) · resultados (fecha estimada)
+DESCRIPTION:🇪🇺 Salud › Farmacia\nPublica por la mañana (hora eur
+ opea).\nBPA esperado: 0.50\nFuente: yfinance (estimada)
+END:VEVENT
+BEGIN:VEVENT
+UID:ddcdf3c73cb3b3d8efd1fdea6540c136@macro-monitor
+DTSTAMP:20261015T101420Z
+DTSTART;VALUE=DATE:20261028
+DTEND;VALUE=DATE:20261029
+SUMMARY:🟠 International Paper (IP) · resultados (fecha estimada)
+DESCRIPTION:🇺🇸 Materiales › Papel y productos forestales\nPublica
+  hora no confirmada.\nBPA esperado: 0.28\nFuente: yfinance (estimada)
+END:VEVENT
+BEGIN:VEVENT
+UID:0956e635c5df0c509e864c3608766ebd@macro-monitor
+DTSTAMP:20261015T101420Z
+DTSTART;VALUE=DATE:20261028
+DTEND;VALUE=DATE:20261029
+SUMMARY:🟠 Mid-America Apartment (MAA) · resultados (fecha estimada)
+DESCRIPTION:🇺🇸 Inmobiliario › REITs residenciales\nPublica hora n
+ o confirmada.\nBPA esperado: 0.82\nFuente: yfinance (estimada)
 END:VEVENT
 BEGIN:VEVENT
 UID:7b88cff3bae4143664f9cea171fcd401@macro-monitor
-DTSTAMP:20261013T125459Z
+DTSTAMP:20261015T101420Z
 DTSTART:20261028T060000Z
 DTEND:20261028T063000Z
 SUMMARY:🟠 Mercedes-Benz (MBG.DE) · resultados (fecha estimada)
 DESCRIPTION:🇪🇺 Consumo discrecional › Automóviles\nPublica por l
- a mañana (hora europea).\nBPA esperado: 1.26\nFuente: yfinance (estimad
+ a mañana (hora europea).\nBPA esperado: 1.12\nFuente: yfinance (estimad
  a)
 END:VEVENT
 BEGIN:VEVENT
+UID:11ae7be9c986c134ebb6b499568c2d38@macro-monitor
+DTSTAMP:20261015T101420Z
+DTSTART;VALUE=DATE:20261028
+DTEND;VALUE=DATE:20261029
+SUMMARY:🟠 ServiceNow (NOW) · resultados (fecha estimada)
+DESCRIPTION:🇺🇸 Tecnología de la información › Software\nPublica
+  hora no confirmada.\nBPA esperado: 1.02\nFuente: yfinance (estimada)\nN
+ ota: software empresarial
+END:VEVENT
+BEGIN:VEVENT
 UID:11f1ab5c56efafc3b224cb7f229ccd27@macro-monitor
-DTSTAMP:20261013T125459Z
+DTSTAMP:20261015T101420Z
 DTSTART:20261028T060000Z
 DTEND:20261028T063000Z
 SUMMARY:🟠 Santander (SAN.MC) · resultados (fecha estimada)
@@ -753,27 +871,27 @@ DESCRIPTION:🇪🇺 Financiero › Bancos\nPublica por la mañana (hora
 END:VEVENT
 BEGIN:VEVENT
 UID:097aa8e7f7415da6c2d2b949c1c25fc3@macro-monitor
-DTSTAMP:20261013T125459Z
+DTSTAMP:20261015T101420Z
 DTSTART:20261028T060000Z
 DTEND:20261028T063000Z
 SUMMARY:🟠 Stellantis (STLAM.MI) · resultados (fecha estimada)
 DESCRIPTION:🇪🇺 Consumo discrecional › Automóviles\nPublica por l
- a mañana (hora europea).\nBPA esperado: -0.18\nFuente: yfinance (estima
- da)
+ a mañana (hora europea).\nBPA esperado: 0.08\nFuente: yfinance (estimad
+ a)
 END:VEVENT
 BEGIN:VEVENT
-UID:63ca1fb2504f70392892910437bdfec5@macro-monitor
-DTSTAMP:20261013T125459Z
+UID:45cb16f1bc643f75b0a2d90aa7f15e91@macro-monitor
+DTSTAMP:20261015T101420Z
 DTSTART;VALUE=DATE:20261028
 DTEND;VALUE=DATE:20261029
-SUMMARY:🟠 Smurfit Westrock (SW) · resultados (fecha estimada)
-DESCRIPTION:🇺🇸 Materiales › Envases\nPublica hora no confirmada.\
- nBPA esperado: 0.60\nFuente: yfinance (estimada)\nNota: cartón = consum
- o y e-commerce
+SUMMARY:🟠 TE Connectivity (TEL) · resultados (fecha estimada)
+DESCRIPTION:🇺🇸 Tecnología de la información › Instrumentos y co
+ mponentes electrónicos\nPublica hora no confirmada.\nBPA esperado: 3.07
+ \nFuente: yfinance (estimada)\nNota: conectores: automoción e industria
 END:VEVENT
 BEGIN:VEVENT
 UID:98cc751bce1c84e6b0f32cb57acccfb5@macro-monitor
-DTSTAMP:20261013T125459Z
+DTSTAMP:20261015T101420Z
 DTSTART;VALUE=DATE:20261028
 DTEND;VALUE=DATE:20261029
 SUMMARY:🟠 T-Mobile US (TMUS) · resultados (fecha estimada)
@@ -783,17 +901,27 @@ DESCRIPTION:🇺🇸 Servicios de comunicación › Telecomunicaciones\nP
 END:VEVENT
 BEGIN:VEVENT
 UID:6751d4971262009dd56d9315a8d4e984@macro-monitor
-DTSTAMP:20261013T125459Z
+DTSTAMP:20261015T101420Z
 DTSTART:20261028T060000Z
 DTEND:20261028T063000Z
 SUMMARY:🟠 UBS (UBSG.SW) · resultados (fecha estimada)
 DESCRIPTION:🇪🇺 Financiero › Mercados de capitales y gestión de a
- ctivos\nPublica por la mañana (hora europea).\nBPA esperado: 0.76\nFuen
+ ctivos\nPublica por la mañana (hora europea).\nBPA esperado: 0.75\nFuen
  te: yfinance (estimada)
 END:VEVENT
 BEGIN:VEVENT
+UID:69373e06cfa985d9d05dc7696496b237@macro-monitor
+DTSTAMP:20261015T101420Z
+DTSTART:20261028T060000Z
+DTEND:20261028T063000Z
+SUMMARY:🟠 UPM-Kymmene (UPM.HE) · resultados (fecha estimada)
+DESCRIPTION:🇪🇺 Materiales › Papel y productos forestales\nPublica
+  por la mañana (hora europea).\nBPA esperado: 0.29\nFuente: yfinance (e
+ stimada)
+END:VEVENT
+BEGIN:VEVENT
 UID:f0ca57e053b43a590f5eaffdcb1299f2@macro-monitor
-DTSTAMP:20261013T125459Z
+DTSTAMP:20261015T101420Z
 DTSTART;VALUE=DATE:20261029
 DTEND;VALUE=DATE:20261030
 SUMMARY:🔴 Amazon (AMZN) · resultados (fecha estimada)
@@ -803,17 +931,27 @@ DESCRIPTION:🇺🇸 Consumo discrecional › Comercio minorista amplio y
 END:VEVENT
 BEGIN:VEVENT
 UID:b697a4c5f35c23ba2b722e94cca8c12e@macro-monitor
-DTSTAMP:20261013T125459Z
+DTSTAMP:20261015T101420Z
 DTSTART;VALUE=DATE:20261029
 DTEND;VALUE=DATE:20261030
 SUMMARY:🔴 Caterpillar (CAT) · resultados (fecha estimada)
 DESCRIPTION:🇺🇸 Industriales › Maquinaria y bienes de equipo\nPubl
- ica hora no confirmada.\nBPA esperado: 6.93\nFuente: yfinance (estimada)
+ ica hora no confirmada.\nBPA esperado: 7.03\nFuente: yfinance (estimada)
  \nNota: ciclo industrial y construcción global
 END:VEVENT
 BEGIN:VEVENT
+UID:80350bb2770c9394a76ba438b8efa6c8@macro-monitor
+DTSTAMP:20261015T101420Z
+DTSTART;VALUE=DATE:20261029
+DTEND;VALUE=DATE:20261030
+SUMMARY:🔴 D.R. Horton (DHI) · resultados (fecha estimada)
+DESCRIPTION:🇺🇸 Industriales › Constructoras de viviendas\nPublica
+  hora no confirmada.\nBPA esperado: 3.00\nFuente: yfinance (estimada)\nN
+ ota: adelantado de vivienda 3-6 meses
+END:VEVENT
+BEGIN:VEVENT
 UID:e4f193643e1ffa15868aaf25e6eb1c2a@macro-monitor
-DTSTAMP:20261013T125459Z
+DTSTAMP:20261015T101420Z
 DTSTART;VALUE=DATE:20261029
 DTEND;VALUE=DATE:20261030
 SUMMARY:💰 Inditex (ITX.MC) · ex-dividendo
@@ -822,26 +960,26 @@ DESCRIPTION:🇪🇺 Consumo discrecional › Textil\, calzado y moda\nEl
 END:VEVENT
 BEGIN:VEVENT
 UID:2e19a9e344fdbb0d78b3647909019951@macro-monitor
-DTSTAMP:20261013T125459Z
+DTSTAMP:20261015T101420Z
 DTSTART;VALUE=DATE:20261029
 DTEND;VALUE=DATE:20261030
 SUMMARY:🔴 Linde (LIN) · resultados (fecha estimada)
 DESCRIPTION:🇺🇸 Materiales › Química diversificada / gases indust
- riales\nPublica hora no confirmada.\nBPA esperado: 4.61\nFuente: yfinanc
+ riales\nPublica hora no confirmada.\nBPA esperado: 2.63\nFuente: yfinanc
  e (estimada)\nNota: gases industriales = actividad manufacturera global
 END:VEVENT
 BEGIN:VEVENT
 UID:65b9b07dbb3c2b669033053ea29bfc87@macro-monitor
-DTSTAMP:20261013T125459Z
+DTSTAMP:20261015T101420Z
 DTSTART;VALUE=DATE:20261029
 DTEND;VALUE=DATE:20261030
 SUMMARY:🔴 Eli Lilly (LLY) · resultados (fecha estimada)
 DESCRIPTION:🇺🇸 Salud › Farmacia\nPublica hora no confirmada.\nBPA
-  esperado: 7.41\nFuente: yfinance (estimada)
+  esperado: 7.16\nFuente: yfinance (estimada)
 END:VEVENT
 BEGIN:VEVENT
 UID:e3d2f7099385ad439335e61fef12fd3d@macro-monitor
-DTSTAMP:20261013T125459Z
+DTSTAMP:20261015T101420Z
 DTSTART:20261029T060000Z
 DTEND:20261029T063000Z
 SUMMARY:🔴 Shell (SHEL.L) · resultados (fecha estimada)
@@ -850,7 +988,7 @@ DESCRIPTION:🇪🇺 Energía › Integradas\nPublica por la mañana (hor
 END:VEVENT
 BEGIN:VEVENT
 UID:4e50750b4ecd2c5fe06db0227c09899c@macro-monitor
-DTSTAMP:20261013T125459Z
+DTSTAMP:20261015T101420Z
 DTSTART:20261029T060000Z
 DTEND:20261029T063000Z
 SUMMARY:🔴 Volkswagen (VOW3.DE) · resultados (fecha estimada)
@@ -860,26 +998,26 @@ DESCRIPTION:🇪🇺 Consumo discrecional › Automóviles\nPublica por l
 END:VEVENT
 BEGIN:VEVENT
 UID:59c6cd493bc0b54877f4aa82d7061bd2@macro-monitor
-DTSTAMP:20261013T125459Z
+DTSTAMP:20261015T101420Z
 DTSTART:20261029T060000Z
 DTEND:20261029T063000Z
 SUMMARY:🟠 AB InBev (ABI.BR) · resultados (fecha estimada)
 DESCRIPTION:🇪🇺 Consumo básico › Bebidas\nPublica por la mañana 
- (hora europea).\nBPA esperado: 1.17\nFuente: yfinance (estimada)
+ (hora europea).\nBPA esperado: 1.16\nFuente: yfinance (estimada)
 END:VEVENT
 BEGIN:VEVENT
 UID:7e4be9bde94a80436f9409c97f7f26e0@macro-monitor
-DTSTAMP:20261013T125459Z
+DTSTAMP:20261015T101420Z
 DTSTART:20261029T060000Z
 DTEND:20261029T063000Z
 SUMMARY:🟠 adidas (ADS.DE) · resultados (fecha estimada)
 DESCRIPTION:🇪🇺 Consumo discrecional › Textil\, calzado y moda\nPu
- blica por la mañana (hora europea).\nBPA esperado: 3.09\nFuente: yfinan
+ blica por la mañana (hora europea).\nBPA esperado: 3.10\nFuente: yfinan
  ce (estimada)
 END:VEVENT
 BEGIN:VEVENT
 UID:20fbef7f77ff1e18dc4e60db274f745c@macro-monitor
-DTSTAMP:20261013T125459Z
+DTSTAMP:20261015T101420Z
 DTSTART:20261029T060000Z
 DTEND:20261029T063000Z
 SUMMARY:🟠 BBVA (BBVA.MC) · resultados (fecha estimada)
@@ -888,8 +1026,27 @@ DESCRIPTION:🇪🇺 Financiero › Bancos\nPublica por la mañana (hora
  o y Turquía
 END:VEVENT
 BEGIN:VEVENT
+UID:753a46b82b5dd78965b50c96864884f5@macro-monitor
+DTSTAMP:20261015T101420Z
+DTSTART;VALUE=DATE:20261029
+DTEND;VALUE=DATE:20261030
+SUMMARY:🟠 Gilead (GILD) · resultados (fecha estimada)
+DESCRIPTION:🇺🇸 Salud › Biotecnología\nPublica hora no confirmada
+ .\nBPA esperado: 2.19\nFuente: yfinance (estimada)
+END:VEVENT
+BEGIN:VEVENT
+UID:19f7283589a8367d136edd98e3a44793@macro-monitor
+DTSTAMP:20261015T101420Z
+DTSTART;VALUE=DATE:20261029
+DTEND;VALUE=DATE:20261030
+SUMMARY:🟠 Intercontinental Exchange (ICE) · resultados (fecha estimad
+ a)
+DESCRIPTION:🇺🇸 Financiero › Bolsas y datos financieros\nPublica h
+ ora no confirmada.\nBPA esperado: 1.95\nFuente: yfinance (estimada)
+END:VEVENT
+BEGIN:VEVENT
 UID:d241ba424f23d063ff4f9c2d50795378@macro-monitor
-DTSTAMP:20261013T125459Z
+DTSTAMP:20261015T101420Z
 DTSTART;VALUE=DATE:20261029
 DTEND;VALUE=DATE:20261030
 SUMMARY:🟠 Intel (INTC) · resultados (fecha estimada)
@@ -899,16 +1056,16 @@ DESCRIPTION:🇺🇸 Tecnología de la información › Semiconductores\n
 END:VEVENT
 BEGIN:VEVENT
 UID:66fdc11c537084428e7f1405e80e2e16@macro-monitor
-DTSTAMP:20261013T125459Z
+DTSTAMP:20261015T101420Z
 DTSTART;VALUE=DATE:20261029
 DTEND;VALUE=DATE:20261030
 SUMMARY:🟠 Mastercard (MA) · resultados (fecha estimada)
 DESCRIPTION:🇺🇸 Financiero › Pagos y servicios financieros\nPublic
- a hora no confirmada.\nBPA esperado: 5.15\nFuente: yfinance (estimada)
+ a hora no confirmada.\nBPA esperado: 5.16\nFuente: yfinance (estimada)
 END:VEVENT
 BEGIN:VEVENT
 UID:9b158aa76294317189534416bff1e4cc@macro-monitor
-DTSTAMP:20261013T125459Z
+DTSTAMP:20261015T101420Z
 DTSTART:20261029T060000Z
 DTEND:20261029T063000Z
 SUMMARY:🟠 Neste (NESTE.HE) · resultados (fecha estimada)
@@ -918,17 +1075,17 @@ DESCRIPTION:🇪🇺 Energía › Refino y marketing\nPublica por la mañ
 END:VEVENT
 BEGIN:VEVENT
 UID:22214f4225d5c6428114afc0957b456b@macro-monitor
-DTSTAMP:20261013T125459Z
+DTSTAMP:20261015T101420Z
 DTSTART;VALUE=DATE:20261029
 DTEND;VALUE=DATE:20261030
 SUMMARY:🟠 Quanta Services (PWR) · resultados (fecha estimada)
 DESCRIPTION:🇺🇸 Industriales › Construcción e ingeniería\nPublic
- a hora no confirmada.\nBPA esperado: 4.99\nFuente: yfinance (estimada)\n
+ a hora no confirmada.\nBPA esperado: 5.00\nFuente: yfinance (estimada)\n
  Nota: infraestructura eléctrica
 END:VEVENT
 BEGIN:VEVENT
 UID:53ac018748e9aa649d7782fd599dd965@macro-monitor
-DTSTAMP:20261013T125459Z
+DTSTAMP:20261015T101420Z
 DTSTART:20261029T060000Z
 DTEND:20261029T063000Z
 SUMMARY:🟠 Repsol (REP.MC) · resultados (fecha estimada)
@@ -937,7 +1094,7 @@ DESCRIPTION:🇪🇺 Energía › Integradas\nPublica por la mañana (hor
 END:VEVENT
 BEGIN:VEVENT
 UID:e9b5543b3bc320d722a200f05bbf7661@macro-monitor
-DTSTAMP:20261013T125459Z
+DTSTAMP:20261015T101420Z
 DTSTART;VALUE=DATE:20261029
 DTEND;VALUE=DATE:20261030
 SUMMARY:💰 Santander (SAN.MC) · ex-dividendo
@@ -946,7 +1103,7 @@ DESCRIPTION:🇪🇺 Financiero › Bancos\nEl precio se ajusta a la baja
 END:VEVENT
 BEGIN:VEVENT
 UID:a7a79489313f8574376a04e549e27922@macro-monitor
-DTSTAMP:20261013T125459Z
+DTSTAMP:20261015T101420Z
 DTSTART;VALUE=DATE:20261029
 DTEND;VALUE=DATE:20261030
 SUMMARY:🟠 Starbucks (SBUX) · resultados (fecha estimada)
@@ -955,7 +1112,7 @@ DESCRIPTION:🇺🇸 Consumo discrecional › Restauración y ocio\nPubli
 END:VEVENT
 BEGIN:VEVENT
 UID:ddd76598f2ebb5bb9c900f038f009a37@macro-monitor
-DTSTAMP:20261013T125459Z
+DTSTAMP:20261015T101420Z
 DTSTART:20261029T060000Z
 DTEND:20261029T063000Z
 SUMMARY:🟠 STMicroelectronics (STMPA.PA) · resultados (fecha estimada)
@@ -965,7 +1122,7 @@ DESCRIPTION:🇪🇺 Tecnología de la información › Semiconductores\n
 END:VEVENT
 BEGIN:VEVENT
 UID:a5fe195fb6d146863cf06f03d0550943@macro-monitor
-DTSTAMP:20261013T125459Z
+DTSTAMP:20261015T101420Z
 DTSTART:20261029T060000Z
 DTEND:20261029T063000Z
 SUMMARY:🟠 Technip Energies (TE.PA) · resultados (fecha estimada)
@@ -975,16 +1132,16 @@ DESCRIPTION:🇪🇺 Energía › Servicios y equipos petroleros\nPublica
 END:VEVENT
 BEGIN:VEVENT
 UID:e43e89c21ce01ce9c17d19a197c4f1e6@macro-monitor
-DTSTAMP:20261013T125459Z
+DTSTAMP:20261015T101420Z
 DTSTART:20261029T060000Z
 DTEND:20261029T063000Z
 SUMMARY:🟠 TotalEnergies (TTE.PA) · resultados (fecha estimada)
 DESCRIPTION:🇪🇺 Energía › Integradas\nPublica por la mañana (hor
- a europea).\nBPA esperado: 3.50\nFuente: yfinance (estimada)
+ a europea).\nBPA esperado: 2.96\nFuente: yfinance (estimada)
 END:VEVENT
 BEGIN:VEVENT
 UID:3409b12be4f67f28c96ee66666ada14f@macro-monitor
-DTSTAMP:20261013T125459Z
+DTSTAMP:20261015T101420Z
 DTSTART:20261029T060000Z
 DTEND:20261029T063000Z
 SUMMARY:🟠 Universal Music (UMG.AS) · resultados (fecha estimada)
@@ -993,17 +1150,26 @@ DESCRIPTION:🇪🇺 Servicios de comunicación › Entretenimiento\nPubl
   (estimada)
 END:VEVENT
 BEGIN:VEVENT
+UID:e647cc550cf302a4655eb9cbb2bd0ac4@macro-monitor
+DTSTAMP:20261015T101420Z
+DTSTART;VALUE=DATE:20261029
+DTEND;VALUE=DATE:20261030
+SUMMARY:💰 UPM-Kymmene (UPM.HE) · ex-dividendo
+DESCRIPTION:🇪🇺 Materiales › Papel y productos forestales\nEl prec
+ io se ajusta a la baja por el dividendo en la apertura.
+END:VEVENT
+BEGIN:VEVENT
 UID:545833fe505388887aec2eda52efba37@macro-monitor
-DTSTAMP:20261013T125459Z
+DTSTAMP:20261015T101420Z
 DTSTART;VALUE=DATE:20261029
 DTEND;VALUE=DATE:20261030
 SUMMARY:🟠 Vulcan Materials (VMC) · resultados (fecha estimada)
 DESCRIPTION:🇺🇸 Materiales › Materiales de construcción\nPublica 
- hora no confirmada.\nBPA esperado: 2.90\nFuente: yfinance (estimada)
+ hora no confirmada.\nBPA esperado: 2.88\nFuente: yfinance (estimada)
 END:VEVENT
 BEGIN:VEVENT
 UID:b098fc93990700796baab1ebba906c35@macro-monitor
-DTSTAMP:20261013T125459Z
+DTSTAMP:20261015T101420Z
 DTSTART;VALUE=DATE:20261030
 DTEND;VALUE=DATE:20261031
 SUMMARY:🔴 ExxonMobil (XOM) · resultados (fecha estimada)
@@ -1011,8 +1177,18 @@ DESCRIPTION:🇺🇸 Energía › Integradas\nPublica hora no confirmada.
  \nBPA esperado: 3.76\nFuente: yfinance (estimada)
 END:VEVENT
 BEGIN:VEVENT
+UID:3dbe3802f8ef9596bd6542e4247077c7@macro-monitor
+DTSTAMP:20261015T101420Z
+DTSTART:20261030T060000Z
+DTEND:20261030T063000Z
+SUMMARY:🟠 Accor (ACA.PA) · resultados (fecha estimada)
+DESCRIPTION:🇪🇺 Consumo discrecional › Hoteles y cruceros\nPublica
+  por la mañana (hora europea).\nBPA esperado: 0.54\nFuente: yfinance (e
+ stimada)
+END:VEVENT
+BEGIN:VEVENT
 UID:102965703542ae0da2cb8eb1e36e11a4@macro-monitor
-DTSTAMP:20261013T125459Z
+DTSTAMP:20261015T101420Z
 DTSTART:20261030T060000Z
 DTEND:20261030T063000Z
 SUMMARY:🟠 AstraZeneca (AZN.L) · resultados (fecha estimada)
@@ -1021,25 +1197,43 @@ DESCRIPTION:🇪🇺 Salud › Farmacia\nPublica por la mañana (hora eur
 END:VEVENT
 BEGIN:VEVENT
 UID:38d26d2ce13313982e1e38794ca50f66@macro-monitor
-DTSTAMP:20261013T125459Z
+DTSTAMP:20261015T101420Z
 DTSTART;VALUE=DATE:20261030
 DTEND;VALUE=DATE:20261031
 SUMMARY:🟠 Chevron (CVX) · resultados (fecha estimada)
 DESCRIPTION:🇺🇸 Energía › Integradas\nPublica hora no confirmada.
- \nBPA esperado: 4.74\nFuente: yfinance (estimada)
+ \nBPA esperado: 4.83\nFuente: yfinance (estimada)
+END:VEVENT
+BEGIN:VEVENT
+UID:515e45e906266f338c1b188ede744e8f@macro-monitor
+DTSTAMP:20261015T101420Z
+DTSTART;VALUE=DATE:20261030
+DTEND;VALUE=DATE:20261031
+SUMMARY:💰 Realty Income (O) · ex-dividendo
+DESCRIPTION:🇺🇸 Inmobiliario › REITs comerciales y residenciales\n
+ El precio se ajusta a la baja por el dividendo en la apertura.
+END:VEVENT
+BEGIN:VEVENT
+UID:55ffa860a7f54dd013a18f29c87284cd@macro-monitor
+DTSTAMP:20261015T101420Z
+DTSTART;VALUE=DATE:20261030
+DTEND;VALUE=DATE:20261031
+SUMMARY:🟠 Regeneron (REGN) · resultados (fecha estimada)
+DESCRIPTION:🇺🇸 Salud › Biotecnología\nPublica hora no confirmada
+ .\nBPA esperado: 16.07\nFuente: yfinance (estimada)
 END:VEVENT
 BEGIN:VEVENT
 UID:02c86d77ed2e4339aab85d4f5b60762f@macro-monitor
-DTSTAMP:20261013T125459Z
+DTSTAMP:20261015T101420Z
 DTSTART:20261030T060000Z
 DTEND:20261030T063000Z
 SUMMARY:🟠 Sanofi (SAN.PA) · resultados (fecha estimada)
 DESCRIPTION:🇪🇺 Salud › Farmacia\nPublica por la mañana (hora eur
- opea).\nBPA esperado: 2.85\nFuente: yfinance (estimada)
+ opea).\nBPA esperado: 2.86\nFuente: yfinance (estimada)
 END:VEVENT
 BEGIN:VEVENT
 UID:040365f010ed72360ba6672d89d36f85@macro-monitor
-DTSTAMP:20261013T125459Z
+DTSTAMP:20261015T101420Z
 DTSTART;VALUE=DATE:20261102
 DTEND;VALUE=DATE:20261103
 SUMMARY:🔴 Apple (AAPL) · resultados (fecha estimada)
@@ -1049,7 +1243,7 @@ DESCRIPTION:🇺🇸 Tecnología de la información › Hardware\nPublica
 END:VEVENT
 BEGIN:VEVENT
 UID:b192001518fe155e1844a66993c6d422@macro-monitor
-DTSTAMP:20261013T125459Z
+DTSTAMP:20261015T101420Z
 DTSTART;VALUE=DATE:20261102
 DTEND;VALUE=DATE:20261103
 SUMMARY:🟠 Estée Lauder (EL) · resultados (fecha estimada)
@@ -1058,8 +1252,28 @@ DESCRIPTION:🇺🇸 Consumo básico › Productos del hogar y cuidado pe
  e (estimada)
 END:VEVENT
 BEGIN:VEVENT
+UID:c0302c7ec8ebf5c412b7f6f892e939db@macro-monitor
+DTSTAMP:20261015T101420Z
+DTSTART;VALUE=DATE:20261102
+DTEND;VALUE=DATE:20261103
+SUMMARY:🟠 Fabrinet (FN) · resultados (fecha estimada)
+DESCRIPTION:🇺🇸 Extra › Posiciones y análisis\nPublica hora no co
+ nfirmada.\nBPA esperado: 4.19\nFuente: yfinance (estimada)\nNota: análi
+ sis en curso
+END:VEVENT
+BEGIN:VEVENT
+UID:b8c0700ba112951a14a528935bd509d9@macro-monitor
+DTSTAMP:20261015T101420Z
+DTSTART;VALUE=DATE:20261102
+DTEND;VALUE=DATE:20261103
+SUMMARY:🟠 Marriott (MAR) · resultados (fecha estimada)
+DESCRIPTION:🇺🇸 Consumo discrecional › Hoteles y cruceros\nPublica
+  hora no confirmada.\nBPA esperado: 2.83\nFuente: yfinance (estimada)\nN
+ ota: viajes de negocios y ocio
+END:VEVENT
+BEGIN:VEVENT
 UID:07dfa33178516ce4c8dbb570e5bbad75@macro-monitor
-DTSTAMP:20261013T125459Z
+DTSTAMP:20261015T101420Z
 DTSTART;VALUE=DATE:20261102
 DTEND;VALUE=DATE:20261103
 SUMMARY:🟠 Realty Income (O) · resultados (fecha estimada)
@@ -1069,7 +1283,7 @@ DESCRIPTION:🇺🇸 Inmobiliario › REITs comerciales y residenciales\n
 END:VEVENT
 BEGIN:VEVENT
 UID:cf6f16e760e445a1461b44aa6534f23f@macro-monitor
-DTSTAMP:20261013T125459Z
+DTSTAMP:20261015T101420Z
 DTSTART:20261102T060000Z
 DTEND:20261102T063000Z
 SUMMARY:🟠 Ryanair (RYAAY) · resultados (fecha estimada)
@@ -1079,16 +1293,16 @@ DESCRIPTION:🇪🇺 Industriales › Aerolíneas\nPublica por la mañana
 END:VEVENT
 BEGIN:VEVENT
 UID:9b7409102f577efe38503e536fd251a2@macro-monitor
-DTSTAMP:20261013T125459Z
+DTSTAMP:20261015T101420Z
 DTSTART;VALUE=DATE:20261102
 DTEND;VALUE=DATE:20261103
 SUMMARY:🟠 Vertex (VRTX) · resultados (fecha estimada)
 DESCRIPTION:🇺🇸 Salud › Biotecnología\nPublica hora no confirmada
- .\nBPA esperado: -0.74\nFuente: yfinance (estimada)
+ .\nBPA esperado: 0.04\nFuente: yfinance (estimada)
 END:VEVENT
 BEGIN:VEVENT
 UID:0b92ec3693de3f0dfcb551236526d017@macro-monitor
-DTSTAMP:20261013T125459Z
+DTSTAMP:20261015T101420Z
 DTSTART;VALUE=DATE:20261103
 DTEND;VALUE=DATE:20261104
 SUMMARY:🟠 AMD (AMD) · resultados (fecha estimada)
@@ -1098,7 +1312,7 @@ DESCRIPTION:🇺🇸 Tecnología de la información › Semiconductores\n
 END:VEVENT
 BEGIN:VEVENT
 UID:2dc15e3b94b34bee54b662af785e005c@macro-monitor
-DTSTAMP:20261013T125459Z
+DTSTAMP:20261015T101420Z
 DTSTART;VALUE=DATE:20261103
 DTEND;VALUE=DATE:20261104
 SUMMARY:🟠 Amgen (AMGN) · resultados (fecha estimada)
@@ -1107,7 +1321,7 @@ DESCRIPTION:🇺🇸 Salud › Biotecnología\nPublica hora no confirmada
 END:VEVENT
 BEGIN:VEVENT
 UID:fad4e6ec75158df9e88f52f8d802775e@macro-monitor
-DTSTAMP:20261013T125459Z
+DTSTAMP:20261015T101420Z
 DTSTART;VALUE=DATE:20261103
 DTEND;VALUE=DATE:20261104
 SUMMARY:🟠 Aptiv (APTV) · resultados (fecha estimada)
@@ -1116,8 +1330,18 @@ DESCRIPTION:🇺🇸 Consumo discrecional › Componentes de automoción\
  mada)
 END:VEVENT
 BEGIN:VEVENT
+UID:0231bec44552a431178e032c3da165d1@macro-monitor
+DTSTAMP:20261015T101420Z
+DTSTART:20261103T060000Z
+DTEND:20261103T063000Z
+SUMMARY:🟠 Bayer (BAYN.DE) · resultados (fecha estimada)
+DESCRIPTION:🇪🇺 Salud › Farmacia\nPublica por la mañana (hora eur
+ opea).\nBPA esperado: 0.34\nFuente: yfinance (estimada)\nNota: farma + a
+ gro\; litigios
+END:VEVENT
+BEGIN:VEVENT
 UID:5b7e744bd0633dd1fccabfe95504b24c@macro-monitor
-DTSTAMP:20261013T125459Z
+DTSTAMP:20261015T101420Z
 DTSTART;VALUE=DATE:20261103
 DTEND;VALUE=DATE:20261104
 SUMMARY:🟠 Booking (BKNG) · resultados (fecha estimada)
@@ -1127,7 +1351,7 @@ DESCRIPTION:🇺🇸 Consumo discrecional › Restauración y ocio\nPubli
 END:VEVENT
 BEGIN:VEVENT
 UID:fc0d14e29b9938d21ffdb693b53e982b@macro-monitor
-DTSTAMP:20261013T125459Z
+DTSTAMP:20261015T101420Z
 DTSTART;VALUE=DATE:20261103
 DTEND;VALUE=DATE:20261104
 SUMMARY:🟠 Electronic Arts (EA) · resultados (fecha estimada)
@@ -1136,7 +1360,7 @@ DESCRIPTION:🇺🇸 Servicios de comunicación › Videojuegos\nPublica
 END:VEVENT
 BEGIN:VEVENT
 UID:33ee97dca33a7799b91d6724d82eab8e@macro-monitor
-DTSTAMP:20261013T125459Z
+DTSTAMP:20261015T101420Z
 DTSTART;VALUE=DATE:20261103
 DTEND;VALUE=DATE:20261104
 SUMMARY:🟠 Eaton (ETN) · resultados (fecha estimada)
@@ -1145,8 +1369,17 @@ DESCRIPTION:🇺🇸 Industriales › Equipos eléctricos\nPublica hora n
  d eléctrica y centros de datos
 END:VEVENT
 BEGIN:VEVENT
+UID:0302f6c489a8b58710969a18109dd7d2@macro-monitor
+DTSTAMP:20261015T101420Z
+DTSTART;VALUE=DATE:20261103
+DTEND;VALUE=DATE:20261104
+SUMMARY:💰 MetLife (MET) · ex-dividendo
+DESCRIPTION:🇺🇸 Financiero › Seguros de vida\nEl precio se ajusta 
+ a la baja por el dividendo en la apertura.
+END:VEVENT
+BEGIN:VEVENT
 UID:d925441f263ab3fa82939c46075b7831@macro-monitor
-DTSTAMP:20261013T125459Z
+DTSTAMP:20261015T101420Z
 DTSTART;VALUE=DATE:20261103
 DTEND;VALUE=DATE:20261104
 SUMMARY:🟠 Pfizer (PFE) · resultados (fecha estimada)
@@ -1155,7 +1388,7 @@ DESCRIPTION:🇺🇸 Salud › Farmacia\nPublica hora no confirmada.\nBPA
 END:VEVENT
 BEGIN:VEVENT
 UID:c9a784acf53dc49a81d0f9653e3e9d5a@macro-monitor
-DTSTAMP:20261013T125459Z
+DTSTAMP:20261015T101420Z
 DTSTART:20261103T060000Z
 DTEND:20261103T063000Z
 SUMMARY:🟠 Philips (PHIA.AS) · resultados (fecha estimada)
@@ -1165,17 +1398,17 @@ DESCRIPTION:🇪🇺 Salud › Equipos y tecnología médica\nPublica por
 END:VEVENT
 BEGIN:VEVENT
 UID:d31317603c2568b98e5befbc3dbeac7e@macro-monitor
-DTSTAMP:20261013T125459Z
+DTSTAMP:20261015T101420Z
 DTSTART:20261103T060000Z
 DTEND:20261103T063000Z
 SUMMARY:🟠 Zalando (ZAL.DE) · resultados (fecha estimada)
 DESCRIPTION:🇪🇺 Consumo discrecional › Comercio minorista amplio y
-  e-commerce\nPublica por la mañana (hora europea).\nBPA esperado: 0.42\
+  e-commerce\nPublica por la mañana (hora europea).\nBPA esperado: 0.23\
  nFuente: yfinance (estimada)
 END:VEVENT
 BEGIN:VEVENT
 UID:06533937ed6dbb641525d3bd0aed79e4@macro-monitor
-DTSTAMP:20261013T125459Z
+DTSTAMP:20261015T101420Z
 DTSTART;VALUE=DATE:20261104
 DTEND;VALUE=DATE:20261105
 SUMMARY:🔴 McDonald's (MCD) · resultados (fecha estimada)
@@ -1185,16 +1418,16 @@ DESCRIPTION:🇺🇸 Consumo discrecional › Restauración y ocio\nPubli
 END:VEVENT
 BEGIN:VEVENT
 UID:f2836e69a22bb15621881fe62c790d3b@macro-monitor
-DTSTAMP:20261013T125459Z
+DTSTAMP:20261015T101420Z
 DTSTART:20261104T060000Z
 DTEND:20261104T063000Z
 SUMMARY:🔴 Novo Nordisk (NOVO-B.CO) · resultados (fecha estimada)
 DESCRIPTION:🇪🇺 Salud › Farmacia\nPublica por la mañana (hora eur
- opea).\nBPA esperado: 4.96\nFuente: yfinance (estimada)
+ opea).\nBPA esperado: 4.95\nFuente: yfinance (estimada)
 END:VEVENT
 BEGIN:VEVENT
 UID:5785aa1ba962f8238c403437e7594230@macro-monitor
-DTSTAMP:20261013T125459Z
+DTSTAMP:20261015T101420Z
 DTSTART:20261104T060000Z
 DTEND:20261104T063000Z
 SUMMARY:🟠 Ahold Delhaize (AD.AS) · resultados (fecha estimada)
@@ -1203,8 +1436,38 @@ DESCRIPTION:🇪🇺 Consumo básico › Distribución de alimentación\n
  ance (estimada)
 END:VEVENT
 BEGIN:VEVENT
+UID:6fdbcdb75319aa3958def786bc83e45e@macro-monitor
+DTSTAMP:20261015T101420Z
+DTSTART;VALUE=DATE:20261104
+DTEND;VALUE=DATE:20261105
+SUMMARY:🟠 Atmos Energy (ATO) · resultados (fecha estimada)
+DESCRIPTION:🇺🇸 Utilities › Gas y redes\nPublica hora no confirmad
+ a.\nBPA esperado: 1.15\nFuente: yfinance (estimada)\nNota: distribución
+  de gas regulada
+END:VEVENT
+BEGIN:VEVENT
+UID:f0bb958ce2b0b74117a061b7cd14dbf5@macro-monitor
+DTSTAMP:20261015T101420Z
+DTSTART;VALUE=DATE:20261104
+DTEND;VALUE=DATE:20261105
+SUMMARY:🟠 Datadog (DDOG) · resultados (fecha estimada)
+DESCRIPTION:🇺🇸 Extra › Posiciones y análisis\nPublica hora no co
+ nfirmada.\nBPA esperado: 0.64\nFuente: yfinance (estimada)\nNota: análi
+ sis en curso
+END:VEVENT
+BEGIN:VEVENT
+UID:19082285cb537fa1fc517870c128f254@macro-monitor
+DTSTAMP:20261015T101420Z
+DTSTART;VALUE=DATE:20261104
+DTEND;VALUE=DATE:20261105
+SUMMARY:🟠 Flutter (FLUT) · resultados (fecha estimada)
+DESCRIPTION:🇺🇸 Consumo discrecional › Apuestas y ocio\nPublica ho
+ ra no confirmada.\nBPA esperado: 0.29\nFuente: yfinance (estimada)\nNota
+ : apuestas\; cotiza en NYSE
+END:VEVENT
+BEGIN:VEVENT
 UID:a0fbeb3258cdfa37357de454d2c39c60@macro-monitor
-DTSTAMP:20261013T125459Z
+DTSTAMP:20261015T101420Z
 DTSTART:20261104T060000Z
 DTEND:20261104T063000Z
 SUMMARY:🟠 Fresenius (FRE.DE) · resultados (fecha estimada)
@@ -1213,8 +1476,58 @@ DESCRIPTION:🇪🇺 Salud › Servicios sanitarios y aseguradoras\nPubli
  (estimada)
 END:VEVENT
 BEGIN:VEVENT
+UID:ae6e984086b7198ca4b787552c4585da@macro-monitor
+DTSTAMP:20261015T101420Z
+DTSTART;VALUE=DATE:20261104
+DTEND;VALUE=DATE:20261105
+SUMMARY:🟠 Grainger (GWW) · resultados (fecha estimada)
+DESCRIPTION:🇺🇸 Industriales › Distribución industrial\nPublica h
+ ora no confirmada.\nBPA esperado: 11.66\nFuente: yfinance (estimada)\nNo
+ ta: MRO: pulso de las fábricas
+END:VEVENT
+BEGIN:VEVENT
+UID:50da72cede67c73a9f478d15a01c8095@macro-monitor
+DTSTAMP:20261015T101420Z
+DTSTART;VALUE=DATE:20261104
+DTEND;VALUE=DATE:20261105
+SUMMARY:🟠 McKesson (MCK) · resultados (fecha estimada)
+DESCRIPTION:🇺🇸 Salud › Distribución sanitaria\nPublica hora no c
+ onfirmada.\nBPA esperado: 10.75\nFuente: yfinance (estimada)\nNota: vol
+ úmenes de medicamentos\; margen bajo\, defensivo
+END:VEVENT
+BEGIN:VEVENT
+UID:8d2911a59f5885659dd169a1c56d5677@macro-monitor
+DTSTAMP:20261015T101420Z
+DTSTART;VALUE=DATE:20261104
+DTEND;VALUE=DATE:20261105
+SUMMARY:🟠 MetLife (MET) · resultados (fecha estimada)
+DESCRIPTION:🇺🇸 Financiero › Seguros de vida\nPublica hora no conf
+ irmada.\nBPA esperado: 2.74\nFuente: yfinance (estimada)\nNota: duració
+ n larga: sensible a tipos
+END:VEVENT
+BEGIN:VEVENT
+UID:eb59dadbee8e35a67523fd2570e5f5f7@macro-monitor
+DTSTAMP:20261015T101420Z
+DTSTART;VALUE=DATE:20261104
+DTEND;VALUE=DATE:20261105
+SUMMARY:🟠 Nutrien (NTR) · resultados (fecha estimada)
+DESCRIPTION:🇺🇸 Materiales › Agricultura y fertilizantes\nPublica 
+ hora no confirmada.\nBPA esperado: 0.85\nFuente: yfinance (estimada)\nNo
+ ta: fertilizantes\; cotiza en NYSE
+END:VEVENT
+BEGIN:VEVENT
+UID:bc137730d7e87fbf2acb290581c59150@macro-monitor
+DTSTAMP:20261015T101420Z
+DTSTART;VALUE=DATE:20261104
+DTEND;VALUE=DATE:20261105
+SUMMARY:🟠 Uber (UBER) · resultados (fecha estimada)
+DESCRIPTION:🇺🇸 Consumo discrecional › Plataformas de consumo\nPub
+ lica hora no confirmada.\nBPA esperado: 0.91\nFuente: yfinance (estimada
+ )\nNota: movilidad y reparto
+END:VEVENT
+BEGIN:VEVENT
 UID:78a5138c16315dc39987f239b9f63bce@macro-monitor
-DTSTAMP:20261013T125459Z
+DTSTAMP:20261015T101420Z
 DTSTART:20261104T060000Z
 DTEND:20261104T063000Z
 SUMMARY:🟠 Vonovia (VNA.DE) · resultados (fecha estimada)
@@ -1224,36 +1537,36 @@ DESCRIPTION:🇪🇺 Inmobiliario › REITs comerciales y residenciales\n
 END:VEVENT
 BEGIN:VEVENT
 UID:2652d9a9c3549c7663dc534b89598311@macro-monitor
-DTSTAMP:20261013T125459Z
+DTSTAMP:20261015T101420Z
 DTSTART:20261105T060000Z
 DTEND:20261105T063000Z
 SUMMARY:🔴 Maersk (MAERSK-B.CO) · resultados (fecha estimada)
 DESCRIPTION:🇪🇺 Industriales › Transporte y logística\nPublica po
- r la mañana (hora europea).\nBPA esperado: 249.50\nFuente: yfinance (es
+ r la mañana (hora europea).\nBPA esperado: 253.75\nFuente: yfinance (es
  timada)\nNota: comercio mundial y fletes
 END:VEVENT
 BEGIN:VEVENT
-UID:bec9ea33934d4738a23e38f8d067d4f2@macro-monitor
-DTSTAMP:20261013T125459Z
-DTSTART;VALUE=DATE:20261105
-DTEND;VALUE=DATE:20261106
-SUMMARY:🟠 ConocoPhillips (COP) · resultados (fecha estimada)
-DESCRIPTION:🇺🇸 Energía › Exploración y producción\nPublica hor
- a no confirmada.\nBPA esperado: 2.88\nFuente: yfinance (estimada)
+UID:d0176f529bc6dfef4a028ecacb9219c2@macro-monitor
+DTSTAMP:20261015T101420Z
+DTSTART:20261105T060000Z
+DTEND:20261105T063000Z
+SUMMARY:🟠 Cellnex (CLNX.MC) · resultados (fecha estimada)
+DESCRIPTION:🇪🇺 Servicios de comunicación › Torres de telecomunic
+ aciones\nPublica por la mañana (hora europea).\nBPA esperado: 0.04\nFue
+ nte: yfinance (estimada)\nNota: infraestructura: duración larga
 END:VEVENT
 BEGIN:VEVENT
-UID:a5f4db7c79cc7e1b71b7d6e05417d22a@macro-monitor
-DTSTAMP:20261013T125459Z
-DTSTART;VALUE=DATE:20261105
-DTEND;VALUE=DATE:20261106
-SUMMARY:🟠 Datadog (DDOG) · resultados (fecha estimada)
-DESCRIPTION:🇺🇸 Extra › Posiciones y análisis\nPublica hora no co
- nfirmada.\nBPA esperado: 0.64\nFuente: yfinance (estimada)\nNota: análi
- sis en curso
+UID:bec9ea33934d4738a23e38f8d067d4f2@macro-monitor
+DTSTAMP:20261015T101420Z
+DTSTART:20261105T130000Z
+DTEND:20261105T133000Z
+SUMMARY:🟠 ConocoPhillips (COP) · resultados
+DESCRIPTION:🇺🇸 Energía › Exploración y producción\nPublica ant
+ es de la apertura.\nBPA esperado: 2.89\nFuente: finnhub
 END:VEVENT
 BEGIN:VEVENT
 UID:cf03c8fdcbe90d5d1880766943b05a7c@macro-monitor
-DTSTAMP:20261013T125459Z
+DTSTAMP:20261015T101420Z
 DTSTART:20261105T060000Z
 DTEND:20261105T063000Z
 SUMMARY:🟠 DHL Group (DHL.DE) · resultados (fecha estimada)
@@ -1263,7 +1576,7 @@ DESCRIPTION:🇪🇺 Industriales › Transporte y logística\nPublica po
 END:VEVENT
 BEGIN:VEVENT
 UID:571e324fad50a71bd8630b63ee658ef8@macro-monitor
-DTSTAMP:20261013T125459Z
+DTSTAMP:20261015T101420Z
 DTSTART:20261105T060000Z
 DTEND:20261105T063000Z
 SUMMARY:🟠 Deutsche Telekom (DTE.DE) · resultados (fecha estimada)
@@ -1273,16 +1586,25 @@ DESCRIPTION:🇪🇺 Servicios de comunicación › Telecomunicaciones\nP
 END:VEVENT
 BEGIN:VEVENT
 UID:aeebe4f1c488291b4c2238f4816802e3@macro-monitor
-DTSTAMP:20261013T125459Z
-DTSTART;VALUE=DATE:20261105
-DTEND;VALUE=DATE:20261106
-SUMMARY:🟠 Duke Energy (DUK) · resultados (fecha estimada)
-DESCRIPTION:🇺🇸 Utilities › Eléctricas\nPublica hora no confirmad
- a.\nBPA esperado: 1.83\nFuente: yfinance (estimada)
+DTSTAMP:20261015T101420Z
+DTSTART:20261105T130000Z
+DTEND:20261105T133000Z
+SUMMARY:🟠 Duke Energy (DUK) · resultados
+DESCRIPTION:🇺🇸 Utilities › Eléctricas\nPublica antes de la apert
+ ura.\nBPA esperado: 1.85\nFuente: finnhub
+END:VEVENT
+BEGIN:VEVENT
+UID:02392cbb576fa7874507836bb1422e0f@macro-monitor
+DTSTAMP:20261015T101420Z
+DTSTART:20261105T060000Z
+DTEND:20261105T063000Z
+SUMMARY:🟠 Engie (ENGI.PA) · resultados (fecha estimada)
+DESCRIPTION:🇪🇺 Utilities › Gas y redes\nPublica por la mañana (h
+ ora europea).\nBPA esperado: 0.27\nFuente: yfinance (estimada)
 END:VEVENT
 BEGIN:VEVENT
 UID:b0eb38f51d2b7e36cc1fd228ec67d5a0@macro-monitor
-DTSTAMP:20261013T125459Z
+DTSTAMP:20261015T101420Z
 DTSTART:20261105T060000Z
 DTEND:20261105T063000Z
 SUMMARY:🟠 Genmab (GMAB.CO) · resultados (fecha estimada)
@@ -1291,7 +1613,7 @@ DESCRIPTION:🇪🇺 Salud › Biotecnología\nPublica por la mañana (ho
 END:VEVENT
 BEGIN:VEVENT
 UID:ed3c6cf01a919afffc7c3492c748b47e@macro-monitor
-DTSTAMP:20261013T125459Z
+DTSTAMP:20261015T101420Z
 DTSTART:20261105T060000Z
 DTEND:20261105T063000Z
 SUMMARY:🟠 ArcelorMittal (MT.AS) · resultados (fecha estimada)
@@ -1300,8 +1622,18 @@ DESCRIPTION:🇪🇺 Materiales › Acero\nPublica por la mañana (hora e
  es y demanda industrial europea
 END:VEVENT
 BEGIN:VEVENT
+UID:0981bd258b5980bdabdbbd2740104dab@macro-monitor
+DTSTAMP:20261015T101420Z
+DTSTART:20261105T060000Z
+DTEND:20261105T063000Z
+SUMMARY:🟠 National Grid (NG.L) · resultados (fecha estimada)
+DESCRIPTION:🇪🇺 Utilities › Gas y redes\nPublica por la mañana (h
+ ora europea).\nBPA esperado: n/d\nFuente: yfinance (estimada)\nNota: red
+ es Reino Unido y EE.UU.
+END:VEVENT
+BEGIN:VEVENT
 UID:77685d6abe1fc68a4f1573c264987eb6@macro-monitor
-DTSTAMP:20261013T125459Z
+DTSTAMP:20261015T101420Z
 DTSTART:20261105T060000Z
 DTEND:20261105T063000Z
 SUMMARY:🟠 Ørsted (ORSTED.CO) · resultados (fecha estimada)
@@ -1311,7 +1643,7 @@ DESCRIPTION:🇪🇺 Utilities › Renovables puras\nPublica por la maña
 END:VEVENT
 BEGIN:VEVENT
 UID:06cfb3c96615c0815b4002c666bc2285@macro-monitor
-DTSTAMP:20261013T125459Z
+DTSTAMP:20261015T101420Z
 DTSTART:20261105T060000Z
 DTEND:20261105T063000Z
 SUMMARY:🟠 Rheinmetall (RHM.DE) · resultados (fecha estimada)
@@ -1321,7 +1653,7 @@ DESCRIPTION:🇪🇺 Industriales › Aeroespacial y defensa\nPublica por
 END:VEVENT
 BEGIN:VEVENT
 UID:445c6aeddda9cc86a08254fa5c214a4c@macro-monitor
-DTSTAMP:20261013T125459Z
+DTSTAMP:20261015T101420Z
 DTSTART:20261105T060000Z
 DTEND:20261105T063000Z
 SUMMARY:🟠 Siemens Healthineers (SHL.DE) · resultados (fecha estimada)
@@ -1331,7 +1663,7 @@ DESCRIPTION:🇪🇺 Salud › Equipos y tecnología médica\nPublica por
 END:VEVENT
 BEGIN:VEVENT
 UID:3d0396b3f6531279d90c117c962a1491@macro-monitor
-DTSTAMP:20261013T125459Z
+DTSTAMP:20261015T101420Z
 DTSTART;VALUE=DATE:20261105
 DTEND;VALUE=DATE:20261106
 SUMMARY:🟠 Simon Property (SPG) · resultados (fecha estimada)
@@ -1340,8 +1672,18 @@ DESCRIPTION:🇺🇸 Inmobiliario › REITs comerciales y residenciales\n
  ada)\nNota: centros comerciales
 END:VEVENT
 BEGIN:VEVENT
+UID:09e78ef84841c07ece9abdd032d804a8@macro-monitor
+DTSTAMP:20261015T101420Z
+DTSTART:20261105T060000Z
+DTEND:20261105T063000Z
+SUMMARY:🟠 Swiss Re (SREN.SW) · resultados (fecha estimada)
+DESCRIPTION:🇪🇺 Financiero › Reaseguro\nPublica por la mañana (ho
+ ra europea).\nBPA esperado: 3.59\nFuente: yfinance (estimada)\nNota: cat
+ ástrofes y precios de reaseguro
+END:VEVENT
+BEGIN:VEVENT
 UID:aa4f9c1167b325a635eb13efb4778611@macro-monitor
-DTSTAMP:20261013T125459Z
+DTSTAMP:20261015T101420Z
 DTSTART:20261106T060000Z
 DTEND:20261106T063000Z
 SUMMARY:🟠 Amadeus (AMS.MC) · resultados (fecha estimada)
@@ -1351,7 +1693,7 @@ DESCRIPTION:🇪🇺 Tecnología de la información › Servicios de TI\n
 END:VEVENT
 BEGIN:VEVENT
 UID:16e5a829db7cbf9967eda3d36f26df49@macro-monitor
-DTSTAMP:20261013T125459Z
+DTSTAMP:20261015T101420Z
 DTSTART:20261106T060000Z
 DTEND:20261106T063000Z
 SUMMARY:🟠 IAG (IAG.L) · resultados (fecha estimada)
@@ -1360,7 +1702,7 @@ DESCRIPTION:🇪🇺 Industriales › Aerolíneas\nPublica por la mañana
 END:VEVENT
 BEGIN:VEVENT
 UID:62d2391cb593a7841e00ebbedb669f87@macro-monitor
-DTSTAMP:20261013T125459Z
+DTSTAMP:20261015T101420Z
 DTSTART;VALUE=DATE:20261106
 DTEND;VALUE=DATE:20261107
 SUMMARY:💰 Pfizer (PFE) · ex-dividendo
@@ -1368,17 +1710,47 @@ DESCRIPTION:🇺🇸 Salud › Farmacia\nEl precio se ajusta a la baja po
  r el dividendo en la apertura.
 END:VEVENT
 BEGIN:VEVENT
-UID:8360f3397c995110a162a91e22ca04d4@macro-monitor
-DTSTAMP:20261013T125459Z
+UID:c84775415b69c2b45ffd9a2c49dd0571@macro-monitor
+DTSTAMP:20261015T101420Z
+DTSTART;VALUE=DATE:20261106
+DTEND;VALUE=DATE:20261107
+SUMMARY:🟠 Vistra (VST) · resultados
+DESCRIPTION:🇺🇸 Utilities › Generación independiente\nPublica hor
+ a no confirmada.\nBPA esperado: 2.95\nFuente: finnhub\nNota: generación
+  y centros de datos
+END:VEVENT
+BEGIN:VEVENT
+UID:5d5bcadf0f565842e5bab7b912411916@macro-monitor
+DTSTAMP:20261015T101420Z
 DTSTART;VALUE=DATE:20261109
 DTEND;VALUE=DATE:20261110
-SUMMARY:🟠 Fabrinet (FN) · resultados
-DESCRIPTION:🇺🇸 Extra › Posiciones y análisis\nPublica hora no co
- nfirmada.\nBPA esperado: 4.31\nFuente: finnhub\nNota: análisis en curso
+SUMMARY:🟠 Constellation (CEG) · resultados (fecha estimada)
+DESCRIPTION:🇺🇸 Utilities › Generación independiente\nPublica hor
+ a no confirmada.\nBPA esperado: 3.75\nFuente: yfinance (estimada)\nNota:
+  nuclear
+END:VEVENT
+BEGIN:VEVENT
+UID:ca894f1069003d66b251f1484aec7aa1@macro-monitor
+DTSTAMP:20261015T101420Z
+DTSTART;VALUE=DATE:20261109
+DTEND;VALUE=DATE:20261110
+SUMMARY:🟠 Ferguson (FERG) · resultados
+DESCRIPTION:🇺🇸 Industriales › Suministros de construcción\nPubli
+ ca hora no confirmada.\nBPA esperado: 3.37\nFuente: finnhub\nNota: fonta
+ nería y climatización\; cotiza en NYSE
+END:VEVENT
+BEGIN:VEVENT
+UID:e072dc705236e3fea3c271a062c0c408@macro-monitor
+DTSTAMP:20261015T101420Z
+DTSTART;VALUE=DATE:20261109
+DTEND;VALUE=DATE:20261110
+SUMMARY:🟠 Take-Two (TTWO) · resultados
+DESCRIPTION:🇺🇸 Servicios de comunicación › Videojuegos\nPublica 
+ hora no confirmada.\nBPA esperado: 0.96\nFuente: finnhub
 END:VEVENT
 BEGIN:VEVENT
 UID:85e92ac3fa4055ed654702b751b76345@macro-monitor
-DTSTAMP:20261013T125459Z
+DTSTAMP:20261015T101420Z
 DTSTART:20261109T060000Z
 DTEND:20261109T063000Z
 SUMMARY:🟠 UniCredit (UCG.MI) · resultados (fecha estimada)
@@ -1387,7 +1759,7 @@ DESCRIPTION:🇪🇺 Financiero › Bancos\nPublica por la mañana (hora
 END:VEVENT
 BEGIN:VEVENT
 UID:d2c9dd6155a9339293bd96f26eb7efe1@macro-monitor
-DTSTAMP:20261013T125459Z
+DTSTAMP:20261015T101420Z
 DTSTART;VALUE=DATE:20261109
 DTEND;VALUE=DATE:20261110
 SUMMARY:💰 Vulcan Materials (VMC) · ex-dividendo
@@ -1396,7 +1768,7 @@ DESCRIPTION:🇺🇸 Materiales › Materiales de construcción\nEl preci
 END:VEVENT
 BEGIN:VEVENT
 UID:0dfcb967e468c66406cd64c9d1999ccd@macro-monitor
-DTSTAMP:20261013T125459Z
+DTSTAMP:20261015T101420Z
 DTSTART;VALUE=DATE:20261110
 DTEND;VALUE=DATE:20261111
 SUMMARY:🟠 Cisco (CSCO) · resultados
@@ -1406,7 +1778,7 @@ DESCRIPTION:🇺🇸 Tecnología de la información › Equipos de comuni
 END:VEVENT
 BEGIN:VEVENT
 UID:2f52bfed7fc3345880eb203c6bf97796@macro-monitor
-DTSTAMP:20261013T125459Z
+DTSTAMP:20261015T101420Z
 DTSTART:20261110T060000Z
 DTEND:20261110T063000Z
 SUMMARY:🟠 Infineon (IFX.DE) · resultados (fecha estimada)
@@ -1416,8 +1788,38 @@ DESCRIPTION:🇪🇺 Tecnología de la información › Semiconductores\n
  a
 END:VEVENT
 BEGIN:VEVENT
+UID:2457839fe7c53a91ee679036e4131c55@macro-monitor
+DTSTAMP:20261015T101420Z
+DTSTART:20261110T060000Z
+DTEND:20261110T063000Z
+SUMMARY:🟠 K+S (SDF.DE) · resultados (fecha estimada)
+DESCRIPTION:🇪🇺 Materiales › Agricultura y fertilizantes\nPublica 
+ por la mañana (hora europea).\nBPA esperado: -0.25\nFuente: yfinance (e
+ stimada)\nNota: potasa
+END:VEVENT
+BEGIN:VEVENT
+UID:5100cd48d9121c9361cf461430fae1fd@macro-monitor
+DTSTAMP:20261015T101420Z
+DTSTART:20261110T060000Z
+DTEND:20261110T063000Z
+SUMMARY:🟠 Vodafone (VOD.L) · resultados (fecha estimada)
+DESCRIPTION:🇪🇺 Servicios de comunicación › Medios tradicionales 
+ y cable\nPublica por la mañana (hora europea).\nBPA esperado: n/d\nFuen
+ te: yfinance (estimada)
+END:VEVENT
+BEGIN:VEVENT
+UID:463ac5457fa98e7782cdeeca8cb70b3f@macro-monitor
+DTSTAMP:20261015T101420Z
+DTSTART:20261111T210500Z
+DTEND:20261111T213500Z
+SUMMARY:🟠 Corteva (CTVA) · resultados
+DESCRIPTION:🇺🇸 Materiales › Agricultura y fertilizantes\nPublica 
+ tras el cierre.\nBPA esperado: 0.03\nFuente: finnhub\nNota: semillas\; c
+ iclo agrícola
+END:VEVENT
+BEGIN:VEVENT
 UID:cf2077f251c2539530df60cb00fd265c@macro-monitor
-DTSTAMP:20261013T125459Z
+DTSTAMP:20261015T101420Z
 DTSTART:20261111T060000Z
 DTEND:20261111T063000Z
 SUMMARY:🟠 E.ON (EOAN.DE) · resultados (fecha estimada)
@@ -1427,7 +1829,7 @@ DESCRIPTION:🇪🇺 Utilities › Eléctricas\nPublica por la mañana (h
 END:VEVENT
 BEGIN:VEVENT
 UID:71f8343be8477a4d87b2fc1c00dc5090@macro-monitor
-DTSTAMP:20261013T125459Z
+DTSTAMP:20261015T101420Z
 DTSTART:20261111T060000Z
 DTEND:20261111T063000Z
 SUMMARY:🟠 RWE (RWE.DE) · resultados (fecha estimada)
@@ -1437,7 +1839,7 @@ DESCRIPTION:🇪🇺 Utilities › Eléctricas\nPublica por la mañana (h
 END:VEVENT
 BEGIN:VEVENT
 UID:cc602d9ce6ad1a4d4488e99158196701@macro-monitor
-DTSTAMP:20261013T125459Z
+DTSTAMP:20261015T101420Z
 DTSTART:20261112T060000Z
 DTEND:20261112T063000Z
 SUMMARY:🔴 Allianz (ALV.DE) · resultados (fecha estimada)
@@ -1446,7 +1848,7 @@ DESCRIPTION:🇪🇺 Financiero › Seguros y reaseguro\nPublica por la m
 END:VEVENT
 BEGIN:VEVENT
 UID:173400761e76829ac28a06b5713baf59@macro-monitor
-DTSTAMP:20261013T125459Z
+DTSTAMP:20261015T101420Z
 DTSTART:20261112T060000Z
 DTEND:20261112T063000Z
 SUMMARY:🔴 Siemens (SIE.DE) · resultados (fecha estimada)
@@ -1455,28 +1857,28 @@ DESCRIPTION:🇪🇺 Industriales › Maquinaria y bienes de equipo\nPubl
   (estimada)\nNota: automatización e infraestructuras
 END:VEVENT
 BEGIN:VEVENT
+UID:798d3313b06ad28844340b5b5818794a@macro-monitor
+DTSTAMP:20261015T101420Z
+DTSTART:20261112T060000Z
+DTEND:20261112T063000Z
+SUMMARY:🟠 ACS (ACS.MC) · resultados (fecha estimada)
+DESCRIPTION:🇪🇺 Industriales › Infraestructuras de transporte\nPub
+ lica por la mañana (hora europea).\nBPA esperado: n/d\nFuente: yfinance
+  (estimada)\nNota: construcción e infraestructuras
+END:VEVENT
+BEGIN:VEVENT
 UID:1e47d6ada1b3d1895b1000a02eecb54e@macro-monitor
-DTSTAMP:20261013T125459Z
+DTSTAMP:20261015T101420Z
 DTSTART:20261112T210500Z
 DTEND:20261112T213500Z
 SUMMARY:🟠 Applied Materials (AMAT) · resultados
 DESCRIPTION:🇺🇸 Tecnología de la información › Equipos de semico
- nductores\nPublica tras el cierre.\nBPA esperado: 4.14\nFuente: finnhub\
+ nductores\nPublica tras el cierre.\nBPA esperado: 4.13\nFuente: finnhub\
  nNota: cierre fiscal octubre
 END:VEVENT
 BEGIN:VEVENT
-UID:cea960d1a18bc99733c665348378f00d@macro-monitor
-DTSTAMP:20261013T125459Z
-DTSTART:20261112T210500Z
-DTEND:20261112T213500Z
-SUMMARY:🟠 Disney (DIS) · resultados
-DESCRIPTION:🇺🇸 Servicios de comunicación › Entretenimiento\nPubl
- ica tras el cierre.\nBPA esperado: 1.70\nFuente: finnhub\nNota: cierre f
- iscal septiembre
-END:VEVENT
-BEGIN:VEVENT
 UID:e2b7833405143e2245e671dec97c4ac9@macro-monitor
-DTSTAMP:20261013T125459Z
+DTSTAMP:20261015T101420Z
 DTSTART:20261112T060000Z
 DTEND:20261112T063000Z
 SUMMARY:🟠 Enel (ENEL.MI) · resultados (fecha estimada)
@@ -1484,8 +1886,18 @@ DESCRIPTION:🇪🇺 Utilities › Eléctricas\nPublica por la mañana (h
  ora europea).\nBPA esperado: 0.19\nFuente: yfinance (estimada)
 END:VEVENT
 BEGIN:VEVENT
+UID:97e50e80d7ec4acfac0f145ce136a4d4@macro-monitor
+DTSTAMP:20261015T101420Z
+DTSTART:20261112T060000Z
+DTEND:20261112T063000Z
+SUMMARY:🟠 Merlin Properties (MRL.MC) · resultados (fecha estimada)
+DESCRIPTION:🇪🇺 Inmobiliario › REITs comerciales y residenciales\n
+ Publica por la mañana (hora europea).\nBPA esperado: 0.14\nFuente: yfin
+ ance (estimada)\nNota: oficinas y logística en España
+END:VEVENT
+BEGIN:VEVENT
 UID:306aead6f221301060df4a17ba7fe589@macro-monitor
-DTSTAMP:20261013T125459Z
+DTSTAMP:20261015T101420Z
 DTSTART;VALUE=DATE:20261112
 DTEND;VALUE=DATE:20261113
 SUMMARY:💰 ArcelorMittal (MT.AS) · ex-dividendo
@@ -1494,7 +1906,7 @@ DESCRIPTION:🇪🇺 Materiales › Acero\nEl precio se ajusta a la baja
 END:VEVENT
 BEGIN:VEVENT
 UID:e8dead7a83e1922d79b9d294063c14dd@macro-monitor
-DTSTAMP:20261013T125459Z
+DTSTAMP:20261015T101420Z
 DTSTART:20261112T060000Z
 DTEND:20261112T063000Z
 SUMMARY:🟠 Munich Re (MUV2.DE) · resultados (fecha estimada)
@@ -1504,17 +1916,26 @@ DESCRIPTION:🇪🇺 Financiero › Seguros y reaseguro\nPublica por la m
 END:VEVENT
 BEGIN:VEVENT
 UID:0688d5f3d4f8fe7971f2d215b40d2580@macro-monitor
-DTSTAMP:20261013T125459Z
+DTSTAMP:20261015T101420Z
 DTSTART:20261112T060000Z
 DTEND:20261112T063000Z
 SUMMARY:🟠 Telefónica (TEF.MC) · resultados (fecha estimada)
 DESCRIPTION:🇪🇺 Servicios de comunicación › Telecomunicaciones\nP
- ublica por la mañana (hora europea).\nBPA esperado: 0.11\nFuente: yfina
+ ublica por la mañana (hora europea).\nBPA esperado: 0.12\nFuente: yfina
  nce (estimada)
 END:VEVENT
 BEGIN:VEVENT
+UID:7daf9dda1b6ef3a15c94b0bb88dca4c0@macro-monitor
+DTSTAMP:20261015T101420Z
+DTSTART;VALUE=DATE:20261112
+DTEND;VALUE=DATE:20261113
+SUMMARY:💰 TJX (TJX) · ex-dividendo
+DESCRIPTION:🇺🇸 Consumo discrecional › Retail de descuento y espec
+ ializado\nEl precio se ajusta a la baja por el dividendo en la apertura.
+END:VEVENT
+BEGIN:VEVENT
 UID:9abd9f4651ed16c18a6eb5db245ee16e@macro-monitor
-DTSTAMP:20261013T125459Z
+DTSTAMP:20261015T101420Z
 DTSTART:20261113T060000Z
 DTEND:20261113T063000Z
 SUMMARY:🟠 Richemont (CFR.SW) · resultados (fecha estimada)
@@ -1523,7 +1944,7 @@ DESCRIPTION:🇪🇺 Consumo discrecional › Lujo\nPublica por la mañan
 END:VEVENT
 BEGIN:VEVENT
 UID:9bad9a0b89138080afc707bb54e0cb47@macro-monitor
-DTSTAMP:20261013T125459Z
+DTSTAMP:20261015T101420Z
 DTSTART;VALUE=DATE:20261113
 DTEND;VALUE=DATE:20261114
 SUMMARY:💰 Duke Energy (DUK) · ex-dividendo
@@ -1532,7 +1953,7 @@ DESCRIPTION:🇺🇸 Utilities › Eléctricas\nEl precio se ajusta a la
 END:VEVENT
 BEGIN:VEVENT
 UID:d0a670779544c777db531db2511c7ab8@macro-monitor
-DTSTAMP:20261013T125459Z
+DTSTAMP:20261015T101420Z
 DTSTART;VALUE=DATE:20261113
 DTEND;VALUE=DATE:20261114
 SUMMARY:💰 Equinor (EQNR.OL) · ex-dividendo
@@ -1541,7 +1962,7 @@ DESCRIPTION:🇪🇺 Energía › Exploración y producción\nEl precio s
 END:VEVENT
 BEGIN:VEVENT
 UID:3930ea36c79651f4d164f22912b5f76d@macro-monitor
-DTSTAMP:20261013T125459Z
+DTSTAMP:20261015T101420Z
 DTSTART;VALUE=DATE:20261113
 DTEND;VALUE=DATE:20261114
 SUMMARY:💰 Honeywell (HON) · ex-dividendo
@@ -1550,7 +1971,7 @@ DESCRIPTION:🇺🇸 Industriales › Conglomerados industriales\nEl prec
 END:VEVENT
 BEGIN:VEVENT
 UID:ad9601541bc3de4ada8e54cd27cdc1c7@macro-monitor
-DTSTAMP:20261013T125459Z
+DTSTAMP:20261015T101420Z
 DTSTART;VALUE=DATE:20261113
 DTEND;VALUE=DATE:20261114
 SUMMARY:💰 Starbucks (SBUX) · ex-dividendo
@@ -1558,18 +1979,27 @@ DESCRIPTION:🇺🇸 Consumo discrecional › Restauración y ocio\nEl pr
  ecio se ajusta a la baja por el dividendo en la apertura.
 END:VEVENT
 BEGIN:VEVENT
+UID:b28adf894903405be85b7381c735279f@macro-monitor
+DTSTAMP:20261015T101420Z
+DTSTART;VALUE=DATE:20261116
+DTEND;VALUE=DATE:20261117
+SUMMARY:💰 International Paper (IP) · ex-dividendo
+DESCRIPTION:🇺🇸 Materiales › Papel y productos forestales\nEl prec
+ io se ajusta a la baja por el dividendo en la apertura.
+END:VEVENT
+BEGIN:VEVENT
 UID:f9fedef9785bc42e14474d1550399bf7@macro-monitor
-DTSTAMP:20261013T125459Z
+DTSTAMP:20261015T101420Z
 DTSTART;VALUE=DATE:20261117
 DTEND;VALUE=DATE:20261118
 SUMMARY:🔴 Home Depot (HD) · resultados
 DESCRIPTION:🇺🇸 Consumo discrecional › Mejora del hogar\nPublica h
- ora no confirmada.\nBPA esperado: 3.96\nFuente: finnhub\nNota: vivienda 
+ ora no confirmada.\nBPA esperado: 3.95\nFuente: finnhub\nNota: vivienda 
  y renovación
 END:VEVENT
 BEGIN:VEVENT
 UID:2f5da5c47f393b436432f92b3bc8e8d3@macro-monitor
-DTSTAMP:20261013T125459Z
+DTSTAMP:20261015T101420Z
 DTSTART:20261117T210500Z
 DTEND:20261117T213500Z
 SUMMARY:🔴 Nvidia (NVDA) · resultados
@@ -1578,8 +2008,46 @@ DESCRIPTION:🇺🇸 Tecnología de la información › Semiconductores\n
  re fiscal enero\; resultados ~3 semanas después que el resto
 END:VEVENT
 BEGIN:VEVENT
+UID:3b1fc8c2e134629bf6a3d01b620c1d09@macro-monitor
+DTSTAMP:20261015T101420Z
+DTSTART:20261117T210500Z
+DTEND:20261117T213500Z
+SUMMARY:🟠 Disney (DIS) · resultados
+DESCRIPTION:🇺🇸 Servicios de comunicación › Entretenimiento\nPubl
+ ica tras el cierre.\nBPA esperado: 1.69\nFuente: finnhub\nNota: cierre f
+ iscal septiembre
+END:VEVENT
+BEGIN:VEVENT
+UID:b63d46ef9627d0db5159ba714017551c@macro-monitor
+DTSTAMP:20261015T101420Z
+DTSTART:20261117T060000Z
+DTEND:20261117T063000Z
+SUMMARY:🟠 Imperial Brands (IMB.L) · resultados (fecha estimada)
+DESCRIPTION:🇪🇺 Consumo básico › Tabaco\nPublica por la mañana (
+ hora europea).\nBPA esperado: n/d\nFuente: yfinance (estimada)
+END:VEVENT
+BEGIN:VEVENT
+UID:914dd771e2f86fb47b7736f5e455dade@macro-monitor
+DTSTAMP:20261015T101420Z
+DTSTART:20261118T060000Z
+DTEND:20261118T063000Z
+SUMMARY:🟠 SSE (SSE.L) · resultados (fecha estimada)
+DESCRIPTION:🇪🇺 Utilities › Gas y redes\nPublica por la mañana (h
+ ora europea).\nBPA esperado: n/d\nFuente: yfinance (estimada)
+END:VEVENT
+BEGIN:VEVENT
+UID:34d0425ee3c21137680b55233da3c971@macro-monitor
+DTSTAMP:20261015T101420Z
+DTSTART;VALUE=DATE:20261118
+DTEND;VALUE=DATE:20261119
+SUMMARY:🟠 TJX (TJX) · resultados
+DESCRIPTION:🇺🇸 Consumo discrecional › Retail de descuento y espec
+ ializado\nPublica hora no confirmada.\nBPA esperado: 1.35\nFuente: finnh
+ ub\nNota: ropa a descuento: gana cuando el consumidor baja de gama
+END:VEVENT
+BEGIN:VEVENT
 UID:c2cbf96084ee3dbb9ee7cabd5ee62456@macro-monitor
-DTSTAMP:20261013T125459Z
+DTSTAMP:20261015T101420Z
 DTSTART;VALUE=DATE:20261119
 DTEND;VALUE=DATE:20261120
 SUMMARY:💰 Microsoft (MSFT) · ex-dividendo
@@ -1588,7 +2056,7 @@ DESCRIPTION:🇺🇸 Tecnología de la información › Software\nEl prec
 END:VEVENT
 BEGIN:VEVENT
 UID:c8318aa9c1570f47fa50c3394e28a7b2@macro-monitor
-DTSTAMP:20261013T125459Z
+DTSTAMP:20261015T101420Z
 DTSTART;VALUE=DATE:20261119
 DTEND;VALUE=DATE:20261120
 SUMMARY:🔴 Walmart (WMT) · resultados
@@ -1598,7 +2066,7 @@ DESCRIPTION:🇺🇸 Consumo básico › Distribución de alimentación\n
 END:VEVENT
 BEGIN:VEVENT
 UID:271fea96dc36fa10984891ed0a93b575@macro-monitor
-DTSTAMP:20261013T125459Z
+DTSTAMP:20261015T101420Z
 DTSTART;VALUE=DATE:20261119
 DTEND;VALUE=DATE:20261120
 SUMMARY:💰 Applied Materials (AMAT) · ex-dividendo
@@ -1607,8 +2075,28 @@ DESCRIPTION:🇺🇸 Tecnología de la información › Equipos de semico
  .
 END:VEVENT
 BEGIN:VEVENT
+UID:98ad7792c9661bdabe90fd876e4bccb8@macro-monitor
+DTSTAMP:20261015T101420Z
+DTSTART:20261119T060000Z
+DTEND:20261119T063000Z
+SUMMARY:🟠 Subsea 7 (SUBC.OL) · resultados (fecha estimada)
+DESCRIPTION:🇪🇺 Energía › Gas natural licuado y servicios\nPublic
+ a por la mañana (hora europea).\nBPA esperado: 0.72\nFuente: yfinance (
+ estimada)\nNota: offshore: capex de energía
+END:VEVENT
+BEGIN:VEVENT
+UID:7966213d4bac63744404da94f14c17f3@macro-monitor
+DTSTAMP:20261015T101420Z
+DTSTART;VALUE=DATE:20261120
+DTEND;VALUE=DATE:20261121
+SUMMARY:💰 TE Connectivity (TEL) · ex-dividendo
+DESCRIPTION:🇺🇸 Tecnología de la información › Instrumentos y co
+ mponentes electrónicos\nEl precio se ajusta a la baja por el dividendo 
+ en la apertura.
+END:VEVENT
+BEGIN:VEVENT
 UID:cd62bcc4c230ed0e29cb03f11cd4e2b1@macro-monitor
-DTSTAMP:20261013T125459Z
+DTSTAMP:20261015T101420Z
 DTSTART;VALUE=DATE:20261123
 DTEND;VALUE=DATE:20261124
 SUMMARY:🟠 Dell (DELL) · resultados
@@ -1617,18 +2105,37 @@ DESCRIPTION:🇺🇸 Tecnología de la información › Hardware\nPublica
  res IA
 END:VEVENT
 BEGIN:VEVENT
+UID:6bbd2c90a27aa42658bd6c8717548003@macro-monitor
+DTSTAMP:20261015T101420Z
+DTSTART:20261123T210500Z
+DTEND:20261123T213500Z
+SUMMARY:🟠 Keysight (KEYS) · resultados
+DESCRIPTION:🇺🇸 Tecnología de la información › Instrumentos y co
+ mponentes electrónicos\nPublica tras el cierre.\nBPA esperado: 3.44\nFu
+ ente: finnhub\nNota: capex de I+D electrónica
+END:VEVENT
+BEGIN:VEVENT
+UID:cbd69c52a8c78e434a352fa516e13f43@macro-monitor
+DTSTAMP:20261015T101420Z
+DTSTART;VALUE=DATE:20261124
+DTEND;VALUE=DATE:20261125
+SUMMARY:💰 Johnson & Johnson (JNJ) · ex-dividendo
+DESCRIPTION:🇺🇸 Salud › Farmacia\nEl precio se ajusta a la baja po
+ r el dividendo en la apertura.
+END:VEVENT
+BEGIN:VEVENT
 UID:5fadd3386bb6b5b75f26cc47d3d08957@macro-monitor
-DTSTAMP:20261013T125459Z
+DTSTAMP:20261015T101420Z
 DTSTART:20261125T210500Z
 DTEND:20261125T213500Z
 SUMMARY:🟠 Deere (DE) · resultados
 DESCRIPTION:🇺🇸 Industriales › Maquinaria y bienes de equipo\nPubl
- ica tras el cierre.\nBPA esperado: 4.18\nFuente: finnhub\nNota: agricult
+ ica tras el cierre.\nBPA esperado: 4.17\nFuente: finnhub\nNota: agricult
  ura
 END:VEVENT
 BEGIN:VEVENT
 UID:667e1821ca0bc01fa76c655da189d7db@macro-monitor
-DTSTAMP:20261013T125459Z
+DTSTAMP:20261015T101420Z
 DTSTART;VALUE=DATE:20261125
 DTEND;VALUE=DATE:20261126
 SUMMARY:💰 T-Mobile US (TMUS) · ex-dividendo
@@ -1636,8 +2143,18 @@ DESCRIPTION:🇺🇸 Servicios de comunicación › Telecomunicaciones\nE
  l precio se ajusta a la baja por el dividendo en la apertura.
 END:VEVENT
 BEGIN:VEVENT
+UID:3018555568e912475c7a4471b0e4e367@macro-monitor
+DTSTAMP:20261015T101420Z
+DTSTART;VALUE=DATE:20261130
+DTEND;VALUE=DATE:20261201
+SUMMARY:🟠 CrowdStrike (CRWD) · resultados
+DESCRIPTION:🇺🇸 Tecnología de la información › Software\nPublica
+  hora no confirmada.\nBPA esperado: 0.32\nFuente: finnhub\nNota: ciberse
+ guridad
+END:VEVENT
+BEGIN:VEVENT
 UID:6958d93fdf7a110e386dc0138f2367c1@macro-monitor
-DTSTAMP:20261013T125459Z
+DTSTAMP:20261015T101420Z
 DTSTART;VALUE=DATE:20261201
 DTEND;VALUE=DATE:20261202
 SUMMARY:💰 LVMH (MC.PA) · ex-dividendo
@@ -1646,7 +2163,7 @@ DESCRIPTION:🇪🇺 Consumo discrecional › Lujo\nEl precio se ajusta a
 END:VEVENT
 BEGIN:VEVENT
 UID:baed1728f8c344472fc5c2d5f07671ce@macro-monitor
-DTSTAMP:20261013T125459Z
+DTSTAMP:20261015T101420Z
 DTSTART;VALUE=DATE:20261201
 DTEND;VALUE=DATE:20261202
 SUMMARY:💰 McDonald's (MCD) · ex-dividendo
@@ -1655,7 +2172,7 @@ DESCRIPTION:🇺🇸 Consumo discrecional › Restauración y ocio\nEl pr
 END:VEVENT
 BEGIN:VEVENT
 UID:cfd6371d157dbd7efd396aeb9cd6e21b@macro-monitor
-DTSTAMP:20261013T125459Z
+DTSTAMP:20261015T101420Z
 DTSTART:20261201T210500Z
 DTEND:20261201T213500Z
 SUMMARY:🟠 Salesforce (CRM) · resultados
@@ -1665,7 +2182,7 @@ DESCRIPTION:🇺🇸 Tecnología de la información › Software\nPublica
 END:VEVENT
 BEGIN:VEVENT
 UID:214792b6901be20ec4d16dccc84e263e@macro-monitor
-DTSTAMP:20261013T125459Z
+DTSTAMP:20261015T101420Z
 DTSTART;VALUE=DATE:20261201
 DTEND;VALUE=DATE:20261202
 SUMMARY:💰 Lockheed Martin (LMT) · ex-dividendo
@@ -1674,7 +2191,7 @@ DESCRIPTION:🇺🇸 Industriales › Aeroespacial y defensa\nEl precio s
 END:VEVENT
 BEGIN:VEVENT
 UID:f9b5e3d1a081f17deb7292e82fe39c77@macro-monitor
-DTSTAMP:20261013T125459Z
+DTSTAMP:20261015T101420Z
 DTSTART:20261202T060000Z
 DTEND:20261202T063000Z
 SUMMARY:🔴 Inditex (ITX.MC) · resultados (fecha estimada)
@@ -1683,8 +2200,18 @@ DESCRIPTION:🇪🇺 Consumo discrecional › Textil\, calzado y moda\nPu
  ce (estimada)\nNota: cierre fiscal enero\; resultados mar/jun/sep/dic
 END:VEVENT
 BEGIN:VEVENT
+UID:ab1a0d00b7c71e51286060d0c2b6f27c@macro-monitor
+DTSTAMP:20261015T101420Z
+DTSTART;VALUE=DATE:20261202
+DTEND;VALUE=DATE:20261203
+SUMMARY:🟠 Dollar General (DG) · resultados
+DESCRIPTION:🇺🇸 Consumo discrecional › Retail de descuento y espec
+ ializado\nPublica hora no confirmada.\nBPA esperado: 1.45\nFuente: finnh
+ ub\nNota: el consumidor de renta baja
+END:VEVENT
+BEGIN:VEVENT
 UID:c86ddb56f0c29e6e7833f859ed54b520@macro-monitor
-DTSTAMP:20261013T125459Z
+DTSTAMP:20261015T101420Z
 DTSTART;VALUE=DATE:20261208
 DTEND;VALUE=DATE:20261209
 SUMMARY:🟠 Oracle (ORCL) · resultados
@@ -1694,7 +2221,7 @@ DESCRIPTION:🇺🇸 Tecnología de la información › Software\nPublica
 END:VEVENT
 BEGIN:VEVENT
 UID:e792fb35c6bb90e99d146df5bad4cb36@macro-monitor
-DTSTAMP:20261013T125459Z
+DTSTAMP:20261015T101420Z
 DTSTART:20261209T210500Z
 DTEND:20261209T213500Z
 SUMMARY:🟠 Adobe (ADBE) · resultados
@@ -1704,7 +2231,7 @@ DESCRIPTION:🇺🇸 Tecnología de la información › Software\nPublica
 END:VEVENT
 BEGIN:VEVENT
 UID:3c1f27770cf4692fac68a0428bdc1dce@macro-monitor
-DTSTAMP:20261013T125459Z
+DTSTAMP:20261015T101420Z
 DTSTART:20261209T210500Z
 DTEND:20261209T213500Z
 SUMMARY:🟠 Broadcom (AVGO) · resultados
@@ -1713,7 +2240,7 @@ DESCRIPTION:🇺🇸 Tecnología de la información › Semiconductores\n
 END:VEVENT
 BEGIN:VEVENT
 UID:7be5a792de549fcfcb856045c3620d45@macro-monitor
-DTSTAMP:20261013T125459Z
+DTSTAMP:20261015T101420Z
 DTSTART;VALUE=DATE:20261210
 DTEND;VALUE=DATE:20261211
 SUMMARY:💰 TSMC (TSM) · ex-dividendo
@@ -1722,7 +2249,7 @@ DESCRIPTION:🇺🇸 Tecnología de la información › Semiconductores\n
 END:VEVENT
 BEGIN:VEVENT
 UID:23e232d66a5e31481ca0b6407265b010@macro-monitor
-DTSTAMP:20261013T125459Z
+DTSTAMP:20261015T101420Z
 DTSTART;VALUE=DATE:20261210
 DTEND;VALUE=DATE:20261211
 SUMMARY:🟠 Costco (COST) · resultados
@@ -1732,11 +2259,29 @@ DESCRIPTION:🇺🇸 Consumo básico › Distribución de alimentación\n
 END:VEVENT
 BEGIN:VEVENT
 UID:39e2d9bcadbfc691d0828b1ee9167666@macro-monitor
-DTSTAMP:20261013T125459Z
+DTSTAMP:20261015T101420Z
 DTSTART;VALUE=DATE:20261211
 DTEND;VALUE=DATE:20261212
 SUMMARY:💰 Walmart (WMT) · ex-dividendo
 DESCRIPTION:🇺🇸 Consumo básico › Distribución de alimentación\n
+ El precio se ajusta a la baja por el dividendo en la apertura.
+END:VEVENT
+BEGIN:VEVENT
+UID:b8753ad6b1bc23c70157b931cb5280ed@macro-monitor
+DTSTAMP:20261015T101420Z
+DTSTART:20261214T210500Z
+DTEND:20261214T213500Z
+SUMMARY:🟠 Lennar (LEN) · resultados
+DESCRIPTION:🇺🇸 Industriales › Constructoras de viviendas\nPublica
+  tras el cierre.\nBPA esperado: 1.52\nFuente: finnhub
+END:VEVENT
+BEGIN:VEVENT
+UID:7cd04bee857840ee80d5451f9fbbceb5@macro-monitor
+DTSTAMP:20261015T101420Z
+DTSTART;VALUE=DATE:20261214
+DTEND;VALUE=DATE:20261215
+SUMMARY:💰 STMicroelectronics (STMPA.PA) · ex-dividendo
+DESCRIPTION:🇪🇺 Tecnología de la información › Semiconductores\n
  El precio se ajusta a la baja por el dividendo en la apertura.
 END:VEVENT
 END:VCALENDAR
