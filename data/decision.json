@@ -97,15 +97,6 @@
  "sensibilidad": {
   "disparadores": [
    {
-    "serie": "JPY=X",
-    "umbral": 150,
-    "valor_actual": 157.71800231933594,
-    "si_se_cruza": {
-     "sector_Financiero": "-1 → -2"
-    },
-    "texto": "Dólar-yen < 150: el yen se fortalece; riesgo de deshacer del carry (ago-2024 fue 162 → 142)."
-   },
-   {
     "serie": "DGS10",
     "umbral": 5.5,
     "valor_actual": 5.21,
@@ -113,6 +104,15 @@
      "sin_cambios": "no altera régimen ni sesgos; solo la lectura"
     },
     "texto": "Treasury 10 años > 5,50%: compite de frente con un earnings yield del 4%."
+   },
+   {
+    "serie": "JPY=X",
+    "umbral": 150,
+    "valor_actual": 158.0,
+    "si_se_cruza": {
+     "sector_Financiero": "-1 → -2"
+    },
+    "texto": "Dólar-yen < 150: el yen se fortalece; riesgo de deshacer del carry (ago-2024 fue 162 → 142)."
    },
    {
     "serie": "UNRATE",
@@ -244,7 +244,7 @@
    {
     "serie": "^VIX",
     "distancia_antes": 9.77,
-    "distancia_hoy": 7.5,
+    "distancia_hoy": 7.47,
     "se_acerca": true
    },
    {
