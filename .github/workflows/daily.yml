@@ -6,6 +6,11 @@ on:
     # GitHub puede retrasar el cron 10-30 min en horas punta.
     - cron: "30 5 * * 1-5"
   workflow_dispatch:
+    inputs:
+      micro_completo:
+        description: "Capa micro para toda la watchlist (no solo bellwethers)"
+        type: boolean
+        default: false
 
 permissions:
   contents: write   # para commitear docs/macro.ics
@@ -17,7 +22,7 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
-          python-version: "3.11"
+          python-version: "3.12"
           cache: pip
       - run: pip install -r requirements.txt
       - name: Informe diario

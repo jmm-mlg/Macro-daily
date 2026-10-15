@@ -230,7 +230,7 @@ def to_html(d: dict, max_rows: int = 30) -> str:
                  f"<td align='right'>{_fmt(f['importe'], 0) if f['cabe'] else '—'} ({f['importe_pct']:.1f}%)</td>"
                  f"<td align='right'>{_fmt(f['rel_3m'], 1)}</td><td align='right'>{f['dias_a_resultados'] if f['dias_a_resultados'] is not None else '—'}</td></tr>")
     h.append("</table>")
-    h.append("<p style='font-size:11px;color:#999'>Las 185 fichas completas están en data/fichas.csv.</p>")
+    h.append("<p style='font-size:11px;color:#999'>Las fichas completas de toda la watchlist están en data/fichas.csv.</p>")
     return "\n".join(h)
 
 
