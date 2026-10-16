@@ -1,5 +1,5 @@
 {
- "date": "2026-10-15",
+ "date": "2026-10-16",
  "exposicion": {
   "banda_pct": "50-70",
   "nuevas_posiciones": "solo con factores claros y micro a favor, mitad de tamaño",
@@ -80,39 +80,39 @@
    "que_la_resuelve": ""
   },
   {
-   "id": "subida-rapida-del-10-anos",
-   "titulo": "Subida rápida del Treasury a 10 años",
-   "por_que": "El 10 años se ha movido +25 pb en un mes, sobre todo por tipo real (+28 real, -2 breakeven",
-   "que_hacer": "- No abrir duración larga mientras la subida esté en curso; el suelo de esos sectores llega cuando el 10 años hace techo, no antes.\n- Stops más cerca en todo lo que tenga PER > 30.\n- El techo del 10 años suele venir con un catalizador identificable: una subasta del Tesoro que sale bien, un dato de inflación suave, o la Fed hablando de condiciones financieras (noviembre 2023). Esperar al catalizador.",
-   "que_la_resuelve": "- El 10 años deja de subir dos semanas: la bolsa rebota con fuerza (noviembre 2023: +9 % en un mes).\n- Sigue subiendo con la bolsa cayendo y el HY abriéndose: pasa a crisis de confianza (abril 2025: la Casa Blanca retrocedió en aranceles cuando el 10 años subió 50 pb en una semana)."
-  },
-  {
    "id": "bono-supera-earnings-yield",
    "titulo": "El bono rinde más que la bolsa (10 años > earnings yield)",
-   "por_que": "Prima de riesgo de la renta variable 1.2 % (earnings yield 4.1 % − tipo real 2.88 %): comp",
+   "por_que": "Prima de riesgo de la renta variable 1.2 % (earnings yield 4.1 % − tipo real 2.84 %): comp",
    "que_hacer": "- Exposición agregada en la banda baja del régimen; selección por calidad de beneficios y revisiones al alza (son la única justificación de la valoración).\n- Vigilar la amplitud de revisiones del S&P 500 en conjunto: cuando pasa de positiva a negativa con el bono por encima del earnings yield, la casuística se resuelve a la baja.\n- El efectivo y los bonos cortos al 4-5 % son una posición legítima en este entorno, no \"estar fuera\".",
    "que_la_resuelve": "- Beneficios creciendo más del 10 %: el earnings yield sube por el numerador (2024-2025).\n- El 10 años cae (recortes, recesión): la relación se normaliza por el bono.\n- La bolsa cae un 20-30 %: por el precio (2000-2002, 2022 parcialmente)."
+  },
+  {
+   "id": "conflicto-macro-micro",
+   "titulo": "conflicto-macro-micro",
+   "por_que": "sesgo macro contra analistas o momentum",
+   "que_hacer": "",
+   "que_la_resuelve": ""
   }
  ],
  "sensibilidad": {
   "disparadores": [
    {
-    "serie": "DGS10",
-    "umbral": 5.5,
-    "valor_actual": 5.21,
-    "si_se_cruza": {
-     "sin_cambios": "no altera régimen ni sesgos; solo la lectura"
-    },
-    "texto": "Treasury 10 años > 5,50%: compite de frente con un earnings yield del 4%."
-   },
-   {
     "serie": "JPY=X",
     "umbral": 150,
-    "valor_actual": 158.0,
+    "valor_actual": 157.89999389648438,
     "si_se_cruza": {
      "sector_Financiero": "-1 → -2"
     },
     "texto": "Dólar-yen < 150: el yen se fortalece; riesgo de deshacer del carry (ago-2024 fue 162 → 142)."
+   },
+   {
+    "serie": "DGS10",
+    "umbral": 5.5,
+    "valor_actual": 5.19,
+    "si_se_cruza": {
+     "sin_cambios": "no altera régimen ni sesgos; solo la lectura"
+    },
+    "texto": "Treasury 10 años > 5,50%: compite de frente con un earnings yield del 4%."
    },
    {
     "serie": "UNRATE",
@@ -126,67 +126,39 @@
    {
     "serie": "CCSA",
     "umbral": 2000000,
-    "valor_actual": 1716000.0,
+    "valor_actual": 1710000.0,
     "si_se_cruza": {
      "sin_cambios": "no altera régimen ni sesgos; solo la lectura"
     },
     "texto": "Continuadas > 2 M: el mercado laboral deja de absorber; precede a la subida del paro."
    },
    {
-    "serie": "PSAVERT",
-    "umbral": 3.5,
-    "valor_actual": 4.1,
+    "serie": "ICSA",
+    "umbral": 240000,
+    "valor_actual": 199000.0,
     "si_se_cruza": {
      "sin_cambios": "no altera régimen ni sesgos; solo la lectura"
     },
-    "texto": "Ahorro < 3,5 %: el consumo nominal se sostiene con ahorro; se agota en 2-3 trimestres."
+    "texto": "Peticiones > 240k: las empresas empiezan a despedir."
    }
   ],
   "datos_semana": [
    {
-    "publicacion": "Ventas minoristas",
-    "serie": "RSAFS",
-    "valor_actual": 1.127425850332675,
-    "paso": 0.6,
-    "si_sube": {
-     "sin_cambios": true
-    },
-    "si_baja": {
-     "sin_cambios": true
-    }
-   },
-   {
-    "publicacion": "IPP",
-    "serie": "PPIFIS",
-    "valor_actual": 5.413622452737954,
-    "paso": 0.5,
-    "si_sube": {
-     "sin_cambios": true
-    },
-    "si_baja": {
-     "score_inflacion": "+1 → +0"
-    }
-   },
-   {
     "publicacion": "Peticiones de desempleo",
     "serie": "ICSA",
-    "valor_actual": 197000.0,
+    "valor_actual": 199000.0,
     "paso": 30000,
     "si_sube": {
      "sin_cambios": true
     },
     "si_baja": {
-     "regimen": "Mixto / transición → Reflación",
-     "score_crecimiento": "+0 → +1",
-     "sector_Energía": "+0 → +2",
-     "sector_Financiero": "-1 → +0",
-     "sector_Consumo básico": "-1 → -2"
+     "sin_cambios": true
     }
    }
   ]
  },
  "historial_regimen": {
-  "dias_en_regimen": 7,
+  "dias_en_regimen": 8,
   "ultimo_cambio": null,
   "secuencia_90d": [
    {
@@ -219,15 +191,10 @@
  },
  "cambios": {
   "vs_ayer": {
-   "fecha": "2026-10-14",
-   "sector_Energía": "+1 → +0",
-   "sector_Financiero": "+0 → -1",
-   "sector_Servicios de comunicación": "-1 → -2",
-   "sector_Tecnología de la información": "-1 → -2",
-   "sector_Utilities": "-1 → -2"
+   "fecha": "2026-10-15"
   },
   "vs_5d": {
-   "fecha": "2026-10-08",
+   "fecha": "2026-10-09",
    "sector_Energía": "+1 → +0",
    "sector_Financiero": "+0 → -1",
    "sector_Servicios de comunicación": "-1 → -2",
@@ -237,27 +204,21 @@
   "disparadores_que_se_mueven": [
    {
     "serie": "BAMLH0A0HYM2",
-    "distancia_antes": 0.89,
-    "distancia_hoy": 0.84,
+    "distancia_antes": 0.84,
+    "distancia_hoy": 0.75,
+    "se_acerca": true
+   },
+   {
+    "serie": "T10Y2Y",
+    "distancia_antes": 0.37,
+    "distancia_hoy": 0.33,
     "se_acerca": true
    },
    {
     "serie": "^VIX",
-    "distancia_antes": 9.77,
-    "distancia_hoy": 7.47,
-    "se_acerca": true
-   },
-   {
-    "serie": "CPIAUCSL",
-    "distancia_antes": 0.71,
-    "distancia_hoy": 1.02,
+    "distancia_antes": 7.5,
+    "distancia_hoy": 8.95,
     "se_acerca": false
-   },
-   {
-    "serie": "T10Y2Y",
-    "distancia_antes": 0.42,
-    "distancia_hoy": 0.37,
-    "se_acerca": true
    }
   ]
  },
