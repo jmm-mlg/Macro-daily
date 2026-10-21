@@ -1,5 +1,5 @@
 {
- "date": "2026-10-20",
+ "date": "2026-10-21",
  "scope": "bellwethers",
  "companies": [
   {
@@ -23,7 +23,7 @@
      "down7": 0,
      "net30": 1.0
     },
-    "est_anual_chg30_pct": 11.79,
+    "est_anual_chg30_pct": 13.15,
     "recomendaciones": {
      "compra": 9,
      "venta": 0,
@@ -169,7 +169,7 @@
      "down7": 4,
      "net30": -0.75
     },
-    "est_anual_chg30_pct": -2.86,
+    "est_anual_chg30_pct": -3.15,
     "recomendaciones": {
      "compra": 8,
      "venta": 1,
@@ -235,9 +235,9 @@
     },
     "est_anual_chg30_pct": 0.53,
     "recomendaciones": {
-     "compra": 15,
+     "compra": 16,
      "venta": 1,
-     "cambio_compra_1m": 0
+     "cambio_compra_1m": 1
     }
    },
    "eventos": [
@@ -381,7 +381,7 @@
      "down7": 1,
      "net30": -0.25
     },
-    "est_anual_chg30_pct": -0.01,
+    "est_anual_chg30_pct": 0.0,
     "recomendaciones": {
      "compra": 4,
      "venta": 2,
@@ -417,7 +417,7 @@
      "down7": 4,
      "net30": -0.38
     },
-    "est_anual_chg30_pct": -1.76,
+    "est_anual_chg30_pct": -2.15,
     "recomendaciones": {
      "compra": 19,
      "venta": 4,
@@ -453,7 +453,7 @@
      "down7": 1,
      "net30": -0.67
     },
-    "est_anual_chg30_pct": 1.63,
+    "est_anual_chg30_pct": 1.62,
     "recomendaciones": {
      "compra": 12,
      "venta": 1,
@@ -517,7 +517,7 @@
      "down7": 0,
      "net30": -0.8
     },
-    "est_anual_chg30_pct": -0.34,
+    "est_anual_chg30_pct": -0.05,
     "recomendaciones": {
      "compra": 20,
      "venta": 1,
@@ -549,7 +549,7 @@
      "down7": 5,
      "net30": -0.62
     },
-    "est_anual_chg30_pct": -0.21,
+    "est_anual_chg30_pct": -0.25,
     "recomendaciones": {
      "compra": 19,
      "venta": 1,
@@ -621,7 +621,7 @@
      "down7": 0,
      "net30": 1.0
     },
-    "est_anual_chg30_pct": 0.12,
+    "est_anual_chg30_pct": 0.17,
     "recomendaciones": {
      "compra": 58,
      "venta": 0,
@@ -667,7 +667,7 @@
      "down7": 1,
      "net30": 0.2
     },
-    "est_anual_chg30_pct": -0.01,
+    "est_anual_chg30_pct": -0.0,
     "recomendaciones": {
      "compra": 38,
      "venta": 1,
@@ -806,16 +806,6 @@
      "descripcion": "Votaciones de la junta",
      "importancia": 1,
      "url": "https://www.sec.gov/Archives/edgar/data/80424/000008042426000245/pg-20261016.htm"
-    },
-    {
-     "fecha": "2026-10-13",
-     "codigos": [
-      "7.01",
-      "9.01"
-     ],
-     "descripcion": "Reg FD: presentación, guía o comunicado",
-     "importancia": 2,
-     "url": "https://www.sec.gov/Archives/edgar/data/80424/000008042426000214/pg-20261013.htm"
     }
    ],
    "insiders": [
@@ -910,10 +900,10 @@
      "down7": 2,
      "net30": 0.4
     },
-    "est_anual_chg30_pct": 1.24,
+    "est_anual_chg30_pct": 1.78,
     "recomendaciones": {
      "compra": 5,
-     "venta": 5,
+     "venta": 6,
      "cambio_compra_1m": 0
     }
    },
@@ -942,25 +932,14 @@
      "down7": 0,
      "net30": 1.0
     },
-    "est_anual_chg30_pct": 3.54,
+    "est_anual_chg30_pct": 3.65,
     "recomendaciones": {
      "compra": 22,
      "venta": 0,
      "cambio_compra_1m": 0
     }
    },
-   "eventos": [
-    {
-     "fecha": "2026-10-13",
-     "codigos": [
-      "2.02",
-      "9.01"
-     ],
-     "descripcion": "Resultados",
-     "importancia": 3,
-     "url": "https://www.sec.gov/Archives/edgar/data/731766/000073176626000255/unh-20261013.htm"
-    }
-   ],
+   "eventos": [],
    "insiders": [],
    "cobertura": true,
    "compra_cluster": false,
@@ -989,7 +968,7 @@
      "down7": 0,
      "net30": 1.0
     },
-    "est_anual_chg30_pct": -0.04,
+    "est_anual_chg30_pct": -0.24,
     "recomendaciones": {
      "compra": 15,
      "venta": 0,
@@ -998,24 +977,14 @@
    },
    "eventos": [
     {
-     "fecha": "2026-10-13",
+     "fecha": "2026-10-20",
      "codigos": [
-      "7.01",
+      "8.01",
       "9.01"
      ],
-     "descripcion": "Reg FD: presentación, guía o comunicado",
-     "importancia": 2,
-     "url": "https://www.sec.gov/Archives/edgar/data/19617/000162828026065616/jpm-20261013.htm"
-    },
-    {
-     "fecha": "2026-10-13",
-     "codigos": [
-      "2.02",
-      "9.01"
-     ],
-     "descripcion": "Resultados",
-     "importancia": 3,
-     "url": "https://www.sec.gov/Archives/edgar/data/19617/000162828026065582/jpm-20261013.htm"
+     "descripcion": "Otros hechos",
+     "importancia": 1,
+     "url": "https://www.sec.gov/Archives/edgar/data/19617/000119312526426704/d351999d8k.htm"
     }
    ],
    "insiders": [],
@@ -1110,7 +1079,7 @@
      "down7": 0,
      "net30": 1.0
     },
-    "est_anual_chg30_pct": 0.01,
+    "est_anual_chg30_pct": 0.04,
     "recomendaciones": {
      "compra": 36,
      "venta": 1,
@@ -1156,11 +1125,11 @@
      "down7": 0,
      "net30": 1.0
     },
-    "est_anual_chg30_pct": 0.09,
+    "est_anual_chg30_pct": 0.01,
     "recomendaciones": {
-     "compra": 53,
+     "compra": 54,
      "venta": 0,
-     "cambio_compra_1m": 0
+     "cambio_compra_1m": 1
     }
    },
    "eventos": [],
@@ -1220,11 +1189,11 @@
      "down7": 2,
      "net30": -0.6
     },
-    "est_anual_chg30_pct": 0.04,
+    "est_anual_chg30_pct": 0.12,
     "recomendaciones": {
-     "compra": 24,
+     "compra": 23,
      "venta": 0,
-     "cambio_compra_1m": 0
+     "cambio_compra_1m": -1
     }
    },
    "eventos": [],
@@ -1252,7 +1221,7 @@
      "down7": 0,
      "net30": 1.0
     },
-    "est_anual_chg30_pct": 0.08,
+    "est_anual_chg30_pct": 0.06,
     "recomendaciones": {
      "compra": 59,
      "venta": 1,
@@ -1628,11 +1597,11 @@
      "down7": 1,
      "net30": 0.0
     },
-    "est_anual_chg30_pct": 0.01,
+    "est_anual_chg30_pct": 0.0,
     "recomendaciones": {
-     "compra": 25,
+     "compra": 24,
      "venta": 6,
-     "cambio_compra_1m": 0
+     "cambio_compra_1m": -1
     }
    },
    "eventos": [],
@@ -1883,9 +1852,9 @@
     },
     "est_anual_chg30_pct": -0.14,
     "recomendaciones": {
-     "compra": 57,
+     "compra": 56,
      "venta": 0,
-     "cambio_compra_1m": 0
+     "cambio_compra_1m": -1
     }
    },
    "eventos": [],
@@ -1927,7 +1896,7 @@
      "down7": 2,
      "net30": -0.2
     },
-    "est_anual_chg30_pct": -2.65,
+    "est_anual_chg30_pct": -2.98,
     "recomendaciones": {
      "compra": 55,
      "venta": 1,
@@ -2189,7 +2158,7 @@
      "down7": 0,
      "net30": 1.0
     },
-    "est_anual_chg30_pct": 1.25,
+    "est_anual_chg30_pct": 0.95,
     "recomendaciones": {
      "compra": 7,
      "venta": 1,
@@ -2223,9 +2192,9 @@
     },
     "est_anual_chg30_pct": -7.66,
     "recomendaciones": {
-     "compra": 11,
+     "compra": 12,
      "venta": 0,
-     "cambio_compra_1m": 1
+     "cambio_compra_1m": 2
     }
    },
    "eventos": [
@@ -2545,7 +2514,7 @@
    "empresas_cubiertas": 3,
    "mejorando": 1,
    "empeorando": 0,
-   "hechos_relevantes": 1,
+   "hechos_relevantes": 0,
    "clusters_insiders": 0
   },
   "Salud": {
@@ -2554,7 +2523,7 @@
    "empresas_cubiertas": 3,
    "mejorando": 2,
    "empeorando": 1,
-   "hechos_relevantes": 1,
+   "hechos_relevantes": 0,
    "clusters_insiders": 0
   },
   "Financiero": {
@@ -2563,7 +2532,7 @@
    "empresas_cubiertas": 4,
    "mejorando": 2,
    "empeorando": 0,
-   "hechos_relevantes": 2,
+   "hechos_relevantes": 0,
    "clusters_insiders": 0
   },
   "Tecnología de la información": {
@@ -2616,9 +2585,9 @@
   {
    "banco": "BCE",
    "tipo": "discurso",
-   "fecha": "2026-10-13",
-   "titulo": "Philip R. Lane: The AI opportunity for Europe",
-   "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261013~9db9bf4fd6.en.html"
+   "fecha": "2026-10-14",
+   "titulo": "Frank Elderson: Ensuring resilience in the face of uncertainty",
+   "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261014~e4ca33588e.en.html"
   }
  ]
 }
