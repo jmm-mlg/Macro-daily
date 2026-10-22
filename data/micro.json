@@ -1,5 +1,5 @@
 {
- "date": "2026-10-21",
+ "date": "2026-10-22",
  "scope": "bellwethers",
  "companies": [
   {
@@ -69,7 +69,7 @@
      "down7": 1,
      "net30": 1.0
     },
-    "est_anual_chg30_pct": 12.18,
+    "est_anual_chg30_pct": 13.45,
     "recomendaciones": {
      "compra": 10,
      "venta": 0,
@@ -349,10 +349,10 @@
      "down7": 0,
      "net30": 1.0
     },
-    "est_anual_chg30_pct": 0.95,
+    "est_anual_chg30_pct": 7.06,
     "recomendaciones": {
      "compra": 2,
-     "venta": 7,
+     "venta": 8,
      "cambio_compra_1m": 0
     }
    },
@@ -417,14 +417,25 @@
      "down7": 4,
      "net30": -0.38
     },
-    "est_anual_chg30_pct": -2.15,
+    "est_anual_chg30_pct": -20.57,
     "recomendaciones": {
      "compra": 19,
      "venta": 4,
      "cambio_compra_1m": 0
     }
    },
-   "eventos": [],
+   "eventos": [
+    {
+     "fecha": "2026-10-21",
+     "codigos": [
+      "2.02",
+      "9.01"
+     ],
+     "descripcion": "Resultados",
+     "importancia": 3,
+     "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026066738/tsla-20261021.htm"
+    }
+   ],
    "insiders": [],
    "cobertura": true,
    "compra_cluster": false,
@@ -485,7 +496,7 @@
      "down7": 2,
      "net30": -0.82
     },
-    "est_anual_chg30_pct": -0.41,
+    "est_anual_chg30_pct": -0.47,
     "recomendaciones": {
      "compra": 17,
      "venta": 0,
@@ -549,7 +560,7 @@
      "down7": 5,
      "net30": -0.62
     },
-    "est_anual_chg30_pct": -0.25,
+    "est_anual_chg30_pct": -0.27,
     "recomendaciones": {
      "compra": 19,
      "venta": 1,
@@ -864,7 +875,7 @@
      "down7": 7,
      "net30": -0.23
     },
-    "est_anual_chg30_pct": -5.0,
+    "est_anual_chg30_pct": -5.84,
     "recomendaciones": {
      "compra": 26,
      "venta": 2,
@@ -932,11 +943,11 @@
      "down7": 0,
      "net30": 1.0
     },
-    "est_anual_chg30_pct": 3.65,
+    "est_anual_chg30_pct": 3.63,
     "recomendaciones": {
-     "compra": 22,
+     "compra": 21,
      "venta": 0,
-     "cambio_compra_1m": 0
+     "cambio_compra_1m": -1
     }
    },
    "eventos": [],
@@ -1047,7 +1058,7 @@
      "down7": 0,
      "net30": 0.0
     },
-    "est_anual_chg30_pct": -0.02,
+    "est_anual_chg30_pct": -0.23,
     "recomendaciones": {
      "compra": 6,
      "venta": 4,
@@ -1898,13 +1909,71 @@
     },
     "est_anual_chg30_pct": -2.98,
     "recomendaciones": {
-     "compra": 55,
+     "compra": 56,
      "venta": 1,
-     "cambio_compra_1m": 0
+     "cambio_compra_1m": 1
     }
    },
-   "eventos": [],
+   "eventos": [
+    {
+     "fecha": "2026-10-21",
+     "codigos": [
+      "1.01",
+      "2.02",
+      "8.01",
+      "9.01"
+     ],
+     "descripcion": "Acuerdo material · Resultados · Otros hechos",
+     "importancia": 3,
+     "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026066700/meta-20261019.htm"
+    }
+   ],
    "insiders": [
+    {
+     "fecha": "2026-10-19",
+     "quien": "Olivan Javier",
+     "cargo": "Chief Operating Officer",
+     "tipo": "venta",
+     "importe_usd": 669011,
+     "acciones": 946,
+     "url": "https://www.sec.gov/Archives/edgar/data/1326801/000095010326015980/ownership.xml"
+    },
+    {
+     "fecha": "2026-10-19",
+     "quien": "Olivan Javier",
+     "cargo": "Chief Operating Officer",
+     "tipo": "venta",
+     "importe_usd": 57990,
+     "acciones": 82,
+     "url": "https://www.sec.gov/Archives/edgar/data/1326801/000095010326015980/ownership.xml"
+    },
+    {
+     "fecha": "2026-10-19",
+     "quien": "Olivan Javier",
+     "cargo": "Chief Operating Officer",
+     "tipo": "venta",
+     "importe_usd": 40310,
+     "acciones": 57,
+     "url": "https://www.sec.gov/Archives/edgar/data/1326801/000095010326015980/ownership.xml"
+    },
+    {
+     "fecha": "2026-10-19",
+     "quien": "Olivan Javier",
+     "cargo": "Chief Operating Officer",
+     "tipo": "venta",
+     "importe_usd": 57990,
+     "acciones": 82,
+     "url": "https://www.sec.gov/Archives/edgar/data/1326801/000095010326015980/ownership.xml"
+    },
+    {
+     "fecha": "2026-10-19",
+     "quien": "Olivan Javier",
+     "cargo": "Chief Operating Officer",
+     "tipo": "venta",
+     "importe_usd": 288538,
+     "acciones": 408,
+     "url": "https://www.sec.gov/Archives/edgar/data/1326801/000095010326015980/ownership.xml"
+    },
     {
      "fecha": "2026-10-12",
      "quien": "Olivan Javier",
@@ -2135,7 +2204,7 @@
    "compra_cluster": false,
    "n_compradores": 0,
    "importe_compras": 0,
-   "importe_ventas": 24833909
+   "importe_ventas": 25947748
   },
   {
    "t": "IBE.MC",
@@ -2158,7 +2227,7 @@
      "down7": 0,
      "net30": 1.0
     },
-    "est_anual_chg30_pct": 0.95,
+    "est_anual_chg30_pct": 1.75,
     "recomendaciones": {
      "compra": 7,
      "venta": 1,
@@ -2192,9 +2261,9 @@
     },
     "est_anual_chg30_pct": -7.66,
     "recomendaciones": {
-     "compra": 12,
+     "compra": 13,
      "venta": 0,
-     "cambio_compra_1m": 2
+     "cambio_compra_1m": 3
     }
    },
    "eventos": [
@@ -2238,7 +2307,7 @@
      "down7": 0,
      "net30": 0.0
     },
-    "est_anual_chg30_pct": 0.24,
+    "est_anual_chg30_pct": 0.42,
     "recomendaciones": {
      "compra": 7,
      "venta": 0,
@@ -2505,7 +2574,7 @@
    "empresas_cubiertas": 7,
    "mejorando": 2,
    "empeorando": 5,
-   "hechos_relevantes": 0,
+   "hechos_relevantes": 1,
    "clusters_insiders": 0
   },
   "Consumo básico": {
@@ -2550,7 +2619,7 @@
    "empresas_cubiertas": 2,
    "mejorando": 0,
    "empeorando": 0,
-   "hechos_relevantes": 0,
+   "hechos_relevantes": 1,
    "clusters_insiders": 0
   },
   "Utilities": {
@@ -2581,13 +2650,5 @@
    "clusters_insiders": 0
   }
  },
- "central_banks": [
-  {
-   "banco": "BCE",
-   "tipo": "discurso",
-   "fecha": "2026-10-14",
-   "titulo": "Frank Elderson: Ensuring resilience in the face of uncertainty",
-   "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261014~e4ca33588e.en.html"
-  }
- ]
+ "central_banks": []
 }
