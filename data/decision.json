@@ -1,5 +1,5 @@
 {
- "date": "2026-10-22",
+ "date": "2026-10-23",
  "exposicion": {
   "banda_pct": "50-70",
   "nuevas_posiciones": "solo con factores claros y micro a favor, mitad de tamaño",
@@ -82,7 +82,7 @@
   {
    "id": "bono-supera-earnings-yield",
    "titulo": "El bono rinde más que la bolsa (10 años > earnings yield)",
-   "por_que": "Prima de riesgo de la renta variable 1.3 % (earnings yield 4.1 % − tipo real 2.77 %): comp",
+   "por_que": "Prima de riesgo de la renta variable 1.4 % (earnings yield 4.1 % − tipo real 2.76 %): comp",
    "que_hacer": "- Exposición agregada en la banda baja del régimen; selección por calidad de beneficios y revisiones al alza (son la única justificación de la valoración).\n- Vigilar la amplitud de revisiones del S&P 500 en conjunto: cuando pasa de positiva a negativa con el bono por encima del earnings yield, la casuística se resuelve a la baja.\n- El efectivo y los bonos cortos al 4-5 % son una posición legítima en este entorno, no \"estar fuera\".",
    "que_la_resuelve": "- Beneficios creciendo más del 10 %: el earnings yield sube por el numerador (2024-2025).\n- El 10 años cae (recortes, recesión): la relación se normaliza por el bono.\n- La bolsa cae un 20-30 %: por el precio (2000-2002, 2022 parcialmente)."
   },
@@ -99,7 +99,7 @@
    {
     "serie": "JPY=X",
     "umbral": 150,
-    "valor_actual": 156.92599487304688,
+    "valor_actual": 156.61500549316406,
     "si_se_cruza": {
      "sector_Financiero": "-1 → -2"
     },
@@ -117,7 +117,7 @@
    {
     "serie": "DGS10",
     "umbral": 5.5,
-    "valor_actual": 5.12,
+    "valor_actual": 5.13,
     "si_se_cruza": {
      "sin_cambios": "no altera régimen ni sesgos; solo la lectura"
     },
@@ -126,20 +126,20 @@
    {
     "serie": "CCSA",
     "umbral": 2000000,
-    "valor_actual": 1710000.0,
+    "valor_actual": 1728000.0,
     "si_se_cruza": {
      "sin_cambios": "no altera régimen ni sesgos; solo la lectura"
     },
     "texto": "Continuadas > 2 M: el mercado laboral deja de absorber; precede a la subida del paro."
    },
    {
-    "serie": "BAMLH0A0HYM2",
-    "umbral": 4.0,
-    "valor_actual": 3.33,
+    "serie": "PSAVERT",
+    "umbral": 3.5,
+    "valor_actual": 4.1,
     "si_se_cruza": {
      "sin_cambios": "no altera régimen ni sesgos; solo la lectura"
     },
-    "texto": "HY > 400 pb: el crédito suele avisar 4-8 semanas antes que la bolsa."
+    "texto": "Ahorro < 3,5 %: el consumo nominal se sostiene con ahorro; se agota en 2-3 trimestres."
    }
   ],
   "datos_semana": [
@@ -170,7 +170,7 @@
    {
     "publicacion": "Peticiones de desempleo",
     "serie": "ICSA",
-    "valor_actual": 199000.0,
+    "valor_actual": 194000.0,
     "paso": 30000,
     "si_sube": {
      "sin_cambios": true
@@ -182,7 +182,7 @@
   ]
  },
  "historial_regimen": {
-  "dias_en_regimen": 12,
+  "dias_en_regimen": 13,
   "ultimo_cambio": null,
   "secuencia_90d": [
    {
@@ -207,7 +207,7 @@
     "hace_20d": null
    },
    "riesgo": {
-    "hoy": 0,
+    "hoy": -1,
     "hace_5d": 0,
     "hace_20d": null
    }
@@ -215,22 +215,36 @@
  },
  "cambios": {
   "vs_ayer": {
-   "fecha": "2026-10-21"
+   "fecha": "2026-10-22",
+   "score_riesgo": "+0 → -1"
   },
   "vs_5d": {
-   "fecha": "2026-10-15"
+   "fecha": "2026-10-16",
+   "score_riesgo": "+0 → -1"
   },
   "disparadores_que_se_mueven": [
    {
+    "serie": "BAMLH0A0HYM2",
+    "distancia_antes": 0.67,
+    "distancia_hoy": 0.73,
+    "se_acerca": false
+   },
+   {
+    "serie": "ICSA",
+    "distancia_antes": 41000.0,
+    "distancia_hoy": 46000.0,
+    "se_acerca": false
+   },
+   {
     "serie": "^VIX",
-    "distancia_antes": 7.48,
-    "distancia_hoy": 6.65,
+    "distancia_antes": 6.65,
+    "distancia_hoy": 5.44,
     "se_acerca": true
    },
    {
     "serie": "T10Y2Y",
-    "distancia_antes": 0.33,
-    "distancia_hoy": 0.32,
+    "distancia_antes": 0.32,
+    "distancia_hoy": 0.31,
     "se_acerca": true
    }
   ]

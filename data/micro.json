@@ -1,5 +1,5 @@
 {
- "date": "2026-10-22",
+ "date": "2026-10-23",
  "scope": "bellwethers",
  "companies": [
   {
@@ -23,7 +23,7 @@
      "down7": 0,
      "net30": 1.0
     },
-    "est_anual_chg30_pct": 13.15,
+    "est_anual_chg30_pct": 12.85,
     "recomendaciones": {
      "compra": 9,
      "venta": 0,
@@ -101,7 +101,7 @@
      "down7": 1,
      "net30": 0.2
     },
-    "est_anual_chg30_pct": 0.0,
+    "est_anual_chg30_pct": -0.02,
     "recomendaciones": {
      "compra": 23,
      "venta": 1,
@@ -137,7 +137,7 @@
      "down7": 0,
      "net30": 0.33
     },
-    "est_anual_chg30_pct": -0.21,
+    "est_anual_chg30_pct": -0.03,
     "recomendaciones": {
      "compra": 9,
      "venta": 4,
@@ -240,19 +240,7 @@
      "cambio_compra_1m": 1
     }
    },
-   "eventos": [
-    {
-     "fecha": "2026-10-15",
-     "codigos": [
-      "5.02",
-      "8.01",
-      "9.01"
-     ],
-     "descripcion": "Salida o nombramiento de directivos/consejeros · Otros hechos",
-     "importancia": 3,
-     "url": "https://www.sec.gov/Archives/edgar/data/18230/000110465926116198/tm2627668d1_8k.htm"
-    }
-   ],
+   "eventos": [],
    "insiders": [],
    "cobertura": true,
    "compra_cluster": false,
@@ -352,7 +340,7 @@
     "est_anual_chg30_pct": 7.06,
     "recomendaciones": {
      "compra": 2,
-     "venta": 8,
+     "venta": 9,
      "cambio_compra_1m": 0
     }
    },
@@ -381,7 +369,7 @@
      "down7": 1,
      "net30": -0.25
     },
-    "est_anual_chg30_pct": 0.0,
+    "est_anual_chg30_pct": 0.08,
     "recomendaciones": {
      "compra": 4,
      "venta": 2,
@@ -404,11 +392,11 @@
    "role": "bellwether",
    "revisiones": {
     "trim": {
-     "up30": 4,
-     "down30": 7,
-     "up7": 5,
+     "up30": 3,
+     "down30": 5,
+     "up7": 1,
      "down7": 3,
-     "net30": -0.27
+     "net30": -0.25
     },
     "anual": {
      "up30": 4,
@@ -417,11 +405,11 @@
      "down7": 4,
      "net30": -0.38
     },
-    "est_anual_chg30_pct": -20.57,
+    "est_anual_chg30_pct": -0.33,
     "recomendaciones": {
-     "compra": 19,
-     "venta": 4,
-     "cambio_compra_1m": 0
+     "compra": 18,
+     "venta": 2,
+     "cambio_compra_1m": -1
     }
    },
    "eventos": [
@@ -632,7 +620,7 @@
      "down7": 0,
      "net30": 1.0
     },
-    "est_anual_chg30_pct": 0.17,
+    "est_anual_chg30_pct": 0.2,
     "recomendaciones": {
      "compra": 58,
      "venta": 0,
@@ -769,7 +757,7 @@
      "down7": 0,
      "net30": 1.0
     },
-    "est_anual_chg30_pct": 0.39,
+    "est_anual_chg30_pct": 0.34,
     "recomendaciones": {
      "compra": 12,
      "venta": 1,
@@ -788,11 +776,11 @@
    "role": "bellwether",
    "revisiones": {
     "trim": {
-     "up30": 4,
-     "down30": 1,
-     "up7": 4,
-     "down7": 0,
-     "net30": 0.6
+     "up30": 3,
+     "down30": 2,
+     "up7": 2,
+     "down7": 2,
+     "net30": 0.2
     },
     "anual": {
      "up30": 3,
@@ -801,7 +789,7 @@
      "down7": 3,
      "net30": 0.0
     },
-    "est_anual_chg30_pct": -0.05,
+    "est_anual_chg30_pct": 0.11,
     "recomendaciones": {
      "compra": 13,
      "venta": 0,
@@ -809,6 +797,26 @@
     }
    },
    "eventos": [
+    {
+     "fecha": "2026-10-22",
+     "codigos": [
+      "7.01",
+      "9.01"
+     ],
+     "descripcion": "Reg FD: presentación, guía o comunicado",
+     "importancia": 2,
+     "url": "https://www.sec.gov/Archives/edgar/data/80424/000008042426000252/pg-20261022.htm"
+    },
+    {
+     "fecha": "2026-10-22",
+     "codigos": [
+      "2.02",
+      "9.01"
+     ],
+     "descripcion": "Resultados",
+     "importancia": 3,
+     "url": "https://www.sec.gov/Archives/edgar/data/80424/000008042426000250/pg-20261022.htm"
+    },
     {
      "fecha": "2026-10-16",
      "codigos": [
@@ -911,7 +919,7 @@
      "down7": 2,
      "net30": 0.4
     },
-    "est_anual_chg30_pct": 1.78,
+    "est_anual_chg30_pct": 1.91,
     "recomendaciones": {
      "compra": 5,
      "venta": 6,
@@ -1026,7 +1034,7 @@
      "down7": 2,
      "net30": 0.0
     },
-    "est_anual_chg30_pct": -0.03,
+    "est_anual_chg30_pct": -0.15,
     "recomendaciones": {
      "compra": 15,
      "venta": 0,
@@ -1058,7 +1066,7 @@
      "down7": 0,
      "net30": 0.0
     },
-    "est_anual_chg30_pct": -0.23,
+    "est_anual_chg30_pct": -0.31,
     "recomendaciones": {
      "compra": 6,
      "venta": 4,
@@ -1189,8 +1197,8 @@
     "trim": {
      "up30": 2,
      "down30": 2,
-     "up7": 1,
-     "down7": 0,
+     "up7": 0,
+     "down7": 1,
      "net30": 0.0
     },
     "anual": {
@@ -1200,11 +1208,11 @@
      "down7": 2,
      "net30": -0.6
     },
-    "est_anual_chg30_pct": 0.12,
+    "est_anual_chg30_pct": -0.16,
     "recomendaciones": {
-     "compra": 23,
+     "compra": 24,
      "venta": 0,
-     "cambio_compra_1m": -1
+     "cambio_compra_1m": 0
     }
    },
    "eventos": [],
@@ -1267,31 +1275,13 @@
      "importe_usd": 1006642,
      "acciones": 4499,
      "url": "https://www.sec.gov/Archives/edgar/data/1045810/000169684126000014/wk-form4_1790196985.xml"
-    },
-    {
-     "fecha": "2026-09-18",
-     "quien": "Stevens Mark A",
-     "cargo": "consejero",
-     "tipo": "venta",
-     "importe_usd": 297942896,
-     "acciones": 1356000,
-     "url": "https://www.sec.gov/Archives/edgar/data/1045810/000119903926000016/wk-form4_1790110579.xml"
-    },
-    {
-     "fecha": "2026-09-18",
-     "quien": "Stevens Mark A",
-     "cargo": "consejero",
-     "tipo": "venta",
-     "importe_usd": 2204199,
-     "acciones": 10000,
-     "url": "https://www.sec.gov/Archives/edgar/data/1045810/000119903926000016/wk-form4_1790110579.xml"
     }
    ],
    "cobertura": true,
    "compra_cluster": false,
    "n_compradores": 0,
    "importe_compras": 0,
-   "importe_ventas": 306933628
+   "importe_ventas": 6786533
   },
   {
    "t": "TSM",
@@ -1618,6 +1608,15 @@
    "eventos": [],
    "insiders": [
     {
+     "fecha": "2026-10-20",
+     "quien": "Newstead Jennifer",
+     "cargo": "SVP, GC and Government Affairs",
+     "tipo": "venta",
+     "importe_usd": 814748,
+     "acciones": 2399,
+     "url": "https://www.sec.gov/Archives/edgar/data/320193/000114036126040540/form4.xml"
+    },
+    {
      "fecha": "2026-10-16",
      "quien": "Borders Ben",
      "cargo": "Principal Accounting Officer",
@@ -1838,7 +1837,7 @@
    "compra_cluster": false,
    "n_compradores": 0,
    "importe_compras": 0,
-   "importe_ventas": 91942374
+   "importe_ventas": 92757122
   },
   {
    "t": "GOOGL",
@@ -1894,11 +1893,11 @@
    "role": "bellwether",
    "revisiones": {
     "trim": {
-     "up30": 0,
-     "down30": 3,
-     "up7": 2,
+     "up30": 3,
+     "down30": 1,
+     "up7": 1,
      "down7": 1,
-     "net30": -1.0
+     "net30": 0.5
     },
     "anual": {
      "up30": 4,
@@ -1907,11 +1906,11 @@
      "down7": 2,
      "net30": -0.2
     },
-    "est_anual_chg30_pct": -2.98,
+    "est_anual_chg30_pct": -6.51,
     "recomendaciones": {
-     "compra": 56,
+     "compra": 55,
      "venta": 1,
-     "cambio_compra_1m": 1
+     "cambio_compra_1m": 0
     }
    },
    "eventos": [
@@ -2227,7 +2226,7 @@
      "down7": 0,
      "net30": 1.0
     },
-    "est_anual_chg30_pct": 1.75,
+    "est_anual_chg30_pct": 4.81,
     "recomendaciones": {
      "compra": 7,
      "venta": 1,
@@ -2259,26 +2258,14 @@
      "down7": 0,
      "net30": 1.0
     },
-    "est_anual_chg30_pct": -7.66,
+    "est_anual_chg30_pct": -0.7,
     "recomendaciones": {
      "compra": 13,
      "venta": 0,
      "cambio_compra_1m": 3
     }
    },
-   "eventos": [
-    {
-     "fecha": "2026-10-15",
-     "codigos": [
-      "2.02",
-      "7.01",
-      "9.01"
-     ],
-     "descripcion": "Resultados · Reg FD: presentación, guía o comunicado",
-     "importancia": 3,
-     "url": "https://www.sec.gov/Archives/edgar/data/1045609/000119312526422375/pld-20261015.htm"
-    }
-   ],
+   "eventos": [],
    "insiders": [],
    "cobertura": true,
    "compra_cluster": false,
@@ -2343,7 +2330,7 @@
      "down7": 0,
      "net30": 0.0
     },
-    "est_anual_chg30_pct": 0.01,
+    "est_anual_chg30_pct": 0.02,
     "recomendaciones": {
      "compra": 44,
      "venta": 2,
@@ -2565,7 +2552,7 @@
    "empresas_cubiertas": 6,
    "mejorando": 2,
    "empeorando": 3,
-   "hechos_relevantes": 1,
+   "hechos_relevantes": 0,
    "clusters_insiders": 0
   },
   "Consumo discrecional": {
@@ -2583,7 +2570,7 @@
    "empresas_cubiertas": 3,
    "mejorando": 1,
    "empeorando": 0,
-   "hechos_relevantes": 0,
+   "hechos_relevantes": 2,
    "clusters_insiders": 0
   },
   "Salud": {
@@ -2637,7 +2624,7 @@
    "empresas_cubiertas": 1,
    "mejorando": 1,
    "empeorando": 0,
-   "hechos_relevantes": 1,
+   "hechos_relevantes": 0,
    "clusters_insiders": 0
   },
   "Extra": {
