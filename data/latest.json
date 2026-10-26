@@ -3,53 +3,53 @@
   "DFF": {
    "value": 3.88,
    "chg": 0.0,
-   "pct": 69.74721391682522,
-   "date": "2026-10-21",
+   "pct": 69.70356268697307,
+   "date": "2026-10-22",
    "name": "Fed Funds efectivo",
    "block": "Tipos",
    "unit": "%"
   },
   "DGS2": {
-   "value": 4.81,
-   "chg": 0.04999999999999982,
-   "pct": 94.11998410806515,
-   "date": "2026-10-21",
+   "value": 4.65,
+   "chg": -0.05999999999999961,
+   "pct": 90.58028616852147,
+   "date": "2026-10-22",
    "name": "Treasury 2 años",
    "block": "Tipos",
    "unit": "%"
   },
   "DGS10": {
-   "value": 5.13,
-   "chg": 0.16999999999999993,
-   "pct": 99.36432260627731,
-   "date": "2026-10-21",
+   "value": 4.96,
+   "chg": 0.0,
+   "pct": 98.84737678855325,
+   "date": "2026-10-22",
    "name": "Treasury 10 años",
    "block": "Tipos",
    "unit": "%"
   },
   "T10Y2Y": {
    "value": 0.31,
-   "chg": 0.06,
-   "pct": 45.194598888006354,
-   "date": "2026-10-22",
+   "chg": 0.04999999999999999,
+   "pct": 45.21255462852602,
+   "date": "2026-10-23",
    "name": "Curva 10y-2y",
    "block": "Tipos",
    "unit": "pp"
   },
   "DFII10": {
-   "value": 2.76,
-   "chg": 0.13999999999999968,
-   "pct": 99.24513309495431,
-   "date": "2026-10-21",
+   "value": 2.64,
+   "chg": 0.010000000000000231,
+   "pct": 99.0858505564388,
+   "date": "2026-10-22",
    "name": "Tipo real 10 años (TIPS)",
    "block": "Tipos",
    "unit": "%"
   },
   "T10YIE": {
-   "value": 2.32,
+   "value": 2.34,
    "chg": -0.010000000000000231,
-   "pct": 66.91818903891978,
-   "date": "2026-10-22",
+   "pct": 72.58641239570917,
+   "date": "2026-10-23",
    "name": "Breakeven inflación 10 años",
    "block": "Tipos",
    "unit": "%"
@@ -66,8 +66,8 @@
   "ECBDFR": {
    "value": 2.5,
    "chg": 0.0,
-   "pct": 77.11956521739131,
-   "date": "2026-10-22",
+   "pct": 77.07993474714519,
+   "date": "2026-10-23",
    "name": "BCE facilidad de depósito",
    "block": "Tipos",
    "unit": "%"
@@ -253,10 +253,10 @@
    "unit": "% m/m"
   },
   "UMCSENT": {
-   "value": 51.7,
-   "chg": -3.5,
-   "pct": 5.0,
-   "date": "2026-08-01",
+   "value": 48.1,
+   "chg": -3.6000000000000014,
+   "pct": 0.8264462809917356,
+   "date": "2026-09-01",
    "name": "Confianza consumidor (Michigan)",
    "block": "Actividad",
    "unit": "índice"
@@ -289,19 +289,19 @@
    "unit": "%"
   },
   "BAMLH0A0HYM2": {
-   "value": 3.27,
-   "chg": 0.6099999999999999,
-   "pct": 78.11704834605598,
-   "date": "2026-10-21",
+   "value": 3.4,
+   "chg": 0.7199999999999998,
+   "pct": 85.1145038167939,
+   "date": "2026-10-22",
    "name": "Spread High Yield (OAS)",
    "block": "Crédito",
    "unit": "%"
   },
   "BAMLC0A0CM": {
-   "value": 0.88,
-   "chg": 0.10999999999999999,
-   "pct": 56.17834394904458,
-   "date": "2026-10-21",
+   "value": 0.89,
+   "chg": 0.12,
+   "pct": 59.23566878980891,
+   "date": "2026-10-22",
    "name": "Spread Investment Grade (OAS)",
    "block": "Crédito",
    "unit": "%"
@@ -325,116 +325,116 @@
    "unit": "%"
   },
   "^GSPC": {
-   "value": 7663.43017578125,
-   "chg": -101.2099609375,
-   "pct": 98.24910465578989,
-   "date": "2026-10-22",
+   "value": 7623.68017578125,
+   "chg": -82.349609375,
+   "pct": 97.85202863961814,
+   "date": "2026-10-23",
    "name": "S&P 500",
    "block": "Mercado",
    "unit": "puntos"
   },
   "^VIX": {
-   "value": 19.559999465942383,
-   "chg": 4.379999160766602,
-   "pct": 66.77265500794913,
-   "date": "2026-10-23",
+   "value": 19.709999084472656,
+   "chg": 4.839999198913574,
+   "pct": 67.43538767395626,
+   "date": "2026-10-26",
    "name": "VIX",
    "block": "Mercado",
    "unit": "índice"
   },
   "DX-Y.NYB": {
-   "value": 101.74600219726562,
-   "chg": 0.6460037231445312,
-   "pct": 71.33200795228628,
-   "date": "2026-10-23",
+   "value": 101.8740005493164,
+   "chg": 0.9039993286132812,
+   "pct": 72.31503579952268,
+   "date": "2026-10-26",
    "name": "Dólar (DXY)",
    "block": "Mercado",
    "unit": "índice"
   },
   "CL=F": {
-   "value": 101.0199966430664,
-   "chg": 8.859992980957031,
-   "pct": 95.78528827037773,
-   "date": "2026-10-23",
+   "value": 101.12000274658203,
+   "chg": 8.709999084472656,
+   "pct": 95.78361177406524,
+   "date": "2026-10-26",
    "name": "Petróleo WTI",
    "block": "Mercado",
    "unit": "$/barril"
   },
   "HG=F": {
-   "value": 6.453000068664551,
-   "chg": -0.22499990463256836,
-   "pct": 97.37574552683897,
-   "date": "2026-10-23",
+   "value": 6.511000156402588,
+   "chg": -0.18449974060058594,
+   "pct": 97.9315831344471,
+   "date": "2026-10-26",
    "name": "Cobre",
    "block": "Mercado",
    "unit": "$/lb"
   },
   "GC=F": {
-   "value": 4037.800048828125,
-   "chg": -280.599853515625,
-   "pct": 90.25844930417495,
-   "date": "2026-10-23",
+   "value": 4025.10009765625,
+   "chg": -296.10009765625,
+   "pct": 90.21479713603819,
+   "date": "2026-10-26",
    "name": "Oro",
    "block": "Mercado",
    "unit": "$/oz"
   },
   "^TNX": {
-   "value": 4.953000068664551,
-   "chg": -0.014999866485595703,
-   "pct": 98.76592356687898,
-   "date": "2026-10-22",
+   "value": 4.98799991607666,
+   "chg": -0.12599992752075195,
+   "pct": 98.96538002387585,
+   "date": "2026-10-23",
    "name": "Treasury 10y (mercado)",
    "block": "Mercado",
    "unit": "%"
   },
   "EURUSD=X": {
-   "value": 1.1204482316970825,
-   "chg": -0.0243452787399292,
-   "pct": 46.963873943120674,
-   "date": "2026-10-23",
+   "value": 1.1200717687606812,
+   "chg": -0.017403483390808105,
+   "pct": 46.59746251441753,
+   "date": "2026-10-26",
    "name": "Euro-dólar",
    "block": "Mercado",
    "unit": "$ por €"
   },
   "JPY=X": {
-   "value": 156.61500549316406,
-   "chg": -0.8489990234375,
-   "pct": 90.69946195234435,
-   "date": "2026-10-23",
+   "value": 157.34500122070312,
+   "chg": -1.46600341796875,
+   "pct": 92.31064975009612,
+   "date": "2026-10-26",
    "name": "Dólar-yen (carry)",
    "block": "Mercado",
    "unit": "¥ por $"
   },
   "CNY=X": {
-   "value": 6.6595001220703125,
-   "chg": -0.04010009765625,
-   "pct": 23.990772779700116,
-   "date": "2026-10-23",
+   "value": 6.656499862670898,
+   "chg": -0.05460023880004883,
+   "pct": 23.807692307692307,
+   "date": "2026-10-26",
    "name": "Dólar-yuan",
    "block": "Mercado",
    "unit": "¥ por $"
   },
   "TTF=F": {
-   "value": 94.0,
-   "chg": 21.98999786376953,
-   "pct": 90.37527593818984,
-   "date": "2026-10-23",
+   "value": 96.08499908447266,
+   "chg": 24.013999938964844,
+   "pct": 91.0414827890556,
+   "date": "2026-10-26",
    "name": "Gas natural europeo (TTF)",
    "block": "Mercado",
    "unit": "€/MWh"
   },
   "CU_AU": {
-   "value": 1.5981475037470911,
-   "chg": 0.051741398635628544,
-   "pct": 24.45328031809145,
-   "date": "2026-10-23",
+   "value": 1.6175995623546944,
+   "chg": 0.0681458008126492,
+   "pct": 26.25298329355609,
+   "date": "2026-10-26",
    "name": "Ratio cobre/oro (x1000)",
    "block": "Mercado",
    "unit": "ratio"
   }
  },
  "analysis": {
-  "date": "2026-10-23",
+  "date": "2026-10-26",
   "scores": {
    "crecimiento": {
     "label": "Crecimiento",
@@ -540,8 +540,8 @@
       "trend": -1,
       "signal": -2,
       "weight": 1,
-      "value": 51.7,
-      "pct": 5.0
+      "value": 48.1,
+      "pct": 0.8264462809917356
      }
     ]
    },
@@ -604,8 +604,8 @@
       "trend": 0,
       "signal": 0,
       "weight": 1,
-      "value": 2.32,
-      "pct": 66.91818903891978
+      "value": 2.34,
+      "pct": 72.58641239570917
      },
      {
       "series": "CP0000EZ19M086NEST",
@@ -630,8 +630,8 @@
    "liquidez": {
     "label": "Liquidez / tipos",
     "score": -1,
-    "raw": -0.75,
-    "trend": -0.42,
+    "raw": -0.58,
+    "trend": -0.25,
     "trend_label": "empeorando",
     "coverage": "6/6",
     "detail": [
@@ -641,8 +641,8 @@
       "trend": 0,
       "signal": -1,
       "weight": 3,
-      "value": 2.76,
-      "pct": 99.24513309495431
+      "value": 2.64,
+      "pct": 99.0858505564388
      },
      {
       "series": "NFCI",
@@ -656,11 +656,11 @@
      {
       "series": "DGS10",
       "level": 1,
-      "trend": 1,
-      "signal": -2,
+      "trend": 0,
+      "signal": -1,
       "weight": 2,
-      "value": 5.13,
-      "pct": 99.36432260627731
+      "value": 4.96,
+      "pct": 98.84737678855325
      },
      {
       "series": "BAMLH0A0HYM2",
@@ -668,8 +668,8 @@
       "trend": 1,
       "signal": 0,
       "weight": 2,
-      "value": 3.27,
-      "pct": 78.11704834605598
+      "value": 3.4,
+      "pct": 85.1145038167939
      },
      {
       "series": "WALCL",
@@ -693,9 +693,9 @@
    },
    "riesgo": {
     "label": "Apetito por el riesgo",
-    "score": -1,
-    "raw": -0.64,
-    "trend": -0.64,
+    "score": 0,
+    "raw": -0.45,
+    "trend": -0.45,
     "trend_label": "empeorando",
     "coverage": "7/7",
     "detail": [
@@ -705,8 +705,8 @@
       "trend": 1,
       "signal": -1,
       "weight": 3,
-      "value": 19.559999465942383,
-      "pct": 66.77265500794913
+      "value": 19.709999084472656,
+      "pct": 67.43538767395626
      },
      {
       "series": "BAMLH0A0HYM2",
@@ -714,17 +714,17 @@
       "trend": 1,
       "signal": -2,
       "weight": 2,
-      "value": 3.27,
-      "pct": 78.11704834605598
+      "value": 3.4,
+      "pct": 85.1145038167939
      },
      {
       "series": "^GSPC",
       "level": 1,
-      "trend": -1,
-      "signal": 0,
+      "trend": 0,
+      "signal": 1,
       "weight": 2,
-      "value": 7663.43017578125,
-      "pct": 98.24910465578989
+      "value": 7623.68017578125,
+      "pct": 97.85202863961814
      },
      {
       "series": "HG=F",
@@ -732,8 +732,8 @@
       "trend": -1,
       "signal": 0,
       "weight": 1,
-      "value": 6.453000068664551,
-      "pct": 97.37574552683897
+      "value": 6.511000156402588,
+      "pct": 97.9315831344471
      },
      {
       "series": "GC=F",
@@ -741,8 +741,8 @@
       "trend": -1,
       "signal": 1,
       "weight": 1,
-      "value": 4037.800048828125,
-      "pct": 90.25844930417495
+      "value": 4025.10009765625,
+      "pct": 90.21479713603819
      },
      {
       "series": "T10Y2Y",
@@ -751,7 +751,7 @@
       "signal": 0,
       "weight": 1,
       "value": 0.31,
-      "pct": 45.194598888006354
+      "pct": 45.21255462852602
      },
      {
       "series": "CU_AU",
@@ -759,8 +759,8 @@
       "trend": 0,
       "signal": -1,
       "weight": 1,
-      "value": 1.5981475037470911,
-      "pct": 24.45328031809145
+      "value": 1.6175995623546944,
+      "pct": 26.25298329355609
      }
     ]
    }
@@ -779,49 +779,49 @@
    "duracion": {
     "signal": 1,
     "label": "Tipo real alto",
-    "value": 2.76,
-    "pct": 99.24513309495431,
-    "chg": 0.13999999999999968,
+    "value": 2.64,
+    "pct": 99.0858505564388,
+    "chg": 0.010000000000000231,
     "why": "Activos de larga duración (REITs, utilities, growth) descuentan a tipo real."
    },
    "curva": {
     "signal": 0,
     "label": "Curva empinando",
     "value": 0.31,
-    "pct": 45.194598888006354,
-    "chg": 0.06,
+    "pct": 45.21255462852602,
+    "chg": 0.04999999999999999,
     "why": "Pendiente = margen de intermediación bancaria."
    },
    "petroleo": {
     "signal": 1,
     "label": "Petróleo caro",
-    "value": 101.0199966430664,
-    "pct": 95.78528827037773,
-    "chg": 8.859992980957031,
+    "value": 101.12000274658203,
+    "pct": 95.78361177406524,
+    "chg": 8.709999084472656,
     "why": "Transferencia de renta de consumidores/transporte a productores."
    },
    "dolar": {
     "signal": 0,
     "label": "Dólar fuerte",
-    "value": 101.74600219726562,
-    "pct": 71.33200795228628,
-    "chg": 0.6460037231445312,
+    "value": 101.8740005493164,
+    "pct": 72.31503579952268,
+    "chg": 0.9039993286132812,
     "why": "Penaliza beneficios exteriores y materias primas en USD."
    },
    "credito": {
     "signal": 1,
     "label": "Crédito tensándose",
-    "value": 3.27,
-    "pct": 78.11704834605598,
-    "chg": 0.6099999999999999,
+    "value": 3.4,
+    "pct": 85.1145038167939,
+    "chg": 0.7199999999999998,
     "why": "Sectores apalancados sufren primero."
    },
    "cobre": {
     "signal": 1,
     "label": "Cobre caro",
-    "value": 6.453000068664551,
-    "pct": 97.37574552683897,
-    "chg": -0.22499990463256836,
+    "value": 6.511000156402588,
+    "pct": 97.9315831344471,
+    "chg": -0.18449974060058594,
     "why": "Demanda industrial y de construcción global."
    },
    "hipoteca": {
@@ -835,17 +835,17 @@
    "yen": {
     "signal": 0,
     "label": "Yen subiendo (deshacer de carry)",
-    "value": 156.61500549316406,
-    "pct": 90.69946195234435,
-    "chg": -0.8489990234375,
+    "value": 157.34500122070312,
+    "pct": 92.31064975009612,
+    "chg": -1.46600341796875,
     "why": "USDJPY cayendo más de 4 en un mes = el yen se aprecia de golpe; desapalancamiento de posiciones financiadas en yenes (ago-2024). Señal -1 x carga +0,5 = -0,5 en los sectores más comprados con carry. 2026-10-09."
    },
    "euro": {
     "signal": 0,
     "label": "Euro moviéndose > 3 %/mes",
-    "value": 1.1204482316970825,
-    "pct": 46.963873943120674,
-    "chg": -0.0243452787399292,
+    "value": 1.1200717687606812,
+    "pct": 46.59746251441753,
+    "chg": -0.017403483390808105,
     "why": "Sin carga sectorial en la matriz (es estadounidense); se usa en la narrativa y en la lectura de las empresas europeas de la watchlist: euro débil favorece a exportadoras europeas (LVMH, Airbus, SAP, Novo) y penaliza a las americanas que venden en Europa. 2026-10-09."
    }
   },
@@ -1103,7 +1103,7 @@
     "gap": 40,
     "text": "El consumidor gasta pero no confía: consumo sensible a precios y a crédito.",
     "pct_a": 66.66666666666666,
-    "pct_b": 5.0,
+    "pct_b": 0.8264462809917356,
     "kind": "divergencia"
    },
    {
@@ -1112,8 +1112,8 @@
     "gap": -30,
     "same_direction": true,
     "text": "Bolsa y tipo real en percentiles altos a la vez: la prima de riesgo se comprime.",
-    "pct_a": 98.24910465578989,
-    "pct_b": 99.24513309495431,
+    "pct_a": 97.85202863961814,
+    "pct_b": 99.0858505564388,
     "kind": "coincidencia"
    },
    {
@@ -1131,8 +1131,8 @@
     "b": "DGS10",
     "gap": 40,
     "text": "El ratio cobre/oro y el 10 años discrepan: o el bono anticipa debilidad o la subida de tipos es prima de plazo, no crecimiento.",
-    "pct_a": 24.45328031809145,
-    "pct_b": 99.36432260627731,
+    "pct_a": 26.25298329355609,
+    "pct_b": 98.84737678855325,
     "kind": "divergencia"
    }
   ],
@@ -1148,9 +1148,9 @@
    {
     "series": "JPY=X",
     "threshold": 150,
-    "value": 156.61500549316406,
+    "value": 157.34500122070312,
     "hit": false,
-    "distance": 6.62,
+    "distance": 7.35,
     "text": "Dólar-yen < 150: el yen se fortalece; riesgo de deshacer del carry (ago-2024 fue 162 → 142)."
    },
    {
@@ -1164,9 +1164,9 @@
    {
     "series": "DGS10",
     "threshold": 5.5,
-    "value": 5.13,
+    "value": 4.96,
     "hit": false,
-    "distance": 0.37,
+    "distance": 0.54,
     "text": "Treasury 10 años > 5,50%: compite de frente con un earnings yield del 4%."
    },
    {
@@ -1178,20 +1178,20 @@
     "text": "Continuadas > 2 M: el mercado laboral deja de absorber; precede a la subida del paro."
    },
    {
+    "series": "BAMLH0A0HYM2",
+    "threshold": 4.0,
+    "value": 3.4,
+    "hit": false,
+    "distance": 0.6,
+    "text": "HY > 400 pb: el crédito suele avisar 4-8 semanas antes que la bolsa."
+   },
+   {
     "series": "PSAVERT",
     "threshold": 3.5,
     "value": 4.1,
     "hit": false,
     "distance": 0.6,
     "text": "Ahorro < 3,5 %: el consumo nominal se sostiene con ahorro; se agota en 2-3 trimestres."
-   },
-   {
-    "series": "BAMLH0A0HYM2",
-    "threshold": 4.0,
-    "value": 3.27,
-    "hit": false,
-    "distance": 0.73,
-    "text": "HY > 400 pb: el crédito suele avisar 4-8 semanas antes que la bolsa."
    },
    {
     "series": "DRCCLACBS",
@@ -1212,9 +1212,9 @@
    {
     "series": "^VIX",
     "threshold": 25,
-    "value": 19.559999465942383,
+    "value": 19.709999084472656,
     "hit": false,
-    "distance": 5.44,
+    "distance": 5.29,
     "text": "VIX > 25: régimen de miedo; históricamente mejor comprar que vender."
    },
    {
