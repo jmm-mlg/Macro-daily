@@ -1,5 +1,5 @@
 {
- "date": "2026-10-27",
+ "date": "2026-10-28",
  "scope": "bellwethers",
  "companies": [
   {
@@ -23,7 +23,7 @@
      "down7": 0,
      "net30": 1.0
     },
-    "est_anual_chg30_pct": 10.06,
+    "est_anual_chg30_pct": 9.9,
     "recomendaciones": {
      "compra": 9,
      "venta": 0,
@@ -291,9 +291,9 @@
      "down7": 1,
      "net30": -1.0
     },
-    "est_anual_chg30_pct": 0.15,
+    "est_anual_chg30_pct": 0.14,
     "recomendaciones": {
-     "compra": 20,
+     "compra": 21,
      "venta": 2,
      "cambio_compra_1m": 0
     }
@@ -370,7 +370,7 @@
      "down7": 1,
      "net30": -0.25
     },
-    "est_anual_chg30_pct": 0.08,
+    "est_anual_chg30_pct": 0.03,
     "recomendaciones": {
      "compra": 4,
      "venta": 2,
@@ -416,7 +416,7 @@
      "down7": 4,
      "net30": -0.38
     },
-    "est_anual_chg30_pct": 0.58,
+    "est_anual_chg30_pct": -1.21,
     "recomendaciones": {
      "compra": 19,
      "venta": 2,
@@ -779,7 +779,7 @@
      "down7": 0,
      "net30": 1.0
     },
-    "est_anual_chg30_pct": 0.91,
+    "est_anual_chg30_pct": 0.88,
     "recomendaciones": {
      "compra": 12,
      "venta": 1,
@@ -959,7 +959,7 @@
      "down7": 2,
      "net30": 0.4
     },
-    "est_anual_chg30_pct": 1.91,
+    "est_anual_chg30_pct": 1.54,
     "recomendaciones": {
      "compra": 5,
      "venta": 6,
@@ -1034,18 +1034,7 @@
      "cambio_compra_1m": 2
     }
    },
-   "eventos": [
-    {
-     "fecha": "2026-10-20",
-     "codigos": [
-      "8.01",
-      "9.01"
-     ],
-     "descripcion": "Otros hechos",
-     "importancia": 1,
-     "url": "https://www.sec.gov/Archives/edgar/data/19617/000119312526426704/d351999d8k.htm"
-    }
-   ],
+   "eventos": [],
    "insiders": [],
    "cobertura": true,
    "compra_cluster": false,
@@ -1074,7 +1063,7 @@
      "down7": 2,
      "net30": 0.0
     },
-    "est_anual_chg30_pct": -0.15,
+    "est_anual_chg30_pct": -0.29,
     "recomendaciones": {
      "compra": 15,
      "venta": 0,
@@ -1106,7 +1095,7 @@
      "down7": 0,
      "net30": 0.0
     },
-    "est_anual_chg30_pct": -0.31,
+    "est_anual_chg30_pct": -1.41,
     "recomendaciones": {
      "compra": 6,
      "venta": 4,
@@ -1125,27 +1114,39 @@
    "role": "bellwether",
    "revisiones": {
     "trim": {
-     "up30": 3,
-     "down30": 0,
-     "up7": 3,
-     "down7": 0,
-     "net30": 1.0
+     "up30": 1,
+     "down30": 3,
+     "up7": 1,
+     "down7": 2,
+     "net30": -0.5
     },
     "anual": {
-     "up30": 3,
-     "down30": 0,
-     "up7": 3,
-     "down7": 0,
-     "net30": 1.0
+     "up30": 1,
+     "down30": 3,
+     "up7": 1,
+     "down7": 3,
+     "net30": -0.5
     },
-    "est_anual_chg30_pct": 0.02,
+    "est_anual_chg30_pct": 0.32,
     "recomendaciones": {
      "compra": 36,
-     "venta": 1,
+     "venta": 0,
      "cambio_compra_1m": 0
     }
    },
-   "eventos": [],
+   "eventos": [
+    {
+     "fecha": "2026-10-27",
+     "codigos": [
+      "2.02",
+      "8.01",
+      "9.01"
+     ],
+     "descripcion": "Resultados · Otros hechos",
+     "importancia": 3,
+     "url": "https://www.sec.gov/Archives/edgar/data/1403161/000140316126000126/v-20261027.htm"
+    }
+   ],
    "insiders": [
     {
      "fecha": "2026-10-01",
@@ -1610,7 +1611,7 @@
      "down7": 1,
      "net30": 0.0
     },
-    "est_anual_chg30_pct": 0.09,
+    "est_anual_chg30_pct": 0.12,
     "recomendaciones": {
      "compra": 24,
      "venta": 6,
@@ -1865,9 +1866,9 @@
     },
     "est_anual_chg30_pct": -0.14,
     "recomendaciones": {
-     "compra": 56,
+     "compra": 55,
      "venta": 0,
-     "cambio_compra_1m": -1
+     "cambio_compra_1m": -2
     }
    },
    "eventos": [],
@@ -1909,7 +1910,7 @@
      "down7": 2,
      "net30": -0.2
     },
-    "est_anual_chg30_pct": -6.31,
+    "est_anual_chg30_pct": -6.43,
     "recomendaciones": {
      "compra": 55,
      "venta": 1,
@@ -2297,7 +2298,7 @@
      "down7": 0,
      "net30": 0.0
     },
-    "est_anual_chg30_pct": 0.42,
+    "est_anual_chg30_pct": 0.2,
     "recomendaciones": {
      "compra": 7,
      "venta": 0,
@@ -2487,12 +2488,12 @@
    "clusters_insiders": 0
   },
   "Financiero": {
-   "amplitud_revisiones": 0.5,
-   "senal": 1,
+   "amplitud_revisiones": 0.12,
+   "senal": 0,
    "empresas_cubiertas": 4,
-   "mejorando": 2,
-   "empeorando": 0,
-   "hechos_relevantes": 0,
+   "mejorando": 1,
+   "empeorando": 1,
+   "hechos_relevantes": 1,
    "clusters_insiders": 0
   },
   "Tecnología de la información": {
