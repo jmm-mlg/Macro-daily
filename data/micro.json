@@ -1,5 +1,5 @@
 {
- "date": "2026-10-29",
+ "date": "2026-10-30",
  "scope": "bellwethers",
  "companies": [
   {
@@ -23,14 +23,25 @@
      "down7": 0,
      "net30": 1.0
     },
-    "est_anual_chg30_pct": 9.9,
+    "est_anual_chg30_pct": 9.0,
     "recomendaciones": {
      "compra": 9,
      "venta": 0,
      "cambio_compra_1m": -1
     }
    },
-   "eventos": [],
+   "eventos": [
+    {
+     "fecha": "2026-10-30",
+     "codigos": [
+      "2.02",
+      "7.01"
+     ],
+     "descripcion": "Resultados · Reg FD: presentación, guía o comunicado",
+     "importancia": 3,
+     "url": "https://www.sec.gov/Archives/edgar/data/2115436/000211543626000018/xom-20261030.htm"
+    }
+   ],
    "insiders": [],
    "cobertura": true,
    "compra_cluster": false,
@@ -59,7 +70,7 @@
      "down7": 1,
      "net30": 1.0
     },
-    "est_anual_chg30_pct": 10.0,
+    "est_anual_chg30_pct": 5.06,
     "recomendaciones": {
      "compra": 10,
      "venta": 0,
@@ -91,7 +102,7 @@
      "down7": 1,
      "net30": 0.2
     },
-    "est_anual_chg30_pct": -0.02,
+    "est_anual_chg30_pct": 0.1,
     "recomendaciones": {
      "compra": 23,
      "venta": 1,
@@ -138,7 +149,7 @@
      "down7": 0,
      "net30": 0.33
     },
-    "est_anual_chg30_pct": 8.27,
+    "est_anual_chg30_pct": 5.63,
     "recomendaciones": {
      "compra": 8,
      "venta": 4,
@@ -170,11 +181,11 @@
      "down7": 4,
      "net30": -0.75
     },
-    "est_anual_chg30_pct": -3.15,
+    "est_anual_chg30_pct": -2.88,
     "recomendaciones": {
-     "compra": 8,
+     "compra": 9,
      "venta": 1,
-     "cambio_compra_1m": 0
+     "cambio_compra_1m": 1
     }
    },
    "eventos": [],
@@ -202,7 +213,7 @@
      "down7": 0,
      "net30": 1.0
     },
-    "est_anual_chg30_pct": -0.12,
+    "est_anual_chg30_pct": 0.12,
     "recomendaciones": {
      "compra": 18,
      "venta": 0,
@@ -222,10 +233,10 @@
    "revisiones": {
     "trim": {
      "up30": 1,
-     "down30": 0,
+     "down30": 1,
      "up7": 1,
-     "down7": 0,
-     "net30": 1.0
+     "down7": 1,
+     "net30": 0.0
     },
     "anual": {
      "up30": 1,
@@ -234,7 +245,7 @@
      "down7": 1,
      "net30": 0.0
     },
-    "est_anual_chg30_pct": 0.53,
+    "est_anual_chg30_pct": 1.14,
     "recomendaciones": {
      "compra": 16,
      "venta": 1,
@@ -282,7 +293,7 @@
      "down7": 1,
      "net30": -0.43
     },
-    "est_anual_chg30_pct": 0.46,
+    "est_anual_chg30_pct": 0.16,
     "recomendaciones": {
      "compra": 16,
      "venta": 2,
@@ -314,7 +325,7 @@
      "down7": 1,
      "net30": -1.0
     },
-    "est_anual_chg30_pct": 0.1,
+    "est_anual_chg30_pct": 1.51,
     "recomendaciones": {
      "compra": 21,
      "venta": 2,
@@ -381,7 +392,7 @@
      "down7": 0,
      "net30": 1.0
     },
-    "est_anual_chg30_pct": 5.44,
+    "est_anual_chg30_pct": 7.25,
     "recomendaciones": {
      "compra": 2,
      "venta": 9,
@@ -400,20 +411,20 @@
    "role": "bellwether",
    "revisiones": {
     "trim": {
-     "up30": 2,
+     "up30": 1,
      "down30": 5,
-     "up7": 2,
-     "down7": 1,
-     "net30": -0.43
+     "up7": 1,
+     "down7": 2,
+     "net30": -0.67
     },
     "anual": {
-     "up30": 3,
-     "down30": 5,
-     "up7": 2,
-     "down7": 1,
-     "net30": -0.25
+     "up30": 1,
+     "down30": 8,
+     "up7": 1,
+     "down7": 3,
+     "net30": -0.78
     },
-    "est_anual_chg30_pct": 0.03,
+    "est_anual_chg30_pct": -11.93,
     "recomendaciones": {
      "compra": 4,
      "venta": 2,
@@ -421,6 +432,16 @@
     }
    },
    "eventos": [
+    {
+     "fecha": "2026-10-29",
+     "codigos": [
+      "2.02",
+      "9.01"
+     ],
+     "descripcion": "Resultados",
+     "importancia": 3,
+     "url": "https://www.sec.gov/Archives/edgar/data/882184/000088218426000119/dhi-20261029.htm"
+    },
     {
      "fecha": "2026-10-26",
      "codigos": [
@@ -461,9 +482,9 @@
     },
     "est_anual_chg30_pct": -0.7,
     "recomendaciones": {
-     "compra": 19,
+     "compra": 20,
      "venta": 2,
-     "cambio_compra_1m": 0
+     "cambio_compra_1m": 1
     }
    },
    "eventos": [],
@@ -651,10 +672,10 @@
    "revisiones": {
     "trim": {
      "up30": 2,
-     "down30": 0,
+     "down30": 1,
      "up7": 1,
      "down7": 0,
-     "net30": 1.0
+     "net30": 0.33
     },
     "anual": {
      "up30": 4,
@@ -670,7 +691,18 @@
      "cambio_compra_1m": -1
     }
    },
-   "eventos": [],
+   "eventos": [
+    {
+     "fecha": "2026-10-29",
+     "codigos": [
+      "2.02",
+      "9.01"
+     ],
+     "descripcion": "Resultados",
+     "importancia": 3,
+     "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000038/amzn-20261029.htm"
+    }
+   ],
    "insiders": [
     {
      "fecha": "2026-10-01",
@@ -811,7 +843,7 @@
      "down7": 0,
      "net30": 1.0
     },
-    "est_anual_chg30_pct": 0.88,
+    "est_anual_chg30_pct": 0.87,
     "recomendaciones": {
      "compra": 12,
      "venta": 1,
@@ -850,28 +882,7 @@
      "cambio_compra_1m": 1
     }
    },
-   "eventos": [
-    {
-     "fecha": "2026-10-22",
-     "codigos": [
-      "7.01",
-      "9.01"
-     ],
-     "descripcion": "Reg FD: presentación, guía o comunicado",
-     "importancia": 2,
-     "url": "https://www.sec.gov/Archives/edgar/data/80424/000008042426000252/pg-20261022.htm"
-    },
-    {
-     "fecha": "2026-10-22",
-     "codigos": [
-      "2.02",
-      "9.01"
-     ],
-     "descripcion": "Resultados",
-     "importancia": 3,
-     "url": "https://www.sec.gov/Archives/edgar/data/80424/000008042426000250/pg-20261022.htm"
-    }
-   ],
+   "eventos": [],
    "insiders": [
     {
      "fecha": "2026-10-23",
@@ -942,11 +953,11 @@
    "role": "bellwether",
    "revisiones": {
     "trim": {
-     "up30": 3,
-     "down30": 7,
-     "up7": 0,
-     "down7": 7,
-     "net30": -0.4
+     "up30": 6,
+     "down30": 4,
+     "up7": 2,
+     "down7": 4,
+     "net30": 0.2
     },
     "anual": {
      "up30": 5,
@@ -955,7 +966,7 @@
      "down7": 7,
      "net30": -0.23
     },
-    "est_anual_chg30_pct": -6.66,
+    "est_anual_chg30_pct": -5.02,
     "recomendaciones": {
      "compra": 26,
      "venta": 2,
@@ -1106,7 +1117,7 @@
      "down7": 2,
      "net30": 0.0
     },
-    "est_anual_chg30_pct": 2.79,
+    "est_anual_chg30_pct": -0.15,
     "recomendaciones": {
      "compra": 15,
      "venta": 0,
@@ -1138,7 +1149,7 @@
      "down7": 0,
      "net30": 0.0
     },
-    "est_anual_chg30_pct": -1.41,
+    "est_anual_chg30_pct": -1.24,
     "recomendaciones": {
      "compra": 6,
      "venta": 4,
@@ -1170,7 +1181,7 @@
      "down7": 3,
      "net30": -0.5
     },
-    "est_anual_chg30_pct": 0.21,
+    "est_anual_chg30_pct": 0.15,
     "recomendaciones": {
      "compra": 36,
      "venta": 1,
@@ -1228,11 +1239,11 @@
      "down7": 0,
      "net30": 1.0
     },
-    "est_anual_chg30_pct": 0.0,
+    "est_anual_chg30_pct": 1.32,
     "recomendaciones": {
-     "compra": 54,
+     "compra": 51,
      "venta": 0,
-     "cambio_compra_1m": 1
+     "cambio_compra_1m": -2
     }
    },
    "eventos": [
@@ -1643,7 +1654,7 @@
      "down7": 0,
      "net30": 0.33
     },
-    "est_anual_chg30_pct": 7.91,
+    "est_anual_chg30_pct": 7.52,
     "recomendaciones": {
      "compra": 38,
      "venta": 1,
@@ -1675,7 +1686,7 @@
      "down7": 1,
      "net30": 0.0
     },
-    "est_anual_chg30_pct": 0.12,
+    "est_anual_chg30_pct": 0.03,
     "recomendaciones": {
      "compra": 24,
      "venta": 6,
@@ -1684,6 +1695,15 @@
    },
    "eventos": [],
    "insiders": [
+    {
+     "fecha": "2026-10-27",
+     "quien": "Newstead Jennifer",
+     "cargo": "SVP, GC and Government Affairs",
+     "tipo": "venta",
+     "importe_usd": 823721,
+     "acciones": 2399,
+     "url": "https://www.sec.gov/Archives/edgar/data/320193/000114036126041201/form4.xml"
+    },
     {
      "fecha": "2026-10-20",
      "quien": "Newstead Jennifer",
@@ -1905,7 +1925,7 @@
    "compra_cluster": false,
    "n_compradores": 0,
    "importe_compras": 0,
-   "importe_ventas": 91941318
+   "importe_ventas": 92765039
   },
   {
    "t": "GOOGL",
@@ -1928,11 +1948,11 @@
      "down7": 2,
      "net30": 0.11
     },
-    "est_anual_chg30_pct": -0.11,
+    "est_anual_chg30_pct": -4.49,
     "recomendaciones": {
-     "compra": 55,
+     "compra": 53,
      "venta": 0,
-     "cambio_compra_1m": -2
+     "cambio_compra_1m": -4
     }
    },
    "eventos": [
@@ -1985,14 +2005,27 @@
      "down7": 2,
      "net30": -0.2
     },
-    "est_anual_chg30_pct": -6.6,
+    "est_anual_chg30_pct": -6.56,
     "recomendaciones": {
      "compra": 55,
      "venta": 1,
      "cambio_compra_1m": 0
     }
    },
-   "eventos": [],
+   "eventos": [
+    {
+     "fecha": "2026-10-29",
+     "codigos": [
+      "1.01",
+      "3.03",
+      "5.03",
+      "9.01"
+     ],
+     "descripcion": "Acuerdo material · Cambio en derechos de accionistas",
+     "importancia": 2,
+     "url": "https://www.sec.gov/Archives/edgar/data/1326801/000119312526438017/d183592d8k.htm"
+    }
+   ],
    "insiders": [
     {
      "fecha": "2026-10-26",
@@ -2465,7 +2498,7 @@
    "empresas_cubiertas": 2,
    "mejorando": 2,
    "empeorando": 0,
-   "hechos_relevantes": 0,
+   "hechos_relevantes": 1,
    "clusters_insiders": 0
   },
   "Materiales": {
@@ -2478,12 +2511,12 @@
    "clusters_insiders": 0
   },
   "Industriales": {
-   "amplitud_revisiones": 0.05,
+   "amplitud_revisiones": -0.04,
    "senal": 0,
    "empresas_cubiertas": 6,
    "mejorando": 2,
    "empeorando": 3,
-   "hechos_relevantes": 5,
+   "hechos_relevantes": 6,
    "clusters_insiders": 0
   },
   "Consumo discrecional": {
@@ -2492,7 +2525,7 @@
    "empresas_cubiertas": 7,
    "mejorando": 2,
    "empeorando": 5,
-   "hechos_relevantes": 0,
+   "hechos_relevantes": 1,
    "clusters_insiders": 0
   },
   "Consumo básico": {
@@ -2501,7 +2534,7 @@
    "empresas_cubiertas": 3,
    "mejorando": 1,
    "empeorando": 0,
-   "hechos_relevantes": 2,
+   "hechos_relevantes": 0,
    "clusters_insiders": 0
   },
   "Salud": {
@@ -2537,7 +2570,7 @@
    "empresas_cubiertas": 2,
    "mejorando": 0,
    "empeorando": 0,
-   "hechos_relevantes": 1,
+   "hechos_relevantes": 2,
    "clusters_insiders": 0
   },
   "Utilities": {
