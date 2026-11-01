@@ -1,16 +1,16 @@
-# Verificación de la base de conocimiento · 2026-10-08
+# Verificación de la base de conocimiento · 2026-11-01
 
-68 afirmaciones: **61 OK**, **0 con desviación**, 7 sin dato.
+68 afirmaciones: **61 OK**, **0 con desviación**, 7 de comprobación manual (fuente sin API), 0 sin dato.
 
 | Estado | Entrada | Serie | Fecha | Afirmación | Afirmado | Real | Detalle |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| SIN DATO | BAMLC0A0CM | BAMLC0A0CM | 2020-03-31 | Marzo 2020: IG a 400 pb | 4.0 |  | sin clave FRED o serie vacía |
-| SIN DATO | BAMLC0A0CM | BAMLC0A0CM | 2023-03-31 | Marzo 2023: IG de 120 a 165 pb | 1.65 |  | sin clave FRED o serie vacía |
-| SIN DATO | BAMLH0A0HYM2 | BAMLH0A0HYM2 | 2007-06-30 | Junio 2007: 250 pb, mínimo | 2.5 |  | sin clave FRED o serie vacía |
-| SIN DATO | BAMLH0A0HYM2 | BAMLH0A0HYM2 | 2008-12-31 | Diciembre 2008: 2.000 pb | 20.0 |  | sin clave FRED o serie vacía |
-| SIN DATO | BAMLH0A0HYM2 | BAMLH0A0HYM2 | 2016-02-29 | Febrero 2016: 890 pb | 8.9 |  | sin clave FRED o serie vacía |
-| SIN DATO | BAMLH0A0HYM2 | BAMLH0A0HYM2 | 2020-03-31 | Marzo 2020: 1.100 pb | 11.0 |  | sin clave FRED o serie vacía |
-| SIN DATO | BAMLH0A0HYM2 | BAMLH0A0HYM2 | 2022-07-31 | 2022: 600 pb en julio | 6.0 |  | sin clave FRED o serie vacía |
+| MANUAL | BAMLC0A0CM | BAMLC0A0CM | 2020-03-31 | Marzo 2020: IG a 400 pb | 4.0 |  | FRED sirve ICE BofA por API solo ~3 años; comprobar en el gráfico web https://fred.stlouisfed.org/series/BAMLC0A0CM |
+| MANUAL | BAMLC0A0CM | BAMLC0A0CM | 2023-03-31 | Marzo 2023: IG de 120 a 165 pb | 1.65 |  | FRED sirve ICE BofA por API solo ~3 años; comprobar en el gráfico web https://fred.stlouisfed.org/series/BAMLC0A0CM |
+| MANUAL | BAMLH0A0HYM2 | BAMLH0A0HYM2 | 2007-06-30 | Junio 2007: 250 pb, mínimo | 2.5 |  | FRED sirve ICE BofA por API solo ~3 años; comprobar en el gráfico web https://fred.stlouisfed.org/series/BAMLH0A0HYM2 |
+| MANUAL | BAMLH0A0HYM2 | BAMLH0A0HYM2 | 2008-12-31 | Diciembre 2008: 2.000 pb | 20.0 |  | FRED sirve ICE BofA por API solo ~3 años; comprobar en el gráfico web https://fred.stlouisfed.org/series/BAMLH0A0HYM2 |
+| MANUAL | BAMLH0A0HYM2 | BAMLH0A0HYM2 | 2016-02-29 | Febrero 2016: 890 pb | 8.9 |  | FRED sirve ICE BofA por API solo ~3 años; comprobar en el gráfico web https://fred.stlouisfed.org/series/BAMLH0A0HYM2 |
+| MANUAL | BAMLH0A0HYM2 | BAMLH0A0HYM2 | 2020-03-31 | Marzo 2020: 1.100 pb | 11.0 |  | FRED sirve ICE BofA por API solo ~3 años; comprobar en el gráfico web https://fred.stlouisfed.org/series/BAMLH0A0HYM2 |
+| MANUAL | BAMLH0A0HYM2 | BAMLH0A0HYM2 | 2022-07-31 | 2022: 600 pb en julio | 6.0 |  | FRED sirve ICE BofA por API solo ~3 años; comprobar en el gráfico web https://fred.stlouisfed.org/series/BAMLH0A0HYM2 |
 | OK | CES0500000003 | CES0500000003 | 2022-03-01 | Marzo 2022: salarios 5,9 % | 5.9 | 5.89 (2022-03-01) | afirmado 5.9 · real 5.894 (2022-03-01) · tol ±0.3 |
 | OK | CL | CL=F | 2016-02-29 | Febrero 2016: 26 $ | 26.2 | 26.21 (2016-02-11) | afirmado 26.2 · real 26.210 (2016-02-11) · tol ±1.5 |
 | OK | CL | CL=F | 2022-03-31 | Marzo 2022: cierre máximo en torno a 124 $ (130 intradía) | 123.7 | 123.70 (2022-03-08) | afirmado 123.7 · real 123.700 (2022-03-08) · tol ±3.0 |
@@ -47,9 +47,9 @@
 | OK | MORTGAGE30US | MORTGAGE30US | 2021-01-31 | Enero 2021: mínimo histórico 2,65 % | 2.65 | 2.65 (2021-01-07) | afirmado 2.65 · real 2.650 (2021-01-07) · tol ±0.05 |
 | OK | MORTGAGE30US | MORTGAGE30US | 2023-10-31 | Octubre 2023: 7,8 % | 7.8 | 7.79 (2023-10-26) | afirmado 7.8 · real 7.790 (2023-10-26) · tol ±0.1 |
 | OK | MORTGAGE30US | MORTGAGE30US | 2006-07-31 | 2006: 6,8 % | 6.8 | 6.80 (2006-07-20) | afirmado 6.8 · real 6.800 (2006-07-20) · tol ±0.1 |
-| OK | NFCI | NFCI | 2007-12-31 | Diciembre 2007: +0,6 (desde −0,8 en junio) | 0.6 | 0.57 (2007-12-14) | afirmado 0.6 · real 0.574 (2007-12-14) · tol ±0.3 |
-| OK | NFCI | NFCI | 2008-11-30 | Noviembre 2008: máximo de la serie +3,1 | 3.1 | 3.08 (2008-11-28) | afirmado 3.1 · real 3.084 (2008-11-28) · tol ±0.2 |
-| OK | NFCI | NFCI | 2022-10-31 | Octubre 2022: máximo del ciclo en torno a −0,1, sin llegar a positivo | -0.1 | -0.10 (2022-10-07) | afirmado -0.1 · real -0.099 (2022-10-07) · tol ±0.2 |
+| OK | NFCI | NFCI | 2007-12-31 | Diciembre 2007: +0,6 (desde −0,8 en junio) | 0.6 | 0.60 (2007-12-14) | afirmado 0.6 · real 0.605 (2007-12-14) · tol ±0.3 |
+| OK | NFCI | NFCI | 2008-11-30 | Noviembre 2008: máximo de la serie +3,1 | 3.1 | 3.11 (2008-11-28) | afirmado 3.1 · real 3.110 (2008-11-28) · tol ±0.2 |
+| OK | NFCI | NFCI | 2022-10-31 | Octubre 2022: máximo del ciclo en torno a −0,1, sin llegar a positivo | -0.1 | -0.09 (2022-10-07) | afirmado -0.1 · real -0.089 (2022-10-07) · tol ±0.2 |
 | OK | PAYEMS | PAYEMS | 2020-04-01 | Abril 2020: −20,5 millones | -20500 | -20469.00 (2020-04-01) | afirmado -20500.0 · real -20469.000 (2020-04-01) · tol ±500.0 |
 | OK | PAYEMS | PAYEMS | 2023-01-01 | Enero 2023: +517k (primera estimación; la serie actual está revisada) | 517 | 434.00 (2023-01-01) | afirmado 517.0 · real 434.000 (2023-01-01) · tol ±120.0 |
 | OK | PCEPILFE | PCEPILFE | 2022-02-01 | Febrero 2022: PCE subyacente 5,4 % | 5.4 | 5.57 (2022-02-01) | afirmado 5.4 · real 5.569 (2022-02-01) · tol ±0.2 |
