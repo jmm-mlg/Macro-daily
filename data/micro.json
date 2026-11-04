@@ -1,5 +1,5 @@
 {
- "date": "2026-11-03",
+ "date": "2026-11-04",
  "scope": "bellwethers",
  "companies": [
   {
@@ -10,20 +10,20 @@
    "role": "bellwether",
    "revisiones": {
     "trim": {
-     "up30": 3,
-     "down30": 1,
-     "up7": 2,
-     "down7": 0,
-     "net30": 0.5
+     "up30": 11,
+     "down30": 2,
+     "up7": 10,
+     "down7": 3,
+     "net30": 0.69
     },
     "anual": {
-     "up30": 7,
+     "up30": 12,
      "down30": 0,
-     "up7": 3,
-     "down7": 0,
+     "up7": 7,
+     "down7": 1,
      "net30": 1.0
     },
-    "est_anual_chg30_pct": 9.93,
+    "est_anual_chg30_pct": 10.14,
     "recomendaciones": {
      "compra": 9,
      "venta": 0,
@@ -60,15 +60,15 @@
      "up30": 2,
      "down30": 0,
      "up7": 2,
-     "down7": 0,
+     "down7": 1,
      "net30": 1.0
     },
     "anual": {
-     "up30": 8,
-     "down30": 0,
-     "up7": 7,
-     "down7": 1,
-     "net30": 1.0
+     "up30": 9,
+     "down30": 1,
+     "up7": 2,
+     "down7": 0,
+     "net30": 0.8
     },
     "est_anual_chg30_pct": 8.81,
     "recomendaciones": {
@@ -90,7 +90,7 @@
    "revisiones": {
     "trim": {
      "up30": 0,
-     "down30": 2,
+     "down30": 4,
      "up7": 0,
      "down7": 2,
      "net30": -1.0
@@ -102,7 +102,6 @@
      "down7": 1,
      "net30": 0.2
     },
-    "est_anual_chg30_pct": 0.07,
     "recomendaciones": {
      "compra": 23,
      "venta": 1,
@@ -136,20 +135,20 @@
    "role": "bellwether",
    "revisiones": {
     "trim": {
-     "up30": 1,
-     "down30": 4,
+     "up30": 0,
+     "down30": 1,
      "up7": 0,
-     "down7": 0,
-     "net30": -0.6
+     "down7": 1,
+     "net30": -1.0
     },
     "anual": {
      "up30": 4,
-     "down30": 2,
+     "down30": 1,
      "up7": 1,
      "down7": 0,
-     "net30": 0.33
+     "net30": 0.6
     },
-    "est_anual_chg30_pct": 7.34,
+    "est_anual_chg30_pct": 7.33,
     "recomendaciones": {
      "compra": 8,
      "venta": 4,
@@ -175,10 +174,10 @@
      "net30": 0.0
     },
     "anual": {
-     "up30": 1,
-     "down30": 7,
-     "up7": 0,
-     "down7": 4,
+     "up30": 2,
+     "down30": 14,
+     "up7": 4,
+     "down7": 8,
      "net30": -0.75
     },
     "est_anual_chg30_pct": -2.76,
@@ -200,18 +199,18 @@
    "role": "bellwether",
    "revisiones": {
     "trim": {
-     "up30": 0,
-     "down30": 3,
-     "up7": 0,
-     "down7": 0,
-     "net30": -1.0
-    },
-    "anual": {
-     "up30": 1,
+     "up30": 2,
      "down30": 0,
-     "up7": 1,
+     "up7": 2,
      "down7": 0,
      "net30": 1.0
+    },
+    "anual": {
+     "up30": 5,
+     "down30": 1,
+     "up7": 4,
+     "down7": 1,
+     "net30": 0.67
     },
     "est_anual_chg30_pct": 0.1,
     "recomendaciones": {
@@ -232,18 +231,18 @@
    "role": "bellwether",
    "revisiones": {
     "trim": {
-     "up30": 1,
+     "up30": 3,
      "down30": 1,
      "up7": 1,
      "down7": 1,
-     "net30": 0.0
+     "net30": 0.5
     },
     "anual": {
-     "up30": 1,
-     "down30": 1,
-     "up7": 1,
+     "up30": 3,
+     "down30": 2,
+     "up7": 2,
      "down7": 1,
-     "net30": 0.0
+     "net30": 0.2
     },
     "est_anual_chg30_pct": 1.14,
     "recomendaciones": {
@@ -265,11 +264,21 @@
      "url": "https://www.sec.gov/Archives/edgar/data/18230/000001823026000052/cat-20261029.htm"
     }
    ],
-   "insiders": [],
+   "insiders": [
+    {
+     "fecha": "2026-11-02",
+     "quien": "Fish James C Jr",
+     "cargo": "consejero",
+     "tipo": "compra",
+     "importe_usd": 620390,
+     "acciones": 1000,
+     "url": "https://www.sec.gov/Archives/edgar/data/18230/000110465926121809/tm2628874-1_4seq1.xml"
+    }
+   ],
    "cobertura": true,
    "compra_cluster": false,
-   "n_compradores": 0,
-   "importe_compras": 0,
+   "n_compradores": 1,
+   "importe_compras": 620390,
    "importe_ventas": 0
   },
   {
@@ -287,11 +296,11 @@
      "net30": -1.0
     },
     "anual": {
-     "up30": 2,
-     "down30": 5,
+     "up30": 3,
+     "down30": 6,
      "up7": 2,
-     "down7": 1,
-     "net30": -0.43
+     "down7": 2,
+     "net30": -0.33
     },
     "est_anual_chg30_pct": 0.16,
     "recomendaciones": {
@@ -321,8 +330,8 @@
     "anual": {
      "up30": 0,
      "down30": 2,
-     "up7": 1,
-     "down7": 1,
+     "up7": 0,
+     "down7": 0,
      "net30": -1.0
     },
     "est_anual_chg30_pct": 2.31,
@@ -356,6 +365,15 @@
    ],
    "insiders": [
     {
+     "fecha": "2026-11-02",
+     "quien": "Adams Gina F.",
+     "cargo": "EVP GENL COUNSEL/SECTY",
+     "tipo": "venta",
+     "importe_usd": 955616,
+     "acciones": 3014,
+     "url": "https://www.sec.gov/Archives/edgar/data/1048911/000104891126000156/form4.xml"
+    },
+    {
      "fecha": "2026-10-30",
      "quien": "Brightman Tracy B",
      "cargo": "EVP - Chief People Officer",
@@ -378,7 +396,7 @@
    "compra_cluster": false,
    "n_compradores": 0,
    "importe_compras": 0,
-   "importe_ventas": 8427274
+   "importe_ventas": 9382890
   },
   {
    "t": "MAERSK-B.CO",
@@ -390,7 +408,7 @@
     "trim": {
      "up30": 1,
      "down30": 1,
-     "up7": 0,
+     "up7": 1,
      "down7": 0,
      "net30": 0.0
     },
@@ -401,7 +419,7 @@
      "down7": 0,
      "net30": 1.0
     },
-    "est_anual_chg30_pct": 5.95,
+    "est_anual_chg30_pct": 11.85,
     "recomendaciones": {
      "compra": 2,
      "venta": 9,
@@ -428,15 +446,15 @@
     },
     "anual": {
      "up30": 1,
-     "down30": 8,
-     "up7": 1,
-     "down7": 3,
-     "net30": -0.78
+     "down30": 9,
+     "up7": 0,
+     "down7": 2,
+     "net30": -0.8
     },
-    "est_anual_chg30_pct": -19.81,
+    "est_anual_chg30_pct": -23.16,
     "recomendaciones": {
      "compra": 4,
-     "venta": 2,
+     "venta": 3,
      "cambio_compra_1m": 0
     }
    },
@@ -468,17 +486,17 @@
    "revisiones": {
     "trim": {
      "up30": 3,
-     "down30": 5,
+     "down30": 6,
      "up7": 1,
-     "down7": 3,
-     "net30": -0.25
+     "down7": 2,
+     "net30": -0.33
     },
     "anual": {
-     "up30": 4,
-     "down30": 9,
-     "up7": 2,
-     "down7": 4,
-     "net30": -0.38
+     "up30": 8,
+     "down30": 14,
+     "up7": 8,
+     "down7": 11,
+     "net30": -0.27
     },
     "est_anual_chg30_pct": -0.48,
     "recomendaciones": {
@@ -504,17 +522,17 @@
    "revisiones": {
     "trim": {
      "up30": 0,
-     "down30": 2,
+     "down30": 1,
      "up7": 0,
      "down7": 0,
      "net30": -1.0
     },
     "anual": {
-     "up30": 1,
-     "down30": 5,
+     "up30": 0,
+     "down30": 3,
      "up7": 0,
-     "down7": 1,
-     "net30": -0.67
+     "down7": 0,
+     "net30": -1.0
     },
     "est_anual_chg30_pct": 4.37,
     "recomendaciones": {
@@ -543,10 +561,10 @@
     },
     "anual": {
      "up30": 1,
-     "down30": 10,
-     "up7": 1,
+     "down30": 11,
+     "up7": 0,
      "down7": 2,
-     "net30": -0.82
+     "net30": -0.83
     },
     "est_anual_chg30_pct": -0.01,
     "recomendaciones": {
@@ -574,11 +592,11 @@
      "net30": 1.0
     },
     "anual": {
-     "up30": 1,
-     "down30": 9,
+     "up30": 2,
+     "down30": 1,
      "up7": 1,
-     "down7": 0,
-     "net30": -0.8
+     "down7": 1,
+     "net30": 0.33
     },
     "est_anual_chg30_pct": -0.05,
     "recomendaciones": {
@@ -599,27 +617,38 @@
    "role": "bellwether",
    "revisiones": {
     "trim": {
-     "up30": 2,
-     "down30": 16,
-     "up7": 2,
-     "down7": 4,
-     "net30": -0.78
+     "up30": 3,
+     "down30": 15,
+     "up7": 1,
+     "down7": 3,
+     "net30": -0.67
     },
     "anual": {
      "up30": 4,
-     "down30": 17,
-     "up7": 3,
-     "down7": 5,
-     "net30": -0.62
+     "down30": 16,
+     "up7": 1,
+     "down7": 3,
+     "net30": -0.6
     },
     "est_anual_chg30_pct": -0.15,
     "recomendaciones": {
-     "compra": 19,
+     "compra": 18,
      "venta": 1,
-     "cambio_compra_1m": 0
+     "cambio_compra_1m": -1
     }
    },
-   "eventos": [],
+   "eventos": [
+    {
+     "fecha": "2026-11-04",
+     "codigos": [
+      "2.02",
+      "9.01"
+     ],
+     "descripcion": "Resultados",
+     "importancia": 3,
+     "url": "https://www.sec.gov/Archives/edgar/data/63908/000006390826000080/mcd-20261104.htm"
+    }
+   ],
    "insiders": [],
    "cobertura": true,
    "compra_cluster": false,
@@ -671,24 +700,24 @@
    "role": "bellwether",
    "revisiones": {
     "trim": {
-     "up30": 2,
-     "down30": 1,
-     "up7": 1,
-     "down7": 0,
-     "net30": 0.33
+     "up30": 7,
+     "down30": 5,
+     "up7": 5,
+     "down7": 3,
+     "net30": 0.17
     },
     "anual": {
-     "up30": 4,
-     "down30": 0,
+     "up30": 7,
+     "down30": 5,
      "up7": 1,
-     "down7": 0,
-     "net30": 1.0
+     "down7": 2,
+     "net30": 0.17
     },
-    "est_anual_chg30_pct": -0.62,
+    "est_anual_chg30_pct": -0.63,
     "recomendaciones": {
-     "compra": 58,
+     "compra": 56,
      "venta": 0,
-     "cambio_compra_1m": 0
+     "cambio_compra_1m": -2
     }
    },
    "eventos": [
@@ -730,7 +759,7 @@
     "trim": {
      "up30": 1,
      "down30": 1,
-     "up7": 0,
+     "up7": 1,
      "down7": 0,
      "net30": 0.0
     },
@@ -738,7 +767,7 @@
      "up30": 3,
      "down30": 2,
      "up7": 1,
-     "down7": 1,
+     "down7": 0,
      "net30": 0.2
     },
     "est_anual_chg30_pct": -0.0,
@@ -750,6 +779,24 @@
    },
    "eventos": [],
    "insiders": [
+    {
+     "fecha": "2026-11-02",
+     "quien": "Bartlett Daniel J",
+     "cargo": "Executive Vice President",
+     "tipo": "venta",
+     "importe_usd": 416607,
+     "acciones": 3346,
+     "url": "https://www.sec.gov/Archives/edgar/data/104169/000157929926000028/wk-form4_1793741841.xml"
+    },
+    {
+     "fecha": "2026-10-30",
+     "quien": "Kumar Suresh",
+     "cargo": "Chief Technology Officer",
+     "tipo": "venta",
+     "importe_usd": 20494998,
+     "acciones": 166342,
+     "url": "https://www.sec.gov/Archives/edgar/data/104169/000178119826000008/wk-form4_1793741833.xml"
+    },
     {
      "fecha": "2026-10-15",
      "quien": "Furner John R.",
@@ -800,7 +847,7 @@
    "compra_cluster": false,
    "n_compradores": 0,
    "importe_compras": 0,
-   "importe_ventas": 2507653
+   "importe_ventas": 23419258
   },
   {
    "t": "NESN.SW",
@@ -818,10 +865,10 @@
     },
     "anual": {
      "up30": 11,
-     "down30": 0,
-     "up7": 9,
+     "down30": 2,
+     "up7": 2,
      "down7": 0,
-     "net30": 1.0
+     "net30": 0.69
     },
     "est_anual_chg30_pct": 0.87,
     "recomendaciones": {
@@ -842,27 +889,37 @@
    "role": "bellwether",
    "revisiones": {
     "trim": {
-     "up30": 3,
-     "down30": 2,
+     "up30": 0,
+     "down30": 17,
      "up7": 2,
-     "down7": 2,
-     "net30": 0.2
+     "down7": 8,
+     "net30": -1.0
     },
     "anual": {
-     "up30": 3,
-     "down30": 3,
-     "up7": 2,
-     "down7": 3,
-     "net30": 0.0
+     "up30": 7,
+     "down30": 10,
+     "up7": 9,
+     "down7": 9,
+     "net30": -0.18
     },
-    "est_anual_chg30_pct": -0.04,
+    "est_anual_chg30_pct": -0.05,
     "recomendaciones": {
      "compra": 14,
      "venta": 0,
-     "cambio_compra_1m": 1
+     "cambio_compra_1m": 0
     }
    },
    "eventos": [
+    {
+     "fecha": "2026-11-03",
+     "codigos": [
+      "8.01",
+      "9.01"
+     ],
+     "descripcion": "Otros hechos",
+     "importancia": 1,
+     "url": "https://www.sec.gov/Archives/edgar/data/80424/000162828026069608/pg-20261103.htm"
+    },
     {
      "fecha": "2026-11-02",
      "codigos": [
@@ -885,6 +942,42 @@
     }
    ],
    "insiders": [
+    {
+     "fecha": "2026-11-03",
+     "quien": "Janzaruk Matthew W.",
+     "cargo": "SVP - Chief Accounting Officer",
+     "tipo": "venta",
+     "importe_usd": 1545077,
+     "acciones": 9479,
+     "url": "https://www.sec.gov/Archives/edgar/data/80424/000008042426000270/form4.xml"
+    },
+    {
+     "fecha": "2026-10-30",
+     "quien": "Gama Paul",
+     "cargo": "CEO- Health Care",
+     "tipo": "venta",
+     "importe_usd": 477510,
+     "acciones": 2894,
+     "url": "https://www.sec.gov/Archives/edgar/data/80424/000008042426000269/form4.xml"
+    },
+    {
+     "fecha": "2026-10-30",
+     "quien": "Aguilar Moses Victor Javier",
+     "cargo": "Chf Rsch, Dev & Innov Officer",
+     "tipo": "venta",
+     "importe_usd": 3093336,
+     "acciones": 18812,
+     "url": "https://www.sec.gov/Archives/edgar/data/80424/000008042426000268/form4.xml"
+    },
+    {
+     "fecha": "2026-10-30",
+     "quien": "Raman Sundar G.",
+     "cargo": "CEO-Fabric Home & Habitat Care",
+     "tipo": "venta",
+     "importe_usd": 6311745,
+     "acciones": 38253,
+     "url": "https://www.sec.gov/Archives/edgar/data/80424/000008042426000267/form4.xml"
+    },
     {
      "fecha": "2026-10-23",
      "quien": "Jejurikar Shailesh",
@@ -944,7 +1037,7 @@
    "compra_cluster": false,
    "n_compradores": 0,
    "importe_compras": 0,
-   "importe_ventas": 8314990
+   "importe_ventas": 19742658
   },
   {
    "t": "LLY",
@@ -954,20 +1047,20 @@
    "role": "bellwether",
    "revisiones": {
     "trim": {
-     "up30": 6,
+     "up30": 8,
      "down30": 4,
      "up7": 2,
-     "down7": 4,
-     "net30": 0.2
+     "down7": 0,
+     "net30": 0.33
     },
     "anual": {
-     "up30": 5,
-     "down30": 8,
+     "up30": 2,
+     "down30": 14,
      "up7": 0,
-     "down7": 7,
-     "net30": -0.23
+     "down7": 4,
+     "net30": -0.75
     },
-    "est_anual_chg30_pct": -4.7,
+    "est_anual_chg30_pct": -4.32,
     "recomendaciones": {
      "compra": 26,
      "venta": 2,
@@ -986,12 +1079,22 @@
      "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947826000104/lly-20261029.htm"
     }
    ],
-   "insiders": [],
+   "insiders": [
+    {
+     "fecha": "2026-11-02",
+     "quien": "Hakim Anat",
+     "cargo": "EVP, GC & Secretary",
+     "tipo": "venta",
+     "importe_usd": 7012600,
+     "acciones": 5000,
+     "url": "https://www.sec.gov/Archives/edgar/data/59478/000168555626000008/wk-form4_1793740481.xml"
+    }
+   ],
    "cobertura": true,
    "compra_cluster": false,
    "n_compradores": 0,
    "importe_compras": 0,
-   "importe_ventas": 0
+   "importe_ventas": 7012600
   },
   {
    "t": "NOVO-B.CO",
@@ -1002,19 +1105,19 @@
    "revisiones": {
     "trim": {
      "up30": 1,
-     "down30": 1,
+     "down30": 4,
      "up7": 1,
      "down7": 0,
-     "net30": 0.0
+     "net30": -0.6
     },
     "anual": {
-     "up30": 7,
+     "up30": 9,
      "down30": 3,
-     "up7": 2,
-     "down7": 2,
-     "net30": 0.4
+     "up7": 6,
+     "down7": 0,
+     "net30": 0.5
     },
-    "est_anual_chg30_pct": 1.41,
+    "est_anual_chg30_pct": 1.49,
     "recomendaciones": {
      "compra": 5,
      "venta": 6,
@@ -1033,16 +1136,16 @@
    "role": "bellwether",
    "revisiones": {
     "trim": {
-     "up30": 0,
-     "down30": 3,
-     "up7": 0,
+     "up30": 15,
+     "down30": 6,
+     "up7": 2,
      "down7": 1,
-     "net30": -1.0
+     "net30": 0.43
     },
     "anual": {
-     "up30": 2,
+     "up30": 22,
      "down30": 0,
-     "up7": 1,
+     "up7": 3,
      "down7": 0,
      "net30": 1.0
     },
@@ -1069,18 +1172,18 @@
    "role": "bellwether",
    "revisiones": {
     "trim": {
-     "up30": 3,
-     "down30": 3,
-     "up7": 1,
-     "down7": 2,
-     "net30": 0.0
+     "up30": 4,
+     "down30": 5,
+     "up7": 3,
+     "down7": 6,
+     "net30": -0.11
     },
     "anual": {
-     "up30": 5,
-     "down30": 0,
+     "up30": 4,
+     "down30": 3,
      "up7": 2,
-     "down7": 0,
-     "net30": 1.0
+     "down7": 8,
+     "net30": 0.14
     },
     "est_anual_chg30_pct": -0.24,
     "recomendaciones": {
@@ -1107,18 +1210,18 @@
     "trim": {
      "up30": 0,
      "down30": 1,
-     "up7": 0,
-     "down7": 1,
+     "up7": 1,
+     "down7": 2,
      "net30": -1.0
     },
     "anual": {
      "up30": 2,
-     "down30": 2,
+     "down30": 6,
      "up7": 1,
-     "down7": 2,
-     "net30": 0.0
+     "down7": 1,
+     "net30": -0.5
     },
-    "est_anual_chg30_pct": -0.41,
+    "est_anual_chg30_pct": -1.84,
     "recomendaciones": {
      "compra": 15,
      "venta": 0,
@@ -1144,13 +1247,13 @@
      "net30": -1.0
     },
     "anual": {
-     "up30": 1,
-     "down30": 1,
-     "up7": 1,
-     "down7": 0,
-     "net30": 0.0
+     "up30": 0,
+     "down30": 2,
+     "up7": 0,
+     "down7": 2,
+     "net30": -1.0
     },
-    "est_anual_chg30_pct": -0.44,
+    "est_anual_chg30_pct": -1.24,
     "recomendaciones": {
      "compra": 6,
      "venta": 4,
@@ -1169,18 +1272,18 @@
    "role": "bellwether",
    "revisiones": {
     "trim": {
-     "up30": 1,
-     "down30": 3,
+     "up30": 4,
+     "down30": 5,
      "up7": 1,
      "down7": 2,
-     "net30": -0.5
+     "net30": -0.11
     },
     "anual": {
-     "up30": 1,
-     "down30": 3,
-     "up7": 1,
-     "down7": 3,
-     "net30": -0.5
+     "up30": 8,
+     "down30": 4,
+     "up7": 6,
+     "down7": 0,
+     "net30": 0.33
     },
     "est_anual_chg30_pct": 0.13,
     "recomendaciones": {
@@ -1189,20 +1292,26 @@
      "cambio_compra_1m": 0
     }
    },
-   "eventos": [
-    {
-     "fecha": "2026-10-27",
-     "codigos": [
-      "2.02",
-      "8.01",
-      "9.01"
-     ],
-     "descripcion": "Resultados · Otros hechos",
-     "importancia": 3,
-     "url": "https://www.sec.gov/Archives/edgar/data/1403161/000140316126000126/v-20261027.htm"
-    }
-   ],
+   "eventos": [],
    "insiders": [
+    {
+     "fecha": "2026-11-02",
+     "quien": "Taneja Rajat",
+     "cargo": "PRESIDENT, TECHNOLOGY",
+     "tipo": "venta",
+     "importe_usd": 14642402,
+     "acciones": 34418,
+     "url": "https://www.sec.gov/Archives/edgar/data/1403161/000140316126000130/form4.xml"
+    },
+    {
+     "fecha": "2026-11-02",
+     "quien": "Mcinerney Ryan",
+     "cargo": "Chief Executive Officer",
+     "tipo": "venta",
+     "importe_usd": 2445292,
+     "acciones": 5875,
+     "url": "https://www.sec.gov/Archives/edgar/data/1403161/000140316126000129/form4.xml"
+    },
     {
      "fecha": "2026-10-30",
      "quien": "Carney Lloyd",
@@ -1217,7 +1326,7 @@
    "compra_cluster": false,
    "n_compradores": 0,
    "importe_compras": 0,
-   "importe_ventas": 251244
+   "importe_ventas": 17338938
   },
   {
    "t": "MSFT",
@@ -1227,20 +1336,20 @@
    "role": "bellwether",
    "revisiones": {
     "trim": {
-     "up30": 2,
-     "down30": 3,
-     "up7": 2,
-     "down7": 1,
-     "net30": -0.2
+     "up30": 8,
+     "down30": 7,
+     "up7": 1,
+     "down7": 3,
+     "net30": 0.07
     },
     "anual": {
-     "up30": 5,
-     "down30": 0,
-     "up7": 4,
-     "down7": 0,
-     "net30": 1.0
+     "up30": 10,
+     "down30": 7,
+     "up7": 1,
+     "down7": 4,
+     "net30": 0.18
     },
-    "est_anual_chg30_pct": 0.54,
+    "est_anual_chg30_pct": 1.29,
     "recomendaciones": {
      "compra": 52,
      "venta": 0,
@@ -1319,11 +1428,11 @@
      "net30": 0.0
     },
     "anual": {
-     "up30": 1,
-     "down30": 4,
-     "up7": 0,
-     "down7": 2,
-     "net30": -0.6
+     "up30": 13,
+     "down30": 5,
+     "up7": 13,
+     "down7": 5,
+     "net30": 0.44
     },
     "est_anual_chg30_pct": 0.28,
     "recomendaciones": {
@@ -1380,20 +1489,20 @@
    "role": "bellwether",
    "revisiones": {
     "trim": {
-     "up30": 2,
-     "down30": 0,
-     "up7": 1,
-     "down7": 0,
-     "net30": 1.0
-    },
-    "anual": {
-     "up30": 3,
-     "down30": 0,
+     "up30": 6,
+     "down30": 1,
      "up7": 2,
      "down7": 0,
-     "net30": 1.0
+     "net30": 0.71
     },
-    "est_anual_chg30_pct": 3.41,
+    "anual": {
+     "up30": 9,
+     "down30": 2,
+     "up7": 9,
+     "down7": 2,
+     "net30": 0.64
+    },
+    "est_anual_chg30_pct": 3.31,
     "recomendaciones": {
      "compra": 20,
      "venta": 0,
@@ -1402,6 +1511,15 @@
    },
    "eventos": [],
    "insiders": [
+    {
+     "fecha": "2026-11-01",
+     "quien": "Yuan Lipen",
+     "cargo": "VP",
+     "tipo": "compra",
+     "importe_usd": 71490,
+     "acciones": 1000,
+     "url": "https://www.sec.gov/Archives/edgar/data/1046179/000104617926000732/wk-form4_1793707033.xml"
+    },
     {
      "fecha": "2026-10-07",
      "quien": "Yuan Lipen",
@@ -1617,21 +1735,12 @@
      "importe_usd": 3652,
      "acciones": 46,
      "url": "https://www.sec.gov/Archives/edgar/data/1046179/000104617926000679/wk-form4_1791454355.xml"
-    },
-    {
-     "fecha": "2026-10-07",
-     "quien": "Cao Min",
-     "cargo": "VP",
-     "tipo": "compra",
-     "importe_usd": 4049,
-     "acciones": 51,
-     "url": "https://www.sec.gov/Archives/edgar/data/1046179/000104617926000678/wk-form4_1791454349.xml"
     }
    ],
    "cobertura": true,
    "compra_cluster": false,
-   "n_compradores": 1,
-   "importe_compras": 11432,
+   "n_compradores": 2,
+   "importe_compras": 82922,
    "importe_ventas": 0
   },
   {
@@ -1642,20 +1751,20 @@
    "role": "bellwether",
    "revisiones": {
     "trim": {
-     "up30": 11,
+     "up30": 7,
      "down30": 0,
-     "up7": 12,
+     "up7": 7,
      "down7": 0,
      "net30": 1.0
     },
     "anual": {
-     "up30": 2,
-     "down30": 1,
-     "up7": 1,
+     "up30": 19,
+     "down30": 0,
+     "up7": 19,
      "down7": 0,
-     "net30": 0.33
+     "net30": 1.0
     },
-    "est_anual_chg30_pct": 7.79,
+    "est_anual_chg30_pct": 8.19,
     "recomendaciones": {
      "compra": 38,
      "venta": 1,
@@ -1674,20 +1783,20 @@
    "role": "bellwether",
    "revisiones": {
     "trim": {
-     "up30": 2,
-     "down30": 1,
+     "up30": 1,
+     "down30": 2,
      "up7": 1,
-     "down7": 0,
-     "net30": 0.33
+     "down7": 1,
+     "net30": -0.33
     },
     "anual": {
-     "up30": 5,
-     "down30": 3,
+     "up30": 3,
+     "down30": 4,
      "up7": 1,
-     "down7": 0,
-     "net30": 0.25
+     "down7": 1,
+     "net30": -0.14
     },
-    "est_anual_chg30_pct": -0.06,
+    "est_anual_chg30_pct": 0.12,
     "recomendaciones": {
      "compra": 24,
      "venta": 6,
@@ -1938,18 +2047,18 @@
    "role": "bellwether",
    "revisiones": {
     "trim": {
-     "up30": 5,
-     "down30": 2,
-     "up7": 1,
-     "down7": 2,
-     "net30": 0.43
+     "up30": 13,
+     "down30": 6,
+     "up7": 8,
+     "down7": 3,
+     "net30": 0.37
     },
     "anual": {
-     "up30": 5,
-     "down30": 4,
-     "up7": 1,
-     "down7": 2,
-     "net30": 0.11
+     "up30": 13,
+     "down30": 10,
+     "up7": 8,
+     "down7": 3,
+     "net30": 0.13
     },
     "est_anual_chg30_pct": -4.49,
     "recomendaciones": {
@@ -1995,18 +2104,18 @@
    "role": "bellwether",
    "revisiones": {
     "trim": {
-     "up30": 3,
-     "down30": 1,
+     "up30": 23,
+     "down30": 13,
      "up7": 1,
-     "down7": 1,
-     "net30": 0.5
+     "down7": 0,
+     "net30": 0.28
     },
     "anual": {
-     "up30": 4,
-     "down30": 6,
-     "up7": 1,
-     "down7": 2,
-     "net30": -0.2
+     "up30": 5,
+     "down30": 38,
+     "up7": 12,
+     "down7": 30,
+     "net30": -0.77
     },
     "est_anual_chg30_pct": -6.56,
     "recomendaciones": {
@@ -2241,11 +2350,11 @@
      "net30": -1.0
     },
     "anual": {
-     "up30": 2,
-     "down30": 0,
+     "up30": 3,
+     "down30": 1,
      "up7": 2,
-     "down7": 0,
-     "net30": 1.0
+     "down7": 1,
+     "net30": 0.5
     },
     "est_anual_chg30_pct": 0.3,
     "recomendaciones": {
@@ -2266,18 +2375,18 @@
    "role": "bellwether",
    "revisiones": {
     "trim": {
-     "up30": 1,
-     "down30": 0,
+     "up30": 0,
+     "down30": 1,
      "up7": 1,
-     "down7": 0,
-     "net30": 1.0
+     "down7": 2,
+     "net30": -1.0
     },
     "anual": {
-     "up30": 1,
+     "up30": 0,
      "down30": 0,
      "up7": 1,
      "down7": 0,
-     "net30": 1.0
+     "net30": 0.0
     },
     "est_anual_chg30_pct": 18.09,
     "recomendaciones": {
@@ -2313,20 +2422,20 @@
    "role": "rep",
    "revisiones": {
     "trim": {
-     "up30": 7,
+     "up30": 2,
      "down30": 0,
-     "up7": 7,
+     "up7": 1,
      "down7": 0,
      "net30": 1.0
     },
     "anual": {
-     "up30": 0,
+     "up30": 2,
      "down30": 0,
      "up7": 1,
      "down7": 0,
-     "net30": 0.0
+     "net30": 1.0
     },
-    "est_anual_chg30_pct": 0.32,
+    "est_anual_chg30_pct": 6.81,
     "recomendaciones": {
      "compra": 7,
      "venta": 0,
@@ -2369,18 +2478,29 @@
     "anual": {
      "up30": 0,
      "down30": 0,
-     "up7": 0,
+     "up7": 1,
      "down7": 0,
      "net30": 0.0
     },
     "est_anual_chg30_pct": 0.03,
     "recomendaciones": {
      "compra": 43,
-     "venta": 2,
+     "venta": 1,
      "cambio_compra_1m": 0
     }
    },
-   "eventos": [],
+   "eventos": [
+    {
+     "fecha": "2026-11-04",
+     "codigos": [
+      "2.02",
+      "9.01"
+     ],
+     "descripcion": "Resultados",
+     "importancia": 3,
+     "url": "https://www.sec.gov/Archives/edgar/data/1561550/000162828026069792/ddog-20261104.htm"
+    }
+   ],
    "insiders": [
     {
      "fecha": "2026-10-28",
@@ -2554,7 +2674,7 @@
  ],
  "sector_pulse": {
   "Energía": {
-   "amplitud_revisiones": 1.0,
+   "amplitud_revisiones": 0.9,
    "senal": 1,
    "empresas_cubiertas": 2,
    "mejorando": 2,
@@ -2563,7 +2683,7 @@
    "clusters_insiders": 0
   },
   "Materiales": {
-   "amplitud_revisiones": -0.07,
+   "amplitud_revisiones": 0.02,
    "senal": 0,
    "empresas_cubiertas": 3,
    "mejorando": 1,
@@ -2581,16 +2701,16 @@
    "clusters_insiders": 0
   },
   "Consumo discrecional": {
-   "amplitud_revisiones": -0.28,
+   "amplitud_revisiones": -0.27,
    "senal": -1,
    "empresas_cubiertas": 7,
    "mejorando": 2,
-   "empeorando": 5,
-   "hechos_relevantes": 1,
+   "empeorando": 4,
+   "hechos_relevantes": 2,
    "clusters_insiders": 0
   },
   "Consumo básico": {
-   "amplitud_revisiones": 0.4,
+   "amplitud_revisiones": 0.24,
    "senal": 1,
    "empresas_cubiertas": 3,
    "mejorando": 1,
@@ -2599,7 +2719,7 @@
    "clusters_insiders": 0
   },
   "Salud": {
-   "amplitud_revisiones": 0.39,
+   "amplitud_revisiones": 0.25,
    "senal": 1,
    "empresas_cubiertas": 3,
    "mejorando": 2,
@@ -2608,34 +2728,34 @@
    "clusters_insiders": 0
   },
   "Financiero": {
-   "amplitud_revisiones": 0.12,
-   "senal": 0,
+   "amplitud_revisiones": -0.26,
+   "senal": -1,
    "empresas_cubiertas": 4,
    "mejorando": 1,
-   "empeorando": 1,
-   "hechos_relevantes": 1,
+   "empeorando": 2,
+   "hechos_relevantes": 0,
    "clusters_insiders": 0
   },
   "Tecnología de la información": {
-   "amplitud_revisiones": 0.5,
+   "amplitud_revisiones": 0.52,
    "senal": 1,
    "empresas_cubiertas": 6,
-   "mejorando": 5,
-   "empeorando": 1,
-   "hechos_relevantes": 2,
-   "clusters_insiders": 0
-  },
-  "Servicios de comunicación": {
-   "amplitud_revisiones": -0.05,
-   "senal": 0,
-   "empresas_cubiertas": 2,
-   "mejorando": 0,
+   "mejorando": 4,
    "empeorando": 0,
    "hechos_relevantes": 2,
    "clusters_insiders": 0
   },
+  "Servicios de comunicación": {
+   "amplitud_revisiones": -0.32,
+   "senal": -1,
+   "empresas_cubiertas": 2,
+   "mejorando": 0,
+   "empeorando": 1,
+   "hechos_relevantes": 2,
+   "clusters_insiders": 0
+  },
   "Utilities": {
-   "amplitud_revisiones": 1.0,
+   "amplitud_revisiones": 0.5,
    "senal": 1,
    "empresas_cubiertas": 1,
    "mejorando": 1,
@@ -2644,21 +2764,21 @@
    "clusters_insiders": 0
   },
   "Inmobiliario": {
-   "amplitud_revisiones": 1.0,
-   "senal": 1,
+   "amplitud_revisiones": 0.0,
+   "senal": 0,
    "empresas_cubiertas": 1,
-   "mejorando": 1,
+   "mejorando": 0,
    "empeorando": 0,
    "hechos_relevantes": 0,
    "clusters_insiders": 0
   },
   "Extra": {
-   "amplitud_revisiones": 0.0,
-   "senal": 0,
+   "amplitud_revisiones": 0.5,
+   "senal": 1,
    "empresas_cubiertas": 2,
-   "mejorando": 0,
+   "mejorando": 1,
    "empeorando": 0,
-   "hechos_relevantes": 1,
+   "hechos_relevantes": 2,
    "clusters_insiders": 0
   }
  },
