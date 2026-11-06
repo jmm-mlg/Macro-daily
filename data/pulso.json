@@ -76,14 +76,14 @@
   "VIX": [
    {
     "name": "VIX",
-    "value": 26.81999969482422,
+    "value": 27.360000610351562,
     "unit": "pts",
     "date": "2026-11-06",
     "chg": {
-     "1d": -1.3600006103515625,
-     "1s": 7.399999618530273,
-     "1m": 11.40999984741211,
-     "3m": 11.539999961853027
+     "1d": -0.8199996948242188,
+     "1s": 7.940000534057617,
+     "1m": 11.950000762939453,
+     "3m": 12.080000877380371
     }
    },
    {
@@ -336,13 +336,13 @@
  },
  "medidas": {
   "vix_estructura": {
-   "ratio": 1.0497064773262899,
+   "ratio": 1.0708415431443767,
    "lectura": "backwardation (pánico agudo)"
   },
   "vix_vs_realizada": {
-   "vix": 26.81999969482422,
+   "vix": 27.360000610351562,
    "realizada_20d": 20.215832763843586,
-   "prima": 6.604166930980632,
+   "prima": 7.144167846507976,
    "lectura": "seguro caro"
   },
   "descomposicion_10a": {
@@ -396,7 +396,7 @@
  "senales": [
   {
    "tipo": "vix",
-   "texto": "Curva del VIX en backwardation (1.05): miedo inmediato; históricamente suelos de corto plazo en días."
+   "texto": "Curva del VIX en backwardation (1.07): miedo inmediato; históricamente suelos de corto plazo en días."
   },
   {
    "tipo": "tipos",
