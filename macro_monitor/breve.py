@@ -73,7 +73,7 @@ def subject(today: str, res: dict, dec: dict | None, cartera: dict | None, alert
     return s
 
 
-def breve_html(today: str, res: dict, dec: dict | None, cartera: dict | None, nar_md: str | None, alerts: list, informe_url: str) -> str:
+def breve_html(today: str, res: dict, dec: dict | None, cartera: dict | None, nar_md: str | None, alerts: list, informe_url: str, prop: dict | None = None) -> str:
     h = [f"<div style='font-family:-apple-system,Segoe UI,Helvetica,Arial,sans-serif;max-width:720px;color:#222;font-size:14px;line-height:1.45'>",
          f"<h2 style='margin:0 0 2px'>Macro Monitor · {today}</h2>",
          f"<p style='margin:0 0 10px;color:#666'>{res['regime']['label']} · tensión {res['tension']} · crecimiento {res['scores']['crecimiento']['score']:+d}, inflación {res['scores']['inflacion']['score']:+d}, liquidez {res['scores']['liquidez']['score']:+d}, riesgo {res['scores']['riesgo']['score']:+d}</p>"]
@@ -118,10 +118,14 @@ def breve_html(today: str, res: dict, dec: dict | None, cartera: dict | None, na
         h.append(f"<p style='margin:6px 0;font-size:13px'><b>Cartera:</b> {r['n_posiciones']} posiciones, exposición {r['exposicion_pct']:.1f} %, P&L abierto {r['pnl_abierto_usd']:+,.0f} $, sin avisos.</p>".replace(",", "."))
     else:
         h.append("<p style='margin:6px 0;font-size:13px;color:#666'><b>Cartera:</b> sin posiciones registradas.</p>")
+    # Ledger externo: órdenes propuestas, candidatas técnicas y añadidos (sustituye a "Órdenes posibles")
+    if prop:
+        from . import ledger
+        h.append(ledger.to_html(prop))
     # Órdenes posibles y disparadores más cercanos
     if dec:
         ordenes = [c for c in dec["candidatas"] if c.get("orden_posible")]
-        if ordenes:
+        if ordenes and not prop:
             h.append("<h4 style='margin:10px 0 4px'>Órdenes posibles</h4><ul style='margin:0 0 8px'>")
             for c in ordenes:
                 t = c["disparador_activo"][0] if c.get("disparador_activo") else {"nombre": "", "detalle": ""}

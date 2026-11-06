@@ -1,6 +1,6 @@
 # Macro Monitor · estado del proyecto y guía para retomar
 
-Última actualización: 2026-10-13. Este archivo es el punto de entrada para continuar el proyecto en una sesión nueva.
+Última actualización: 2026-11-06. Este archivo es el punto de entrada para continuar el proyecto en una sesión nueva.
 Léelo entero antes de tocar nada; después, `README.md` (detalle técnico) y `kb/README.md` (índice de la base).
 
 ## 1. Qué es
@@ -26,7 +26,8 @@ registrada en CSV; y publica una base de conocimiento de 159 entradas como sitio
 
 ## 3. Secrets y variables (Settings → Secrets and variables → Actions)
 `FRED_API_KEY`, `SMTP_HOST`, `SMTP_PORT`, `SMTP_USER`, `SMTP_PASS`, `EMAIL_TO`, `GROQ_API_KEY`, `EDGAR_USER_AGENT`,
-`GEMINI_API_KEY` (respaldo LLM), `FINNHUB_API_KEY` (opcional; la clave actual devuelve 401: revisar o borrar).
+`GEMINI_API_KEY` (respaldo LLM), `FINNHUB_API_KEY` (opcional; la clave actual devuelve 401: revisar o borrar),
+`LEDGER_OPERACIONES`, `LEDGER_PARAMETROS`, `LEDGER_VETO`, `LEDGER_TEMAS` (URL CSV del Ledger; ver 6c).
 Variable opcional: `LLM_PROVIDER` (gemini | groq).
 
 ## 4. Mapa del código (`macro_monitor/`)
@@ -40,7 +41,8 @@ Variable opcional: `LLM_PROVIDER` (gemini | groq).
 | `micro.py` | revisiones de analistas, 8-K/Form 4 (EDGAR), bancos centrales (RSS + LLM), conflictos macro/micro | `data/micro.json` |
 | `pulso.py` | variaciones 1d/1s/1m/3m por bloque, liquidez neta, VIX, curva, prima de riesgo, correlación | `data/pulso.json/.csv` |
 | `ficha.py` | fichas técnicas (stop, tamaño en USD, fuerza relativa, estado de tendencia, retroceso/ruptura), momentum de 22 ETFs | `data/fichas.csv`, `momentum_sectorial.csv` |
-| `cartera.py` | valora `cartera/operaciones.csv`: P&L acción/divisa, R, avisos, límites, cerradas | `data/cartera_estado.csv` |
+| `ledger.py` | Ledger externo (Google Sheets CSV): parámetros, cartera, veto, propuestas MACRO_TEC/TEC/añadidos | `data/propuestas.json` |
+| `cartera.py` | valora `cartera/operaciones.csv` (o el Ledger): P&L acción/divisa, R, avisos, límites, cerradas | `data/cartera_estado.csv` |
 | `benchmark.py` | lee `kb/benchmarks/benchmarks.yaml`; compara una empresa con su industria (yfinance info) | lectura por candidata |
 | `decision.py` | Decisión del día: banda, sectores, candidatas (embudo), **patas y disparadores**, casuísticas activas, sensibilidad, deltas, historial | `data/decision.json` |
 | `llm.py` | cliente Groq + Gemini con reintentos | texto |
@@ -70,6 +72,23 @@ Repsol, Conoco, Chevron, Total con disparadores pendientes. Sin posiciones regis
 ## 6b. Cambio del 6/11/2026: email breve + informe publicado + semanal
 El email diario pasa a una pantalla (`breve.py`); el informe completo se publica en `docs/informe/`; resumen semanal los viernes.
 La nota del comité no se generaba desde el 9/10 (límite de Groq, sin clave Gemini): el breve lleva una nota del motor de respaldo.
+
+## 6c. Cambio del 6/11/2026 (tarde): Ledger externo en Google Sheets
+Registro único de operaciones fuera del repo: Google Sheets "Ledger Mesa de Inversión" (pestañas Operaciones, Parametros, Veto,
+Temas, Resumen), publicado como CSV y leído por `macro_monitor/ledger.py` con cuatro secretos `LEDGER_OPERACIONES`,
+`LEDGER_PARAMETROS`, `LEDGER_VETO`, `LEDGER_TEMAS` (URL de "Publicar en la web" de cada pestaña). Si no están definidos, nada cambia.
+- Capital de referencia y tope por posición vienen del Ledger (100.000 USD, 20 %) y sustituyen a `config.yaml` → `ficha`.
+- La cartera se reconstruye desde las filas ABIERTA (una por tramo; `cartera/operaciones.csv` queda como respaldo sin uso).
+- Orígenes y riesgo por operación en la tabla de Parametros: MACRO_TEC 1 %, TEC 0,5 %, MANUAL 0,5 % activos; FR, TEMA, FIN, CONTRA,
+  PER, INS, IDX, BIO preparados en NO (cada uno se activa cambiando SI/NO; el motor aún no genera esas fuentes).
+- El email breve lleva tres bloques nuevos (sustituyen a "Órdenes posibles"): Órdenes propuestas (MACRO_TEC = candidatas con
+  `orden_posible`), Candidatas técnicas (TEC = retroceso MA50 / ruptura 52s en sectores no vetados, sin apoyo macro) y Añadidos
+  (tramos 2 y 3 sobre posiciones MACRO_TEC abiertas, reparto 50/30/20: tramo 2 a +1R con stop a la entrada 1; tramo 3 a +2R o
+  retroceso a MA50 tras el 2, stop al último mínimo). Cada fila en el orden de columnas del Ledger, para copiar a Operaciones.
+- Bloqueos: max_posiciones, ticker ya abierto, pérdida realizada de 7 días > perdida_semanal_max, veto VALOR = NO (DUDA se marca).
+- `python run.py ledger` comprueba que las cuatro pestañas se leen y tienen las columnas esperadas. Salida diaria en `data/propuestas.json`.
+- Rutina acordada: 08:00 email → 15:00-15:30 validar stop en el gráfico, ticket en TWS/IBKR Mobile, fila a ABIERTA o RECHAZADA →
+  22:05 cerrar filas → viernes: Resumen del Sheets. Congelar módulos nuevos hasta 20 operaciones; entonces QUANT analiza por origen.
 
 ## 7. Pendiente, por orden de valor
 1. **Scores completos de tendencia y predictiva** (−2…+2, pesos en `rules.yaml`; diseño acordado el 11/10: estructura, momentum 12-1, fuerza relativa, calidad de tendencia, distancia a máximos; revisiones, sorpresas de resultados, calidad y valoración contra industria, hechos). Hoy `decision.legs()` usa signos provisionales. Sustituir sin cambiar la matriz; guardar los tres scores a diario por empresa para validar.

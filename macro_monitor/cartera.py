@@ -10,7 +10,7 @@ import pathlib
 
 import pandas as pd
 
-from . import empresas, ficha
+from . import empresas, ficha, ledger
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 DATA = ROOT / "data"
@@ -18,6 +18,8 @@ CSV = ROOT / "cartera" / "operaciones.csv"
 
 
 def load() -> pd.DataFrame:
+    if ledger.configured():          # Ledger externo (Google Sheets): fuente única de la cartera
+        return ledger.operaciones_as_cartera()
     if not CSV.exists():
         return pd.DataFrame()
     df = pd.read_csv(CSV, dtype=str).fillna("")
@@ -174,7 +176,7 @@ def _m(v):
 def to_html(c: dict) -> str:
     if not c["posiciones"] and not c["cerradas"]:
         return ("<h3>Cartera</h3><p style='color:#666'>Sin posiciones registradas. Añade filas a <code>cartera/operaciones.csv</code> "
-                "(ver cartera/README.md) y aparecerán aquí al día siguiente.</p>")
+                "(o al Ledger de Google Sheets, si está configurado) y aparecerán aquí al día siguiente.</p>")
     r = c["resumen"]
     h = [f"<h3>Cartera · {r.get('n_posiciones', 0)} posiciones · exposición {r.get('exposicion_pct', 0):.1f} % · riesgo abierto {r.get('riesgo_abierto_pct', 0):.2f} % · P&L abierto {_m(r.get('pnl_abierto_usd', 0))} $</h3>"]
     if r.get("limites"):

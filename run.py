@@ -8,7 +8,8 @@ macro-monitor — rutina principal.
   python run.py micro     -> capa micro (revisiones, 8-K, insiders, bancos centrales) -> data/micro.json
   python run.py pulso     -> pulso de mercado (variaciones por bloque, liquidez neta, prima de riesgo) -> data/pulso.json
   python run.py fichas    -> fichas técnicas (stop, tamaño, fuerza relativa) y momentum sectorial -> data/fichas.csv
-  python run.py cartera   -> valora las posiciones de cartera/operaciones.csv y comprueba límites -> data/cartera_estado.csv
+  python run.py cartera   -> valora las posiciones de cartera/operaciones.csv (o del Ledger) y comprueba límites -> data/cartera_estado.csv
+  python run.py ledger    -> comprueba que el Ledger externo (LEDGER_* en el entorno) se lee y tiene las columnas esperadas
   python run.py semanal   -> resumen de la semana (régimen, disparadores, pulso, momentum, cartera, agenda) por email
   python run.py daily --no-email   -> imprime en consola, no envía
 """
@@ -19,7 +20,7 @@ import datetime as dt
 import pathlib
 import yaml
 
-from macro_monitor import fetch, analyze, report, calendar as cal_mod, empresas, rules, narrativa, micro, pulso, ficha, cartera, decision, breve
+from macro_monitor import fetch, analyze, report, calendar as cal_mod, empresas, rules, narrativa, micro, pulso, ficha, cartera, decision, breve, ledger
 
 ROOT = pathlib.Path(__file__).parent
 OUT = ROOT / "output"
@@ -104,6 +105,7 @@ def main():
     mode = sys.argv[1] if len(sys.argv) > 1 else "daily"
     send = "--no-email" not in sys.argv
     cfg = load_config()
+    ledger.apply(cfg)   # capital y tope desde el Ledger externo, si está configurado
     OUT.mkdir(exist_ok=True)
     today = dt.date.today().isoformat()
 
@@ -182,6 +184,16 @@ def main():
         except Exception as e:  # noqa: BLE001
             print(f"(decisión: {e})")
 
+        # Ledger externo: órdenes propuestas, candidatas técnicas y añadidos (filas listas para el Sheets)
+        prop_html, prop = "", None
+        if ledger.configured():
+            try:
+                prop = ledger.propuestas(cfg, res, ficha_data, dec, cartera_data)
+                ledger.save(prop)
+                prop_html = ledger.to_html(prop)
+            except Exception as e:  # noqa: BLE001
+                print(f"(ledger: {e})")
+
         # Narrativa LLM: va la primera; si falla, el informe sale sin ella
         nar_html, nar_md = "", None
         try:
@@ -196,6 +208,8 @@ def main():
                 payload["fichas"] = ficha.summary_for_llm(ficha_data)
             if cartera_data and cartera_data["posiciones"]:
                 payload["cartera"] = cartera.summary_for_llm(cartera_data)
+            if prop:
+                payload["ledger"] = ledger.summary_for_llm(prop)
             nar_md = narrativa.generate(payload)
             if nar_md:
                 narrativa.save(nar_md, today)
@@ -203,7 +217,7 @@ def main():
         except Exception as e:  # noqa: BLE001
             print(f"(narrativa: {e})")
 
-        extra_html = nar_html + dec_html + cartera_html + report.analysis_html(res) + pulso_html + micro_html + ficha_html + empresas.week_html(week_events)
+        extra_html = nar_html + dec_html + prop_html + cartera_html + report.analysis_html(res) + pulso_html + micro_html + ficha_html + empresas.week_html(week_events)
         title = "Macro Monitor · Nota diaria"
         html_completo = report.render_html(rows, reg, cal, alerts, title, extra_html)
         # El informe completo se publica siempre (docs/informe/<fecha>.html, latest.html, index.html)
@@ -217,7 +231,7 @@ def main():
             text = "NOTA DEL COMITÉ\n" + nar_md + "\n\n" + text
         ecfg = cfg.get("email", {})
         if ecfg.get("modo", "breve") == "breve":
-            html = breve.breve_html(today, res, dec, cartera_data, nar_md, alerts, ecfg.get("informe_url", ""))
+            html = breve.breve_html(today, res, dec, cartera_data, nar_md, alerts, ecfg.get("informe_url", ""), prop)
             subject = breve.subject(today, res, dec, cartera_data, alerts)
         else:
             html = html_completo
@@ -311,8 +325,24 @@ def main():
         micro.save(m)
         print(json.dumps(m["sector_pulse"], ensure_ascii=False, indent=1))
         return
+    elif mode == "ledger":
+        # Comprueba que las cuatro pestañas del Ledger se leen y tienen las columnas esperadas
+        problemas = ledger.check()
+        if problemas:
+            print("Ledger: problemas encontrados")
+            for x in problemas:
+                print(" -", x)
+            raise SystemExit(1)
+        p = ledger.parametros()
+        ops = ledger.operaciones()
+        print(f"Ledger OK · capital {p['capital']:,.0f} · tope {p['tope_posicion']*100:.0f} % · máx. {p['max_posiciones']} posiciones · "
+              f"orígenes activos: {', '.join(k for k, v in p['origenes'].items() if v['activo'])}")
+        print(f"Operaciones: {len(ops)} filas · abiertas {int((ops['estado'] == 'ABIERTA').sum()) if not ops.empty else 0} · "
+              f"cerradas {int((ops['estado'] == 'CERRADA').sum()) if not ops.empty else 0} · veto {len(ledger.veto())} tickers · temas {len(ledger.temas())} filas")
+        return
+
     else:
-        raise SystemExit("modo desconocido: usa daily | event | calendar")
+        raise SystemExit("modo desconocido: usa daily | event | calendar | ledger")
 
     (OUT / f"{mode}_{today}.html").write_text(html, encoding="utf-8")
     (OUT / f"{mode}_{today}.json").write_text(json.dumps(rows, ensure_ascii=False, indent=1), encoding="utf-8")

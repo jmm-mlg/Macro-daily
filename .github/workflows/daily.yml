@@ -39,6 +39,10 @@ jobs:
           SMTP_USER: ${{ secrets.SMTP_USER }}
           SMTP_PASS: ${{ secrets.SMTP_PASS }}
           EMAIL_TO: ${{ secrets.EMAIL_TO }}
+          LEDGER_OPERACIONES: ${{ secrets.LEDGER_OPERACIONES }}
+          LEDGER_PARAMETROS: ${{ secrets.LEDGER_PARAMETROS }}
+          LEDGER_VETO: ${{ secrets.LEDGER_VETO }}
+          LEDGER_TEMAS: ${{ secrets.LEDGER_TEMAS }}
         run: python run.py daily
       - name: Publicar calendarios e histórico
         run: |
