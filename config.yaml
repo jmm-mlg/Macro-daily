@@ -11,6 +11,9 @@
 # ============================================================
 
 lookback_years: 10       # ventana para el percentil histórico
+email:
+  modo: breve                 # breve = una pantalla (decisión, nota reducida, cartera, órdenes) + enlace al informe completo; completo = todo en el email
+  informe_url: https://jmm-mlg.github.io/Macro-daily/informe   # donde se publica el informe completo (docs/informe/, GitHub Pages)
 kb_url: https://jmm-mlg.github.io/Macro-daily/kb   # sitio de la base de conocimiento (enlaces en el email); si no usas Pages: https://github.com/jmm-mlg/Macro-daily/blob/main/kb
 
 fred:

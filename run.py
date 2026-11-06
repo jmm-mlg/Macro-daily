@@ -9,6 +9,7 @@ macro-monitor — rutina principal.
   python run.py pulso     -> pulso de mercado (variaciones por bloque, liquidez neta, prima de riesgo) -> data/pulso.json
   python run.py fichas    -> fichas técnicas (stop, tamaño, fuerza relativa) y momentum sectorial -> data/fichas.csv
   python run.py cartera   -> valora las posiciones de cartera/operaciones.csv y comprueba límites -> data/cartera_estado.csv
+  python run.py semanal   -> resumen de la semana (régimen, disparadores, pulso, momentum, cartera, agenda) por email
   python run.py daily --no-email   -> imprime en consola, no envía
 """
 import os
@@ -18,7 +19,7 @@ import datetime as dt
 import pathlib
 import yaml
 
-from macro_monitor import fetch, analyze, report, calendar as cal_mod, empresas, rules, narrativa, micro, pulso, ficha, cartera, decision
+from macro_monitor import fetch, analyze, report, calendar as cal_mod, empresas, rules, narrativa, micro, pulso, ficha, cartera, decision, breve
 
 ROOT = pathlib.Path(__file__).parent
 OUT = ROOT / "output"
@@ -204,12 +205,23 @@ def main():
 
         extra_html = nar_html + dec_html + cartera_html + report.analysis_html(res) + pulso_html + micro_html + ficha_html + empresas.week_html(week_events)
         title = "Macro Monitor · Nota diaria"
-        html = report.render_html(rows, reg, cal, alerts, title, extra_html)
+        html_completo = report.render_html(rows, reg, cal, alerts, title, extra_html)
+        # El informe completo se publica siempre (docs/informe/<fecha>.html, latest.html, index.html)
+        try:
+            breve.publicar(today, html_completo)
+        except Exception as e:  # noqa: BLE001
+            print(f"(publicar informe: {e})")
         text = report.render_text(rows, reg, alerts)
         text += "\n\nSECTORES: " + ", ".join(f"{x['label']} {x['bias']:+d}" for x in res["sectors"])
         if nar_md:
             text = "NOTA DEL COMITÉ\n" + nar_md + "\n\n" + text
-        subject = f"[Macro] {today} · {res['regime']['label']} · tensión {res['tension']}" + (f" · {len(alerts)} alerta{'s' if len(alerts) != 1 else ''}" if alerts else "")
+        ecfg = cfg.get("email", {})
+        if ecfg.get("modo", "breve") == "breve":
+            html = breve.breve_html(today, res, dec, cartera_data, nar_md, alerts, ecfg.get("informe_url", ""))
+            subject = breve.subject(today, res, dec, cartera_data, alerts)
+        else:
+            html = html_completo
+            subject = f"[Macro] {today} · {res['regime']['label']} · tensión {res['tension']}" + (f" · {len(alerts)} alerta{'s' if len(alerts) != 1 else ''}" if alerts else "")
 
     elif mode == "event":
         rows, by_id = build_rows(cfg, only_headline=True, only_updated_today=True)
@@ -230,6 +242,39 @@ def main():
 
     elif mode == "empresas":
         write_empresas(cfg)
+        return
+
+    elif mode == "semanal":
+        rows, by_id = build_rows(cfg)
+        res = rules.run(by_id)
+        ecfg = cfg.get("email", {})
+        dec = json.loads((ROOT / "data" / "decision.json").read_text(encoding="utf-8")) if (ROOT / "data" / "decision.json").exists() else None
+        cart = json.loads((ROOT / "data" / "cartera_estado.json").read_text(encoding="utf-8")) if (ROOT / "data" / "cartera_estado.json").exists() else None
+        fich = json.loads((ROOT / "data" / "fichas.json").read_text(encoding="utf-8")) if (ROOT / "data" / "fichas.json").exists() else None
+        # agenda de la semana siguiente: datos macro (FRED) y resultados de bellwethers
+        nxt = []
+        try:
+            for c in fetch.fred_calendar(10):
+                if c["date"] > today:
+                    nxt.append(f"{c['date']}: {c['release']}")
+        except Exception as e:  # noqa: BLE001
+            print(f"(calendario: {e})")
+        try:
+            ev = write_empresas(cfg)
+            end10 = dt.date.today() + dt.timedelta(days=10)
+            for e in ev:
+                if e.get("kind") == "resultados" and e.get("role") == "bellwether" and dt.date.today() < e["date"] <= end10:
+                    nxt.append(f"{e['date'].isoformat()}: resultados de {e['name']} ({e['t']})")
+        except Exception as e:  # noqa: BLE001
+            print(f"(empresas: {e})")
+        html = breve.semanal_html(today, res, dec, cart, fich, sorted(nxt), ecfg.get("informe_url", ""), cfg.get("kb_url", ""))
+        text = "Resumen semanal: ver versión HTML."
+        subject = f"[Macro · SEMANA] {today} · {res['regime']['label']} · " + (f"exposición {dec['exposicion']['banda_pct']} %" if dec else "")
+        (OUT / f"semanal_{today}.html").write_text(html, encoding="utf-8")
+        if send:
+            report.send_email(subject, html, text)
+        else:
+            print(html[:800])
         return
 
     elif mode == "cartera":

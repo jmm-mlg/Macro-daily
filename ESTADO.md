@@ -67,6 +67,10 @@ PCE 3,01 %, Michigan 51,7, S&P 500 en máximos, prima de riesgo 1,1 %, correlaci
 Decisión: exposición 50-70 %, buscar solo en Energía; Shell y Exxon con ruptura de 52 semanas y acuerdo 3/3 (factor 0,5);
 Repsol, Conoco, Chevron, Total con disparadores pendientes. Sin posiciones registradas aún.
 
+## 6b. Cambio del 6/11/2026: email breve + informe publicado + semanal
+El email diario pasa a una pantalla (`breve.py`); el informe completo se publica en `docs/informe/`; resumen semanal los viernes.
+La nota del comité no se generaba desde el 9/10 (límite de Groq, sin clave Gemini): el breve lleva una nota del motor de respaldo.
+
 ## 7. Pendiente, por orden de valor
 1. **Scores completos de tendencia y predictiva** (−2…+2, pesos en `rules.yaml`; diseño acordado el 11/10: estructura, momentum 12-1, fuerza relativa, calidad de tendencia, distancia a máximos; revisiones, sorpresas de resultados, calidad y valoración contra industria, hechos). Hoy `decision.legs()` usa signos provisionales. Sustituir sin cambiar la matriz; guardar los tres scores a diario por empresa para validar.
 2. **Validación** (`run.py validar`): sesgos sectoriales vs ETFs a 1 y 3 meses; acierto por pata y régimen. Necesita ~1 mes de `data/`; preparar el código ya.

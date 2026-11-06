@@ -114,6 +114,16 @@ de las empresas europeas. Marco completo en `kb/conceptos/divisas.md`.
 cambio en `kb/`: genera la navegación (`kb/build_nav.py`), convierte los enlaces `[[id]]` (`kb/_hooks.py`) y
 construye en `docs/kb/`, que GitHub Pages ya sirve. El email enlaza al sitio (`kb_url` en `config.yaml`).
 
+## Email breve, informe completo publicado y resumen semanal (`macro_monitor/breve.py`)
+Desde 2026-11-06 el email diario es **breve** (`config.yaml → email.modo`): asunto con la decisión, cuatro celdas
+(exposición, abrir hoy, dónde buscar, nuevas posiciones), qué no hacer, cambios frente a ayer, la nota del comité
+reducida a tres secciones (o una nota escrita por el motor si el modelo no responde), la cartera solo con avisos,
+las órdenes posibles con su disparador y los disparadores más cercanos, y un enlace al **informe completo**, que se
+publica siempre en `docs/informe/<fecha>.html` (GitHub Pages, con `latest.html` e índice). `email.modo: completo`
+vuelve al email largo. `python run.py semanal` (workflow "Macro semanal", viernes 17:40) envía el resumen de la semana:
+régimen y scores inicio/fin, sesgos que cambian, disparadores que se mueven, pulso, momentum y conflictos, candidatas,
+cartera y agenda de la semana siguiente.
+
 ## Benchmarks de valoración por industria (`kb/benchmarks/`)
 Medianas de PER, EV/EBITDA, márgenes, ROE, ROIC, deuda/EBITDA, dividendo y beta por industria (86 industrias,
 EE.UU. y Europa) con rango de 10 años, a partir de los datos de Damodaran (NYU Stern): `actualizar.py` descarga
