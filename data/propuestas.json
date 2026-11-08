@@ -1,0 +1,14 @@
+{
+ "date": "2026-11-06",
+ "capital": 100.0,
+ "ordenes": [],
+ "tecnicas": [],
+ "anadidos": [],
+ "bloqueos": [
+  "6 posiciones abiertas (máximo 5): no se proponen nuevas"
+ ],
+ "n_abiertas": 6,
+ "max_posiciones": 5,
+ "perdida_7d": 0.0,
+ "dudas": []
+}
