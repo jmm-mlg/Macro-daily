@@ -388,27 +388,27 @@
    "unit": "%"
   },
   "EURUSD=X": {
-   "value": 1.1228259801864624,
-   "chg": -0.0025271177291870117,
-   "pct": 48.73174481168332,
-   "date": "2026-11-06",
+   "value": 1.1143302917480469,
+   "chg": -0.006972193717956543,
+   "pct": 43.37303111794083,
+   "date": "2026-11-08",
    "name": "Euro-dólar",
    "block": "Mercado",
    "unit": "$ por €"
   },
   "JPY=X": {
-   "value": 158.4250030517578,
-   "chg": 0.36199951171875,
-   "pct": 94.9289281598156,
+   "value": 158.36300659179688,
+   "chg": 0.3000030517578125,
+   "pct": 94.81367652708414,
    "date": "2026-11-08",
    "name": "Dólar-yen (carry)",
    "block": "Mercado",
    "unit": "¥ por $"
   },
   "CNY=X": {
-   "value": 6.671000003814697,
-   "chg": -0.031099796295166016,
-   "pct": 24.75019215987702,
+   "value": 6.66480016708374,
+   "chg": -0.03729963302612305,
+   "pct": 24.28900845503459,
    "date": "2026-11-08",
    "name": "Dólar-yuan",
    "block": "Mercado",
@@ -835,17 +835,17 @@
    "yen": {
     "signal": 0,
     "label": "Yen subiendo (deshacer de carry)",
-    "value": 158.4250030517578,
-    "pct": 94.9289281598156,
-    "chg": 0.36199951171875,
+    "value": 158.36300659179688,
+    "pct": 94.81367652708414,
+    "chg": 0.3000030517578125,
     "why": "USDJPY cayendo más de 4 en un mes = el yen se aprecia de golpe; desapalancamiento de posiciones financiadas en yenes (ago-2024). Señal -1 x carga +0,5 = -0,5 en los sectores más comprados con carry. 2026-10-09."
    },
    "euro": {
     "signal": 0,
     "label": "Euro moviéndose > 3 %/mes",
-    "value": 1.1228259801864624,
-    "pct": 48.73174481168332,
-    "chg": -0.0025271177291870117,
+    "value": 1.1143302917480469,
+    "pct": 43.37303111794083,
+    "chg": -0.006972193717956543,
     "why": "Sin carga sectorial en la matriz (es estadounidense); se usa en la narrativa y en la lectura de las empresas europeas de la watchlist: euro débil favorece a exportadoras europeas (LVMH, Airbus, SAP, Novo) y penaliza a las americanas que venden en Europa. 2026-10-09."
    }
   },
@@ -1180,9 +1180,9 @@
    {
     "series": "JPY=X",
     "threshold": 150,
-    "value": 158.4250030517578,
+    "value": 158.36300659179688,
     "hit": false,
-    "distance": 8.43,
+    "distance": 8.36,
     "text": "Dólar-yen < 150: el yen se fortalece; riesgo de deshacer del carry (ago-2024 fue 162 → 142)."
    },
    {

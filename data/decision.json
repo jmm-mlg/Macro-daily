@@ -4,7 +4,7 @@
   "banda_pct": "80-100",
   "nuevas_posiciones": "sí, tamaño completo",
   "factor_tamano": 1.0,
-  "posicion_max_pct": 20.0,
+  "posicion_max_pct": 5.0,
   "motivo": "régimen Reflación con tensión baja (tabla del nivel 5 de la guía)"
  },
  "abrir_hoy": {
@@ -55,8 +55,8 @@
    "moneda": "GBP",
    "stop": 36.66,
    "stop_dist_pct": 1.5,
-   "acciones": 399,
-   "importe": 19986,
+   "acciones": 100,
+   "importe": 4970,
    "rel_3m": 10.1,
    "dias_a_resultados": null,
    "calidad": {
@@ -213,8 +213,8 @@
    "moneda": "EUR",
    "stop": 52.02,
    "stop_dist_pct": 4.2,
-   "acciones": 295,
-   "importe": 17979,
+   "acciones": 82,
+   "importe": 4959,
    "rel_3m": 4.9,
    "dias_a_resultados": null,
    "calidad": {
@@ -377,8 +377,8 @@
    "moneda": "USD",
    "stop": 163.51,
    "stop_dist_pct": 1.4,
-   "acciones": 120,
-   "importe": 19904,
+   "acciones": 30,
+   "importe": 4976,
    "rel_3m": 1.5,
    "dias_a_resultados": null,
    "calidad": {
@@ -523,12 +523,12 @@
    "moneda": "USD",
    "stop": 67.6,
    "stop_dist_pct": 5.4,
-   "acciones": 96,
-   "importe": 6898,
+   "acciones": 34,
+   "importe": 2466,
    "rel_3m": 10.5,
    "dias_a_resultados": null,
    "calidad": {
-    "per_adelantado": 14.129527,
+    "per_adelantado": 14.120343,
     "per_trailing": 15.606988,
     "ev_ebitda": 8.512,
     "margen_bruto_pct": 31.598,
@@ -539,7 +539,7 @@
     "industria": "Agricultura y fertilizantes",
     "vs_industria": {
      "per_adelantado": {
-      "valor": 14.13,
+      "valor": 14.12,
       "industria": 20.9,
       "p25": 20.42,
       "p75": 23.63,
@@ -669,8 +669,8 @@
    "moneda": "EUR",
    "stop": 28.18,
    "stop_dist_pct": 5.8,
-   "acciones": 258,
-   "importe": 8678,
+   "acciones": 75,
+   "importe": 2498,
    "rel_3m": 10.4,
    "dias_a_resultados": null,
    "calidad": {
@@ -815,8 +815,8 @@
    "moneda": "USD",
    "stop": 134.19,
    "stop_dist_pct": 1.5,
-   "acciones": 73,
-   "importe": 9948,
+   "acciones": 18,
+   "importe": 2453,
    "rel_3m": 8.5,
    "dias_a_resultados": null,
    "calidad": null,
@@ -865,8 +865,8 @@
    "moneda": "EUR",
    "stop": 181.72,
    "stop_dist_pct": 3.2,
-   "acciones": 47,
-   "importe": 9910,
+   "acciones": 11,
+   "importe": 2406,
    "rel_3m": 8.4,
    "dias_a_resultados": null,
    "calidad": null,
@@ -921,8 +921,8 @@
    "moneda": "USD",
    "stop": 210.43,
    "stop_dist_pct": 1.0,
-   "acciones": 47,
-   "importe": 9992,
+   "acciones": 11,
+   "importe": 2445,
    "rel_3m": 7.0,
    "dias_a_resultados": null,
    "calidad": null,
@@ -971,8 +971,8 @@
    "moneda": "EUR",
    "stop": 77.25,
    "stop_dist_pct": 3.1,
-   "acciones": 111,
-   "importe": 9982,
+   "acciones": 28,
+   "importe": 2488,
    "rel_3m": 2.5,
    "dias_a_resultados": null,
    "calidad": null,
@@ -1017,24 +1017,18 @@
    "role": "rep",
    "pasa_filtro_3": true,
    "le_falta": [
-    "disparador: retroceso a la MA50 (esperar precio ≈ 399.65 USD (hoy a -13.3 %))"
+    "disparador con fecha (filtro 4)"
    ],
    "precio": 346.45,
    "moneda": "USD",
    "stop": 342.0,
    "stop_dist_pct": 1.3,
-   "acciones": 28,
-   "importe": 9874,
+   "acciones": 7,
+   "importe": 2425,
    "rel_3m": 7.0,
    "dias_a_resultados": null,
    "calidad": null,
    "disparadores": [
-    {
-     "tipo": "técnico",
-     "nombre": "retroceso a la MA50",
-     "estado": "pendiente",
-     "detalle": "esperar precio ≈ 399.65 USD (hoy a -13.3 %)"
-    },
     {
      "tipo": "macro",
      "nombre": "factor Petróleo caro",
@@ -1297,7 +1291,7 @@
    {
     "serie": "JPY=X",
     "umbral": 150,
-    "valor_actual": 158.4250030517578,
+    "valor_actual": 158.36300659179688,
     "si_se_cruza": {
      "sin_cambios": "no altera régimen ni sesgos; solo la lectura"
     },

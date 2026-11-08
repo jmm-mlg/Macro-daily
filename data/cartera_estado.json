@@ -105,17 +105,17 @@
    "entrada": 210.89,
    "precio": 212.61000061035156,
    "moneda": "USD",
-   "stop": 207.0,
-   "dist_stop_pct": 2.6386343983098706,
+   "stop": 204.56,
+   "dist_stop_pct": 3.7862756160302746,
    "stop_hit": false,
    "valor_usd": 2126.1000061035156,
    "pnl_usd": 17.20000610351576,
    "pnl_accion_usd": 17.20000610351576,
    "pnl_divisa_usd": 0.0,
    "pnl_pct": 0.8155913558497683,
-   "R": 0.4421595399361394,
-   "riesgo_inicial_usd": 38.899999999999864,
-   "riesgo_actual_usd": 56.100006103515625,
+   "R": 0.27172205534780103,
+   "riesgo_inicial_usd": 63.29999999999984,
+   "riesgo_actual_usd": 80.5000061035156,
    "sesgo_sector": 2,
    "dias_a_resultados": null,
    "disparador": "MACRO_TEC",
@@ -151,27 +151,58 @@
    "cierro_si": "",
    "fecha_apertura": "2026-11-06",
    "avisos": []
+  },
+  {
+   "id": "L006",
+   "ticker": "REP.MC",
+   "name": "Repsol",
+   "sector": "Energía",
+   "region": "EU",
+   "lado": "largo",
+   "acciones": 10,
+   "entrada": 30.18,
+   "precio": 29.899999618530273,
+   "moneda": "EUR",
+   "stop": 29.0,
+   "dist_stop_pct": 3.0100322074001173,
+   "stop_hit": false,
+   "valor_usd": 333.1476480180504,
+   "pnl_usd": -3.1197815960166704,
+   "pnl_accion_usd": -2.800003814697263,
+   "pnl_divisa_usd": -0.3197777813194076,
+   "pnl_pct": -0.927767996917582,
+   "R": -0.26438827084887045,
+   "riesgo_inicial_usd": 11.799999999999997,
+   "riesgo_actual_usd": 10.027851503539296,
+   "sesgo_sector": 2,
+   "dias_a_resultados": null,
+   "disparador": "MACRO_TEC",
+   "cierro_si": "",
+   "fecha_apertura": "2026-11-06",
+   "avisos": []
   }
  ],
  "cerradas": [],
  "resumen": {
-  "n_posiciones": 5,
-  "exposicion_usd": 19469.599838256836,
-  "exposicion_pct": 19.469599838256833,
-  "riesgo_abierto_usd": 241.10013122558598,
-  "riesgo_abierto_pct": 0.241100131225586,
-  "pnl_abierto_usd": -209.0001617431635,
+  "n_posiciones": 6,
+  "exposicion_usd": 19802.747486274886,
+  "exposicion_pct": 19.802747486274885,
+  "riesgo_abierto_usd": 275.52798272912526,
+  "riesgo_abierto_pct": 0.27552798272912526,
+  "pnl_abierto_usd": -212.11994333918017,
   "por_sector": {
    "Tecnología de la información": 15.10259979248047,
-   "Energía": 3.488800048828125,
+   "Energía": 3.8219476968461756,
    "?": 0.8781999969482421
   },
   "por_region": {
-   "US": 19.469599838256833
+   "US": 19.469599838256833,
+   "EU": 0.3331476480180504
   },
-  "limites": []
+  "limites": [
+   "MSFT: posición 10.6 % > máximo 5 %",
+   "3 posiciones en Energía: correlación (máximo 2 por factor)"
+  ]
  },
- "avisos": [
-  "REP: sin precio (ticker no reconocido por yfinance; usa el código de la watchlist, p. ej. REP.MC)."
- ]
+ "avisos": []
 }
