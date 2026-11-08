@@ -87,6 +87,8 @@ Temas, Resumen), publicado como CSV y leído por `macro_monitor/ledger.py` con c
   retroceso a MA50 tras el 2, stop al último mínimo). Cada fila en el orden de columnas del Ledger, para copiar a Operaciones.
 - Bloqueos: max_posiciones, ticker ya abierto, pérdida realizada de 7 días > perdida_semanal_max, veto VALOR = NO (DUDA se marca).
 - Los tickers del Ledger son los de la watchlist (yfinance: REP.MC, TTE.PA, SHEL.L); un ticker sin precio da aviso en el email sin tumbar la cartera. Columna opcional `fx_entrada` (moneda local → USD al abrir; 1 si falta).
+- 8/11: disparador de retroceso a la MA50 corregido: con el precio más de un 2 % bajo la media el pendiente pasa a "recuperar la MA50"
+  (cierre por encima), y más de un 8 % por debajo no es retroceso y no se lista (antes decía "esperar precio ≈ MA50" también por debajo).
 - `python run.py ledger` comprueba que las cuatro pestañas se leen y tienen las columnas esperadas. Salida diaria en `data/propuestas.json`.
 - Rutina acordada: 08:00 email → 15:00-15:30 validar stop en el gráfico, ticket en TWS/IBKR Mobile, fila a ABIERTA o RECHAZADA →
   22:05 cerrar filas → viernes: Resumen del Sheets. Congelar módulos nuevos hasta 20 operaciones; entonces QUANT analiza por origen.

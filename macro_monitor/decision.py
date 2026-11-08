@@ -284,6 +284,13 @@ def triggers_for(f: dict, rv: dict, res: dict, earn_date, today) -> list:
         if f["pullback_ma50"]:
             out.append({"tipo": "técnico", "nombre": "retroceso a la MA50 en tendencia alcista", "estado": "activo",
                         "detalle": f"precio {f['precio']:.2f} {ccy} a {f['dist_ma50_pct']:+.1f} % de la MA50 ({f['ma50']:.2f}); stop bajo el mínimo de 20 sesiones"})
+        elif f["dist_ma50_pct"] < -8:
+            # un 8 % o más bajo la MA50 no es un retroceso sino una caída: no cuenta como disparador pendiente
+            pass
+        elif f["dist_ma50_pct"] < -2:
+            out.append({"tipo": "técnico", "nombre": "recuperar la MA50", "estado": "pendiente",
+                        "detalle": f"cerró {f['dist_ma50_pct']:+.1f} % por debajo de la MA50; esperar cierre por encima de ≈ {f['ma50']:.2f} {ccy}, "
+                                   f"stop bajo el mínimo reciente"})
         else:
             out.append({"tipo": "técnico", "nombre": "retroceso a la MA50", "estado": "pendiente",
                         "detalle": f"esperar precio ≈ {f['ma50']:.2f} {ccy} (hoy a {f['dist_ma50_pct']:+.1f} %)"})
