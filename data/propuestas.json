@@ -1,6 +1,6 @@
 {
- "date": "2026-11-06",
- "capital": 100.0,
+ "date": "2026-11-08",
+ "capital": 100000.0,
  "ordenes": [],
  "tecnicas": [],
  "anadidos": [],
@@ -10,5 +10,8 @@
  "n_abiertas": 6,
  "max_posiciones": 5,
  "perdida_7d": 0.0,
- "dudas": []
+ "dudas": [],
+ "avisos": [
+  "REP: sin precio (ticker no reconocido por yfinance; usa el código de la watchlist, p. ej. REP.MC)."
+ ]
 }
