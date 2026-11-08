@@ -60,10 +60,10 @@ def build(cfg: dict, res: dict, week_events: list, px: pd.DataFrame | None = Non
     total_exp, riesgo_abierto, por_sector, por_region, factores = 0.0, 0.0, {}, {}, {}
     for _, r in abiertas.iterrows():
         t = r["ticker"]
-        if t not in close:
-            out["avisos"].append(f"{t}: sin precio (ticker no reconocido).")
+        s = close[t].dropna() if t in close else pd.Series(dtype=float)
+        if s.empty:
+            out["avisos"].append(f"{t}: sin precio (ticker no reconocido por yfinance; usa el código de la watchlist, p. ej. REP.MC).")
             continue
-        s = close[t].dropna()
         ccy = ficha._ccy(t)
         price = float(s.iloc[-1]) / (100 if ccy == "GBP" else 1)
         fx0, fx1 = float(r["fx_entrada"] or 1.0), fx_now(ccy)

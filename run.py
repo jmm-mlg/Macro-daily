@@ -80,7 +80,12 @@ def build_rows(cfg, only_headline=False, only_updated_today=False):
 
 
 def collect_alerts(rows):
-    return [{"name": r["name"], "msg": m, "value": r["value"]}
+    def _v(v):
+        try:
+            return round(float(v), 2)
+        except (TypeError, ValueError):
+            return v
+    return [{"name": r["name"], "msg": m, "value": _v(r["value"])}
             for r in rows if "alerts" in r for m in r["alerts"]]
 
 

@@ -42,7 +42,10 @@ def nota_motor(dec: dict, res: dict, cartera: dict | None) -> str:
              + ("Qué no hacer: " + "; ".join(dec["que_no_hacer"]) + "." if dec["que_no_hacer"] else ""),
              "## Las tres cosas que importan"]
     for c in dec["casuisticas_activas"][:3]:
-        qh = (c.get("que_hacer") or "").replace("\n", " ")[:220]
+        qh = (c.get("que_hacer") or "").replace("\n", " ").strip()
+        if len(qh) > 260:   # cortar en el final de la última frase completa, no a mitad de palabra
+            cut = qh[:260]
+            qh = cut[:max(cut.rfind(". "), cut.rfind("; "), cut.rfind(", ")) + 1].rstrip() or cut.rsplit(" ", 1)[0] + "…"
         lines.append(f"- **{c['titulo']}** ({c['por_que']}). {qh}")
     lines.append("## Plan de la semana")
     for x in dec["sensibilidad"].get("datos_semana", [])[:4]:

@@ -3,7 +3,9 @@
 Cuatro pestañas publicadas como CSV, una URL cada una en variables de entorno:
   LEDGER_OPERACIONES  una fila por tramo (id, posicion_id, tramo, fecha_entrada, ticker, lado, origen, regimen,
                       entrada, stop, objetivo, acciones, riesgo_usd, riesgo_pct, importe, manda, estado,
-                      fecha_salida, salida, motivo_salida, r_obtenido, plan_cumplido, nota, pnl_usd)
+                      fecha_salida, salida, motivo_salida, r_obtenido, plan_cumplido, nota, pnl_usd;
+                      opcional fx_entrada = tipo de cambio moneda local -> USD al abrir, 1 si falta).
+                      Los tickers son los de la watchlist (yfinance): REP.MC, TTE.PA, SHEL.L...
   LEDGER_PARAMETROS   capital, tope_posicion, max_posiciones, perdida_semanal_max, comision_orden, tramos_pesos
                       y, más abajo, la tabla de orígenes (codigo, riesgo, activo, descripcion)
   LEDGER_VETO         ticker, apta (SI/NO/DUDA), fecha_revision, motivo
@@ -65,11 +67,15 @@ def _num(v, default=None):
     s = str(v).strip().replace("%", "")
     if s == "":
         return default
-    # formato español: 1.234,5 -> 1234.5 ; 0,2 -> 0.2 ; también acepta 1234.5 y 0.2
+    # admite 1234.5 · 1,234.5 (miles con coma, formato de Google Sheets en inglés) · 1.234,5 y 0,2 (formato español)
     if "," in s and "." in s:
-        s = s.replace(".", "").replace(",", ".")
+        if s.rfind(",") > s.rfind("."):
+            s = s.replace(".", "").replace(",", ".")
+        else:
+            s = s.replace(",", "")
     elif "," in s:
-        s = s.replace(",", ".")
+        before, after = s.rsplit(",", 1)
+        s = s.replace(",", "") if (len(after) == 3 and before.lstrip("-") not in ("", "0")) else s.replace(",", ".")
     try:
         return float(s)
     except ValueError:
@@ -120,7 +126,7 @@ def operaciones() -> pd.DataFrame:
     df["estado"] = df["estado"].str.strip().str.upper()
     df["origen"] = df["origen"].str.strip().str.upper()
     df["ticker"] = df["ticker"].str.strip().str.upper()
-    for c in ("entrada", "stop", "objetivo", "acciones", "salida", "r_obtenido", "pnl_usd", "riesgo_usd", "tramo"):
+    for c in ("entrada", "stop", "objetivo", "acciones", "salida", "r_obtenido", "pnl_usd", "riesgo_usd", "tramo", "fx_entrada"):
         if c in df:
             df[c] = df[c].map(_num)
     return df
@@ -138,7 +144,8 @@ def operaciones_as_cartera() -> pd.DataFrame:
             continue
         rows.append({"id": r.get("id", ""), "fecha_apertura": r.get("fecha_entrada", ""), "ticker": r["ticker"],
                      "lado": "corto" if str(r.get("lado", "")).strip().upper() == "SHORT" else "largo",
-                     "acciones": r.get("acciones"), "precio_entrada": r.get("entrada"), "stop": r.get("stop"), "fx_entrada": 1.0,
+                     "acciones": r.get("acciones"), "precio_entrada": r.get("entrada"), "stop": r.get("stop"),
+                     "fx_entrada": _num(r.get("fx_entrada"), 1.0) or 1.0,   # columna opcional del Ledger: moneda local -> USD al abrir
                      "regimen": r.get("regimen", ""), "tension": "", "sesgo_sector": None, "amplitud_revisiones": None,
                      "disparador": r.get("origen", ""), "cierro_si": "", "fecha_cierre": r.get("fecha_salida", ""),
                      "precio_cierre": r.get("salida"), "motivo_cierre": r.get("motivo_salida", ""), "leccion": r.get("nota", ""),
@@ -229,6 +236,7 @@ def _fila(idn, pid, tramo, ticker, lado, origen, regimen, entrada, stop, objetiv
 
 def propuestas(cfg: dict, res: dict, fichas: dict | None, dec: dict | None, cartera_data: dict | None) -> dict:
     p = cfg.get("_ledger") or parametros()
+    avisos_cartera = list((cartera_data or {}).get("avisos", []))
     capital, tope, com = float(p["capital"]), float(p["tope_posicion"]), float(p["comision_orden"] or 0)
     ops = operaciones()
     vt = veto()
@@ -237,7 +245,7 @@ def propuestas(cfg: dict, res: dict, fichas: dict | None, dec: dict | None, cart
     tickers_abiertos = set(abiertas["ticker"]) if not abiertas.empty else set()
     lid, pid = _next_ids(ops)
     out = {"date": dt.date.today().isoformat(), "capital": capital, "ordenes": [], "tecnicas": [], "anadidos": [], "bloqueos": [],
-           "n_abiertas": n_abiertas, "max_posiciones": p["max_posiciones"], "perdida_7d": perdida_7d(), "dudas": []}
+           "n_abiertas": n_abiertas, "max_posiciones": p["max_posiciones"], "perdida_7d": perdida_7d(), "dudas": [], "avisos": avisos_cartera}
     org = p["origenes"]
     bloqueo_total = False
     if n_abiertas >= p["max_posiciones"]:
@@ -376,6 +384,8 @@ def to_html(pr: dict | None) -> str:
         return ""
     h = [f"<h4 style='margin:10px 0 4px'>Ledger · {pr['n_abiertas']} posiciones abiertas de {pr['max_posiciones']}"
          + (f" · pérdida 7 días {pr['perdida_7d']:,.0f} USD".replace(",", ".") if pr.get("perdida_7d") else "") + "</h4>"]
+    if pr.get("avisos"):
+        h.append("<p style='margin:0 0 6px;color:#b00;font-size:13px'><b>Avisos del Ledger:</b> " + " · ".join(pr["avisos"]) + "</p>")
     if pr["bloqueos"]:
         h.append("<p style='margin:0 0 6px;color:#b00;font-size:13px'><b>Bloqueos:</b> " + "; ".join(pr["bloqueos"]) + ".</p>")
     for key, titulo, vacio in (("ordenes", "Órdenes propuestas (MACRO_TEC)", "ninguna candidata con disparador activo y apoyo macro"),
