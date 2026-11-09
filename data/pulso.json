@@ -1,5 +1,5 @@
 {
- "date": "2026-11-08",
+ "date": "2026-11-09",
  "blocks": {
   "Mercado": [
    {
@@ -76,14 +76,14 @@
   "VIX": [
    {
     "name": "VIX",
-    "value": 25.639999389648438,
+    "value": 23.040000915527344,
     "unit": "pts",
-    "date": "2026-11-06",
+    "date": "2026-11-09",
     "chg": {
-     "1d": -2.5400009155273438,
-     "1s": 6.219999313354492,
-     "1m": 10.229999542236328,
-     "3m": 10.359999656677246
+     "1d": -2.5999984741210938,
+     "1s": 1.8900012969970703,
+     "1m": 8.200000762939453,
+     "3m": 8.49000072479248
     }
    },
    {
@@ -336,13 +336,13 @@
  },
  "medidas": {
   "vix_estructura": {
-   "ratio": 1.0422763817907135,
-   "lectura": "backwardation (pánico agudo)"
+   "ratio": 0.9365853885466818,
+   "lectura": "contango (normal)"
   },
   "vix_vs_realizada": {
-   "vix": 25.639999389648438,
+   "vix": 23.040000915527344,
    "realizada_20d": 20.081303002848465,
-   "prima": 5.558696386799973,
+   "prima": 2.958697912678879,
    "lectura": "normal"
   },
   "descomposicion_10a": {
@@ -384,15 +384,11 @@
    "lectura": "normal"
   },
   "correlacion_acciones_bonos_60d": {
-   "corr": 0.09423950259418808,
+   "corr": 0.09423962688468547,
    "lectura": "sin relación clara"
   }
  },
  "senales": [
-  {
-   "tipo": "vix",
-   "texto": "Curva del VIX en backwardation (1.04): miedo inmediato; históricamente suelos de corto plazo en días."
-  },
   {
    "tipo": "tipos",
    "texto": "El 10 años se ha movido -43 pb en un mes, sobre todo por tipo real (-31 real, -13 breakeven)."
