@@ -142,12 +142,14 @@
    "R": 0.02864370756676701,
    "riesgo_inicial_usd": 555.0999999999999,
    "riesgo_actual_usd": 571.0001220703123,
-   "sesgo_sector": 0,
+   "sesgo_sector": -1,
    "dias_a_resultados": null,
    "disparador": "TEC",
    "cierro_si": "",
    "fecha_apertura": "2026-11-10",
-   "avisos": []
+   "avisos": [
+    "sector con sesgo -1: revisar"
+   ]
   }
  ],
  "cerradas": [
