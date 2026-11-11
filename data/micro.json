@@ -1,5 +1,5 @@
 {
- "date": "2026-11-10",
+ "date": "2026-11-11",
  "scope": "bellwethers",
  "companies": [
   {
@@ -23,7 +23,7 @@
      "down7": 0,
      "net30": 1.0
     },
-    "est_anual_chg30_pct": 9.22,
+    "est_anual_chg30_pct": 9.38,
     "recomendaciones": {
      "compra": 9,
      "venta": 0,
@@ -173,7 +173,7 @@
      "down7": 0,
      "net30": 1.0
     },
-    "est_anual_chg30_pct": 7.33,
+    "est_anual_chg30_pct": 7.31,
     "recomendaciones": {
      "compra": 8,
      "venta": 4,
@@ -315,7 +315,7 @@
      "down7": 0,
      "net30": -0.33
     },
-    "est_anual_chg30_pct": 0.2,
+    "est_anual_chg30_pct": 0.17,
     "recomendaciones": {
      "compra": 16,
      "venta": 2,
@@ -368,6 +368,24 @@
    ],
    "insiders": [
     {
+     "fecha": "2026-11-10",
+     "quien": "Russ Claude F",
+     "cargo": "Interim CFO & Interim CAO",
+     "tipo": "venta",
+     "importe_usd": 4897630,
+     "acciones": 15493,
+     "url": "https://www.sec.gov/Archives/edgar/data/1048911/000104891126000158/form4.xml"
+    },
+    {
+     "fecha": "2026-11-10",
+     "quien": "Russ Claude F",
+     "cargo": "Interim CFO & Interim CAO",
+     "tipo": "venta",
+     "importe_usd": 401017,
+     "acciones": 1269,
+     "url": "https://www.sec.gov/Archives/edgar/data/1048911/000104891126000158/form4.xml"
+    },
+    {
      "fecha": "2026-11-02",
      "quien": "Adams Gina F.",
      "cargo": "EVP GENL COUNSEL/SECTY",
@@ -399,7 +417,7 @@
    "compra_cluster": false,
    "n_compradores": 0,
    "importe_compras": 0,
-   "importe_ventas": 9382890
+   "importe_ventas": 14681537
   },
   {
    "t": "MAERSK-B.CO",
@@ -890,18 +908,7 @@
      "cambio_compra_1m": 0
     }
    },
-   "eventos": [
-    {
-     "fecha": "2026-11-03",
-     "codigos": [
-      "8.01",
-      "9.01"
-     ],
-     "descripcion": "Otros hechos",
-     "importancia": 1,
-     "url": "https://www.sec.gov/Archives/edgar/data/80424/000162828026069608/pg-20261103.htm"
-    }
-   ],
+   "eventos": [],
    "insiders": [
     {
      "fecha": "2026-11-05",
@@ -1021,7 +1028,7 @@
      "down7": 4,
      "net30": -0.89
     },
-    "est_anual_chg30_pct": -1.2,
+    "est_anual_chg30_pct": -1.19,
     "recomendaciones": {
      "compra": 26,
      "venta": 2,
@@ -1255,6 +1262,15 @@
    "eventos": [],
    "insiders": [
     {
+     "fecha": "2026-11-09",
+     "quien": "Rottenberg Julie B",
+     "cargo": "GENERAL COUNSEL",
+     "tipo": "venta",
+     "importe_usd": 789741,
+     "acciones": 1867,
+     "url": "https://www.sec.gov/Archives/edgar/data/1403161/000140316126000138/form4.xml"
+    },
+    {
      "fecha": "2026-11-04",
      "quien": "Taneja Rajat",
      "cargo": "PRESIDENT, TECHNOLOGY",
@@ -1313,7 +1329,7 @@
    "compra_cluster": false,
    "n_compradores": 0,
    "importe_compras": 0,
-   "importe_ventas": 32027936
+   "importe_ventas": 32817677
   },
   {
    "t": "MSFT",
@@ -1366,6 +1382,24 @@
    ],
    "insiders": [
     {
+     "fecha": "2026-11-09",
+     "quien": "Hood Amy",
+     "cargo": "EVP, Chief Financial Officer",
+     "tipo": "venta",
+     "importe_usd": 3217523,
+     "acciones": 5912,
+     "url": "https://www.sec.gov/Archives/edgar/data/789019/000078901926000232/form4.xml"
+    },
+    {
+     "fecha": "2026-11-09",
+     "quien": "Hood Amy",
+     "cargo": "EVP, Chief Financial Officer",
+     "tipo": "venta",
+     "importe_usd": 759111,
+     "acciones": 1393,
+     "url": "https://www.sec.gov/Archives/edgar/data/789019/000078901926000232/form4.xml"
+    },
+    {
      "fecha": "2026-10-13",
      "quien": "Hood Amy",
      "cargo": "EVP, Chief Financial Officer",
@@ -1397,7 +1431,7 @@
    "compra_cluster": false,
    "n_compradores": 0,
    "importe_compras": 0,
-   "importe_ventas": 3984303
+   "importe_ventas": 7960937
   },
   {
    "t": "SAP.DE",
@@ -1956,7 +1990,7 @@
      "down7": 37,
      "net30": -0.85
     },
-    "est_anual_chg30_pct": -5.34,
+    "est_anual_chg30_pct": -5.16,
     "recomendaciones": {
      "compra": 53,
      "venta": 0,
@@ -2426,7 +2460,7 @@
      "down7": 0,
      "net30": 1.0
     },
-    "est_anual_chg30_pct": 8.12,
+    "est_anual_chg30_pct": 8.59,
     "recomendaciones": {
      "compra": 44,
      "venta": 1,
@@ -2650,11 +2684,28 @@
    "banco": "Fed",
    "tipo": "discurso",
    "fecha": "2026-11-10",
+   "titulo": "Bowman, The U.S. Economy and Considerations for Monetary Policy",
+   "url": "https://www.federalreserve.gov/newsevents/speech/bowman20261110a.htm",
+   "postura": 0,
+   "tema": "Economía EE.UU. y política monetaria",
+   "resumen": "Discurso de Bowman analiza la economía estadounidense y factores de política monetaria sin anunciar cambios en los tipos de interés."
+  },
+  {
+   "banco": "Fed",
+   "tipo": "discurso",
+   "fecha": "2026-11-10",
    "titulo": "Waller, The Economic Outlook and Some Thoughts on Labor Market Dynamism",
    "url": "https://www.federalreserve.gov/newsevents/speech/waller20261110a.htm",
    "postura": 0,
    "tema": "Perspectiva económica y mercado laboral",
-   "resumen": "Waller destaca crecimiento moderado y dinamismo laboral, sin indicar cambios inmediatos en la política de tipos."
+   "resumen": "Waller destaca dinamismo laboral y riesgos inflacionarios, sugiriendo cautela en futuros ajustes de tipos."
+  },
+  {
+   "banco": "BCE",
+   "tipo": "discurso",
+   "fecha": "2026-11-05",
+   "titulo": "Piero Cipollone: Shaping the future of money",
+   "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261105~6495a0df6f.en.html"
   }
  ]
 }
