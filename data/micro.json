@@ -1,5 +1,5 @@
 {
- "date": "2026-11-11",
+ "date": "2026-11-12",
  "scope": "bellwethers",
  "companies": [
   {
@@ -59,7 +59,7 @@
      "down7": 3,
      "net30": 0.83
     },
-    "est_anual_chg30_pct": 5.95,
+    "est_anual_chg30_pct": 5.77,
     "recomendaciones": {
      "compra": 9,
      "venta": 0,
@@ -173,10 +173,10 @@
      "down7": 0,
      "net30": 1.0
     },
-    "est_anual_chg30_pct": 7.31,
+    "est_anual_chg30_pct": 10.06,
     "recomendaciones": {
      "compra": 8,
-     "venta": 4,
+     "venta": 5,
      "cambio_compra_1m": 0
     }
    },
@@ -205,7 +205,7 @@
      "down7": 9,
      "net30": -0.75
     },
-    "est_anual_chg30_pct": -2.76,
+    "est_anual_chg30_pct": -2.19,
     "recomendaciones": {
      "compra": 9,
      "venta": 1,
@@ -259,7 +259,7 @@
      "up30": 2,
      "down30": 10,
      "up7": 1,
-     "down7": 9,
+     "down7": 14,
      "net30": -0.67
     },
     "anual": {
@@ -303,19 +303,19 @@
    "revisiones": {
     "trim": {
      "up30": 0,
-     "down30": 3,
+     "down30": 1,
      "up7": 0,
-     "down7": 2,
+     "down7": 1,
      "net30": -1.0
     },
     "anual": {
-     "up30": 3,
-     "down30": 6,
+     "up30": 6,
+     "down30": 5,
      "up7": 0,
      "down7": 0,
-     "net30": -0.33
+     "net30": 0.09
     },
-    "est_anual_chg30_pct": 0.17,
+    "est_anual_chg30_pct": 0.31,
     "recomendaciones": {
      "compra": 16,
      "venta": 2,
@@ -440,7 +440,7 @@
      "down7": 0,
      "net30": 1.0
     },
-    "est_anual_chg30_pct": 6.16,
+    "est_anual_chg30_pct": 6.27,
     "recomendaciones": {
      "compra": 2,
      "venta": 9,
@@ -462,7 +462,7 @@
      "up30": 0,
      "down30": 6,
      "up7": 0,
-     "down7": 6,
+     "down7": 10,
      "net30": -1.0
     },
     "anual": {
@@ -544,7 +544,7 @@
      "down7": 1,
      "net30": 0.0
     },
-    "est_anual_chg30_pct": 4.37,
+    "est_anual_chg30_pct": 2.58,
     "recomendaciones": {
      "compra": 12,
      "venta": 1,
@@ -608,11 +608,11 @@
      "down7": 0,
      "net30": 0.33
     },
-    "est_anual_chg30_pct": -0.05,
+    "est_anual_chg30_pct": 0.02,
     "recomendaciones": {
-     "compra": 20,
+     "compra": 19,
      "venta": 1,
-     "cambio_compra_1m": 0
+     "cambio_compra_1m": -1
     }
    },
    "eventos": [],
@@ -630,14 +630,14 @@
      "up30": 2,
      "down30": 11,
      "up7": 0,
-     "down7": 4,
+     "down7": 6,
      "net30": -0.69
     },
     "anual": {
      "up30": 4,
      "down30": 11,
-     "up7": 0,
-     "down7": 4,
+     "up7": 5,
+     "down7": 1,
      "net30": -0.47
     },
     "est_anual_chg30_pct": 0.34,
@@ -647,18 +647,7 @@
      "cambio_compra_1m": -2
     }
    },
-   "eventos": [
-    {
-     "fecha": "2026-11-04",
-     "codigos": [
-      "2.02",
-      "9.01"
-     ],
-     "descripcion": "Resultados",
-     "importancia": 3,
-     "url": "https://www.sec.gov/Archives/edgar/data/63908/000006390826000080/mcd-20261104.htm"
-    }
-   ],
+   "eventos": [],
    "insiders": [],
    "cobertura": true,
    "compra_cluster": false,
@@ -712,8 +701,8 @@
     "trim": {
      "up30": 10,
      "down30": 17,
-     "up7": 5,
-     "down7": 18,
+     "up7": 8,
+     "down7": 26,
      "net30": -0.26
     },
     "anual": {
@@ -769,7 +758,7 @@
      "down7": 0,
      "net30": 0.2
     },
-    "est_anual_chg30_pct": -0.01,
+    "est_anual_chg30_pct": 0.19,
     "recomendaciones": {
      "compra": 38,
      "venta": 1,
@@ -901,10 +890,10 @@
      "down7": 7,
      "net30": -0.07
     },
-    "est_anual_chg30_pct": -0.05,
+    "est_anual_chg30_pct": -0.08,
     "recomendaciones": {
      "compra": 14,
-     "venta": 0,
+     "venta": 1,
      "cambio_compra_1m": 0
     }
    },
@@ -1023,16 +1012,16 @@
     },
     "anual": {
      "up30": 1,
-     "down30": 18,
+     "down30": 23,
      "up7": 11,
      "down7": 4,
-     "net30": -0.89
+     "net30": -0.92
     },
-    "est_anual_chg30_pct": -1.19,
+    "est_anual_chg30_pct": -1.08,
     "recomendaciones": {
-     "compra": 26,
+     "compra": 25,
      "venta": 2,
-     "cambio_compra_1m": 0
+     "cambio_compra_1m": -1
     }
    },
    "eventos": [],
@@ -1068,11 +1057,11 @@
      "net30": -1.0
     },
     "anual": {
-     "up30": 10,
-     "down30": 3,
-     "up7": 2,
+     "up30": 14,
+     "down30": 1,
+     "up7": 1,
      "down7": 1,
-     "net30": 0.54
+     "net30": 0.87
     },
     "est_anual_chg30_pct": 4.95,
     "recomendaciones": {
@@ -1106,7 +1095,7 @@
      "down7": 0,
      "net30": 1.0
     },
-    "est_anual_chg30_pct": 3.75,
+    "est_anual_chg30_pct": 3.28,
     "recomendaciones": {
      "compra": 21,
      "venta": 0,
@@ -1220,7 +1209,7 @@
      "down7": 2,
      "net30": -1.0
     },
-    "est_anual_chg30_pct": 0.97,
+    "est_anual_chg30_pct": -1.81,
     "recomendaciones": {
      "compra": 6,
      "venta": 4,
@@ -1368,16 +1357,6 @@
      "descripcion": "Salida o nombramiento de directivos/consejeros",
      "importancia": 3,
      "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526448357/d177209d8k.htm"
-    },
-    {
-     "fecha": "2026-11-04",
-     "codigos": [
-      "8.01",
-      "9.01"
-     ],
-     "descripcion": "Otros hechos",
-     "importancia": 1,
-     "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526447173/d178557d8k.htm"
     }
    ],
    "insiders": [
@@ -1486,14 +1465,25 @@
      "down7": 0,
      "net30": 1.0
     },
-    "est_anual_chg30_pct": 0.05,
+    "est_anual_chg30_pct": 0.09,
     "recomendaciones": {
-     "compra": 58,
+     "compra": 55,
      "venta": 1,
-     "cambio_compra_1m": -1
+     "cambio_compra_1m": -4
     }
    },
-   "eventos": [],
+   "eventos": [
+    {
+     "fecha": "2026-11-12",
+     "codigos": [
+      "5.02",
+      "9.01"
+     ],
+     "descripcion": "Salida o nombramiento de directivos/consejeros",
+     "importancia": 3,
+     "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000082/nvda-20261111.htm"
+    }
+   ],
    "insiders": [],
    "cobertura": true,
    "compra_cluster": false,
@@ -1803,24 +1793,24 @@
    "role": "bellwether",
    "revisiones": {
     "trim": {
-     "up30": 3,
-     "down30": 3,
+     "up30": 11,
+     "down30": 4,
      "up7": 2,
      "down7": 1,
-     "net30": 0.0
+     "net30": 0.47
     },
     "anual": {
-     "up30": 3,
-     "down30": 5,
-     "up7": 1,
-     "down7": 2,
-     "net30": -0.25
+     "up30": 7,
+     "down30": 23,
+     "up7": 3,
+     "down7": 14,
+     "net30": -0.53
     },
-    "est_anual_chg30_pct": 0.12,
+    "est_anual_chg30_pct": -1.84,
     "recomendaciones": {
-     "compra": 25,
+     "compra": 26,
      "venta": 6,
-     "cambio_compra_1m": 1
+     "cambio_compra_1m": 2
     }
    },
    "eventos": [
@@ -1978,19 +1968,19 @@
    "revisiones": {
     "trim": {
      "up30": 10,
-     "down30": 22,
+     "down30": 25,
      "up7": 10,
      "down7": 22,
-     "net30": -0.38
+     "net30": -0.43
     },
     "anual": {
-     "up30": 3,
-     "down30": 38,
+     "up30": 0,
+     "down30": 45,
      "up7": 2,
      "down7": 37,
-     "net30": -0.85
+     "net30": -1.0
     },
-    "est_anual_chg30_pct": -5.16,
+    "est_anual_chg30_pct": -5.11,
     "recomendaciones": {
      "compra": 53,
      "venta": 0,
@@ -2447,38 +2437,27 @@
    "role": "rep",
    "revisiones": {
     "trim": {
-     "up30": 0,
-     "down30": 0,
+     "up30": 18,
+     "down30": 1,
      "up7": 0,
      "down7": 0,
-     "net30": 0.0
+     "net30": 0.89
     },
     "anual": {
-     "up30": 1,
+     "up30": 19,
      "down30": 0,
      "up7": 1,
      "down7": 0,
      "net30": 1.0
     },
-    "est_anual_chg30_pct": 8.59,
+    "est_anual_chg30_pct": 8.34,
     "recomendaciones": {
-     "compra": 44,
+     "compra": 45,
      "venta": 1,
-     "cambio_compra_1m": 0
+     "cambio_compra_1m": 1
     }
    },
-   "eventos": [
-    {
-     "fecha": "2026-11-04",
-     "codigos": [
-      "2.02",
-      "9.01"
-     ],
-     "descripcion": "Resultados",
-     "importancia": 3,
-     "url": "https://www.sec.gov/Archives/edgar/data/1561550/000162828026069792/ddog-20261104.htm"
-    }
-   ],
+   "eventos": [],
    "insiders": [
     {
      "fecha": "2026-10-28",
@@ -2589,11 +2568,11 @@
    "clusters_insiders": 0
   },
   "Industriales": {
-   "amplitud_revisiones": 0.01,
+   "amplitud_revisiones": 0.07,
    "senal": 0,
    "empresas_cubiertas": 6,
    "mejorando": 2,
-   "empeorando": 2,
+   "empeorando": 1,
    "hechos_relevantes": 1,
    "clusters_insiders": 0
   },
@@ -2603,7 +2582,7 @@
    "empresas_cubiertas": 7,
    "mejorando": 1,
    "empeorando": 3,
-   "hechos_relevantes": 1,
+   "hechos_relevantes": 0,
    "clusters_insiders": 0
   },
   "Consumo básico": {
@@ -2616,7 +2595,7 @@
    "clusters_insiders": 0
   },
   "Salud": {
-   "amplitud_revisiones": 0.22,
+   "amplitud_revisiones": 0.32,
    "senal": 1,
    "empresas_cubiertas": 3,
    "mejorando": 2,
@@ -2634,16 +2613,16 @@
    "clusters_insiders": 0
   },
   "Tecnología de la información": {
-   "amplitud_revisiones": 0.58,
+   "amplitud_revisiones": 0.54,
    "senal": 1,
    "empresas_cubiertas": 6,
    "mejorando": 5,
    "empeorando": 1,
-   "hechos_relevantes": 1,
+   "hechos_relevantes": 2,
    "clusters_insiders": 0
   },
   "Servicios de comunicación": {
-   "amplitud_revisiones": -0.77,
+   "amplitud_revisiones": -0.85,
    "senal": -1,
    "empresas_cubiertas": 2,
    "mejorando": 0,
@@ -2675,7 +2654,7 @@
    "empresas_cubiertas": 2,
    "mejorando": 2,
    "empeorando": 0,
-   "hechos_relevantes": 1,
+   "hechos_relevantes": 0,
    "clusters_insiders": 0
   }
  },
@@ -2688,7 +2667,7 @@
    "url": "https://www.federalreserve.gov/newsevents/speech/waller20261110a.htm",
    "postura": 0,
    "tema": "Perspectiva económica y mercado laboral",
-   "resumen": "Waller destaca dinamismo laboral y riesgos inflacionarios, sugiriendo cautela en futuros ajustes de tipos."
+   "resumen": "Waller destaca crecimiento moderado y dinamismo laboral, sin indicar cambios inmediatos en tipos."
   },
   {
    "banco": "BCE",
