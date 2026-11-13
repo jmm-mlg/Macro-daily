@@ -7,168 +7,8 @@ X-WR-CALNAME:Empresas · todas
 X-WR-TIMEZONE:Europe/Madrid
 X-PUBLISHED-TTL:PT12H
 BEGIN:VEVENT
-UID:15e8f6e38e5dccc3974d36eb63f564fa@macro-monitor
-DTSTAMP:20261112T135842Z
-DTSTART;VALUE=DATE:20261112
-DTEND;VALUE=DATE:20261113
-SUMMARY:💰 Apple (AAPL) · ex-dividendo
-DESCRIPTION:🇺🇸 Tecnología de la información › Hardware\nEl prec
- io se ajusta a la baja por el dividendo en la apertura.
-END:VEVENT
-BEGIN:VEVENT
-UID:cc602d9ce6ad1a4d4488e99158196701@macro-monitor
-DTSTAMP:20261112T135842Z
-DTSTART:20261112T060000Z
-DTEND:20261112T063000Z
-SUMMARY:🔴 Allianz (ALV.DE) · resultados (fecha estimada)
-DESCRIPTION:🇪🇺 Financiero › Seguros y reaseguro\nPublica por la m
- añana (hora europea).\nBPA esperado: 8.17\nFuente: yfinance (estimada)
-END:VEVENT
-BEGIN:VEVENT
-UID:9eca033d08fbc3d522435751372c25f7@macro-monitor
-DTSTAMP:20261112T135842Z
-DTSTART;VALUE=DATE:20261112
-DTEND;VALUE=DATE:20261113
-SUMMARY:💰 D.R. Horton (DHI) · ex-dividendo
-DESCRIPTION:🇺🇸 Industriales › Constructoras de viviendas\nEl prec
- io se ajusta a la baja por el dividendo en la apertura.
-END:VEVENT
-BEGIN:VEVENT
-UID:2df51c2ae1a20cefbfdc62fa4ca31d7b@macro-monitor
-DTSTAMP:20261112T135842Z
-DTSTART;VALUE=DATE:20261112
-DTEND;VALUE=DATE:20261113
-SUMMARY:💰 Shell (SHEL.L) · ex-dividendo
-DESCRIPTION:🇪🇺 Energía › Integradas\nEl precio se ajusta a la ba
- ja por el dividendo en la apertura.
-END:VEVENT
-BEGIN:VEVENT
-UID:173400761e76829ac28a06b5713baf59@macro-monitor
-DTSTAMP:20261112T135842Z
-DTSTART:20261112T060000Z
-DTEND:20261112T063000Z
-SUMMARY:🔴 Siemens (SIE.DE) · resultados (fecha estimada)
-DESCRIPTION:🇪🇺 Industriales › Maquinaria y bienes de equipo\nPubl
- ica por la mañana (hora europea).\nBPA esperado: 2.81\nFuente: yfinance
-  (estimada)\nNota: automatización e infraestructuras
-END:VEVENT
-BEGIN:VEVENT
-UID:798d3313b06ad28844340b5b5818794a@macro-monitor
-DTSTAMP:20261112T135842Z
-DTSTART:20261112T060000Z
-DTEND:20261112T063000Z
-SUMMARY:🟠 ACS (ACS.MC) · resultados (fecha estimada)
-DESCRIPTION:🇪🇺 Industriales › Infraestructuras de transporte\nPub
- lica por la mañana (hora europea).\nBPA esperado: n/d\nFuente: yfinance
-  (estimada)\nNota: construcción e infraestructuras
-END:VEVENT
-BEGIN:VEVENT
-UID:1e47d6ada1b3d1895b1000a02eecb54e@macro-monitor
-DTSTAMP:20261112T135842Z
-DTSTART:20261112T210500Z
-DTEND:20261112T213500Z
-SUMMARY:🟠 Applied Materials (AMAT) · resultados
-DESCRIPTION:🇺🇸 Tecnología de la información › Equipos de semico
- nductores\nPublica tras el cierre.\nBPA esperado: 4.13\nFuente: finnhub\
- nNota: cierre fiscal octubre
-END:VEVENT
-BEGIN:VEVENT
-UID:634fe3cc557da108f602630b227ece89@macro-monitor
-DTSTAMP:20261112T135842Z
-DTSTART;VALUE=DATE:20261112
-DTEND;VALUE=DATE:20261113
-SUMMARY:💰 American Water Works (AWK) · ex-dividendo
-DESCRIPTION:🇺🇸 Utilities › Agua y multiutilities\nEl precio se aj
- usta a la baja por el dividendo en la apertura.
-END:VEVENT
-BEGIN:VEVENT
-UID:089782d94c3aa1c70c62c448b03d8ea6@macro-monitor
-DTSTAMP:20261112T135842Z
-DTSTART:20261112T210500Z
-DTEND:20261112T213500Z
-SUMMARY:🟠 Cisco (CSCO) · resultados
-DESCRIPTION:🇺🇸 Tecnología de la información › Equipos de comuni
- caciones\nPublica tras el cierre.\nBPA esperado: 1.35\nFuente: finnhub\n
- Nota: cierre fiscal julio
-END:VEVENT
-BEGIN:VEVENT
-UID:e2b7833405143e2245e671dec97c4ac9@macro-monitor
-DTSTAMP:20261112T135842Z
-DTSTART:20261112T060000Z
-DTEND:20261112T063000Z
-SUMMARY:🟠 Enel (ENEL.MI) · resultados (fecha estimada)
-DESCRIPTION:🇪🇺 Utilities › Eléctricas\nPublica por la mañana (h
- ora europea).\nBPA esperado: 0.18\nFuente: yfinance (estimada)
-END:VEVENT
-BEGIN:VEVENT
-UID:b78a9f33ac15066a7f2136a0a2637342@macro-monitor
-DTSTAMP:20261112T135842Z
-DTSTART;VALUE=DATE:20261112
-DTEND;VALUE=DATE:20261113
-SUMMARY:💰 GSK (GSK.L) · ex-dividendo
-DESCRIPTION:🇪🇺 Salud › Farmacia\nEl precio se ajusta a la baja po
- r el dividendo en la apertura.
-END:VEVENT
-BEGIN:VEVENT
-UID:97e50e80d7ec4acfac0f145ce136a4d4@macro-monitor
-DTSTAMP:20261112T135842Z
-DTSTART:20261112T060000Z
-DTEND:20261112T063000Z
-SUMMARY:🟠 Merlin Properties (MRL.MC) · resultados (fecha estimada)
-DESCRIPTION:🇪🇺 Inmobiliario › REITs comerciales y residenciales\n
- Publica por la mañana (hora europea).\nBPA esperado: 0.14\nFuente: yfin
- ance (estimada)\nNota: oficinas y logística en España
-END:VEVENT
-BEGIN:VEVENT
-UID:306aead6f221301060df4a17ba7fe589@macro-monitor
-DTSTAMP:20261112T135842Z
-DTSTART;VALUE=DATE:20261112
-DTEND;VALUE=DATE:20261113
-SUMMARY:💰 ArcelorMittal (MT.AS) · ex-dividendo
-DESCRIPTION:🇪🇺 Materiales › Acero\nEl precio se ajusta a la baja 
- por el dividendo en la apertura.
-END:VEVENT
-BEGIN:VEVENT
-UID:e8dead7a83e1922d79b9d294063c14dd@macro-monitor
-DTSTAMP:20261112T135842Z
-DTSTART:20261112T060000Z
-DTEND:20261112T063000Z
-SUMMARY:🟠 Munich Re (MUV2.DE) · resultados (fecha estimada)
-DESCRIPTION:🇪🇺 Financiero › Seguros y reaseguro\nPublica por la m
- añana (hora europea).\nBPA esperado: 11.23\nFuente: yfinance (estimada)
- \nNota: catástrofes y precios de reaseguro
-END:VEVENT
-BEGIN:VEVENT
-UID:0688d5f3d4f8fe7971f2d215b40d2580@macro-monitor
-DTSTAMP:20261112T135842Z
-DTSTART:20261112T060000Z
-DTEND:20261112T063000Z
-SUMMARY:🟠 Telefónica (TEF.MC) · resultados (fecha estimada)
-DESCRIPTION:🇪🇺 Servicios de comunicación › Telecomunicaciones\nP
- ublica por la mañana (hora europea).\nBPA esperado: 0.12\nFuente: yfina
- nce (estimada)
-END:VEVENT
-BEGIN:VEVENT
-UID:7daf9dda1b6ef3a15c94b0bb88dca4c0@macro-monitor
-DTSTAMP:20261112T135842Z
-DTSTART;VALUE=DATE:20261112
-DTEND;VALUE=DATE:20261113
-SUMMARY:💰 TJX (TJX) · ex-dividendo
-DESCRIPTION:🇺🇸 Consumo discrecional › Retail de descuento y espec
- ializado\nEl precio se ajusta a la baja por el dividendo en la apertura.
-END:VEVENT
-BEGIN:VEVENT
-UID:a931ead0a24fba0a812835ca77bb7ea6@macro-monitor
-DTSTAMP:20261112T135842Z
-DTSTART;VALUE=DATE:20261112
-DTEND;VALUE=DATE:20261113
-SUMMARY:💰 Unilever (ULVR.L) · ex-dividendo
-DESCRIPTION:🇪🇺 Consumo básico › Productos del hogar y cuidado pe
- rsonal\nEl precio se ajusta a la baja por el dividendo en la apertura.
-END:VEVENT
-BEGIN:VEVENT
 UID:f557a03cecb3e2aedb020481382e8829@macro-monitor
-DTSTAMP:20261112T135842Z
+DTSTAMP:20261113T132308Z
 DTSTART;VALUE=DATE:20261113
 DTEND;VALUE=DATE:20261114
 SUMMARY:💰 Eli Lilly (LLY) · ex-dividendo
@@ -177,7 +17,7 @@ DESCRIPTION:🇺🇸 Salud › Farmacia\nEl precio se ajusta a la baja po
 END:VEVENT
 BEGIN:VEVENT
 UID:9abd9f4651ed16c18a6eb5db245ee16e@macro-monitor
-DTSTAMP:20261112T135842Z
+DTSTAMP:20261113T132308Z
 DTSTART:20261113T060000Z
 DTEND:20261113T063000Z
 SUMMARY:🟠 Richemont (CFR.SW) · resultados (fecha estimada)
@@ -186,7 +26,7 @@ DESCRIPTION:🇪🇺 Consumo discrecional › Lujo\nPublica por la mañan
 END:VEVENT
 BEGIN:VEVENT
 UID:9bad9a0b89138080afc707bb54e0cb47@macro-monitor
-DTSTAMP:20261112T135842Z
+DTSTAMP:20261113T132308Z
 DTSTART;VALUE=DATE:20261113
 DTEND;VALUE=DATE:20261114
 SUMMARY:💰 Duke Energy (DUK) · ex-dividendo
@@ -195,7 +35,7 @@ DESCRIPTION:🇺🇸 Utilities › Eléctricas\nEl precio se ajusta a la
 END:VEVENT
 BEGIN:VEVENT
 UID:d0a670779544c777db531db2511c7ab8@macro-monitor
-DTSTAMP:20261112T135842Z
+DTSTAMP:20261113T132308Z
 DTSTART;VALUE=DATE:20261113
 DTEND;VALUE=DATE:20261114
 SUMMARY:💰 Equinor (EQNR.OL) · ex-dividendo
@@ -204,7 +44,7 @@ DESCRIPTION:🇪🇺 Energía › Exploración y producción\nEl precio s
 END:VEVENT
 BEGIN:VEVENT
 UID:3930ea36c79651f4d164f22912b5f76d@macro-monitor
-DTSTAMP:20261112T135842Z
+DTSTAMP:20261113T132308Z
 DTSTART;VALUE=DATE:20261113
 DTEND;VALUE=DATE:20261114
 SUMMARY:💰 Honeywell (HON) · ex-dividendo
@@ -213,7 +53,7 @@ DESCRIPTION:🇺🇸 Industriales › Conglomerados industriales\nEl prec
 END:VEVENT
 BEGIN:VEVENT
 UID:ad9601541bc3de4ada8e54cd27cdc1c7@macro-monitor
-DTSTAMP:20261112T135842Z
+DTSTAMP:20261113T132308Z
 DTSTART;VALUE=DATE:20261113
 DTEND;VALUE=DATE:20261114
 SUMMARY:💰 Starbucks (SBUX) · ex-dividendo
@@ -222,7 +62,7 @@ DESCRIPTION:🇺🇸 Consumo discrecional › Restauración y ocio\nEl pr
 END:VEVENT
 BEGIN:VEVENT
 UID:6091c50126d56d7c45a1054345d00895@macro-monitor
-DTSTAMP:20261112T135842Z
+DTSTAMP:20261113T132308Z
 DTSTART;VALUE=DATE:20261113
 DTEND;VALUE=DATE:20261114
 SUMMARY:💰 Sherwin-Williams (SHW) · ex-dividendo
@@ -231,7 +71,7 @@ DESCRIPTION:🇺🇸 Materiales › Química especializada / recubrimient
 END:VEVENT
 BEGIN:VEVENT
 UID:04f3e64d35a2b18aa9180366232e2eec@macro-monitor
-DTSTAMP:20261112T135842Z
+DTSTAMP:20261113T132308Z
 DTSTART;VALUE=DATE:20261116
 DTEND;VALUE=DATE:20261117
 SUMMARY:💰 ExxonMobil (XOM) · ex-dividendo
@@ -240,7 +80,7 @@ DESCRIPTION:🇺🇸 Energía › Integradas\nEl precio se ajusta a la ba
 END:VEVENT
 BEGIN:VEVENT
 UID:40bf358420dbaa9baf9e7d3bd37a3134@macro-monitor
-DTSTAMP:20261112T135842Z
+DTSTAMP:20261113T132308Z
 DTSTART;VALUE=DATE:20261116
 DTEND;VALUE=DATE:20261117
 SUMMARY:💰 Constellation (CEG) · ex-dividendo
@@ -249,7 +89,7 @@ DESCRIPTION:🇺🇸 Utilities › Generación independiente\nEl precio s
 END:VEVENT
 BEGIN:VEVENT
 UID:1693be1863e23c2f55a14ff391a9ae4e@macro-monitor
-DTSTAMP:20261112T135842Z
+DTSTAMP:20261113T132308Z
 DTSTART;VALUE=DATE:20261116
 DTEND;VALUE=DATE:20261117
 SUMMARY:💰 Capital One (COF) · ex-dividendo
@@ -258,7 +98,7 @@ DESCRIPTION:🇺🇸 Financiero › Finanzas al consumo\nEl precio se aju
 END:VEVENT
 BEGIN:VEVENT
 UID:c9731099ee0f81e47ea12584bd48c35d@macro-monitor
-DTSTAMP:20261112T135842Z
+DTSTAMP:20261113T132308Z
 DTSTART;VALUE=DATE:20261116
 DTEND;VALUE=DATE:20261117
 SUMMARY:💰 ConocoPhillips (COP) · ex-dividendo
@@ -267,7 +107,7 @@ DESCRIPTION:🇺🇸 Energía › Exploración y producción\nEl precio s
 END:VEVENT
 BEGIN:VEVENT
 UID:b28adf894903405be85b7381c735279f@macro-monitor
-DTSTAMP:20261112T135842Z
+DTSTAMP:20261113T132308Z
 DTSTART;VALUE=DATE:20261116
 DTEND;VALUE=DATE:20261117
 SUMMARY:💰 International Paper (IP) · ex-dividendo
@@ -276,7 +116,7 @@ DESCRIPTION:🇺🇸 Materiales › Papel y productos forestales\nEl prec
 END:VEVENT
 BEGIN:VEVENT
 UID:338dbc2c07492dfb9ff6ba95b5cc3ff5@macro-monitor
-DTSTAMP:20261112T135842Z
+DTSTAMP:20261113T132308Z
 DTSTART;VALUE=DATE:20261116
 DTEND;VALUE=DATE:20261117
 SUMMARY:💰 UPS (UPS) · ex-dividendo
@@ -285,27 +125,27 @@ DESCRIPTION:🇺🇸 Industriales › Transporte y logística\nEl precio
 END:VEVENT
 BEGIN:VEVENT
 UID:f9fedef9785bc42e14474d1550399bf7@macro-monitor
-DTSTAMP:20261112T135842Z
+DTSTAMP:20261113T132308Z
 DTSTART:20261117T130000Z
 DTEND:20261117T133000Z
 SUMMARY:🔴 Home Depot (HD) · resultados
 DESCRIPTION:🇺🇸 Consumo discrecional › Mejora del hogar\nPublica a
- ntes de la apertura.\nBPA esperado: 3.95\nFuente: finnhub\nNota: viviend
+ ntes de la apertura.\nBPA esperado: 3.96\nFuente: finnhub\nNota: viviend
  a y renovación
 END:VEVENT
 BEGIN:VEVENT
 UID:2f5da5c47f393b436432f92b3bc8e8d3@macro-monitor
-DTSTAMP:20261112T135842Z
+DTSTAMP:20261113T132308Z
 DTSTART:20261117T210500Z
 DTEND:20261117T213500Z
 SUMMARY:🔴 Nvidia (NVDA) · resultados
 DESCRIPTION:🇺🇸 Tecnología de la información › Semiconductores\n
- Publica tras el cierre.\nBPA esperado: 2.53\nFuente: finnhub\nNota: cier
+ Publica tras el cierre.\nBPA esperado: 2.52\nFuente: finnhub\nNota: cier
  re fiscal enero\; resultados ~3 semanas después que el resto
 END:VEVENT
 BEGIN:VEVENT
 UID:3b1fc8c2e134629bf6a3d01b620c1d09@macro-monitor
-DTSTAMP:20261112T135842Z
+DTSTAMP:20261113T132308Z
 DTSTART:20261117T130000Z
 DTEND:20261117T133000Z
 SUMMARY:🟠 Disney (DIS) · resultados
@@ -315,7 +155,7 @@ DESCRIPTION:🇺🇸 Servicios de comunicación › Entretenimiento\nPubl
 END:VEVENT
 BEGIN:VEVENT
 UID:b63d46ef9627d0db5159ba714017551c@macro-monitor
-DTSTAMP:20261112T135842Z
+DTSTAMP:20261113T132308Z
 DTSTART:20261117T060000Z
 DTEND:20261117T063000Z
 SUMMARY:🟠 Imperial Brands (IMB.L) · resultados (fecha estimada)
@@ -324,7 +164,7 @@ DESCRIPTION:🇪🇺 Consumo básico › Tabaco\nPublica por la mañana (
 END:VEVENT
 BEGIN:VEVENT
 UID:3f195525cfc4da9211d8fab2fd9093e3@macro-monitor
-DTSTAMP:20261112T135842Z
+DTSTAMP:20261113T132308Z
 DTSTART;VALUE=DATE:20261118
 DTEND;VALUE=DATE:20261119
 SUMMARY:💰 Chevron (CVX) · ex-dividendo
@@ -333,7 +173,7 @@ DESCRIPTION:🇺🇸 Energía › Integradas\nEl precio se ajusta a la ba
 END:VEVENT
 BEGIN:VEVENT
 UID:0c6eba4864cd6e9b0b27512a04ecdcb9@macro-monitor
-DTSTAMP:20261112T135842Z
+DTSTAMP:20261113T132308Z
 DTSTART;VALUE=DATE:20261118
 DTEND;VALUE=DATE:20261119
 SUMMARY:💰 Equinix (EQIX) · ex-dividendo
@@ -342,7 +182,7 @@ DESCRIPTION:🇺🇸 Inmobiliario › REITs de infraestructura digital\nE
 END:VEVENT
 BEGIN:VEVENT
 UID:914dd771e2f86fb47b7736f5e455dade@macro-monitor
-DTSTAMP:20261112T135842Z
+DTSTAMP:20261113T132308Z
 DTSTART:20261118T060000Z
 DTEND:20261118T063000Z
 SUMMARY:🟠 SSE (SSE.L) · resultados (fecha estimada)
@@ -351,7 +191,7 @@ DESCRIPTION:🇪🇺 Utilities › Gas y redes\nPublica por la mañana (h
 END:VEVENT
 BEGIN:VEVENT
 UID:34d0425ee3c21137680b55233da3c971@macro-monitor
-DTSTAMP:20261112T135842Z
+DTSTAMP:20261113T132308Z
 DTSTART:20261118T130000Z
 DTEND:20261118T133000Z
 SUMMARY:🟠 TJX (TJX) · resultados
@@ -361,7 +201,7 @@ DESCRIPTION:🇺🇸 Consumo discrecional › Retail de descuento y espec
 END:VEVENT
 BEGIN:VEVENT
 UID:c2cbf96084ee3dbb9ee7cabd5ee62456@macro-monitor
-DTSTAMP:20261112T135842Z
+DTSTAMP:20261113T132308Z
 DTSTART;VALUE=DATE:20261119
 DTEND;VALUE=DATE:20261120
 SUMMARY:💰 Microsoft (MSFT) · ex-dividendo
@@ -370,17 +210,17 @@ DESCRIPTION:🇺🇸 Tecnología de la información › Software\nEl prec
 END:VEVENT
 BEGIN:VEVENT
 UID:c8318aa9c1570f47fa50c3394e28a7b2@macro-monitor
-DTSTAMP:20261112T135842Z
-DTSTART;VALUE=DATE:20261119
-DTEND;VALUE=DATE:20261120
+DTSTAMP:20261113T132308Z
+DTSTART:20261119T130000Z
+DTEND:20261119T133000Z
 SUMMARY:🔴 Walmart (WMT) · resultados
 DESCRIPTION:🇺🇸 Consumo básico › Distribución de alimentación\n
- Publica hora no confirmada.\nBPA esperado: 0.64\nFuente: finnhub\nNota: 
- cierre fiscal enero\; el mejor lector del consumidor EE.UU.
+ Publica antes de la apertura.\nBPA esperado: 0.64\nFuente: finnhub\nNota
+ : cierre fiscal enero\; el mejor lector del consumidor EE.UU.
 END:VEVENT
 BEGIN:VEVENT
 UID:0fc08b6706022020ce123f32442d2d09@macro-monitor
-DTSTAMP:20261112T135842Z
+DTSTAMP:20261113T132308Z
 DTSTART;VALUE=DATE:20261119
 DTEND;VALUE=DATE:20261120
 SUMMARY:💰 AB InBev (ABI.BR) · ex-dividendo
@@ -389,7 +229,7 @@ DESCRIPTION:🇪🇺 Consumo básico › Bebidas\nEl precio se ajusta a l
 END:VEVENT
 BEGIN:VEVENT
 UID:271fea96dc36fa10984891ed0a93b575@macro-monitor
-DTSTAMP:20261112T135842Z
+DTSTAMP:20261113T132308Z
 DTSTART;VALUE=DATE:20261119
 DTEND;VALUE=DATE:20261120
 SUMMARY:💰 Applied Materials (AMAT) · ex-dividendo
@@ -399,7 +239,7 @@ DESCRIPTION:🇺🇸 Tecnología de la información › Equipos de semico
 END:VEVENT
 BEGIN:VEVENT
 UID:5d2867bcd4a6b759e45f9dce859a5c45@macro-monitor
-DTSTAMP:20261112T135842Z
+DTSTAMP:20261113T132308Z
 DTSTART:20261119T210500Z
 DTEND:20261119T213500Z
 SUMMARY:🟠 Keysight (KEYS) · resultados
@@ -409,7 +249,7 @@ DESCRIPTION:🇺🇸 Tecnología de la información › Instrumentos y co
 END:VEVENT
 BEGIN:VEVENT
 UID:0597072798c118b2debe38f7ecd44fbd@macro-monitor
-DTSTAMP:20261112T135842Z
+DTSTAMP:20261113T132308Z
 DTSTART;VALUE=DATE:20261119
 DTEND;VALUE=DATE:20261120
 SUMMARY:💰 Marriott (MAR) · ex-dividendo
@@ -418,7 +258,7 @@ DESCRIPTION:🇺🇸 Consumo discrecional › Hoteles y cruceros\nEl prec
 END:VEVENT
 BEGIN:VEVENT
 UID:9caebaf96d236e8bb1b6a860e9575da2@macro-monitor
-DTSTAMP:20261112T135842Z
+DTSTAMP:20261113T132308Z
 DTSTART;VALUE=DATE:20261119
 DTEND;VALUE=DATE:20261120
 SUMMARY:💰 National Grid (NG.L) · ex-dividendo
@@ -427,7 +267,7 @@ DESCRIPTION:🇪🇺 Utilities › Gas y redes\nEl precio se ajusta a la
 END:VEVENT
 BEGIN:VEVENT
 UID:98ad7792c9661bdabe90fd876e4bccb8@macro-monitor
-DTSTAMP:20261112T135842Z
+DTSTAMP:20261113T132308Z
 DTSTART:20261119T060000Z
 DTEND:20261119T063000Z
 SUMMARY:🟠 Subsea 7 (SUBC.OL) · resultados (fecha estimada)
@@ -436,8 +276,17 @@ DESCRIPTION:🇪🇺 Energía › Gas natural licuado y servicios\nPublic
  estimada)\nNota: offshore: capex de energía
 END:VEVENT
 BEGIN:VEVENT
+UID:7e414f791168e49c0e4d87e7c6263673@macro-monitor
+DTSTAMP:20261113T132308Z
+DTSTART;VALUE=DATE:20261119
+DTEND;VALUE=DATE:20261120
+SUMMARY:💰 Vodafone (VOD.L) · ex-dividendo
+DESCRIPTION:🇪🇺 Servicios de comunicación › Medios tradicionales 
+ y cable\nEl precio se ajusta a la baja por el dividendo en la apertura.
+END:VEVENT
+BEGIN:VEVENT
 UID:1fd02ee615798b8b1a52dad4f8b15a34@macro-monitor
-DTSTAMP:20261112T135842Z
+DTSTAMP:20261113T132308Z
 DTSTART;VALUE=DATE:20261120
 DTEND;VALUE=DATE:20261121
 SUMMARY:💰 Amgen (AMGN) · ex-dividendo
@@ -446,7 +295,7 @@ DESCRIPTION:🇺🇸 Salud › Biotecnología\nEl precio se ajusta a la b
 END:VEVENT
 BEGIN:VEVENT
 UID:7a81f952cac3730e4378ea7088089327@macro-monitor
-DTSTAMP:20261112T135842Z
+DTSTAMP:20261113T132308Z
 DTSTART;VALUE=DATE:20261120
 DTEND;VALUE=DATE:20261121
 SUMMARY:💰 Ferguson (FERG) · ex-dividendo
@@ -455,7 +304,7 @@ DESCRIPTION:🇺🇸 Industriales › Suministros de construcción\nEl pr
 END:VEVENT
 BEGIN:VEVENT
 UID:3d30ce6e7ecbf1b34899f79932e36ed3@macro-monitor
-DTSTAMP:20261112T135842Z
+DTSTAMP:20261113T132308Z
 DTSTART;VALUE=DATE:20261120
 DTEND;VALUE=DATE:20261121
 SUMMARY:💰 Regeneron (REGN) · ex-dividendo
@@ -464,7 +313,7 @@ DESCRIPTION:🇺🇸 Salud › Biotecnología\nEl precio se ajusta a la b
 END:VEVENT
 BEGIN:VEVENT
 UID:0407e5e93550a68fe31883b04f6e15a0@macro-monitor
-DTSTAMP:20261112T135842Z
+DTSTAMP:20261113T132308Z
 DTSTART;VALUE=DATE:20261120
 DTEND;VALUE=DATE:20261121
 SUMMARY:💰 RTX (RTX) · ex-dividendo
@@ -473,7 +322,7 @@ DESCRIPTION:🇺🇸 Industriales › Aeroespacial y defensa\nEl precio s
 END:VEVENT
 BEGIN:VEVENT
 UID:7966213d4bac63744404da94f14c17f3@macro-monitor
-DTSTAMP:20261112T135842Z
+DTSTAMP:20261113T132308Z
 DTSTART;VALUE=DATE:20261120
 DTEND;VALUE=DATE:20261121
 SUMMARY:💰 TE Connectivity (TEL) · ex-dividendo
@@ -483,7 +332,7 @@ DESCRIPTION:🇺🇸 Tecnología de la información › Instrumentos y co
 END:VEVENT
 BEGIN:VEVENT
 UID:09e07aa7512c173f5af316db5bd5c4e1@macro-monitor
-DTSTAMP:20261112T135842Z
+DTSTAMP:20261113T132308Z
 DTSTART;VALUE=DATE:20261123
 DTEND;VALUE=DATE:20261124
 SUMMARY:💰 Atmos Energy (ATO) · ex-dividendo
@@ -492,7 +341,7 @@ DESCRIPTION:🇺🇸 Utilities › Gas y redes\nEl precio se ajusta a la
 END:VEVENT
 BEGIN:VEVENT
 UID:1241e8e6bfbeebb364055ed67893b9ec@macro-monitor
-DTSTAMP:20261112T135842Z
+DTSTAMP:20261113T132308Z
 DTSTART;VALUE=DATE:20261123
 DTEND;VALUE=DATE:20261124
 SUMMARY:💰 UniCredit (UCG.MI) · ex-dividendo
@@ -500,8 +349,17 @@ DESCRIPTION:🇪🇺 Financiero › Bancos\nEl precio se ajusta a la baja
   por el dividendo en la apertura.
 END:VEVENT
 BEGIN:VEVENT
+UID:b3d6c91ffcb04ec282821da8803799a3@macro-monitor
+DTSTAMP:20261113T132308Z
+DTSTART;VALUE=DATE:20261124
+DTEND;VALUE=DATE:20261125
+SUMMARY:💰 Costco (COST) · ex-dividendo
+DESCRIPTION:🇺🇸 Consumo básico › Distribución de alimentación\n
+ El precio se ajusta a la baja por el dividendo en la apertura.
+END:VEVENT
+BEGIN:VEVENT
 UID:e7c7eb2cdc910d34ab9514451831ce54@macro-monitor
-DTSTAMP:20261112T135842Z
+DTSTAMP:20261113T132308Z
 DTSTART;VALUE=DATE:20261124
 DTEND;VALUE=DATE:20261125
 SUMMARY:🟠 Dell (DELL) · resultados
@@ -511,7 +369,7 @@ DESCRIPTION:🇺🇸 Tecnología de la información › Hardware\nPublica
 END:VEVENT
 BEGIN:VEVENT
 UID:cbd69c52a8c78e434a352fa516e13f43@macro-monitor
-DTSTAMP:20261112T135842Z
+DTSTAMP:20261113T132308Z
 DTSTART;VALUE=DATE:20261124
 DTEND;VALUE=DATE:20261125
 SUMMARY:💰 Johnson & Johnson (JNJ) · ex-dividendo
@@ -520,7 +378,7 @@ DESCRIPTION:🇺🇸 Salud › Farmacia\nEl precio se ajusta a la baja po
 END:VEVENT
 BEGIN:VEVENT
 UID:64549a95a7e9d8d486b2189e9117e0cc@macro-monitor
-DTSTAMP:20261112T135842Z
+DTSTAMP:20261113T132308Z
 DTSTART;VALUE=DATE:20261124
 DTEND;VALUE=DATE:20261125
 SUMMARY:💰 Valero (VLO) · ex-dividendo
@@ -529,7 +387,7 @@ DESCRIPTION:🇺🇸 Energía › Refino y marketing\nEl precio se ajusta
 END:VEVENT
 BEGIN:VEVENT
 UID:5fadd3386bb6b5b75f26cc47d3d08957@macro-monitor
-DTSTAMP:20261112T135842Z
+DTSTAMP:20261113T132308Z
 DTSTART:20261125T210500Z
 DTEND:20261125T213500Z
 SUMMARY:🟠 Deere (DE) · resultados
@@ -539,7 +397,7 @@ DESCRIPTION:🇺🇸 Industriales › Maquinaria y bienes de equipo\nPubl
 END:VEVENT
 BEGIN:VEVENT
 UID:3e10a64cc0e5dda1080cce38c4bf1ac4@macro-monitor
-DTSTAMP:20261112T135842Z
+DTSTAMP:20261113T132308Z
 DTSTART;VALUE=DATE:20261125
 DTEND;VALUE=DATE:20261126
 SUMMARY:💰 Newmont (NEM) · ex-dividendo
@@ -548,7 +406,7 @@ DESCRIPTION:🇺🇸 Materiales › Metales preciosos\nEl precio se ajust
 END:VEVENT
 BEGIN:VEVENT
 UID:667e1821ca0bc01fa76c655da189d7db@macro-monitor
-DTSTAMP:20261112T135842Z
+DTSTAMP:20261113T132308Z
 DTSTART;VALUE=DATE:20261125
 DTEND;VALUE=DATE:20261126
 SUMMARY:💰 T-Mobile US (TMUS) · ex-dividendo
@@ -557,7 +415,7 @@ DESCRIPTION:🇺🇸 Servicios de comunicación › Telecomunicaciones\nE
 END:VEVENT
 BEGIN:VEVENT
 UID:259f5d24317ba2f5f07d4cb01369cd55@macro-monitor
-DTSTAMP:20261112T135842Z
+DTSTAMP:20261113T132308Z
 DTSTART;VALUE=DATE:20261127
 DTEND;VALUE=DATE:20261128
 SUMMARY:💰 NextEra (NEE) · ex-dividendo
@@ -566,7 +424,7 @@ DESCRIPTION:🇺🇸 Utilities › Eléctricas\nEl precio se ajusta a la
 END:VEVENT
 BEGIN:VEVENT
 UID:238ba4d7fe0daa185692606f716b9eb8@macro-monitor
-DTSTAMP:20261112T135842Z
+DTSTAMP:20261113T132308Z
 DTSTART;VALUE=DATE:20261130
 DTEND;VALUE=DATE:20261201
 SUMMARY:💰 Dow (DOW) · ex-dividendo
@@ -575,7 +433,7 @@ DESCRIPTION:🇺🇸 Materiales › Química diversificada / gases indust
 END:VEVENT
 BEGIN:VEVENT
 UID:10731a346206127c520784f6f4faa79d@macro-monitor
-DTSTAMP:20261112T135842Z
+DTSTAMP:20261113T132308Z
 DTSTART;VALUE=DATE:20261130
 DTEND;VALUE=DATE:20261201
 SUMMARY:💰 Estée Lauder (EL) · ex-dividendo
@@ -583,8 +441,17 @@ DESCRIPTION:🇺🇸 Consumo básico › Productos del hogar y cuidado pe
  rsonal\nEl precio se ajusta a la baja por el dividendo en la apertura.
 END:VEVENT
 BEGIN:VEVENT
+UID:74df36c0b574d1335ed8ba41e7038238@macro-monitor
+DTSTAMP:20261113T132308Z
+DTSTART;VALUE=DATE:20261130
+DTEND;VALUE=DATE:20261201
+SUMMARY:💰 Realty Income (O) · ex-dividendo
+DESCRIPTION:🇺🇸 Inmobiliario › REITs comerciales y residenciales\n
+ El precio se ajusta a la baja por el dividendo en la apertura.
+END:VEVENT
+BEGIN:VEVENT
 UID:6958d93fdf7a110e386dc0138f2367c1@macro-monitor
-DTSTAMP:20261112T135842Z
+DTSTAMP:20261113T132308Z
 DTSTART;VALUE=DATE:20261201
 DTEND;VALUE=DATE:20261202
 SUMMARY:💰 LVMH (MC.PA) · ex-dividendo
@@ -593,7 +460,7 @@ DESCRIPTION:🇪🇺 Consumo discrecional › Lujo\nEl precio se ajusta a
 END:VEVENT
 BEGIN:VEVENT
 UID:baed1728f8c344472fc5c2d5f07671ce@macro-monitor
-DTSTAMP:20261112T135842Z
+DTSTAMP:20261113T132308Z
 DTSTART;VALUE=DATE:20261201
 DTEND;VALUE=DATE:20261202
 SUMMARY:💰 McDonald's (MCD) · ex-dividendo
@@ -602,7 +469,7 @@ DESCRIPTION:🇺🇸 Consumo discrecional › Restauración y ocio\nEl pr
 END:VEVENT
 BEGIN:VEVENT
 UID:fa36f0def88a3d8849668839c2a1673c@macro-monitor
-DTSTAMP:20261112T135842Z
+DTSTAMP:20261113T132308Z
 DTSTART;VALUE=DATE:20261201
 DTEND;VALUE=DATE:20261202
 SUMMARY:🟠 CrowdStrike (CRWD) · resultados
@@ -612,7 +479,7 @@ DESCRIPTION:🇺🇸 Tecnología de la información › Software\nPublica
 END:VEVENT
 BEGIN:VEVENT
 UID:dbddf3d7a7d5a6ecdc1bfedf5e318ad5@macro-monitor
-DTSTAMP:20261112T135842Z
+DTSTAMP:20261113T132308Z
 DTSTART;VALUE=DATE:20261201
 DTEND;VALUE=DATE:20261202
 SUMMARY:💰 Corteva (CTVA) · ex-dividendo
@@ -621,7 +488,7 @@ DESCRIPTION:🇺🇸 Materiales › Agricultura y fertilizantes\nEl preci
 END:VEVENT
 BEGIN:VEVENT
 UID:90c4ae0d5f6d5ce66b7e0a2c79facf8a@macro-monitor
-DTSTAMP:20261112T135842Z
+DTSTAMP:20261113T132308Z
 DTSTART;VALUE=DATE:20261201
 DTEND;VALUE=DATE:20261202
 SUMMARY:💰 Coca-Cola (KO) · ex-dividendo
@@ -630,7 +497,7 @@ DESCRIPTION:🇺🇸 Consumo básico › Bebidas\nEl precio se ajusta a l
 END:VEVENT
 BEGIN:VEVENT
 UID:214792b6901be20ec4d16dccc84e263e@macro-monitor
-DTSTAMP:20261112T135842Z
+DTSTAMP:20261113T132308Z
 DTSTART;VALUE=DATE:20261201
 DTEND;VALUE=DATE:20261202
 SUMMARY:💰 Lockheed Martin (LMT) · ex-dividendo
@@ -639,7 +506,7 @@ DESCRIPTION:🇺🇸 Industriales › Aeroespacial y defensa\nEl precio s
 END:VEVENT
 BEGIN:VEVENT
 UID:dfef18153a858a7c66d5f660658e1773@macro-monitor
-DTSTAMP:20261112T135842Z
+DTSTAMP:20261113T132308Z
 DTSTART;VALUE=DATE:20261201
 DTEND;VALUE=DATE:20261202
 SUMMARY:💰 McKesson (MCK) · ex-dividendo
@@ -648,7 +515,7 @@ DESCRIPTION:🇺🇸 Salud › Distribución sanitaria\nEl precio se ajus
 END:VEVENT
 BEGIN:VEVENT
 UID:f9b5e3d1a081f17deb7292e82fe39c77@macro-monitor
-DTSTAMP:20261112T135842Z
+DTSTAMP:20261113T132308Z
 DTSTART:20261202T060000Z
 DTEND:20261202T063000Z
 SUMMARY:🔴 Inditex (ITX.MC) · resultados (fecha estimada)
@@ -658,7 +525,7 @@ DESCRIPTION:🇪🇺 Consumo discrecional › Textil\, calzado y moda\nPu
 END:VEVENT
 BEGIN:VEVENT
 UID:39008f8098718ab851017911646632fe@macro-monitor
-DTSTAMP:20261112T135842Z
+DTSTAMP:20261113T132308Z
 DTSTART:20261202T210500Z
 DTEND:20261202T213500Z
 SUMMARY:🟠 Salesforce (CRM) · resultados
@@ -668,7 +535,7 @@ DESCRIPTION:🇺🇸 Tecnología de la información › Software\nPublica
 END:VEVENT
 BEGIN:VEVENT
 UID:bda99cebb8ca5e4f68885e2bd8d74227@macro-monitor
-DTSTAMP:20261112T135842Z
+DTSTAMP:20261113T132308Z
 DTSTART;VALUE=DATE:20261202
 DTEND;VALUE=DATE:20261203
 SUMMARY:💰 Goldman Sachs (GS) · ex-dividendo
@@ -677,7 +544,7 @@ DESCRIPTION:🇺🇸 Financiero › Mercados de capitales y gestión de a
 END:VEVENT
 BEGIN:VEVENT
 UID:a91d3d1b3a035f510220c7c784bff218@macro-monitor
-DTSTAMP:20261112T135842Z
+DTSTAMP:20261113T132308Z
 DTSTART;VALUE=DATE:20261202
 DTEND;VALUE=DATE:20261203
 SUMMARY:💰 SLB (Schlumberger) (SLB) · ex-dividendo
@@ -686,7 +553,7 @@ DESCRIPTION:🇺🇸 Energía › Servicios y equipos petroleros\nEl prec
 END:VEVENT
 BEGIN:VEVENT
 UID:93349c24c0658d881d88ab759e8cb65e@macro-monitor
-DTSTAMP:20261112T135842Z
+DTSTAMP:20261113T132308Z
 DTSTART;VALUE=DATE:20261203
 DTEND;VALUE=DATE:20261204
 SUMMARY:💰 Linde (LIN) · ex-dividendo
@@ -695,17 +562,17 @@ DESCRIPTION:🇺🇸 Materiales › Química diversificada / gases indust
 END:VEVENT
 BEGIN:VEVENT
 UID:beceb453f78cb1bf55b8990ffea54706@macro-monitor
-DTSTAMP:20261112T135842Z
+DTSTAMP:20261113T132308Z
 DTSTART;VALUE=DATE:20261203
 DTEND;VALUE=DATE:20261204
 SUMMARY:🟠 Dollar General (DG) · resultados
 DESCRIPTION:🇺🇸 Consumo discrecional › Retail de descuento y espec
- ializado\nPublica hora no confirmada.\nBPA esperado: 1.45\nFuente: finnh
+ ializado\nPublica hora no confirmada.\nBPA esperado: 1.46\nFuente: finnh
  ub\nNota: el consumidor de renta baja
 END:VEVENT
 BEGIN:VEVENT
 UID:de1cb5cf04299335daeefa6e1871cca1@macro-monitor
-DTSTAMP:20261112T135842Z
+DTSTAMP:20261113T132308Z
 DTSTART;VALUE=DATE:20261203
 DTEND;VALUE=DATE:20261204
 SUMMARY:💰 IAG (IAG.L) · ex-dividendo
@@ -714,7 +581,7 @@ DESCRIPTION:🇪🇺 Industriales › Aerolíneas\nEl precio se ajusta a
 END:VEVENT
 BEGIN:VEVENT
 UID:5a01badf84f5b94fc0354519971674b9@macro-monitor
-DTSTAMP:20261112T135842Z
+DTSTAMP:20261113T132308Z
 DTSTART;VALUE=DATE:20261204
 DTEND;VALUE=DATE:20261205
 SUMMARY:💰 Bank of America (BAC) · ex-dividendo
@@ -723,7 +590,7 @@ DESCRIPTION:🇺🇸 Financiero › Bancos\nEl precio se ajusta a la baja
 END:VEVENT
 BEGIN:VEVENT
 UID:d38c4971d4602465becc40bd55e09eb1@macro-monitor
-DTSTAMP:20261112T135842Z
+DTSTAMP:20261113T132308Z
 DTSTART;VALUE=DATE:20261204
 DTEND;VALUE=DATE:20261205
 SUMMARY:💰 General Motors (GM) · ex-dividendo
@@ -732,7 +599,7 @@ DESCRIPTION:🇺🇸 Consumo discrecional › Automóviles\nEl precio se
 END:VEVENT
 BEGIN:VEVENT
 UID:fa67a3ea5d5480243f9304110a12a867@macro-monitor
-DTSTAMP:20261112T135842Z
+DTSTAMP:20261113T132308Z
 DTSTART;VALUE=DATE:20261207
 DTEND;VALUE=DATE:20261208
 SUMMARY:💰 Alphabet (GOOGL) · ex-dividendo
@@ -741,7 +608,7 @@ DESCRIPTION:🇺🇸 Servicios de comunicación › Medios interactivos\n
 END:VEVENT
 BEGIN:VEVENT
 UID:aacc699f865130aaf123914338ace366@macro-monitor
-DTSTAMP:20261112T135842Z
+DTSTAMP:20261113T132308Z
 DTSTART;VALUE=DATE:20261207
 DTEND;VALUE=DATE:20261208
 SUMMARY:💰 UnitedHealth (UNH) · ex-dividendo
@@ -750,7 +617,7 @@ DESCRIPTION:🇺🇸 Salud › Servicios sanitarios y aseguradoras\nEl pr
 END:VEVENT
 BEGIN:VEVENT
 UID:e792fb35c6bb90e99d146df5bad4cb36@macro-monitor
-DTSTAMP:20261112T135842Z
+DTSTAMP:20261113T132308Z
 DTSTART:20261209T210500Z
 DTEND:20261209T213500Z
 SUMMARY:🟠 Adobe (ADBE) · resultados
@@ -760,7 +627,7 @@ DESCRIPTION:🇺🇸 Tecnología de la información › Software\nPublica
 END:VEVENT
 BEGIN:VEVENT
 UID:3c1f27770cf4692fac68a0428bdc1dce@macro-monitor
-DTSTAMP:20261112T135842Z
+DTSTAMP:20261113T132308Z
 DTSTART:20261209T210500Z
 DTEND:20261209T213500Z
 SUMMARY:🟠 Broadcom (AVGO) · resultados
@@ -769,7 +636,7 @@ DESCRIPTION:🇺🇸 Tecnología de la información › Semiconductores\n
 END:VEVENT
 BEGIN:VEVENT
 UID:7be5a792de549fcfcb856045c3620d45@macro-monitor
-DTSTAMP:20261112T135842Z
+DTSTAMP:20261113T132308Z
 DTSTART;VALUE=DATE:20261210
 DTEND;VALUE=DATE:20261211
 SUMMARY:💰 TSMC (TSM) · ex-dividendo
@@ -778,17 +645,17 @@ DESCRIPTION:🇺🇸 Tecnología de la información › Semiconductores\n
 END:VEVENT
 BEGIN:VEVENT
 UID:23e232d66a5e31481ca0b6407265b010@macro-monitor
-DTSTAMP:20261112T135842Z
+DTSTAMP:20261113T132308Z
 DTSTART;VALUE=DATE:20261210
 DTEND;VALUE=DATE:20261211
 SUMMARY:🟠 Costco (COST) · resultados
 DESCRIPTION:🇺🇸 Consumo básico › Distribución de alimentación\n
- Publica hora no confirmada.\nBPA esperado: 5.03\nFuente: finnhub\nNota: 
+ Publica hora no confirmada.\nBPA esperado: 5.01\nFuente: finnhub\nNota: 
  ventas mensuales
 END:VEVENT
 BEGIN:VEVENT
 UID:ff605427fd24de807b0459463c2e688b@macro-monitor
-DTSTAMP:20261112T135842Z
+DTSTAMP:20261113T132308Z
 DTSTART;VALUE=DATE:20261210
 DTEND;VALUE=DATE:20261211
 SUMMARY:💰 Simon Property (SPG) · ex-dividendo
@@ -797,7 +664,7 @@ DESCRIPTION:🇺🇸 Inmobiliario › REITs comerciales y residenciales\n
 END:VEVENT
 BEGIN:VEVENT
 UID:39e2d9bcadbfc691d0828b1ee9167666@macro-monitor
-DTSTAMP:20261112T135842Z
+DTSTAMP:20261113T132308Z
 DTSTART;VALUE=DATE:20261211
 DTEND;VALUE=DATE:20261212
 SUMMARY:💰 Walmart (WMT) · ex-dividendo
@@ -805,8 +672,17 @@ DESCRIPTION:🇺🇸 Consumo básico › Distribución de alimentación\n
  El precio se ajusta a la baja por el dividendo en la apertura.
 END:VEVENT
 BEGIN:VEVENT
+UID:7e52550ee464002f8d8caa66b4a8fef7@macro-monitor
+DTSTAMP:20261113T132308Z
+DTSTART;VALUE=DATE:20261211
+DTEND;VALUE=DATE:20261212
+SUMMARY:💰 ADP (ADP) · ex-dividendo
+DESCRIPTION:🇺🇸 Industriales › Servicios profesionales y empleo\nE
+ l precio se ajusta a la baja por el dividendo en la apertura.
+END:VEVENT
+BEGIN:VEVENT
 UID:59b30dbbe7530fcff6789243486e9680@macro-monitor
-DTSTAMP:20261112T135842Z
+DTSTAMP:20261113T132308Z
 DTSTART;VALUE=DATE:20261211
 DTEND;VALUE=DATE:20261212
 SUMMARY:💰 CME Group (CME) · ex-dividendo
@@ -815,7 +691,7 @@ DESCRIPTION:🇺🇸 Financiero › Bolsas y datos financieros\nEl precio
 END:VEVENT
 BEGIN:VEVENT
 UID:b8753ad6b1bc23c70157b931cb5280ed@macro-monitor
-DTSTAMP:20261112T135842Z
+DTSTAMP:20261113T132308Z
 DTSTART:20261214T210500Z
 DTEND:20261214T213500Z
 SUMMARY:🟠 Lennar (LEN) · resultados
@@ -824,7 +700,7 @@ DESCRIPTION:🇺🇸 Industriales › Constructoras de viviendas\nPublica
 END:VEVENT
 BEGIN:VEVENT
 UID:6f7ad17ea71668a774d02522d15915d8@macro-monitor
-DTSTAMP:20261112T135842Z
+DTSTAMP:20261113T132308Z
 DTSTART;VALUE=DATE:20261214
 DTEND;VALUE=DATE:20261215
 SUMMARY:🟠 Oracle (ORCL) · resultados
@@ -834,7 +710,7 @@ DESCRIPTION:🇺🇸 Tecnología de la información › Software\nPublica
 END:VEVENT
 BEGIN:VEVENT
 UID:7cd04bee857840ee80d5451f9fbbceb5@macro-monitor
-DTSTAMP:20261112T135842Z
+DTSTAMP:20261113T132308Z
 DTSTART;VALUE=DATE:20261214
 DTEND;VALUE=DATE:20261215
 SUMMARY:💰 STMicroelectronics (STMPA.PA) · ex-dividendo
@@ -843,7 +719,7 @@ DESCRIPTION:🇪🇺 Tecnología de la información › Semiconductores\n
 END:VEVENT
 BEGIN:VEVENT
 UID:91117ee91bffa8ec32f9a42e748de920@macro-monitor
-DTSTAMP:20261112T135842Z
+DTSTAMP:20261113T132308Z
 DTSTART;VALUE=DATE:20261215
 DTEND;VALUE=DATE:20261216
 SUMMARY:💰 Gilead (GILD) · ex-dividendo
@@ -852,7 +728,7 @@ DESCRIPTION:🇺🇸 Salud › Biotecnología\nEl precio se ajusta a la b
 END:VEVENT
 BEGIN:VEVENT
 UID:25a5f0e06ecb68af492324091da1346b@macro-monitor
-DTSTAMP:20261112T135842Z
+DTSTAMP:20261113T132308Z
 DTSTART;VALUE=DATE:20261215
 DTEND;VALUE=DATE:20261216
 SUMMARY:💰 HCA Healthcare (HCA) · ex-dividendo
@@ -861,7 +737,7 @@ DESCRIPTION:🇺🇸 Salud › Servicios sanitarios y aseguradoras\nEl pr
 END:VEVENT
 BEGIN:VEVENT
 UID:1ae8d87326124e9bc2792fe9a26cf6b8@macro-monitor
-DTSTAMP:20261112T135842Z
+DTSTAMP:20261113T132308Z
 DTSTART:20261215T210500Z
 DTEND:20261215T213500Z
 SUMMARY:🟠 Micron (MU) · resultados
@@ -871,7 +747,7 @@ DESCRIPTION:🇺🇸 Tecnología de la información › Semiconductores\n
 END:VEVENT
 BEGIN:VEVENT
 UID:0ac4c91d3def8e709d9831be6b5dace1@macro-monitor
-DTSTAMP:20261112T135842Z
+DTSTAMP:20261113T132308Z
 DTSTART;VALUE=DATE:20261215
 DTEND;VALUE=DATE:20261216
 SUMMARY:💰 Public Storage (PSA) · ex-dividendo
@@ -880,7 +756,7 @@ DESCRIPTION:🇺🇸 Inmobiliario › REITs de salud y almacenamiento\nEl
 END:VEVENT
 BEGIN:VEVENT
 UID:19bd9a657f67e2b0c30d5a797cb332de@macro-monitor
-DTSTAMP:20261112T135842Z
+DTSTAMP:20261113T132308Z
 DTSTART;VALUE=DATE:20261215
 DTEND;VALUE=DATE:20261216
 SUMMARY:💰 Thermo Fisher (TMO) · ex-dividendo
@@ -889,7 +765,7 @@ DESCRIPTION:🇺🇸 Salud › Herramientas y servicios de ciencias de la
 END:VEVENT
 BEGIN:VEVENT
 UID:02047563dcef14e8783c15446cfaf4a9@macro-monitor
-DTSTAMP:20261112T135842Z
+DTSTAMP:20261113T132308Z
 DTSTART;VALUE=DATE:20261216
 DTEND;VALUE=DATE:20261217
 SUMMARY:🔴 FedEx (FDX) · resultados
@@ -899,7 +775,7 @@ DESCRIPTION:🇺🇸 Industriales › Transporte y logística\nPublica ho
 END:VEVENT
 BEGIN:VEVENT
 UID:0d8fdcd17385c7de170ce829958e727f@macro-monitor
-DTSTAMP:20261112T135842Z
+DTSTAMP:20261113T132308Z
 DTSTART;VALUE=DATE:20261216
 DTEND;VALUE=DATE:20261217
 SUMMARY:🟠 Accenture (ACN) · resultados
@@ -909,7 +785,7 @@ DESCRIPTION:🇺🇸 Tecnología de la información › Servicios de TI\n
 END:VEVENT
 BEGIN:VEVENT
 UID:2cbcffba17770d0729c059d9068e269c@macro-monitor
-DTSTAMP:20261112T135842Z
+DTSTAMP:20261113T132308Z
 DTSTART;VALUE=DATE:20261216
 DTEND;VALUE=DATE:20261217
 SUMMARY:💰 Intercontinental Exchange (ICE) · ex-dividendo
@@ -918,7 +794,7 @@ DESCRIPTION:🇺🇸 Financiero › Bolsas y datos financieros\nEl precio
 END:VEVENT
 BEGIN:VEVENT
 UID:c1d9119dd9bc2b2d98122d2d57c88ce7@macro-monitor
-DTSTAMP:20261112T135842Z
+DTSTAMP:20261113T132308Z
 DTSTART:20261216T210500Z
 DTEND:20261216T213500Z
 SUMMARY:🟠 Nike (NKE) · resultados
@@ -928,7 +804,7 @@ DESCRIPTION:🇺🇸 Consumo discrecional › Textil\, calzado y moda\nPu
 END:VEVENT
 BEGIN:VEVENT
 UID:b80d4ab2c038dcf6f345b0c5706fd160@macro-monitor
-DTSTAMP:20261112T135842Z
+DTSTAMP:20261113T132308Z
 DTSTART;VALUE=DATE:20261218
 DTEND;VALUE=DATE:20261219
 SUMMARY:📅 Quad witching (vencimiento trimestral de opciones y futuros)
@@ -937,7 +813,7 @@ DESCRIPTION:Volumen y volatilidad elevados en la apertura y el cierre. Ta
 END:VEVENT
 BEGIN:VEVENT
 UID:2e0dfe930cb92c2b3cb06a5d849e5b42@macro-monitor
-DTSTAMP:20261112T135842Z
+DTSTAMP:20261113T132308Z
 DTSTART;VALUE=DATE:20261218
 DTEND;VALUE=DATE:20261219
 SUMMARY:📅 Rebalanceo S&P 500 y Nasdaq-100 (anual)
@@ -945,7 +821,7 @@ DESCRIPTION:Flujos pasivos al cierre.
 END:VEVENT
 BEGIN:VEVENT
 UID:5c6b274171941aa473a5a20f806fe5bb@macro-monitor
-DTSTAMP:20261112T135842Z
+DTSTAMP:20261113T132308Z
 DTSTART;VALUE=DATE:20261222
 DTEND;VALUE=DATE:20261223
 SUMMARY:💰 Vistra (VST) · ex-dividendo
@@ -954,7 +830,7 @@ DESCRIPTION:🇺🇸 Utilities › Generación independiente\nEl precio s
 END:VEVENT
 BEGIN:VEVENT
 UID:dd2f9bef01bd96198267b328e1c4cb56@macro-monitor
-DTSTAMP:20261112T135842Z
+DTSTAMP:20261113T132308Z
 DTSTART;VALUE=DATE:20261224
 DTEND;VALUE=DATE:20261225
 SUMMARY:💰 BAT (BATS.L) · ex-dividendo
@@ -963,7 +839,7 @@ DESCRIPTION:🇪🇺 Consumo básico › Tabaco\nEl precio se ajusta a la
 END:VEVENT
 BEGIN:VEVENT
 UID:bc4ffabe8198be4f6655fdc2f03b8ba4@macro-monitor
-DTSTAMP:20261112T135842Z
+DTSTAMP:20261113T132308Z
 DTSTART;VALUE=DATE:20261231
 DTEND;VALUE=DATE:20270101
 SUMMARY:💰 Nutrien (NTR) · ex-dividendo
@@ -972,7 +848,7 @@ DESCRIPTION:🇺🇸 Materiales › Agricultura y fertilizantes\nEl preci
 END:VEVENT
 BEGIN:VEVENT
 UID:aaeb409d245edb3639143af290df88dc@macro-monitor
-DTSTAMP:20261112T135842Z
+DTSTAMP:20261113T132308Z
 DTSTART;VALUE=DATE:20261231
 DTEND;VALUE=DATE:20270101
 SUMMARY:💰 TotalEnergies (TTE.PA) · ex-dividendo
@@ -981,7 +857,7 @@ DESCRIPTION:🇪🇺 Energía › Integradas\nEl precio se ajusta a la ba
 END:VEVENT
 BEGIN:VEVENT
 UID:cce6e7306b514aa4f569894d0da469eb@macro-monitor
-DTSTAMP:20261112T135842Z
+DTSTAMP:20261113T132308Z
 DTSTART;VALUE=DATE:20270106
 DTEND;VALUE=DATE:20270107
 SUMMARY:💰 Comcast (CMCSA) · ex-dividendo
@@ -990,11 +866,38 @@ DESCRIPTION:🇺🇸 Servicios de comunicación › Medios tradicionales
 END:VEVENT
 BEGIN:VEVENT
 UID:5c03291113bb56013ed5ef6de11eedab@macro-monitor
-DTSTAMP:20261112T135842Z
+DTSTAMP:20261113T132308Z
 DTSTART:20270111T210500Z
 DTEND:20270111T213500Z
 SUMMARY:🟠 Delta Air Lines (DAL) · resultados
 DESCRIPTION:🇺🇸 Industriales › Aerolíneas\nPublica tras el cierre
- .\nBPA esperado: 1.41\nFuente: finnhub
+ .\nBPA esperado: 1.43\nFuente: finnhub
+END:VEVENT
+BEGIN:VEVENT
+UID:58b9eef43c811cfdf550ca75f0556e65@macro-monitor
+DTSTAMP:20261113T132308Z
+DTSTART;VALUE=DATE:20270112
+DTEND;VALUE=DATE:20270113
+SUMMARY:💰 Iberdrola (IBE.MC) · ex-dividendo
+DESCRIPTION:🇪🇺 Utilities › Eléctricas\nEl precio se ajusta a la 
+ baja por el dividendo en la apertura.
+END:VEVENT
+BEGIN:VEVENT
+UID:259b42054aa45f1da0fc3e41b0d59b5d@macro-monitor
+DTSTAMP:20261113T132308Z
+DTSTART;VALUE=DATE:20270112
+DTEND;VALUE=DATE:20270113
+SUMMARY:🔴 UnitedHealth (UNH) · resultados (fecha estimada)
+DESCRIPTION:🇺🇸 Salud › Servicios sanitarios y aseguradoras\nPubli
+ ca hora no confirmada.\nBPA esperado: 2.27\nFuente: yfinance (estimada)
+END:VEVENT
+BEGIN:VEVENT
+UID:2c5f1e1dd524bc84c25aae0d6cf854e2@macro-monitor
+DTSTAMP:20261113T132308Z
+DTSTART;VALUE=DATE:20270112
+DTEND;VALUE=DATE:20270113
+SUMMARY:💰 Repsol (REP.MC) · ex-dividendo
+DESCRIPTION:🇪🇺 Energía › Integradas\nEl precio se ajusta a la ba
+ ja por el dividendo en la apertura.
 END:VEVENT
 END:VCALENDAR
