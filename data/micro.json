@@ -1,5 +1,5 @@
 {
- "date": "2026-11-13",
+ "date": "2026-11-17",
  "scope": "bellwethers",
  "companies": [
   {
@@ -12,7 +12,7 @@
     "trim": {
      "up30": 9,
      "down30": 1,
-     "up7": 4,
+     "up7": 6,
      "down7": 0,
      "net30": 0.8
     },
@@ -23,7 +23,7 @@
      "down7": 1,
      "net30": 1.0
     },
-    "est_anual_chg30_pct": 9.7,
+    "est_anual_chg30_pct": 5.2,
     "recomendaciones": {
      "compra": 9,
      "venta": 0,
@@ -55,11 +55,11 @@
     "anual": {
      "up30": 11,
      "down30": 1,
-     "up7": 9,
-     "down7": 4,
+     "up7": 4,
+     "down7": 1,
      "net30": 0.83
     },
-    "est_anual_chg30_pct": 5.77,
+    "est_anual_chg30_pct": 5.8,
     "recomendaciones": {
      "compra": 9,
      "venta": 0,
@@ -78,20 +78,20 @@
    "role": "bellwether",
    "revisiones": {
     "trim": {
-     "up30": 2,
-     "down30": 6,
-     "up7": 2,
-     "down7": 6,
-     "net30": -0.5
+     "up30": 3,
+     "down30": 14,
+     "up7": 3,
+     "down7": 14,
+     "net30": -0.65
     },
     "anual": {
      "up30": 13,
      "down30": 4,
-     "up7": 7,
-     "down7": 2,
+     "up7": 14,
+     "down7": 3,
      "net30": 0.53
     },
-    "est_anual_chg30_pct": 0.12,
+    "est_anual_chg30_pct": 0.11,
     "recomendaciones": {
      "compra": 23,
      "venta": 1,
@@ -216,7 +216,7 @@
      "down7": 9,
      "net30": -0.75
     },
-    "est_anual_chg30_pct": -2.19,
+    "est_anual_chg30_pct": -0.81,
     "recomendaciones": {
      "compra": 9,
      "venta": 1,
@@ -242,11 +242,11 @@
      "net30": 1.0
     },
     "anual": {
-     "up30": 9,
-     "down30": 6,
+     "up30": 10,
+     "down30": 5,
      "up7": 1,
      "down7": 0,
-     "net30": 0.2
+     "net30": 0.33
     },
     "est_anual_chg30_pct": 0.71,
     "recomendaciones": {
@@ -268,19 +268,19 @@
    "revisiones": {
     "trim": {
      "up30": 2,
-     "down30": 10,
+     "down30": 14,
      "up7": 1,
      "down7": 14,
-     "net30": -0.67
+     "net30": -0.75
     },
     "anual": {
-     "up30": 5,
-     "down30": 7,
-     "up7": 3,
-     "down7": 8,
-     "net30": -0.17
+     "up30": 6,
+     "down30": 12,
+     "up7": 5,
+     "down7": 12,
+     "net30": -0.33
     },
-    "est_anual_chg30_pct": -0.32,
+    "est_anual_chg30_pct": -0.63,
     "recomendaciones": {
      "compra": 17,
      "venta": 1,
@@ -289,6 +289,15 @@
    },
    "eventos": [],
    "insiders": [
+    {
+     "fecha": "2026-11-12",
+     "quien": "Maclennan David",
+     "cargo": "consejero",
+     "tipo": "compra",
+     "importe_usd": 208635,
+     "acciones": 350,
+     "url": "https://www.sec.gov/Archives/edgar/data/18230/000110465926127088/tm2629746-1_4seq1.xml"
+    },
     {
      "fecha": "2026-11-02",
      "quien": "Fish James C Jr",
@@ -301,8 +310,8 @@
    ],
    "cobertura": true,
    "compra_cluster": false,
-   "n_compradores": 1,
-   "importe_compras": 620390,
+   "n_compradores": 2,
+   "importe_compras": 829025,
    "importe_ventas": 0
   },
   {
@@ -320,13 +329,13 @@
      "net30": -1.0
     },
     "anual": {
-     "up30": 6,
-     "down30": 5,
+     "up30": 2,
+     "down30": 4,
      "up7": 0,
-     "down7": 0,
-     "net30": 0.09
+     "down7": 1,
+     "net30": -0.33
     },
-    "est_anual_chg30_pct": -4.72,
+    "est_anual_chg30_pct": -4.69,
     "recomendaciones": {
      "compra": 16,
      "venta": 2,
@@ -347,36 +356,25 @@
     "trim": {
      "up30": 1,
      "down30": 6,
-     "up7": 1,
-     "down7": 3,
+     "up7": 2,
+     "down7": 10,
      "net30": -0.71
     },
     "anual": {
-     "up30": 2,
-     "down30": 1,
-     "up7": 3,
-     "down7": 0,
-     "net30": 0.33
+     "up30": 6,
+     "down30": 0,
+     "up7": 10,
+     "down7": 1,
+     "net30": 1.0
     },
-    "est_anual_chg30_pct": 2.99,
+    "est_anual_chg30_pct": 2.78,
     "recomendaciones": {
      "compra": 22,
      "venta": 2,
      "cambio_compra_1m": 0
     }
    },
-   "eventos": [
-    {
-     "fecha": "2026-11-09",
-     "codigos": [
-      "5.02",
-      "9.01"
-     ],
-     "descripcion": "Salida o nombramiento de directivos/consejeros",
-     "importancia": 3,
-     "url": "https://www.sec.gov/Archives/edgar/data/1048911/000110465926124508/tm2629226d1_8k.htm"
-    }
-   ],
+   "eventos": [],
    "insiders": [
     {
      "fecha": "2026-11-10",
@@ -441,17 +439,17 @@
      "up30": 1,
      "down30": 0,
      "up7": 1,
-     "down7": 0,
+     "down7": 1,
      "net30": 1.0
     },
     "anual": {
      "up30": 3,
-     "down30": 0,
-     "up7": 1,
-     "down7": 0,
-     "net30": 1.0
+     "down30": 1,
+     "up7": 3,
+     "down7": 1,
+     "net30": 0.5
     },
-    "est_anual_chg30_pct": 6.27,
+    "est_anual_chg30_pct": 3.02,
     "recomendaciones": {
      "compra": 2,
      "venta": 9,
@@ -471,19 +469,19 @@
    "revisiones": {
     "trim": {
      "up30": 0,
-     "down30": 6,
+     "down30": 10,
      "up7": 0,
      "down7": 10,
      "net30": -1.0
     },
     "anual": {
      "up30": 0,
-     "down30": 12,
+     "down30": 13,
      "up7": 0,
-     "down7": 13,
+     "down7": 14,
      "net30": -1.0
     },
-    "est_anual_chg30_pct": -23.13,
+    "est_anual_chg30_pct": -22.91,
     "recomendaciones": {
      "compra": 4,
      "venta": 3,
@@ -519,11 +517,11 @@
      "down7": 14,
      "net30": -0.14
     },
-    "est_anual_chg30_pct": -0.72,
+    "est_anual_chg30_pct": -1.51,
     "recomendaciones": {
-     "compra": 21,
+     "compra": 20,
      "venta": 2,
-     "cambio_compra_1m": 1
+     "cambio_compra_1m": 0
     }
    },
    "eventos": [],
@@ -581,13 +579,13 @@
      "net30": 0.0
     },
     "anual": {
-     "up30": 1,
+     "up30": 2,
      "down30": 11,
      "up7": 0,
      "down7": 2,
-     "net30": -0.83
+     "net30": -0.69
     },
-    "est_anual_chg30_pct": -0.17,
+    "est_anual_chg30_pct": -0.3,
     "recomendaciones": {
      "compra": 16,
      "venta": 1,
@@ -639,17 +637,17 @@
    "revisiones": {
     "trim": {
      "up30": 0,
-     "down30": 15,
+     "down30": 17,
      "up7": 0,
-     "down7": 14,
+     "down7": 16,
      "net30": -1.0
     },
     "anual": {
-     "up30": 14,
-     "down30": 2,
-     "up7": 5,
-     "down7": 1,
-     "net30": 0.75
+     "up30": 16,
+     "down30": 3,
+     "up7": 15,
+     "down7": 3,
+     "net30": 0.68
     },
     "est_anual_chg30_pct": 0.34,
     "recomendaciones": {
@@ -660,6 +658,15 @@
    },
    "eventos": [],
    "insiders": [
+    {
+     "fecha": "2026-11-13",
+     "quien": "Banner Jonathan",
+     "cargo": "EVP - Chief Impact Officer",
+     "tipo": "venta",
+     "importe_usd": 207930,
+     "acciones": 750,
+     "url": "https://www.sec.gov/Archives/edgar/data/63908/000194355126000007/form4.xml"
+    },
     {
      "fecha": "2026-11-11",
      "quien": "Banner Jonathan",
@@ -674,7 +681,7 @@
    "compra_cluster": false,
    "n_compradores": 0,
    "importe_compras": 0,
-   "importe_ventas": 209250
+   "importe_ventas": 417180
   },
   {
    "t": "HD",
@@ -684,11 +691,11 @@
    "role": "bellwether",
    "revisiones": {
     "trim": {
-     "up30": 1,
-     "down30": 3,
+     "up30": 2,
+     "down30": 2,
      "up7": 2,
      "down7": 0,
-     "net30": -0.5
+     "net30": 0.0
     },
     "anual": {
      "up30": 2,
@@ -697,14 +704,36 @@
      "down7": 1,
      "net30": -0.2
     },
-    "est_anual_chg30_pct": -0.06,
+    "est_anual_chg30_pct": -0.08,
     "recomendaciones": {
      "compra": 22,
      "venta": 0,
      "cambio_compra_1m": 0
     }
    },
-   "eventos": [],
+   "eventos": [
+    {
+     "fecha": "2026-11-17",
+     "codigos": [
+      "2.02",
+      "9.01"
+     ],
+     "descripcion": "Resultados",
+     "importancia": 3,
+     "url": "https://www.sec.gov/Archives/edgar/data/354950/000035495026000184/hd-20261117.htm"
+    },
+    {
+     "fecha": "2026-11-17",
+     "codigos": [
+      "5.02",
+      "7.01",
+      "9.01"
+     ],
+     "descripcion": "Salida o nombramiento de directivos/consejeros · Reg FD: presentación, guía o comunicado",
+     "importancia": 3,
+     "url": "https://www.sec.gov/Archives/edgar/data/354950/000035495026000182/hd-20261113.htm"
+    }
+   ],
    "insiders": [],
    "cobertura": true,
    "compra_cluster": false,
@@ -720,20 +749,20 @@
    "role": "bellwether",
    "revisiones": {
     "trim": {
-     "up30": 10,
-     "down30": 17,
+     "up30": 11,
+     "down30": 25,
      "up7": 8,
      "down7": 26,
-     "net30": -0.26
+     "net30": -0.39
     },
     "anual": {
-     "up30": 10,
-     "down30": 18,
-     "up7": 6,
-     "down7": 21,
-     "net30": -0.29
+     "up30": 17,
+     "down30": 29,
+     "up7": 1,
+     "down7": 2,
+     "net30": -0.26
     },
-    "est_anual_chg30_pct": -0.8,
+    "est_anual_chg30_pct": -0.94,
     "recomendaciones": {
      "compra": 59,
      "venta": 0,
@@ -779,14 +808,25 @@
      "down7": 0,
      "net30": 0.2
     },
-    "est_anual_chg30_pct": -0.04,
+    "est_anual_chg30_pct": -0.06,
     "recomendaciones": {
      "compra": 38,
      "venta": 1,
      "cambio_compra_1m": 0
     }
    },
-   "eventos": [],
+   "eventos": [
+    {
+     "fecha": "2026-11-16",
+     "codigos": [
+      "5.02",
+      "9.01"
+     ],
+     "descripcion": "Salida o nombramiento de directivos/consejeros",
+     "importancia": 3,
+     "url": "https://www.sec.gov/Archives/edgar/data/104169/000010416926000165/wmt-20261113.htm"
+    }
+   ],
    "insiders": [
     {
      "fecha": "2026-11-02",
@@ -805,58 +845,13 @@
      "importe_usd": 20494998,
      "acciones": 166342,
      "url": "https://www.sec.gov/Archives/edgar/data/104169/000178119826000008/wk-form4_1793741833.xml"
-    },
-    {
-     "fecha": "2026-10-15",
-     "quien": "Furner John R.",
-     "cargo": "President & CEO",
-     "tipo": "venta",
-     "importe_usd": 852995,
-     "acciones": 7089,
-     "url": "https://www.sec.gov/Archives/edgar/data/104169/000169673726000021/wk-form4_1792183368.xml"
-    },
-    {
-     "fecha": "2026-10-15",
-     "quien": "Furner John R.",
-     "cargo": "President & CEO",
-     "tipo": "venta",
-     "importe_usd": 729907,
-     "acciones": 6036,
-     "url": "https://www.sec.gov/Archives/edgar/data/104169/000169673726000021/wk-form4_1792183368.xml"
-    },
-    {
-     "fecha": "2026-10-14",
-     "quien": "Watkins Latriece",
-     "cargo": "Executive Vice President",
-     "tipo": "venta",
-     "importe_usd": 575000,
-     "acciones": 5000,
-     "url": "https://www.sec.gov/Archives/edgar/data/104169/000188636726000029/wk-form4_1792183363.xml"
-    },
-    {
-     "fecha": "2026-10-15",
-     "quien": "Nicholas Christopher James",
-     "cargo": "Executive Vice President",
-     "tipo": "venta",
-     "importe_usd": 192522,
-     "acciones": 1600,
-     "url": "https://www.sec.gov/Archives/edgar/data/104169/000199280826000029/wk-form4_1792183357.xml"
-    },
-    {
-     "fecha": "2026-10-15",
-     "quien": "Nicholas Christopher James",
-     "cargo": "Executive Vice President",
-     "tipo": "venta",
-     "importe_usd": 157229,
-     "acciones": 1300,
-     "url": "https://www.sec.gov/Archives/edgar/data/104169/000199280826000029/wk-form4_1792183357.xml"
     }
    ],
    "cobertura": true,
    "compra_cluster": false,
    "n_compradores": 0,
    "importe_compras": 0,
-   "importe_ventas": 23419258
+   "importe_ventas": 20911605
   },
   {
    "t": "NESN.SW",
@@ -879,7 +874,7 @@
      "down7": 8,
      "net30": 0.38
     },
-    "est_anual_chg30_pct": 0.62,
+    "est_anual_chg30_pct": 0.6,
     "recomendaciones": {
      "compra": 11,
      "venta": 1,
@@ -911,7 +906,7 @@
      "down7": 7,
      "net30": -0.07
     },
-    "est_anual_chg30_pct": -0.08,
+    "est_anual_chg30_pct": -0.05,
     "recomendaciones": {
      "compra": 14,
      "venta": 1,
@@ -1042,12 +1037,12 @@
     },
     "anual": {
      "up30": 1,
-     "down30": 23,
-     "up7": 13,
+     "down30": 24,
+     "up7": 14,
      "down7": 7,
      "net30": -0.92
     },
-    "est_anual_chg30_pct": -1.08,
+    "est_anual_chg30_pct": 1.3,
     "recomendaciones": {
      "compra": 25,
      "venta": 2,
@@ -1080,11 +1075,11 @@
    "role": "bellwether",
    "revisiones": {
     "trim": {
-     "up30": 0,
-     "down30": 1,
+     "up30": 1,
+     "down30": 2,
      "up7": 1,
      "down7": 2,
-     "net30": -1.0
+     "net30": -0.33
     },
     "anual": {
      "up30": 14,
@@ -1093,7 +1088,7 @@
      "down7": 0,
      "net30": 0.87
     },
-    "est_anual_chg30_pct": 4.95,
+    "est_anual_chg30_pct": 4.37,
     "recomendaciones": {
      "compra": 5,
      "venta": 6,
@@ -1125,24 +1120,14 @@
      "down7": 0,
      "net30": 1.0
     },
-    "est_anual_chg30_pct": 3.28,
+    "est_anual_chg30_pct": -0.2,
     "recomendaciones": {
      "compra": 21,
      "venta": 0,
      "cambio_compra_1m": 0
     }
    },
-   "eventos": [
-    {
-     "fecha": "2026-11-09",
-     "codigos": [
-      "5.02"
-     ],
-     "descripcion": "Salida o nombramiento de directivos/consejeros",
-     "importancia": 3,
-     "url": "https://www.sec.gov/Archives/edgar/data/731766/000073176626000274/unh-20261103.htm"
-    }
-   ],
+   "eventos": [],
    "insiders": [],
    "cobertura": true,
    "compra_cluster": false,
@@ -1160,15 +1145,15 @@
     "trim": {
      "up30": 2,
      "down30": 7,
-     "up7": 3,
-     "down7": 6,
+     "up7": 0,
+     "down7": 2,
      "net30": -0.56
     },
     "anual": {
      "up30": 3,
      "down30": 7,
-     "up7": 2,
-     "down7": 8,
+     "up7": 0,
+     "down7": 2,
      "net30": -0.4
     },
     "est_anual_chg30_pct": -0.55,
@@ -1178,7 +1163,17 @@
      "cambio_compra_1m": 0
     }
    },
-   "eventos": [],
+   "eventos": [
+    {
+     "fecha": "2026-11-17",
+     "codigos": [
+      "5.02"
+     ],
+     "descripcion": "Salida o nombramiento de directivos/consejeros",
+     "importancia": 3,
+     "url": "https://www.sec.gov/Archives/edgar/data/19617/000001961726000407/jpm-20261117.htm"
+    }
+   ],
    "insiders": [],
    "cobertura": true,
    "compra_cluster": false,
@@ -1196,18 +1191,18 @@
     "trim": {
      "up30": 0,
      "down30": 1,
-     "up7": 0,
+     "up7": 1,
      "down7": 1,
      "net30": -1.0
     },
     "anual": {
      "up30": 2,
      "down30": 5,
-     "up7": 3,
+     "up7": 1,
      "down7": 4,
      "net30": -0.43
     },
-    "est_anual_chg30_pct": -2.27,
+    "est_anual_chg30_pct": -1.86,
     "recomendaciones": {
      "compra": 15,
      "venta": 0,
@@ -1239,11 +1234,11 @@
      "down7": 2,
      "net30": -1.0
     },
-    "est_anual_chg30_pct": -1.81,
+    "est_anual_chg30_pct": 2.99,
     "recomendaciones": {
-     "compra": 6,
-     "venta": 4,
-     "cambio_compra_1m": 0
+     "compra": 5,
+     "venta": 6,
+     "cambio_compra_1m": -1
     }
    },
    "eventos": [],
@@ -1265,13 +1260,13 @@
      "net30": 0.16
     },
     "anual": {
-     "up30": 22,
+     "up30": 23,
      "down30": 10,
-     "up7": 6,
-     "down7": 4,
-     "net30": 0.38
+     "up7": 4,
+     "down7": 2,
+     "net30": 0.39
     },
-    "est_anual_chg30_pct": 0.2,
+    "est_anual_chg30_pct": 0.19,
     "recomendaciones": {
      "compra": 35,
      "venta": 1,
@@ -1368,19 +1363,19 @@
    "revisiones": {
     "trim": {
      "up30": 15,
-     "down30": 3,
-     "up7": 14,
-     "down7": 4,
-     "net30": 0.67
+     "down30": 5,
+     "up7": 15,
+     "down7": 6,
+     "net30": 0.5
     },
     "anual": {
      "up30": 25,
      "down30": 3,
-     "up7": 24,
-     "down7": 3,
+     "up7": 1,
+     "down7": 0,
      "net30": 0.79
     },
-    "est_anual_chg30_pct": 1.24,
+    "est_anual_chg30_pct": 1.23,
     "recomendaciones": {
      "compra": 53,
      "venta": 0,
@@ -1415,40 +1410,13 @@
      "importe_usd": 759111,
      "acciones": 1393,
      "url": "https://www.sec.gov/Archives/edgar/data/789019/000078901926000232/form4.xml"
-    },
-    {
-     "fecha": "2026-10-13",
-     "quien": "Hood Amy",
-     "cargo": "EVP, Chief Financial Officer",
-     "tipo": "venta",
-     "importe_usd": 1845238,
-     "acciones": 3387,
-     "url": "https://www.sec.gov/Archives/edgar/data/789019/000078901926000226/form4.xml"
-    },
-    {
-     "fecha": "2026-10-13",
-     "quien": "Hood Amy",
-     "cargo": "EVP, Chief Financial Officer",
-     "tipo": "venta",
-     "importe_usd": 1597475,
-     "acciones": 2927,
-     "url": "https://www.sec.gov/Archives/edgar/data/789019/000078901926000226/form4.xml"
-    },
-    {
-     "fecha": "2026-10-13",
-     "quien": "Hood Amy",
-     "cargo": "EVP, Chief Financial Officer",
-     "tipo": "venta",
-     "importe_usd": 541590,
-     "acciones": 991,
-     "url": "https://www.sec.gov/Archives/edgar/data/789019/000078901926000226/form4.xml"
     }
    ],
    "cobertura": true,
    "compra_cluster": false,
    "n_compradores": 0,
    "importe_compras": 0,
-   "importe_ventas": 10615937
+   "importe_ventas": 6631634
   },
   {
    "t": "SAP.DE",
@@ -1467,8 +1435,8 @@
     "anual": {
      "up30": 13,
      "down30": 6,
-     "up7": 12,
-     "down7": 6,
+     "up7": 1,
+     "down7": 0,
      "net30": 0.37
     },
     "est_anual_chg30_pct": 0.35,
@@ -1503,11 +1471,11 @@
      "down7": 0,
      "net30": 1.0
     },
-    "est_anual_chg30_pct": 0.12,
+    "est_anual_chg30_pct": 0.18,
     "recomendaciones": {
-     "compra": 48,
-     "venta": 0,
-     "cambio_compra_1m": -11
+     "compra": 47,
+     "venta": 1,
+     "cambio_compra_1m": -12
     }
    },
    "eventos": [
@@ -1806,9 +1774,9 @@
      "net30": 1.0
     },
     "anual": {
-     "up30": 19,
+     "up30": 20,
      "down30": 0,
-     "up7": 19,
+     "up7": 1,
      "down7": 0,
      "net30": 1.0
     },
@@ -1844,25 +1812,14 @@
      "down7": 21,
      "net30": -0.53
     },
-    "est_anual_chg30_pct": -1.98,
+    "est_anual_chg30_pct": -1.81,
     "recomendaciones": {
      "compra": 26,
      "venta": 6,
      "cambio_compra_1m": 2
     }
    },
-   "eventos": [
-    {
-     "fecha": "2026-11-09",
-     "codigos": [
-      "8.01",
-      "9.01"
-     ],
-     "descripcion": "Otros hechos",
-     "importancia": 1,
-     "url": "https://www.sec.gov/Archives/edgar/data/320193/000114036126042798/ef20085077_8k.htm"
-    }
-   ],
+   "eventos": [],
    "insiders": [
     {
      "fecha": "2026-11-10",
@@ -1989,22 +1946,13 @@
      "importe_usd": 13898,
      "acciones": 40,
      "url": "https://www.sec.gov/Archives/edgar/data/320193/000114036126040126/form4.xml"
-    },
-    {
-     "fecha": "2026-10-13",
-     "quien": "Newstead Jennifer",
-     "cargo": "SVP, GC and Government Affairs",
-     "tipo": "venta",
-     "importe_usd": 827655,
-     "acciones": 2399,
-     "url": "https://www.sec.gov/Archives/edgar/data/320193/000114036126039785/form4.xml"
     }
    ],
    "cobertura": true,
    "compra_cluster": false,
    "n_compradores": 0,
    "importe_compras": 0,
-   "importe_ventas": 5012934
+   "importe_ventas": 4185279
   },
   {
    "t": "GOOGL",
@@ -2015,10 +1963,10 @@
    "revisiones": {
     "trim": {
      "up30": 10,
-     "down30": 25,
+     "down30": 26,
      "up7": 10,
-     "down7": 25,
-     "net30": -0.43
+     "down7": 27,
+     "net30": -0.44
     },
     "anual": {
      "up30": 0,
@@ -2027,7 +1975,7 @@
      "down7": 45,
      "net30": -1.0
     },
-    "est_anual_chg30_pct": -5.11,
+    "est_anual_chg30_pct": -4.82,
     "recomendaciones": {
      "compra": 53,
      "venta": 0,
@@ -2036,6 +1984,15 @@
    },
    "eventos": [],
    "insiders": [
+    {
+     "fecha": "2026-11-12",
+     "quien": "Hennessy John L.",
+     "cargo": "",
+     "tipo": "venta",
+     "importe_usd": 90000,
+     "acciones": 300,
+     "url": "https://www.sec.gov/Archives/edgar/data/1652044/000119312526463983/ownership.xml"
+    },
     {
      "fecha": "2026-10-29",
      "quien": "Arnold Frances",
@@ -2050,7 +2007,7 @@
    "compra_cluster": false,
    "n_compradores": 0,
    "importe_compras": 0,
-   "importe_ventas": 23288
+   "importe_ventas": 113288
   },
   {
    "t": "META",
@@ -2073,9 +2030,9 @@
      "down7": 4,
      "net30": -0.7
     },
-    "est_anual_chg30_pct": -6.19,
+    "est_anual_chg30_pct": -5.05,
     "recomendaciones": {
-     "compra": 54,
+     "compra": 55,
      "venta": 1,
      "cambio_compra_1m": -1
     }
@@ -2444,9 +2401,9 @@
      "net30": 1.0
     },
     "anual": {
-     "up30": 3,
+     "up30": 7,
      "down30": 0,
-     "up7": 1,
+     "up7": 6,
      "down7": 0,
      "net30": 1.0
     },
@@ -2473,16 +2430,16 @@
    "role": "rep",
    "revisiones": {
     "trim": {
-     "up30": 18,
-     "down30": 1,
-     "up7": 18,
-     "down7": 1,
-     "net30": 0.89
+     "up30": 27,
+     "down30": 2,
+     "up7": 27,
+     "down7": 2,
+     "net30": 0.86
     },
     "anual": {
      "up30": 29,
      "down30": 0,
-     "up7": 19,
+     "up7": 29,
      "down7": 0,
      "net30": 1.0
     },
@@ -2649,21 +2606,21 @@
    "clusters_insiders": 0
   },
   "Industriales": {
-   "amplitud_revisiones": 0.07,
+   "amplitud_revisiones": 0.03,
    "senal": 0,
    "empresas_cubiertas": 6,
-   "mejorando": 2,
-   "empeorando": 1,
-   "hechos_relevantes": 1,
+   "mejorando": 3,
+   "empeorando": 3,
+   "hechos_relevantes": 0,
    "clusters_insiders": 0
   },
   "Consumo discrecional": {
-   "amplitud_revisiones": -0.05,
+   "amplitud_revisiones": -0.04,
    "senal": 0,
    "empresas_cubiertas": 7,
    "mejorando": 2,
    "empeorando": 2,
-   "hechos_relevantes": 0,
+   "hechos_relevantes": 2,
    "clusters_insiders": 0
   },
   "Consumo básico": {
@@ -2672,7 +2629,7 @@
    "empresas_cubiertas": 3,
    "mejorando": 1,
    "empeorando": 0,
-   "hechos_relevantes": 0,
+   "hechos_relevantes": 1,
    "clusters_insiders": 0
   },
   "Salud": {
@@ -2681,7 +2638,7 @@
    "empresas_cubiertas": 3,
    "mejorando": 2,
    "empeorando": 1,
-   "hechos_relevantes": 1,
+   "hechos_relevantes": 0,
    "clusters_insiders": 0
   },
   "Financiero": {
@@ -2690,7 +2647,7 @@
    "empresas_cubiertas": 4,
    "mejorando": 1,
    "empeorando": 3,
-   "hechos_relevantes": 0,
+   "hechos_relevantes": 1,
    "clusters_insiders": 0
   },
   "Tecnología de la información": {
@@ -2741,6 +2698,34 @@
  },
  "central_banks": [
   {
+   "banco": "BCE",
+   "tipo": "comunicado",
+   "fecha": "2026-11-16",
+   "titulo": "Frank Elderson: Smart supervision for small banks",
+   "url": "https://www.ecb.europa.eu//press/inter/date/2026/html/ecb.in261116_1~11dd7f62af.en.html"
+  },
+  {
+   "banco": "BCE",
+   "tipo": "discurso",
+   "fecha": "2026-11-16",
+   "titulo": "Boris Vujčić: Risks and resilience in the euro area financial system",
+   "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261116~db374b56ab.en.html"
+  },
+  {
+   "banco": "BCE",
+   "tipo": "discurso",
+   "fecha": "2026-11-13",
+   "titulo": "Isabel Schnabel: Made in Europe",
+   "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261113~3883f1f187.en.html"
+  },
+  {
+   "banco": "Fed",
+   "tipo": "comunicado",
+   "fecha": "2026-11-12",
+   "titulo": "Federal Reserve announces revised tentative schedule of Federal Open Market Committee meetings in 2027",
+   "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261112a.htm"
+  },
+  {
    "banco": "Fed",
    "tipo": "discurso",
    "fecha": "2026-11-10",
@@ -2748,7 +2733,21 @@
    "url": "https://www.federalreserve.gov/newsevents/speech/bowman20261110a.htm",
    "postura": 0,
    "tema": "U.S. economy monetary policy considerations",
-   "resumen": "Bowman discusses economic outlook and factors influencing monetary policy without announcing rate changes."
+   "resumen": "Speech outlines economic outlook but gives no specific rate guidance."
+  },
+  {
+   "banco": "Fed",
+   "tipo": "discurso",
+   "fecha": "2026-11-10",
+   "titulo": "Waller, The Economic Outlook and Some Thoughts on Labor Market Dynamism",
+   "url": "https://www.federalreserve.gov/newsevents/speech/waller20261110a.htm"
+  },
+  {
+   "banco": "BCE",
+   "tipo": "discurso",
+   "fecha": "2026-11-10",
+   "titulo": "Philip R. Lane: The science and practice of monetary policy communication: the ECB experience",
+   "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261110_1~9725b7aa07.en.html"
   },
   {
    "banco": "BCE",
@@ -2756,13 +2755,6 @@
    "fecha": "2026-11-10",
    "titulo": "Piero Cipollone: Cash and the digital euro: two sides of the same coin",
    "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261110~9422461bad.en.html"
-  },
-  {
-   "banco": "BCE",
-   "tipo": "comunicado",
-   "fecha": "2026-11-07",
-   "titulo": "Christine Lagarde: Interview with Yomiuri Shimbun",
-   "url": "https://www.ecb.europa.eu//press/inter/date/2026/html/ecb.in261107~e7b86fc4ce.en.html"
   }
  ]
 }
