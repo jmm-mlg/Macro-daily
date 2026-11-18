@@ -1,5 +1,5 @@
 {
- "date": "2026-11-17",
+ "date": "2026-11-18",
  "exposicion": {
   "banda_pct": "50-70",
   "nuevas_posiciones": "solo con factores claros y micro a favor, mitad de tamaño",
@@ -101,9 +101,18 @@
  "sensibilidad": {
   "disparadores": [
    {
+    "serie": "^VIX",
+    "umbral": 25,
+    "valor_actual": 24.049999237060547,
+    "si_se_cruza": {
+     "sin_cambios": "no altera régimen ni sesgos; solo la lectura"
+    },
+    "texto": "VIX > 25: régimen de miedo; históricamente mejor comprar que vender."
+   },
+   {
     "serie": "JPY=X",
     "umbral": 150,
-    "valor_actual": 159.3800048828125,
+    "valor_actual": 159.35400390625,
     "si_se_cruza": {
      "sin_cambios": "no altera régimen ni sesgos; solo la lectura"
     },
@@ -112,20 +121,12 @@
    {
     "serie": "DGS10",
     "umbral": 5.5,
-    "valor_actual": 5.15,
+    "valor_actual": 5.12,
     "si_se_cruza": {
-     "sin_cambios": "no altera régimen ni sesgos; solo la lectura"
+     "tension": "baja → media",
+     "score_liquidez": "+0 → -1"
     },
     "texto": "Treasury 10 años > 5,50%: compite de frente con un earnings yield del 4%."
-   },
-   {
-    "serie": "^VIX",
-    "umbral": 25,
-    "valor_actual": 23.040000915527344,
-    "si_se_cruza": {
-     "score_riesgo": "+0 → -1"
-    },
-    "texto": "VIX > 25: régimen de miedo; históricamente mejor comprar que vender."
    },
    {
     "serie": "PSAVERT",
@@ -148,17 +149,24 @@
   ],
   "datos_semana": [
    {
-    "publicacion": "Ventas minoristas",
-    "serie": "RSAFS",
-    "valor_actual": 0.21201735247515785,
-    "paso": 0.6,
+    "publicacion": "PCE / ingresos y gasto",
+    "serie": "PCEPILFE",
+    "valor_actual": 3.1211596029620203,
+    "paso": 0.2,
     "si_sube": {
-     "regimen": "Mixto / transición → Reflación",
-     "score_crecimiento": "+0 → +1",
-     "sector_Energía": "+0 → +2",
-     "sector_Financiero": "+0 → +1",
-     "sector_Materiales": "-1 → +0",
-     "sector_Utilities": "-1 → -2"
+     "sin_cambios": true
+    },
+    "si_baja": {
+     "score_inflacion": "+1 → +0"
+    }
+   },
+   {
+    "publicacion": "PIB EE.UU.",
+    "serie": "GDPC1",
+    "valor_actual": 3.369618941355945,
+    "paso": 1.0,
+    "si_sube": {
+     "sin_cambios": true
     },
     "si_baja": {
      "sin_cambios": true
@@ -173,18 +181,13 @@
      "sin_cambios": true
     },
     "si_baja": {
-     "regimen": "Mixto / transición → Reflación",
-     "score_crecimiento": "+0 → +1",
-     "sector_Energía": "+0 → +2",
-     "sector_Financiero": "+0 → +1",
-     "sector_Materiales": "-1 → +0",
-     "sector_Utilities": "-1 → -2"
+     "sin_cambios": true
     }
    }
   ]
  },
  "historial_regimen": {
-  "dias_en_regimen": 1,
+  "dias_en_regimen": 2,
   "ultimo_cambio": "2026-11-13",
   "secuencia_90d": [
    {
@@ -225,66 +228,49 @@
  },
  "cambios": {
   "vs_ayer": {
-   "fecha": "2026-11-13",
-   "regimen": "reflacion → mixto",
-   "score_crecimiento": "+1 → +0",
-   "sector_Energía": "+2 → +0",
-   "sector_Materiales": "+0 → -1",
-   "sector_Utilities": "-2 → -1"
+   "fecha": "2026-11-17"
   },
   "vs_5d": {
-   "fecha": "2026-11-09",
+   "fecha": "2026-11-10",
    "regimen": "reflacion → mixto",
    "score_crecimiento": "+1 → +0",
    "score_riesgo": "-1 → +0",
    "sector_Energía": "+2 → +0",
+   "sector_Financiero": "+1 → +0",
+   "sector_Industriales": "+1 → +0",
    "sector_Materiales": "+1 → -1",
    "sector_Salud": "+0 → -1",
    "sector_Utilities": "-2 → -1"
   },
   "disparadores_que_se_mueven": [
    {
-    "serie": "DGS10",
-    "distancia_antes": 0.52,
-    "distancia_hoy": 0.35,
-    "se_acerca": true
-   },
-   {
     "serie": "^VIX",
-    "distancia_antes": 6.78,
-    "distancia_hoy": 1.96,
+    "distancia_antes": 1.96,
+    "distancia_hoy": 0.95,
     "se_acerca": true
    },
    {
     "serie": "BAMLH0A0HYM2",
-    "distancia_antes": 0.7,
-    "distancia_hoy": 0.77,
-    "se_acerca": false
+    "distancia_antes": 0.77,
+    "distancia_hoy": 0.66,
+    "se_acerca": true
    },
    {
     "serie": "T10Y2Y",
-    "distancia_antes": 0.24,
-    "distancia_hoy": 0.29,
+    "distancia_antes": 0.29,
+    "distancia_hoy": 0.3,
     "se_acerca": false
    }
   ]
  },
  "cartera_acciones": [
   {
-   "ticker": "COP",
-   "avisos": [
-    "+2R: cerrar la mitad, stop a +1R"
-   ],
-   "R": 2.1240688731001853,
-   "dist_stop_pct": 8.8
-  },
-  {
    "ticker": "TMO",
    "avisos": [
     "sector con sesgo -1: revisar"
    ],
-   "R": -0.4103762008675242,
-   "dist_stop_pct": 4.7
+   "R": -0.48144460879796463,
+   "dist_stop_pct": 4.2
   }
  ],
  "que_no_hacer": [

@@ -1,5 +1,5 @@
 {
- "date": "2026-11-17",
+ "date": "2026-11-18",
  "scope": "bellwethers",
  "companies": [
   {
@@ -59,7 +59,7 @@
      "down7": 1,
      "net30": 0.83
     },
-    "est_anual_chg30_pct": 5.8,
+    "est_anual_chg30_pct": 5.18,
     "recomendaciones": {
      "compra": 9,
      "venta": 0,
@@ -288,31 +288,8 @@
     }
    },
    "eventos": [],
-   "insiders": [
-    {
-     "fecha": "2026-11-12",
-     "quien": "Maclennan David",
-     "cargo": "consejero",
-     "tipo": "compra",
-     "importe_usd": 208635,
-     "acciones": 350,
-     "url": "https://www.sec.gov/Archives/edgar/data/18230/000110465926127088/tm2629746-1_4seq1.xml"
-    },
-    {
-     "fecha": "2026-11-02",
-     "quien": "Fish James C Jr",
-     "cargo": "consejero",
-     "tipo": "compra",
-     "importe_usd": 620390,
-     "acciones": 1000,
-     "url": "https://www.sec.gov/Archives/edgar/data/18230/000110465926121809/tm2628874-1_4seq1.xml"
-    }
-   ],
-   "cobertura": true,
-   "compra_cluster": false,
-   "n_compradores": 2,
-   "importe_compras": 829025,
-   "importe_ventas": 0
+   "insiders": [],
+   "cobertura": false
   },
   {
    "t": "SIE.DE",
@@ -375,58 +352,8 @@
     }
    },
    "eventos": [],
-   "insiders": [
-    {
-     "fecha": "2026-11-10",
-     "quien": "Russ Claude F",
-     "cargo": "Interim CFO & Interim CAO",
-     "tipo": "venta",
-     "importe_usd": 4897630,
-     "acciones": 15493,
-     "url": "https://www.sec.gov/Archives/edgar/data/1048911/000104891126000158/form4.xml"
-    },
-    {
-     "fecha": "2026-11-10",
-     "quien": "Russ Claude F",
-     "cargo": "Interim CFO & Interim CAO",
-     "tipo": "venta",
-     "importe_usd": 401017,
-     "acciones": 1269,
-     "url": "https://www.sec.gov/Archives/edgar/data/1048911/000104891126000158/form4.xml"
-    },
-    {
-     "fecha": "2026-11-02",
-     "quien": "Adams Gina F.",
-     "cargo": "EVP GENL COUNSEL/SECTY",
-     "tipo": "venta",
-     "importe_usd": 955616,
-     "acciones": 3014,
-     "url": "https://www.sec.gov/Archives/edgar/data/1048911/000104891126000156/form4.xml"
-    },
-    {
-     "fecha": "2026-10-30",
-     "quien": "Brightman Tracy B",
-     "cargo": "EVP - Chief People Officer",
-     "tipo": "venta",
-     "importe_usd": 7306901,
-     "acciones": 23070,
-     "url": "https://www.sec.gov/Archives/edgar/data/1048911/000104891126000133/form4.xml"
-    },
-    {
-     "fecha": "2026-10-30",
-     "quien": "Brightman Tracy B",
-     "cargo": "EVP - Chief People Officer",
-     "tipo": "venta",
-     "importe_usd": 1120373,
-     "acciones": 3541,
-     "url": "https://www.sec.gov/Archives/edgar/data/1048911/000104891126000133/form4.xml"
-    }
-   ],
-   "cobertura": true,
-   "compra_cluster": false,
-   "n_compradores": 0,
-   "importe_compras": 0,
-   "importe_ventas": 14681537
+   "insiders": [],
+   "cobertura": false
   },
   {
    "t": "MAERSK-B.CO",
@@ -526,11 +453,7 @@
    },
    "eventos": [],
    "insiders": [],
-   "cobertura": true,
-   "compra_cluster": false,
-   "n_compradores": 0,
-   "importe_compras": 0,
-   "importe_ventas": 0
+   "cobertura": false
   },
   {
    "t": "VOW3.DE",
@@ -656,7 +579,18 @@
      "cambio_compra_1m": -2
     }
    },
-   "eventos": [],
+   "eventos": [
+    {
+     "fecha": "2026-11-17",
+     "codigos": [
+      "8.01",
+      "9.01"
+     ],
+     "descripcion": "Otros hechos",
+     "importancia": 1,
+     "url": "https://www.sec.gov/Archives/edgar/data/63908/000110465926129050/tm2630018d1_8k.htm"
+    }
+   ],
    "insiders": [
     {
      "fecha": "2026-11-13",
@@ -691,11 +625,11 @@
    "role": "bellwether",
    "revisiones": {
     "trim": {
-     "up30": 2,
-     "down30": 2,
-     "up7": 2,
-     "down7": 0,
-     "net30": 0.0
+     "up30": 0,
+     "down30": 3,
+     "up7": 0,
+     "down7": 1,
+     "net30": -1.0
     },
     "anual": {
      "up30": 2,
@@ -704,7 +638,7 @@
      "down7": 1,
      "net30": -0.2
     },
-    "est_anual_chg30_pct": -0.08,
+    "est_anual_chg30_pct": 0.34,
     "recomendaciones": {
      "compra": 22,
      "venta": 0,
@@ -762,7 +696,7 @@
      "down7": 2,
      "net30": -0.26
     },
-    "est_anual_chg30_pct": -0.94,
+    "est_anual_chg30_pct": -0.95,
     "recomendaciones": {
      "compra": 59,
      "venta": 0,
@@ -771,6 +705,42 @@
    },
    "eventos": [],
    "insiders": [
+    {
+     "fecha": "2026-11-16",
+     "quien": "Herrington Douglas J",
+     "cargo": "CEO Worldwide Amazon Stores",
+     "tipo": "venta",
+     "importe_usd": 254690,
+     "acciones": 981,
+     "url": "https://www.sec.gov/Archives/edgar/data/1018724/000193600626000030/wk-form4_1794951971.xml"
+    },
+    {
+     "fecha": "2026-11-16",
+     "quien": "Herrington Douglas J",
+     "cargo": "CEO Worldwide Amazon Stores",
+     "tipo": "venta",
+     "importe_usd": 177334,
+     "acciones": 680,
+     "url": "https://www.sec.gov/Archives/edgar/data/1018724/000193600626000030/wk-form4_1794951971.xml"
+    },
+    {
+     "fecha": "2026-11-16",
+     "quien": "Herrington Douglas J",
+     "cargo": "CEO Worldwide Amazon Stores",
+     "tipo": "venta",
+     "importe_usd": 450181,
+     "acciones": 1720,
+     "url": "https://www.sec.gov/Archives/edgar/data/1018724/000193600626000030/wk-form4_1794951971.xml"
+    },
+    {
+     "fecha": "2026-11-16",
+     "quien": "Herrington Douglas J",
+     "cargo": "CEO Worldwide Amazon Stores",
+     "tipo": "venta",
+     "importe_usd": 94505,
+     "acciones": 360,
+     "url": "https://www.sec.gov/Archives/edgar/data/1018724/000193600626000030/wk-form4_1794951971.xml"
+    },
     {
      "fecha": "2026-11-02",
      "quien": "Herrington Douglas J",
@@ -785,7 +755,7 @@
    "compra_cluster": false,
    "n_compradores": 0,
    "importe_compras": 0,
-   "importe_ventas": 243470
+   "importe_ventas": 1220180
   },
   {
    "t": "WMT",
@@ -808,11 +778,11 @@
      "down7": 0,
      "net30": 0.2
     },
-    "est_anual_chg30_pct": -0.06,
+    "est_anual_chg30_pct": 0.01,
     "recomendaciones": {
-     "compra": 38,
+     "compra": 39,
      "venta": 1,
-     "cambio_compra_1m": 0
+     "cambio_compra_1m": 1
     }
    },
    "eventos": [
@@ -906,7 +876,7 @@
      "down7": 7,
      "net30": -0.07
     },
-    "est_anual_chg30_pct": -0.05,
+    "est_anual_chg30_pct": 0.05,
     "recomendaciones": {
      "compra": 14,
      "venta": 1,
@@ -1050,22 +1020,8 @@
     }
    },
    "eventos": [],
-   "insiders": [
-    {
-     "fecha": "2026-11-02",
-     "quien": "Hakim Anat",
-     "cargo": "EVP, GC & Secretary",
-     "tipo": "venta",
-     "importe_usd": 7012600,
-     "acciones": 5000,
-     "url": "https://www.sec.gov/Archives/edgar/data/59478/000168555626000008/wk-form4_1793740481.xml"
-    }
-   ],
-   "cobertura": true,
-   "compra_cluster": false,
-   "n_compradores": 0,
-   "importe_compras": 0,
-   "importe_ventas": 7012600
+   "insiders": [],
+   "cobertura": false
   },
   {
    "t": "NOVO-B.CO",
@@ -1234,7 +1190,7 @@
      "down7": 2,
      "net30": -1.0
     },
-    "est_anual_chg30_pct": 2.99,
+    "est_anual_chg30_pct": 1.36,
     "recomendaciones": {
      "compra": 5,
      "venta": 6,
@@ -1319,40 +1275,13 @@
      "importe_usd": 8454534,
      "acciones": 19783,
      "url": "https://www.sec.gov/Archives/edgar/data/1403161/000140316126000136/form4.xml"
-    },
-    {
-     "fecha": "2026-11-02",
-     "quien": "Taneja Rajat",
-     "cargo": "PRESIDENT, TECHNOLOGY",
-     "tipo": "venta",
-     "importe_usd": 14642402,
-     "acciones": 34418,
-     "url": "https://www.sec.gov/Archives/edgar/data/1403161/000140316126000130/form4.xml"
-    },
-    {
-     "fecha": "2026-11-02",
-     "quien": "Mcinerney Ryan",
-     "cargo": "Chief Executive Officer",
-     "tipo": "venta",
-     "importe_usd": 2445292,
-     "acciones": 5875,
-     "url": "https://www.sec.gov/Archives/edgar/data/1403161/000140316126000129/form4.xml"
-    },
-    {
-     "fecha": "2026-10-30",
-     "quien": "Carney Lloyd",
-     "cargo": "consejero",
-     "tipo": "venta",
-     "importe_usd": 251244,
-     "acciones": 605,
-     "url": "https://www.sec.gov/Archives/edgar/data/1403161/000140316126000128/form4.xml"
     }
    ],
    "cobertura": true,
    "compra_cluster": false,
    "n_compradores": 0,
    "importe_compras": 0,
-   "importe_ventas": 34256606
+   "importe_ventas": 16917668
   },
   {
    "t": "MSFT",
@@ -1375,7 +1304,7 @@
      "down7": 0,
      "net30": 0.79
     },
-    "est_anual_chg30_pct": 1.23,
+    "est_anual_chg30_pct": 1.19,
     "recomendaciones": {
      "compra": 53,
      "venta": 0,
@@ -1471,14 +1400,24 @@
      "down7": 0,
      "net30": 1.0
     },
-    "est_anual_chg30_pct": 0.18,
+    "est_anual_chg30_pct": 0.26,
     "recomendaciones": {
      "compra": 47,
-     "venta": 1,
+     "venta": 2,
      "cambio_compra_1m": -12
     }
    },
    "eventos": [
+    {
+     "fecha": "2026-11-17",
+     "codigos": [
+      "2.02",
+      "9.01"
+     ],
+     "descripcion": "Resultados",
+     "importancia": 3,
+     "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000088/nvda-20261117.htm"
+    },
     {
      "fecha": "2026-11-12",
      "codigos": [
@@ -1527,6 +1466,15 @@
    },
    "eventos": [],
    "insiders": [
+    {
+     "fecha": "2026-11-17",
+     "quien": "Burns Ursula M",
+     "cargo": "consejero",
+     "tipo": "compra",
+     "importe_usd": 500039,
+     "acciones": 1375,
+     "url": "https://www.sec.gov/Archives/edgar/data/1046179/000104617926000803/wk-form4_1794999834.xml"
+    },
     {
      "fecha": "2026-11-06",
      "quien": "Wu Shien-Yang",
@@ -1742,21 +1690,12 @@
      "importe_usd": 4512,
      "acciones": 64,
      "url": "https://www.sec.gov/Archives/edgar/data/1046179/000104617926000754/wk-form4_1794310289.xml"
-    },
-    {
-     "fecha": "2026-11-06",
-     "quien": "He Jun",
-     "cargo": "VP",
-     "tipo": "compra",
-     "importe_usd": 3314,
-     "acciones": 47,
-     "url": "https://www.sec.gov/Archives/edgar/data/1046179/000104617926000753/wk-form4_1794310280.xml"
     }
    ],
    "cobertura": true,
    "compra_cluster": false,
-   "n_compradores": 1,
-   "importe_compras": 10928,
+   "n_compradores": 2,
+   "importe_compras": 510967,
    "importe_ventas": 0
   },
   {
@@ -1975,7 +1914,7 @@
      "down7": 45,
      "net30": -1.0
     },
-    "est_anual_chg30_pct": -4.82,
+    "est_anual_chg30_pct": -5.0,
     "recomendaciones": {
      "compra": 53,
      "venta": 0,
@@ -2050,6 +1989,60 @@
     }
    ],
    "insiders": [
+    {
+     "fecha": "2026-11-15",
+     "quien": "Li Susan J",
+     "cargo": "Chief Financial Officer",
+     "tipo": "venta",
+     "importe_usd": 1364875,
+     "acciones": 2127,
+     "url": "https://www.sec.gov/Archives/edgar/data/1326801/000095010326017701/ownership.xml"
+    },
+    {
+     "fecha": "2026-11-16",
+     "quien": "Olivan Javier",
+     "cargo": "Chief Operating Officer",
+     "tipo": "venta",
+     "importe_usd": 601326,
+     "acciones": 939,
+     "url": "https://www.sec.gov/Archives/edgar/data/1326801/000095010326017696/ownership.xml"
+    },
+    {
+     "fecha": "2026-11-16",
+     "quien": "Olivan Javier",
+     "cargo": "Chief Operating Officer",
+     "tipo": "venta",
+     "importe_usd": 52512,
+     "acciones": 82,
+     "url": "https://www.sec.gov/Archives/edgar/data/1326801/000095010326017696/ownership.xml"
+    },
+    {
+     "fecha": "2026-11-16",
+     "quien": "Olivan Javier",
+     "cargo": "Chief Operating Officer",
+     "tipo": "venta",
+     "importe_usd": 36502,
+     "acciones": 57,
+     "url": "https://www.sec.gov/Archives/edgar/data/1326801/000095010326017696/ownership.xml"
+    },
+    {
+     "fecha": "2026-11-16",
+     "quien": "Olivan Javier",
+     "cargo": "Chief Operating Officer",
+     "tipo": "venta",
+     "importe_usd": 52512,
+     "acciones": 82,
+     "url": "https://www.sec.gov/Archives/edgar/data/1326801/000095010326017696/ownership.xml"
+    },
+    {
+     "fecha": "2026-11-16",
+     "quien": "Olivan Javier",
+     "cargo": "Chief Operating Officer",
+     "tipo": "venta",
+     "importe_usd": 261279,
+     "acciones": 408,
+     "url": "https://www.sec.gov/Archives/edgar/data/1326801/000095010326017696/ownership.xml"
+    },
     {
      "fecha": "2026-11-09",
      "quien": "Olivan Javier",
@@ -2220,103 +2213,13 @@
      "importe_usd": 249600,
      "acciones": 390,
      "url": "https://www.sec.gov/Archives/edgar/data/1326801/000095010326016314/ownership.xml"
-    },
-    {
-     "fecha": "2026-10-26",
-     "quien": "Olivan Javier",
-     "cargo": "Chief Operating Officer",
-     "tipo": "venta",
-     "importe_usd": 605440,
-     "acciones": 946,
-     "url": "https://www.sec.gov/Archives/edgar/data/1326801/000095010326016313/ownership.xml"
-    },
-    {
-     "fecha": "2026-10-26",
-     "quien": "Olivan Javier",
-     "cargo": "Chief Operating Officer",
-     "tipo": "venta",
-     "importe_usd": 52480,
-     "acciones": 82,
-     "url": "https://www.sec.gov/Archives/edgar/data/1326801/000095010326016313/ownership.xml"
-    },
-    {
-     "fecha": "2026-10-26",
-     "quien": "Olivan Javier",
-     "cargo": "Chief Operating Officer",
-     "tipo": "venta",
-     "importe_usd": 36480,
-     "acciones": 57,
-     "url": "https://www.sec.gov/Archives/edgar/data/1326801/000095010326016313/ownership.xml"
-    },
-    {
-     "fecha": "2026-10-26",
-     "quien": "Olivan Javier",
-     "cargo": "Chief Operating Officer",
-     "tipo": "venta",
-     "importe_usd": 52480,
-     "acciones": 82,
-     "url": "https://www.sec.gov/Archives/edgar/data/1326801/000095010326016313/ownership.xml"
-    },
-    {
-     "fecha": "2026-10-26",
-     "quien": "Olivan Javier",
-     "cargo": "Chief Operating Officer",
-     "tipo": "venta",
-     "importe_usd": 261120,
-     "acciones": 408,
-     "url": "https://www.sec.gov/Archives/edgar/data/1326801/000095010326016313/ownership.xml"
-    },
-    {
-     "fecha": "2026-10-19",
-     "quien": "Olivan Javier",
-     "cargo": "Chief Operating Officer",
-     "tipo": "venta",
-     "importe_usd": 669011,
-     "acciones": 946,
-     "url": "https://www.sec.gov/Archives/edgar/data/1326801/000095010326015980/ownership.xml"
-    },
-    {
-     "fecha": "2026-10-19",
-     "quien": "Olivan Javier",
-     "cargo": "Chief Operating Officer",
-     "tipo": "venta",
-     "importe_usd": 57990,
-     "acciones": 82,
-     "url": "https://www.sec.gov/Archives/edgar/data/1326801/000095010326015980/ownership.xml"
-    },
-    {
-     "fecha": "2026-10-19",
-     "quien": "Olivan Javier",
-     "cargo": "Chief Operating Officer",
-     "tipo": "venta",
-     "importe_usd": 40310,
-     "acciones": 57,
-     "url": "https://www.sec.gov/Archives/edgar/data/1326801/000095010326015980/ownership.xml"
-    },
-    {
-     "fecha": "2026-10-19",
-     "quien": "Olivan Javier",
-     "cargo": "Chief Operating Officer",
-     "tipo": "venta",
-     "importe_usd": 57990,
-     "acciones": 82,
-     "url": "https://www.sec.gov/Archives/edgar/data/1326801/000095010326015980/ownership.xml"
-    },
-    {
-     "fecha": "2026-10-19",
-     "quien": "Olivan Javier",
-     "cargo": "Chief Operating Officer",
-     "tipo": "venta",
-     "importe_usd": 288538,
-     "acciones": 408,
-     "url": "https://www.sec.gov/Archives/edgar/data/1326801/000095010326015980/ownership.xml"
     }
    ],
    "cobertura": true,
    "compra_cluster": false,
    "n_compradores": 0,
    "importe_compras": 0,
-   "importe_ventas": 17107242
+   "importe_ventas": 17354409
   },
   {
    "t": "IBE.MC",
@@ -2656,7 +2559,7 @@
    "empresas_cubiertas": 6,
    "mejorando": 5,
    "empeorando": 1,
-   "hechos_relevantes": 1,
+   "hechos_relevantes": 2,
    "clusters_insiders": 0
   },
   "Servicios de comunicación": {
@@ -2699,6 +2602,20 @@
  "central_banks": [
   {
    "banco": "BCE",
+   "tipo": "discurso",
+   "fecha": "2026-11-18",
+   "titulo": "Boris Vujčić: Financial Stability Review - November 2026",
+   "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261118~86f1e8147e.en.pdf"
+  },
+  {
+   "banco": "BCE",
+   "tipo": "discurso",
+   "fecha": "2026-11-17",
+   "titulo": "Philip R. Lane: The practice and science of monetary policy communication: the ECB experience",
+   "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261117~7f5d3b1a0e.en.pdf"
+  },
+  {
+   "banco": "BCE",
    "tipo": "comunicado",
    "fecha": "2026-11-16",
    "titulo": "Frank Elderson: Smart supervision for small banks",
@@ -2717,44 +2634,6 @@
    "fecha": "2026-11-13",
    "titulo": "Isabel Schnabel: Made in Europe",
    "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261113~3883f1f187.en.html"
-  },
-  {
-   "banco": "Fed",
-   "tipo": "comunicado",
-   "fecha": "2026-11-12",
-   "titulo": "Federal Reserve announces revised tentative schedule of Federal Open Market Committee meetings in 2027",
-   "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261112a.htm"
-  },
-  {
-   "banco": "Fed",
-   "tipo": "discurso",
-   "fecha": "2026-11-10",
-   "titulo": "Bowman, The U.S. Economy and Considerations for Monetary Policy",
-   "url": "https://www.federalreserve.gov/newsevents/speech/bowman20261110a.htm",
-   "postura": 0,
-   "tema": "U.S. economy monetary policy considerations",
-   "resumen": "Speech outlines economic outlook but gives no specific rate guidance."
-  },
-  {
-   "banco": "Fed",
-   "tipo": "discurso",
-   "fecha": "2026-11-10",
-   "titulo": "Waller, The Economic Outlook and Some Thoughts on Labor Market Dynamism",
-   "url": "https://www.federalreserve.gov/newsevents/speech/waller20261110a.htm"
-  },
-  {
-   "banco": "BCE",
-   "tipo": "discurso",
-   "fecha": "2026-11-10",
-   "titulo": "Philip R. Lane: The science and practice of monetary policy communication: the ECB experience",
-   "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261110_1~9725b7aa07.en.html"
-  },
-  {
-   "banco": "BCE",
-   "tipo": "discurso",
-   "fecha": "2026-11-10",
-   "titulo": "Piero Cipollone: Cash and the digital euro: two sides of the same coin",
-   "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261110~9422461bad.en.html"
   }
  ]
 }
