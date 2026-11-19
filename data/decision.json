@@ -1,5 +1,5 @@
 {
- "date": "2026-11-18",
+ "date": "2026-11-19",
  "exposicion": {
   "banda_pct": "50-70",
   "nuevas_posiciones": "solo con factores claros y micro a favor, mitad de tamaño",
@@ -70,13 +70,6 @@
    "que_la_resuelve": "- El tipo real deja de subir (la Fed señala pausa, o un dato de inflación sorprende a la baja): el oro rebota, normalmente con fuerza (noviembre 2023: +10 % en seis semanas).\n- La inflación se confirma persistente y el breakeven se desancla: el oro sube pese al tipo real (1970s, 2022 primer trimestre)."
   },
   {
-   "id": "nominas-debiles-con-peticiones-bajas",
-   "titulo": "Nóminas débiles con peticiones de desempleo bajas",
-   "por_que": "señal cruzada PAYEMS vs ICSA",
-   "que_hacer": "- Filtro 1: régimen Mixto o Reflación suave; exposición en la banda media.\n- Filtro 2 y 3: evitar consumo discrecional de renta baja y servicios de empleo; preferir empresas con pricing power y poca dependencia del consumidor medio.\n- Nivel 6: stops normales; la resolución a la baja (peticiones saltando) tarda semanas en llegar y el disparador avisa.\n- **Vigilar cada jueves**: la media de 4 semanas de peticiones; el disparador está en 240.000. Y en el informe de empleo, las revisiones de meses anteriores: en 2024 las revisiones negativas acumuladas fueron la primera señal de que la fase se resolvía a la baja.",
-   "que_la_resuelve": "- **Al alza**: nóminas de vuelta por encima de 150.000 con peticiones estables; suele venir con recortes de la Fed o con un repunte de pedidos (2019-2020 antes de la pandemia, 2024 segundo semestre).\n- **A la baja**: peticiones por encima de 240.000-260.000 durante un mes; el paro sube dos décimas en dos meses; la regla de Sahm se activa en 1-3 mes…"
-  },
-  {
    "id": "cobre-oro-y-10-anos",
    "titulo": "El ratio cobre/oro como predictor del 10 años",
    "por_que": "señal cruzada CU_AU vs DGS10",
@@ -96,23 +89,21 @@
    "por_que": "dólar fuerte con materias primas caras",
    "que_hacer": "- Energía y mineras: las únicas donde el dólar fuerte no resta; preferirlas dentro de los sectores favorecidos.\n- Vetar consumo europeo y empresas europeas con costes en dólares (aerolíneas, químicas sin pricing power).\n- Exportadoras europeas: el euro débil compensa en parte; selección por margen.",
    "que_la_resuelve": "- La materia prima cae (destrucción de demanda, más oferta): el dólar manda de nuevo.\n- El dólar cae (Fed recorta): las materias primas suben más."
+  },
+  {
+   "id": "vix-sobre-25",
+   "titulo": "VIX por encima de 25 (régimen de miedo)",
+   "por_que": "VIX (22.5) por debajo de la volatilidad realizada (22.9): el mercado infravalora el riesgo",
+   "que_hacer": "- Susto (HY < 400, peticiones estables): no vender; añadir en calidad con tamaño normal cuando el VIX empiece a bajar desde el pico (no en el pico); es la mejor entrada del año en 2018, 2024 y 2025.\n- Crisis (HY > 500, peticiones subiendo): exposición mínima; esperar a que la Fed actúe (el suelo suele coincidir con su anuncio).\n- Nunca vender volatilidad ni abrir con apalancamiento en el pico.",
+   "que_la_resuelve": "- VIX baja de 20: fase cerrada; suele ocurrir 2-6 semanas después del pico en sustos.\n- VIX > 40: crisis; mirar la Fed."
   }
  ],
  "sensibilidad": {
   "disparadores": [
    {
-    "serie": "^VIX",
-    "umbral": 25,
-    "valor_actual": 24.049999237060547,
-    "si_se_cruza": {
-     "sin_cambios": "no altera régimen ni sesgos; solo la lectura"
-    },
-    "texto": "VIX > 25: régimen de miedo; históricamente mejor comprar que vender."
-   },
-   {
     "serie": "JPY=X",
     "umbral": 150,
-    "valor_actual": 159.35400390625,
+    "valor_actual": 159.87600708007812,
     "si_se_cruza": {
      "sin_cambios": "no altera régimen ni sesgos; solo la lectura"
     },
@@ -121,10 +112,9 @@
    {
     "serie": "DGS10",
     "umbral": 5.5,
-    "valor_actual": 5.12,
+    "valor_actual": 5.1,
     "si_se_cruza": {
-     "tension": "baja → media",
-     "score_liquidez": "+0 → -1"
+     "sin_cambios": "no altera régimen ni sesgos; solo la lectura"
     },
     "texto": "Treasury 10 años > 5,50%: compite de frente con un earnings yield del 4%."
    },
@@ -145,6 +135,15 @@
      "sin_cambios": "no altera régimen ni sesgos; solo la lectura"
     },
     "texto": "Paro > 4,5%: regla de Sahm en marcha (0,5 pp sobre el mínimo de 12 meses)."
+   },
+   {
+    "serie": "^VIX",
+    "umbral": 25,
+    "valor_actual": 22.479999542236328,
+    "si_se_cruza": {
+     "sin_cambios": "no altera régimen ni sesgos; solo la lectura"
+    },
+    "texto": "VIX > 25: régimen de miedo; históricamente mejor comprar que vender."
    }
   ],
   "datos_semana": [
@@ -175,7 +174,7 @@
    {
     "publicacion": "Peticiones de desempleo",
     "serie": "ICSA",
-    "valor_actual": 200000.0,
+    "valor_actual": 203000.0,
     "paso": 30000,
     "si_sube": {
      "sin_cambios": true
@@ -187,7 +186,7 @@
   ]
  },
  "historial_regimen": {
-  "dias_en_regimen": 2,
+  "dias_en_regimen": 3,
   "ultimo_cambio": "2026-11-13",
   "secuencia_90d": [
    {
@@ -220,24 +219,22 @@
     "hace_20d": -1
    },
    "riesgo": {
-    "hoy": 0,
+    "hoy": -1,
     "hace_5d": -1,
-    "hace_20d": 0
+    "hace_20d": -1
    }
   }
  },
  "cambios": {
   "vs_ayer": {
-   "fecha": "2026-11-17"
+   "fecha": "2026-11-18",
+   "score_riesgo": "+0 → -1"
   },
   "vs_5d": {
-   "fecha": "2026-11-10",
+   "fecha": "2026-11-11",
    "regimen": "reflacion → mixto",
    "score_crecimiento": "+1 → +0",
-   "score_riesgo": "-1 → +0",
    "sector_Energía": "+2 → +0",
-   "sector_Financiero": "+1 → +0",
-   "sector_Industriales": "+1 → +0",
    "sector_Materiales": "+1 → -1",
    "sector_Salud": "+0 → -1",
    "sector_Utilities": "-2 → -1"
@@ -245,21 +242,33 @@
   "disparadores_que_se_mueven": [
    {
     "serie": "^VIX",
-    "distancia_antes": 1.96,
-    "distancia_hoy": 0.95,
+    "distancia_antes": 0.95,
+    "distancia_hoy": 2.52,
+    "se_acerca": false
+   },
+   {
+    "serie": "CCSA",
+    "distancia_antes": 303000.0,
+    "distancia_hoy": 237000.0,
     "se_acerca": true
    },
    {
     "serie": "BAMLH0A0HYM2",
-    "distancia_antes": 0.77,
-    "distancia_hoy": 0.66,
+    "distancia_antes": 0.66,
+    "distancia_hoy": 0.57,
+    "se_acerca": true
+   },
+   {
+    "serie": "ICSA",
+    "distancia_antes": 40000.0,
+    "distancia_hoy": 37000.0,
     "se_acerca": true
    },
    {
     "serie": "T10Y2Y",
-    "distancia_antes": 0.29,
-    "distancia_hoy": 0.3,
-    "se_acerca": false
+    "distancia_antes": 0.3,
+    "distancia_hoy": 0.27,
+    "se_acerca": true
    }
   ]
  },
@@ -269,8 +278,8 @@
    "avisos": [
     "sector con sesgo -1: revisar"
    ],
-   "R": -0.48144460879796463,
-   "dist_stop_pct": 4.2
+   "R": -0.3341740666799904,
+   "dist_stop_pct": 5.3
   }
  ],
  "que_no_hacer": [

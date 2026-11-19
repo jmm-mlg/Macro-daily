@@ -1,5 +1,5 @@
 {
- "date": "2026-11-18",
+ "date": "2026-11-19",
  "scope": "bellwethers",
  "companies": [
   {
@@ -23,7 +23,7 @@
      "down7": 1,
      "net30": 1.0
     },
-    "est_anual_chg30_pct": 5.2,
+    "est_anual_chg30_pct": 5.33,
     "recomendaciones": {
      "compra": 9,
      "venta": 0,
@@ -184,7 +184,7 @@
      "down7": 0,
      "net30": 1.0
     },
-    "est_anual_chg30_pct": 8.76,
+    "est_anual_chg30_pct": 7.73,
     "recomendaciones": {
      "compra": 8,
      "venta": 5,
@@ -216,7 +216,7 @@
      "down7": 9,
      "net30": -0.75
     },
-    "est_anual_chg30_pct": -0.81,
+    "est_anual_chg30_pct": -0.79,
     "recomendaciones": {
      "compra": 9,
      "venta": 1,
@@ -280,7 +280,7 @@
      "down7": 12,
      "net30": -0.33
     },
-    "est_anual_chg30_pct": -0.63,
+    "est_anual_chg30_pct": -1.1,
     "recomendaciones": {
      "compra": 17,
      "venta": 1,
@@ -288,8 +288,31 @@
     }
    },
    "eventos": [],
-   "insiders": [],
-   "cobertura": false
+   "insiders": [
+    {
+     "fecha": "2026-11-12",
+     "quien": "Maclennan David",
+     "cargo": "consejero",
+     "tipo": "compra",
+     "importe_usd": 208635,
+     "acciones": 350,
+     "url": "https://www.sec.gov/Archives/edgar/data/18230/000110465926127088/tm2629746-1_4seq1.xml"
+    },
+    {
+     "fecha": "2026-11-02",
+     "quien": "Fish James C Jr",
+     "cargo": "consejero",
+     "tipo": "compra",
+     "importe_usd": 620390,
+     "acciones": 1000,
+     "url": "https://www.sec.gov/Archives/edgar/data/18230/000110465926121809/tm2628874-1_4seq1.xml"
+    }
+   ],
+   "cobertura": true,
+   "compra_cluster": false,
+   "n_compradores": 2,
+   "importe_compras": 829025,
+   "importe_ventas": 0
   },
   {
    "t": "SIE.DE",
@@ -300,10 +323,10 @@
    "revisiones": {
     "trim": {
      "up30": 0,
-     "down30": 1,
+     "down30": 0,
      "up7": 0,
-     "down7": 1,
-     "net30": -1.0
+     "down7": 0,
+     "net30": 0.0
     },
     "anual": {
      "up30": 2,
@@ -312,11 +335,11 @@
      "down7": 1,
      "net30": -0.33
     },
-    "est_anual_chg30_pct": -4.69,
+    "est_anual_chg30_pct": -1.21,
     "recomendaciones": {
-     "compra": 16,
+     "compra": 15,
      "venta": 2,
-     "cambio_compra_1m": 0
+     "cambio_compra_1m": -1
     }
    },
    "eventos": [],
@@ -352,8 +375,58 @@
     }
    },
    "eventos": [],
-   "insiders": [],
-   "cobertura": false
+   "insiders": [
+    {
+     "fecha": "2026-11-10",
+     "quien": "Russ Claude F",
+     "cargo": "Interim CFO & Interim CAO",
+     "tipo": "venta",
+     "importe_usd": 4897630,
+     "acciones": 15493,
+     "url": "https://www.sec.gov/Archives/edgar/data/1048911/000104891126000158/form4.xml"
+    },
+    {
+     "fecha": "2026-11-10",
+     "quien": "Russ Claude F",
+     "cargo": "Interim CFO & Interim CAO",
+     "tipo": "venta",
+     "importe_usd": 401017,
+     "acciones": 1269,
+     "url": "https://www.sec.gov/Archives/edgar/data/1048911/000104891126000158/form4.xml"
+    },
+    {
+     "fecha": "2026-11-02",
+     "quien": "Adams Gina F.",
+     "cargo": "EVP GENL COUNSEL/SECTY",
+     "tipo": "venta",
+     "importe_usd": 955616,
+     "acciones": 3014,
+     "url": "https://www.sec.gov/Archives/edgar/data/1048911/000104891126000156/form4.xml"
+    },
+    {
+     "fecha": "2026-10-30",
+     "quien": "Brightman Tracy B",
+     "cargo": "EVP - Chief People Officer",
+     "tipo": "venta",
+     "importe_usd": 7306901,
+     "acciones": 23070,
+     "url": "https://www.sec.gov/Archives/edgar/data/1048911/000104891126000133/form4.xml"
+    },
+    {
+     "fecha": "2026-10-30",
+     "quien": "Brightman Tracy B",
+     "cargo": "EVP - Chief People Officer",
+     "tipo": "venta",
+     "importe_usd": 1120373,
+     "acciones": 3541,
+     "url": "https://www.sec.gov/Archives/edgar/data/1048911/000104891126000133/form4.xml"
+    }
+   ],
+   "cobertura": true,
+   "compra_cluster": false,
+   "n_compradores": 0,
+   "importe_compras": 0,
+   "importe_ventas": 14681537
   },
   {
    "t": "MAERSK-B.CO",
@@ -408,7 +481,7 @@
      "down7": 14,
      "net30": -1.0
     },
-    "est_anual_chg30_pct": -22.91,
+    "est_anual_chg30_pct": -21.46,
     "recomendaciones": {
      "compra": 4,
      "venta": 3,
@@ -453,7 +526,11 @@
    },
    "eventos": [],
    "insiders": [],
-   "cobertura": false
+   "cobertura": true,
+   "compra_cluster": false,
+   "n_compradores": 0,
+   "importe_compras": 0,
+   "importe_ventas": 0
   },
   {
    "t": "VOW3.DE",
@@ -540,7 +617,7 @@
      "down7": 0,
      "net30": 0.33
     },
-    "est_anual_chg30_pct": 0.02,
+    "est_anual_chg30_pct": 0.01,
     "recomendaciones": {
      "compra": 19,
      "venta": 1,
@@ -638,7 +715,7 @@
      "down7": 1,
      "net30": -0.2
     },
-    "est_anual_chg30_pct": 0.34,
+    "est_anual_chg30_pct": -0.34,
     "recomendaciones": {
      "compra": 22,
      "venta": 0,
@@ -787,6 +864,16 @@
    },
    "eventos": [
     {
+     "fecha": "2026-11-19",
+     "codigos": [
+      "2.02",
+      "9.01"
+     ],
+     "descripcion": "Resultados",
+     "importancia": 3,
+     "url": "https://www.sec.gov/Archives/edgar/data/104169/000010416926000168/wmt-20261119.htm"
+    },
+    {
      "fecha": "2026-11-16",
      "codigos": [
       "5.02",
@@ -876,7 +963,7 @@
      "down7": 7,
      "net30": -0.07
     },
-    "est_anual_chg30_pct": 0.05,
+    "est_anual_chg30_pct": 0.06,
     "recomendaciones": {
      "compra": 14,
      "venta": 1,
@@ -1012,7 +1099,7 @@
      "down7": 7,
      "net30": -0.92
     },
-    "est_anual_chg30_pct": 1.3,
+    "est_anual_chg30_pct": 1.65,
     "recomendaciones": {
      "compra": 25,
      "venta": 2,
@@ -1020,8 +1107,22 @@
     }
    },
    "eventos": [],
-   "insiders": [],
-   "cobertura": false
+   "insiders": [
+    {
+     "fecha": "2026-11-02",
+     "quien": "Hakim Anat",
+     "cargo": "EVP, GC & Secretary",
+     "tipo": "venta",
+     "importe_usd": 7012600,
+     "acciones": 5000,
+     "url": "https://www.sec.gov/Archives/edgar/data/59478/000168555626000008/wk-form4_1793740481.xml"
+    }
+   ],
+   "cobertura": true,
+   "compra_cluster": false,
+   "n_compradores": 0,
+   "importe_compras": 0,
+   "importe_ventas": 7012600
   },
   {
    "t": "NOVO-B.CO",
@@ -1044,7 +1145,7 @@
      "down7": 0,
      "net30": 0.87
     },
-    "est_anual_chg30_pct": 4.37,
+    "est_anual_chg30_pct": 3.96,
     "recomendaciones": {
      "compra": 5,
      "venta": 6,
@@ -1076,11 +1177,11 @@
      "down7": 0,
      "net30": 1.0
     },
-    "est_anual_chg30_pct": -0.2,
+    "est_anual_chg30_pct": -0.34,
     "recomendaciones": {
-     "compra": 21,
+     "compra": 22,
      "venta": 0,
-     "cambio_compra_1m": 0
+     "cambio_compra_1m": 1
     }
    },
    "eventos": [],
@@ -1190,7 +1291,7 @@
      "down7": 2,
      "net30": -1.0
     },
-    "est_anual_chg30_pct": 1.36,
+    "est_anual_chg30_pct": 1.53,
     "recomendaciones": {
      "compra": 5,
      "venta": 6,
@@ -1222,7 +1323,7 @@
      "down7": 2,
      "net30": 0.39
     },
-    "est_anual_chg30_pct": 0.19,
+    "est_anual_chg30_pct": 0.17,
     "recomendaciones": {
      "compra": 35,
      "venta": 1,
@@ -1275,13 +1376,40 @@
      "importe_usd": 8454534,
      "acciones": 19783,
      "url": "https://www.sec.gov/Archives/edgar/data/1403161/000140316126000136/form4.xml"
+    },
+    {
+     "fecha": "2026-11-02",
+     "quien": "Taneja Rajat",
+     "cargo": "PRESIDENT, TECHNOLOGY",
+     "tipo": "venta",
+     "importe_usd": 14642402,
+     "acciones": 34418,
+     "url": "https://www.sec.gov/Archives/edgar/data/1403161/000140316126000130/form4.xml"
+    },
+    {
+     "fecha": "2026-11-02",
+     "quien": "Mcinerney Ryan",
+     "cargo": "Chief Executive Officer",
+     "tipo": "venta",
+     "importe_usd": 2445292,
+     "acciones": 5875,
+     "url": "https://www.sec.gov/Archives/edgar/data/1403161/000140316126000129/form4.xml"
+    },
+    {
+     "fecha": "2026-10-30",
+     "quien": "Carney Lloyd",
+     "cargo": "consejero",
+     "tipo": "venta",
+     "importe_usd": 251244,
+     "acciones": 605,
+     "url": "https://www.sec.gov/Archives/edgar/data/1403161/000140316126000128/form4.xml"
     }
    ],
    "cobertura": true,
    "compra_cluster": false,
    "n_compradores": 0,
    "importe_compras": 0,
-   "importe_ventas": 16917668
+   "importe_ventas": 34256606
   },
   {
    "t": "MSFT",
@@ -1304,11 +1432,11 @@
      "down7": 0,
      "net30": 0.79
     },
-    "est_anual_chg30_pct": 1.19,
+    "est_anual_chg30_pct": 1.27,
     "recomendaciones": {
      "compra": 53,
      "venta": 0,
-     "cambio_compra_1m": 1
+     "cambio_compra_1m": 0
     }
    },
    "eventos": [],
@@ -1400,11 +1528,11 @@
      "down7": 0,
      "net30": 1.0
     },
-    "est_anual_chg30_pct": 0.26,
+    "est_anual_chg30_pct": 3.55,
     "recomendaciones": {
-     "compra": 47,
+     "compra": 45,
      "venta": 2,
-     "cambio_compra_1m": -12
+     "cambio_compra_1m": -14
     }
    },
    "eventos": [
@@ -1751,7 +1879,7 @@
      "down7": 21,
      "net30": -0.53
     },
-    "est_anual_chg30_pct": -1.81,
+    "est_anual_chg30_pct": -1.68,
     "recomendaciones": {
      "compra": 26,
      "venta": 6,
@@ -1760,6 +1888,24 @@
    },
    "eventos": [],
    "insiders": [
+    {
+     "fecha": "2026-11-16",
+     "quien": "Levinson Arthur D",
+     "cargo": "",
+     "tipo": "venta",
+     "importe_usd": 12960350,
+     "acciones": 36792,
+     "url": "https://www.sec.gov/Archives/edgar/data/320193/000114036126044773/form4.xml"
+    },
+    {
+     "fecha": "2026-11-16",
+     "quien": "Levinson Arthur D",
+     "cargo": "",
+     "tipo": "venta",
+     "importe_usd": 18805303,
+     "acciones": 53208,
+     "url": "https://www.sec.gov/Archives/edgar/data/320193/000114036126044773/form4.xml"
+    },
     {
      "fecha": "2026-11-10",
      "quien": "Newstead Jennifer",
@@ -1795,103 +1941,13 @@
      "importe_usd": 814748,
      "acciones": 2399,
      "url": "https://www.sec.gov/Archives/edgar/data/320193/000114036126040540/form4.xml"
-    },
-    {
-     "fecha": "2026-10-16",
-     "quien": "Borders Ben",
-     "cargo": "Principal Accounting Officer",
-     "tipo": "venta",
-     "importe_usd": 51805,
-     "acciones": 151,
-     "url": "https://www.sec.gov/Archives/edgar/data/320193/000114036126040127/form4.xml"
-    },
-    {
-     "fecha": "2026-10-16",
-     "quien": "Borders Ben",
-     "cargo": "Principal Accounting Officer",
-     "tipo": "venta",
-     "importe_usd": 27534,
-     "acciones": 80,
-     "url": "https://www.sec.gov/Archives/edgar/data/320193/000114036126040127/form4.xml"
-    },
-    {
-     "fecha": "2026-10-16",
-     "quien": "Borders Ben",
-     "cargo": "Principal Accounting Officer",
-     "tipo": "venta",
-     "importe_usd": 335022,
-     "acciones": 969,
-     "url": "https://www.sec.gov/Archives/edgar/data/320193/000114036126040127/form4.xml"
-    },
-    {
-     "fecha": "2026-10-16",
-     "quien": "Borders Ben",
-     "cargo": "Principal Accounting Officer",
-     "tipo": "venta",
-     "importe_usd": 13849,
-     "acciones": 40,
-     "url": "https://www.sec.gov/Archives/edgar/data/320193/000114036126040127/form4.xml"
-    },
-    {
-     "fecha": "2026-10-16",
-     "quien": "Borders Ben",
-     "cargo": "Principal Accounting Officer",
-     "tipo": "venta",
-     "importe_usd": 13897,
-     "acciones": 40,
-     "url": "https://www.sec.gov/Archives/edgar/data/320193/000114036126040127/form4.xml"
-    },
-    {
-     "fecha": "2026-10-16",
-     "quien": "Parekh Kevan",
-     "cargo": "Senior Vice President,  CFO",
-     "tipo": "venta",
-     "importe_usd": 68532,
-     "acciones": 200,
-     "url": "https://www.sec.gov/Archives/edgar/data/320193/000114036126040126/form4.xml"
-    },
-    {
-     "fecha": "2026-10-16",
-     "quien": "Parekh Kevan",
-     "cargo": "Senior Vice President,  CFO",
-     "tipo": "venta",
-     "importe_usd": 65987,
-     "acciones": 192,
-     "url": "https://www.sec.gov/Archives/edgar/data/320193/000114036126040126/form4.xml"
-    },
-    {
-     "fecha": "2026-10-16",
-     "quien": "Parekh Kevan",
-     "cargo": "Senior Vice President,  CFO",
-     "tipo": "venta",
-     "importe_usd": 304181,
-     "acciones": 880,
-     "url": "https://www.sec.gov/Archives/edgar/data/320193/000114036126040126/form4.xml"
-    },
-    {
-     "fecha": "2026-10-16",
-     "quien": "Parekh Kevan",
-     "cargo": "Senior Vice President,  CFO",
-     "tipo": "venta",
-     "importe_usd": 27718,
-     "acciones": 80,
-     "url": "https://www.sec.gov/Archives/edgar/data/320193/000114036126040126/form4.xml"
-    },
-    {
-     "fecha": "2026-10-16",
-     "quien": "Parekh Kevan",
-     "cargo": "Senior Vice President,  CFO",
-     "tipo": "venta",
-     "importe_usd": 13898,
-     "acciones": 40,
-     "url": "https://www.sec.gov/Archives/edgar/data/320193/000114036126040126/form4.xml"
     }
    ],
    "cobertura": true,
    "compra_cluster": false,
    "n_compradores": 0,
    "importe_compras": 0,
-   "importe_ventas": 4185279
+   "importe_ventas": 35028509
   },
   {
    "t": "GOOGL",
@@ -1914,7 +1970,7 @@
      "down7": 45,
      "net30": -1.0
     },
-    "est_anual_chg30_pct": -5.0,
+    "est_anual_chg30_pct": -5.04,
     "recomendaciones": {
      "compra": 53,
      "venta": 0,
@@ -2532,7 +2588,7 @@
    "empresas_cubiertas": 3,
    "mejorando": 1,
    "empeorando": 0,
-   "hechos_relevantes": 1,
+   "hechos_relevantes": 2,
    "clusters_insiders": 0
   },
   "Salud": {
@@ -2601,6 +2657,13 @@
  },
  "central_banks": [
   {
+   "banco": "Fed",
+   "tipo": "comunicado",
+   "fecha": "2026-11-18",
+   "titulo": "Minutes of the Federal Open Market Committee, October 27-28, 2026",
+   "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261118a.htm"
+  },
+  {
    "banco": "BCE",
    "tipo": "discurso",
    "fecha": "2026-11-18",
@@ -2634,6 +2697,20 @@
    "fecha": "2026-11-13",
    "titulo": "Isabel Schnabel: Made in Europe",
    "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261113~3883f1f187.en.html"
+  },
+  {
+   "banco": "Fed",
+   "tipo": "discurso",
+   "fecha": "2026-11-12",
+   "titulo": "Barr, American Inequality and the Future of AI",
+   "url": "https://www.federalreserve.gov/newsevents/speech/barr20261112a.htm"
+  },
+  {
+   "banco": "Fed",
+   "tipo": "comunicado",
+   "fecha": "2026-11-12",
+   "titulo": "Federal Reserve announces revised tentative schedule of Federal Open Market Committee meetings in 2027",
+   "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261112a.htm"
   }
  ]
 }
