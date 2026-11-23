@@ -1,11 +1,11 @@
 {
- "date": "2026-11-20",
+ "date": "2026-11-23",
  "exposicion": {
   "banda_pct": "50-70",
   "nuevas_posiciones": "solo con factores claros y micro a favor, mitad de tamaño",
   "factor_tamano": 0.5,
   "posicion_max_pct": 5.0,
-  "motivo": "régimen Mixto / transición con tensión baja (tabla del nivel 5 de la guía)"
+  "motivo": "régimen Mixto / transición con tensión media (tabla del nivel 5 de la guía)"
  },
  "abrir_hoy": {
   "respuesta": "no",
@@ -14,7 +14,7 @@
  "sectores_donde_buscar": [],
  "sectores_vetados": [
   {
-   "sector": "Materiales",
+   "sector": "Consumo básico",
    "motivo": "sesgo -1"
   },
   {
@@ -24,10 +24,6 @@
   {
    "sector": "Utilities",
    "motivo": "sesgo -1"
-  },
-  {
-   "sector": "Consumo básico",
-   "motivo": "sesgo -2"
   },
   {
    "sector": "Consumo discrecional",
@@ -77,18 +73,18 @@
    "que_la_resuelve": ""
   },
   {
-   "id": "pce-por-encima-de-la-proyeccion-del-fomc",
-   "titulo": "El PCE subyacente va por encima de la proyección del FOMC",
-   "por_que": "disparador PCEPILFE activado",
-   "que_hacer": "- Antes de la reunión con SEP: no abrir duración; esperar al dot plot.\n- Si el mercado ya descuenta más que la Fed (mercado-descuenta-mas-subidas-que-la-fed), la revisión al alza puede estar en precio.",
-   "que_la_resuelve": ""
-  },
-  {
    "id": "vix-sobre-25",
    "titulo": "VIX por encima de 25 (régimen de miedo)",
    "por_que": "disparador ^VIX activado",
    "que_hacer": "- Susto (HY < 400, peticiones estables): no vender; añadir en calidad con tamaño normal cuando el VIX empiece a bajar desde el pico (no en el pico); es la mejor entrada del año en 2018, 2024 y 2025.\n- Crisis (HY > 500, peticiones subiendo): exposición mínima; esperar a que la Fed actúe (el suelo suele coincidir con su anuncio).\n- Nunca vender volatilidad ni abrir con apalancamiento en el pico.",
    "que_la_resuelve": "- VIX baja de 20: fase cerrada; suele ocurrir 2-6 semanas después del pico en sustos.\n- VIX > 40: crisis; mirar la Fed."
+  },
+  {
+   "id": "pce-por-encima-de-la-proyeccion-del-fomc",
+   "titulo": "El PCE subyacente va por encima de la proyección del FOMC",
+   "por_que": "disparador PCEPILFE activado",
+   "que_hacer": "- Antes de la reunión con SEP: no abrir duración; esperar al dot plot.\n- Si el mercado ya descuenta más que la Fed (mercado-descuenta-mas-subidas-que-la-fed), la revisión al alza puede estar en precio.",
+   "que_la_resuelve": ""
   },
   {
    "id": "dolar-fuerte-y-materias-primas",
@@ -101,9 +97,18 @@
  "sensibilidad": {
   "disparadores": [
    {
+    "serie": "BAMLH0A0HYM2",
+    "umbral": 4.0,
+    "valor_actual": 3.76,
+    "si_se_cruza": {
+     "sin_cambios": "no altera régimen ni sesgos; solo la lectura"
+    },
+    "texto": "HY > 400 pb: el crédito suele avisar 4-8 semanas antes que la bolsa."
+   },
+   {
     "serie": "JPY=X",
     "umbral": 150,
-    "valor_actual": 158.74899291992188,
+    "valor_actual": 159.43899536132812,
     "si_se_cruza": {
      "sin_cambios": "no altera régimen ni sesgos; solo la lectura"
     },
@@ -112,10 +117,9 @@
    {
     "serie": "DGS10",
     "umbral": 5.5,
-    "valor_actual": 5.07,
+    "valor_actual": 5.04,
     "si_se_cruza": {
-     "tension": "baja → media",
-     "score_liquidez": "+0 → -1"
+     "sin_cambios": "no altera régimen ni sesgos; solo la lectura"
     },
     "texto": "Treasury 10 años > 5,50%: compite de frente con un earnings yield del 4%."
    },
@@ -136,15 +140,6 @@
      "sin_cambios": "no altera régimen ni sesgos; solo la lectura"
     },
     "texto": "Paro > 4,5%: regla de Sahm en marcha (0,5 pp sobre el mínimo de 12 meses)."
-   },
-   {
-    "serie": "CCSA",
-    "umbral": 2000000,
-    "valor_actual": 1763000.0,
-    "si_se_cruza": {
-     "sin_cambios": "no altera régimen ni sesgos; solo la lectura"
-    },
-    "texto": "Continuadas > 2 M: el mercado laboral deja de absorber; precede a la subida del paro."
    }
   ],
   "datos_semana": [
@@ -187,7 +182,7 @@
   ]
  },
  "historial_regimen": {
-  "dias_en_regimen": 4,
+  "dias_en_regimen": 5,
   "ultimo_cambio": "2026-11-13",
   "secuencia_90d": [
    {
@@ -215,41 +210,48 @@
     "hace_20d": 1
    },
    "liquidez": {
-    "hoy": 0,
+    "hoy": -1,
     "hace_5d": 0,
     "hace_20d": -1
    },
    "riesgo": {
     "hoy": -1,
-    "hace_5d": -1,
+    "hace_5d": 0,
     "hace_20d": 0
    }
   }
  },
  "cambios": {
   "vs_ayer": {
-   "fecha": "2026-11-19"
+   "fecha": "2026-11-20",
+   "tension": "baja → media",
+   "score_liquidez": "+0 → -1",
+   "sector_Materiales": "-1 → +0",
+   "sector_Consumo básico": "-2 → -1"
   },
   "vs_5d": {
-   "fecha": "2026-11-12",
+   "fecha": "2026-11-13",
    "regimen": "reflacion → mixto",
+   "tension": "baja → media",
    "score_crecimiento": "+1 → +0",
+   "score_liquidez": "+0 → -1",
+   "score_riesgo": "+0 → -1",
    "sector_Energía": "+2 → +0",
-   "sector_Materiales": "+0 → -1",
+   "sector_Consumo básico": "-2 → -1",
    "sector_Utilities": "-2 → -1"
   },
   "disparadores_que_se_mueven": [
    {
     "serie": "^VIX",
-    "distancia_antes": 2.52,
-    "distancia_hoy": -5.2,
-    "se_acerca": false
+    "distancia_antes": -5.2,
+    "distancia_hoy": -2.65,
+    "se_acerca": true
    },
    {
-    "serie": "T10Y2Y",
-    "distancia_antes": 0.27,
-    "distancia_hoy": 0.28,
-    "se_acerca": false
+    "serie": "BAMLH0A0HYM2",
+    "distancia_antes": 0.53,
+    "distancia_hoy": 0.24,
+    "se_acerca": true
    }
   ]
  },
@@ -259,22 +261,23 @@
    "avisos": [
     "sector con sesgo -1: revisar"
    ],
-   "R": -0.5018915510718792,
-   "dist_stop_pct": 4.0
+   "R": -0.43367643498919145,
+   "dist_stop_pct": 4.5
   },
   {
    "ticker": "FAST",
    "avisos": [
     "STOP ALCANZADO: cerrar"
    ],
-   "R": -1.0524343426307936,
-   "dist_stop_pct": -0.3
+   "R": -1.191010721613852,
+   "dist_stop_pct": -1.0
   }
  ],
  "que_no_hacer": [
-  "No abrir en Materiales (sesgo -1)",
+  "No abrir en Consumo básico (sesgo -1)",
   "No abrir en Salud (sesgo -1)",
   "No abrir en Utilities (sesgo -1)",
-  "No abrir en Consumo básico (sesgo -2)"
+  "No abrir en Consumo discrecional (sesgo -2)",
+  "No aumentar exposición agregada con la prima de riesgo comprimida"
  ]
 }
