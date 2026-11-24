@@ -1,5 +1,5 @@
 {
- "date": "2026-11-23",
+ "date": "2026-11-24",
  "exposicion": {
   "banda_pct": "50-70",
   "nuevas_posiciones": "solo con factores claros y micro a favor, mitad de tamaño",
@@ -73,18 +73,18 @@
    "que_la_resuelve": ""
   },
   {
-   "id": "vix-sobre-25",
-   "titulo": "VIX por encima de 25 (régimen de miedo)",
-   "por_que": "disparador ^VIX activado",
-   "que_hacer": "- Susto (HY < 400, peticiones estables): no vender; añadir en calidad con tamaño normal cuando el VIX empiece a bajar desde el pico (no en el pico); es la mejor entrada del año en 2018, 2024 y 2025.\n- Crisis (HY > 500, peticiones subiendo): exposición mínima; esperar a que la Fed actúe (el suelo suele coincidir con su anuncio).\n- Nunca vender volatilidad ni abrir con apalancamiento en el pico.",
-   "que_la_resuelve": "- VIX baja de 20: fase cerrada; suele ocurrir 2-6 semanas después del pico en sustos.\n- VIX > 40: crisis; mirar la Fed."
-  },
-  {
    "id": "pce-por-encima-de-la-proyeccion-del-fomc",
    "titulo": "El PCE subyacente va por encima de la proyección del FOMC",
    "por_que": "disparador PCEPILFE activado",
    "que_hacer": "- Antes de la reunión con SEP: no abrir duración; esperar al dot plot.\n- Si el mercado ya descuenta más que la Fed (mercado-descuenta-mas-subidas-que-la-fed), la revisión al alza puede estar en precio.",
    "que_la_resuelve": ""
+  },
+  {
+   "id": "vix-sobre-25",
+   "titulo": "VIX por encima de 25 (régimen de miedo)",
+   "por_que": "disparador ^VIX activado",
+   "que_hacer": "- Susto (HY < 400, peticiones estables): no vender; añadir en calidad con tamaño normal cuando el VIX empiece a bajar desde el pico (no en el pico); es la mejor entrada del año en 2018, 2024 y 2025.\n- Crisis (HY > 500, peticiones subiendo): exposición mínima; esperar a que la Fed actúe (el suelo suele coincidir con su anuncio).\n- Nunca vender volatilidad ni abrir con apalancamiento en el pico.",
+   "que_la_resuelve": "- VIX baja de 20: fase cerrada; suele ocurrir 2-6 semanas después del pico en sustos.\n- VIX > 40: crisis; mirar la Fed."
   },
   {
    "id": "dolar-fuerte-y-materias-primas",
@@ -108,20 +108,11 @@
    {
     "serie": "JPY=X",
     "umbral": 150,
-    "valor_actual": 159.43899536132812,
+    "valor_actual": 159.05599975585938,
     "si_se_cruza": {
      "sin_cambios": "no altera régimen ni sesgos; solo la lectura"
     },
     "texto": "Dólar-yen < 150: el yen se fortalece; riesgo de deshacer del carry (ago-2024 fue 162 → 142)."
-   },
-   {
-    "serie": "DGS10",
-    "umbral": 5.5,
-    "valor_actual": 5.04,
-    "si_se_cruza": {
-     "sin_cambios": "no altera régimen ni sesgos; solo la lectura"
-    },
-    "texto": "Treasury 10 años > 5,50%: compite de frente con un earnings yield del 4%."
    },
    {
     "serie": "PSAVERT",
@@ -140,6 +131,15 @@
      "sin_cambios": "no altera régimen ni sesgos; solo la lectura"
     },
     "texto": "Paro > 4,5%: regla de Sahm en marcha (0,5 pp sobre el mínimo de 12 meses)."
+   },
+   {
+    "serie": "DGS10",
+    "umbral": 5.5,
+    "valor_actual": 4.92,
+    "si_se_cruza": {
+     "sin_cambios": "no altera régimen ni sesgos; solo la lectura"
+    },
+    "texto": "Treasury 10 años > 5,50%: compite de frente con un earnings yield del 4%."
    }
   ],
   "datos_semana": [
@@ -182,7 +182,7 @@
   ]
  },
  "historial_regimen": {
-  "dias_en_regimen": 5,
+  "dias_en_regimen": 6,
   "ultimo_cambio": "2026-11-13",
   "secuencia_90d": [
    {
@@ -201,7 +201,7 @@
   "trayectoria_scores": {
    "crecimiento": {
     "hoy": 0,
-    "hace_5d": 1,
+    "hace_5d": 0,
     "hace_20d": 0
    },
    "inflacion": {
@@ -212,7 +212,7 @@
    "liquidez": {
     "hoy": -1,
     "hace_5d": 0,
-    "hace_20d": -1
+    "hace_20d": 0
    },
    "riesgo": {
     "hoy": -1,
@@ -223,35 +223,28 @@
  },
  "cambios": {
   "vs_ayer": {
-   "fecha": "2026-11-20",
-   "tension": "baja → media",
-   "score_liquidez": "+0 → -1",
-   "sector_Materiales": "-1 → +0",
-   "sector_Consumo básico": "-2 → -1"
+   "fecha": "2026-11-23"
   },
   "vs_5d": {
-   "fecha": "2026-11-13",
-   "regimen": "reflacion → mixto",
+   "fecha": "2026-11-17",
    "tension": "baja → media",
-   "score_crecimiento": "+1 → +0",
    "score_liquidez": "+0 → -1",
    "score_riesgo": "+0 → -1",
-   "sector_Energía": "+2 → +0",
-   "sector_Consumo básico": "-2 → -1",
-   "sector_Utilities": "-2 → -1"
+   "sector_Materiales": "-1 → +0",
+   "sector_Consumo básico": "-2 → -1"
   },
   "disparadores_que_se_mueven": [
    {
     "serie": "^VIX",
-    "distancia_antes": -5.2,
-    "distancia_hoy": -2.65,
-    "se_acerca": true
+    "distancia_antes": -2.65,
+    "distancia_hoy": -3.2,
+    "se_acerca": false
    },
    {
-    "serie": "BAMLH0A0HYM2",
-    "distancia_antes": 0.53,
-    "distancia_hoy": 0.24,
-    "se_acerca": true
+    "serie": "DGS10",
+    "distancia_antes": 0.46,
+    "distancia_hoy": 0.58,
+    "se_acerca": false
    }
   ]
  },
@@ -261,23 +254,22 @@
    "avisos": [
     "sector con sesgo -1: revisar"
    ],
-   "R": -0.43367643498919145,
-   "dist_stop_pct": 4.5
+   "R": -0.48991212344904106,
+   "dist_stop_pct": 4.1
   },
   {
    "ticker": "FAST",
    "avisos": [
     "STOP ALCANZADO: cerrar"
    ],
-   "R": -1.191010721613852,
-   "dist_stop_pct": -1.0
+   "R": -1.473782657237535,
+   "dist_stop_pct": -2.5
   }
  ],
  "que_no_hacer": [
   "No abrir en Consumo básico (sesgo -1)",
   "No abrir en Salud (sesgo -1)",
   "No abrir en Utilities (sesgo -1)",
-  "No abrir en Consumo discrecional (sesgo -2)",
-  "No aumentar exposición agregada con la prima de riesgo comprimida"
+  "No abrir en Consumo discrecional (sesgo -2)"
  ]
 }
