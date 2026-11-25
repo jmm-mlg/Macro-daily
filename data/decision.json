@@ -1,5 +1,5 @@
 {
- "date": "2026-11-24",
+ "date": "2026-11-25",
  "exposicion": {
   "banda_pct": "50-70",
   "nuevas_posiciones": "solo con factores claros y micro a favor, mitad de tamaño",
@@ -14,7 +14,7 @@
  "sectores_donde_buscar": [],
  "sectores_vetados": [
   {
-   "sector": "Consumo básico",
+   "sector": "Materiales",
    "motivo": "sesgo -1"
   },
   {
@@ -24,6 +24,10 @@
   {
    "sector": "Utilities",
    "motivo": "sesgo -1"
+  },
+  {
+   "sector": "Consumo básico",
+   "motivo": "sesgo -2"
   },
   {
    "sector": "Consumo discrecional",
@@ -66,6 +70,13 @@
    "que_la_resuelve": "- El tipo real deja de subir (la Fed señala pausa, o un dato de inflación sorprende a la baja): el oro rebota, normalmente con fuerza (noviembre 2023: +10 % en seis semanas).\n- La inflación se confirma persistente y el breakeven se desancla: el oro sube pese al tipo real (1970s, 2022 primer trimestre)."
   },
   {
+   "id": "nominas-debiles-con-peticiones-bajas",
+   "titulo": "Nóminas débiles con peticiones de desempleo bajas",
+   "por_que": "señal cruzada PAYEMS vs ICSA",
+   "que_hacer": "- Filtro 1: régimen Mixto o Reflación suave; exposición en la banda media.\n- Filtro 2 y 3: evitar consumo discrecional de renta baja y servicios de empleo; preferir empresas con pricing power y poca dependencia del consumidor medio.\n- Nivel 6: stops normales; la resolución a la baja (peticiones saltando) tarda semanas en llegar y el disparador avisa.\n- **Vigilar cada jueves**: la media de 4 semanas de peticiones; el disparador está en 240.000. Y en el informe de empleo, las revisiones de meses anteriores: en 2024 las revisiones negativas acumuladas fueron la primera señal de que la fase se resolvía a la baja.",
+   "que_la_resuelve": "- **Al alza**: nóminas de vuelta por encima de 150.000 con peticiones estables; suele venir con recortes de la Fed o con un repunte de pedidos (2019-2020 antes de la pandemia, 2024 segundo semestre).\n- **A la baja**: peticiones por encima de 240.000-260.000 durante un mes; el paro sube dos décimas en dos meses; la regla de Sahm se activa en 1-3 mes…"
+  },
+  {
    "id": "cobre-oro-y-10-anos",
    "titulo": "El ratio cobre/oro como predictor del 10 años",
    "por_que": "señal cruzada CU_AU vs DGS10",
@@ -85,43 +96,27 @@
    "por_que": "disparador ^VIX activado",
    "que_hacer": "- Susto (HY < 400, peticiones estables): no vender; añadir en calidad con tamaño normal cuando el VIX empiece a bajar desde el pico (no en el pico); es la mejor entrada del año en 2018, 2024 y 2025.\n- Crisis (HY > 500, peticiones subiendo): exposición mínima; esperar a que la Fed actúe (el suelo suele coincidir con su anuncio).\n- Nunca vender volatilidad ni abrir con apalancamiento en el pico.",
    "que_la_resuelve": "- VIX baja de 20: fase cerrada; suele ocurrir 2-6 semanas después del pico en sustos.\n- VIX > 40: crisis; mirar la Fed."
-  },
-  {
-   "id": "dolar-fuerte-y-materias-primas",
-   "titulo": "Dólar fuerte con materias primas subiendo",
-   "por_que": "dólar fuerte con materias primas caras",
-   "que_hacer": "- Energía y mineras: las únicas donde el dólar fuerte no resta; preferirlas dentro de los sectores favorecidos.\n- Vetar consumo europeo y empresas europeas con costes en dólares (aerolíneas, químicas sin pricing power).\n- Exportadoras europeas: el euro débil compensa en parte; selección por margen.",
-   "que_la_resuelve": "- La materia prima cae (destrucción de demanda, más oferta): el dólar manda de nuevo.\n- El dólar cae (Fed recorta): las materias primas suben más."
   }
  ],
  "sensibilidad": {
   "disparadores": [
    {
-    "serie": "BAMLH0A0HYM2",
-    "umbral": 4.0,
-    "valor_actual": 3.76,
-    "si_se_cruza": {
-     "sin_cambios": "no altera régimen ni sesgos; solo la lectura"
-    },
-    "texto": "HY > 400 pb: el crédito suele avisar 4-8 semanas antes que la bolsa."
-   },
-   {
     "serie": "JPY=X",
     "umbral": 150,
-    "valor_actual": 159.05599975585938,
+    "valor_actual": 159.18800354003906,
     "si_se_cruza": {
      "sin_cambios": "no altera régimen ni sesgos; solo la lectura"
     },
     "texto": "Dólar-yen < 150: el yen se fortalece; riesgo de deshacer del carry (ago-2024 fue 162 → 142)."
    },
    {
-    "serie": "PSAVERT",
-    "umbral": 3.5,
-    "valor_actual": 3.8,
+    "serie": "BAMLH0A0HYM2",
+    "umbral": 4.0,
+    "valor_actual": 3.72,
     "si_se_cruza": {
      "sin_cambios": "no altera régimen ni sesgos; solo la lectura"
     },
-    "texto": "Ahorro < 3,5 %: el consumo nominal se sostiene con ahorro; se agota en 2-3 trimestres."
+    "texto": "HY > 400 pb: el crédito suele avisar 4-8 semanas antes que la bolsa."
    },
    {
     "serie": "UNRATE",
@@ -140,13 +135,22 @@
      "sin_cambios": "no altera régimen ni sesgos; solo la lectura"
     },
     "texto": "Treasury 10 años > 5,50%: compite de frente con un earnings yield del 4%."
+   },
+   {
+    "serie": "CCSA",
+    "umbral": 2000000,
+    "valor_actual": 1697000.0,
+    "si_se_cruza": {
+     "sin_cambios": "no altera régimen ni sesgos; solo la lectura"
+    },
+    "texto": "Continuadas > 2 M: el mercado laboral deja de absorber; precede a la subida del paro."
    }
   ],
   "datos_semana": [
    {
     "publicacion": "PCE / ingresos y gasto",
     "serie": "PCEPILFE",
-    "valor_actual": 3.1211596029620203,
+    "valor_actual": 3.26111744583808,
     "paso": 0.2,
     "si_sube": {
      "sin_cambios": true
@@ -158,7 +162,7 @@
    {
     "publicacion": "PIB EE.UU.",
     "serie": "GDPC1",
-    "valor_actual": 3.369618941355945,
+    "valor_actual": 4.281933367573587,
     "paso": 1.0,
     "si_sube": {
      "sin_cambios": true
@@ -170,19 +174,24 @@
    {
     "publicacion": "Peticiones de desempleo",
     "serie": "ICSA",
-    "valor_actual": 203000.0,
+    "valor_actual": 189000.0,
     "paso": 30000,
     "si_sube": {
      "sin_cambios": true
     },
     "si_baja": {
-     "sin_cambios": true
+     "regimen": "Mixto / transición → Reflación",
+     "score_crecimiento": "+0 → +1",
+     "sector_Energía": "+0 → +2",
+     "sector_Financiero": "+0 → +1",
+     "sector_Materiales": "-1 → +0",
+     "sector_Utilities": "-1 → -2"
     }
    }
   ]
  },
  "historial_regimen": {
-  "dias_en_regimen": 6,
+  "dias_en_regimen": 7,
   "ultimo_cambio": "2026-11-13",
   "secuencia_90d": [
    {
@@ -223,27 +232,51 @@
  },
  "cambios": {
   "vs_ayer": {
-   "fecha": "2026-11-23"
+   "fecha": "2026-11-24",
+   "sector_Materiales": "+0 → -1",
+   "sector_Consumo básico": "-1 → -2"
   },
   "vs_5d": {
-   "fecha": "2026-11-17",
+   "fecha": "2026-11-18",
    "tension": "baja → media",
    "score_liquidez": "+0 → -1",
-   "score_riesgo": "+0 → -1",
-   "sector_Materiales": "-1 → +0",
-   "sector_Consumo básico": "-2 → -1"
+   "score_riesgo": "+0 → -1"
   },
   "disparadores_que_se_mueven": [
    {
-    "serie": "^VIX",
-    "distancia_antes": -2.65,
-    "distancia_hoy": -3.2,
+    "serie": "PCEPILFE",
+    "distancia_antes": -0.32,
+    "distancia_hoy": -0.46,
     "se_acerca": false
    },
    {
-    "serie": "DGS10",
-    "distancia_antes": 0.46,
-    "distancia_hoy": 0.58,
+    "serie": "^VIX",
+    "distancia_antes": -3.2,
+    "distancia_hoy": -8.3,
+    "se_acerca": false
+   },
+   {
+    "serie": "BAMLH0A0HYM2",
+    "distancia_antes": 0.24,
+    "distancia_hoy": 0.28,
+    "se_acerca": false
+   },
+   {
+    "serie": "CCSA",
+    "distancia_antes": 237000.0,
+    "distancia_hoy": 303000.0,
+    "se_acerca": false
+   },
+   {
+    "serie": "PSAVERT",
+    "distancia_antes": 0.3,
+    "distancia_hoy": 0.6,
+    "se_acerca": false
+   },
+   {
+    "serie": "ICSA",
+    "distancia_antes": 37000.0,
+    "distancia_hoy": 51000.0,
     "se_acerca": false
    }
   ]
@@ -254,22 +287,22 @@
    "avisos": [
     "sector con sesgo -1: revisar"
    ],
-   "R": -0.48991212344904106,
-   "dist_stop_pct": 4.1
+   "R": -0.8106650089792383,
+   "dist_stop_pct": 1.6
   },
   {
    "ticker": "FAST",
    "avisos": [
     "STOP ALCANZADO: cerrar"
    ],
-   "R": -1.473782657237535,
-   "dist_stop_pct": -2.5
+   "R": -1.37078583106566,
+   "dist_stop_pct": -1.9
   }
  ],
  "que_no_hacer": [
-  "No abrir en Consumo básico (sesgo -1)",
+  "No abrir en Materiales (sesgo -1)",
   "No abrir en Salud (sesgo -1)",
   "No abrir en Utilities (sesgo -1)",
-  "No abrir en Consumo discrecional (sesgo -2)"
+  "No abrir en Consumo básico (sesgo -2)"
  ]
 }

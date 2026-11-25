@@ -1,5 +1,5 @@
 {
- "date": "2026-11-24",
+ "date": "2026-11-25",
  "scope": "bellwethers",
  "companies": [
   {
@@ -173,7 +173,7 @@
      "down7": 0,
      "net30": 1.0
     },
-    "est_anual_chg30_pct": 8.05,
+    "est_anual_chg30_pct": 9.33,
     "recomendaciones": {
      "compra": 8,
      "venta": 5,
@@ -356,7 +356,7 @@
      "down7": 1,
      "net30": 1.0
     },
-    "est_anual_chg30_pct": 2.78,
+    "est_anual_chg30_pct": 3.16,
     "recomendaciones": {
      "compra": 22,
      "venta": 2,
@@ -438,7 +438,7 @@
      "down7": 1,
      "net30": 0.5
     },
-    "est_anual_chg30_pct": 3.02,
+    "est_anual_chg30_pct": -2.86,
     "recomendaciones": {
      "compra": 2,
      "venta": 9,
@@ -470,7 +470,7 @@
      "down7": 14,
      "net30": -1.0
     },
-    "est_anual_chg30_pct": -21.46,
+    "est_anual_chg30_pct": -21.03,
     "recomendaciones": {
      "compra": 4,
      "venta": 3,
@@ -506,11 +506,11 @@
      "down7": 14,
      "net30": -0.14
     },
-    "est_anual_chg30_pct": -1.13,
+    "est_anual_chg30_pct": -1.89,
     "recomendaciones": {
-     "compra": 20,
+     "compra": 22,
      "venta": 1,
-     "cambio_compra_1m": 0
+     "cambio_compra_1m": 2
     }
    },
    "eventos": [],
@@ -574,7 +574,7 @@
      "down7": 2,
      "net30": -0.69
     },
-    "est_anual_chg30_pct": -0.3,
+    "est_anual_chg30_pct": -0.46,
     "recomendaciones": {
      "compra": 16,
      "venta": 1,
@@ -645,18 +645,7 @@
      "cambio_compra_1m": -2
     }
    },
-   "eventos": [
-    {
-     "fecha": "2026-11-17",
-     "codigos": [
-      "8.01",
-      "9.01"
-     ],
-     "descripcion": "Otros hechos",
-     "importancia": 1,
-     "url": "https://www.sec.gov/Archives/edgar/data/63908/000110465926129050/tm2630018d1_8k.htm"
-    }
-   ],
+   "eventos": [],
    "insiders": [
     {
      "fecha": "2026-11-13",
@@ -704,36 +693,14 @@
      "down7": 1,
      "net30": -0.2
     },
-    "est_anual_chg30_pct": -0.34,
+    "est_anual_chg30_pct": -0.33,
     "recomendaciones": {
      "compra": 22,
      "venta": 0,
      "cambio_compra_1m": 0
     }
    },
-   "eventos": [
-    {
-     "fecha": "2026-11-17",
-     "codigos": [
-      "2.02",
-      "9.01"
-     ],
-     "descripcion": "Resultados",
-     "importancia": 3,
-     "url": "https://www.sec.gov/Archives/edgar/data/354950/000035495026000184/hd-20261117.htm"
-    },
-    {
-     "fecha": "2026-11-17",
-     "codigos": [
-      "5.02",
-      "7.01",
-      "9.01"
-     ],
-     "descripcion": "Salida o nombramiento de directivos/consejeros · Reg FD: presentación, guía o comunicado",
-     "importancia": 3,
-     "url": "https://www.sec.gov/Archives/edgar/data/354950/000035495026000182/hd-20261113.htm"
-    }
-   ],
+   "eventos": [],
    "insiders": [
     {
      "fecha": "2026-11-18",
@@ -782,65 +749,254 @@
    "eventos": [],
    "insiders": [
     {
-     "fecha": "2026-11-18",
-     "quien": "Huttenlocher Daniel P",
-     "cargo": "consejero",
+     "fecha": "2026-11-23",
+     "quien": "Jassy Andrew R",
+     "cargo": "President and CEO",
      "tipo": "venta",
-     "importe_usd": 203290,
-     "acciones": 783,
-     "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000056/wk-form4_1795209411.xml"
+     "importe_usd": 55340,
+     "acciones": 220,
+     "url": "https://www.sec.gov/Archives/edgar/data/1018724/000137454526000012/wk-form4_1795563957.xml"
     },
     {
-     "fecha": "2026-11-16",
+     "fecha": "2026-11-23",
+     "quien": "Jassy Andrew R",
+     "cargo": "President and CEO",
+     "tipo": "venta",
+     "importe_usd": 254611,
+     "acciones": 1006,
+     "url": "https://www.sec.gov/Archives/edgar/data/1018724/000137454526000012/wk-form4_1795563957.xml"
+    },
+    {
+     "fecha": "2026-11-23",
+     "quien": "Jassy Andrew R",
+     "cargo": "President and CEO",
+     "tipo": "venta",
+     "importe_usd": 336285,
+     "acciones": 1324,
+     "url": "https://www.sec.gov/Archives/edgar/data/1018724/000137454526000012/wk-form4_1795563957.xml"
+    },
+    {
+     "fecha": "2026-11-23",
+     "quien": "Jassy Andrew R",
+     "cargo": "President and CEO",
+     "tipo": "venta",
+     "importe_usd": 690103,
+     "acciones": 2705,
+     "url": "https://www.sec.gov/Archives/edgar/data/1018724/000137454526000012/wk-form4_1795563957.xml"
+    },
+    {
+     "fecha": "2026-11-23",
+     "quien": "Jassy Andrew R",
+     "cargo": "President and CEO",
+     "tipo": "venta",
+     "importe_usd": 818378,
+     "acciones": 3197,
+     "url": "https://www.sec.gov/Archives/edgar/data/1018724/000137454526000012/wk-form4_1795563957.xml"
+    },
+    {
+     "fecha": "2026-11-23",
+     "quien": "Jassy Andrew R",
+     "cargo": "President and CEO",
+     "tipo": "venta",
+     "importe_usd": 2333630,
+     "acciones": 9074,
+     "url": "https://www.sec.gov/Archives/edgar/data/1018724/000137454526000012/wk-form4_1795563957.xml"
+    },
+    {
+     "fecha": "2026-11-23",
+     "quien": "Jassy Andrew R",
+     "cargo": "President and CEO",
+     "tipo": "venta",
+     "importe_usd": 531583,
+     "acciones": 2062,
+     "url": "https://www.sec.gov/Archives/edgar/data/1018724/000137454526000012/wk-form4_1795563957.xml"
+    },
+    {
+     "fecha": "2026-11-23",
+     "quien": "Jassy Andrew R",
+     "cargo": "President and CEO",
+     "tipo": "venta",
+     "importe_usd": 55935,
+     "acciones": 216,
+     "url": "https://www.sec.gov/Archives/edgar/data/1018724/000137454526000012/wk-form4_1795563957.xml"
+    },
+    {
+     "fecha": "2026-11-23",
+     "quien": "Jassy Andrew R",
+     "cargo": "President and CEO",
+     "tipo": "venta",
+     "importe_usd": 50966,
+     "acciones": 196,
+     "url": "https://www.sec.gov/Archives/edgar/data/1018724/000137454526000012/wk-form4_1795563957.xml"
+    },
+    {
+     "fecha": "2026-11-23",
+     "quien": "Garman Matthew S",
+     "cargo": "CEO Amazon Web Services",
+     "tipo": "venta",
+     "importe_usd": 111197,
+     "acciones": 440,
+     "url": "https://www.sec.gov/Archives/edgar/data/1018724/000202481326000012/wk-form4_1795563607.xml"
+    },
+    {
+     "fecha": "2026-11-23",
+     "quien": "Garman Matthew S",
+     "cargo": "CEO Amazon Web Services",
+     "tipo": "venta",
+     "importe_usd": 226930,
+     "acciones": 895,
+     "url": "https://www.sec.gov/Archives/edgar/data/1018724/000202481326000012/wk-form4_1795563607.xml"
+    },
+    {
+     "fecha": "2026-11-23",
+     "quien": "Garman Matthew S",
+     "cargo": "CEO Amazon Web Services",
+     "tipo": "venta",
+     "importe_usd": 326841,
+     "acciones": 1284,
+     "url": "https://www.sec.gov/Archives/edgar/data/1018724/000202481326000012/wk-form4_1795563607.xml"
+    },
+    {
+     "fecha": "2026-11-23",
+     "quien": "Garman Matthew S",
+     "cargo": "CEO Amazon Web Services",
+     "tipo": "venta",
+     "importe_usd": 679212,
+     "acciones": 2657,
+     "url": "https://www.sec.gov/Archives/edgar/data/1018724/000202481326000012/wk-form4_1795563607.xml"
+    },
+    {
+     "fecha": "2026-11-23",
+     "quien": "Garman Matthew S",
+     "cargo": "CEO Amazon Web Services",
+     "tipo": "venta",
+     "importe_usd": 805986,
+     "acciones": 3139,
+     "url": "https://www.sec.gov/Archives/edgar/data/1018724/000202481326000012/wk-form4_1795563607.xml"
+    },
+    {
+     "fecha": "2026-11-23",
+     "quien": "Garman Matthew S",
+     "cargo": "CEO Amazon Web Services",
+     "tipo": "venta",
+     "importe_usd": 1409998,
+     "acciones": 5476,
+     "url": "https://www.sec.gov/Archives/edgar/data/1018724/000202481326000012/wk-form4_1795563607.xml"
+    },
+    {
+     "fecha": "2026-11-23",
+     "quien": "Garman Matthew S",
+     "cargo": "CEO Amazon Web Services",
+     "tipo": "venta",
+     "importe_usd": 11125,
+     "acciones": 43,
+     "url": "https://www.sec.gov/Archives/edgar/data/1018724/000202481326000012/wk-form4_1795563607.xml"
+    },
+    {
+     "fecha": "2026-11-23",
+     "quien": "Garman Matthew S",
+     "cargo": "CEO Amazon Web Services",
+     "tipo": "venta",
+     "importe_usd": 89224,
+     "acciones": 343,
+     "url": "https://www.sec.gov/Archives/edgar/data/1018724/000202481326000012/wk-form4_1795563607.xml"
+    },
+    {
+     "fecha": "2026-11-23",
+     "quien": "Garman Matthew S",
+     "cargo": "CEO Amazon Web Services",
+     "tipo": "venta",
+     "importe_usd": 68820,
+     "acciones": 264,
+     "url": "https://www.sec.gov/Archives/edgar/data/1018724/000202481326000012/wk-form4_1795563607.xml"
+    },
+    {
+     "fecha": "2026-11-23",
      "quien": "Herrington Douglas J",
      "cargo": "CEO Worldwide Amazon Stores",
      "tipo": "venta",
-     "importe_usd": 254690,
-     "acciones": 981,
-     "url": "https://www.sec.gov/Archives/edgar/data/1018724/000193600626000030/wk-form4_1794951971.xml"
+     "importe_usd": 141143,
+     "acciones": 560,
+     "url": "https://www.sec.gov/Archives/edgar/data/1018724/000193600626000032/wk-form4_1795563271.xml"
     },
     {
-     "fecha": "2026-11-16",
+     "fecha": "2026-11-23",
      "quien": "Herrington Douglas J",
      "cargo": "CEO Worldwide Amazon Stores",
      "tipo": "venta",
-     "importe_usd": 177334,
-     "acciones": 680,
-     "url": "https://www.sec.gov/Archives/edgar/data/1018724/000193600626000030/wk-form4_1794951971.xml"
+     "importe_usd": 374852,
+     "acciones": 1480,
+     "url": "https://www.sec.gov/Archives/edgar/data/1018724/000193600626000032/wk-form4_1795563271.xml"
     },
     {
-     "fecha": "2026-11-16",
+     "fecha": "2026-11-23",
      "quien": "Herrington Douglas J",
      "cargo": "CEO Worldwide Amazon Stores",
      "tipo": "venta",
-     "importe_usd": 450181,
-     "acciones": 1720,
-     "url": "https://www.sec.gov/Archives/edgar/data/1018724/000193600626000030/wk-form4_1794951971.xml"
+     "importe_usd": 508505,
+     "acciones": 2000,
+     "url": "https://www.sec.gov/Archives/edgar/data/1018724/000193600626000032/wk-form4_1795563271.xml"
     },
     {
-     "fecha": "2026-11-16",
+     "fecha": "2026-11-23",
      "quien": "Herrington Douglas J",
      "cargo": "CEO Worldwide Amazon Stores",
      "tipo": "venta",
-     "importe_usd": 94505,
+     "importe_usd": 133170,
+     "acciones": 522,
+     "url": "https://www.sec.gov/Archives/edgar/data/1018724/000193600626000032/wk-form4_1795563271.xml"
+    },
+    {
+     "fecha": "2026-11-23",
+     "quien": "Herrington Douglas J",
+     "cargo": "CEO Worldwide Amazon Stores",
+     "tipo": "venta",
+     "importe_usd": 61542,
+     "acciones": 240,
+     "url": "https://www.sec.gov/Archives/edgar/data/1018724/000193600626000032/wk-form4_1795563271.xml"
+    },
+    {
+     "fecha": "2026-11-23",
+     "quien": "Herrington Douglas J",
+     "cargo": "CEO Worldwide Amazon Stores",
+     "tipo": "venta",
+     "importe_usd": 92788,
      "acciones": 360,
-     "url": "https://www.sec.gov/Archives/edgar/data/1018724/000193600626000030/wk-form4_1794951971.xml"
+     "url": "https://www.sec.gov/Archives/edgar/data/1018724/000193600626000032/wk-form4_1795563271.xml"
     },
     {
-     "fecha": "2026-11-02",
+     "fecha": "2026-11-23",
      "quien": "Herrington Douglas J",
      "cargo": "CEO Worldwide Amazon Stores",
      "tipo": "venta",
-     "importe_usd": 243470,
-     "acciones": 1000,
-     "url": "https://www.sec.gov/Archives/edgar/data/1018724/000193600626000028/wk-form4_1793831214.xml"
+     "importe_usd": 72408,
+     "acciones": 280,
+     "url": "https://www.sec.gov/Archives/edgar/data/1018724/000193600626000032/wk-form4_1795563271.xml"
+    },
+    {
+     "fecha": "2026-11-23",
+     "quien": "Herrington Douglas J",
+     "cargo": "CEO Worldwide Amazon Stores",
+     "tipo": "venta",
+     "importe_usd": 207994,
+     "acciones": 800,
+     "url": "https://www.sec.gov/Archives/edgar/data/1018724/000193600626000032/wk-form4_1795563271.xml"
+    },
+    {
+     "fecha": "2026-11-23",
+     "quien": "Herrington Douglas J",
+     "cargo": "CEO Worldwide Amazon Stores",
+     "tipo": "venta",
+     "importe_usd": 31256,
+     "acciones": 120,
+     "url": "https://www.sec.gov/Archives/edgar/data/1018724/000193600626000032/wk-form4_1795563271.xml"
     }
    ],
    "cobertura": true,
    "compra_cluster": false,
    "n_compradores": 0,
    "importe_compras": 0,
-   "importe_ventas": 1423470
+   "importe_ventas": 10479822
   },
   {
    "t": "WMT",
@@ -1281,17 +1437,7 @@
      "cambio_compra_1m": 0
     }
    },
-   "eventos": [
-    {
-     "fecha": "2026-11-17",
-     "codigos": [
-      "5.02"
-     ],
-     "descripcion": "Salida o nombramiento de directivos/consejeros",
-     "importancia": 3,
-     "url": "https://www.sec.gov/Archives/edgar/data/19617/000001961726000407/jpm-20261117.htm"
-    }
-   ],
+   "eventos": [],
    "insiders": [],
    "cobertura": true,
    "compra_cluster": false,
@@ -1384,11 +1530,11 @@
      "down7": 2,
      "net30": 0.39
     },
-    "est_anual_chg30_pct": 0.17,
+    "est_anual_chg30_pct": 0.08,
     "recomendaciones": {
-     "compra": 35,
+     "compra": 36,
      "venta": 1,
-     "cambio_compra_1m": -1
+     "cambio_compra_1m": 0
     }
    },
    "eventos": [
@@ -1619,9 +1765,9 @@
     },
     "est_anual_chg30_pct": 3.83,
     "recomendaciones": {
-     "compra": 48,
+     "compra": 49,
      "venta": 2,
-     "cambio_compra_1m": -11
+     "cambio_compra_1m": -10
     }
    },
    "eventos": [
@@ -1634,16 +1780,6 @@
      "descripcion": "Salida o nombramiento de directivos/consejeros",
      "importancia": 3,
      "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000090/nvda-20261122.htm"
-    },
-    {
-     "fecha": "2026-11-17",
-     "codigos": [
-      "2.02",
-      "9.01"
-     ],
-     "descripcion": "Resultados",
-     "importancia": 3,
-     "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000088/nvda-20261117.htm"
     }
    ],
    "insiders": [
@@ -2175,7 +2311,18 @@
      "cambio_compra_1m": 0
     }
    },
-   "eventos": [],
+   "eventos": [
+    {
+     "fecha": "2026-11-24",
+     "codigos": [
+      "8.01",
+      "9.01"
+     ],
+     "descripcion": "Otros hechos",
+     "importancia": 1,
+     "url": "https://www.sec.gov/Archives/edgar/data/1652044/000119312526475973/d91615d8k.htm"
+    }
+   ],
    "insiders": [
     {
      "fecha": "2026-11-12",
@@ -2223,7 +2370,7 @@
      "down7": 4,
      "net30": -0.7
     },
-    "est_anual_chg30_pct": -0.67,
+    "est_anual_chg30_pct": -0.68,
     "recomendaciones": {
      "compra": 55,
      "venta": 1,
@@ -2609,15 +2756,69 @@
      "down7": 0,
      "net30": 1.0
     },
-    "est_anual_chg30_pct": 8.34,
+    "est_anual_chg30_pct": 8.33,
     "recomendaciones": {
-     "compra": 45,
+     "compra": 46,
      "venta": 1,
-     "cambio_compra_1m": 1
+     "cambio_compra_1m": 2
     }
    },
    "eventos": [],
    "insiders": [
+    {
+     "fecha": "2026-11-23",
+     "quien": "Le-Quoc Alexis",
+     "cargo": "Chief Technology Officer",
+     "tipo": "venta",
+     "importe_usd": 248267,
+     "acciones": 1500,
+     "url": "https://www.sec.gov/Archives/edgar/data/1561550/000156155026000328/wk-form4_1795557478.xml"
+    },
+    {
+     "fecha": "2026-11-23",
+     "quien": "Le-Quoc Alexis",
+     "cargo": "Chief Technology Officer",
+     "tipo": "venta",
+     "importe_usd": 849935,
+     "acciones": 5085,
+     "url": "https://www.sec.gov/Archives/edgar/data/1561550/000156155026000328/wk-form4_1795557478.xml"
+    },
+    {
+     "fecha": "2026-11-23",
+     "quien": "Le-Quoc Alexis",
+     "cargo": "Chief Technology Officer",
+     "tipo": "venta",
+     "importe_usd": 1714208,
+     "acciones": 10196,
+     "url": "https://www.sec.gov/Archives/edgar/data/1561550/000156155026000328/wk-form4_1795557478.xml"
+    },
+    {
+     "fecha": "2026-11-23",
+     "quien": "Le-Quoc Alexis",
+     "cargo": "Chief Technology Officer",
+     "tipo": "venta",
+     "importe_usd": 3062547,
+     "acciones": 18118,
+     "url": "https://www.sec.gov/Archives/edgar/data/1561550/000156155026000328/wk-form4_1795557478.xml"
+    },
+    {
+     "fecha": "2026-11-23",
+     "quien": "Le-Quoc Alexis",
+     "cargo": "Chief Technology Officer",
+     "tipo": "venta",
+     "importe_usd": 1345097,
+     "acciones": 7911,
+     "url": "https://www.sec.gov/Archives/edgar/data/1561550/000156155026000328/wk-form4_1795557478.xml"
+    },
+    {
+     "fecha": "2026-11-23",
+     "quien": "Le-Quoc Alexis",
+     "cargo": "Chief Technology Officer",
+     "tipo": "venta",
+     "importe_usd": 273063,
+     "acciones": 1600,
+     "url": "https://www.sec.gov/Archives/edgar/data/1561550/000156155026000328/wk-form4_1795557478.xml"
+    },
     {
      "fecha": "2026-11-09",
      "quien": "Le-Quoc Alexis",
@@ -2749,7 +2950,7 @@
    "compra_cluster": false,
    "n_compradores": 0,
    "importe_compras": 0,
-   "importe_ventas": 21024273
+   "importe_ventas": 28517390
   }
  ],
  "sector_pulse": {
@@ -2786,7 +2987,7 @@
    "empresas_cubiertas": 7,
    "mejorando": 2,
    "empeorando": 2,
-   "hechos_relevantes": 2,
+   "hechos_relevantes": 0,
    "clusters_insiders": 0
   },
   "Consumo básico": {
@@ -2813,7 +3014,7 @@
    "empresas_cubiertas": 4,
    "mejorando": 1,
    "empeorando": 3,
-   "hechos_relevantes": 2,
+   "hechos_relevantes": 1,
    "clusters_insiders": 0
   },
   "Tecnología de la información": {
@@ -2822,7 +3023,7 @@
    "empresas_cubiertas": 6,
    "mejorando": 5,
    "empeorando": 1,
-   "hechos_relevantes": 2,
+   "hechos_relevantes": 1,
    "clusters_insiders": 1
   },
   "Servicios de comunicación": {
@@ -2885,18 +3086,18 @@
    "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261120~e52bcc4db2.en.html"
   },
   {
+   "banco": "Fed",
+   "tipo": "comunicado",
+   "fecha": "2026-11-18",
+   "titulo": "Minutes of the Federal Open Market Committee, October 27-28, 2026",
+   "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261118a.htm"
+  },
+  {
    "banco": "BCE",
    "tipo": "discurso",
    "fecha": "2026-11-18",
    "titulo": "Boris Vujčić: Financial Stability Review - November 2026",
    "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261118~86f1e8147e.en.pdf"
-  },
-  {
-   "banco": "BCE",
-   "tipo": "discurso",
-   "fecha": "2026-11-17",
-   "titulo": "Philip R. Lane: The practice and science of monetary policy communication: the ECB experience",
-   "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261117~7f5d3b1a0e.en.pdf"
   }
  ]
 }
