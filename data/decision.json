@@ -1,5 +1,5 @@
 {
- "date": "2026-11-25",
+ "date": "2026-11-26",
  "exposicion": {
   "banda_pct": "50-70",
   "nuevas_posiciones": "solo con factores claros y micro a favor, mitad de tamaño",
@@ -84,18 +84,18 @@
    "que_la_resuelve": ""
   },
   {
-   "id": "pce-por-encima-de-la-proyeccion-del-fomc",
-   "titulo": "El PCE subyacente va por encima de la proyección del FOMC",
-   "por_que": "disparador PCEPILFE activado",
-   "que_hacer": "- Antes de la reunión con SEP: no abrir duración; esperar al dot plot.\n- Si el mercado ya descuenta más que la Fed (mercado-descuenta-mas-subidas-que-la-fed), la revisión al alza puede estar en precio.",
-   "que_la_resuelve": ""
-  },
-  {
    "id": "vix-sobre-25",
    "titulo": "VIX por encima de 25 (régimen de miedo)",
    "por_que": "disparador ^VIX activado",
    "que_hacer": "- Susto (HY < 400, peticiones estables): no vender; añadir en calidad con tamaño normal cuando el VIX empiece a bajar desde el pico (no en el pico); es la mejor entrada del año en 2018, 2024 y 2025.\n- Crisis (HY > 500, peticiones subiendo): exposición mínima; esperar a que la Fed actúe (el suelo suele coincidir con su anuncio).\n- Nunca vender volatilidad ni abrir con apalancamiento en el pico.",
    "que_la_resuelve": "- VIX baja de 20: fase cerrada; suele ocurrir 2-6 semanas después del pico en sustos.\n- VIX > 40: crisis; mirar la Fed."
+  },
+  {
+   "id": "pce-por-encima-de-la-proyeccion-del-fomc",
+   "titulo": "El PCE subyacente va por encima de la proyección del FOMC",
+   "por_que": "disparador PCEPILFE activado",
+   "que_hacer": "- Antes de la reunión con SEP: no abrir duración; esperar al dot plot.\n- Si el mercado ya descuenta más que la Fed (mercado-descuenta-mas-subidas-que-la-fed), la revisión al alza puede estar en precio.",
+   "que_la_resuelve": ""
   }
  ],
  "sensibilidad": {
@@ -103,7 +103,7 @@
    {
     "serie": "JPY=X",
     "umbral": 150,
-    "valor_actual": 159.18800354003906,
+    "valor_actual": 159.27200317382812,
     "si_se_cruza": {
      "sin_cambios": "no altera régimen ni sesgos; solo la lectura"
     },
@@ -130,7 +130,7 @@
    {
     "serie": "DGS10",
     "umbral": 5.5,
-    "valor_actual": 4.92,
+    "valor_actual": 4.91,
     "si_se_cruza": {
      "sin_cambios": "no altera régimen ni sesgos; solo la lectura"
     },
@@ -147,18 +147,6 @@
    }
   ],
   "datos_semana": [
-   {
-    "publicacion": "PCE / ingresos y gasto",
-    "serie": "PCEPILFE",
-    "valor_actual": 3.26111744583808,
-    "paso": 0.2,
-    "si_sube": {
-     "sin_cambios": true
-    },
-    "si_baja": {
-     "score_inflacion": "+1 → +0"
-    }
-   },
    {
     "publicacion": "PIB EE.UU.",
     "serie": "GDPC1",
@@ -191,7 +179,7 @@
   ]
  },
  "historial_regimen": {
-  "dias_en_regimen": 7,
+  "dias_en_regimen": 8,
   "ultimo_cambio": "2026-11-13",
   "secuencia_90d": [
    {
@@ -225,59 +213,32 @@
    },
    "riesgo": {
     "hoy": -1,
-    "hace_5d": 0,
+    "hace_5d": -1,
     "hace_20d": 0
    }
   }
  },
  "cambios": {
   "vs_ayer": {
-   "fecha": "2026-11-24",
-   "sector_Materiales": "+0 → -1",
-   "sector_Consumo básico": "-1 → -2"
+   "fecha": "2026-11-25"
   },
   "vs_5d": {
-   "fecha": "2026-11-18",
+   "fecha": "2026-11-19",
    "tension": "baja → media",
-   "score_liquidez": "+0 → -1",
-   "score_riesgo": "+0 → -1"
+   "score_liquidez": "+0 → -1"
   },
   "disparadores_que_se_mueven": [
    {
-    "serie": "PCEPILFE",
-    "distancia_antes": -0.32,
-    "distancia_hoy": -0.46,
-    "se_acerca": false
-   },
-   {
     "serie": "^VIX",
-    "distancia_antes": -3.2,
-    "distancia_hoy": -8.3,
-    "se_acerca": false
+    "distancia_antes": -8.3,
+    "distancia_hoy": -1.77,
+    "se_acerca": true
    },
    {
-    "serie": "BAMLH0A0HYM2",
-    "distancia_antes": 0.24,
-    "distancia_hoy": 0.28,
-    "se_acerca": false
-   },
-   {
-    "serie": "CCSA",
-    "distancia_antes": 237000.0,
-    "distancia_hoy": 303000.0,
-    "se_acerca": false
-   },
-   {
-    "serie": "PSAVERT",
-    "distancia_antes": 0.3,
-    "distancia_hoy": 0.6,
-    "se_acerca": false
-   },
-   {
-    "serie": "ICSA",
-    "distancia_antes": 37000.0,
-    "distancia_hoy": 51000.0,
-    "se_acerca": false
+    "serie": "T10Y2Y",
+    "distancia_antes": 0.28,
+    "distancia_hoy": 0.24,
+    "se_acerca": true
    }
   ]
  },
@@ -287,16 +248,8 @@
    "avisos": [
     "sector con sesgo -1: revisar"
    ],
-   "R": -0.8106650089792383,
-   "dist_stop_pct": 1.6
-  },
-  {
-   "ticker": "FAST",
-   "avisos": [
-    "STOP ALCANZADO: cerrar"
-   ],
-   "R": -1.37078583106566,
-   "dist_stop_pct": -1.9
+   "R": -0.5600789131462803,
+   "dist_stop_pct": 3.6
   }
  ],
  "que_no_hacer": [
