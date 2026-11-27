@@ -1,5 +1,5 @@
 {
- "date": "2026-11-26",
+ "date": "2026-11-27",
  "scope": "bellwethers",
  "companies": [
   {
@@ -91,7 +91,7 @@
      "down7": 3,
      "net30": 0.53
     },
-    "est_anual_chg30_pct": 0.21,
+    "est_anual_chg30_pct": 0.19,
     "recomendaciones": {
      "compra": 24,
      "venta": 1,
@@ -324,7 +324,7 @@
      "down7": 1,
      "net30": -0.33
     },
-    "est_anual_chg30_pct": -15.07,
+    "est_anual_chg30_pct": -15.02,
     "recomendaciones": {
      "compra": 15,
      "venta": 2,
@@ -574,7 +574,7 @@
      "down7": 2,
      "net30": -0.69
     },
-    "est_anual_chg30_pct": -0.46,
+    "est_anual_chg30_pct": -0.78,
     "recomendaciones": {
      "compra": 16,
      "venta": 1,
@@ -1053,18 +1053,7 @@
      "cambio_compra_1m": 0
     }
    },
-   "eventos": [
-    {
-     "fecha": "2026-11-19",
-     "codigos": [
-      "2.02",
-      "9.01"
-     ],
-     "descripcion": "Resultados",
-     "importancia": 3,
-     "url": "https://www.sec.gov/Archives/edgar/data/104169/000010416926000168/wmt-20261119.htm"
-    }
-   ],
+   "eventos": [],
    "insiders": [
     {
      "fecha": "2026-11-23",
@@ -1516,7 +1505,7 @@
      "down7": 2,
      "net30": -1.0
     },
-    "est_anual_chg30_pct": 1.53,
+    "est_anual_chg30_pct": 2.24,
     "recomendaciones": {
      "compra": 5,
      "venta": 6,
@@ -1955,7 +1944,7 @@
      "down7": 2,
      "net30": 0.64
     },
-    "est_anual_chg30_pct": 3.41,
+    "est_anual_chg30_pct": 0.0,
     "recomendaciones": {
      "compra": 20,
      "venta": 0,
@@ -3041,7 +3030,7 @@
    "empresas_cubiertas": 3,
    "mejorando": 1,
    "empeorando": 0,
-   "hechos_relevantes": 1,
+   "hechos_relevantes": 0,
    "clusters_insiders": 0
   },
   "Salud": {
